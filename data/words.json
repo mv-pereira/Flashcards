@@ -18,8 +18,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "objetos",
-      "chapter": 0
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -58,8 +62,12 @@
       "supine": "ätit"
     },
     "classification": {
-      "theme": "ações",
-      "chapter": 0
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -98,8 +106,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -131,8 +143,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -164,17 +180,21 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
       "audio": {
-        "src": null,
-        "source": null,
-        "sourceUrl": null,
-        "author": null,
-        "license": null
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-ett.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:sv-ett.ogg",
+        "author": "Peter Isotalo",
+        "license": "GFDL"
       }
     }
   },
@@ -197,8 +217,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -230,8 +254,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -263,8 +291,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -296,8 +328,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -329,8 +365,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -362,8 +402,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -395,8 +439,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -428,8 +476,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -461,8 +513,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "números",
-      "chapter": 0
+      "themes": [
+        "números"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -494,8 +550,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -527,8 +587,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -560,8 +624,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -593,8 +661,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -626,8 +698,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -659,8 +735,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -692,8 +772,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dias da semana",
-      "chapter": 0
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -725,8 +809,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -758,8 +846,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -791,8 +883,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -824,8 +920,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -857,8 +957,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -890,8 +994,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -923,8 +1031,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -956,8 +1068,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -989,8 +1105,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0 
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1022,8 +1142,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1055,8 +1179,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "dia a dia",
-      "chapter": 0
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 0,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1088,8 +1216,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1121,8 +1253,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1154,8 +1290,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1187,8 +1327,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1220,8 +1364,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1253,8 +1401,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1286,8 +1438,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1319,8 +1475,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1352,8 +1512,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1385,8 +1549,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1418,8 +1586,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1451,8 +1623,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1484,8 +1660,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "saudações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1517,8 +1697,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1550,8 +1734,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1583,8 +1771,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1616,8 +1808,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1649,8 +1845,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1682,8 +1882,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1715,8 +1919,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "respostas",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1748,8 +1956,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "perguntas pessoais",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1781,8 +1993,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "perguntas pessoais",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1814,8 +2030,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "perguntas pessoais",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1847,8 +2067,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1880,8 +2104,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "perguntas pessoais",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1913,8 +2141,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1946,8 +2178,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -1979,8 +2215,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2012,8 +2252,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2045,8 +2289,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2078,8 +2326,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2111,8 +2363,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2144,8 +2400,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2177,8 +2437,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2210,8 +2474,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2243,8 +2511,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2276,8 +2548,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pronomes",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2309,8 +2585,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "estado civil",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2342,8 +2622,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "estado civil",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2375,8 +2659,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "estado civil",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2408,8 +2696,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "estado civil",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2441,8 +2733,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "estado civil",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2474,8 +2770,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2507,8 +2807,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pessoas",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2547,8 +2851,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2580,8 +2888,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "pessoas",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2620,8 +2932,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2653,8 +2969,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2686,8 +3006,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2719,8 +3043,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -2752,8 +3080,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "família",
-      "chapter": 1
+      "themes": [
+        "família e pessoas"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2792,8 +3124,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2832,8 +3168,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2872,8 +3212,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2912,8 +3256,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2952,8 +3300,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -2992,8 +3344,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -3032,8 +3388,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -3072,8 +3432,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -3112,8 +3476,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -3152,8 +3520,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "trabalho e estudo",
-      "chapter": 1
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": {
@@ -3192,8 +3564,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "idiomas e países",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3225,8 +3601,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "idiomas e países",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3258,8 +3638,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "idiomas e países",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3291,8 +3675,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "reações",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3324,8 +3712,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "idiomas e países",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3357,8 +3749,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "idiomas e países",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3390,8 +3786,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras úteis",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3423,8 +3823,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3456,8 +3860,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras úteis",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3489,8 +3897,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras úteis",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3522,8 +3934,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "idiomas e países",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3555,8 +3971,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3588,8 +4008,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3621,8 +4045,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3654,8 +4082,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3687,8 +4119,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3720,8 +4156,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3753,8 +4193,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "verbos",
-      "chapter": 1
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3786,8 +4230,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3819,8 +4267,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3852,8 +4304,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3885,8 +4341,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3918,8 +4378,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3951,8 +4415,12 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
     },
     "media": {
       "image": null,
@@ -3984,8 +4452,3015 @@
       "supine": null
     },
     "classification": {
-      "theme": "palavras interrogativas",
-      "chapter": 1
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 1,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 119,
+    "order": 119,
+    "active": true,
+    "term": {
+      "swedish": "nåt",
+      "portuguese": "algo / alguma coisa"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 120,
+    "order": 120,
+    "active": true,
+    "term": {
+      "swedish": "verkligen",
+      "portuguese": "realmente"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 121,
+    "order": 121,
+    "active": true,
+    "term": {
+      "swedish": "sista",
+      "portuguese": "último/última"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 122,
+    "order": 122,
+    "active": true,
+    "term": {
+      "swedish": "tyst",
+      "portuguese": "silencioso / em silêncio"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 123,
+    "order": 123,
+    "active": true,
+    "term": {
+      "swedish": "stor",
+      "portuguese": "grande"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 124,
+    "order": 124,
+    "active": true,
+    "term": {
+      "swedish": "tung",
+      "portuguese": "pesado/pesada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 125,
+    "order": 125,
+    "active": true,
+    "term": {
+      "swedish": "mer",
+      "portuguese": "mais"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 126,
+    "order": 126,
+    "active": true,
+    "term": {
+      "swedish": "stulen",
+      "portuguese": "roubado/roubada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 127,
+    "order": 127,
+    "active": true,
+    "term": {
+      "swedish": "snart",
+      "portuguese": "em breve / logo"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 128,
+    "order": 128,
+    "active": true,
+    "term": {
+      "swedish": "fram",
+      "portuguese": "para frente / adiante"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 129,
+    "order": 129,
+    "active": true,
+    "term": {
+      "swedish": "igen",
+      "portuguese": "de novo / novamente"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 130,
+    "order": 130,
+    "active": true,
+    "term": {
+      "swedish": "kvar",
+      "portuguese": "restante / sobrando"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 131,
+    "order": 131,
+    "active": true,
+    "term": {
+      "swedish": "knappt",
+      "portuguese": "mal / quase não"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 132,
+    "order": 132,
+    "active": true,
+    "term": {
+      "swedish": "några",
+      "portuguese": "alguns/algumas"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 133,
+    "order": 133,
+    "active": true,
+    "term": {
+      "swedish": "kort",
+      "portuguese": "curto/curta"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 134,
+    "order": 134,
+    "active": true,
+    "term": {
+      "swedish": "gott",
+      "portuguese": "bem / bom"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 135,
+    "order": 135,
+    "active": true,
+    "term": {
+      "swedish": "mousserande",
+      "portuguese": "espumante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 136,
+    "order": 136,
+    "active": true,
+    "term": {
+      "swedish": "någonstans",
+      "portuguese": "em algum lugar"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 137,
+    "order": 137,
+    "active": true,
+    "term": {
+      "swedish": "ung",
+      "portuguese": "jovem"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 138,
+    "order": 138,
+    "active": true,
+    "term": {
+      "swedish": "het",
+      "portuguese": "quente / intenso"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 139,
+    "order": 139,
+    "active": true,
+    "term": {
+      "swedish": "att ringa",
+      "portuguese": "tocar / telefonar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "ringa",
+      "present": "ringer",
+      "past": "ringde",
+      "supine": "ringt"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 140,
+    "order": 140,
+    "active": true,
+    "term": {
+      "swedish": "att känna",
+      "portuguese": "sentir"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "känna",
+      "present": "känner",
+      "past": "kände",
+      "supine": "känt"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 141,
+    "order": 141,
+    "active": true,
+    "term": {
+      "swedish": "att blekna",
+      "portuguese": "desbotar / empalidecer"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "blekna",
+      "present": "bleknar",
+      "past": "bleknade",
+      "supine": "bleknat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 142,
+    "order": 142,
+    "active": true,
+    "term": {
+      "swedish": "att vända",
+      "portuguese": "virar / mudar de direção"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "vända",
+      "present": "vänder",
+      "past": "vände",
+      "supine": "vänt"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 143,
+    "order": 143,
+    "active": true,
+    "term": {
+      "swedish": "att resa",
+      "portuguese": "erguer / levantar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "resa",
+      "present": "reser",
+      "past": "reste",
+      "supine": "rest"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 144,
+    "order": 144,
+    "active": true,
+    "term": {
+      "swedish": "att rulla",
+      "portuguese": "rolar / andar sobre rodas"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "rulla",
+      "present": "rullar",
+      "past": "rullade",
+      "supine": "rullat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 145,
+    "order": 145,
+    "active": true,
+    "term": {
+      "swedish": "att hälsa",
+      "portuguese": "cumprimentar / saudar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "hälsa",
+      "present": "hälsar",
+      "past": "hälsade",
+      "supine": "hälsat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 146,
+    "order": 146,
+    "active": true,
+    "term": {
+      "swedish": "att passa sig",
+      "portuguese": "tomar cuidado"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 147,
+    "order": 147,
+    "active": true,
+    "term": {
+      "swedish": "att jaga",
+      "portuguese": "perseguir / caçar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "jaga",
+      "present": "jagar",
+      "past": "jagade",
+      "supine": "jagat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 148,
+    "order": 148,
+    "active": true,
+    "term": {
+      "swedish": "att finnas",
+      "portuguese": "existir / haver"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "finnas",
+      "present": "finns",
+      "past": "fanns",
+      "supine": "funnits"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 149,
+    "order": 149,
+    "active": true,
+    "term": {
+      "swedish": "att dunsta",
+      "portuguese": "evaporar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "dunsta",
+      "present": "dunstar",
+      "past": "dunstade",
+      "supine": "dunstat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 150,
+    "order": 150,
+    "active": true,
+    "term": {
+      "swedish": "att tystna",
+      "portuguese": "silenciar / calar-se"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "tystna",
+      "present": "tystnar",
+      "past": "tystnade",
+      "supine": "tystnat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 151,
+    "order": 151,
+    "active": true,
+    "term": {
+      "swedish": "att köpa",
+      "portuguese": "comprar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "köpa",
+      "present": "köper",
+      "past": "köpte",
+      "supine": "köpt"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 152,
+    "order": 152,
+    "active": true,
+    "term": {
+      "swedish": "att beskriva",
+      "portuguese": "descrever"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "beskriva",
+      "present": "beskriver",
+      "past": "beskrev",
+      "supine": "beskrivit"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 153,
+    "order": 153,
+    "active": true,
+    "term": {
+      "swedish": "att komma ihåg",
+      "portuguese": "lembrar-se"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 154,
+    "order": 154,
+    "active": true,
+    "term": {
+      "swedish": "att veta",
+      "portuguese": "saber"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "veta",
+      "present": "vet",
+      "past": "visste",
+      "supine": "vetat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 155,
+    "order": 155,
+    "active": true,
+    "term": {
+      "swedish": "att tänka",
+      "portuguese": "pensar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "tänka",
+      "present": "tänker",
+      "past": "tänkte",
+      "supine": "tänkt"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 156,
+    "order": 156,
+    "active": true,
+    "term": {
+      "swedish": "att klappa",
+      "portuguese": "bater / pulsar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "klappa",
+      "present": "klappar",
+      "past": "klappade",
+      "supine": "klappat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 157,
+    "order": 157,
+    "active": true,
+    "term": {
+      "swedish": "att vibrera",
+      "portuguese": "vibrar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "vibrera",
+      "present": "vibrerar",
+      "past": "vibrerade",
+      "supine": "vibrerat"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 158,
+    "order": 158,
+    "active": true,
+    "term": {
+      "swedish": "att sjunga",
+      "portuguese": "cantar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "sjunga",
+      "present": "sjunger",
+      "past": "sjöng",
+      "supine": "sjungit"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 159,
+    "order": 159,
+    "active": true,
+    "term": {
+      "swedish": "att hända",
+      "portuguese": "acontecer"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "hända",
+      "present": "händer",
+      "past": "hände",
+      "supine": "hänt"
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 160,
+    "order": 160,
+    "active": true,
+    "term": {
+      "swedish": "ett moln",
+      "portuguese": "uma nuvem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "moln",
+      "definite": "molnet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "tempo e calendário"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 161,
+    "order": 161,
+    "active": true,
+    "term": {
+      "swedish": "en väderkvarn",
+      "portuguese": "um moinho de vento"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "väderkvarnar",
+      "definite": "väderkvarnen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 162,
+    "order": 162,
+    "active": true,
+    "term": {
+      "swedish": "golfströmmen",
+      "portuguese": "a Corrente do Golfo"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": "golfströmmen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 163,
+    "order": 163,
+    "active": true,
+    "term": {
+      "swedish": "konfetti",
+      "portuguese": "confete"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 164,
+    "order": 164,
+    "active": true,
+    "term": {
+      "swedish": "en rocklåt",
+      "portuguese": "uma música de rock"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "rocklåtar",
+      "definite": "rocklåten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 165,
+    "order": 165,
+    "active": true,
+    "term": {
+      "swedish": "en kassett",
+      "portuguese": "uma fita cassete"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kassetter",
+      "definite": "kassetten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 166,
+    "order": 166,
+    "active": true,
+    "term": {
+      "swedish": "en majstång",
+      "portuguese": "um mastro de midsommar"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "majstänger",
+      "definite": "majstången",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 167,
+    "order": 167,
+    "active": true,
+    "term": {
+      "swedish": "en klocka",
+      "portuguese": "um sino / um relógio"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "klockor",
+      "definite": "klockan",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 168,
+    "order": 168,
+    "active": true,
+    "term": {
+      "swedish": "ett lastbilsflak",
+      "portuguese": "uma carroceria de caminhão"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "lastbilsflak",
+      "definite": "lastbilsflaket",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 169,
+    "order": 169,
+    "active": true,
+    "term": {
+      "swedish": "en höst",
+      "portuguese": "um outono"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "höstar",
+      "definite": "hösten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "tempo e calendário"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 170,
+    "order": 170,
+    "active": true,
+    "term": {
+      "swedish": "en dröm",
+      "portuguese": "um sonho"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "drömmar",
+      "definite": "drömmen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 171,
+    "order": 171,
+    "active": true,
+    "term": {
+      "swedish": "en styrka",
+      "portuguese": "uma força"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "styrkor",
+      "definite": "styrkan",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 172,
+    "order": 172,
+    "active": true,
+    "term": {
+      "swedish": "ett mod",
+      "portuguese": "uma coragem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": null,
+      "definite": "modet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 173,
+    "order": 173,
+    "active": true,
+    "term": {
+      "swedish": "en applåd",
+      "portuguese": "um aplauso"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "applåder",
+      "definite": "applåden",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 174,
+    "order": 174,
+    "active": true,
+    "term": {
+      "swedish": "en frukost",
+      "portuguese": "um café da manhã"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "frukostar",
+      "definite": "frukosten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 175,
+    "order": 175,
+    "active": true,
+    "term": {
+      "swedish": "ett hav",
+      "portuguese": "um mar"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "hav",
+      "definite": "havet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 176,
+    "order": 176,
+    "active": true,
+    "term": {
+      "swedish": "en kyss",
+      "portuguese": "um beijo"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kyssar",
+      "definite": "kyssen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 177,
+    "order": 177,
+    "active": true,
+    "term": {
+      "swedish": "ett tåg",
+      "portuguese": "um trem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "tåg",
+      "definite": "tåget",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 178,
+    "order": 178,
+    "active": true,
+    "term": {
+      "swedish": "en natt",
+      "portuguese": "uma noite"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "nätter",
+      "definite": "natten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "tempo e calendário"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 179,
+    "order": 179,
+    "active": true,
+    "term": {
+      "swedish": "en bil",
+      "portuguese": "um carro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bilar",
+      "definite": "bilen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 180,
+    "order": 180,
+    "active": true,
+    "term": {
+      "swedish": "en syster",
+      "portuguese": "uma irmã"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "systrar",
+      "definite": "systern",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "família e pessoas"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 181,
+    "order": 181,
+    "active": true,
+    "term": {
+      "swedish": "ett knä",
+      "portuguese": "um joelho / colo"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "knän",
+      "definite": "knät",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 182,
+    "order": 182,
+    "active": true,
+    "term": {
+      "swedish": "en vår",
+      "portuguese": "uma primavera"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "vårar",
+      "definite": "våren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "tempo e calendário"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 183,
+    "order": 183,
+    "active": true,
+    "term": {
+      "swedish": "kort och gott",
+      "portuguese": "em resumo / resumindo"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 184,
+    "order": 184,
+    "active": true,
+    "term": {
+      "swedish": "en gata",
+      "portuguese": "uma rua"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "gator",
+      "definite": "gatan",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 185,
+    "order": 185,
+    "active": true,
+    "term": {
+      "swedish": "ett ljud",
+      "portuguese": "um som"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "ljud",
+      "definite": "ljudet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 186,
+    "order": 186,
+    "active": true,
+    "term": {
+      "swedish": "en låt",
+      "portuguese": "uma música / uma canção"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "låtar",
+      "definite": "låten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 187,
+    "order": 187,
+    "active": true,
+    "term": {
+      "swedish": "ett farväl",
+      "portuguese": "uma despedida"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "farväl",
+      "definite": "farvälet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 188,
+    "order": 188,
+    "active": true,
+    "term": {
+      "swedish": "en kyrka",
+      "portuguese": "uma igreja"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kyrkor",
+      "definite": "kyrkan",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 189,
+    "order": 189,
+    "active": true,
+    "term": {
+      "swedish": "en psalm",
+      "portuguese": "um hino / salmo"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "psalmer",
+      "definite": "psalmen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 190,
+    "order": 190,
+    "active": true,
+    "term": {
+      "swedish": "ett liv",
+      "portuguese": "uma vida"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "liv",
+      "definite": "livet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 191,
+    "order": 191,
+    "active": true,
+    "term": {
+      "swedish": "en del",
+      "portuguese": "uma parte"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "delar",
+      "definite": "delen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 192,
+    "order": 192,
+    "active": true,
+    "term": {
+      "swedish": "ett hjärta",
+      "portuguese": "um coração"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "hjärtan",
+      "definite": "hjärtat",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 193,
+    "order": 193,
+    "active": true,
+    "term": {
+      "swedish": "ett slag",
+      "portuguese": "uma batida / um golpe"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "slag",
+      "definite": "slaget",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 194,
+    "order": 194,
+    "active": true,
+    "term": {
+      "swedish": "en sommar",
+      "portuguese": "um verão"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "somrar",
+      "definite": "sommaren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "tempo e calendário"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 195,
+    "order": 195,
+    "active": true,
+    "term": {
+      "swedish": "en sak",
+      "portuguese": "uma coisa"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "saker",
+      "definite": "saken",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música",
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": null,
+      "sourceTitle": "Nåt som verkligen är bra",
+      "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
       "image": null,

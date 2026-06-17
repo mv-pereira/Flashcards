@@ -7,8 +7,10 @@ let sessionAnswers = [];
 let currentIndex = 0;
 let correctCount = 0;
 let wrongCount = 0;
+
 let answerVisible = false;
 let isChangingCard = false;
+let writeComparisonDone = false;
 let stats = {};
 
 let isNewWordsMode = false;
@@ -20,7 +22,6 @@ let allNewWordsIntroduced = false;
 let sessionStartTime = null;
 let elapsedBeforePause = 0;
 let timerIntervalId = null;
-let isTimeVisible = false;
 
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
@@ -36,9 +37,6 @@ const summaryScreen = document.querySelector("#summaryScreen");
 
 const themeToggleButton = document.querySelector("#themeToggleButton");
 
-const timeButton = document.querySelector("#timeButton");
-const timeBox = document.querySelector("#timeBox");
-const studyTimeText = document.querySelector("#studyTimeText");
 const summaryTime = document.querySelector("#summaryTime");
 
 const finishSessionButton = document.querySelector("#finishSessionButton");
@@ -56,17 +54,17 @@ const studyScreen = document.querySelector("#studyScreen");
 
 const typeFilter = document.querySelector("#typeFilter");
 const themeFilter = document.querySelector("#themeFilter");
+const sourceFilter = document.querySelector("#sourceFilter");
+const chapterFilterLabel = document.querySelector("#chapterFilterLabel");
 const chapterFilter = document.querySelector("#chapterFilter");
+const sourceTitleFilterLabel = document.querySelector("#sourceTitleFilterLabel");
+const sourceTitleFilter = document.querySelector("#sourceTitleFilter");
 
 const startSessionButton = document.querySelector("#startSessionButton");
 const backToSetupButton = document.querySelector("#backToSetupButton");
 const setupMessage = document.querySelector("#setupMessage");
 
 const questionLabel = document.querySelector("#questionLabel");
-const performanceButton = document.querySelector("#performanceButton");
-const performanceBox = document.querySelector("#performanceBox");
-const correctPercent = document.querySelector("#correctPercent");
-const wrongPercent = document.querySelector("#wrongPercent");
 
 const directionSelect = document.querySelector("#directionSelect");
 const answerModeSelect = document.querySelector("#answerModeSelect");
@@ -78,8 +76,10 @@ const backHint = document.querySelector("#backHint");
 const writeBox = document.querySelector("#writeBox");
 const answerInput = document.querySelector("#answerInput");
 const checkAnswerButton = document.querySelector("#checkAnswerButton");
+const nextWriteCardButton = document.querySelector("#nextWriteCardButton");
 const writeResultBox = document.querySelector("#writeResultBox");
 const userAnswerText = document.querySelector("#userAnswerText");
+const comparisonFeedbackText = document.querySelector("#comparisonFeedbackText");
 
 const cardImageWrap = document.querySelector("#cardImageWrap");
 const cardImage = document.querySelector("#cardImage");
@@ -96,6 +96,7 @@ const questionText = document.querySelector("#questionText");
 const flashcard = document.querySelector("#flashcard");
 const answerText = document.querySelector("#answerText");
 
+const resultButtons = document.querySelector("#resultButtons");
 const correctButton = document.querySelector("#correctButton");
 const wrongButton = document.querySelector("#wrongButton");
 const message = document.querySelector("#message");
@@ -183,8 +184,97 @@ function updateCardStats(card, isCorrect) {
 
 function fillFilterOptions() {
   fillSelect(typeFilter, getUniqueValues(allCards, (card) => card.grammar.type));
-  fillSelect(themeFilter, getUniqueValues(allCards, (card) => card.classification.theme));
-  fillSelect(chapterFilter, getUniqueValues(allCards, (card) => card.classification.chapter));
+  fillSelect(themeFilter, getUniqueThemeValues(allCards));
+  fillSelect(sourceFilter, getUniqueValues(allCards, (card) => getCardSource(card)));
+  updateSourceSpecificFilters();
+}
+
+function getCardThemes(card) {
+  const classification = card.classification || {};
+
+  if (Array.isArray(classification.themes)) {
+    return classification.themes.filter(Boolean);
+  }
+
+  if (Array.isArray(classification.theme)) {
+    return classification.theme.filter(Boolean);
+  }
+
+  if (classification.theme) {
+    return [classification.theme];
+  }
+
+  return [];
+}
+
+function getUniqueThemeValues(cardList) {
+  return [...new Set(cardList.flatMap(getCardThemes))]
+    .sort((a, b) => String(a).localeCompare(String(b), "pt-BR"));
+}
+
+function getCardSource(card) {
+  return card.classification?.source || "livro";
+}
+
+function getCardSourceTitle(card) {
+  return card.classification?.sourceTitle || null;
+}
+
+function updateSourceSpecificFilters() {
+  const selectedSource = sourceFilter.value;
+
+  chapterFilterLabel.classList.toggle("hidden", selectedSource !== "livro");
+  sourceTitleFilterLabel.classList.toggle("hidden", selectedSource !== "música");
+
+  if (selectedSource === "livro") {
+    fillSelect(
+      chapterFilter,
+      getUniqueValues(
+        allCards.filter((card) => getCardSource(card) === "livro"),
+        (card) => card.classification.chapter
+      )
+    );
+    sourceTitleFilter.value = "all";
+    return;
+  }
+
+  if (selectedSource === "música") {
+    fillSelect(
+      sourceTitleFilter,
+      getUniqueValues(
+        allCards.filter((card) => getCardSource(card) === "música"),
+        (card) => getCardSourceTitle(card)
+      )
+    );
+    chapterFilter.value = "all";
+    return;
+  }
+
+  chapterFilter.value = "all";
+  sourceTitleFilter.value = "all";
+}
+
+function getUniqueThemeValues(cardList) {
+  return [...new Set(cardList.flatMap(getCardThemes))]
+    .sort((a, b) => String(a).localeCompare(String(b), "pt-BR"));
+}
+
+function getCardThemes(card) {
+  const classification = card.classification || {};
+
+  if (Array.isArray(classification.themes)) {
+    return classification.themes.filter(Boolean);
+  }
+
+  if (Array.isArray(classification.theme)) {
+    return classification.theme.filter(Boolean);
+  }
+
+  if (classification.theme) {
+    return [classification.theme];
+  }
+
+  return [];
 }
 
 function getUniqueValues(list, getter) {
@@ -215,19 +305,41 @@ function fillSelect(selectElement, values) {
 function getFilteredCards() {
   const selectedType = typeFilter.value;
   const selectedTheme = themeFilter.value;
+  const selectedSource = sourceFilter.value;
   const selectedChapter = chapterFilter.value;
+  const selectedSourceTitle = sourceTitleFilter.value;
 
   return allCards.filter((card) => {
     const matchesType =
       selectedType === "all" || card.grammar.type === selectedType;
 
+    const cardThemes = getCardThemes(card);
+
     const matchesTheme =
-      selectedTheme === "all" || card.classification.theme === selectedTheme;
+      selectedTheme === "all" || cardThemes.includes(selectedTheme);
+
+    const cardSource = getCardSource(card);
+
+    const matchesSource =
+      selectedSource === "all" || cardSource === selectedSource;
 
     const matchesChapter =
-      selectedChapter === "all" || String(card.classification.chapter) === selectedChapter;
+      selectedSource !== "livro" ||
+      selectedChapter === "all" ||
+      String(card.classification.chapter) === selectedChapter;
 
-    return matchesType && matchesTheme && matchesChapter;
+    const matchesSourceTitle =
+      selectedSource !== "música" ||
+      selectedSourceTitle === "all" ||
+      getCardSourceTitle(card) === selectedSourceTitle;
+
+    return (
+      matchesType &&
+      matchesTheme &&
+      matchesSource &&
+      matchesChapter &&
+      matchesSourceTitle
+    );
   });
 }
 
@@ -254,13 +366,10 @@ if (isNewWordsMode) {
   answerVisible = false;
   isChangingCard = false;
 
-  updatePerformance();
-  performanceBox.classList.add("hidden");
-  performanceButton.textContent = "Ver desempenho";
-
   setupScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   studyScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
 
   startStudyTimer();
   showCard();
@@ -338,6 +447,7 @@ function backToSetup() {
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   setupScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.remove("hidden");
 
   flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
   answerVisible = false;
@@ -363,13 +473,10 @@ if (isNewWordsMode) {
   answerVisible = false;
   isChangingCard = false;
 
-  updatePerformance();
-  performanceBox.classList.add("hidden");
-  performanceButton.textContent = "Ver desempenho";
-
   summaryScreen.classList.add("hidden");
   setupScreen.classList.add("hidden");
   studyScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
 
   startStudyTimer();
   showCard();
@@ -396,7 +503,6 @@ updateModeUI();
   correctButton.disabled = true;
   wrongButton.disabled = true;
 
-  message.textContent = getInitialMessage();
 }
 
 function resetAudioSwedishHint(card, content) {
@@ -570,13 +676,37 @@ function revealAnswer() {
   correctButton.disabled = false;
   wrongButton.disabled = false;
 
-  message.textContent = "Agora marque seu resultado.";
 }
 
 function wait(ms) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
+}
+
+function registerCurrentAnswer(isCorrect) {
+  const currentCard = cards[currentIndex];
+
+  if (isCorrect) {
+    correctCount++;
+  } else {
+    wrongCount++;
+  }
+
+  if (isNewWordsMode) {
+    newWordsRoundResults[String(currentCard.id)] = isCorrect;
+  }
+
+  sessionAnswers.push({
+    cardId: currentCard.id,
+    swedish: currentCard.term.swedish,
+    portuguese: currentCard.term.portuguese,
+    isCorrect
+  });
+
+  updateCardStats(currentCard, isCorrect);
+
+  return currentCard;
 }
 
 async function markAnswer(isCorrect) {
@@ -589,27 +719,7 @@ async function markAnswer(isCorrect) {
   correctButton.disabled = true;
   wrongButton.disabled = true;
 
-  const currentCard = cards[currentIndex];
-
-  if (isCorrect) {
-    correctCount++;
-  } else {
-    wrongCount++;
-  }
-
-if (isNewWordsMode) {
-  newWordsRoundResults[String(currentCard.id)] = isCorrect;
-}
-
-  sessionAnswers.push({
-    cardId: currentCard.id,
-    swedish: currentCard.term.swedish,
-    portuguese: currentCard.term.portuguese,
-    isCorrect
-  });
-
-  updateCardStats(currentCard, isCorrect);
-  updatePerformance();
+  registerCurrentAnswer(isCorrect);
 
   flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
 
@@ -736,43 +846,8 @@ function showError(errorMessage) {
   wrongButton.disabled = true;
 }
 
-function updatePerformance() {
-  const total = correctCount + wrongCount;
-
-  if (total === 0) {
-    correctPercent.textContent = "0%";
-    wrongPercent.textContent = "0%";
-    return;
-  }
-
-  const correctRate = Math.round((correctCount / total) * 100);
-  const wrongRate = Math.round((wrongCount / total) * 100);
-
-  correctPercent.textContent = `${correctRate}%`;
-  wrongPercent.textContent = `${wrongRate}%`;
-}
-
-function togglePerformance() {
-  updatePerformance();
-  performanceBox.classList.toggle("hidden");
-
-  if (performanceBox.classList.contains("hidden")) {
-    performanceButton.textContent = "Ver desempenho";
-  } else {
-    performanceButton.textContent = "Ocultar desempenho";
-  }
-}
-
 function getAnswerMode() {
   return answerModeSelect.value;
-}
-
-function getInitialMessage() {
-  if (getAnswerMode() === "write") {
-    return "Digite sua resposta e toque em comparar.";
-  }
-
-  return "Toque no card para revelar a resposta.";
 }
 
 function updateModeUI() {
@@ -790,21 +865,37 @@ function updateModeUI() {
 
   if (shouldShowWriteBox) {
     writeBox.classList.remove("hidden");
+    resultButtons.classList.add("hidden");
     flashcard.setAttribute("aria-disabled", "true");
   } else {
     writeBox.classList.add("hidden");
+    resultButtons.classList.remove("hidden");
     flashcard.removeAttribute("aria-disabled");
   }
 }
 
 function resetWriteMode() {
+  writeComparisonDone = false;
+
   answerInput.value = "";
+  answerInput.disabled = false;
+
+  checkAnswerButton.disabled = false;
+
+  nextWriteCardButton.classList.add("hidden");
+  nextWriteCardButton.disabled = true;
+
   writeResultBox.classList.add("hidden");
   userAnswerText.textContent = "";
+
+  comparisonFeedbackText.textContent = "";
+  comparisonFeedbackText.classList.remove("correct", "wrong");
+
+  backHint.classList.remove("hidden");
 }
 
 function checkWrittenAnswer() {
-  if (isChangingCard) {
+  if (isChangingCard || writeComparisonDone) {
     return;
   }
 
@@ -825,25 +916,383 @@ function checkWrittenAnswer() {
     return;
   }
 
-  const isCorrect = normalizeAnswer(userAnswer) === normalizeAnswer(expectedAnswer);
+  const comparison = compareWrittenAnswer(userAnswer, expectedAnswer);
 
   answerVisible = true;
+  writeComparisonDone = true;
 
   flashcard.classList.add("flipped");
-  flashcard.classList.toggle("correct-preview", isCorrect);
-  flashcard.classList.toggle("wrong-preview", !isCorrect);
+  flashcard.classList.toggle("correct-preview", comparison.isCorrect);
+  flashcard.classList.toggle("wrong-preview", !comparison.isCorrect);
 
   userAnswerText.textContent = userAnswer;
+  comparisonFeedbackText.textContent = comparison.feedback;
+  comparisonFeedbackText.classList.toggle("correct", comparison.isCorrect);
+  comparisonFeedbackText.classList.toggle("wrong", !comparison.isCorrect);
   writeResultBox.classList.remove("hidden");
 
-  correctButton.disabled = false;
-  wrongButton.disabled = false;
+  backHint.classList.add("hidden");
 
-  if (isCorrect) {
-    message.textContent = "Comparação: parece correto. Confirme em Acertei.";
-  } else {
-    message.textContent = "Comparação: diferente da resposta. Confirme em Errei ou Acertei.";
+  answerInput.disabled = true;
+  checkAnswerButton.disabled = true;
+
+  nextWriteCardButton.classList.remove("hidden");
+  nextWriteCardButton.disabled = false;
+
+  registerCurrentAnswer(comparison.isCorrect);
+
+}
+
+async function nextWrittenCard() {
+  if (!writeComparisonDone || isChangingCard) {
+    return;
   }
+
+  isChangingCard = true;
+
+  nextWriteCardButton.disabled = true;
+
+  flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
+
+  await wait(220);
+
+  goToNextCard();
+
+  isChangingCard = false;
+}
+
+function compareWrittenAnswer(userAnswer, expectedAnswer) {
+  const normalizedUserAnswer = normalizeAnswer(userAnswer);
+  const normalizedExpectedAnswer = normalizeAnswer(expectedAnswer);
+
+  const comparison = getDamerauLevenshteinComparison(
+    normalizedUserAnswer,
+    normalizedExpectedAnswer
+  );
+
+  const isCorrect = comparison.distance === 0;
+
+  return {
+    isCorrect,
+    distance: comparison.distance,
+    feedback: buildComparisonFeedbackFromOperations(
+      comparison.operations,
+      normalizedUserAnswer,
+      normalizedExpectedAnswer
+    )
+  };
+}
+
+function getDamerauLevenshteinComparison(source, target) {
+  const sourceLength = source.length;
+  const targetLength = target.length;
+
+  const distances = Array.from({ length: sourceLength + 1 }, () =>
+    Array(targetLength + 1).fill(0)
+  );
+
+  const steps = Array.from({ length: sourceLength + 1 }, () =>
+    Array(targetLength + 1).fill(null)
+  );
+
+  for (let i = 0; i <= sourceLength; i++) {
+    distances[i][0] = i;
+
+    if (i > 0) {
+      steps[i][0] = {
+        type: "delete",
+        sourceIndex: i - 1,
+        targetIndex: 0
+      };
+    }
+  }
+
+  for (let j = 0; j <= targetLength; j++) {
+    distances[0][j] = j;
+
+    if (j > 0) {
+      steps[0][j] = {
+        type: "insert",
+        sourceIndex: 0,
+        targetIndex: j - 1
+      };
+    }
+  }
+
+  for (let i = 1; i <= sourceLength; i++) {
+    for (let j = 1; j <= targetLength; j++) {
+      const substitutionCost = source[i - 1] === target[j - 1] ? 0 : 1;
+
+      let bestDistance = distances[i - 1][j - 1] + substitutionCost;
+      let bestStep = {
+        type: substitutionCost === 0 ? "match" : "substitute",
+        sourceIndex: i - 1,
+        targetIndex: j - 1
+      };
+
+      const deleteDistance = distances[i - 1][j] + 1;
+      if (deleteDistance < bestDistance) {
+        bestDistance = deleteDistance;
+        bestStep = {
+          type: "delete",
+          sourceIndex: i - 1,
+          targetIndex: j
+        };
+      }
+
+      const insertDistance = distances[i][j - 1] + 1;
+      if (insertDistance < bestDistance) {
+        bestDistance = insertDistance;
+        bestStep = {
+          type: "insert",
+          sourceIndex: i,
+          targetIndex: j - 1
+        };
+      }
+
+      if (
+        i > 1 &&
+        j > 1 &&
+        source[i - 1] === target[j - 2] &&
+        source[i - 2] === target[j - 1]
+      ) {
+        const transposeDistance = distances[i - 2][j - 2] + 1;
+
+        if (transposeDistance < bestDistance) {
+          bestDistance = transposeDistance;
+          bestStep = {
+            type: "transpose",
+            sourceIndex: i - 2,
+            targetIndex: j - 2
+          };
+        }
+      }
+
+      distances[i][j] = bestDistance;
+      steps[i][j] = bestStep;
+    }
+  }
+
+  const operations = [];
+  let i = sourceLength;
+  let j = targetLength;
+
+  while (i > 0 || j > 0) {
+    const step = steps[i][j];
+
+    if (!step) {
+      break;
+    }
+
+    if (step.type === "match") {
+      i--;
+      j--;
+      continue;
+    }
+
+    if (step.type === "substitute") {
+      operations.push({
+        type: "substitute",
+        userChar: source[i - 1],
+        expectedChar: target[j - 1],
+        position: j
+      });
+
+      i--;
+      j--;
+      continue;
+    }
+
+    if (step.type === "delete") {
+      operations.push({
+        type: "delete",
+        userChar: source[i - 1],
+        position: i
+      });
+
+      i--;
+      continue;
+    }
+
+    if (step.type === "insert") {
+      operations.push({
+        type: "insert",
+        expectedChar: target[j - 1],
+        position: j
+      });
+
+      j--;
+      continue;
+    }
+
+    if (step.type === "transpose") {
+      operations.push({
+        type: "transpose",
+        firstChar: source[i - 2],
+        secondChar: source[i - 1],
+        position: j - 1
+      });
+
+      i -= 2;
+      j -= 2;
+      continue;
+    }
+  }
+
+  operations.reverse();
+
+  return {
+    distance: distances[sourceLength][targetLength],
+    operations
+  };
+}
+
+function buildComparisonFeedbackFromOperations(operations, userAnswer, expectedAnswer) {
+  const relevantOperations = operations.filter((operation) => {
+    return operation.type !== "match";
+  });
+
+  if (relevantOperations.length === 0) {
+    return "Resposta correta.";
+  }
+
+  return relevantOperations
+    .map((operation) => {
+      return formatComparisonOperation(operation, userAnswer, expectedAnswer);
+    })
+    .filter(Boolean)
+    .join(" ");
+}
+
+function formatComparisonOperation(operation, userAnswer, expectedAnswer) {
+  if (operation.type === "substitute") {
+    const location = describeCharacterLocation(expectedAnswer, operation.position);
+
+    return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
+  }
+
+  if (operation.type === "insert") {
+    const location = describeCharacterLocation(expectedAnswer, operation.position);
+
+    return `Faltou a letra "${operation.expectedChar}" ${location}.`;
+  }
+
+  if (operation.type === "delete") {
+    const location = describeCharacterLocation(userAnswer, operation.position);
+
+    return `Há uma letra extra "${operation.userChar}" ${location}.`;
+  }
+
+  if (operation.type === "transpose") {
+    const location = describeCharacterLocation(expectedAnswer, operation.position);
+
+    return `Algumas letras parecem estar invertidas ${location}.`;
+  }
+
+  return "";
+}
+
+function describeCharacterLocation(text, charPosition) {
+  const index = clamp(charPosition - 1, 0, Math.max(text.length - 1, 0));
+
+  if (text[index] === " ") {
+    return describeSpaceLocation(text, index);
+  }
+
+  const wordRanges = getWordRanges(text);
+  const wordIndex = wordRanges.findIndex((range) => {
+    return index >= range.start && index <= range.end;
+  });
+
+  if (wordIndex === -1) {
+    return "em uma parte da resposta";
+  }
+
+  const wordRange = wordRanges[wordIndex];
+  const wordLength = wordRange.end - wordRange.start + 1;
+  const relativeIndex = index - wordRange.start;
+
+  const wordPart = getWordPart(relativeIndex, wordLength);
+  const ordinalWord = getOrdinalWord(wordIndex + 1);
+
+  return `${wordPart} da ${ordinalWord} palavra`;
+}
+
+function describeSpaceLocation(text, spaceIndex) {
+  const textBeforeSpace = text.slice(0, spaceIndex).trim();
+  const textAfterSpace = text.slice(spaceIndex + 1).trim();
+
+  const wordsBefore = textBeforeSpace ? textBeforeSpace.split(/\s+/).length : 0;
+  const wordsAfter = textAfterSpace ? textAfterSpace.split(/\s+/).length : 0;
+
+  if (wordsBefore > 0 && wordsAfter > 0) {
+    const previousWord = getOrdinalWord(wordsBefore);
+    const nextWord = getOrdinalWord(wordsBefore + 1);
+
+    return `entre a ${previousWord} palavra e a ${nextWord} palavra`;
+  }
+
+  if (wordsBefore === 0) {
+    return "antes da primeira palavra";
+  }
+
+  return `depois da ${getOrdinalWord(wordsBefore)} palavra`;
+}
+
+function getWordRanges(text) {
+  const ranges = [];
+  const wordRegex = /\S+/g;
+  let match;
+
+  while ((match = wordRegex.exec(text)) !== null) {
+    ranges.push({
+      start: match.index,
+      end: match.index + match[0].length - 1,
+      word: match[0]
+    });
+  }
+
+  return ranges;
+}
+
+function getWordPart(relativeIndex, wordLength) {
+  if (wordLength <= 1) {
+    return "na palavra";
+  }
+
+  if (wordLength === 2) {
+    return relativeIndex === 0 ? "no início" : "no final";
+  }
+
+  const firstThirdLimit = Math.ceil(wordLength / 3);
+  const lastThirdStart = Math.floor((wordLength * 2) / 3);
+
+  if (relativeIndex < firstThirdLimit) {
+    return "no início";
+  }
+
+  if (relativeIndex >= lastThirdStart) {
+    return "no final";
+  }
+
+  return "no meio";
+}
+
+function getOrdinalWord(number) {
+  const ordinals = [
+    "primeira",
+    "segunda",
+    "terceira",
+    "quarta",
+    "quinta",
+    "sexta",
+    "sétima",
+    "oitava",
+    "nona",
+    "décima"
+  ];
+
+  return ordinals[number - 1] || `${number}ª`;
 }
 
 function isSwedishAnswerModeAvailable() {
@@ -888,21 +1337,11 @@ function updateThemeButtonText() {
 function startStudyTimer() {
   sessionStartTime = Date.now();
   elapsedBeforePause = 0;
-  isTimeVisible = false;
-
-  timeBox.classList.add("hidden");
-  timeButton.textContent = "Ver tempo";
-  studyTimeText.textContent = "00:00";
 
   if (timerIntervalId) {
     clearInterval(timerIntervalId);
+    timerIntervalId = null;
   }
-
-  timerIntervalId = setInterval(() => {
-    if (isTimeVisible) {
-      updateStudyTimeText();
-    }
-  }, 1000);
 }
 
 function stopStudyTimer() {
@@ -910,8 +1349,6 @@ function stopStudyTimer() {
     clearInterval(timerIntervalId);
     timerIntervalId = null;
   }
-
-  updateStudyTimeText();
 }
 
 function getElapsedStudySeconds() {
@@ -927,23 +1364,6 @@ function formatTime(totalSeconds) {
   const seconds = totalSeconds % 60;
 
   return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-}
-
-function updateStudyTimeText() {
-  studyTimeText.textContent = formatTime(getElapsedStudySeconds());
-}
-
-function toggleStudyTime() {
-  isTimeVisible = !isTimeVisible;
-
-  if (isTimeVisible) {
-    updateStudyTimeText();
-    timeBox.classList.remove("hidden");
-    timeButton.textContent = "Ocultar tempo";
-  } else {
-    timeBox.classList.add("hidden");
-    timeButton.textContent = "Ver tempo";
-  }
 }
 
 function toggleNewWordsMode() {
@@ -965,6 +1385,14 @@ function updateNewWordsModeUI() {
   }
 }
 
+function capitalizeFirstLetter(text) {
+  if (!text) {
+    return "";
+  }
+
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 flashcard.addEventListener("click", revealAnswer);
 
 flashcard.addEventListener("keydown", (event) => {
@@ -975,6 +1403,7 @@ flashcard.addEventListener("keydown", (event) => {
 });
 
 checkAnswerButton.addEventListener("click", checkWrittenAnswer);
+nextWriteCardButton.addEventListener("click", nextWrittenCard);
 
 answerInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
@@ -994,7 +1423,6 @@ showSwedishFromAudioButton.addEventListener("click", (event) => {
 });
 
 themeToggleButton.addEventListener("click", toggleTheme);
-timeButton.addEventListener("click", toggleStudyTime);
 
 directionSelect.addEventListener("change", updateModeUI);
 answerModeSelect.addEventListener("change", updateModeUI);
@@ -1008,9 +1436,13 @@ newSessionButton.addEventListener("click", backToSetup);
 
 correctButton.addEventListener("click", () => markAnswer(true));
 wrongButton.addEventListener("click", () => markAnswer(false));
-performanceButton.addEventListener("click", togglePerformance);
 
 newWordsToggleButton.addEventListener("click", toggleNewWordsMode);
+
+sourceFilter.addEventListener("change", () => {
+  setupMessage.textContent = "";
+  updateSourceSpecificFilters();
+});
 
 applySavedTheme();
 updateNewWordsModeUI();

@@ -57,12 +57,26 @@
       </select>
     </label>
 
-    <label for="chapterFilter">
-      Capítulo
-      <select id="chapterFilter">
-        <option value="all">Todos</option>
-      </select>
-    </label>
+<label for="sourceFilter">
+  Origem
+  <select id="sourceFilter">
+    <option value="all">Todas</option>
+  </select>
+</label>
+
+<label id="chapterFilterLabel" class="hidden" for="chapterFilter">
+  Capítulo do livro
+  <select id="chapterFilter">
+    <option value="all">Todos</option>
+  </select>
+</label>
+
+<label id="sourceTitleFilterLabel" class="hidden" for="sourceTitleFilter">
+  Música
+  <select id="sourceTitleFilter">
+    <option value="all">Todas</option>
+  </select>
+</label>
 
 <label for="firstRoundOrderSelect">
   Ordem da primeira rodada
@@ -135,10 +149,11 @@
       <p id="answerLabel" class="card-label">Português</p>
       <p id="answerText" class="answer"></p>
 
-      <div id="writeResultBox" class="write-result-box hidden">
-        <p>Sua resposta:</p>
-        <strong id="userAnswerText"></strong>
-      </div>
+<div id="writeResultBox" class="write-result-box hidden">
+  <p>Sua resposta:</p>
+  <strong id="userAnswerText"></strong>
+  <p id="comparisonFeedbackText" class="comparison-feedback"></p>
+</div>
 
       <p id="backHint" class="back-hint">Marque se você acertou ou errou.</p>
     </div>
@@ -162,9 +177,12 @@
     <button id="checkAnswerButton" class="button button-primary" type="button">
       Comparar resposta
     </button>
+    <button id="nextWriteCardButton" class="button button-secondary hidden" type="button">
+      Próximo card
+    </button>
   </div>
 
-  <div class="result-buttons">
+  <div id="resultButtons" class="result-buttons">
     <button id="wrongButton" class="button button-wrong" type="button" disabled>
       Errei
     </button>
@@ -174,26 +192,9 @@
     </button>
   </div>
 
-  <button id="performanceButton" class="button button-secondary" type="button">
-    Ver desempenho
+  <button id="finishSessionButton" class="button button-secondary" type="button">
+    Encerrar sessão
   </button>
-
-<button id="timeButton" class="button button-secondary" type="button">
-  Ver tempo
-</button>
-
-<button id="finishSessionButton" class="button button-secondary" type="button">
-  Encerrar sessão
-</button>
-
-  <div id="performanceBox" class="performance-box hidden">
-    <p><strong>Acertos:</strong> <span id="correctPercent">0%</span></p>
-    <p><strong>Erros:</strong> <span id="wrongPercent">0%</span></p>
-  </div>
-
-<div id="timeBox" class="time-box hidden">
-  <p><strong>Tempo de estudo:</strong> <span id="studyTimeText">00:00</span></p>
-</div>
 </section>
 
     <p id="message" class="message" role="status"></p>
