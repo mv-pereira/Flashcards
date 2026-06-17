@@ -83,6 +83,7 @@ const userAnswerText = document.querySelector("#userAnswerText");
 
 const cardImageWrap = document.querySelector("#cardImageWrap");
 const cardImage = document.querySelector("#cardImage");
+const imageSwedishText = document.querySelector("#imageSwedishText");
 
 const cardAudioWrap = document.querySelector("#cardAudioWrap");
 const cardAudio = document.querySelector("#cardAudio");
@@ -515,6 +516,10 @@ function showImageIfAvailable(card) {
 
   cardImage.src = image.src;
   cardImage.alt = image.alt || "Imagem do flashcard";
+
+  imageSwedishText.textContent = card.term.swedish;
+  imageSwedishText.classList.remove("hidden");
+
   cardImageWrap.classList.remove("hidden");
 
   cardImage.onerror = () => {
@@ -526,6 +531,9 @@ function hideQuestionImage() {
   cardImageWrap.classList.add("hidden");
   cardImage.removeAttribute("src");
   cardImage.alt = "";
+
+  imageSwedishText.textContent = "";
+  imageSwedishText.classList.add("hidden");
 }
 
 function showAudioIfAvailable(card) {

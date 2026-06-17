@@ -221,6 +221,7 @@ button {
 }
 
 .card-image-wrap {
+  position: relative;
   width: 100%;
   flex: 1;
   min-height: 0;
@@ -238,6 +239,28 @@ button {
   border-radius: 18px;
   border: 1px solid var(--border);
   background: var(--soft);
+}
+
+.image-swedish-text {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text);
+  font-size: clamp(1.25rem, 6vw, 2rem);
+  line-height: 1.08;
+  font-weight: 900;
+  text-align: center;
+  overflow-wrap: anywhere;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+body.dark-theme .image-swedish-text {
+  background: rgba(27, 31, 39, 0.88);
 }
 
 .card-label {
@@ -513,9 +536,6 @@ button {
 }
 
 @media (max-height: 650px) {
-  .app-header {
-    display: none;
-  }
 
   .study-screen {
     gap: 8px;

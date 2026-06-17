@@ -132,7 +132,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -165,7 +165,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -198,7 +198,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -231,7 +231,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -264,7 +264,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -297,7 +297,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -330,7 +330,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -363,7 +363,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -396,7 +396,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -429,7 +429,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -462,7 +462,7 @@
     },
     "classification": {
       "theme": "números",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -495,7 +495,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -528,7 +528,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -561,7 +561,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -594,7 +594,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -627,7 +627,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -660,7 +660,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -693,7 +693,7 @@
     },
     "classification": {
       "theme": "dias da semana",
-      "chapter": 1
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -725,8 +725,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -758,8 +758,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -791,8 +791,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -824,8 +824,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -857,8 +857,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -890,8 +890,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -923,8 +923,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -956,8 +956,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -989,8 +989,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0 
     },
     "media": {
       "image": null,
@@ -1022,8 +1022,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
@@ -1055,8 +1055,8 @@
       "supine": null
     },
     "classification": {
-      "theme": "sala de aula",
-      "chapter": 1
+      "theme": "dia a dia",
+      "chapter": 0
     },
     "media": {
       "image": null,
