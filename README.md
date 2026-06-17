@@ -1,63 +1,90 @@
-# Flashcards de Sueco — Fase 1 Mobile
+# Flashcards de Sueco
 
-Protótipo funcional pensado para rodar no navegador do celular.
+Aplicativo simples de flashcards para estudar vocabulário em sueco, feito com HTML, CSS e JavaScript puro.
 
-## Recursos
+## Funcionalidades
 
-- Carrega palavras de `data/words.json`
-- Mostra um card em sueco
-- Mostra imagem se existir
-- Oculta imagem ausente automaticamente
-- Revela a resposta em português
-- Marca acerto ou erro
-- Avança para o próximo card
-- Mostra contador da sessão
-- Layout mobile-first
+- Flashcards Sueco ↔ Português
+- Modo de escrita com correção automática
+- Estudo por imagem e áudio
+- Filtros por tipo, tema, origem, capítulo ou música
+- Modo de palavras novas
+- Resumo de desempenho
+- Tema claro e escuro
+- Progresso salvo no navegador
 
 ## Estrutura
 
 ```text
-flashcards-sueco/
-│
-├── index.html
-├── style.css
-├── app.js
-├── README.md
-├── data/
-│   └── words.json
-└── assets/
-    └── images/
+index.html
+style.css
+app.js
+data/words.json
 ```
 
-## Como testar localmente
+## Formato dos cards
 
-Como o projeto usa `fetch()` para carregar o JSON, abra com servidor local:
+As palavras ficam em `data/words.json`.
 
-```bash
-python -m http.server
+Cada card segue esta estrutura:
+
+```json
+{
+  "id": 119,
+  "order": 119,
+  "active": true,
+  "term": {
+    "swedish": "en låt",
+    "portuguese": "uma música / uma canção"
+  },
+  "grammar": {
+    "type": "substantivo",
+    "gender": "en",
+    "plural": "låtar",
+    "definite": "låten",
+    "infinitive": null,
+    "present": null,
+    "past": null,
+    "supine": null
+  },
+  "classification": {
+    "themes": ["dia a dia", "música"],
+    "source": "música",
+    "chapter": null,
+    "sourceTitle": "Nome da música",
+    "sourceArtist": "Nome do artista"
+  },
+  "media": {
+    "image": null,
+    "audio": {
+      "src": null,
+      "source": null,
+      "sourceUrl": null,
+      "author": null,
+      "license": null
+    }
+  }
+}
 ```
 
-Depois acesse:
+## Observações
 
-```text
-http://localhost:8000
-```
+- `themes` sempre deve ser um array.
+- `source` indica a origem da palavra: `"livro"` ou `"música"`.
+- `chapter` é usado apenas para palavras do livro.
+- `sourceTitle` e `sourceArtist` são usados para músicas.
+- Campos desconhecidos devem ficar como `null`.
 
-## GitHub Pages
+## Lembrete para aumentar o JSON
 
-Funciona no GitHub Pages porque o `index.html` está na raiz e o JSON é carregado com caminho relativo:
+Para adicionar novas palavras, copie a lista de palavras, frases, trecho de música ou imagens e peça ao ChatGPT para transformar no formato do `words.json`.
 
-```js
-fetch("data/words.json")
-```
+Peça para:
 
-## Imagens
-
-O JSON já aponta para:
-
-```text
-assets/images/book.webp
-assets/images/eat.webp
-```
-
-Adicione esses arquivos quando quiser testar com imagens reais.
+- começar o `id` depois do último existente;
+- não repetir palavras que já estão no JSON;
+- não repetir palavras dentro do novo complemento;
+- usar a estrutura `term`, `grammar`, `classification` e `media`;
+- usar `themes` como array;
+- preencher `source`, `chapter`, `sourceTitle` e `sourceArtist`;
+- devolver apenas um array JSON pronto para colar em `data/words.json`.
