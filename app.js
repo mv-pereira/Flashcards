@@ -623,7 +623,7 @@ function showImageIfAvailable(card) {
   cardImage.src = image.src;
   cardImage.alt = image.alt || "Imagem do flashcard";
 
-  imageSwedishText.textContent = card.term.swedish;
+  imageSwedishText.textContent = card.term.portuguese;
   imageSwedishText.classList.remove("hidden");
 
   cardImageWrap.classList.remove("hidden");
