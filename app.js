@@ -30,8 +30,6 @@ const firstRoundOrderSelect = document.querySelector("#firstRoundOrderSelect");
 
 const newWordsToggleButton = document.querySelector("#newWordsToggleButton");
 const newWordsModeInfo = document.querySelector("#newWordsModeInfo");
-const newWordsOrderLabel = document.querySelector("#newWordsOrderLabel");
-const newWordsOrderSelect = document.querySelector("#newWordsOrderSelect");
 
 const summaryScreen = document.querySelector("#summaryScreen");
 
@@ -399,7 +397,7 @@ function startNewWordsSession(filteredCards) {
 }
 
 function getNewWordsPool(filteredCards) {
-  if (newWordsOrderSelect.value === "random") {
+  if (firstRoundOrderSelect.value === "random") {
     return shuffleArray(filteredCards);
   }
 
@@ -1376,12 +1374,10 @@ function updateNewWordsModeUI() {
     newWordsToggleButton.classList.add("active");
     newWordsToggleButton.textContent = "Palavras novas: ligado";
     newWordsModeInfo.classList.remove("hidden");
-    newWordsOrderLabel.classList.remove("hidden");
   } else {
     newWordsToggleButton.classList.remove("active");
     newWordsToggleButton.textContent = "Palavras novas";
     newWordsModeInfo.classList.add("hidden");
-    newWordsOrderLabel.classList.add("hidden");
   }
 }
 

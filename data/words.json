@@ -87,44 +87,7 @@
       }
     }
   },
-  {
-    "id": 3,
-    "order": 3,
-    "active": true,
-    "term": {
-      "swedish": "Hur mår du?",
-      "portuguese": "Como você está?"
-    },
-    "grammar": {
-      "type": "expressão",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 1,
-      "sourceTitle": null
-    },
-    "media": {
-      "image": null,
-      "audio": {
-        "src": null,
-        "source": null,
-        "sourceUrl": null,
-        "author": null,
-        "license": null
-      }
-    }
-  },
-  {
+   {
     "id": 4,
     "order": 4,
     "active": true,
