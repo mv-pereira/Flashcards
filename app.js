@@ -26,6 +26,44 @@ let timerIntervalId = null;
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
+const PRONUNCIATION_RULES = [
+  {
+    title: "1. A vogal depois de SK, G e K muda o som",
+    text: "Quando SK, G ou K vêm antes de A, O, U ou Å, o som tende a ser mais “duro”. Antes de E, I, Y, Ä ou Ö, o som costuma ficar mais “suave”.",
+    examples: ["gott", "gift", "gör", "göra", "kul", "komma", "kort", "att känna", "att köpa", "skild"]
+  },
+  {
+    title: "2. Combinações que não soam como seriam lidas em português",
+    text: "Algumas combinações têm som especial: TJ soa como um chiado suave; SJ, SKJ, STJ e SK antes de vogal suave têm um som de “ch” mais forte; CH varia conforme a palavra.",
+    examples: ["Tjena!", "sju", "att sjunga", "skild"]
+  },
+  {
+    title: "3. RS, RT, RD e RN se juntam na fala",
+    text: "Depois de R, as letras S, T, D e N costumam ser pronunciadas com a língua mais para trás. Na prática, não se fala como duas letras totalmente separadas.",
+    examples: ["torsdag", "Ursäkta?", "ett barn", "snart", "kort", "ett hjärta"]
+  },
+  {
+    title: "4. Algumas letras somem ou enfraquecem na fala rápida",
+    text: "O G final em palavras terminadas em -dag muitas vezes quase desaparece. Em várias palavras frequentes, letras como R, G ou H podem ficar bem fracas dependendo da frase e da região.",
+    examples: ["måndag", "tisdag", "onsdag", "fredag", "lördag", "söndag"]
+  },
+  {
+    title: "5. A sílaba tônica normalmente fica na parte mais importante da palavra",
+    text: "Palavras suecas comuns muitas vezes têm a primeira sílaba forte. Palavras com be- ou för- podem puxar a força para a segunda sílaba. Em frases, substantivos, verbos, adjetivos e advérbios costumam receber mais ênfase.",
+    examples: ["en bok", "att äta", "förstå", "forska", "komma"]
+  },
+  {
+    title: "6. Vogal longa x consoante longa",
+    text: "Uma vogal seguida de uma só consoante costuma soar mais longa. Quando há duas ou mais consoantes depois, a vogal costuma ficar mais curta e a consoante seguinte pesa mais.",
+    examples: ["en bok", "noll", "åtta", "komma", "kort"]
+  },
+  {
+    title: "7. Melodia da frase",
+    text: "O sueco não é falado “reto”: a voz sobe e desce, especialmente em vogais longas. Em afirmações, a melodia geralmente cai no final; em perguntas, pode subir ou variar conforme a região.",
+    examples: ["Hej!", "Tjena!", "Ursäkta?", "Jag förstår inte."]
+  }
+];
+
 const firstRoundOrderSelect = document.querySelector("#firstRoundOrderSelect");
 
 const newWordsToggleButton = document.querySelector("#newWordsToggleButton");
@@ -61,6 +99,11 @@ const sourceTitleFilter = document.querySelector("#sourceTitleFilter");
 const startSessionButton = document.querySelector("#startSessionButton");
 const backToSetupButton = document.querySelector("#backToSetupButton");
 const setupMessage = document.querySelector("#setupMessage");
+
+const pronunciationRulesButton = document.querySelector("#pronunciationRulesButton");
+const pronunciationScreen = document.querySelector("#pronunciationScreen");
+const backFromPronunciationButton = document.querySelector("#backFromPronunciationButton");
+const pronunciationRulesList = document.querySelector("#pronunciationRulesList");
 
 const questionLabel = document.querySelector("#questionLabel");
 
@@ -366,6 +409,7 @@ if (isNewWordsMode) {
 
   setupScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
   studyScreen.classList.remove("hidden");
   newWordsToggleButton.classList.add("hidden");
 
@@ -440,10 +484,128 @@ function buildFirstRoundDeck(cardList) {
   return [...cardList];
 }
 
+function openPronunciationRules() {
+  stopStudyTimer();
+  setupMessage.textContent = "";
+
+  setupScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  pronunciationScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
+
+  renderPronunciationRules();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backFromPronunciationRules() {
+  pronunciationScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  setupScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.remove("hidden");
+}
+
+function renderPronunciationRules() {
+  if (!pronunciationRulesList) {
+    return;
+  }
+
+  pronunciationRulesList.innerHTML = "";
+
+  PRONUNCIATION_RULES.forEach((rule) => {
+    const article = document.createElement("article");
+    article.className = "pronunciation-rule";
+
+    const title = document.createElement("h3");
+    title.textContent = rule.title;
+
+    const text = document.createElement("p");
+    text.textContent = rule.text;
+
+    const examples = document.createElement("div");
+    examples.className = "pronunciation-examples";
+
+    rule.examples
+      .map(findCardWithAudioBySwedishTerm)
+      .filter(Boolean)
+      .forEach((card) => {
+        examples.appendChild(createPronunciationExampleButton(card));
+      });
+
+    if (examples.children.length === 0) {
+      const empty = document.createElement("p");
+      empty.className = "pronunciation-empty";
+      empty.textContent = "Nenhum exemplo com áudio encontrado no words.json para esta regra.";
+      examples.appendChild(empty);
+    }
+
+    article.append(title, text, examples);
+    pronunciationRulesList.appendChild(article);
+  });
+}
+
+function findCardWithAudioBySwedishTerm(term) {
+  const normalizedTerm = normalizePronunciationTerm(term);
+
+  return allCards.find((card) => {
+    const swedish = card.term?.swedish || "";
+    const audioSrc = card.media?.audio?.src;
+
+    return audioSrc && normalizePronunciationTerm(swedish) === normalizedTerm;
+  });
+}
+
+function normalizePronunciationTerm(value) {
+  return String(value)
+    .trim()
+    .toLocaleLowerCase("sv-SE")
+    .replace(/[.!?]+$/g, "");
+}
+
+function createPronunciationExampleButton(card) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "pronunciation-example";
+  button.dataset.audioSrc = card.media.audio.src;
+
+  const swedish = document.createElement("strong");
+  swedish.textContent = card.term.swedish;
+
+  const portuguese = document.createElement("span");
+  portuguese.textContent = card.term.portuguese;
+
+  const action = document.createElement("em");
+  action.textContent = "Ouvir";
+
+  button.append(swedish, portuguese, action);
+  return button;
+}
+
+function playPronunciationExample(event) {
+  const button = event.target.closest(".pronunciation-example");
+
+  if (!button) {
+    return;
+  }
+
+  const audioSrc = button.dataset.audioSrc;
+
+  if (!audioSrc) {
+    return;
+  }
+
+  const audio = new Audio(audioSrc);
+  audio.play().catch((error) => {
+    console.error("Erro ao tocar áudio do exemplo:", error);
+  });
+}
+
 function backToSetup() {
   stopStudyTimer();
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
   setupScreen.classList.remove("hidden");
   newWordsToggleButton.classList.remove("hidden");
 
@@ -472,6 +634,7 @@ if (isNewWordsMode) {
   isChangingCard = false;
 
   summaryScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
   setupScreen.classList.add("hidden");
   studyScreen.classList.remove("hidden");
   newWordsToggleButton.classList.add("hidden");
@@ -784,6 +947,7 @@ function showSummary() {
   stopStudyTimer();
   studyScreen.classList.add("hidden");
   setupScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
   summaryScreen.classList.remove("hidden");
 
   const total = correctCount + wrongCount;
@@ -1425,6 +1589,10 @@ answerModeSelect.addEventListener("change", updateModeUI);
 
 startSessionButton.addEventListener("click", startSession);
 backToSetupButton.addEventListener("click", backToSetup);
+
+pronunciationRulesButton.addEventListener("click", openPronunciationRules);
+backFromPronunciationButton.addEventListener("click", backFromPronunciationRules);
+pronunciationRulesList.addEventListener("click", playPronunciationExample);
 
 finishSessionButton.addEventListener("click", showSummary);
 repeatSessionButton.addEventListener("click", repeatSession);

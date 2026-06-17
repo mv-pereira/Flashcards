@@ -96,12 +96,15 @@
       </select>
     </label>
 
-    <button id="startSessionButton" class="button button-primary" type="button">
-      Começar estudo
-    </button>
+<button id="startSessionButton" class="button button-primary" type="button">
+  Começar estudo
+</button>
 
-    <p id="setupMessage" class="setup-message"></p>
-  </div>
+<button id="pronunciationRulesButton" class="button button-secondary" type="button">
+  Regras de pronúncia
+</button>
+
+<p id="setupMessage" class="setup-message"></p>
 </section>
 
 
@@ -190,6 +193,25 @@
 </section>
 
     <p id="message" class="message" role="status"></p>
+</section>
+
+<section id="pronunciationScreen" class="pronunciation-screen hidden" aria-label="Regras de pronúncia">
+  <button id="backFromPronunciationButton" class="back-button" type="button">
+    ← Voltar
+  </button>
+
+  <div class="pronunciation-card">
+    <div class="pronunciation-heading">
+      <p class="eyebrow">Sueco</p>
+      <h2>Regras de pronúncia</h2>
+      <p>
+        Resumo prático em português com exemplos do seu words.json.
+        Toque em “Ouvir” para escutar uma palavra de exemplo.
+      </p>
+    </div>
+
+    <div id="pronunciationRulesList" class="pronunciation-rules-list"></div>
+  </div>
 </section>
 
 <section id="summaryScreen" class="summary-screen hidden" aria-label="Resumo da sessão">
