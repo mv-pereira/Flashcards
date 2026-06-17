@@ -1,0 +1,4001 @@
+[
+  {
+    "id": 1,
+    "order": 1,
+    "active": true,
+    "term": {
+      "swedish": "en bok",
+      "portuguese": "um livro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "böcker",
+      "definite": "boken",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "objetos",
+      "chapter": 0
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/36251552/pexels-photo-36251552.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Elegant image of Virginia Woolf's book, highlighting its vintage cover.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/vintage-book-cover-of-virginia-woolf-s-classic-36251552/",
+        "author": "Esra Afşar",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sv-bok.ogg",
+        "source": "Wiktionary / Wikimedia Commons",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-bok.ogg",
+        "author": "karmosin",
+        "license": "CC BY-SA 3.0 / GFDL"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "order": 2,
+    "active": true,
+    "term": {
+      "swedish": "att äta",
+      "portuguese": "comer"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "äta",
+      "present": "äter",
+      "past": "åt",
+      "supine": "ätit"
+    },
+    "classification": {
+      "theme": "ações",
+      "chapter": 0
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/7129453/pexels-photo-7129453.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "A man in a thobe enjoys a traditional iftar meal indoors with string lights creating a cozy ambiance.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/man-having-dinner-7129453/",
+        "author": "Michael Burrows",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/LL-Q9027_%28swe%29-Moonhouse-%C3%A4ta.wav",
+        "source": "Wiktionary / Wikimedia Commons / Lingua Libre",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:LL-Q9027_(swe)-Moonhouse-%C3%A4ta.wav",
+        "author": "Moonhouse",
+        "license": "CC0 1.0"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "order": 3,
+    "active": true,
+    "term": {
+      "swedish": "Hur mår du?",
+      "portuguese": "Como você está?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 4,
+    "order": 4,
+    "active": true,
+    "term": {
+      "swedish": "noll",
+      "portuguese": "zero"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-noll.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-noll.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "order": 5,
+    "active": true,
+    "term": {
+      "swedish": "en/ett",
+      "portuguese": "um/uma"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 6,
+    "order": 6,
+    "active": true,
+    "term": {
+      "swedish": "två",
+      "portuguese": "dois/duas"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tv%C3%A5.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tv%C3%A5.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "order": 7,
+    "active": true,
+    "term": {
+      "swedish": "tre",
+      "portuguese": "três"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tre.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tre.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "order": 8,
+    "active": true,
+    "term": {
+      "swedish": "fyra",
+      "portuguese": "quatro"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-fyra.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-fyra.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "order": 9,
+    "active": true,
+    "term": {
+      "swedish": "fem",
+      "portuguese": "cinco"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-fem.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-fem.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "order": 10,
+    "active": true,
+    "term": {
+      "swedish": "sex",
+      "portuguese": "seis"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-sex.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-sex.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "order": 11,
+    "active": true,
+    "term": {
+      "swedish": "sju",
+      "portuguese": "sete"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-sju.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-sju.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "order": 12,
+    "active": true,
+    "term": {
+      "swedish": "åtta",
+      "portuguese": "oito"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-%C3%A5tta.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-%C3%A5tta.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "order": 13,
+    "active": true,
+    "term": {
+      "swedish": "nio",
+      "portuguese": "nove"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-nio.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-nio.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "order": 14,
+    "active": true,
+    "term": {
+      "swedish": "tio",
+      "portuguese": "dez"
+    },
+    "grammar": {
+      "type": "número",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "números",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tio.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tio.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "order": 15,
+    "active": true,
+    "term": {
+      "swedish": "måndag",
+      "portuguese": "segunda-feira"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-m%C3%A5ndag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-m%C3%A5ndag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "order": 16,
+    "active": true,
+    "term": {
+      "swedish": "tisdag",
+      "portuguese": "terça-feira"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tisdag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tisdag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "order": 17,
+    "active": true,
+    "term": {
+      "swedish": "onsdag",
+      "portuguese": "quarta-feira"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-onsdag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-onsdag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "order": 18,
+    "active": true,
+    "term": {
+      "swedish": "torsdag",
+      "portuguese": "quinta-feira"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-torsdag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-torsdag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "order": 19,
+    "active": true,
+    "term": {
+      "swedish": "fredag",
+      "portuguese": "sexta-feira"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-fredag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-fredag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "order": 20,
+    "active": true,
+    "term": {
+      "swedish": "lördag",
+      "portuguese": "sábado"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-l%C3%B6rdag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-l%C3%B6rdag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "order": 21,
+    "active": true,
+    "term": {
+      "swedish": "söndag",
+      "portuguese": "domingo"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "dias da semana",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-s%C3%B6ndag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-s%C3%B6ndag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 22,
+    "order": 22,
+    "active": true,
+    "term": {
+      "swedish": "Vad betyder det?",
+      "portuguese": "O que isso significa?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 23,
+    "order": 23,
+    "active": true,
+    "term": {
+      "swedish": "Hur säger man ... på svenska?",
+      "portuguese": "Como se diz ... em sueco?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 24,
+    "order": 24,
+    "active": true,
+    "term": {
+      "swedish": "Vad heter ... på svenska?",
+      "portuguese": "Como se chama ... em sueco?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 25,
+    "order": 25,
+    "active": true,
+    "term": {
+      "swedish": "Ursäkta?",
+      "portuguese": "Com licença? / Desculpa?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-urs%C3%A4kta.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-urs%C3%A4kta.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 26,
+    "order": 26,
+    "active": true,
+    "term": {
+      "swedish": "Kan du säga det en gång till?",
+      "portuguese": "Você pode dizer isso mais uma vez?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 27,
+    "order": 27,
+    "active": true,
+    "term": {
+      "swedish": "Hur uttalar man ...?",
+      "portuguese": "Como se pronuncia ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 28,
+    "order": 28,
+    "active": true,
+    "term": {
+      "swedish": "Hur stavar man ...?",
+      "portuguese": "Como se soletra ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 29,
+    "order": 29,
+    "active": true,
+    "term": {
+      "swedish": "Hur skriver man ...?",
+      "portuguese": "Como se escreve ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 30,
+    "order": 30,
+    "active": true,
+    "term": {
+      "swedish": "Jag förstår inte.",
+      "portuguese": "Eu não entendo."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 31,
+    "order": 31,
+    "active": true,
+    "term": {
+      "swedish": "Nu förstår jag.",
+      "portuguese": "Agora eu entendo."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 32,
+    "order": 32,
+    "active": true,
+    "term": {
+      "swedish": "Jag pratar lite svenska.",
+      "portuguese": "Eu falo um pouco de sueco."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "sala de aula",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 33,
+    "order": 33,
+    "active": true,
+    "term": {
+      "swedish": "Hej!",
+      "portuguese": "Oi!"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-hej.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-hej.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 34,
+    "order": 34,
+    "active": true,
+    "term": {
+      "swedish": "Tjena!",
+      "portuguese": "Oi! / E aí!"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tjena.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tjena.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 35,
+    "order": 35,
+    "active": true,
+    "term": {
+      "swedish": "Hur mår du?",
+      "portuguese": "Como você está?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 36,
+    "order": 36,
+    "active": true,
+    "term": {
+      "swedish": "Hur är det?",
+      "portuguese": "Como vai?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 37,
+    "order": 37,
+    "active": true,
+    "term": {
+      "swedish": "Hur är läget?",
+      "portuguese": "Como estão as coisas?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 38,
+    "order": 38,
+    "active": true,
+    "term": {
+      "swedish": "Och du? / Du då?",
+      "portuguese": "E você?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 39,
+    "order": 39,
+    "active": true,
+    "term": {
+      "swedish": "tack",
+      "portuguese": "obrigado/obrigada"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tack.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tack.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 40,
+    "order": 40,
+    "active": true,
+    "term": {
+      "swedish": "Ja, tack",
+      "portuguese": "Sim, obrigado/obrigada"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 41,
+    "order": 41,
+    "active": true,
+    "term": {
+      "swedish": "Nej, tack",
+      "portuguese": "Não, obrigado/obrigada"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 42,
+    "order": 42,
+    "active": true,
+    "term": {
+      "swedish": "Javisst",
+      "portuguese": "Claro / Certamente"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-javisst.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-javisst.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 43,
+    "order": 43,
+    "active": true,
+    "term": {
+      "swedish": "Jaha",
+      "portuguese": "Ah, entendi"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-jaha.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-jaha.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 44,
+    "order": 44,
+    "active": true,
+    "term": {
+      "swedish": "Vi ses!",
+      "portuguese": "Até mais!"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 45,
+    "order": 45,
+    "active": true,
+    "term": {
+      "swedish": "Hejdå!",
+      "portuguese": "Tchau!"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "saudações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-hejd%C3%A5.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-hejd%C3%A5.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 46,
+    "order": 46,
+    "active": true,
+    "term": {
+      "swedish": "Det är bra/fint, tack.",
+      "portuguese": "Estou bem, obrigado/obrigada."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 47,
+    "order": 47,
+    "active": true,
+    "term": {
+      "swedish": "Det är lugnt.",
+      "portuguese": "Está tudo tranquilo."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 48,
+    "order": 48,
+    "active": true,
+    "term": {
+      "swedish": "Sådär.",
+      "portuguese": "Mais ou menos."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-s%C3%A5d%C3%A4r.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-s%C3%A5d%C3%A4r.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 49,
+    "order": 49,
+    "active": true,
+    "term": {
+      "swedish": "Inte så bra.",
+      "portuguese": "Não muito bem."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 50,
+    "order": 50,
+    "active": true,
+    "term": {
+      "swedish": "Jag är trött.",
+      "portuguese": "Estou cansado/cansada."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 51,
+    "order": 51,
+    "active": true,
+    "term": {
+      "swedish": "Jag är stressad.",
+      "portuguese": "Estou estressado/estressada."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 52,
+    "order": 52,
+    "active": true,
+    "term": {
+      "swedish": "Jag är förkyld.",
+      "portuguese": "Estou resfriado/resfriada."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "respostas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 53,
+    "order": 53,
+    "active": true,
+    "term": {
+      "swedish": "Vad heter du?",
+      "portuguese": "Qual é o seu nome?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "perguntas pessoais",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 54,
+    "order": 54,
+    "active": true,
+    "term": {
+      "swedish": "Varifrån kommer du?",
+      "portuguese": "De onde você vem?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "perguntas pessoais",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 55,
+    "order": 55,
+    "active": true,
+    "term": {
+      "swedish": "Jag bor i Solna.",
+      "portuguese": "Eu moro em Solna."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "perguntas pessoais",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 56,
+    "order": 56,
+    "active": true,
+    "term": {
+      "swedish": "med min man och min dotter",
+      "portuguese": "com meu marido e minha filha"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 57,
+    "order": 57,
+    "active": true,
+    "term": {
+      "swedish": "men jag bor i Årsta",
+      "portuguese": "mas eu moro em Årsta"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "perguntas pessoais",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 58,
+    "order": 58,
+    "active": true,
+    "term": {
+      "swedish": "med min pojkvän",
+      "portuguese": "com meu namorado"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 59,
+    "order": 59,
+    "active": true,
+    "term": {
+      "swedish": "jag",
+      "portuguese": "eu"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-jag.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-jag.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 60,
+    "order": 60,
+    "active": true,
+    "term": {
+      "swedish": "du",
+      "portuguese": "você"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-du.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-du.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 61,
+    "order": 61,
+    "active": true,
+    "term": {
+      "swedish": "hon",
+      "portuguese": "ela"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-hon.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-hon.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 62,
+    "order": 62,
+    "active": true,
+    "term": {
+      "swedish": "han",
+      "portuguese": "ele"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-han.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-han.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 63,
+    "order": 63,
+    "active": true,
+    "term": {
+      "swedish": "hen",
+      "portuguese": "ele/ela"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-hen.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-hen.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 64,
+    "order": 64,
+    "active": true,
+    "term": {
+      "swedish": "den",
+      "portuguese": "ele/ela/isso"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-den.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-den.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 65,
+    "order": 65,
+    "active": true,
+    "term": {
+      "swedish": "det",
+      "portuguese": "ele/ela/isso"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": "ett",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-det.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-det.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 66,
+    "order": 66,
+    "active": true,
+    "term": {
+      "swedish": "man",
+      "portuguese": "a gente / uma pessoa"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-man.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-man.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 67,
+    "order": 67,
+    "active": true,
+    "term": {
+      "swedish": "vi",
+      "portuguese": "nós"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-vi.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-vi.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 68,
+    "order": 68,
+    "active": true,
+    "term": {
+      "swedish": "ni",
+      "portuguese": "vocês"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-ni.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-ni.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 69,
+    "order": 69,
+    "active": true,
+    "term": {
+      "swedish": "de",
+      "portuguese": "eles/elas"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pronomes",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-de.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-de.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 70,
+    "order": 70,
+    "active": true,
+    "term": {
+      "swedish": "singel",
+      "portuguese": "solteiro/solteira"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "estado civil",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-singel.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-singel.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 71,
+    "order": 71,
+    "active": true,
+    "term": {
+      "swedish": "sambo",
+      "portuguese": "companheiro/companheira que mora junto"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "estado civil",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-sambo.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-sambo.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 72,
+    "order": 72,
+    "active": true,
+    "term": {
+      "swedish": "gift",
+      "portuguese": "casado/casada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "estado civil",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-gift.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-gift.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 73,
+    "order": 73,
+    "active": true,
+    "term": {
+      "swedish": "skild",
+      "portuguese": "divorciado/divorciada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "estado civil",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-skild.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-skild.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 74,
+    "order": 74,
+    "active": true,
+    "term": {
+      "swedish": "separerad",
+      "portuguese": "separado/separada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "estado civil",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-separerad.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-separerad.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 75,
+    "order": 75,
+    "active": true,
+    "term": {
+      "swedish": "en flickvän",
+      "portuguese": "uma namorada"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-flickv%C3%A4n.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-flickv%C3%A4n.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 76,
+    "order": 76,
+    "active": true,
+    "term": {
+      "swedish": "en tjej",
+      "portuguese": "uma garota"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pessoas",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/15683759/pexels-photo-15683759.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de moda, tendência, férias e mulher.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/moda-tendencia-ferias-mulher-15683759/",
+        "author": "Pedro Inacio",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tjej.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tjej.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 77,
+    "order": 77,
+    "active": true,
+    "term": {
+      "swedish": "en pojkvän",
+      "portuguese": "um namorado"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-pojkv%C3%A4n.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-pojkv%C3%A4n.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 78,
+    "order": 78,
+    "active": true,
+    "term": {
+      "swedish": "en kille",
+      "portuguese": "um garoto"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "pessoas",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/7408371/pexels-photo-7408371.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de homem, retrato, sorridente e sorrindo.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-retrato-sorridente-sorrindo-7408371/",
+        "author": "Артем Смолдарев",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-kille.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-kille.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 79,
+    "order": 79,
+    "active": true,
+    "term": {
+      "swedish": "en fru",
+      "portuguese": "uma esposa"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-fru.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-fru.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 80,
+    "order": 80,
+    "active": true,
+    "term": {
+      "swedish": "en man",
+      "portuguese": "um marido / um homem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-man.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-man.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 81,
+    "order": 81,
+    "active": true,
+    "term": {
+      "swedish": "en dotter",
+      "portuguese": "uma filha"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "döttrar",
+      "definite": "dottern",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-dotter.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-dotter.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 82,
+    "order": 82,
+    "active": true,
+    "term": {
+      "swedish": "en son",
+      "portuguese": "um filho"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "söner",
+      "definite": "sonen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-son.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-son.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 83,
+    "order": 83,
+    "active": true,
+    "term": {
+      "swedish": "ett barn",
+      "portuguese": "uma criança / um filho"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "barn",
+      "definite": "barnet",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "família",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/17040651/pexels-photo-17040651.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de casas, residências, verão e jardim.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/casas-residencias-verao-jardim-17040651/",
+        "author": "João Pedro Lisboa",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-barn.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-barn.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 84,
+    "order": 84,
+    "active": true,
+    "term": {
+      "swedish": "arbeta",
+      "portuguese": "trabalhar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "arbeta",
+      "present": "arbetar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/8985714/pexels-photo-8985714.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de adulto, aparelhos, artesanato e homem trabalhando.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/preto-e-branco-p-b-homem-trabalhando-8985714/",
+        "author": "Artem Podrez",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-arbeta.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-arbeta.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 85,
+    "order": 85,
+    "active": true,
+    "term": {
+      "swedish": "jobba",
+      "portuguese": "trabalhar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "jobba",
+      "present": "jobbar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/7565167/pexels-photo-7565167.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de homem em oficina segurando peça de metal.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-metal-de-pe-segurando-7565167/",
+        "author": "cottonbro studio",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-jobba.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-jobba.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 86,
+    "order": 86,
+    "active": true,
+    "term": {
+      "swedish": "studera",
+      "portuguese": "estudar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "studera",
+      "present": "studerar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/4943613/pexels-photo-4943613.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de livros, mulheres, pesquisa e estudo.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/livros-mulheres-pesquisa-estudo-4943613/",
+        "author": "Nataliya Vaitkevich",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-studera.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-studera.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 87,
+    "order": 87,
+    "active": true,
+    "term": {
+      "swedish": "plugga",
+      "portuguese": "estudar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "plugga",
+      "present": "pluggar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/8199146/pexels-photo-8199146.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de homens, escola, aluno e estudante.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/homens-escola-aluno-estudante-8199146/",
+        "author": "Yan Krukau",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-plugga.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-plugga.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 88,
+    "order": 88,
+    "active": true,
+    "term": {
+      "swedish": "forska",
+      "portuguese": "pesquisar / fazer pesquisa"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "forska",
+      "present": "forskar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/4031319/pexels-photo-4031319.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de homem trabalhando em laboratório de pesquisa.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-trabalhando-laboratorio-pesquisa-4031319/",
+        "author": "Edward Jenner",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-forska.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-forska.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 89,
+    "order": 89,
+    "active": true,
+    "term": {
+      "swedish": "undervisa",
+      "portuguese": "ensinar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "undervisa",
+      "present": "undervisar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/34676330/pexels-photo-34676330.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Jovem mulher com camisa estampada escrevendo em um quadro branco, possivelmente em uma sala de aula.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/jovem-mulher-escrevendo-em-um-quadro-branco-na-sala-de-aula-34676330/",
+        "author": "Wolf Art",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-undervisa.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-undervisa.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 90,
+    "order": 90,
+    "active": true,
+    "term": {
+      "swedish": "tala",
+      "portuguese": "falar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "tala",
+      "present": "talar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/30535632/pexels-photo-30535632.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Close-up de boca masculina falando ao celular contra fundo desfocado de escritório.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/close-up-de-boca-masculina-falando-ao-celular-contra-fundo-desfocado-de-escritorio-comunicacao-profissional-e-conceito-de-tecnologia-moderna-30535632/",
+        "author": "Vitaly Gariev",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tala.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-tala.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 91,
+    "order": 91,
+    "active": true,
+    "term": {
+      "swedish": "prata",
+      "portuguese": "falar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "prata",
+      "present": "pratar",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/7516279/pexels-photo-7516279.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de mulheres conversando à mesa em ambiente de estudo.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/mulheres-mesa-borrao-mancha-7516279/",
+        "author": "SHVETS production",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-prata.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-prata.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 92,
+    "order": 92,
+    "active": true,
+    "term": {
+      "swedish": "en student",
+      "portuguese": "um estudante / uma estudante"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/7516279/pexels-photo-7516279.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Foto profissional grátis de mulheres conversando à mesa em ambiente de estudo.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/mulheres-mesa-borrao-mancha-7516279/",
+        "author": "SHVETS production",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-student.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-student.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 93,
+    "order": 93,
+    "active": true,
+    "term": {
+      "swedish": "en lärare",
+      "portuguese": "um professor / uma professora"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "lärare",
+      "definite": "läraren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "trabalho e estudo",
+      "chapter": 1
+    },
+    "media": {
+      "image": {
+        "src": "https://images.pexels.com/photos/8423011/pexels-photo-8423011.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "alt": "Professora do ensino fundamental atrás da mesa na sala de aula no primeiro dia do novo ano letivo.",
+        "source": "Pexels",
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/professora-do-ensino-fundamental-atras-da-mesa-na-sala-de-aula-no-primeiro-dia-do-novo-ano-letivo-8423011/",
+        "author": "Pavel Danilyuk",
+        "license": "Pexels License"
+      },
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-l%C3%A4rare.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-l%C3%A4rare.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 94,
+    "order": 94,
+    "active": true,
+    "term": {
+      "swedish": "Du kommer inte från Sverige, va?",
+      "portuguese": "Você não vem da Suécia, né?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "idiomas e países",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 95,
+    "order": 95,
+    "active": true,
+    "term": {
+      "swedish": "Vad talar du för språk?",
+      "portuguese": "Que língua você fala?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "idiomas e países",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 96,
+    "order": 96,
+    "active": true,
+    "term": {
+      "swedish": "polska",
+      "portuguese": "polonês / polonesa"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "idiomas e países",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-polska.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-polska.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 97,
+    "order": 97,
+    "active": true,
+    "term": {
+      "swedish": "Nähä",
+      "portuguese": "Ah, não? / Sério?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "reações",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-n%C3%A4h%C3%A4.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-n%C3%A4h%C3%A4.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 98,
+    "order": 98,
+    "active": true,
+    "term": {
+      "swedish": "Jag pratar italienska, engelska och svenska.",
+      "portuguese": "Eu falo italiano, inglês e sueco."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "idiomas e países",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 99,
+    "order": 99,
+    "active": true,
+    "term": {
+      "swedish": "Jag förstår lite tyska också.",
+      "portuguese": "Eu também entendo um pouco de alemão."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "idiomas e países",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  },
+  {
+    "id": 100,
+    "order": 100,
+    "active": true,
+    "term": {
+      "swedish": "varför",
+      "portuguese": "por quê"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras úteis",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-varf%C3%B6r.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-varf%C3%B6r.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 101,
+    "order": 101,
+    "active": true,
+    "term": {
+      "swedish": "gör",
+      "portuguese": "faz"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "göra",
+      "present": "gör",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-g%C3%B6r.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-g%C3%B6r.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 102,
+    "order": 102,
+    "active": true,
+    "term": {
+      "swedish": "faktiskt",
+      "portuguese": "na verdade / de fato"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras úteis",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-faktiskt.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-faktiskt.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 103,
+    "order": 103,
+    "active": true,
+    "term": {
+      "swedish": "kul",
+      "portuguese": "legal / divertido"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras úteis",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-kul.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-kul.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 104,
+    "order": 104,
+    "active": true,
+    "term": {
+      "swedish": "svensk",
+      "portuguese": "sueco/sueca"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "idiomas e países",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-svensk.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-svensk.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 105,
+    "order": 105,
+    "active": true,
+    "term": {
+      "swedish": "komma",
+      "portuguese": "vir"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "komma",
+      "present": "kommer",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-komma.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-komma.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 106,
+    "order": 106,
+    "active": true,
+    "term": {
+      "swedish": "heta",
+      "portuguese": "chamar-se"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "heta",
+      "present": "heter",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-heta.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-heta.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 107,
+    "order": 107,
+    "active": true,
+    "term": {
+      "swedish": "bo",
+      "portuguese": "morar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "bo",
+      "present": "bor",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-bo.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-bo.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 108,
+    "order": 108,
+    "active": true,
+    "term": {
+      "swedish": "förstå",
+      "portuguese": "entender"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "förstå",
+      "present": "förstår",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-f%C3%B6rst%C3%A5.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-f%C3%B6rst%C3%A5.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 109,
+    "order": 109,
+    "active": true,
+    "term": {
+      "swedish": "må",
+      "portuguese": "sentir-se / estar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "må",
+      "present": "mår",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-m%C3%A5.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-m%C3%A5.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 110,
+    "order": 110,
+    "active": true,
+    "term": {
+      "swedish": "vara",
+      "portuguese": "ser / estar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "vara",
+      "present": "är",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-vara.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-vara.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 111,
+    "order": 111,
+    "active": true,
+    "term": {
+      "swedish": "göra",
+      "portuguese": "fazer"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "göra",
+      "present": "gör",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "verbos",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-g%C3%B6ra.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-g%C3%B6ra.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 112,
+    "order": 112,
+    "active": true,
+    "term": {
+      "swedish": "vad",
+      "portuguese": "o que"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-vad.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-vad.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 113,
+    "order": 113,
+    "active": true,
+    "term": {
+      "swedish": "var",
+      "portuguese": "onde"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-var.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-var.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 114,
+    "order": 114,
+    "active": true,
+    "term": {
+      "swedish": "varifrån",
+      "portuguese": "de onde"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-varifr%C3%A5n.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-varifr%C3%A5n.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 115,
+    "order": 115,
+    "active": true,
+    "term": {
+      "swedish": "hur",
+      "portuguese": "como"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-hur.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-hur.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 116,
+    "order": 116,
+    "active": true,
+    "term": {
+      "swedish": "när",
+      "portuguese": "quando"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-n%C3%A4r.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-n%C3%A4r.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 117,
+    "order": 117,
+    "active": true,
+    "term": {
+      "swedish": "vem",
+      "portuguese": "quem"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-vem.ogg",
+        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
+        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-vem.ogg",
+        "author": "M. Kihlstedt, N. Vion",
+        "license": "CC BY 2.0 fr"
+      }
+    }
+  },
+  {
+    "id": 118,
+    "order": 118,
+    "active": true,
+    "term": {
+      "swedish": "vilka",
+      "portuguese": "quais / quem"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "theme": "palavras interrogativas",
+      "chapter": 1
+    },
+    "media": {
+      "image": null,
+      "audio": {
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
+      }
+    }
+  }
+]

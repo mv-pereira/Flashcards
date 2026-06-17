@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f6f8" />
+  <title>Flashcards de Sueco</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+<header class="app-header">
+  <div>
+    <p class="eyebrow">Sueco</p>
+    <h1>Flashcards</h1>
+  </div>
+
+  <div class="header-actions">
+    <button id="newWordsToggleButton" class="theme-toggle-button" type="button">
+      Palavras novas
+    </button>
+
+    <button id="themeToggleButton" class="theme-toggle-button" type="button">
+      Tema escuro
+    </button>
+  </div>
+</header>
+
+<section id="setupScreen" class="setup-screen" aria-label="Configuração da sessão">
+  <div class="setup-card">
+    <h2>Configurar estudo</h2>
+
+<p id="newWordsModeInfo" class="mode-info hidden">
+  Modo palavras novas ativo: as palavras serão introduzidas gradualmente até esgotar os cards filtrados.
+</p>
+
+<label id="newWordsOrderLabel" class="hidden" for="newWordsOrderSelect">
+  Ordem das palavras novas
+  <select id="newWordsOrderSelect">
+    <option value="json">Ordem do JSON</option>
+    <option value="random">Aleatória</option>
+  </select>
+</label>
+
+    <label for="typeFilter">
+      Tipo de palavra
+      <select id="typeFilter">
+        <option value="all">Todos</option>
+      </select>
+    </label>
+
+    <label for="themeFilter">
+      Tema
+      <select id="themeFilter">
+        <option value="all">Todos</option>
+      </select>
+    </label>
+
+    <label for="chapterFilter">
+      Capítulo
+      <select id="chapterFilter">
+        <option value="all">Todos</option>
+      </select>
+    </label>
+
+<label for="firstRoundOrderSelect">
+  Ordem da primeira rodada
+  <select id="firstRoundOrderSelect">
+    <option value="json">Ordem do JSON</option>
+    <option value="random">Aleatória</option>
+  </select>
+</label>
+
+    <label for="directionSelect">
+      Direção
+  <select id="directionSelect">
+    <option value="sv-pt">Sueco → Português</option>
+    <option value="pt-sv">Português → Sueco</option>
+    <option value="img-sv">Imagem → Sueco</option>
+    <option value="audio-pt">Áudio sueco → Português</option>
+      </select>
+    </label>
+
+    <label id="answerModeLabel" for="answerModeSelect">
+      Modo
+      <select id="answerModeSelect">
+        <option value="think">Pensar e virar</option>
+        <option value="write">Escrever em sueco</option>
+      </select>
+    </label>
+
+    <button id="startSessionButton" class="button button-primary" type="button">
+      Começar estudo
+    </button>
+
+    <p id="setupMessage" class="setup-message"></p>
+  </div>
+</section>
+
+
+<section id="studyScreen" class="study-screen hidden" aria-label="Sessão de estudo">
+
+<button id="backToSetupButton" class="back-button" type="button">
+  ← Configurações
+</button>
+
+<section id="flashcard" class="card" aria-label="Flashcard atual" role="button" tabindex="0">
+  <div class="card-inner">
+<div class="card-face card-front">
+  <div id="cardImageWrap" class="card-image-wrap hidden">
+    <img id="cardImage" class="card-image" src="" alt="" loading="lazy" />
+  </div>
+
+<div id="cardAudioWrap" class="card-audio-wrap hidden">
+  <button id="playAudioButton" class="audio-button" type="button">
+    Ouvir áudio
+  </button>
+
+  <button id="showSwedishFromAudioButton" class="audio-secondary-button" type="button">
+    Mostrar sueco
+  </button>
+
+  <p id="audioSwedishText" class="audio-swedish-text hidden"></p>
+
+  <audio id="cardAudio" preload="metadata"></audio>
+</div>
+
+  <p id="questionLabel" class="card-label">Sueco</p>
+  <h2 id="questionText" class="question">Carregando...</h2>
+</div>
+
+    <div class="card-face card-back">
+      <p id="answerLabel" class="card-label">Português</p>
+      <p id="answerText" class="answer"></p>
+
+      <div id="writeResultBox" class="write-result-box hidden">
+        <p>Sua resposta:</p>
+        <strong id="userAnswerText"></strong>
+      </div>
+
+      <p id="backHint" class="back-hint">Marque se você acertou ou errou.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="controls" aria-label="Controles do flashcard">
+  <div id="writeBox" class="write-box hidden">
+    <label for="answerInput">Escreva sua resposta</label>
+    <input
+      id="answerInput"
+      type="text"
+      autocomplete="off"
+      autocapitalize="none"
+      spellcheck="false"
+      placeholder="Digite aqui..."
+    />
+
+    <button id="checkAnswerButton" class="button button-primary" type="button">
+      Comparar resposta
+    </button>
+  </div>
+
+  <div class="result-buttons">
+    <button id="wrongButton" class="button button-wrong" type="button" disabled>
+      Errei
+    </button>
+
+    <button id="correctButton" class="button button-correct" type="button" disabled>
+      Acertei
+    </button>
+  </div>
+
+  <button id="performanceButton" class="button button-secondary" type="button">
+    Ver desempenho
+  </button>
+
+<button id="timeButton" class="button button-secondary" type="button">
+  Ver tempo
+</button>
+
+<button id="finishSessionButton" class="button button-secondary" type="button">
+  Encerrar sessão
+</button>
+
+  <div id="performanceBox" class="performance-box hidden">
+    <p><strong>Acertos:</strong> <span id="correctPercent">0%</span></p>
+    <p><strong>Erros:</strong> <span id="wrongPercent">0%</span></p>
+  </div>
+
+<div id="timeBox" class="time-box hidden">
+  <p><strong>Tempo de estudo:</strong> <span id="studyTimeText">00:00</span></p>
+</div>
+</section>
+
+    <p id="message" class="message" role="status"></p>
+</section>
+
+<section id="summaryScreen" class="summary-screen hidden" aria-label="Resumo da sessão">
+  <div class="summary-card">
+    <h2>Resumo da sessão</h2>
+
+    <div class="summary-grid">
+      <div>
+        <span>Cards respondidos</span>
+        <strong id="summaryTotal">0</strong>
+      </div>
+
+      <div>
+        <span>Acertos</span>
+        <strong id="summaryCorrect">0</strong>
+      </div>
+
+      <div>
+        <span>Erros</span>
+        <strong id="summaryWrong">0</strong>
+      </div>
+
+      <div>
+        <span>Taxa de acerto</span>
+        <strong id="summaryCorrectRate">0%</strong>
+      </div>
+
+<div>
+  <span>Tempo</span>
+  <strong id="summaryTime">00:00</strong>
+</div>
+    </div>
+
+    <h3>Mais erradas nesta sessão</h3>
+    <ol id="summaryWrongList" class="summary-list"></ol>
+
+    <div class="summary-actions">
+      <button id="repeatSessionButton" class="button button-primary" type="button">
+        Repetir sessão
+      </button>
+
+      <button id="newSessionButton" class="button button-secondary" type="button">
+        Nova configuração
+      </button>
+    </div>
+  </div>
+</section>
+
+  </main>
+</body>
+</html>
