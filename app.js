@@ -461,6 +461,25 @@ function getCardWeight(cardStats) {
   return clamp(rawWeight, 1, 5);
 }
 
+function shouldSkipEasyCard(cardStats) {
+  const wrong = cardStats.wrong || 0;
+  const correct = cardStats.correct || 0;
+
+  if (wrong > 0) {
+    return false;
+  }
+
+  if (correct >= 4) {
+    return Math.random() < 0.75;
+  }
+
+  if (correct >= 2) {
+    return Math.random() < 0.5;
+  }
+
+  return false;
+}
+
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
@@ -933,12 +952,21 @@ function buildWeightedDeck(filteredCards) {
 
   filteredCards.forEach((card) => {
     const cardStats = getCardStats(card.id);
+
+    if (shouldSkipEasyCard(cardStats)) {
+      return;
+    }
+
     const weight = getCardWeight(cardStats);
 
     for (let i = 0; i < weight; i++) {
       weightedDeck.push(card);
     }
   });
+
+  if (weightedDeck.length === 0) {
+    return shuffleArray(filteredCards);
+  }
 
   return shuffleArray(weightedDeck);
 }
