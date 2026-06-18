@@ -1,17 +1,23 @@
 :root {
-  --bg: #f5f6f8;
-  --text: #15171a;
-  --muted: #657080;
-  --card: #ffffff;
-  --border: #d9dde3;
-  --soft: #eef1f5;
-  --primary: #2457d6;
-  --primary-pressed: #1d46ad;
-  --danger: #b42318;
-  --danger-pressed: #8f1d14;
-  --success: #157347;
-  --success-pressed: #0f5c38;
-  --shadow: 0 16px 38px rgba(0, 0, 0, 0.09);
+  --bg: #f7f4ea;
+  --text: #172033;
+  --muted: #6e7480;
+  --card: #fffdf7;
+  --border: #ded8c8;
+  --soft: #f0ead9;
+
+  --primary: #4d77a8;
+  --primary-pressed: #3f638e;
+
+  --accent: #e3c765;
+  --accent-soft: #f5ebc5;
+
+  --danger: #b85c52;
+  --danger-pressed: #984940;
+  --success: #4f8465;
+  --success-pressed: #3f6b51;
+
+  --shadow: 0 16px 38px rgba(45, 52, 68, 0.10);
   --radius-large: 24px;
   --radius-medium: 16px;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -36,9 +42,9 @@
 }
 
 .theme-toggle-button.active {
-  background: var(--primary);
-  color: #ffffff;
-  border-color: var(--primary);
+  background: var(--accent-soft);
+  color: var(--text);
+  border-color: var(--accent);
 }
 
 .mode-info {
@@ -53,19 +59,25 @@
 }
 
 body.dark-theme {
-  --bg: #111318;
-  --text: #f4f6f8;
-  --muted: #a5adba;
-  --card: #1b1f27;
-  --border: #333a46;
-  --soft: #252b35;
-  --primary: #6c8cff;
-  --primary-pressed: #5572d8;
-  --danger: #ff6b6b;
-  --danger-pressed: #d94f4f;
-  --success: #4fd18b;
-  --success-pressed: #38ad6f;
-  --shadow: 0 16px 38px rgba(0, 0, 0, 0.32);
+  --bg: #101826;
+  --text: #f3f0e6;
+  --muted: #aeb6c3;
+  --card: #182235;
+  --border: #334158;
+  --soft: #22304a;
+
+  --primary: #7fa7d6;
+  --primary-pressed: #6a91c2;
+
+  --accent: #d9c36f;
+  --accent-soft: #3a3444;
+
+  --danger: #e58a80;
+  --danger-pressed: #c87168;
+  --success: #85c39b;
+  --success-pressed: #6aaa82;
+
+  --shadow: 0 16px 38px rgba(0, 0, 0, 0.34);
 }
 
 * {
@@ -134,11 +146,19 @@ button {
 }
 
 .button-secondary {
-  background: #3f4652;
+  background: #6f7f94;
 }
 
 .button-secondary:active:not(:disabled) {
-  background: #303640;
+  background: #5b6a7d;
+}
+
+body.dark-theme .button-secondary {
+  background: #465a78;
+}
+
+body.dark-theme .button-secondary:active:not(:disabled) {
+  background: #3a4b65;
 }
 
 .performance-box,
@@ -249,7 +269,7 @@ button {
   margin: 0;
   padding: 10px 12px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 253, 247, 0.90);
   color: var(--text);
   font-size: clamp(1.25rem, 6vw, 2rem);
   line-height: 1.08;
@@ -260,7 +280,7 @@ button {
 }
 
 body.dark-theme .image-swedish-text {
-  background: rgba(27, 31, 39, 0.88);
+  background: rgba(24, 34, 53, 0.90);
 }
 
 .card-label {
@@ -403,7 +423,7 @@ body.dark-theme .image-swedish-text {
 }
 
 .setup-card select:focus {
-  outline: 3px solid rgba(36, 87, 214, 0.22);
+  outline: 3px solid rgba(77, 119, 168, 0.24);
   border-color: var(--primary);
 }
 
@@ -486,7 +506,7 @@ body.dark-theme .image-swedish-text {
 
 .write-box input:focus,
 .setup-card select:focus {
-  outline: 3px solid rgba(36, 87, 214, 0.22);
+  outline: 3px solid rgba(77, 119, 168, 0.24);
   border-color: var(--primary);
 }
 

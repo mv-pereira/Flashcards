@@ -1517,10 +1517,20 @@ function toggleTheme() {
 }
 
 function updateThemeButtonText() {
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
   if (document.body.classList.contains("dark-theme")) {
     themeToggleButton.textContent = "Tema claro";
+
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute("content", "#101826");
+    }
   } else {
     themeToggleButton.textContent = "Tema escuro";
+
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute("content", "#f7f4ea");
+    }
   }
 }
 
