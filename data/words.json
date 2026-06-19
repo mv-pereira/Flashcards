@@ -48,7 +48,7 @@
     "order": 2,
     "active": true,
     "term": {
-      "swedish": "att äta",
+      "swedish": "äta",
       "portuguese": "comer"
     },
     "grammar": {
@@ -5218,7 +5218,7 @@
     "order": 139,
     "active": true,
     "term": {
-      "swedish": "att ringa",
+      "swedish": "ringa",
       "portuguese": "tocar / telefonar"
     },
     "grammar": {
@@ -5257,7 +5257,7 @@
     "order": 140,
     "active": true,
     "term": {
-      "swedish": "att känna",
+      "swedish": "känna",
       "portuguese": "sentir"
     },
     "grammar": {
@@ -5296,7 +5296,7 @@
     "order": 141,
     "active": true,
     "term": {
-      "swedish": "att blekna",
+      "swedish": "blekna",
       "portuguese": "desbotar / empalidecer"
     },
     "grammar": {
@@ -5335,7 +5335,7 @@
     "order": 142,
     "active": true,
     "term": {
-      "swedish": "att vända",
+      "swedish": "vända",
       "portuguese": "virar / mudar de direção"
     },
     "grammar": {
@@ -5374,7 +5374,7 @@
     "order": 143,
     "active": true,
     "term": {
-      "swedish": "att resa",
+      "swedish": "resa",
       "portuguese": "erguer / levantar"
     },
     "grammar": {
@@ -5413,7 +5413,7 @@
     "order": 144,
     "active": true,
     "term": {
-      "swedish": "att rulla",
+      "swedish": "rulla",
       "portuguese": "rolar / andar sobre rodas"
     },
     "grammar": {
@@ -5452,7 +5452,7 @@
     "order": 145,
     "active": true,
     "term": {
-      "swedish": "att hälsa",
+      "swedish": "hälsa",
       "portuguese": "cumprimentar / saudar"
     },
     "grammar": {
@@ -5491,7 +5491,7 @@
     "order": 146,
     "active": true,
     "term": {
-      "swedish": "att passa sig",
+      "swedish": "passa sig",
       "portuguese": "tomar cuidado"
     },
     "grammar": {
@@ -5530,7 +5530,7 @@
     "order": 147,
     "active": true,
     "term": {
-      "swedish": "att jaga",
+      "swedish": "jaga",
       "portuguese": "perseguir / caçar"
     },
     "grammar": {
@@ -5569,7 +5569,7 @@
     "order": 148,
     "active": true,
     "term": {
-      "swedish": "att finnas",
+      "swedish": "finnas",
       "portuguese": "existir / haver"
     },
     "grammar": {
@@ -5608,7 +5608,7 @@
     "order": 149,
     "active": true,
     "term": {
-      "swedish": "att dunsta",
+      "swedish": "dunsta",
       "portuguese": "evaporar"
     },
     "grammar": {
@@ -5647,7 +5647,7 @@
     "order": 150,
     "active": true,
     "term": {
-      "swedish": "att tystna",
+      "swedish": "tystna",
       "portuguese": "silenciar / calar-se"
     },
     "grammar": {
@@ -5686,7 +5686,7 @@
     "order": 151,
     "active": true,
     "term": {
-      "swedish": "att köpa",
+      "swedish": "köpa",
       "portuguese": "comprar"
     },
     "grammar": {
@@ -5725,7 +5725,7 @@
     "order": 152,
     "active": true,
     "term": {
-      "swedish": "att beskriva",
+      "swedish": "beskriva",
       "portuguese": "descrever"
     },
     "grammar": {
@@ -5764,7 +5764,7 @@
     "order": 153,
     "active": true,
     "term": {
-      "swedish": "att komma ihåg",
+      "swedish": "komma ihåg",
       "portuguese": "lembrar-se"
     },
     "grammar": {
@@ -5803,7 +5803,7 @@
     "order": 154,
     "active": true,
     "term": {
-      "swedish": "att veta",
+      "swedish": "veta",
       "portuguese": "saber"
     },
     "grammar": {
@@ -5842,7 +5842,7 @@
     "order": 155,
     "active": true,
     "term": {
-      "swedish": "att tänka",
+      "swedish": "tänka",
       "portuguese": "pensar"
     },
     "grammar": {
@@ -5881,7 +5881,7 @@
     "order": 156,
     "active": true,
     "term": {
-      "swedish": "att klappa",
+      "swedish": "klappa",
       "portuguese": "bater / pulsar"
     },
     "grammar": {
@@ -5920,7 +5920,7 @@
     "order": 157,
     "active": true,
     "term": {
-      "swedish": "att vibrera",
+      "swedish": "vibrera",
       "portuguese": "vibrar"
     },
     "grammar": {
@@ -5959,7 +5959,7 @@
     "order": 158,
     "active": true,
     "term": {
-      "swedish": "att sjunga",
+      "swedish": "sjunga",
       "portuguese": "cantar"
     },
     "grammar": {
@@ -5998,7 +5998,7 @@
     "order": 159,
     "active": true,
     "term": {
-      "swedish": "att hända",
+      "swedish": "hända",
       "portuguese": "acontecer"
     },
     "grammar": {
