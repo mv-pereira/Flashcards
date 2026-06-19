@@ -104,6 +104,10 @@
   Regras de pronúncia
 </button>
 
+<button id="wordsButton" class="button button-secondary" type="button">
+  Palavras
+</button>
+
 <p id="setupMessage" class="setup-message"></p>
 </section>
 
@@ -211,6 +215,32 @@
     </div>
 
     <div id="pronunciationRulesList" class="pronunciation-rules-list"></div>
+  </div>
+</section>
+
+<section id="wordsScreen" class="words-screen hidden" aria-label="Palavras filtradas">
+  <button id="backFromWordsButton" class="back-button" type="button">
+    ← Voltar
+  </button>
+
+  <div class="words-card">
+    <div class="words-heading">
+      <p class="eyebrow">Dicionário</p>
+      <h2>Palavras</h2>
+      <p>
+        Lista gerada de acordo com os filtros escolhidos na configuração.
+      </p>
+    </div>
+
+    <div class="words-toolbar">
+      <button id="wordsDirectionButton" class="theme-toggle-button" type="button">
+        Sueco → Português
+      </button>
+
+      <p id="wordsCount" class="words-count"></p>
+    </div>
+
+    <div id="wordsList" class="words-list"></div>
   </div>
 </section>
 

@@ -23,6 +23,9 @@ let sessionStartTime = null;
 let elapsedBeforePause = 0;
 let timerIntervalId = null;
 
+let wordsDirection = "sv-pt";
+let expandedWordCardId = null;
+
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
@@ -104,6 +107,13 @@ const pronunciationRulesButton = document.querySelector("#pronunciationRulesButt
 const pronunciationScreen = document.querySelector("#pronunciationScreen");
 const backFromPronunciationButton = document.querySelector("#backFromPronunciationButton");
 const pronunciationRulesList = document.querySelector("#pronunciationRulesList");
+
+const wordsButton = document.querySelector("#wordsButton");
+const wordsScreen = document.querySelector("#wordsScreen");
+const backFromWordsButton = document.querySelector("#backFromWordsButton");
+const wordsDirectionButton = document.querySelector("#wordsDirectionButton");
+const wordsCount = document.querySelector("#wordsCount");
+const wordsList = document.querySelector("#wordsList");
 
 const questionLabel = document.querySelector("#questionLabel");
 
@@ -410,6 +420,7 @@ if (isNewWordsMode) {
   setupScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   pronunciationScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
   studyScreen.classList.remove("hidden");
   newWordsToggleButton.classList.add("hidden");
 
@@ -510,6 +521,7 @@ function openPronunciationRules() {
   setupScreen.classList.add("hidden");
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
   pronunciationScreen.classList.remove("hidden");
   newWordsToggleButton.classList.add("hidden");
 
@@ -519,6 +531,7 @@ function openPronunciationRules() {
 
 function backFromPronunciationRules() {
   pronunciationScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   setupScreen.classList.remove("hidden");
@@ -625,6 +638,7 @@ function backToSetup() {
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   pronunciationScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
   setupScreen.classList.remove("hidden");
   newWordsToggleButton.classList.remove("hidden");
 
@@ -654,6 +668,7 @@ if (isNewWordsMode) {
 
   summaryScreen.classList.add("hidden");
   pronunciationScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
   setupScreen.classList.add("hidden");
   studyScreen.classList.remove("hidden");
   newWordsToggleButton.classList.add("hidden");
@@ -976,6 +991,7 @@ function showSummary() {
   studyScreen.classList.add("hidden");
   setupScreen.classList.add("hidden");
   pronunciationScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
   summaryScreen.classList.remove("hidden");
 
   const total = correctCount + wrongCount;
@@ -1591,6 +1607,233 @@ function capitalizeFirstLetter(text) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
+function openWordsScreen() {
+  stopStudyTimer();
+  setupMessage.textContent = "";
+
+  expandedWordCardId = null;
+
+  setupScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
+  wordsScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
+
+  renderWordsList();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backFromWordsScreen() {
+  wordsScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
+  setupScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.remove("hidden");
+}
+
+function toggleWordsDirection() {
+  wordsDirection = wordsDirection === "sv-pt" ? "pt-sv" : "sv-pt";
+  expandedWordCardId = null;
+  renderWordsList();
+}
+
+function renderWordsList() {
+  if (!wordsList) {
+    return;
+  }
+
+  const filteredCards = getFilteredCards();
+
+  wordsDirectionButton.textContent =
+    wordsDirection === "sv-pt" ? "Sueco → Português" : "Português → Sueco";
+
+  wordsCount.textContent =
+    filteredCards.length === 1
+      ? "1 palavra"
+      : `${filteredCards.length} palavras`;
+
+  wordsList.innerHTML = "";
+
+  if (filteredCards.length === 0) {
+    const emptyMessage = document.createElement("p");
+    emptyMessage.className = "words-empty";
+    emptyMessage.textContent = "Nenhuma palavra encontrada com esses filtros.";
+    wordsList.appendChild(emptyMessage);
+    return;
+  }
+
+  const sortedCards = [...filteredCards].sort((a, b) => {
+    const aText = getWordPrimaryText(a);
+    const bText = getWordPrimaryText(b);
+
+    return aText.localeCompare(bText, "sv-SE");
+  });
+
+  sortedCards.forEach((card) => {
+    wordsList.appendChild(createWordItem(card));
+  });
+}
+
+function createWordItem(card) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "word-item";
+  button.dataset.cardId = String(card.id);
+
+  const main = document.createElement("div");
+  main.className = "word-item-main";
+
+  const primary = document.createElement("strong");
+  primary.textContent = getWordPrimaryText(card);
+
+  const secondary = document.createElement("span");
+  secondary.textContent = getWordSecondaryText(card);
+
+  main.append(primary, secondary);
+  button.appendChild(main);
+
+  if (String(card.id) === String(expandedWordCardId)) {
+    button.appendChild(createWordDetails(card));
+  }
+
+  return button;
+}
+
+function createWordDetails(card) {
+  const details = document.createElement("div");
+  details.className = "word-details";
+
+  const meta = document.createElement("p");
+  meta.className = "word-meta";
+  meta.textContent = getWordMetaText(card);
+  details.appendChild(meta);
+
+  const hasAudio = Boolean(card.media?.audio?.src);
+  const hasImage = Boolean(card.media?.image?.src);
+
+  if (!hasAudio && !hasImage) {
+    const noMedia = document.createElement("p");
+    noMedia.className = "word-meta";
+    noMedia.textContent = "Sem áudio ou imagem para esta palavra.";
+    details.appendChild(noMedia);
+    return details;
+  }
+
+  const mediaActions = document.createElement("div");
+  mediaActions.className = "word-media-actions";
+
+  if (hasAudio) {
+    const audioButton = document.createElement("button");
+    audioButton.type = "button";
+    audioButton.className = "word-audio-button";
+    audioButton.dataset.audioSrc = card.media.audio.src;
+    audioButton.textContent = "Ouvir áudio";
+
+    mediaActions.appendChild(audioButton);
+  }
+
+  if (hasImage) {
+    const image = document.createElement("img");
+    image.className = "word-image";
+    image.src = card.media.image.src;
+    image.alt = card.media.image.alt || card.term.swedish;
+    image.loading = "lazy";
+
+    mediaActions.appendChild(image);
+  }
+
+  details.appendChild(mediaActions);
+
+  return details;
+}
+
+function getWordPrimaryText(card) {
+  if (wordsDirection === "sv-pt") {
+    return card.term.swedish;
+  }
+
+  return card.term.portuguese;
+}
+
+function getWordSecondaryText(card) {
+  if (wordsDirection === "sv-pt") {
+    return card.term.portuguese;
+  }
+
+  return card.term.swedish;
+}
+
+function getWordMetaText(card) {
+  const parts = [];
+
+  if (card.grammar?.type) {
+    parts.push(`Tipo: ${card.grammar.type}`);
+  }
+
+  const themes = getCardThemes(card);
+
+  if (themes.length > 0) {
+    parts.push(`Tema: ${themes.join(", ")}`);
+  }
+
+  const source = getCardSource(card);
+
+  if (source) {
+    parts.push(`Origem: ${source}`);
+  }
+
+  if (source === "livro" && card.classification?.chapter) {
+    parts.push(`Capítulo: ${card.classification.chapter}`);
+  }
+
+  if (source === "música" && getCardSourceTitle(card)) {
+    parts.push(`Música: ${getCardSourceTitle(card)}`);
+  }
+
+  return parts.join(" · ");
+}
+
+function handleWordsListClick(event) {
+  const audioButton = event.target.closest(".word-audio-button");
+
+  if (audioButton) {
+    event.stopPropagation();
+
+    const audioSrc = audioButton.dataset.audioSrc;
+
+    if (!audioSrc) {
+      return;
+    }
+
+    const audio = new Audio(audioSrc);
+    audio.play().catch((error) => {
+      console.error("Erro ao tocar áudio da palavra:", error);
+    });
+
+    return;
+  }
+
+  const wordItem = event.target.closest(".word-item");
+
+  if (!wordItem) {
+    return;
+  }
+
+  const cardId = wordItem.dataset.cardId;
+
+  if (String(expandedWordCardId) === String(cardId)) {
+    expandedWordCardId = null;
+  } else {
+    expandedWordCardId = cardId;
+  }
+
+  renderWordsList();
+}
+
+
+
 flashcard.addEventListener("click", revealAnswer);
 
 flashcard.addEventListener("keydown", (event) => {
@@ -1631,6 +1874,11 @@ backToSetupButton.addEventListener("click", backToSetup);
 pronunciationRulesButton.addEventListener("click", openPronunciationRules);
 backFromPronunciationButton.addEventListener("click", backFromPronunciationRules);
 pronunciationRulesList.addEventListener("click", playPronunciationExample);
+
+wordsButton.addEventListener("click", openWordsScreen);
+backFromWordsButton.addEventListener("click", backFromWordsScreen);
+wordsDirectionButton.addEventListener("click", toggleWordsDirection);
+wordsList.addEventListener("click", handleWordsListClick);
 
 finishSessionButton.addEventListener("click", showSummary);
 repeatSessionButton.addEventListener("click", repeatSession);
