@@ -3236,11 +3236,11 @@
         "license": "Pexels License"
       },
       "audio": {
-        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-plugga.ogg",
-        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
-        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-plugga.ogg",
-        "author": "M. Kihlstedt, N. Vion",
-        "license": "CC BY 2.0 fr"
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
       }
     }
   },
@@ -3796,11 +3796,11 @@
     "media": {
       "image": null,
       "audio": {
-        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-g%C3%B6r.ogg",
-        "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
-        "sourceUrl": "https://en.wiktionary.org/wiki/File:Sv-g%C3%B6r.ogg",
-        "author": "M. Kihlstedt, N. Vion",
-        "license": "CC BY 2.0 fr"
+        "src": null,
+        "source": null,
+        "sourceUrl": null,
+        "author": null,
+        "license": null
       }
     }
   },
