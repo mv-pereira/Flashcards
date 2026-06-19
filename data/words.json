@@ -2461,7 +2461,7 @@
     "active": true,
     "term": {
       "swedish": "ni",
-      "portuguese": "vocês"
+      "portuguese": "vós"
     },
     "grammar": {
       "type": "pronome",
@@ -3118,7 +3118,7 @@
     "active": true,
     "term": {
       "swedish": "jobba",
-      "portuguese": "trabalhar"
+      "portuguese": "trabalhar (informal)"
     },
     "grammar": {
       "type": "verbo",
@@ -3206,7 +3206,7 @@
     "active": true,
     "term": {
       "swedish": "plugga",
-      "portuguese": "estudar"
+      "portuguese": "estudar (informal)"
     },
     "grammar": {
       "type": "verbo",
@@ -3382,7 +3382,7 @@
     "active": true,
     "term": {
       "swedish": "prata",
-      "portuguese": "falar"
+      "portuguese": "falar (informal)"
     },
     "grammar": {
       "type": "verbo",
