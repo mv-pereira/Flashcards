@@ -81,21 +81,14 @@
   </select>
 </label>
 
-<label for="firstRoundOrderSelect">
-  Ordem da primeira rodada
-  <select id="firstRoundOrderSelect">
-    <option value="json">Ordem do JSON</option>
-    <option value="random">Aleatória</option>
-  </select>
-</label>
-
     <label for="directionSelect">
       Direção
   <select id="directionSelect">
     <option value="sv-pt">Sueco → Português</option>
     <option value="pt-sv">Português → Sueco</option>
     <option value="img-sv">Imagem → Sueco</option>
-    <option value="audio-pt">Áudio sueco → Português</option>
+    <option value="audio-pt">Áudio sueco → Escrever Português</option>
+    <option value="audio-sv">Áudio sueco → Escrever sueco</option>
       </select>
     </label>
 
@@ -117,6 +110,10 @@
 
 <button id="wordsButton" class="button button-secondary" type="button">
   Palavras
+</button>
+
+<button id="resetStatsButton" class="button button-secondary" type="button">
+  Zerar progresso
 </button>
 
 <p id="setupMessage" class="setup-message"></p>

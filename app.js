@@ -67,8 +67,6 @@ const PRONUNCIATION_RULES = [
   }
 ];
 
-const firstRoundOrderSelect = document.querySelector("#firstRoundOrderSelect");
-
 const newWordsToggleButton = document.querySelector("#newWordsToggleButton");
 const newWordsModeInfo = document.querySelector("#newWordsModeInfo");
 
@@ -107,6 +105,8 @@ const pronunciationRulesButton = document.querySelector("#pronunciationRulesButt
 const pronunciationScreen = document.querySelector("#pronunciationScreen");
 const backFromPronunciationButton = document.querySelector("#backFromPronunciationButton");
 const pronunciationRulesList = document.querySelector("#pronunciationRulesList");
+
+const resetStatsButton = document.querySelector("#resetStatsButton");
 
 const wordsButton = document.querySelector("#wordsButton");
 const wordsScreen = document.querySelector("#wordsScreen");
@@ -209,28 +209,114 @@ function getCardStats(cardId) {
       wrong: 0,
       seen: 0,
       lastResult: null,
-      lastSeen: null
+      lastSeen: null,
+
+      // SRS imediato para treino contínuo
+      mastery: 0,
+      streak: 0,
+      lapses: 0,
+      priority: 100,
+      lastAnsweredAt: null
     };
+  }
+
+  // Migração para usuários que já têm estatísticas salvas antigas
+  if (stats[key].mastery === undefined) {
+    stats[key].mastery = calculateInitialMastery(stats[key]);
+  }
+
+  if (stats[key].streak === undefined) {
+    stats[key].streak = 0;
+  }
+
+  if (stats[key].lapses === undefined) {
+    stats[key].lapses = stats[key].wrong || 0;
+  }
+
+  if (stats[key].priority === undefined) {
+    stats[key].priority = calculateCardPriority(stats[key]);
+  }
+
+  if (stats[key].lastAnsweredAt === undefined) {
+    stats[key].lastAnsweredAt = stats[key].lastSeen || null;
   }
 
   return stats[key];
 }
 
+function calculateInitialMastery(cardStats) {
+  const correct = cardStats.correct || 0;
+  const wrong = cardStats.wrong || 0;
+
+  if (correct + wrong === 0) {
+    return 0;
+  }
+
+  return clamp(correct - wrong * 2, -6, 8);
+}
+
 function updateCardStats(card, isCorrect) {
   const cardStats = getCardStats(card.id);
+  const now = new Date();
 
   cardStats.seen++;
-  cardStats.lastSeen = new Date().toISOString();
+  cardStats.lastSeen = now.toISOString();
+  cardStats.lastAnsweredAt = now.toISOString();
 
   if (isCorrect) {
     cardStats.correct++;
     cardStats.lastResult = "correct";
+    cardStats.streak = (cardStats.streak || 0) + 1;
+    cardStats.mastery = clamp((cardStats.mastery || 0) + getCorrectMasteryGain(cardStats), -6, 10);
   } else {
     cardStats.wrong++;
     cardStats.lastResult = "wrong";
+    cardStats.streak = 0;
+    cardStats.lapses = (cardStats.lapses || 0) + 1;
+    cardStats.mastery = clamp((cardStats.mastery || 0) - 3, -6, 10);
   }
 
+  cardStats.priority = calculateCardPriority(cardStats);
+
   saveStats();
+}
+
+function getCorrectMasteryGain(cardStats) {
+  const streak = cardStats.streak || 0;
+
+  if (streak >= 4) {
+    return 0.75;
+  }
+
+  if (streak >= 2) {
+    return 1;
+  }
+
+  return 1.5;
+}
+
+function calculateCardPriority(cardStats) {
+  const seen = cardStats.seen || 0;
+  const wrong = cardStats.wrong || 0;
+  const mastery = cardStats.mastery || 0;
+  const lapses = cardStats.lapses || 0;
+
+  if (seen === 0) {
+    return 120;
+  }
+
+  let priority = 80;
+
+  priority += wrong * 14;
+  priority += lapses * 6;
+  priority -= mastery * 9;
+  priority -= (cardStats.streak || 0) * 5;
+
+  if (cardStats.lastResult === "wrong") {
+    priority += 45;
+  }
+
+  return clamp(Math.round(priority), 5, 180);
 }
 
 function fillFilterOptions() {
@@ -238,29 +324,6 @@ function fillFilterOptions() {
   fillSelect(themeFilter, getUniqueThemeValues(allCards));
   fillSelect(sourceFilter, getUniqueValues(allCards, (card) => getCardSource(card)));
   updateSourceSpecificFilters();
-}
-
-function getCardThemes(card) {
-  const classification = card.classification || {};
-
-  if (Array.isArray(classification.themes)) {
-    return classification.themes.filter(Boolean);
-  }
-
-  if (Array.isArray(classification.theme)) {
-    return classification.theme.filter(Boolean);
-  }
-
-  if (classification.theme) {
-    return [classification.theme];
-  }
-
-  return [];
-}
-
-function getUniqueThemeValues(cardList) {
-  return [...new Set(cardList.flatMap(getCardThemes))]
-    .sort((a, b) => String(a).localeCompare(String(b), "pt-BR"));
 }
 
 function getCardSource(card) {
@@ -435,7 +498,7 @@ function getCardsAvailableForDirection(cardList) {
     return cardList.filter((card) => card.media?.image?.src);
   }
 
-  if (direction === "audio-pt") {
+  if (direction === "audio-pt" || direction === "audio-sv") {
     return cardList.filter((card) => card.media?.audio?.src);
   }
 
@@ -452,11 +515,7 @@ function startNewWordsSession(filteredCards) {
 }
 
 function getNewWordsPool(filteredCards) {
-  if (firstRoundOrderSelect.value === "random") {
-    return shuffleArray(filteredCards);
-  }
-
-  return [...filteredCards];
+  return shuffleArray(filteredCards);
 }
 
 function getCardWeight(cardStats) {
@@ -507,11 +566,7 @@ function shuffleArray(array) {
 }
 
 function buildFirstRoundDeck(cardList) {
-  if (firstRoundOrderSelect.value === "random") {
-    return shuffleArray(cardList);
-  }
-
-  return [...cardList];
+  return buildSrsDeck(cardList);
 }
 
 function openPronunciationRules() {
@@ -712,6 +767,10 @@ function resetAudioSwedishHint(card, content) {
     return;
   }
 
+  if (directionSelect.value === "audio-sv") {
+    return;
+  }
+
   showSwedishFromAudioButton.classList.remove("hidden");
   showSwedishFromAudioButton.disabled = false;
 }
@@ -782,6 +841,16 @@ function getCardContent(card) {
       questionLabel: "Áudio em sueco",
       answer: card.term.portuguese,
       answerLabel: "Português"
+    };
+  }
+
+  if (direction === "audio-sv") {
+    return {
+      questionType: "audio",
+      question: "",
+      questionLabel: "Áudio em sueco",
+      answer: card.term.swedish,
+      answerLabel: "Sueco"
     };
   }
 
@@ -901,7 +970,38 @@ function registerCurrentAnswer(isCorrect) {
 
   updateCardStats(currentCard, isCorrect);
 
+  if (!isCorrect) {
+    scheduleImmediateRetry(currentCard);
+  }
+
   return currentCard;
+}
+
+function scheduleImmediateRetry(card) {
+  const insertIndex = Math.min(
+    cards.length,
+    currentIndex + getImmediateRetryGap()
+  );
+
+  const alreadyScheduledSoon = cards
+    .slice(currentIndex + 1, insertIndex + 1)
+    .some((queuedCard) => String(queuedCard.id) === String(card.id));
+
+  if (alreadyScheduledSoon) {
+    return;
+  }
+
+  cards.splice(insertIndex, 0, card);
+}
+
+function getImmediateRetryGap() {
+  const remainingCards = cards.length - currentIndex - 1;
+
+  if (remainingCards <= 2) {
+    return 2;
+  }
+
+  return 3 + Math.floor(Math.random() * 3);
 }
 
 async function markAnswer(isCorrect) {
@@ -963,29 +1063,49 @@ function updateNewWordsDeckAfterRound() {
 }
 
 function buildWeightedDeck(filteredCards) {
-  const weightedDeck = [];
+  return buildSrsDeck(filteredCards);
+}
+
+function buildSrsDeck(filteredCards) {
+  const deck = [];
 
   filteredCards.forEach((card) => {
     const cardStats = getCardStats(card.id);
+    const repeatCount = getImmediateSrsRepeatCount(cardStats);
 
-    if (shouldSkipEasyCard(cardStats)) {
-      return;
-    }
-
-    const weight = getCardWeight(cardStats);
-
-    for (let i = 0; i < weight; i++) {
-      weightedDeck.push(card);
+    for (let i = 0; i < repeatCount; i++) {
+      deck.push(card);
     }
   });
 
-  if (weightedDeck.length === 0) {
+  if (deck.length === 0) {
     return shuffleArray(filteredCards);
   }
 
-  return shuffleArray(weightedDeck);
+  return shuffleArray(deck);
 }
 
+function getImmediateSrsRepeatCount(cardStats) {
+  const priority = calculateCardPriority(cardStats);
+
+  if (priority >= 150) {
+    return 5;
+  }
+
+  if (priority >= 115) {
+    return 4;
+  }
+
+  if (priority >= 80) {
+    return 3;
+  }
+
+  if (priority >= 45) {
+    return 2;
+  }
+
+  return 1;
+}
 function showSummary() {
   stopStudyTimer();
   studyScreen.classList.add("hidden");
@@ -1058,8 +1178,12 @@ function getAnswerMode() {
 
 function updateModeUI() {
   const canWriteInSwedish = isSwedishAnswerModeAvailable();
+  const forceWriteMode = directionSelect.value === "audio-sv";
 
-  if (!canWriteInSwedish) {
+  if (forceWriteMode) {
+    answerModeSelect.value = "write";
+    answerModeLabel.classList.add("hidden");
+  } else if (!canWriteInSwedish) {
     answerModeSelect.value = "think";
     answerModeLabel.classList.add("hidden");
   } else {
@@ -1502,7 +1626,11 @@ function getOrdinalWord(number) {
 }
 
 function isSwedishAnswerModeAvailable() {
-  return directionSelect.value === "pt-sv" || directionSelect.value === "img-sv";
+  return (
+    directionSelect.value === "pt-sv" ||
+    directionSelect.value === "img-sv" ||
+    directionSelect.value === "audio-sv"
+  );
 }
 
 function normalizeAnswer(value) {
@@ -1832,7 +1960,24 @@ function handleWordsListClick(event) {
   renderWordsList();
 }
 
+function resetStats() {
+  const shouldReset = window.confirm(
+    "Tem certeza que deseja zerar acertos, erros e prioridades de todas as palavras?"
+  );
 
+  if (!shouldReset) {
+    return;
+  }
+
+  stats = {};
+  localStorage.removeItem(STORAGE_KEY);
+
+  correctCount = 0;
+  wrongCount = 0;
+  sessionAnswers = [];
+
+  setupMessage.textContent = "Progresso zerado. As palavras voltarão a ser tratadas como novas.";
+}
 
 flashcard.addEventListener("click", revealAnswer);
 
@@ -1875,6 +2020,7 @@ pronunciationRulesButton.addEventListener("click", openPronunciationRules);
 backFromPronunciationButton.addEventListener("click", backFromPronunciationRules);
 pronunciationRulesList.addEventListener("click", playPronunciationExample);
 
+resetStatsButton.addEventListener("click", resetStats);
 wordsButton.addEventListener("click", openWordsScreen);
 backFromWordsButton.addEventListener("click", backFromWordsScreen);
 wordsDirectionButton.addEventListener("click", toggleWordsDirection);
