@@ -27,12 +27,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/36251552/pexels-photo-36251552.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Elegant image of Virginia Woolf's book, highlighting its vintage cover.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/photo/vintage-book-cover-of-virginia-woolf-s-classic-36251552/",
-        "author": "Esra Afşar",
-        "license": "Pexels License"
+        "src": "assets/images/001-en-bok.webp",
+        "alt": "Ilustração em estilo flashcard para en bok",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sv-bok.ogg",
@@ -71,12 +71,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/7129453/pexels-photo-7129453.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "A man in a thobe enjoys a traditional iftar meal indoors with string lights creating a cozy ambiance.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/photo/man-having-dinner-7129453/",
-        "author": "Michael Burrows",
-        "license": "Pexels License"
+        "src": "assets/images/002-ata.webp",
+        "alt": "Ilustração em estilo flashcard para äta",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/LL-Q9027_%28swe%29-Moonhouse-%C3%A4ta.wav",
@@ -87,7 +87,7 @@
       }
     }
   },
-   {
+  {
     "id": 4,
     "order": 4,
     "active": true,
@@ -521,7 +521,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/015-mandag.webp",
+        "alt": "Ilustração em estilo flashcard para måndag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-m%C3%A5ndag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -558,7 +565,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/016-tisdag.webp",
+        "alt": "Ilustração em estilo flashcard para tisdag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tisdag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -595,7 +609,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/017-onsdag.webp",
+        "alt": "Ilustração em estilo flashcard para onsdag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-onsdag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -632,7 +653,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/018-torsdag.webp",
+        "alt": "Ilustração em estilo flashcard para torsdag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-torsdag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -669,7 +697,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/019-fredag.webp",
+        "alt": "Ilustração em estilo flashcard para fredag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-fredag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -706,7 +741,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/020-lordag.webp",
+        "alt": "Ilustração em estilo flashcard para lördag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-l%C3%B6rdag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -743,7 +785,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/021-sondag.webp",
+        "alt": "Ilustração em estilo flashcard para söndag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-s%C3%B6ndag.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -2593,7 +2642,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/071-sambo.webp",
+        "alt": "Ilustração em estilo flashcard para sambo",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-sambo.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -2741,7 +2797,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/075-en-flickvan.webp",
+        "alt": "Ilustração em estilo flashcard para en flickvän",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-flickv%C3%A4n.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -2779,12 +2842,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/15683759/pexels-photo-15683759.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de moda, tendência, férias e mulher.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/moda-tendencia-ferias-mulher-15683759/",
-        "author": "Pedro Inacio",
-        "license": "Pexels License"
+        "src": "assets/images/076-en-tjej.webp",
+        "alt": "Ilustração em estilo flashcard para en tjej",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tjej.ogg",
@@ -2822,7 +2885,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/077-en-pojkvan.webp",
+        "alt": "Ilustração em estilo flashcard para en pojkvän",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-pojkv%C3%A4n.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -2860,12 +2930,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/7408371/pexels-photo-7408371.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de homem, retrato, sorridente e sorrindo.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-retrato-sorridente-sorrindo-7408371/",
-        "author": "Артем Смолдарев",
-        "license": "Pexels License"
+        "src": "assets/images/078-en-kille.webp",
+        "alt": "Ilustração em estilo flashcard para en kille",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-kille.ogg",
@@ -2903,7 +2973,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/079-en-fru.webp",
+        "alt": "Ilustração em estilo flashcard para en fru",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-fru.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -2940,7 +3017,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/080-en-man.webp",
+        "alt": "Ilustração em estilo flashcard para en man",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-man.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -2977,7 +3061,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/081-en-dotter.webp",
+        "alt": "Ilustração em estilo flashcard para en dotter",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-dotter.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -3014,7 +3105,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/082-en-son.webp",
+        "alt": "Ilustração em estilo flashcard para en son",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-son.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -3052,12 +3150,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/17040651/pexels-photo-17040651.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de casas, residências, verão e jardim.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/casas-residencias-verao-jardim-17040651/",
-        "author": "João Pedro Lisboa",
-        "license": "Pexels License"
+        "src": "assets/images/083-ett-barn.webp",
+        "alt": "Ilustração em estilo flashcard para ett barn",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-barn.ogg",
@@ -3096,12 +3194,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/8985714/pexels-photo-8985714.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de adulto, aparelhos, artesanato e homem trabalhando.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/preto-e-branco-p-b-homem-trabalhando-8985714/",
-        "author": "Artem Podrez",
-        "license": "Pexels License"
+        "src": "assets/images/084-arbeta.webp",
+        "alt": "Ilustração em estilo flashcard para arbeta",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-arbeta.ogg",
@@ -3140,12 +3238,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/7565167/pexels-photo-7565167.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de homem em oficina segurando peça de metal.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-metal-de-pe-segurando-7565167/",
-        "author": "cottonbro studio",
-        "license": "Pexels License"
+        "src": "assets/images/085-jobba.webp",
+        "alt": "Ilustração em estilo flashcard para jobba",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-jobba.ogg",
@@ -3184,12 +3282,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/4943613/pexels-photo-4943613.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de livros, mulheres, pesquisa e estudo.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/livros-mulheres-pesquisa-estudo-4943613/",
-        "author": "Nataliya Vaitkevich",
-        "license": "Pexels License"
+        "src": "assets/images/086-studera.webp",
+        "alt": "Ilustração em estilo flashcard para studera",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-studera.ogg",
@@ -3228,12 +3326,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/8199146/pexels-photo-8199146.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de homens, escola, aluno e estudante.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/homens-escola-aluno-estudante-8199146/",
-        "author": "Yan Krukau",
-        "license": "Pexels License"
+        "src": "assets/images/087-plugga.webp",
+        "alt": "Ilustração em estilo flashcard para plugga",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -3272,12 +3370,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/4031319/pexels-photo-4031319.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de homem trabalhando em laboratório de pesquisa.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-trabalhando-laboratorio-pesquisa-4031319/",
-        "author": "Edward Jenner",
-        "license": "Pexels License"
+        "src": "assets/images/088-forska.webp",
+        "alt": "Ilustração em estilo flashcard para forska",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-forska.ogg",
@@ -3316,12 +3414,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/34676330/pexels-photo-34676330.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Jovem mulher com camisa estampada escrevendo em um quadro branco, possivelmente em uma sala de aula.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/jovem-mulher-escrevendo-em-um-quadro-branco-na-sala-de-aula-34676330/",
-        "author": "Wolf Art",
-        "license": "Pexels License"
+        "src": "assets/images/089-undervisa.webp",
+        "alt": "Ilustração em estilo flashcard para undervisa",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-undervisa.ogg",
@@ -3360,12 +3458,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/30535632/pexels-photo-30535632.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Close-up de boca masculina falando ao celular contra fundo desfocado de escritório.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/close-up-de-boca-masculina-falando-ao-celular-contra-fundo-desfocado-de-escritorio-comunicacao-profissional-e-conceito-de-tecnologia-moderna-30535632/",
-        "author": "Vitaly Gariev",
-        "license": "Pexels License"
+        "src": "assets/images/090-tala.webp",
+        "alt": "Ilustração em estilo flashcard para tala",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-tala.ogg",
@@ -3404,12 +3502,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/7516279/pexels-photo-7516279.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de mulheres conversando à mesa em ambiente de estudo.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/mulheres-mesa-borrao-mancha-7516279/",
-        "author": "SHVETS production",
-        "license": "Pexels License"
+        "src": "assets/images/091-prata.webp",
+        "alt": "Ilustração em estilo flashcard para prata",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-prata.ogg",
@@ -3448,12 +3546,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/7516279/pexels-photo-7516279.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Foto profissional grátis de mulheres conversando à mesa em ambiente de estudo.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/mulheres-mesa-borrao-mancha-7516279/",
-        "author": "SHVETS production",
-        "license": "Pexels License"
+        "src": "assets/images/092-en-student.webp",
+        "alt": "Ilustração em estilo flashcard para en student",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-student.ogg",
@@ -3492,12 +3590,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/8423011/pexels-photo-8423011.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "alt": "Professora do ensino fundamental atrás da mesa na sala de aula no primeiro dia do novo ano letivo.",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/professora-do-ensino-fundamental-atras-da-mesa-na-sala-de-aula-no-primeiro-dia-do-novo-ano-letivo-8423011/",
-        "author": "Pavel Danilyuk",
-        "license": "Pexels License"
+        "src": "assets/images/093-en-larare.webp",
+        "alt": "Ilustração em estilo flashcard para en lärare",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-l%C3%A4rare.ogg",
@@ -3609,7 +3707,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/096-polska.webp",
+        "alt": "Ilustração em estilo flashcard para polska",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-polska.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -3794,7 +3899,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/101-gor.webp",
+        "alt": "Ilustração em estilo flashcard para gör",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -3942,7 +4054,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/105-komma.webp",
+        "alt": "Ilustração em estilo flashcard para komma",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-komma.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -3979,7 +4098,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/106-heta.webp",
+        "alt": "Ilustração em estilo flashcard para heta",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-heta.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -4016,7 +4142,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/107-bo.webp",
+        "alt": "Ilustração em estilo flashcard para bo",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-bo.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -4053,7 +4186,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/108-forsta.webp",
+        "alt": "Ilustração em estilo flashcard para förstå",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-f%C3%B6rst%C3%A5.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -4090,7 +4230,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/109-ma.webp",
+        "alt": "Ilustração em estilo flashcard para må",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-m%C3%A5.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -4127,7 +4274,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/110-vara.webp",
+        "alt": "Ilustração em estilo flashcard para vara",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-vara.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -4164,7 +4318,14 @@
       "sourceTitle": null
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/111-gora.webp",
+        "alt": "Ilustração em estilo flashcard para göra",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sv-g%C3%B6ra.ogg",
         "source": "Wiktionary / Wikimedia Commons / Shtooka Project",
@@ -5242,7 +5403,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/139-ringa.webp",
+        "alt": "Ilustração em estilo flashcard para ringa",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sv-ringa.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5281,7 +5449,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/140-kanna.webp",
+        "alt": "Ilustração em estilo flashcard para känna",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Sv-k%C3%A4nna.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5320,7 +5495,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/141-blekna.webp",
+        "alt": "Ilustração em estilo flashcard para blekna",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -5359,7 +5541,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/142-vanda.webp",
+        "alt": "Ilustração em estilo flashcard para vända",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sv-v%C3%A4nda.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5398,7 +5587,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/143-resa.webp",
+        "alt": "Ilustração em estilo flashcard para resa",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Sv-resa.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5437,7 +5633,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/144-rulla.webp",
+        "alt": "Ilustração em estilo flashcard para rulla",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sv-rulla.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5476,7 +5679,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/145-halsa.webp",
+        "alt": "Ilustração em estilo flashcard para hälsa",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sv-h%C3%A4lsa.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5554,7 +5764,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/147-jaga.webp",
+        "alt": "Ilustração em estilo flashcard para jaga",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Sv-jaga.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5593,7 +5810,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/148-finnas.webp",
+        "alt": "Ilustração em estilo flashcard para finnas",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -5632,7 +5856,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/149-dunsta.webp",
+        "alt": "Ilustração em estilo flashcard para dunsta",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -5671,7 +5902,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/150-tystna.webp",
+        "alt": "Ilustração em estilo flashcard para tystna",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -5710,7 +5948,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/151-kopa.webp",
+        "alt": "Ilustração em estilo flashcard para köpa",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Sv-k%C3%B6pa.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5749,7 +5994,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/152-beskriva.webp",
+        "alt": "Ilustração em estilo flashcard para beskriva",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sv-beskriva.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5827,7 +6079,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/154-veta.webp",
+        "alt": "Ilustração em estilo flashcard para veta",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Sv-veta.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5866,7 +6125,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/155-tanka.webp",
+        "alt": "Ilustração em estilo flashcard para tänka",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Sv-t%C3%A4nka.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -5905,7 +6171,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/156-klappa.webp",
+        "alt": "Ilustração em estilo flashcard para klappa",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -5944,7 +6217,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/157-vibrera.webp",
+        "alt": "Ilustração em estilo flashcard para vibrera",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -5983,7 +6263,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/158-sjunga.webp",
+        "alt": "Ilustração em estilo flashcard para sjunga",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Sv-sjunga.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -6022,7 +6309,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/159-handa.webp",
+        "alt": "Ilustração em estilo flashcard para hända",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Sv-h%C3%A4nda.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -6062,12 +6356,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/5432833/pexels-photo-5432833.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/ceu-nuvens-ceu-azul-ceu-de-brigadeiro-5432833/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a ett moln"
+        "src": "assets/images/160-ett-moln.webp",
+        "alt": "Ilustração em estilo flashcard para ett moln",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Sv-moln.ogg",
@@ -6108,12 +6402,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/14768416/pexels-photo-14768416.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/nublado-ventoso-ruidoso-com-muito-vento-14768416/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en väderkvarn"
+        "src": "assets/images/161-en-vaderkvarn.webp",
+        "alt": "Ilustração em estilo flashcard para en väderkvarn",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6154,10 +6448,11 @@
     },
     "media": {
       "image": {
-        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gulfstream.jpg",
-        "source": "Wikimedia Commons",
-        "sourceUrl": "https://pt.wikipedia.org/wiki/Corrente_do_Golfo#/media/Ficheiro:Gulfstream.jpg",
-        "author": null,
+        "src": "assets/images/162-golfstrommen.webp",
+        "alt": "Ilustração em estilo flashcard para golfströmmen",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
         "license": null
       },
       "audio": {
@@ -6199,12 +6494,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/8459416/pexels-photo-8459416.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/maos-colorida-cheio-de-cor-volta-8459416/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a konfetti"
+        "src": "assets/images/163-en-konfetti.webp",
+        "alt": "Ilustração em estilo flashcard para en konfetti",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6245,12 +6540,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/17798038/pexels-photo-17798038.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-jogando-musica-musico-17798038/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en rocklåt"
+        "src": "assets/images/164-en-rocklat.webp",
+        "alt": "Ilustração em estilo flashcard para en rocklåt",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6291,12 +6586,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/6764883/pexels-photo-6764883.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/vintage-retro-musica-audio-6764883/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en kassett"
+        "src": "assets/images/165-en-kassett.webp",
+        "alt": "Ilustração em estilo flashcard para en kassett",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6337,10 +6632,11 @@
     },
     "media": {
       "image": {
-        "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Midsommarst%C3%A5ng.jpg",
-        "source": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Midsommarst%C3%A5ng.jpg",
-        "author": null,
+        "src": "assets/images/166-en-majstang.webp",
+        "alt": "Ilustração em estilo flashcard para en majstång",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
         "license": null
       },
       "audio": {
@@ -6382,12 +6678,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/36812412/pexels-photo-36812412.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/elegante-relogio-de-pulso-prateado-em-suporte-de-exibicao-36812412/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en klocka"
+        "src": "assets/images/167-en-klocka.webp",
+        "alt": "Ilustração em estilo flashcard para en klocka",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Sv-klocka.ogg",
@@ -6428,12 +6724,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/33462107/pexels-photo-33462107.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/33462107/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a ett lastbilsflak"
+        "src": "assets/images/168-ett-lastbilsflak.webp",
+        "alt": "Ilustração em estilo flashcard para ett lastbilsflak",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6474,12 +6770,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/1607846/pexels-photo-1607846.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/arvores-de-folha-marrom-1607846/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en höst"
+        "src": "assets/images/169-en-host.webp",
+        "alt": "Ilustração em estilo flashcard para en höst",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sv-h%C3%B6st.ogg",
@@ -6519,7 +6815,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/170-en-drom.webp",
+        "alt": "Ilustração em estilo flashcard para en dröm",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Sv-dr%C3%B6m.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -6558,7 +6861,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/171-en-styrka.webp",
+        "alt": "Ilustração em estilo flashcard para en styrka",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Sv-styrka.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -6597,7 +6907,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/172-ett-mod.webp",
+        "alt": "Ilustração em estilo flashcard para ett mod",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -6636,7 +6953,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/173-en-applad.webp",
+        "alt": "Ilustração em estilo flashcard para en applåd",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -6676,12 +7000,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/13871287/pexels-photo-13871287.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/pao-comida-alimento-refeicao-13871287/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en frukost"
+        "src": "assets/images/174-en-frukost.webp",
+        "alt": "Ilustração em estilo flashcard para en frukost",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6722,12 +7046,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/28847743/pexels-photo-28847743.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/ondas-serenas-do-oceano-e-aguas-azuis-28847743/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a ett hav"
+        "src": "assets/images/175-ett-hav.webp",
+        "alt": "Ilustração em estilo flashcard para ett hav",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6768,12 +7092,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/11160164/pexels-photo-11160164.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/homem-casal-conjuges-amor-11160164/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en kyss"
+        "src": "assets/images/176-en-kyss.webp",
+        "alt": "Ilustração em estilo flashcard para en kyss",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": null,
@@ -6814,12 +7138,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/7209369/pexels-photo-7209369.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/estacao-de-trem-estacao-ferroviaria-moderno-contemporaneo-7209369/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a ett tåg"
+        "src": "assets/images/177-ett-tag.webp",
+        "alt": "Ilustração em estilo flashcard para ett tåg",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sv-t%C3%A5g.ogg",
@@ -6859,7 +7183,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/178-en-natt.webp",
+        "alt": "Ilustração em estilo flashcard para en natt",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -6899,12 +7230,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/19316821/pexels-photo-19316821.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-rua-via-19316821/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en bil"
+        "src": "assets/images/179-en-bil.webp",
+        "alt": "Ilustração em estilo flashcard para en bil",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sv-bil.ogg",
@@ -6944,7 +7275,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/180-en-syster.webp",
+        "alt": "Ilustração em estilo flashcard para en syster",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sv-syster.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -6983,7 +7321,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/181-ett-kna.webp",
+        "alt": "Ilustração em estilo flashcard para ett knä",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sv-kn%C3%A4.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7023,12 +7368,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/36606438/pexels-photo-36606438.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/36606438/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en vår"
+        "src": "assets/images/182-en-var.webp",
+        "alt": "Ilustração em estilo flashcard para en vår",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Sv-v%C3%A5r.ogg",
@@ -7108,12 +7453,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/34634610/pexels-photo-34634610.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/34634610/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en gata"
+        "src": "assets/images/184-en-gata.webp",
+        "alt": "Ilustração em estilo flashcard para en gata",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Sv-gata.ogg",
@@ -7153,7 +7498,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/185-ett-ljud.webp",
+        "alt": "Ilustração em estilo flashcard para ett ljud",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sv-ljud.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7192,7 +7544,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/186-en-lat.webp",
+        "alt": "Ilustração em estilo flashcard para en låt",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sv-l%C3%A5t.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7231,7 +7590,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/187-ett-farval.webp",
+        "alt": "Ilustração em estilo flashcard para ett farväl",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Sv-farv%C3%A4l.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7271,12 +7637,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/14082047/pexels-photo-14082047.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/construcao-predio-edificio-arvores-14082047/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en kyrka"
+        "src": "assets/images/188-en-kyrka.webp",
+        "alt": "Ilustração em estilo flashcard para en kyrka",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sv-kyrka.ogg",
@@ -7316,7 +7682,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/189-en-psalm.webp",
+        "alt": "Ilustração em estilo flashcard para en psalm",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": null,
         "source": null,
@@ -7355,7 +7728,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/190-ett-liv.webp",
+        "alt": "Ilustração em estilo flashcard para ett liv",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sv-liv.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7394,7 +7774,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/191-en-del.webp",
+        "alt": "Ilustração em estilo flashcard para en del",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Sv-del.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7434,12 +7821,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/8352120/pexels-photo-8352120.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/coracao-modelo-colorida-cheio-de-cor-8352120/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a ett hjärta"
+        "src": "assets/images/192-ett-hjarta.webp",
+        "alt": "Ilustração em estilo flashcard para ett hjärta",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sv-hj%C3%A4rta.ogg",
@@ -7479,7 +7866,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/193-ett-slag.webp",
+        "alt": "Ilustração em estilo flashcard para ett slag",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sv-slag.ogg",
         "source": "Wiktionary / Wikimedia Commons",
@@ -7519,12 +7913,12 @@
     },
     "media": {
       "image": {
-        "src": "https://images.pexels.com/photos/33608274/pexels-photo-33608274.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "source": "Pexels",
-        "sourceUrl": "https://www.pexels.com/pt-br/foto/33608274/",
-        "author": null,
-        "license": "Pexels License",
-        "alt": "Imagem relacionada a en sommar"
+        "src": "assets/images/194-en-sommar.webp",
+        "alt": "Ilustração em estilo flashcard para en sommar",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sv-sommar.ogg",
@@ -7564,7 +7958,14 @@
       "sourceArtist": "Lars Winnerbäck"
     },
     "media": {
-      "image": null,
+      "image": {
+        "src": "assets/images/195-en-sak.webp",
+        "alt": "Ilustração em estilo flashcard para en sak",
+        "source": "ChatGPT",
+        "sourceUrl": null,
+        "author": "OpenAI",
+        "license": null
+      },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sv-sak.ogg",
         "source": "Wiktionary / Wikimedia Commons",
