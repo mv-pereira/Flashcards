@@ -753,6 +753,24 @@ updateModeUI();
   correctButton.disabled = true;
   wrongButton.disabled = true;
 
+preloadLikelyAudios();
+
+}
+
+function preloadLikelyAudios() {
+  const upcomingCards = cards.slice(currentIndex, currentIndex + 4);
+
+  const priorityCards = [...baseSessionCards]
+    .filter((card) => card?.media?.audio?.src)
+    .sort((a, b) => {
+      const aStats = getCardStats(a.id);
+      const bStats = getCardStats(b.id);
+
+      return calculateCardPriority(bStats) - calculateCardPriority(aStats);
+    })
+    .slice(0, 4);
+
+  preloadAudioForCards([...upcomingCards, ...priorityCards], 8);
 }
 
 function resetAudioSwedishHint(card, content) {
@@ -972,6 +990,7 @@ function registerCurrentAnswer(isCorrect) {
 
   if (!isCorrect) {
     scheduleImmediateRetry(currentCard);
+    preloadAudioForCard(currentCard);
   }
 
   return currentCard;
@@ -1977,6 +1996,30 @@ function resetStats() {
   sessionAnswers = [];
 
   setupMessage.textContent = "Progresso zerado. As palavras voltarão a ser tratadas como novas.";
+}
+
+const audioPreloadCache = new Map();
+
+function preloadAudioForCard(card) {
+  const audioSrc = card?.media?.audio?.src;
+
+  if (!audioSrc || audioPreloadCache.has(audioSrc)) {
+    return;
+  }
+
+  const audio = new Audio();
+  audio.preload = "auto";
+  audio.src = audioSrc;
+  audio.load();
+
+  audioPreloadCache.set(audioSrc, audio);
+}
+
+function preloadAudioForCards(cardList, limit = 6) {
+  cardList
+    .filter((card) => card?.media?.audio?.src)
+    .slice(0, limit)
+    .forEach(preloadAudioForCard);
 }
 
 flashcard.addEventListener("click", revealAnswer);
