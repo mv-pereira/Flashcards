@@ -76,7 +76,7 @@
       "portuguese": "zero"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -89,7 +89,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -108,7 +108,7 @@
       "portuguese": "um/uma"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -121,7 +121,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -140,7 +140,7 @@
       "portuguese": "dois/duas"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -153,7 +153,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -172,7 +172,7 @@
       "portuguese": "três"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -185,7 +185,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -204,7 +204,7 @@
       "portuguese": "quatro"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -217,7 +217,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -236,7 +236,7 @@
       "portuguese": "cinco"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -249,7 +249,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -268,7 +268,7 @@
       "portuguese": "seis"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -281,7 +281,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -300,7 +300,7 @@
       "portuguese": "sete"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -313,7 +313,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -332,7 +332,7 @@
       "portuguese": "oito"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -345,7 +345,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -364,7 +364,7 @@
       "portuguese": "nove"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -377,7 +377,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -396,7 +396,7 @@
       "portuguese": "dez"
     },
     "grammar": {
-      "type": "número",
+      "type": "numeral",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -409,7 +409,7 @@
       "themes": [
         "números"
       ],
-      "chapter": 0,
+      "chapter": 2,
       "sourceTitle": null
     },
     "media": {
@@ -7346,7 +7346,7 @@
       "portuguese": "seu; sua; teu; tua"
     },
     "grammar": {
-      "type": "pronome possessivo",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -7418,7 +7418,7 @@
       "portuguese": "fora de"
     },
     "grammar": {
-      "type": "preposição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -7454,7 +7454,7 @@
       "portuguese": "Que legal"
     },
     "grammar": {
-      "type": "frase",
+      "type": "expressão",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -7562,7 +7562,7 @@
       "portuguese": "Nossa!; Uau!"
     },
     "grammar": {
-      "type": "interjeição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -7670,7 +7670,7 @@
       "portuguese": "ou"
     },
     "grammar": {
-      "type": "conjunção",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -8850,222 +8850,6 @@
     }
   },
   {
-    "id": 260,
-    "order": 260,
-    "active": true,
-    "term": {
-      "swedish": "Jag har en mobil.",
-      "portuguese": "Eu tenho um celular."
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Mobil och busskort",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 261,
-    "order": 261,
-    "active": true,
-    "term": {
-      "swedish": "Jag har ingen mobil.",
-      "portuguese": "Eu não tenho celular."
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Mobil och busskort",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 262,
-    "order": 262,
-    "active": true,
-    "term": {
-      "swedish": "Var är min mobil?",
-      "portuguese": "Onde está meu celular?"
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Mobil och busskort",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 263,
-    "order": 263,
-    "active": true,
-    "term": {
-      "swedish": "Jag har ett busskort.",
-      "portuguese": "Eu tenho um passe de ônibus."
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Mobil och busskort",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 264,
-    "order": 264,
-    "active": true,
-    "term": {
-      "swedish": "Jag har inget busskort.",
-      "portuguese": "Eu não tenho passe de ônibus."
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Mobil och busskort",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 265,
-    "order": 265,
-    "active": true,
-    "term": {
-      "swedish": "Var är mitt busskort?",
-      "portuguese": "Onde está meu passe de ônibus?"
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "dia a dia"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Mobil och busskort",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
     "id": 266,
     "order": 266,
     "active": true,
@@ -9218,7 +9002,7 @@
       "portuguese": "a oeste de"
     },
     "grammar": {
-      "type": "preposição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -9254,7 +9038,7 @@
       "portuguese": "ao sul de"
     },
     "grammar": {
-      "type": "preposição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -9290,7 +9074,7 @@
       "portuguese": "a leste de"
     },
     "grammar": {
-      "type": "preposição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -9326,7 +9110,7 @@
       "portuguese": "ao norte de"
     },
     "grammar": {
-      "type": "preposição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -9362,7 +9146,7 @@
       "portuguese": "fica; está localizado"
     },
     "grammar": {
-      "type": "frase",
+      "type": "expressão",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -9398,7 +9182,7 @@
       "portuguese": "perto de"
     },
     "grammar": {
-      "type": "preposição",
+      "type": "outros",
       "gender": null,
       "plural": null,
       "definite": null,
@@ -9975,78 +9759,6 @@
     },
     "grammar": {
       "type": "advérbio",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "gramática funcional"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Ord och uttryck",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 292,
-    "order": 292,
-    "active": true,
-    "term": {
-      "swedish": "hur stor",
-      "portuguese": "quão grande; de que tamanho"
-    },
-    "grammar": {
-      "type": "frase",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "gramática funcional"
-      ],
-      "source": "livro",
-      "chapter": 2,
-      "sourceTitle": "Ord och uttryck",
-      "sourceArtist": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
-    "id": 293,
-    "order": 293,
-    "active": true,
-    "term": {
-      "swedish": "det betyder",
-      "portuguese": "isso significa"
-    },
-    "grammar": {
-      "type": "frase",
       "gender": null,
       "plural": null,
       "definite": null,
