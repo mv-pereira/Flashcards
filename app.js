@@ -386,6 +386,14 @@ function updateSourceSpecificFilters() {
   chapterFilterLabel.classList.toggle("hidden", !shouldShowChapters);
   sourceTitleFilterLabel.classList.toggle("hidden", !shouldShowSourceTitles);
 
+  if (!shouldShowChapters) {
+    chapterFilterLabel.removeAttribute("open");
+  }
+
+  if (!shouldShowSourceTitles) {
+    sourceTitleFilterLabel.removeAttribute("open");
+  }
+
   if (shouldShowChapters) {
     fillCheckboxGroup(
       chapterFilterGroup,

@@ -445,11 +445,64 @@ body.dark-theme .image-swedish-text {
   margin: 0;
 }
 
-.checkbox-filter legend {
-  padding: 0 4px;
-  color: var(--muted);
-  font-size: 0.88rem;
+.checkbox-filter summary {
+  min-height: 48px;
+  padding: 0 12px;
+  color: var(--text);
+  font-size: 1rem;
   font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-filter summary::-webkit-details-marker {
+  display: none;
+}
+
+.checkbox-filter summary::after {
+  content: "⌄";
+  color: var(--muted);
+  font-size: 1.1rem;
+  transition: transform 0.18s ease;
+}
+
+.checkbox-filter[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.checkbox-options {
+  display: grid;
+  gap: 8px;
+  padding: 10px 12px 4px;
+  border-top: 1px solid var(--border);
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.checkbox-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+  flex: 0 0 auto;
+}
+
+.filter-hint {
+  margin: 0;
+  padding: 4px 12px 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .checkbox-options {
