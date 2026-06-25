@@ -89,13 +89,13 @@ const summaryWrongList = document.querySelector("#summaryWrongList");
 const setupScreen = document.querySelector("#setupScreen");
 const studyScreen = document.querySelector("#studyScreen");
 
-const typeFilter = document.querySelector("#typeFilter");
-const themeFilter = document.querySelector("#themeFilter");
-const sourceFilter = document.querySelector("#sourceFilter");
+const typeFilterGroup = document.querySelector("#typeFilterGroup");
+const themeFilterGroup = document.querySelector("#themeFilterGroup");
+const sourceFilterGroup = document.querySelector("#sourceFilterGroup");
 const chapterFilterLabel = document.querySelector("#chapterFilterLabel");
-const chapterFilter = document.querySelector("#chapterFilter");
+const chapterFilterGroup = document.querySelector("#chapterFilterGroup");
 const sourceTitleFilterLabel = document.querySelector("#sourceTitleFilterLabel");
-const sourceTitleFilter = document.querySelector("#sourceTitleFilter");
+const sourceTitleFilterGroup = document.querySelector("#sourceTitleFilterGroup");
 
 const startSessionButton = document.querySelector("#startSessionButton");
 const backToSetupButton = document.querySelector("#backToSetupButton");
@@ -320,10 +320,50 @@ function calculateCardPriority(cardStats) {
 }
 
 function fillFilterOptions() {
-  fillSelect(typeFilter, getUniqueValues(allCards, (card) => card.grammar.type));
-  fillSelect(themeFilter, getUniqueThemeValues(allCards));
-  fillSelect(sourceFilter, getUniqueValues(allCards, (card) => getCardSource(card)));
+  fillCheckboxGroup(
+    typeFilterGroup,
+    getUniqueValues(allCards, (card) => card.grammar.type)
+  );
+
+  fillCheckboxGroup(
+    themeFilterGroup,
+    getUniqueThemeValues(allCards)
+  );
+
+  fillCheckboxGroup(
+    sourceFilterGroup,
+    getUniqueValues(allCards, (card) => getCardSource(card))
+  );
+
   updateSourceSpecificFilters();
+}
+
+function fillCheckboxGroup(container, values) {
+  container.innerHTML = "";
+
+  values.forEach((value) => {
+    const label = document.createElement("label");
+    label.className = "checkbox-option";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = String(value);
+
+    const text = document.createElement("span");
+    text.textContent = String(value);
+
+    label.append(checkbox, text);
+    container.appendChild(label);
+  });
+}
+
+function getCheckedValues(container) {
+  return [...container.querySelectorAll('input[type="checkbox"]:checked')]
+    .map((checkbox) => checkbox.value);
+}
+
+function hasCheckedValue(container, value) {
+  return getCheckedValues(container).includes(value);
 }
 
 function getCardSource(card) {
@@ -335,37 +375,40 @@ function getCardSourceTitle(card) {
 }
 
 function updateSourceSpecificFilters() {
-  const selectedSource = sourceFilter.value;
+  const selectedSources = getCheckedValues(sourceFilterGroup);
 
-  chapterFilterLabel.classList.toggle("hidden", selectedSource !== "livro");
-  sourceTitleFilterLabel.classList.toggle("hidden", selectedSource !== "música");
+  const shouldShowChapters =
+    selectedSources.length === 0 || selectedSources.includes("livro");
 
-  if (selectedSource === "livro") {
-    fillSelect(
-      chapterFilter,
+  const shouldShowSourceTitles =
+    selectedSources.length === 0 || selectedSources.includes("música");
+
+  chapterFilterLabel.classList.toggle("hidden", !shouldShowChapters);
+  sourceTitleFilterLabel.classList.toggle("hidden", !shouldShowSourceTitles);
+
+  if (shouldShowChapters) {
+    fillCheckboxGroup(
+      chapterFilterGroup,
       getUniqueValues(
         allCards.filter((card) => getCardSource(card) === "livro"),
         (card) => card.classification.chapter
       )
     );
-    sourceTitleFilter.value = "all";
-    return;
+  } else {
+    chapterFilterGroup.innerHTML = "";
   }
 
-  if (selectedSource === "música") {
-    fillSelect(
-      sourceTitleFilter,
+  if (shouldShowSourceTitles) {
+    fillCheckboxGroup(
+      sourceTitleFilterGroup,
       getUniqueValues(
         allCards.filter((card) => getCardSource(card) === "música"),
         (card) => getCardSourceTitle(card)
       )
     );
-    chapterFilter.value = "all";
-    return;
+  } else {
+    sourceTitleFilterGroup.innerHTML = "";
   }
-
-  chapterFilter.value = "all";
-  sourceTitleFilter.value = "all";
 }
 
 function getUniqueThemeValues(cardList) {
@@ -402,50 +445,39 @@ function getUniqueValues(list, getter) {
     });
 }
 
-function fillSelect(selectElement, values) {
-  const firstOption = selectElement.querySelector('option[value="all"]');
-
-  selectElement.innerHTML = "";
-  selectElement.appendChild(firstOption);
-
-  values.forEach((value) => {
-    const option = document.createElement("option");
-    option.value = String(value);
-    option.textContent = String(value);
-    selectElement.appendChild(option);
-  });
-}
-
 function getFilteredCards() {
-  const selectedType = typeFilter.value;
-  const selectedTheme = themeFilter.value;
-  const selectedSource = sourceFilter.value;
-  const selectedChapter = chapterFilter.value;
-  const selectedSourceTitle = sourceTitleFilter.value;
+  const selectedTypes = getCheckedValues(typeFilterGroup);
+  const selectedThemes = getCheckedValues(themeFilterGroup);
+  const selectedSources = getCheckedValues(sourceFilterGroup);
+  const selectedChapters = getCheckedValues(chapterFilterGroup);
+  const selectedSourceTitles = getCheckedValues(sourceTitleFilterGroup);
 
   return allCards.filter((card) => {
     const matchesType =
-      selectedType === "all" || card.grammar.type === selectedType;
+      selectedTypes.length === 0 ||
+      selectedTypes.includes(card.grammar.type);
 
     const cardThemes = getCardThemes(card);
 
     const matchesTheme =
-      selectedTheme === "all" || cardThemes.includes(selectedTheme);
+      selectedThemes.length === 0 ||
+      cardThemes.some((theme) => selectedThemes.includes(theme));
 
     const cardSource = getCardSource(card);
 
     const matchesSource =
-      selectedSource === "all" || cardSource === selectedSource;
+      selectedSources.length === 0 ||
+      selectedSources.includes(cardSource);
 
     const matchesChapter =
-      selectedSource !== "livro" ||
-      selectedChapter === "all" ||
-      String(card.classification.chapter) === selectedChapter;
+      cardSource !== "livro" ||
+      selectedChapters.length === 0 ||
+      selectedChapters.includes(String(card.classification.chapter));
 
     const matchesSourceTitle =
-      selectedSource !== "música" ||
-      selectedSourceTitle === "all" ||
-      getCardSourceTitle(card) === selectedSourceTitle;
+      cardSource !== "música" ||
+      selectedSourceTitles.length === 0 ||
+      selectedSourceTitles.includes(getCardSourceTitle(card));
 
     return (
       matchesType &&
@@ -516,38 +548,6 @@ function startNewWordsSession(filteredCards) {
 
 function getNewWordsPool(filteredCards) {
   return shuffleArray(filteredCards);
-}
-
-function getCardWeight(cardStats) {
-  const wrong = cardStats.wrong || 0;
-  const correct = cardStats.correct || 0;
-
-  if (wrong === 0) {
-    return 1;
-  }
-
-  const rawWeight = 1 + wrong - Math.floor(correct / 3);
-
-  return clamp(rawWeight, 1, 5);
-}
-
-function shouldSkipEasyCard(cardStats) {
-  const wrong = cardStats.wrong || 0;
-  const correct = cardStats.correct || 0;
-
-  if (wrong > 0) {
-    return false;
-  }
-
-  if (correct >= 4) {
-    return Math.random() < 0.75;
-  }
-
-  if (correct >= 2) {
-    return Math.random() < 0.5;
-  }
-
-  return false;
 }
 
 function clamp(value, min, max) {
@@ -2078,7 +2078,7 @@ wrongButton.addEventListener("click", () => markAnswer(false));
 
 newWordsToggleButton.addEventListener("click", toggleNewWordsMode);
 
-sourceFilter.addEventListener("change", () => {
+sourceFilterGroup.addEventListener("change", () => {
   setupMessage.textContent = "";
   updateSourceSpecificFilters();
 });

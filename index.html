@@ -46,40 +46,35 @@
   Modo palavras novas ativo: as palavras serão introduzidas gradualmente até esgotar os cards filtrados.
 </p>
 
-    <label for="typeFilter">
-      Tipo de palavra
-      <select id="typeFilter">
-        <option value="all">Todos</option>
-      </select>
-    </label>
+<fieldset class="checkbox-filter">
+  <legend>Tipo de palavra</legend>
+  <div id="typeFilterGroup" class="checkbox-options"></div>
+  <p class="filter-hint">Nenhuma opção marcada = todos</p>
+</fieldset>
 
-    <label for="themeFilter">
-      Tema
-      <select id="themeFilter">
-        <option value="all">Todos</option>
-      </select>
-    </label>
+<fieldset class="checkbox-filter">
+  <legend>Tema</legend>
+  <div id="themeFilterGroup" class="checkbox-options"></div>
+  <p class="filter-hint">Nenhuma opção marcada = todos</p>
+</fieldset>
 
-<label for="sourceFilter">
-  Origem
-  <select id="sourceFilter">
-    <option value="all">Todas</option>
-  </select>
-</label>
+<fieldset class="checkbox-filter">
+  <legend>Origem</legend>
+  <div id="sourceFilterGroup" class="checkbox-options"></div>
+  <p class="filter-hint">Nenhuma opção marcada = todas</p>
+</fieldset>
 
-<label id="chapterFilterLabel" class="hidden" for="chapterFilter">
-  Capítulo do livro
-  <select id="chapterFilter">
-    <option value="all">Todos</option>
-  </select>
-</label>
+<fieldset id="chapterFilterLabel" class="checkbox-filter hidden">
+  <legend>Capítulo do livro</legend>
+  <div id="chapterFilterGroup" class="checkbox-options"></div>
+  <p class="filter-hint">Nenhuma opção marcada = todos</p>
+</fieldset>
 
-<label id="sourceTitleFilterLabel" class="hidden" for="sourceTitleFilter">
-  Música
-  <select id="sourceTitleFilter">
-    <option value="all">Todas</option>
-  </select>
-</label>
+<fieldset id="sourceTitleFilterLabel" class="checkbox-filter hidden">
+  <legend>Música</legend>
+  <div id="sourceTitleFilterGroup" class="checkbox-options"></div>
+  <p class="filter-hint">Nenhuma opção marcada = todas</p>
+</fieldset>
 
     <label for="directionSelect">
       Direção
@@ -168,7 +163,6 @@
 </section>
 
 
-
 <section class="controls" aria-label="Controles do flashcard">
   <div id="writeBox" class="write-box hidden">
     <label for="answerInput">Escreva sua resposta</label>
@@ -176,8 +170,11 @@
       id="answerInput"
       type="text"
       autocomplete="off"
+      autocorrect="off"
       autocapitalize="none"
       spellcheck="false"
+      inputmode="text"
+      enterkeyhint="done"
       placeholder="Digite aqui..."
     />
 
