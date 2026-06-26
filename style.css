@@ -475,7 +475,8 @@ body.dark-theme .image-swedish-text {
 
 .checkbox-options {
   display: grid;
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 8px 12px;
   padding: 10px 12px 4px;
   border-top: 1px solid var(--border);
 }
@@ -486,7 +487,6 @@ body.dark-theme .image-swedish-text {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  width: 100%;
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 750;
