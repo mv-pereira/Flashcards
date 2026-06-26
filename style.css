@@ -439,10 +439,10 @@ body.dark-theme .image-swedish-text {
 .checkbox-filter {
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 12px;
-  display: grid;
-  gap: 8px;
+  padding: 0;
   margin: 0;
+  background: var(--card);
+  overflow: hidden;
 }
 
 .checkbox-filter summary {
@@ -482,53 +482,34 @@ body.dark-theme .image-swedish-text {
 
 .checkbox-option {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 10px;
+  width: 100%;
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 750;
   line-height: 1.25;
+  cursor: pointer;
 }
 
 .checkbox-option input {
   width: 18px;
   height: 18px;
+  margin: 0;
   accent-color: var(--primary);
   flex: 0 0 auto;
+}
+
+.checkbox-option span {
+  display: inline;
+  margin: 0;
 }
 
 .filter-hint {
   margin: 0;
   padding: 4px 12px 12px;
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-.checkbox-options {
-  display: grid;
-  gap: 8px;
-}
-
-.checkbox-option {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 750;
-  line-height: 1.25;
-}
-
-.checkbox-option input {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--primary);
-  flex: 0 0 auto;
-}
-
-.filter-hint {
-  margin: 0;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
