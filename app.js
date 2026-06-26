@@ -1701,14 +1701,14 @@ function updateThemeButtonText() {
     themeToggleButton.textContent = "Tema claro";
 
     if (themeColorMeta) {
-      themeColorMeta.setAttribute("content", "#101826");
+      themeColorMeta.setAttribute("content", "#101A2B");
     }
   } else {
     themeToggleButton.textContent = "Tema escuro";
 
     if (themeColorMeta) {
-      themeColorMeta.setAttribute("content", "#f7f4ea");
-    }
+      themeColorMeta.setAttribute("content", "#FFF7D8");
+   }
   }
 }
 
