@@ -367,7 +367,17 @@ function hasCheckedValue(container, value) {
 }
 
 function getCardSource(card) {
-  return card.classification?.source || "livro";
+  const classification = card.classification || {};
+
+  if (classification.source) {
+    return classification.source;
+  }
+
+  if (classification.sourceTitle || classification.sourceArtist) {
+    return "música";
+  }
+
+  return "livro";
 }
 
 function getCardSourceTitle(card) {
@@ -377,11 +387,8 @@ function getCardSourceTitle(card) {
 function updateSourceSpecificFilters() {
   const selectedSources = getCheckedValues(sourceFilterGroup);
 
-  const shouldShowChapters =
-    selectedSources.length === 0 || selectedSources.includes("livro");
-
-  const shouldShowSourceTitles =
-    selectedSources.length === 0 || selectedSources.includes("música");
+  const shouldShowChapters = selectedSources.includes("livro");
+  const shouldShowSourceTitles = selectedSources.includes("música");
 
   chapterFilterLabel.classList.toggle("hidden", !shouldShowChapters);
   sourceTitleFilterLabel.classList.toggle("hidden", !shouldShowSourceTitles);
