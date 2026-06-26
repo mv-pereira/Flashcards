@@ -474,19 +474,21 @@ body.dark-theme .image-swedish-text {
 }
 
 .checkbox-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  gap: 8px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
   padding: 10px 12px 4px;
   border-top: 1px solid var(--border);
 }
 
 .checkbox-option {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 8px;
+  width: auto;
+  min-width: max-content;
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 750;
