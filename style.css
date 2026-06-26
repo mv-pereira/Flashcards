@@ -402,7 +402,7 @@ body.dark-theme .image-swedish-text {
   font-size: 1.35rem;
 }
 
-.setup-card label {
+.setup-card > label {
   display: grid;
   gap: 6px;
   color: var(--muted);
