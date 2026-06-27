@@ -109,8 +109,11 @@ const pronunciationRulesList = document.querySelector("#pronunciationRulesList")
 const resetStatsButton = document.querySelector("#resetStatsButton");
 
 const wordsButton = document.querySelector("#wordsButton");
+const wrongWordsButton = document.querySelector("#wrongWordsButton");
 const wordsScreen = document.querySelector("#wordsScreen");
 const backFromWordsButton = document.querySelector("#backFromWordsButton");
+const wordsScreenTitle = document.querySelector("#wordsScreenTitle");
+const wordsScreenDescription = document.querySelector("#wordsScreenDescription");
 const wordsDirectionButton = document.querySelector("#wordsDirectionButton");
 const wordsCount = document.querySelector("#wordsCount");
 const wordsList = document.querySelector("#wordsList");
@@ -1769,9 +1772,10 @@ function capitalizeFirstLetter(text) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-function openWordsScreen() {
+function openWordsScreen(viewMode = "all") {
   stopStudyTimer();
   setupMessage.textContent = "";
+  wordsViewMode = viewMode;
 
   expandedWordCardId = null;
 
@@ -1806,36 +1810,128 @@ function renderWordsList() {
     return;
   }
 
-  const filteredCards = getFilteredCards();
+  const filteredCards = getCardsForWordsView();
+
+  updateWordsScreenText(filteredCards.length);
 
   wordsDirectionButton.textContent =
     wordsDirection === "sv-pt" ? "Sueco → Português" : "Português → Sueco";
-
-  wordsCount.textContent =
-    filteredCards.length === 1
-      ? "1 palavra"
-      : `${filteredCards.length} palavras`;
 
   wordsList.innerHTML = "";
 
   if (filteredCards.length === 0) {
     const emptyMessage = document.createElement("p");
     emptyMessage.className = "words-empty";
-    emptyMessage.textContent = "Nenhuma palavra encontrada com esses filtros.";
+    emptyMessage.textContent = getEmptyWordsMessage();
     wordsList.appendChild(emptyMessage);
     return;
   }
 
-  const sortedCards = [...filteredCards].sort((a, b) => {
+  const sortedCards = sortCardsForWordsView(filteredCards);
+
+  sortedCards.forEach((card) => {
+    wordsList.appendChild(createWordItem(card));
+  });
+}
+
+function getCardsForWordsView() {
+  const filteredCards = getFilteredCards();
+
+  if (wordsViewMode !== "wrong") {
+    return filteredCards;
+  }
+
+  return filteredCards.filter((card) => {
+    const cardStats = getExistingCardStats(card.id);
+
+    return cardStats && (cardStats.wrong || 0) > 0;
+  });
+}
+
+function getExistingCardStats(cardId) {
+  return stats[String(cardId)] || null;
+}
+
+function updateWordsScreenText(cardCount) {
+  if (wordsViewMode === "wrong") {
+    wordsScreenTitle.textContent = "Palavras que mais erro";
+    wordsScreenDescription.textContent =
+      "Lista das palavras com erro salvo, respeitando os filtros escolhidos na configuração.";
+    wordsCount.textContent =
+      cardCount === 1
+        ? "1 palavra com erro"
+        : `${cardCount} palavras com erro`;
+    return;
+  }
+
+  wordsScreenTitle.textContent = "Palavras";
+  wordsScreenDescription.textContent =
+    "Lista gerada de acordo com os filtros escolhidos na configuração.";
+  wordsCount.textContent =
+    cardCount === 1
+      ? "1 palavra"
+      : `${cardCount} palavras`;
+}
+
+function getEmptyWordsMessage() {
+  if (wordsViewMode === "wrong") {
+    return "Nenhuma palavra com erro encontrada com esses filtros.";
+  }
+
+  return "Nenhuma palavra encontrada com esses filtros.";
+}
+
+function sortCardsForWordsView(cardList) {
+  if (wordsViewMode === "wrong") {
+    return [...cardList].sort((a, b) => {
+      const aStats = getExistingCardStats(a.id) || {};
+      const bStats = getExistingCardStats(b.id) || {};
+
+      const wrongDifference = (bStats.wrong || 0) - (aStats.wrong || 0);
+
+      if (wrongDifference !== 0) {
+        return wrongDifference;
+      }
+
+      const aRate = getWrongRate(aStats);
+      const bRate = getWrongRate(bStats);
+
+      if (bRate !== aRate) {
+        return bRate - aRate;
+      }
+
+      return getWordPrimaryText(a).localeCompare(getWordPrimaryText(b), "sv-SE");
+    });
+  }
+
+  return [...cardList].sort((a, b) => {
     const aText = getWordPrimaryText(a);
     const bText = getWordPrimaryText(b);
 
     return aText.localeCompare(bText, "sv-SE");
   });
+}
 
-  sortedCards.forEach((card) => {
-    wordsList.appendChild(createWordItem(card));
-  });
+function getWrongRate(cardStats) {
+  const correct = cardStats.correct || 0;
+  const wrong = cardStats.wrong || 0;
+  const total = correct + wrong;
+
+  if (total === 0) {
+    return 0;
+  }
+
+  return wrong / total;
+}
+
+function getWordStatsSummary(card) {
+  const cardStats = getExistingCardStats(card.id) || {};
+  const correct = cardStats.correct || 0;
+  const wrong = cardStats.wrong || 0;
+  const total = correct + wrong;
+  const wrongRate = total === 0 ? 0 : Math.round((wrong / total) * 100);
+
+  return `${wrong} erro${wrong === 1 ? "" : "s"} · ${correct} acerto${correct === 1 ? "" : "s"} · ${wrongRate}% de erro`;
 }
 
 function createWordItem(card) {
@@ -1920,15 +2016,23 @@ function getWordPrimaryText(card) {
 }
 
 function getWordSecondaryText(card) {
-  if (wordsDirection === "sv-pt") {
-    return card.term.portuguese;
+  const translation = wordsDirection === "sv-pt"
+    ? card.term.portuguese
+    : card.term.swedish;
+
+  if (wordsViewMode !== "wrong") {
+    return translation;
   }
 
-  return card.term.swedish;
+  return `${translation} · ${getWordStatsSummary(card)}`;
 }
 
 function getWordMetaText(card) {
   const parts = [];
+
+  if (wordsViewMode === "wrong") {
+    parts.push(getWordStatsSummary(card));
+  }
 
   if (card.grammar?.type) {
     parts.push(`Tipo: ${card.grammar.type}`);
@@ -2079,7 +2183,8 @@ backFromPronunciationButton.addEventListener("click", backFromPronunciationRules
 pronunciationRulesList.addEventListener("click", playPronunciationExample);
 
 resetStatsButton.addEventListener("click", resetStats);
-wordsButton.addEventListener("click", openWordsScreen);
+wordsButton.addEventListener("click", () => openWordsScreen("all"));
+wrongWordsButton.addEventListener("click", () => openWordsScreen("wrong"));
 backFromWordsButton.addEventListener("click", backFromWordsScreen);
 wordsDirectionButton.addEventListener("click", toggleWordsDirection);
 wordsList.addEventListener("click", handleWordsListClick);
