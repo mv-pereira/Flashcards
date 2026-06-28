@@ -24,6 +24,7 @@ let elapsedBeforePause = 0;
 let timerIntervalId = null;
 
 let wordsDirection = "sv-pt";
+let wordsViewMode = "all";
 let expandedWordCardId = null;
 
 const STORAGE_KEY = "flashcardsSuecoStats";
@@ -1854,7 +1855,7 @@ function getExistingCardStats(cardId) {
 
 function updateWordsScreenText(cardCount) {
   if (wordsViewMode === "wrong") {
-    wordsScreenTitle.textContent = "Palavras que mais erro";
+    wordsScreenTitle.textContent = "Revisar erros";
     wordsScreenDescription.textContent =
       "Lista das palavras com erro salvo, respeitando os filtros escolhidos na configuração.";
     wordsCount.textContent =
