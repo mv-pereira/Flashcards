@@ -819,7 +819,7 @@ function showSwedishFromAudio() {
     return;
   }
 
-  audioSwedishText.textContent = card.term.swedish;
+  audioSwedishText.textContent = getStudySwedishText(card);
   audioSwedishText.classList.remove("hidden");
 
   showSwedishFromAudioButton.disabled = true;
@@ -848,15 +848,33 @@ function updateQuestionLabel(content) {
   questionLabel.classList.remove("hidden");
 }
 
+function isNounWithGender(card) {
+  return (
+    card.grammar?.type === "substantivo" &&
+    (card.grammar?.gender === "en" || card.grammar?.gender === "ett")
+  );
+}
+
+function getStudySwedishText(card) {
+  const swedish = card.term?.swedish || "";
+
+  if (!isNounWithGender(card)) {
+    return swedish;
+  }
+
+  return `${card.grammar.gender} ${swedish}`;
+}
+
 function getCardContent(card) {
   const direction = directionSelect.value;
+  const studySwedish = getStudySwedishText(card);
 
   if (direction === "pt-sv") {
     return {
       questionType: "text",
       question: card.term.portuguese,
       questionLabel: "Português",
-      answer: card.term.swedish,
+      answer: studySwedish,
       answerLabel: "Sueco"
     };
   }
@@ -866,7 +884,7 @@ function getCardContent(card) {
       questionType: "image",
       question: "",
       questionLabel: "Imagem",
-      answer: card.term.swedish,
+      answer: studySwedish,
       answerLabel: "Sueco"
     };
   }
@@ -886,14 +904,14 @@ function getCardContent(card) {
       questionType: "audio",
       question: "",
       questionLabel: "Áudio em sueco",
-      answer: card.term.swedish,
+      answer: studySwedish,
       answerLabel: "Sueco"
     };
   }
 
   return {
     questionType: "text",
-    question: card.term.swedish,
+    question: studySwedish,
     questionLabel: "Sueco",
     answer: card.term.portuguese,
     answerLabel: "Português"
@@ -1000,7 +1018,7 @@ function registerCurrentAnswer(isCorrect) {
 
   sessionAnswers.push({
     cardId: currentCard.id,
-    swedish: currentCard.term.swedish,
+    swedish: getStudySwedishText(currentCard),
     portuguese: currentCard.term.portuguese,
     isCorrect
   });
@@ -1284,7 +1302,7 @@ function checkWrittenAnswer() {
     return;
   }
 
-  const comparison = compareWrittenAnswer(userAnswer, expectedAnswer);
+  const comparison = compareWrittenAnswer(userAnswer, expectedAnswer, card);
 
   answerVisible = true;
   writeComparisonDone = true;
@@ -1329,7 +1347,7 @@ async function nextWrittenCard() {
   isChangingCard = false;
 }
 
-function compareWrittenAnswer(userAnswer, expectedAnswer) {
+function compareWrittenAnswer(userAnswer, expectedAnswer, card) {
   const normalizedUserAnswer = normalizeAnswer(userAnswer);
   const normalizedExpectedAnswer = normalizeAnswer(expectedAnswer);
 
@@ -1340,8 +1358,30 @@ function compareWrittenAnswer(userAnswer, expectedAnswer) {
 
   const isCorrect = comparison.distance === 0;
 
+  if (isCorrect) {
+    return {
+      isCorrect: true,
+      distance: 0,
+      feedback: "Resposta correta."
+    };
+  }
+
+  const articleFeedback = getNounArticleFeedback(
+    card,
+    normalizedUserAnswer,
+    normalizedExpectedAnswer
+  );
+
+  if (articleFeedback) {
+    return {
+      isCorrect: false,
+      distance: comparison.distance,
+      feedback: articleFeedback
+    };
+  }
+
   return {
-    isCorrect,
+    isCorrect: false,
     distance: comparison.distance,
     feedback: buildComparisonFeedbackFromOperations(
       comparison.operations,
@@ -1513,6 +1553,39 @@ function getDamerauLevenshteinComparison(source, target) {
     distance: distances[sourceLength][targetLength],
     operations
   };
+}
+
+function getNounArticleFeedback(card, normalizedUserAnswer, normalizedExpectedAnswer) {
+  if (!isNounWithGender(card)) {
+    return "";
+  }
+
+  const expectedArticle = card.grammar.gender;
+  const normalizedBaseWord = normalizeAnswer(card.term?.swedish || "");
+
+  if (!normalizedBaseWord) {
+    return "";
+  }
+
+  if (normalizedUserAnswer === normalizedBaseWord) {
+    return `Faltou o artigo. O correto é “${normalizedExpectedAnswer}”.`;
+  }
+
+  const userWords = normalizedUserAnswer.split(" ");
+  const firstWord = userWords[0];
+  const restOfAnswer = userWords.slice(1).join(" ");
+
+  const usedSwedishArticle = firstWord === "en" || firstWord === "ett";
+
+  if (
+    usedSwedishArticle &&
+    firstWord !== expectedArticle &&
+    restOfAnswer === normalizedBaseWord
+  ) {
+    return `Artigo errado. O correto é “${normalizedExpectedAnswer}”.`;
+  }
+
+  return "";
 }
 
 function buildComparisonFeedbackFromOperations(operations, userAnswer, expectedAnswer) {
@@ -1882,6 +1955,14 @@ function getEmptyWordsMessage() {
   return "Nenhuma palavra encontrada com esses filtros.";
 }
 
+function getWordSortText(card) {
+  if (wordsDirection === "sv-pt") {
+    return card.term?.swedish || "";
+  }
+
+  return card.term?.portuguese || "";
+}
+
 function sortCardsForWordsView(cardList) {
   if (wordsViewMode === "wrong") {
     return [...cardList].sort((a, b) => {
@@ -1901,13 +1982,13 @@ function sortCardsForWordsView(cardList) {
         return bRate - aRate;
       }
 
-      return getWordPrimaryText(a).localeCompare(getWordPrimaryText(b), "sv-SE");
+      return getWordSortText(a).localeCompare(getWordSortText(b), "sv-SE");
     });
   }
 
   return [...cardList].sort((a, b) => {
-    const aText = getWordPrimaryText(a);
-    const bText = getWordPrimaryText(b);
+    const aText = getWordSortText(a);
+    const bText = getWordSortText(b);
 
     return aText.localeCompare(bText, "sv-SE");
   });
@@ -1997,7 +2078,7 @@ function createWordDetails(card) {
     const image = document.createElement("img");
     image.className = "word-image";
     image.src = card.media.image.src;
-    image.alt = card.media.image.alt || card.term.swedish;
+    image.alt = card.media.image.alt || getStudySwedishText(card);
     image.loading = "lazy";
 
     mediaActions.appendChild(image);
@@ -2008,9 +2089,19 @@ function createWordDetails(card) {
   return details;
 }
 
+function getWordSwedishListText(card) {
+  const swedish = card.term?.swedish || "";
+
+  if (!isNounWithGender(card)) {
+    return swedish;
+  }
+
+  return `${swedish} · ${card.grammar.gender}`;
+}
+
 function getWordPrimaryText(card) {
   if (wordsDirection === "sv-pt") {
-    return card.term.swedish;
+    return getWordSwedishListText(card);
   }
 
   return card.term.portuguese;
@@ -2019,7 +2110,7 @@ function getWordPrimaryText(card) {
 function getWordSecondaryText(card) {
   const translation = wordsDirection === "sv-pt"
     ? card.term.portuguese
-    : card.term.swedish;
+    : getWordSwedishListText(card);
 
   if (wordsViewMode !== "wrong") {
     return translation;
@@ -2100,22 +2191,36 @@ function handleWordsListClick(event) {
 }
 
 function resetStats() {
+  const filteredCards = getFilteredCards();
+
+  if (filteredCards.length === 0) {
+    setupMessage.textContent = "Nenhuma palavra encontrada com os filtros atuais.";
+    return;
+  }
+
   const shouldReset = window.confirm(
-    "Tem certeza que deseja zerar acertos, erros e prioridades de todas as palavras?"
+    `Tem certeza que deseja zerar o progresso de ${filteredCards.length} palavra(s) dos filtros atuais? As demais palavras permanecerão inalteradas.`
   );
 
   if (!shouldReset) {
     return;
   }
 
-  stats = {};
-  localStorage.removeItem(STORAGE_KEY);
+  filteredCards.forEach((card) => {
+    delete stats[String(card.id)];
+  });
+
+  if (Object.keys(stats).length === 0) {
+    localStorage.removeItem(STORAGE_KEY);
+  } else {
+    saveStats();
+  }
 
   correctCount = 0;
   wrongCount = 0;
   sessionAnswers = [];
 
-  setupMessage.textContent = "Progresso zerado. As palavras voltarão a ser tratadas como novas.";
+  setupMessage.textContent = `Progresso zerado para ${filteredCards.length} palavra(s) dos filtros atuais. As demais palavras foram mantidas.`;
 }
 
 const audioPreloadCache = new Map();

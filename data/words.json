@@ -13358,5 +13358,73 @@
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/Sv-vid.ogg"
       }
     }
+  },
+  {
+    "id": 399,
+    "order": 399,
+    "active": true,
+    "term": {
+      "swedish": "betyda",
+      "portuguese": "significar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": "betyda",
+      "present": "betyder",
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 2,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sv-betyda.ogg"
+      }
+    }
+  },
+  {
+    "id": 400,
+    "order": 400,
+    "active": true,
+    "term": {
+      "swedish": "som",
+      "portuguese": "que / o qual / a qual"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definite": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 2,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
   }
 ]
