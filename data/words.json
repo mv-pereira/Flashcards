@@ -4,8 +4,8 @@
     "order": 1,
     "active": true,
     "term": {
-      "swedish": "en bok",
-      "portuguese": "um livro"
+      "swedish": "bok",
+      "portuguese": "livro"
     },
     "grammar": {
       "type": "substantivo",
@@ -2360,8 +2360,8 @@
     "order": 75,
     "active": true,
     "term": {
-      "swedish": "en flickvän",
-      "portuguese": "uma namorada"
+      "swedish": "flickvän",
+      "portuguese": "namorada"
     },
     "grammar": {
       "type": "substantivo",
@@ -2394,8 +2394,8 @@
     "order": 76,
     "active": true,
     "term": {
-      "swedish": "en tjej",
-      "portuguese": "uma garota"
+      "swedish": "tjej",
+      "portuguese": "garota"
     },
     "grammar": {
       "type": "substantivo",
@@ -2428,8 +2428,8 @@
     "order": 77,
     "active": true,
     "term": {
-      "swedish": "en pojkvän",
-      "portuguese": "um namorado"
+      "swedish": "pojkvän",
+      "portuguese": "namorado"
     },
     "grammar": {
       "type": "substantivo",
@@ -2462,8 +2462,8 @@
     "order": 78,
     "active": true,
     "term": {
-      "swedish": "en kille",
-      "portuguese": "um garoto"
+      "swedish": "kille",
+      "portuguese": "garoto"
     },
     "grammar": {
       "type": "substantivo",
@@ -2496,8 +2496,8 @@
     "order": 79,
     "active": true,
     "term": {
-      "swedish": "en fru",
-      "portuguese": "uma esposa"
+      "swedish": "fru",
+      "portuguese": "esposa"
     },
     "grammar": {
       "type": "substantivo",
@@ -2530,8 +2530,8 @@
     "order": 80,
     "active": true,
     "term": {
-      "swedish": "en man",
-      "portuguese": "um marido / um homem"
+      "swedish": "man",
+      "portuguese": "marido / homem"
     },
     "grammar": {
       "type": "substantivo",
@@ -2564,8 +2564,8 @@
     "order": 81,
     "active": true,
     "term": {
-      "swedish": "en dotter",
-      "portuguese": "uma filha"
+      "swedish": "dotter",
+      "portuguese": "filha"
     },
     "grammar": {
       "type": "substantivo",
@@ -2598,8 +2598,8 @@
     "order": 82,
     "active": true,
     "term": {
-      "swedish": "en son",
-      "portuguese": "um filho"
+      "swedish": "son",
+      "portuguese": "filho"
     },
     "grammar": {
       "type": "substantivo",
@@ -2632,8 +2632,8 @@
     "order": 83,
     "active": true,
     "term": {
-      "swedish": "ett barn",
-      "portuguese": "uma criança / um filho"
+      "swedish": "barn",
+      "portuguese": "criança / filho"
     },
     "grammar": {
       "type": "substantivo",
@@ -2938,8 +2938,8 @@
     "order": 92,
     "active": true,
     "term": {
-      "swedish": "en student",
-      "portuguese": "um estudante / uma estudante"
+      "swedish": "student",
+      "portuguese": "estudante / estudante"
     },
     "grammar": {
       "type": "substantivo",
@@ -2972,8 +2972,8 @@
     "order": 93,
     "active": true,
     "term": {
-      "swedish": "en lärare",
-      "portuguese": "um professor / uma professora"
+      "swedish": "lärare",
+      "portuguese": "professor / professora"
     },
     "grammar": {
       "type": "substantivo",
@@ -5256,8 +5256,8 @@
     "order": 160,
     "active": true,
     "term": {
-      "swedish": "ett moln",
-      "portuguese": "uma nuvem"
+      "swedish": "moln",
+      "portuguese": "nuvem"
     },
     "grammar": {
       "type": "substantivo",
@@ -5292,8 +5292,8 @@
     "order": 161,
     "active": true,
     "term": {
-      "swedish": "en väderkvarn",
-      "portuguese": "um moinho de vento"
+      "swedish": "väderkvarn",
+      "portuguese": "moinho de vento"
     },
     "grammar": {
       "type": "substantivo",
@@ -5364,7 +5364,7 @@
     "order": 163,
     "active": true,
     "term": {
-      "swedish": "en konfetti",
+      "swedish": "konfetti",
       "portuguese": "confete"
     },
     "grammar": {
@@ -5400,8 +5400,8 @@
     "order": 164,
     "active": true,
     "term": {
-      "swedish": "en rocklåt",
-      "portuguese": "uma música de rock"
+      "swedish": "rocklåt",
+      "portuguese": "música de rock"
     },
     "grammar": {
       "type": "substantivo",
@@ -5436,8 +5436,8 @@
     "order": 165,
     "active": true,
     "term": {
-      "swedish": "en kassett",
-      "portuguese": "uma fita cassete"
+      "swedish": "kassett",
+      "portuguese": "fita cassete"
     },
     "grammar": {
       "type": "substantivo",
@@ -5472,8 +5472,8 @@
     "order": 166,
     "active": true,
     "term": {
-      "swedish": "en majstång",
-      "portuguese": "um mastro de midsommar"
+      "swedish": "majstång",
+      "portuguese": "mastro de midsommar"
     },
     "grammar": {
       "type": "substantivo",
@@ -5508,8 +5508,8 @@
     "order": 167,
     "active": true,
     "term": {
-      "swedish": "en klocka",
-      "portuguese": "um sino / um relógio"
+      "swedish": "klocka",
+      "portuguese": "sino / relógio"
     },
     "grammar": {
       "type": "substantivo",
@@ -5544,8 +5544,8 @@
     "order": 168,
     "active": true,
     "term": {
-      "swedish": "ett lastbilsflak",
-      "portuguese": "uma carroceria de caminhão"
+      "swedish": "lastbilsflak",
+      "portuguese": "carroceria de caminhão"
     },
     "grammar": {
       "type": "substantivo",
@@ -5580,8 +5580,8 @@
     "order": 169,
     "active": true,
     "term": {
-      "swedish": "en höst",
-      "portuguese": "um outono"
+      "swedish": "höst",
+      "portuguese": "outono"
     },
     "grammar": {
       "type": "substantivo",
@@ -5616,8 +5616,8 @@
     "order": 170,
     "active": true,
     "term": {
-      "swedish": "en dröm",
-      "portuguese": "um sonho"
+      "swedish": "dröm",
+      "portuguese": "sonho"
     },
     "grammar": {
       "type": "substantivo",
@@ -5652,8 +5652,8 @@
     "order": 171,
     "active": true,
     "term": {
-      "swedish": "en styrka",
-      "portuguese": "uma força"
+      "swedish": "styrka",
+      "portuguese": "força"
     },
     "grammar": {
       "type": "substantivo",
@@ -5688,8 +5688,8 @@
     "order": 172,
     "active": true,
     "term": {
-      "swedish": "ett mod",
-      "portuguese": "uma coragem"
+      "swedish": "mod",
+      "portuguese": "coragem"
     },
     "grammar": {
       "type": "substantivo",
@@ -5724,8 +5724,8 @@
     "order": 173,
     "active": true,
     "term": {
-      "swedish": "en applåd",
-      "portuguese": "um aplauso"
+      "swedish": "applåd",
+      "portuguese": "aplauso"
     },
     "grammar": {
       "type": "substantivo",
@@ -5760,8 +5760,8 @@
     "order": 174,
     "active": true,
     "term": {
-      "swedish": "en frukost",
-      "portuguese": "um café da manhã"
+      "swedish": "frukost",
+      "portuguese": "café da manhã"
     },
     "grammar": {
       "type": "substantivo",
@@ -5796,8 +5796,8 @@
     "order": 175,
     "active": true,
     "term": {
-      "swedish": "ett hav",
-      "portuguese": "um mar"
+      "swedish": "hav",
+      "portuguese": "mar"
     },
     "grammar": {
       "type": "substantivo",
@@ -5832,8 +5832,8 @@
     "order": 176,
     "active": true,
     "term": {
-      "swedish": "en kyss",
-      "portuguese": "um beijo"
+      "swedish": "kyss",
+      "portuguese": "beijo"
     },
     "grammar": {
       "type": "substantivo",
@@ -5868,8 +5868,8 @@
     "order": 177,
     "active": true,
     "term": {
-      "swedish": "ett tåg",
-      "portuguese": "um trem"
+      "swedish": "tåg",
+      "portuguese": "trem"
     },
     "grammar": {
       "type": "substantivo",
@@ -5904,8 +5904,8 @@
     "order": 178,
     "active": true,
     "term": {
-      "swedish": "en natt",
-      "portuguese": "uma noite"
+      "swedish": "natt",
+      "portuguese": "noite"
     },
     "grammar": {
       "type": "substantivo",
@@ -5940,8 +5940,8 @@
     "order": 179,
     "active": true,
     "term": {
-      "swedish": "en bil",
-      "portuguese": "um carro"
+      "swedish": "bil",
+      "portuguese": "carro"
     },
     "grammar": {
       "type": "substantivo",
@@ -5976,8 +5976,8 @@
     "order": 180,
     "active": true,
     "term": {
-      "swedish": "en syster",
-      "portuguese": "uma irmã"
+      "swedish": "syster",
+      "portuguese": "irmã"
     },
     "grammar": {
       "type": "substantivo",
@@ -6012,8 +6012,8 @@
     "order": 181,
     "active": true,
     "term": {
-      "swedish": "ett knä",
-      "portuguese": "um joelho / colo"
+      "swedish": "knä",
+      "portuguese": "joelho / colo"
     },
     "grammar": {
       "type": "substantivo",
@@ -6048,8 +6048,8 @@
     "order": 182,
     "active": true,
     "term": {
-      "swedish": "en vår",
-      "portuguese": "uma primavera"
+      "swedish": "vår",
+      "portuguese": "primavera"
     },
     "grammar": {
       "type": "substantivo",
@@ -6118,8 +6118,8 @@
     "order": 184,
     "active": true,
     "term": {
-      "swedish": "en gata",
-      "portuguese": "uma rua"
+      "swedish": "gata",
+      "portuguese": "rua"
     },
     "grammar": {
       "type": "substantivo",
@@ -6154,8 +6154,8 @@
     "order": 185,
     "active": true,
     "term": {
-      "swedish": "ett ljud",
-      "portuguese": "um som"
+      "swedish": "ljud",
+      "portuguese": "som"
     },
     "grammar": {
       "type": "substantivo",
@@ -6190,8 +6190,8 @@
     "order": 186,
     "active": true,
     "term": {
-      "swedish": "en låt",
-      "portuguese": "uma música / uma canção"
+      "swedish": "låt",
+      "portuguese": "música / canção"
     },
     "grammar": {
       "type": "substantivo",
@@ -6226,8 +6226,8 @@
     "order": 187,
     "active": true,
     "term": {
-      "swedish": "ett farväl",
-      "portuguese": "uma despedida"
+      "swedish": "farväl",
+      "portuguese": "despedida"
     },
     "grammar": {
       "type": "substantivo",
@@ -6262,8 +6262,8 @@
     "order": 188,
     "active": true,
     "term": {
-      "swedish": "en kyrka",
-      "portuguese": "uma igreja"
+      "swedish": "kyrka",
+      "portuguese": "igreja"
     },
     "grammar": {
       "type": "substantivo",
@@ -6298,8 +6298,8 @@
     "order": 189,
     "active": true,
     "term": {
-      "swedish": "en psalm",
-      "portuguese": "um hino / salmo"
+      "swedish": "psalm",
+      "portuguese": "hino / salmo"
     },
     "grammar": {
       "type": "substantivo",
@@ -6334,8 +6334,8 @@
     "order": 190,
     "active": true,
     "term": {
-      "swedish": "ett liv",
-      "portuguese": "uma vida"
+      "swedish": "liv",
+      "portuguese": "vida"
     },
     "grammar": {
       "type": "substantivo",
@@ -6370,8 +6370,8 @@
     "order": 191,
     "active": true,
     "term": {
-      "swedish": "en del",
-      "portuguese": "uma parte"
+      "swedish": "del",
+      "portuguese": "parte"
     },
     "grammar": {
       "type": "substantivo",
@@ -6406,8 +6406,8 @@
     "order": 192,
     "active": true,
     "term": {
-      "swedish": "ett hjärta",
-      "portuguese": "um coração"
+      "swedish": "hjärta",
+      "portuguese": "coração"
     },
     "grammar": {
       "type": "substantivo",
@@ -6442,8 +6442,8 @@
     "order": 193,
     "active": true,
     "term": {
-      "swedish": "ett slag",
-      "portuguese": "uma batida / um golpe"
+      "swedish": "slag",
+      "portuguese": "batida / golpe"
     },
     "grammar": {
       "type": "substantivo",
@@ -6478,8 +6478,8 @@
     "order": 194,
     "active": true,
     "term": {
-      "swedish": "en sommar",
-      "portuguese": "um verão"
+      "swedish": "sommar",
+      "portuguese": "verão"
     },
     "grammar": {
       "type": "substantivo",
@@ -6514,8 +6514,8 @@
     "order": 195,
     "active": true,
     "term": {
-      "swedish": "en sak",
-      "portuguese": "uma coisa"
+      "swedish": "sak",
+      "portuguese": "coisa"
     },
     "grammar": {
       "type": "substantivo",
@@ -6550,8 +6550,8 @@
     "order": 196,
     "active": true,
     "term": {
-      "swedish": "en familj",
-      "portuguese": "uma família"
+      "swedish": "familj",
+      "portuguese": "família"
     },
     "grammar": {
       "type": "substantivo",
@@ -6586,8 +6586,8 @@
     "order": 197,
     "active": true,
     "term": {
-      "swedish": "en mamma",
-      "portuguese": "uma mãe"
+      "swedish": "mamma",
+      "portuguese": "mãe"
     },
     "grammar": {
       "type": "substantivo",
@@ -6622,8 +6622,8 @@
     "order": 198,
     "active": true,
     "term": {
-      "swedish": "en pappa",
-      "portuguese": "um pai"
+      "swedish": "pappa",
+      "portuguese": "pai"
     },
     "grammar": {
       "type": "substantivo",
@@ -6658,8 +6658,8 @@
     "order": 199,
     "active": true,
     "term": {
-      "swedish": "en bror",
-      "portuguese": "um irmão"
+      "swedish": "bror",
+      "portuguese": "irmão"
     },
     "grammar": {
       "type": "substantivo",
@@ -6694,8 +6694,8 @@
     "order": 200,
     "active": true,
     "term": {
-      "swedish": "ett syskon",
-      "portuguese": "um irmão ou uma irmã"
+      "swedish": "syskon",
+      "portuguese": "irmão ou uma irmã"
     },
     "grammar": {
       "type": "substantivo",
@@ -6730,8 +6730,8 @@
     "order": 201,
     "active": true,
     "term": {
-      "swedish": "en hund",
-      "portuguese": "um cachorro"
+      "swedish": "hund",
+      "portuguese": "cachorro"
     },
     "grammar": {
       "type": "substantivo",
@@ -6766,8 +6766,8 @@
     "order": 202,
     "active": true,
     "term": {
-      "swedish": "en katt",
-      "portuguese": "um gato"
+      "swedish": "katt",
+      "portuguese": "gato"
     },
     "grammar": {
       "type": "substantivo",
@@ -6802,8 +6802,8 @@
     "order": 203,
     "active": true,
     "term": {
-      "swedish": "en släkt",
-      "portuguese": "uma família extensa; parentes"
+      "swedish": "släkt",
+      "portuguese": "família extensa; parentes"
     },
     "grammar": {
       "type": "substantivo",
@@ -6838,8 +6838,8 @@
     "order": 204,
     "active": true,
     "term": {
-      "swedish": "en moster",
-      "portuguese": "uma tia por parte de mãe"
+      "swedish": "moster",
+      "portuguese": "tia por parte de mãe"
     },
     "grammar": {
       "type": "substantivo",
@@ -6874,8 +6874,8 @@
     "order": 205,
     "active": true,
     "term": {
-      "swedish": "en morbror",
-      "portuguese": "um tio por parte de mãe"
+      "swedish": "morbror",
+      "portuguese": "tio por parte de mãe"
     },
     "grammar": {
       "type": "substantivo",
@@ -6910,8 +6910,8 @@
     "order": 206,
     "active": true,
     "term": {
-      "swedish": "en mormor",
-      "portuguese": "uma avó materna"
+      "swedish": "mormor",
+      "portuguese": "avó materna"
     },
     "grammar": {
       "type": "substantivo",
@@ -6946,8 +6946,8 @@
     "order": 207,
     "active": true,
     "term": {
-      "swedish": "en morfar",
-      "portuguese": "um avô materno"
+      "swedish": "morfar",
+      "portuguese": "avô materno"
     },
     "grammar": {
       "type": "substantivo",
@@ -6982,8 +6982,8 @@
     "order": 208,
     "active": true,
     "term": {
-      "swedish": "en faster",
-      "portuguese": "uma tia por parte de pai"
+      "swedish": "faster",
+      "portuguese": "tia por parte de pai"
     },
     "grammar": {
       "type": "substantivo",
@@ -7018,8 +7018,8 @@
     "order": 209,
     "active": true,
     "term": {
-      "swedish": "en farbror",
-      "portuguese": "um tio por parte de pai"
+      "swedish": "farbror",
+      "portuguese": "tio por parte de pai"
     },
     "grammar": {
       "type": "substantivo",
@@ -7054,8 +7054,8 @@
     "order": 210,
     "active": true,
     "term": {
-      "swedish": "en farmor",
-      "portuguese": "uma avó paterna"
+      "swedish": "farmor",
+      "portuguese": "avó paterna"
     },
     "grammar": {
       "type": "substantivo",
@@ -7090,8 +7090,8 @@
     "order": 211,
     "active": true,
     "term": {
-      "swedish": "en farfar",
-      "portuguese": "um avô paterno"
+      "swedish": "farfar",
+      "portuguese": "avô paterno"
     },
     "grammar": {
       "type": "substantivo",
@@ -7126,8 +7126,8 @@
     "order": 212,
     "active": true,
     "term": {
-      "swedish": "ett barnbarn",
-      "portuguese": "um neto; uma neta"
+      "swedish": "barnbarn",
+      "portuguese": "neto; neta"
     },
     "grammar": {
       "type": "substantivo",
@@ -7162,8 +7162,8 @@
     "order": 213,
     "active": true,
     "term": {
-      "swedish": "en kusin",
-      "portuguese": "um primo; uma prima"
+      "swedish": "kusin",
+      "portuguese": "primo; prima"
     },
     "grammar": {
       "type": "substantivo",
@@ -7198,8 +7198,8 @@
     "order": 214,
     "active": true,
     "term": {
-      "swedish": "en svärfar",
-      "portuguese": "um sogro"
+      "swedish": "svärfar",
+      "portuguese": "sogro"
     },
     "grammar": {
       "type": "substantivo",
@@ -7234,8 +7234,8 @@
     "order": 215,
     "active": true,
     "term": {
-      "swedish": "en svärmor",
-      "portuguese": "uma sogra"
+      "swedish": "svärmor",
+      "portuguese": "sogra"
     },
     "grammar": {
       "type": "substantivo",
@@ -7270,8 +7270,8 @@
     "order": 216,
     "active": true,
     "term": {
-      "swedish": "en svåger",
-      "portuguese": "um cunhado"
+      "swedish": "svåger",
+      "portuguese": "cunhado"
     },
     "grammar": {
       "type": "substantivo",
@@ -7306,8 +7306,8 @@
     "order": 217,
     "active": true,
     "term": {
-      "swedish": "en svägerska",
-      "portuguese": "uma cunhada"
+      "swedish": "svägerska",
+      "portuguese": "cunhada"
     },
     "grammar": {
       "type": "substantivo",
@@ -8782,8 +8782,8 @@
     "order": 258,
     "active": true,
     "term": {
-      "swedish": "en mobil",
-      "portuguese": "um celular"
+      "swedish": "mobil",
+      "portuguese": "celular"
     },
     "grammar": {
       "type": "substantivo",
@@ -8818,8 +8818,8 @@
     "order": 259,
     "active": true,
     "term": {
-      "swedish": "ett busskort",
-      "portuguese": "um cartão de ônibus; um passe de ônibus"
+      "swedish": "busskort",
+      "portuguese": "cartão de ônibus; passe de ônibus"
     },
     "grammar": {
       "type": "substantivo",
@@ -9214,8 +9214,8 @@
     "order": 276,
     "active": true,
     "term": {
-      "swedish": "ett hus",
-      "portuguese": "uma casa"
+      "swedish": "hus",
+      "portuguese": "casa"
     },
     "grammar": {
       "type": "substantivo",
@@ -9250,8 +9250,8 @@
     "order": 277,
     "active": true,
     "term": {
-      "swedish": "en lägenhet",
-      "portuguese": "um apartamento"
+      "swedish": "lägenhet",
+      "portuguese": "apartamento"
     },
     "grammar": {
       "type": "substantivo",
@@ -9286,8 +9286,8 @@
     "order": 278,
     "active": true,
     "term": {
-      "swedish": "en etta",
-      "portuguese": "um apartamento tipo estúdio"
+      "swedish": "etta",
+      "portuguese": "apartamento tipo estúdio"
     },
     "grammar": {
       "type": "substantivo",
@@ -9322,8 +9322,8 @@
     "order": 279,
     "active": true,
     "term": {
-      "swedish": "en tvåa",
-      "portuguese": "um apartamento de um quarto"
+      "swedish": "tvåa",
+      "portuguese": "apartamento de um quarto"
     },
     "grammar": {
       "type": "substantivo",
@@ -9358,8 +9358,8 @@
     "order": 280,
     "active": true,
     "term": {
-      "swedish": "en trea",
-      "portuguese": "um apartamento de dois quartos"
+      "swedish": "trea",
+      "portuguese": "apartamento de dois quartos"
     },
     "grammar": {
       "type": "substantivo",
@@ -9394,8 +9394,8 @@
     "order": 281,
     "active": true,
     "term": {
-      "swedish": "en fyra",
-      "portuguese": "um apartamento de três quartos"
+      "swedish": "fyra",
+      "portuguese": "apartamento de três quartos"
     },
     "grammar": {
       "type": "substantivo",
@@ -9430,8 +9430,8 @@
     "order": 282,
     "active": true,
     "term": {
-      "swedish": "en femma",
-      "portuguese": "um apartamento de quatro quartos"
+      "swedish": "femma",
+      "portuguese": "apartamento de quatro quartos"
     },
     "grammar": {
       "type": "substantivo",
@@ -9466,8 +9466,8 @@
     "order": 283,
     "active": true,
     "term": {
-      "swedish": "ett sovrum",
-      "portuguese": "um quarto"
+      "swedish": "sovrum",
+      "portuguese": "quarto"
     },
     "grammar": {
       "type": "substantivo",
@@ -9502,8 +9502,8 @@
     "order": 284,
     "active": true,
     "term": {
-      "swedish": "ett vardagsrum",
-      "portuguese": "uma sala de estar"
+      "swedish": "vardagsrum",
+      "portuguese": "sala de estar"
     },
     "grammar": {
       "type": "substantivo",
@@ -9538,8 +9538,8 @@
     "order": 285,
     "active": true,
     "term": {
-      "swedish": "ett kök",
-      "portuguese": "uma cozinha"
+      "swedish": "kök",
+      "portuguese": "cozinha"
     },
     "grammar": {
       "type": "substantivo",
@@ -9574,8 +9574,8 @@
     "order": 286,
     "active": true,
     "term": {
-      "swedish": "ett badrum",
-      "portuguese": "um banheiro"
+      "swedish": "badrum",
+      "portuguese": "banheiro"
     },
     "grammar": {
       "type": "substantivo",
@@ -9610,8 +9610,8 @@
     "order": 287,
     "active": true,
     "term": {
-      "swedish": "en kvadratmeter",
-      "portuguese": "um metro quadrado"
+      "swedish": "kvadratmeter",
+      "portuguese": "metro quadrado"
     },
     "grammar": {
       "type": "substantivo",
@@ -10338,8 +10338,8 @@
     "order": 310,
     "active": true,
     "term": {
-      "swedish": "ett kafé",
-      "portuguese": "um café / uma cafeteria"
+      "swedish": "kafé",
+      "portuguese": "café / cafeteria"
     },
     "grammar": {
       "type": "substantivo",
@@ -10372,8 +10372,8 @@
     "order": 311,
     "active": true,
     "term": {
-      "swedish": "en fika",
-      "portuguese": "uma pausa para café"
+      "swedish": "fika",
+      "portuguese": "pausa para café"
     },
     "grammar": {
       "type": "substantivo",
@@ -10406,8 +10406,8 @@
     "order": 312,
     "active": true,
     "term": {
-      "swedish": "en kopp kaffe",
-      "portuguese": "uma xícara de café"
+      "swedish": "kopp kaffe",
+      "portuguese": "xícara de café"
     },
     "grammar": {
       "type": "substantivo",
@@ -10440,8 +10440,8 @@
     "order": 313,
     "active": true,
     "term": {
-      "swedish": "en kopp te",
-      "portuguese": "uma xícara de chá"
+      "swedish": "kopp te",
+      "portuguese": "xícara de chá"
     },
     "grammar": {
       "type": "substantivo",
@@ -10474,8 +10474,8 @@
     "order": 314,
     "active": true,
     "term": {
-      "swedish": "en latte",
-      "portuguese": "um latte"
+      "swedish": "latte",
+      "portuguese": "latte"
     },
     "grammar": {
       "type": "substantivo",
@@ -10508,8 +10508,8 @@
     "order": 315,
     "active": true,
     "term": {
-      "swedish": "en påtår",
-      "portuguese": "um refil de café"
+      "swedish": "påtår",
+      "portuguese": "refil de café"
     },
     "grammar": {
       "type": "substantivo",
@@ -10814,8 +10814,8 @@
     "order": 324,
     "active": true,
     "term": {
-      "swedish": "en lussebulle",
-      "portuguese": "um pão doce de açafrão"
+      "swedish": "lussebulle",
+      "portuguese": "pão doce de açafrão"
     },
     "grammar": {
       "type": "substantivo",
@@ -10848,8 +10848,8 @@
     "order": 325,
     "active": true,
     "term": {
-      "swedish": "en dammsugare",
-      "portuguese": "um doce chamado dammsugare"
+      "swedish": "dammsugare",
+      "portuguese": "doce chamado dammsugare"
     },
     "grammar": {
       "type": "substantivo",
@@ -10882,8 +10882,8 @@
     "order": 326,
     "active": true,
     "term": {
-      "swedish": "ett glas vatten",
-      "portuguese": "um copo de água"
+      "swedish": "glas vatten",
+      "portuguese": "copo de água"
     },
     "grammar": {
       "type": "substantivo",
@@ -11018,8 +11018,8 @@
     "order": 330,
     "active": true,
     "term": {
-      "swedish": "en kniv",
-      "portuguese": "uma faca"
+      "swedish": "kniv",
+      "portuguese": "faca"
     },
     "grammar": {
       "type": "substantivo",
@@ -11052,8 +11052,8 @@
     "order": 331,
     "active": true,
     "term": {
-      "swedish": "en gaffel",
-      "portuguese": "um garfo"
+      "swedish": "gaffel",
+      "portuguese": "garfo"
     },
     "grammar": {
       "type": "substantivo",
@@ -11086,8 +11086,8 @@
     "order": 332,
     "active": true,
     "term": {
-      "swedish": "en sked",
-      "portuguese": "uma colher"
+      "swedish": "sked",
+      "portuguese": "colher"
     },
     "grammar": {
       "type": "substantivo",
@@ -11120,8 +11120,8 @@
     "order": 333,
     "active": true,
     "term": {
-      "swedish": "en tallrik",
-      "portuguese": "um prato"
+      "swedish": "tallrik",
+      "portuguese": "prato"
     },
     "grammar": {
       "type": "substantivo",
@@ -11154,8 +11154,8 @@
     "order": 334,
     "active": true,
     "term": {
-      "swedish": "en servett",
-      "portuguese": "um guardanapo"
+      "swedish": "servett",
+      "portuguese": "guardanapo"
     },
     "grammar": {
       "type": "substantivo",
@@ -11188,8 +11188,8 @@
     "order": 335,
     "active": true,
     "term": {
-      "swedish": "en stol",
-      "portuguese": "uma cadeira"
+      "swedish": "stol",
+      "portuguese": "cadeira"
     },
     "grammar": {
       "type": "substantivo",
@@ -11222,8 +11222,8 @@
     "order": 336,
     "active": true,
     "term": {
-      "swedish": "ett bord",
-      "portuguese": "uma mesa"
+      "swedish": "bord",
+      "portuguese": "mesa"
     },
     "grammar": {
       "type": "substantivo",
@@ -11256,8 +11256,8 @@
     "order": 337,
     "active": true,
     "term": {
-      "swedish": "en toalett",
-      "portuguese": "um banheiro / uma privada"
+      "swedish": "toalett",
+      "portuguese": "banheiro / privada"
     },
     "grammar": {
       "type": "substantivo",
@@ -11426,8 +11426,8 @@
     "order": 342,
     "active": true,
     "term": {
-      "swedish": "en tid",
-      "portuguese": "um horário"
+      "swedish": "tid",
+      "portuguese": "horário"
     },
     "grammar": {
       "type": "substantivo",
@@ -11528,8 +11528,8 @@
     "order": 345,
     "active": true,
     "term": {
-      "swedish": "en e-postadress",
-      "portuguese": "um endereço de e-mail"
+      "swedish": "e-postadress",
+      "portuguese": "endereço de e-mail"
     },
     "grammar": {
       "type": "substantivo",
@@ -11868,8 +11868,8 @@
     "order": 355,
     "active": true,
     "term": {
-      "swedish": "en månad",
-      "portuguese": "um mês"
+      "swedish": "månad",
+      "portuguese": "mês"
     },
     "grammar": {
       "type": "substantivo",
@@ -12140,8 +12140,8 @@
     "order": 363,
     "active": true,
     "term": {
-      "swedish": "ett år",
-      "portuguese": "um ano"
+      "swedish": "år",
+      "portuguese": "ano"
     },
     "grammar": {
       "type": "substantivo",
@@ -12174,8 +12174,8 @@
     "order": 364,
     "active": true,
     "term": {
-      "swedish": "ett kvartal",
-      "portuguese": "um trimestre"
+      "swedish": "kvartal",
+      "portuguese": "trimestre"
     },
     "grammar": {
       "type": "substantivo",
@@ -12208,8 +12208,8 @@
     "order": 365,
     "active": true,
     "term": {
-      "swedish": "en vecka",
-      "portuguese": "uma semana"
+      "swedish": "vecka",
+      "portuguese": "semana"
     },
     "grammar": {
       "type": "substantivo",
@@ -12242,8 +12242,8 @@
     "order": 366,
     "active": true,
     "term": {
-      "swedish": "ett dygn",
-      "portuguese": "um período de 24 horas"
+      "swedish": "dygn",
+      "portuguese": "período de 24 horas"
     },
     "grammar": {
       "type": "substantivo",
@@ -12276,8 +12276,8 @@
     "order": 367,
     "active": true,
     "term": {
-      "swedish": "en dag",
-      "portuguese": "um dia"
+      "swedish": "dag",
+      "portuguese": "dia"
     },
     "grammar": {
       "type": "substantivo",
@@ -12310,8 +12310,8 @@
     "order": 368,
     "active": true,
     "term": {
-      "swedish": "en timme",
-      "portuguese": "uma hora"
+      "swedish": "timme",
+      "portuguese": "hora"
     },
     "grammar": {
       "type": "substantivo",
@@ -12344,7 +12344,7 @@
     "order": 369,
     "active": true,
     "term": {
-      "swedish": "en halvtimme",
+      "swedish": "halvtimme",
       "portuguese": "meia hora"
     },
     "grammar": {
@@ -12378,8 +12378,8 @@
     "order": 370,
     "active": true,
     "term": {
-      "swedish": "en minut",
-      "portuguese": "um minuto"
+      "swedish": "minut",
+      "portuguese": "minuto"
     },
     "grammar": {
       "type": "substantivo",
@@ -12412,8 +12412,8 @@
     "order": 371,
     "active": true,
     "term": {
-      "swedish": "en sekund",
-      "portuguese": "um segundo"
+      "swedish": "sekund",
+      "portuguese": "segundo"
     },
     "grammar": {
       "type": "substantivo",
@@ -12888,8 +12888,8 @@
     "order": 385,
     "active": true,
     "term": {
-      "swedish": "en morgonrutin",
-      "portuguese": "uma rotina matinal"
+      "swedish": "morgonrutin",
+      "portuguese": "rotina matinal"
     },
     "grammar": {
       "type": "substantivo",
@@ -13390,40 +13390,6 @@
       },
       "audio": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sv-betyda.ogg"
-      }
-    }
-  },
-  {
-    "id": 400,
-    "order": 400,
-    "active": true,
-    "term": {
-      "swedish": "som",
-      "portuguese": "que / o qual / a qual"
-    },
-    "grammar": {
-      "type": "pronome",
-      "gender": null,
-      "plural": null,
-      "definite": null,
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "gramática funcional"
-      ],
-      "chapter": 2,
-      "sourceTitle": null
-    },
-    "media": {
-      "image": {
-        "src": null
-      },
-      "audio": {
-        "src": null
       }
     }
   }
