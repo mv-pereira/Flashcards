@@ -1366,18 +1366,14 @@ function compareWrittenAnswer(userAnswer, expectedAnswer, card) {
     };
   }
 
-  const articleFeedback = getNounArticleFeedback(
+  const nounComparison = compareNounWithGenderAnswer(
     card,
     normalizedUserAnswer,
     normalizedExpectedAnswer
   );
 
-  if (articleFeedback) {
-    return {
-      isCorrect: false,
-      distance: comparison.distance,
-      feedback: articleFeedback
-    };
+  if (nounComparison) {
+    return nounComparison;
   }
 
   return {
@@ -1555,37 +1551,134 @@ function getDamerauLevenshteinComparison(source, target) {
   };
 }
 
-function getNounArticleFeedback(card, normalizedUserAnswer, normalizedExpectedAnswer) {
+function compareNounWithGenderAnswer(card, normalizedUserAnswer, normalizedExpectedAnswer) {
   if (!isNounWithGender(card)) {
-    return "";
+    return null;
   }
 
   const expectedArticle = card.grammar.gender;
   const normalizedBaseWord = normalizeAnswer(card.term?.swedish || "");
 
   if (!normalizedBaseWord) {
-    return "";
+    return null;
   }
 
   if (normalizedUserAnswer === normalizedBaseWord) {
-    return `Faltou o artigo. O correto é “${normalizedExpectedAnswer}”.`;
+    return {
+      isCorrect: false,
+      distance: 1,
+      feedback: `Faltou o artigo. O correto é “${normalizedExpectedAnswer}”.`
+    };
   }
 
-  const userWords = normalizedUserAnswer.split(" ");
-  const firstWord = userWords[0];
-  const restOfAnswer = userWords.slice(1).join(" ");
+  const userNounParts = splitNounAnswer(normalizedUserAnswer);
 
-  const usedSwedishArticle = firstWord === "en" || firstWord === "ett";
+  if (!userNounParts.word) {
+    return null;
+  }
 
   if (
-    usedSwedishArticle &&
-    firstWord !== expectedArticle &&
-    restOfAnswer === normalizedBaseWord
+    userNounParts.hasSwedishArticle &&
+    userNounParts.article !== expectedArticle &&
+    userNounParts.word === normalizedBaseWord
   ) {
-    return `Artigo errado. O correto é “${normalizedExpectedAnswer}”.`;
+    return {
+      isCorrect: false,
+      distance: 1,
+      feedback: `Artigo errado. O correto é “${normalizedExpectedAnswer}”.`
+    };
+  }
+
+  if (userNounParts.word !== normalizedBaseWord) {
+    const wordComparison = getDamerauLevenshteinComparison(
+      userNounParts.word,
+      normalizedBaseWord
+    );
+
+    return {
+      isCorrect: false,
+      distance: wordComparison.distance,
+      feedback: buildNounWordFeedbackFromOperations(
+        wordComparison.operations,
+        userNounParts.word,
+        normalizedBaseWord
+      )
+    };
+  }
+
+  return null;
+}
+
+function splitNounAnswer(normalizedAnswer) {
+  const words = normalizedAnswer.split(/\s+/).filter(Boolean);
+  const firstWord = words[0] || "";
+  const hasSwedishArticle = firstWord === "en" || firstWord === "ett";
+
+  if (!hasSwedishArticle) {
+    return {
+      article: "",
+      word: normalizedAnswer,
+      hasSwedishArticle: false
+    };
+  }
+
+  return {
+    article: firstWord,
+    word: words.slice(1).join(" "),
+    hasSwedishArticle: true
+  };
+}
+
+function buildNounWordFeedbackFromOperations(operations, userWord, expectedWord) {
+  const relevantOperations = operations.filter((operation) => {
+    return operation.type !== "match";
+  });
+
+  if (relevantOperations.length === 0) {
+    return "Resposta correta.";
+  }
+
+  return relevantOperations
+    .map((operation) => {
+      return formatNounWordOperation(operation, userWord, expectedWord);
+    })
+    .filter(Boolean)
+    .join(" ");
+}
+
+function formatNounWordOperation(operation, userWord, expectedWord) {
+  if (operation.type === "substitute") {
+    const location = describeNounWordCharacterLocation(expectedWord, operation.position);
+
+    return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
+  }
+
+  if (operation.type === "insert") {
+    const location = describeNounWordCharacterLocation(expectedWord, operation.position);
+
+    return `Faltou a letra "${operation.expectedChar}" ${location}.`;
+  }
+
+  if (operation.type === "delete") {
+    const location = describeNounWordCharacterLocation(userWord, operation.position);
+
+    return `Há uma letra extra "${operation.userChar}" ${location}.`;
+  }
+
+  if (operation.type === "transpose") {
+    const location = describeNounWordCharacterLocation(expectedWord, operation.position);
+
+    return `Algumas letras parecem estar invertidas ${location}.`;
   }
 
   return "";
+}
+
+function describeNounWordCharacterLocation(word, charPosition) {
+  const index = clamp(charPosition - 1, 0, Math.max(word.length - 1, 0));
+  const wordPart = getWordPart(index, word.length);
+
+  return `${wordPart} da palavra`;
 }
 
 function buildComparisonFeedbackFromOperations(operations, userAnswer, expectedAnswer) {
