@@ -19,6 +19,12 @@ let newWordsActiveCount = 1;
 let newWordsRoundResults = {};
 let allNewWordsIntroduced = false;
 
+// Controle especial das palavras acertadas na primeira tentativa
+let newWordsCardProgress = {};
+
+// Quantas rodadas uma palavra acertada de primeira ficará afastada
+const NEW_WORD_FIRST_TRY_DELAY = 5;
+
 let sessionStartTime = null;
 let elapsedBeforePause = 0;
 let timerIntervalId = null;
@@ -560,9 +566,140 @@ function startNewWordsSession(filteredCards) {
   newWordsPool = getNewWordsPool(filteredCards);
   newWordsActiveCount = 1;
   newWordsRoundResults = {};
+  newWordsCardProgress = {};
   allNewWordsIntroduced = newWordsPool.length <= 1;
 
   cards = newWordsPool.slice(0, newWordsActiveCount);
+}
+
+function getNewWordProgress(cardId) {
+  const key = String(cardId);
+
+  if (!newWordsCardProgress[key]) {
+    newWordsCardProgress[key] = {
+      attempts: 0,
+      hadWrongAnswer: false,
+      awaitingConfirmation: false,
+      confirmed: false,
+      delayRounds: 0
+    };
+  }
+
+  return newWordsCardProgress[key];
+}
+
+function updateNewWordProgress(card, isCorrect) {
+  const progress = getNewWordProgress(card.id);
+
+  progress.attempts++;
+
+  if (!isCorrect) {
+    // Se errou alguma vez, perde o benefício de ter acertado de primeira.
+    progress.hadWrongAnswer = true;
+    progress.awaitingConfirmation = false;
+    progress.confirmed = false;
+    progress.delayRounds = 0;
+    return;
+  }
+
+  if (
+    progress.attempts === 1 &&
+    !progress.hadWrongAnswer
+  ) {
+    // Acertou a palavra logo na primeira apresentação.
+    progress.awaitingConfirmation = true;
+    progress.confirmed = false;
+    progress.delayRounds = NEW_WORD_FIRST_TRY_DELAY;
+    return;
+  }
+
+  if (progress.awaitingConfirmation) {
+    // Acertou novamente depois do período de espera.
+    progress.awaitingConfirmation = false;
+    progress.confirmed = true;
+    progress.delayRounds = 0;
+  }
+}
+
+function advanceNewWordsConfirmationDelays() {
+  Object.values(newWordsCardProgress).forEach((progress) => {
+    if (
+      progress.awaitingConfirmation &&
+      progress.delayRounds > 0
+    ) {
+      progress.delayRounds--;
+    }
+  });
+}
+
+function canNewWordAdvance(card) {
+  const progress = getNewWordProgress(card.id);
+
+  // Uma palavra acertada de primeira não impede a entrada
+  // de novas palavras enquanto espera pela confirmação.
+  if (progress.awaitingConfirmation || progress.confirmed) {
+    return true;
+  }
+
+  return newWordsRoundResults[String(card.id)] === true;
+}
+
+function shouldShowNewWord(card) {
+  const progress = getNewWordProgress(card.id);
+
+  if (progress.confirmed) {
+    return false;
+  }
+
+  if (
+    progress.awaitingConfirmation &&
+    progress.delayRounds > 0
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
+function buildNewWordsRoundDeck(activeCards) {
+  let nextCards = activeCards.filter(shouldShowNewWord);
+
+  /*
+   * Pode acontecer de todas as palavras ativas estarem esperando
+   * confirmação. Nesse caso, mostramos a palavra que estiver mais
+   * próxima de terminar seu período de espera, evitando um baralho vazio.
+   */
+  if (nextCards.length === 0) {
+    const awaitingCards = activeCards
+      .filter((card) => {
+        const progress = getNewWordProgress(card.id);
+        return progress.awaitingConfirmation;
+      })
+      .sort((cardA, cardB) => {
+        const progressA = getNewWordProgress(cardA.id);
+        const progressB = getNewWordProgress(cardB.id);
+
+        return progressA.delayRounds - progressB.delayRounds;
+      });
+
+    if (awaitingCards.length > 0) {
+      const confirmationCard = awaitingCards[0];
+      const progress = getNewWordProgress(confirmationCard.id);
+
+      progress.delayRounds = 0;
+      nextCards = [confirmationCard];
+    }
+  }
+
+  /*
+   * Depois que todas tiverem sido confirmadas, mantém o comportamento
+   * contínuo antigo com o SRS geral.
+   */
+  if (nextCards.length === 0) {
+    return buildWeightedDeck(activeCards);
+  }
+
+  return shuffleArray(nextCards);
 }
 
 function getNewWordsPool(filteredCards) {
@@ -1014,6 +1151,7 @@ function registerCurrentAnswer(isCorrect) {
 
   if (isNewWordsMode) {
     newWordsRoundResults[String(currentCard.id)] = isCorrect;
+    updateNewWordProgress(currentCard, isCorrect);
   }
 
   sessionAnswers.push({
@@ -1098,24 +1236,29 @@ function goToNextCard() {
 }
 
 function updateNewWordsDeckAfterRound() {
-  const activeCards = newWordsPool.slice(0, newWordsActiveCount);
-  const allActiveCardsWereCorrect = activeCards.every((card) => {
-    return newWordsRoundResults[String(card.id)] === true;
+  let activeCards = newWordsPool.slice(0, newWordsActiveCount);
+
+  const allActiveCardsCanAdvance = activeCards.every((card) => {
+    return canNewWordAdvance(card);
   });
 
-  if (allActiveCardsWereCorrect && newWordsActiveCount < newWordsPool.length) {
+  if (
+    allActiveCardsCanAdvance &&
+    newWordsActiveCount < newWordsPool.length
+  ) {
     newWordsActiveCount++;
   }
 
-  allNewWordsIntroduced = newWordsActiveCount >= newWordsPool.length;
+  allNewWordsIntroduced =
+    newWordsActiveCount >= newWordsPool.length;
+
+  // Reduz uma unidade do tempo de espera das palavras adiadas.
+  advanceNewWordsConfirmationDelays();
 
   newWordsRoundResults = {};
 
-  if (allNewWordsIntroduced) {
-    cards = buildWeightedDeck(newWordsPool);
-  } else {
-    cards = newWordsPool.slice(0, newWordsActiveCount);
-  }
+  activeCards = newWordsPool.slice(0, newWordsActiveCount);
+  cards = buildNewWordsRoundDeck(activeCards);
 }
 
 function buildWeightedDeck(filteredCards) {
