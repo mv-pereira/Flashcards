@@ -75,7 +75,6 @@ const PRONUNCIATION_RULES = [
 ];
 
 const newWordsToggleButton = document.querySelector("#newWordsToggleButton");
-const newWordsModeInfo = document.querySelector("#newWordsModeInfo");
 
 const summaryScreen = document.querySelector("#summaryScreen");
 
@@ -2289,11 +2288,9 @@ function updateNewWordsModeUI() {
   if (isNewWordsMode) {
     newWordsToggleButton.classList.add("active");
     newWordsToggleButton.textContent = "Palavras novas: ligado";
-    newWordsModeInfo.classList.remove("hidden");
   } else {
     newWordsToggleButton.classList.remove("active");
     newWordsToggleButton.textContent = "Palavras novas";
-    newWordsModeInfo.classList.add("hidden");
   }
 }
 
