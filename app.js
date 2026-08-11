@@ -23,7 +23,7 @@ let allNewWordsIntroduced = false;
 let newWordsCardProgress = {};
 
 // Quantas rodadas uma palavra acertada de primeira ficará afastada
-const NEW_WORD_FIRST_TRY_DELAY = 5;
+const NEW_WORD_FIRST_TRY_DELAY = 15;
 
 let sessionStartTime = null;
 let elapsedBeforePause = 0;
@@ -156,6 +156,7 @@ const audioSwedishText = document.querySelector("#audioSwedishText");
 const questionText = document.querySelector("#questionText");
 const flashcard = document.querySelector("#flashcard");
 const answerText = document.querySelector("#answerText");
+const answerGrammarForm = document.querySelector("#answerGrammarForm");
 
 const resultButtons = document.querySelector("#resultButtons");
 const correctButton = document.querySelector("#correctButton");
@@ -569,7 +570,9 @@ function startNewWordsSession(filteredCards) {
   newWordsCardProgress = {};
   allNewWordsIntroduced = newWordsPool.length <= 1;
 
-  cards = newWordsPool.slice(0, newWordsActiveCount);
+  cards = newWordsPool
+    .slice(0, newWordsActiveCount)
+    .map(createStudyOccurrence);
 }
 
 function getNewWordProgress(cardId) {
@@ -699,7 +702,7 @@ function buildNewWordsRoundDeck(activeCards) {
     return buildWeightedDeck(activeCards);
   }
 
-  return shuffleArray(nextCards);
+  return shuffleArray(nextCards.map(createStudyOccurrence));
 }
 
 function getNewWordsPool(filteredCards) {
@@ -896,15 +899,17 @@ function showCard() {
 
   flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
 
-updateQuestionLabel(content);
-updateQuestionText(content.question);
-answerText.textContent = content.answer;
-answerLabel.textContent = content.answerLabel;
+  updateQuestionLabel(content);
+  updateQuestionText(content.question);
+  answerText.textContent = content.answer;
+  answerLabel.textContent = content.answerLabel;
 
-showQuestionMedia(card, content.questionType);
-resetAudioSwedishHint(card, content);
-resetWriteMode();
-updateModeUI();
+  updateAnswerGrammarForm(card);
+
+  showQuestionMedia(card, content.questionType);
+  resetAudioSwedishHint(card, content);
+  resetWriteMode();
+  updateModeUI();
 
   correctButton.disabled = true;
   wrongButton.disabled = true;
@@ -985,11 +990,85 @@ function updateQuestionLabel(content) {
   questionLabel.classList.remove("hidden");
 }
 
+function updateAnswerGrammarForm(card) {
+  answerGrammarForm.textContent = "";
+  answerGrammarForm.classList.add("hidden");
+
+  if (
+    directionSelect.value !== "sv-pt" ||
+    !isNounWithGender(card) ||
+    !card._nounForm
+  ) {
+    return;
+  }
+
+  const label = NOUN_FORM_LABELS[card._nounForm];
+
+  if (!label) {
+    return;
+  }
+
+  answerGrammarForm.textContent = label;
+  answerGrammarForm.classList.remove("hidden");
+}
+
 function isNounWithGender(card) {
   return (
     card.grammar?.type === "substantivo" &&
     (card.grammar?.gender === "en" || card.grammar?.gender === "ett")
   );
+}
+
+const NOUN_FORM_LABELS = {
+  singularIndefinite: "singular indefinido",
+  singularDefinite: "singular definido",
+  pluralIndefinite: "plural indefinido",
+  pluralDefinite: "plural definido"
+};
+
+function getAvailableNounForms(card) {
+  if (!isNounWithGender(card)) {
+    return [];
+  }
+
+  const forms = ["singularIndefinite"];
+
+  if (card.grammar?.definiteSingular) {
+    forms.push("singularDefinite");
+  }
+
+  if (card.grammar?.plural) {
+    forms.push("pluralIndefinite");
+  }
+
+  if (card.grammar?.definitePlural) {
+    forms.push("pluralDefinite");
+  }
+
+  return forms;
+}
+
+function chooseRandomNounForm(card) {
+  const forms = getAvailableNounForms(card);
+
+  if (forms.length === 0) {
+    return null;
+  }
+
+  return forms[Math.floor(Math.random() * forms.length)];
+}
+
+function createStudyOccurrence(card) {
+  const occurrence = { ...card };
+
+  if (
+    directionSelect.value === "sv-pt" &&
+    isNounWithGender(card)
+  ) {
+    occurrence._nounForm = chooseRandomNounForm(card);
+  }
+
+  return occurrence;
 }
 
 function getStudySwedishText(card) {
@@ -999,7 +1078,35 @@ function getStudySwedishText(card) {
     return swedish;
   }
 
-  return `${card.grammar.gender} ${swedish}`;
+  /*
+   * Por enquanto, as quatro formas são usadas somente
+   * em Sueco → Português.
+   *
+   * Nas demais direções mantém o comportamento antigo.
+   */
+  if (
+    directionSelect.value !== "sv-pt" ||
+    !card._nounForm
+  ) {
+    return `${card.grammar.gender} ${swedish}`;
+  }
+
+  switch (card._nounForm) {
+    case "singularIndefinite":
+      return `${card.grammar.gender} ${swedish}`;
+
+    case "singularDefinite":
+      return card.grammar.definiteSingular || swedish;
+
+    case "pluralIndefinite":
+      return card.grammar.plural || swedish;
+
+    case "pluralDefinite":
+      return card.grammar.definitePlural || swedish;
+
+    default:
+      return `${card.grammar.gender} ${swedish}`;
+  }
 }
 
 function getCardContent(card) {
@@ -1156,6 +1263,7 @@ function registerCurrentAnswer(isCorrect) {
 
   sessionAnswers.push({
     cardId: currentCard.id,
+    nounForm: currentCard._nounForm || null,
     swedish: getStudySwedishText(currentCard),
     portuguese: currentCard.term.portuguese,
     isCorrect
@@ -1179,13 +1287,20 @@ function scheduleImmediateRetry(card) {
 
   const alreadyScheduledSoon = cards
     .slice(currentIndex + 1, insertIndex + 1)
-    .some((queuedCard) => String(queuedCard.id) === String(card.id));
+    .some((queuedCard) => isSameStudyOccurrence(queuedCard, card));
 
   if (alreadyScheduledSoon) {
     return;
   }
 
   cards.splice(insertIndex, 0, card);
+}
+
+function isSameStudyOccurrence(cardA, cardB) {
+  return (
+    String(cardA.id) === String(cardB.id) &&
+    (cardA._nounForm || null) === (cardB._nounForm || null)
+  );
 }
 
 function getImmediateRetryGap() {
@@ -1273,12 +1388,14 @@ function buildSrsDeck(filteredCards) {
     const repeatCount = getImmediateSrsRepeatCount(cardStats);
 
     for (let i = 0; i < repeatCount; i++) {
-      deck.push(card);
+      deck.push(createStudyOccurrence(card));
     }
   });
 
   if (deck.length === 0) {
-    return shuffleArray(filteredCards);
+    return shuffleArray(
+      filteredCards.map(createStudyOccurrence)
+    );
   }
 
   return shuffleArray(deck);
@@ -2392,6 +2509,12 @@ function createWordDetails(card) {
   meta.textContent = getWordMetaText(card);
   details.appendChild(meta);
 
+  const grammarDetails = createWordGrammarDetails(card);
+
+  if (grammarDetails) {
+    details.appendChild(grammarDetails);
+  }
+
   const hasAudio = Boolean(card.media?.audio?.src);
   const hasImage = Boolean(card.media?.image?.src);
 
@@ -2429,6 +2552,92 @@ function createWordDetails(card) {
   details.appendChild(mediaActions);
 
   return details;
+}
+
+function createWordGrammarDetails(card) {
+  const grammar = card.grammar;
+
+  if (!grammar) {
+    return null;
+  }
+
+  const rows = [];
+
+  if (grammar.type === "substantivo") {
+    if (grammar.definiteSingular) {
+      rows.push({
+        label: "Singular definido",
+        value: grammar.definiteSingular
+      });
+    }
+
+    if (grammar.plural) {
+      rows.push({
+        label: "Plural indefinido",
+        value: grammar.plural
+      });
+    }
+
+    if (grammar.definitePlural) {
+      rows.push({
+        label: "Plural definido",
+        value: grammar.definitePlural
+      });
+    }
+  }
+
+  if (grammar.type === "verbo") {
+    if (grammar.infinitive) {
+      rows.push({
+        label: "Infinitivo",
+        value: grammar.infinitive
+      });
+    }
+
+    if (grammar.present) {
+      rows.push({
+        label: "Presente",
+        value: grammar.present
+      });
+    }
+
+    if (grammar.past) {
+      rows.push({
+        label: "Passado",
+        value: grammar.past
+      });
+    }
+
+    if (grammar.supine) {
+      rows.push({
+        label: "Supino",
+        value: grammar.supine
+      });
+    }
+  }
+
+  if (rows.length === 0) {
+    return null;
+  }
+
+  const container = document.createElement("div");
+  container.className = "word-grammar-details";
+
+  rows.forEach((row) => {
+    const line = document.createElement("p");
+    line.className = "word-grammar-row";
+
+    const label = document.createElement("strong");
+    label.textContent = `${row.label}:`;
+
+    const value = document.createElement("span");
+    value.textContent = row.value;
+
+    line.append(label, value);
+    container.appendChild(line);
+  });
+
+  return container;
 }
 
 function getWordSwedishListText(card) {
