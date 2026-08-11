@@ -16582,5 +16582,1125 @@
         "src": null
       }
     }
+  },
+  {
+    "id": 480,
+    "order": 480,
+    "active": true,
+    "term": {
+      "swedish": "fler",
+      "portuguese": "mais / mais alguns"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 481,
+    "order": 481,
+    "active": true,
+    "term": {
+      "swedish": "tillsammans",
+      "portuguese": "juntos"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 482,
+    "order": 482,
+    "active": true,
+    "term": {
+      "swedish": "sedan",
+      "portuguese": "depois / em seguida"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 483,
+    "order": 483,
+    "active": true,
+    "term": {
+      "swedish": "språkkurs",
+      "portuguese": "curso de línguas"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "språkkurser",
+      "definiteSingular": "språkkursen",
+      "definitePlural": "språkkurserna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 484,
+    "order": 484,
+    "active": true,
+    "term": {
+      "swedish": "klassrum",
+      "portuguese": "sala de aula"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "klassrum",
+      "definiteSingular": "klassrummet",
+      "definitePlural": "klassrummen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 485,
+    "order": 485,
+    "active": true,
+    "term": {
+      "swedish": "film",
+      "portuguese": "filme"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "filmer",
+      "definiteSingular": "filmen",
+      "definitePlural": "filmerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 486,
+    "order": 486,
+    "active": true,
+    "term": {
+      "swedish": "hemma hos",
+      "portuguese": "na casa de"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 487,
+    "order": 487,
+    "active": true,
+    "term": {
+      "swedish": "efter",
+      "portuguese": "depois de / após"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 488,
+    "order": 488,
+    "active": true,
+    "term": {
+      "swedish": "först",
+      "portuguese": "primeiro / primeiramente"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 489,
+    "order": 489,
+    "active": true,
+    "term": {
+      "swedish": "klockan",
+      "portuguese": "às / o relógio"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "klockor",
+      "definiteSingular": "klockan",
+      "definitePlural": "klockorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 490,
+    "order": 490,
+    "active": true,
+    "term": {
+      "swedish": "nästa",
+      "portuguese": "próximo / próxima"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 491,
+    "order": 491,
+    "active": true,
+    "term": {
+      "swedish": "födelsedag",
+      "portuguese": "aniversário"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "födelsedagar",
+      "definiteSingular": "födelsedagen",
+      "definitePlural": "födelsedagarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 492,
+    "order": 492,
+    "active": true,
+    "term": {
+      "swedish": "present",
+      "portuguese": "presente"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "presenter",
+      "definiteSingular": "presenten",
+      "definitePlural": "presenterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 493,
+    "order": 493,
+    "active": true,
+    "term": {
+      "swedish": "gäster",
+      "portuguese": "convidados / convidadas"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "gäster",
+      "definiteSingular": "gästen",
+      "definitePlural": "gästerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "família e pessoas"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 494,
+    "order": 494,
+    "active": true,
+    "term": {
+      "swedish": "innan",
+      "portuguese": "antes / antes de"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 495,
+    "order": 495,
+    "active": true,
+    "term": {
+      "swedish": "senare",
+      "portuguese": "mais tarde / posteriormente"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 496,
+    "order": 496,
+    "active": true,
+    "term": {
+      "swedish": "städar",
+      "portuguese": "limpa / arruma"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "städa",
+      "present": "städar",
+      "past": "städade",
+      "supine": "städat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 497,
+    "order": 497,
+    "active": true,
+    "term": {
+      "swedish": "hjälper",
+      "portuguese": "ajuda"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "hjälpa",
+      "present": "hjälper",
+      "past": "hjälpte",
+      "supine": "hjälpt"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 498,
+    "order": 498,
+    "active": true,
+    "term": {
+      "swedish": "roligt",
+      "portuguese": "divertido / divertido(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 499,
+    "order": 499,
+    "active": true,
+    "term": {
+      "swedish": "fritid",
+      "portuguese": "tempo livre"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "fritider",
+      "definiteSingular": "fritiden",
+      "definitePlural": "fritiderna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 500,
+    "order": 500,
+    "active": true,
+    "term": {
+      "swedish": "berätta",
+      "portuguese": "contar / falar sobre"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "berätta",
+      "present": "berättar",
+      "past": "berättade",
+      "supine": "berättat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 501,
+    "order": 501,
+    "active": true,
+    "term": {
+      "swedish": "olika",
+      "portuguese": "diferentes / diversos"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 502,
+    "order": 502,
+    "active": true,
+    "term": {
+      "swedish": "helg",
+      "portuguese": "fim de semana"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "helger",
+      "definiteSingular": "helgen",
+      "definitePlural": "helgerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 503,
+    "order": 503,
+    "active": true,
+    "term": {
+      "swedish": "favorit",
+      "portuguese": "favorito / favorita"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "favoriter",
+      "definiteSingular": "favoriten",
+      "definitePlural": "favoriterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 504,
+    "order": 504,
+    "active": true,
+    "term": {
+      "swedish": "ledig",
+      "portuguese": "de folga / livre"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 505,
+    "order": 505,
+    "active": true,
+    "term": {
+      "swedish": "tåg",
+      "portuguese": "trem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "tåg",
+      "definiteSingular": "tåget",
+      "definitePlural": "tågen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 506,
+    "order": 506,
+    "active": true,
+    "term": {
+      "swedish": "station",
+      "portuguese": "estação"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "stationer",
+      "definiteSingular": "stationen",
+      "definitePlural": "stationerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 507,
+    "order": 507,
+    "active": true,
+    "term": {
+      "swedish": "utställning",
+      "portuguese": "exposição"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "utställningar",
+      "definiteSingular": "utställningen",
+      "definitePlural": "utställningarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 508,
+    "order": 508,
+    "active": true,
+    "term": {
+      "swedish": "packa",
+      "portuguese": "arrumar a mala / fazer as malas"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "packa",
+      "present": "packar",
+      "past": "packade",
+      "supine": "packat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 509,
+    "order": 509,
+    "active": true,
+    "term": {
+      "swedish": "ryggsäck",
+      "portuguese": "mochila"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "ryggsäckar",
+      "definiteSingular": "ryggsäcken",
+      "definitePlural": "ryggsäckarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 510,
+    "order": 510,
+    "active": true,
+    "term": {
+      "swedish": "tidigt",
+      "portuguese": "cedo"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 511,
+    "order": 511,
+    "active": true,
+    "term": {
+      "swedish": "sent",
+      "portuguese": "tarde"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
   }
 ]
