@@ -17702,5 +17702,5115 @@
         "src": null
       }
     }
+  },
+  {
+    "id": 512,
+    "order": 512,
+    "active": true,
+    "term": {
+      "swedish": "buss",
+      "portuguese": "ônibus"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bussar",
+      "definiteSingular": "bussen",
+      "definitePlural": "bussarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 513,
+    "order": 513,
+    "active": true,
+    "term": {
+      "swedish": "tågstation",
+      "portuguese": "estação de trem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "tågstationer",
+      "definiteSingular": "tågstationen",
+      "definitePlural": "tågstationerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 514,
+    "order": 514,
+    "active": true,
+    "term": {
+      "swedish": "flyg",
+      "portuguese": "voo"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "flyg",
+      "definiteSingular": "flyget",
+      "definitePlural": "flygen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 515,
+    "order": 515,
+    "active": true,
+    "term": {
+      "swedish": "flygplan",
+      "portuguese": "avião"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "flygplan",
+      "definiteSingular": "flygplanet",
+      "definitePlural": "flygplanen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 516,
+    "order": 516,
+    "active": true,
+    "term": {
+      "swedish": "flygplats",
+      "portuguese": "aeroporto"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "flygplatser",
+      "definiteSingular": "flygplatsen",
+      "definitePlural": "flygplatserna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 517,
+    "order": 517,
+    "active": true,
+    "term": {
+      "swedish": "flygbuss",
+      "portuguese": "ônibus do aeroporto"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "flygbussar",
+      "definiteSingular": "flygbussen",
+      "definitePlural": "flygbussarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 518,
+    "order": 518,
+    "active": true,
+    "term": {
+      "swedish": "båt",
+      "portuguese": "barco"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "båtar",
+      "definiteSingular": "båten",
+      "definitePlural": "båtarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 519,
+    "order": 519,
+    "active": true,
+    "term": {
+      "swedish": "spårvagn",
+      "portuguese": "bonde"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "spårvagnar",
+      "definiteSingular": "spårvagnen",
+      "definitePlural": "spårvagnarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 520,
+    "order": 520,
+    "active": true,
+    "term": {
+      "swedish": "tunnelbana",
+      "portuguese": "metrô"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "tunnelbanor",
+      "definiteSingular": "tunnelbanan",
+      "definitePlural": "tunnelbanorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 521,
+    "order": 521,
+    "active": true,
+    "term": {
+      "swedish": "biljett",
+      "portuguese": "bilhete / passagem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "biljetter",
+      "definiteSingular": "biljetten",
+      "definitePlural": "biljetterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 522,
+    "order": 522,
+    "active": true,
+    "term": {
+      "swedish": "restid",
+      "portuguese": "tempo de viagem"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "restider",
+      "definiteSingular": "restiden",
+      "definitePlural": "restiderna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 523,
+    "order": 523,
+    "active": true,
+    "term": {
+      "swedish": "ta till höger",
+      "portuguese": "virar à direita"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 524,
+    "order": 524,
+    "active": true,
+    "term": {
+      "swedish": "ta till vänster",
+      "portuguese": "virar à esquerda"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 525,
+    "order": 525,
+    "active": true,
+    "term": {
+      "swedish": "sväng höger",
+      "portuguese": "vire à direita"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 526,
+    "order": 526,
+    "active": true,
+    "term": {
+      "swedish": "kör mot",
+      "portuguese": "dirija em direção a"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 527,
+    "order": 527,
+    "active": true,
+    "term": {
+      "swedish": "i riktning mot",
+      "portuguese": "na direção de"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 528,
+    "order": 528,
+    "active": true,
+    "term": {
+      "swedish": "längs",
+      "portuguese": "ao longo de"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 529,
+    "order": 529,
+    "active": true,
+    "term": {
+      "swedish": "genom",
+      "portuguese": "através de / por"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 530,
+    "order": 530,
+    "active": true,
+    "term": {
+      "swedish": "tills",
+      "portuguese": "até"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 531,
+    "order": 531,
+    "active": true,
+    "term": {
+      "swedish": "avfart",
+      "portuguese": "saída"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "avfarter",
+      "definiteSingular": "avfarten",
+      "definitePlural": "avfarterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 532,
+    "order": 532,
+    "active": true,
+    "term": {
+      "swedish": "påfart",
+      "portuguese": "entrada para a via"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "påfarter",
+      "definiteSingular": "påfarten",
+      "definitePlural": "påfarterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 533,
+    "order": 533,
+    "active": true,
+    "term": {
+      "swedish": "fortsätt rakt fram",
+      "portuguese": "continue em frente"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 534,
+    "order": 534,
+    "active": true,
+    "term": {
+      "swedish": "väg",
+      "portuguese": "estrada / caminho"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "vägar",
+      "definiteSingular": "vägen",
+      "definitePlural": "vägarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 535,
+    "order": 535,
+    "active": true,
+    "term": {
+      "swedish": "motorväg",
+      "portuguese": "rodovia / autoestrada"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "motorvägar",
+      "definiteSingular": "motorvägen",
+      "definitePlural": "motorvägarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 536,
+    "order": 536,
+    "active": true,
+    "term": {
+      "swedish": "rondell",
+      "portuguese": "rotatória"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "rondeller",
+      "definiteSingular": "rondellen",
+      "definitePlural": "rondellerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 537,
+    "order": 537,
+    "active": true,
+    "term": {
+      "swedish": "åka till konferensen",
+      "portuguese": "viajar para a conferência"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 538,
+    "order": 538,
+    "active": true,
+    "term": {
+      "swedish": "Hur kommer jag dit?",
+      "portuguese": "Como eu chego lá?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 539,
+    "order": 539,
+    "active": true,
+    "term": {
+      "swedish": "Det tar cirka 6 timmar att köra hit.",
+      "portuguese": "Leva cerca de 6 horas para dirigir até aqui."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 540,
+    "order": 540,
+    "active": true,
+    "term": {
+      "swedish": "Sedan är du framme.",
+      "portuguese": "Depois você chega ao destino."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 541,
+    "order": 541,
+    "active": true,
+    "term": {
+      "swedish": "en sak till",
+      "portuguese": "mais uma coisa"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 542,
+    "order": 542,
+    "active": true,
+    "term": {
+      "swedish": "parkera inte",
+      "portuguese": "não estacione"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 543,
+    "order": 543,
+    "active": true,
+    "term": {
+      "swedish": "tro",
+      "portuguese": "acreditar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "tro",
+      "present": "tror",
+      "past": "trodde",
+      "supine": "trott"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 544,
+    "order": 544,
+    "active": true,
+    "term": {
+      "swedish": "flyga",
+      "portuguese": "voar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "flyga",
+      "present": "flyger",
+      "past": "flög",
+      "supine": "flugit"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 545,
+    "order": 545,
+    "active": true,
+    "term": {
+      "swedish": "köra",
+      "portuguese": "dirigir"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "köra",
+      "present": "kör",
+      "past": "körde",
+      "supine": "kört"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 546,
+    "order": 546,
+    "active": true,
+    "term": {
+      "swedish": "cykla",
+      "portuguese": "andar de bicicleta"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "cykla",
+      "present": "cyklar",
+      "past": "cyklade",
+      "supine": "cyklat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 547,
+    "order": 547,
+    "active": true,
+    "term": {
+      "swedish": "gå",
+      "portuguese": "ir / caminhar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "gå",
+      "present": "går",
+      "past": "gick",
+      "supine": "gått"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 548,
+    "order": 548,
+    "active": true,
+    "term": {
+      "swedish": "hitta",
+      "portuguese": "encontrar o caminho"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "hitta",
+      "present": "hittar",
+      "past": "hittade",
+      "supine": "hittat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 549,
+    "order": 549,
+    "active": true,
+    "term": {
+      "swedish": "sova",
+      "portuguese": "dormir"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "sova",
+      "present": "sover",
+      "past": "sov",
+      "supine": "sovit"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 550,
+    "order": 550,
+    "active": true,
+    "term": {
+      "swedish": "ligga",
+      "portuguese": "estar situado / deitado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "ligga",
+      "present": "ligger",
+      "past": "låg",
+      "supine": "legat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 551,
+    "order": 551,
+    "active": true,
+    "term": {
+      "swedish": "sitta",
+      "portuguese": "sentar / estar sentado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "sitta",
+      "present": "sitter",
+      "past": "satt",
+      "supine": "suttit"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 552,
+    "order": 552,
+    "active": true,
+    "term": {
+      "swedish": "parkera",
+      "portuguese": "estacionar"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "parkera",
+      "present": "parkerar",
+      "past": "parkerade",
+      "supine": "parkerat"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 553,
+    "order": 553,
+    "active": true,
+    "term": {
+      "swedish": "hos",
+      "portuguese": "na casa / no local de alguém"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 554,
+    "order": 554,
+    "active": true,
+    "term": {
+      "swedish": "på",
+      "portuguese": "em / no / na"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 555,
+    "order": 555,
+    "active": true,
+    "term": {
+      "swedish": "till",
+      "portuguese": "para / até"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 556,
+    "order": 556,
+    "active": true,
+    "term": {
+      "swedish": "Finns det ... här?",
+      "portuguese": "Há ... aqui?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 557,
+    "order": 557,
+    "active": true,
+    "term": {
+      "swedish": "Den/det ligger ...",
+      "portuguese": "Fica ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 558,
+    "order": 558,
+    "active": true,
+    "term": {
+      "swedish": "Var ligger ...?",
+      "portuguese": "Onde fica ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 559,
+    "order": 559,
+    "active": true,
+    "term": {
+      "swedish": "mataffär",
+      "portuguese": "loja de alimentos / mercado"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "mataffärer",
+      "definiteSingular": "mataffären",
+      "definitePlural": "mataffärerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 560,
+    "order": 560,
+    "active": true,
+    "term": {
+      "swedish": "bageri",
+      "portuguese": "padaria"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "bagerier",
+      "definiteSingular": "bageriet",
+      "definitePlural": "bagerierna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 561,
+    "order": 561,
+    "active": true,
+    "term": {
+      "swedish": "konditori",
+      "portuguese": "confeitaria"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "konditorier",
+      "definiteSingular": "konditoriet",
+      "definitePlural": "konditorierna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 562,
+    "order": 562,
+    "active": true,
+    "term": {
+      "swedish": "apotek",
+      "portuguese": "farmácia"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "apotek",
+      "definiteSingular": "apoteket",
+      "definitePlural": "apoteken",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 563,
+    "order": 563,
+    "active": true,
+    "term": {
+      "swedish": "klädaffär",
+      "portuguese": "loja de roupas"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "klädaffärer",
+      "definiteSingular": "klädaffären",
+      "definitePlural": "klädaffärerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 564,
+    "order": 564,
+    "active": true,
+    "term": {
+      "swedish": "bank",
+      "portuguese": "banco"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "banker",
+      "definiteSingular": "banken",
+      "definitePlural": "bankerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 565,
+    "order": 565,
+    "active": true,
+    "term": {
+      "swedish": "bankomat",
+      "portuguese": "caixa eletrônico"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bankomater",
+      "definiteSingular": "bankomaten",
+      "definitePlural": "bankomaterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 566,
+    "order": 566,
+    "active": true,
+    "term": {
+      "swedish": "tobaksaffär",
+      "portuguese": "tabacaria"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "tobaksaffärer",
+      "definiteSingular": "tobaksaffären",
+      "definitePlural": "tobaksaffärerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 567,
+    "order": 567,
+    "active": true,
+    "term": {
+      "swedish": "posten",
+      "portuguese": "correios / agência dos correios"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": "posten",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 568,
+    "order": 568,
+    "active": true,
+    "term": {
+      "swedish": "kiosk",
+      "portuguese": "quiosque / banca de jornal"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kiosker",
+      "definiteSingular": "kiosken",
+      "definitePlural": "kioskerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 569,
+    "order": 569,
+    "active": true,
+    "term": {
+      "swedish": "pizzeria",
+      "portuguese": "pizzaria"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "pizzerior",
+      "definiteSingular": "pizzerian",
+      "definitePlural": "pizzeriorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 570,
+    "order": 570,
+    "active": true,
+    "term": {
+      "swedish": "blomsterhandel",
+      "portuguese": "floricultura"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "blomsterhandlar",
+      "definiteSingular": "blomsterhandeln",
+      "definitePlural": "blomsterhandlarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 571,
+    "order": 571,
+    "active": true,
+    "term": {
+      "swedish": "bensinstation",
+      "portuguese": "posto de gasolina"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bensinstationer",
+      "definiteSingular": "bensinstationen",
+      "definitePlural": "bensinstationerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 572,
+    "order": 572,
+    "active": true,
+    "term": {
+      "swedish": "bensinmack",
+      "portuguese": "posto de gasolina"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bensinmackar",
+      "definiteSingular": "bensinmacken",
+      "definitePlural": "bensinmackarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 573,
+    "order": 573,
+    "active": true,
+    "term": {
+      "swedish": "skola",
+      "portuguese": "escola"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "skolor",
+      "definiteSingular": "skolan",
+      "definitePlural": "skolorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 574,
+    "order": 574,
+    "active": true,
+    "term": {
+      "swedish": "bibliotek",
+      "portuguese": "biblioteca"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "bibliotek",
+      "definiteSingular": "biblioteket",
+      "definitePlural": "biblioteken",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 575,
+    "order": 575,
+    "active": true,
+    "term": {
+      "swedish": "Systembolaget",
+      "portuguese": "loja estatal oficial de bebidas alcoólicas"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": null,
+      "definiteSingular": "Systembolaget",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 576,
+    "order": 576,
+    "active": true,
+    "term": {
+      "swedish": "bredvid",
+      "portuguese": "ao lado de"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 577,
+    "order": 577,
+    "active": true,
+    "term": {
+      "swedish": "mitt emot",
+      "portuguese": "em frente a / do outro lado de"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 578,
+    "order": 578,
+    "active": true,
+    "term": {
+      "swedish": "till höger om",
+      "portuguese": "à direita de"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 579,
+    "order": 579,
+    "active": true,
+    "term": {
+      "swedish": "till vänster om",
+      "portuguese": "à esquerda de"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 580,
+    "order": 580,
+    "active": true,
+    "term": {
+      "swedish": "på Storgatan",
+      "portuguese": "na Storgatan"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 581,
+    "order": 581,
+    "active": true,
+    "term": {
+      "swedish": "Ursäkta, finns det en blomsterhandel här?",
+      "portuguese": "Com licença, há uma floricultura aqui?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 582,
+    "order": 582,
+    "active": true,
+    "term": {
+      "swedish": "Ja, det finns två. En ligger på Storgatan och en ligger på Eriksgatan.",
+      "portuguese": "Sim, há duas. Uma fica na Storgatan e uma fica na Eriksgatan."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 583,
+    "order": 583,
+    "active": true,
+    "term": {
+      "swedish": "Var ligger apoteket?",
+      "portuguese": "Onde fica a farmácia?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 584,
+    "order": 584,
+    "active": true,
+    "term": {
+      "swedish": "Det ligger på Lillgatan, vid banken.",
+      "portuguese": "Fica na Lillgatan, ao lado do banco."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 585,
+    "order": 585,
+    "active": true,
+    "term": {
+      "swedish": "Var ligger biblioteket?",
+      "portuguese": "Onde fica a biblioteca?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 586,
+    "order": 586,
+    "active": true,
+    "term": {
+      "swedish": "Det ligger på Kyrkogatan, mitt emot posten.",
+      "portuguese": "Fica na Kyrkogatan, em frente aos correios."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 587,
+    "order": 587,
+    "active": true,
+    "term": {
+      "swedish": "januari",
+      "portuguese": "janeiro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 588,
+    "order": 588,
+    "active": true,
+    "term": {
+      "swedish": "februari",
+      "portuguese": "fevereiro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 589,
+    "order": 589,
+    "active": true,
+    "term": {
+      "swedish": "mars",
+      "portuguese": "março"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 590,
+    "order": 590,
+    "active": true,
+    "term": {
+      "swedish": "april",
+      "portuguese": "abril"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 591,
+    "order": 591,
+    "active": true,
+    "term": {
+      "swedish": "maj",
+      "portuguese": "maio"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 592,
+    "order": 592,
+    "active": true,
+    "term": {
+      "swedish": "juni",
+      "portuguese": "junho"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 593,
+    "order": 593,
+    "active": true,
+    "term": {
+      "swedish": "juli",
+      "portuguese": "julho"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 594,
+    "order": 594,
+    "active": true,
+    "term": {
+      "swedish": "augusti",
+      "portuguese": "agosto"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 595,
+    "order": 595,
+    "active": true,
+    "term": {
+      "swedish": "september",
+      "portuguese": "setembro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 596,
+    "order": 596,
+    "active": true,
+    "term": {
+      "swedish": "oktober",
+      "portuguese": "outubro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 597,
+    "order": 597,
+    "active": true,
+    "term": {
+      "swedish": "november",
+      "portuguese": "novembro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 598,
+    "order": 598,
+    "active": true,
+    "term": {
+      "swedish": "december",
+      "portuguese": "dezembro"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 599,
+    "order": 599,
+    "active": true,
+    "term": {
+      "swedish": "Hur går det?",
+      "portuguese": "Como está indo?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 600,
+    "order": 600,
+    "active": true,
+    "term": {
+      "swedish": "jag behöver lite hjälp",
+      "portuguese": "preciso de um pouco de ajuda"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 601,
+    "order": 601,
+    "active": true,
+    "term": {
+      "swedish": "kan du fråga",
+      "portuguese": "você pode perguntar"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 602,
+    "order": 602,
+    "active": true,
+    "term": {
+      "swedish": "vårt projekt",
+      "portuguese": "nosso projeto"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 603,
+    "order": 603,
+    "active": true,
+    "term": {
+      "swedish": "i morgon",
+      "portuguese": "amanhã"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 604,
+    "order": 604,
+    "active": true,
+    "term": {
+      "swedish": "skriva en rapport",
+      "portuguese": "escrever um relatório"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 605,
+    "order": 605,
+    "active": true,
+    "term": {
+      "swedish": "styrelse",
+      "portuguese": "conselho / diretoria"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "styrelser",
+      "definiteSingular": "styrelsen",
+      "definitePlural": "styrelserna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 606,
+    "order": 606,
+    "active": true,
+    "term": {
+      "swedish": "deras möte",
+      "portuguese": "a reunião deles / delas"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 607,
+    "order": 607,
+    "active": true,
+    "term": {
+      "swedish": "lycka till",
+      "portuguese": "boa sorte"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 608,
+    "order": 608,
+    "active": true,
+    "term": {
+      "swedish": "eller hur?",
+      "portuguese": "não é? / certo?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 609,
+    "order": 609,
+    "active": true,
+    "term": {
+      "swedish": "nästa gång",
+      "portuguese": "da próxima vez"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 610,
+    "order": 610,
+    "active": true,
+    "term": {
+      "swedish": "just nu",
+      "portuguese": "neste momento / agora"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 611,
+    "order": 611,
+    "active": true,
+    "term": {
+      "swedish": "nästa månad",
+      "portuguese": "próximo mês"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 612,
+    "order": 612,
+    "active": true,
+    "term": {
+      "swedish": "min",
+      "portuguese": "meu / minha"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 613,
+    "order": 613,
+    "active": true,
+    "term": {
+      "swedish": "mitt",
+      "portuguese": "meu / minha"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 614,
+    "order": 614,
+    "active": true,
+    "term": {
+      "swedish": "mina",
+      "portuguese": "meus / minhas"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 615,
+    "order": 615,
+    "active": true,
+    "term": {
+      "swedish": "ditt",
+      "portuguese": "seu / sua"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 616,
+    "order": 616,
+    "active": true,
+    "term": {
+      "swedish": "dina",
+      "portuguese": "seus / suas"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 617,
+    "order": 617,
+    "active": true,
+    "term": {
+      "swedish": "hans",
+      "portuguese": "dele"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 618,
+    "order": 618,
+    "active": true,
+    "term": {
+      "swedish": "hennes",
+      "portuguese": "dela"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 619,
+    "order": 619,
+    "active": true,
+    "term": {
+      "swedish": "hens",
+      "portuguese": "dele / dela (neutro)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 620,
+    "order": 620,
+    "active": true,
+    "term": {
+      "swedish": "dess",
+      "portuguese": "seu / sua (de coisa/animal)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 621,
+    "order": 621,
+    "active": true,
+    "term": {
+      "swedish": "ens",
+      "portuguese": "seu / sua (de alguém em geral)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 622,
+    "order": 622,
+    "active": true,
+    "term": {
+      "swedish": "vårt",
+      "portuguese": "nosso / nossa"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 623,
+    "order": 623,
+    "active": true,
+    "term": {
+      "swedish": "våra",
+      "portuguese": "nossos / nossas"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 624,
+    "order": 624,
+    "active": true,
+    "term": {
+      "swedish": "er",
+      "portuguese": "seu / sua / de vocês"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 625,
+    "order": 625,
+    "active": true,
+    "term": {
+      "swedish": "ert",
+      "portuguese": "seu / sua / de vocês"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 626,
+    "order": 626,
+    "active": true,
+    "term": {
+      "swedish": "era",
+      "portuguese": "seus / suas / de vocês"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 627,
+    "order": 627,
+    "active": true,
+    "term": {
+      "swedish": "deras",
+      "portuguese": "deles / delas"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 628,
+    "order": 628,
+    "active": true,
+    "term": {
+      "swedish": "första",
+      "portuguese": "primeiro / primeira"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 629,
+    "order": 629,
+    "active": true,
+    "term": {
+      "swedish": "andra",
+      "portuguese": "segundo / segunda"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 630,
+    "order": 630,
+    "active": true,
+    "term": {
+      "swedish": "tredje",
+      "portuguese": "terceiro / terceira"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 631,
+    "order": 631,
+    "active": true,
+    "term": {
+      "swedish": "fjärde",
+      "portuguese": "quarto / quarta"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 632,
+    "order": 632,
+    "active": true,
+    "term": {
+      "swedish": "femte",
+      "portuguese": "quinto / quinta"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 633,
+    "order": 633,
+    "active": true,
+    "term": {
+      "swedish": "sjätte",
+      "portuguese": "sexto / sexta"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 634,
+    "order": 634,
+    "active": true,
+    "term": {
+      "swedish": "sjunde",
+      "portuguese": "sétimo / sétima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 635,
+    "order": 635,
+    "active": true,
+    "term": {
+      "swedish": "åttonde",
+      "portuguese": "oitavo / oitava"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 636,
+    "order": 636,
+    "active": true,
+    "term": {
+      "swedish": "nionde",
+      "portuguese": "nono / nona"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 637,
+    "order": 637,
+    "active": true,
+    "term": {
+      "swedish": "tionde",
+      "portuguese": "décimo / décima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 638,
+    "order": 638,
+    "active": true,
+    "term": {
+      "swedish": "elfte",
+      "portuguese": "décimo primeiro / décima primeira"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 639,
+    "order": 639,
+    "active": true,
+    "term": {
+      "swedish": "tolfte",
+      "portuguese": "décimo segundo / décima segunda"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 640,
+    "order": 640,
+    "active": true,
+    "term": {
+      "swedish": "trettonde",
+      "portuguese": "décimo terceiro / décima terceira"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 641,
+    "order": 641,
+    "active": true,
+    "term": {
+      "swedish": "fjortonde",
+      "portuguese": "décimo quarto / décima quarta"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 642,
+    "order": 642,
+    "active": true,
+    "term": {
+      "swedish": "femtonde",
+      "portuguese": "décimo quinto / décima quinta"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 643,
+    "order": 643,
+    "active": true,
+    "term": {
+      "swedish": "sextonde",
+      "portuguese": "décimo sexto / décima sexta"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 644,
+    "order": 644,
+    "active": true,
+    "term": {
+      "swedish": "sjuttonde",
+      "portuguese": "décimo sétimo / décima sétima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 645,
+    "order": 645,
+    "active": true,
+    "term": {
+      "swedish": "artonde",
+      "portuguese": "décimo oitavo / décima oitava"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 646,
+    "order": 646,
+    "active": true,
+    "term": {
+      "swedish": "nittonde",
+      "portuguese": "décimo nono / décima nona"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 647,
+    "order": 647,
+    "active": true,
+    "term": {
+      "swedish": "tjugonde",
+      "portuguese": "vigésimo / vigésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 648,
+    "order": 648,
+    "active": true,
+    "term": {
+      "swedish": "tjugoförsta",
+      "portuguese": "vigésimo primeiro / vigésima primeira"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 649,
+    "order": 649,
+    "active": true,
+    "term": {
+      "swedish": "trettionde",
+      "portuguese": "trigésimo / trigésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 650,
+    "order": 650,
+    "active": true,
+    "term": {
+      "swedish": "trettioförsta",
+      "portuguese": "trigésimo primeiro / trigésima primeira"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 651,
+    "order": 651,
+    "active": true,
+    "term": {
+      "swedish": "fyrtionde",
+      "portuguese": "quadragésimo / quadragésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 652,
+    "order": 652,
+    "active": true,
+    "term": {
+      "swedish": "femtionde",
+      "portuguese": "quinquagésimo / quinquagésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 653,
+    "order": 653,
+    "active": true,
+    "term": {
+      "swedish": "sextionde",
+      "portuguese": "sexagésimo / sexagésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 654,
+    "order": 654,
+    "active": true,
+    "term": {
+      "swedish": "sjuttionde",
+      "portuguese": "septuagésimo / septuagésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 655,
+    "order": 655,
+    "active": true,
+    "term": {
+      "swedish": "åttionde",
+      "portuguese": "octogésimo / octogésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 656,
+    "order": 656,
+    "active": true,
+    "term": {
+      "swedish": "nittionde",
+      "portuguese": "nonagésimo / nonagésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 657,
+    "order": 657,
+    "active": true,
+    "term": {
+      "swedish": "hundrade",
+      "portuguese": "centésimo / centésima"
+    },
+    "grammar": {
+      "type": "numeral",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "números"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "image": {
+        "src": null
+      },
+      "audio": {
+        "src": null
+      }
+    }
   }
 ]
