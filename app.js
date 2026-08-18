@@ -112,6 +112,14 @@ const pronunciationScreen = document.querySelector("#pronunciationScreen");
 const backFromPronunciationButton = document.querySelector("#backFromPronunciationButton");
 const pronunciationRulesList = document.querySelector("#pronunciationRulesList");
 
+const grammarButton = document.querySelector("#grammarButton");
+const grammarScreen = document.querySelector("#grammarScreen");
+const backFromGrammarButton = document.querySelector("#backFromGrammarButton");
+
+const pluralRulesButton = document.querySelector("#pluralRulesButton");
+const pluralScreen = document.querySelector("#pluralScreen");
+const backFromPluralButton = document.querySelector("#backFromPluralButton");
+
 const resetStatsButton = document.querySelector("#resetStatsButton");
 
 const wordsButton = document.querySelector("#wordsButton");
@@ -719,6 +727,35 @@ function buildFirstRoundDeck(cardList) {
   return buildSrsDeck(cardList);
 }
 
+function openGrammarScreen() {
+  stopStudyTimer();
+  setupMessage.textContent = "";
+
+  setupScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
+  pluralScreen.classList.add("hidden");
+
+  grammarScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backFromGrammarScreen() {
+  grammarScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
+  pluralScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
+
+  setupScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.remove("hidden");
+}
+
 function openPronunciationRules() {
   stopStudyTimer();
   setupMessage.textContent = "";
@@ -727,20 +764,62 @@ function openPronunciationRules() {
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   wordsScreen.classList.add("hidden");
+  grammarScreen.classList.add("hidden");
+  pluralScreen.classList.add("hidden");
+
   pronunciationScreen.classList.remove("hidden");
   newWordsToggleButton.classList.add("hidden");
 
   renderPronunciationRules();
+
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function backFromPronunciationRules() {
   pronunciationScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
+
+  setupScreen.classList.add("hidden");
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
-  setupScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.remove("hidden");
+  wordsScreen.classList.add("hidden");
+  pluralScreen.classList.add("hidden");
+
+  grammarScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function openPluralRules() {
+  stopStudyTimer();
+  setupMessage.textContent = "";
+
+  setupScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
+  grammarScreen.classList.add("hidden");
+
+  pluralScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backFromPluralRules() {
+  pluralScreen.classList.add("hidden");
+
+  setupScreen.classList.add("hidden");
+  studyScreen.classList.add("hidden");
+  summaryScreen.classList.add("hidden");
+  wordsScreen.classList.add("hidden");
+  pronunciationScreen.classList.add("hidden");
+
+  grammarScreen.classList.remove("hidden");
+  newWordsToggleButton.classList.add("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderPronunciationRules() {
@@ -843,6 +922,8 @@ function backToSetup() {
   studyScreen.classList.add("hidden");
   summaryScreen.classList.add("hidden");
   pronunciationScreen.classList.add("hidden");
+  grammarScreen.classList.add("hidden");
+  pluralScreen.classList.add("hidden");
   wordsScreen.classList.add("hidden");
   setupScreen.classList.remove("hidden");
   newWordsToggleButton.classList.remove("hidden");
@@ -2778,6 +2859,11 @@ backToSetupButton.addEventListener("click", backToSetup);
 
 pronunciationRulesButton.addEventListener("click", openPronunciationRules);
 backFromPronunciationButton.addEventListener("click", backFromPronunciationRules);
+grammarButton.addEventListener("click", openGrammarScreen);
+backFromGrammarButton.addEventListener("click", backFromGrammarScreen);
+
+pluralRulesButton.addEventListener("click", openPluralRules);
+backFromPluralButton.addEventListener("click", backFromPluralRules);
 pronunciationRulesList.addEventListener("click", playPronunciationExample);
 
 resetStatsButton.addEventListener("click", resetStats);

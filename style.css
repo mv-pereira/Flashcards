@@ -798,6 +798,117 @@ body.dark-theme .comparison-feedback.wrong {
   overflow-wrap: anywhere;
 }
 
+.grammar-screen,
+.plural-screen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grammar-card,
+.plural-card {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.grammar-heading h2,
+.plural-heading h2 {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+}
+
+.grammar-heading p:last-child,
+.plural-heading p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.grammar-menu {
+  display: grid;
+  gap: 12px;
+}
+
+.plural-rules-list {
+  display: grid;
+  gap: 14px;
+}
+
+.plural-rule {
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.plural-rule h3,
+.plural-rule h4 {
+  margin: 0;
+}
+
+.plural-rule h3 {
+  font-size: 1.05rem;
+}
+
+.plural-rule h4 {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.plural-rule p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.plural-example-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.plural-example-grid span {
+  min-width: 0;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.plural-example-grid strong,
+.plural-example-grid small {
+  display: block;
+}
+
+.plural-example-grid strong {
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.plural-example-grid small {
+  margin-top: 3px;
+  color: var(--muted);
+  line-height: 1.3;
+}
+
+@media (min-width: 520px) {
+  .plural-example-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .pronunciation-screen {
   flex: 1;
   min-height: 0;
