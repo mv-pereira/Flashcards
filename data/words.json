@@ -5,7 +5,9 @@
     "active": true,
     "term": {
       "swedish": "bok",
-      "portuguese": "livro"
+      "portuguese": "livro",
+      "portuguesePlural": "livros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -438,7 +440,9 @@
     "active": true,
     "term": {
       "swedish": "måndag",
-      "portuguese": "segunda-feira"
+      "portuguese": "segunda-feira",
+      "portuguesePlural": "segundas-feiras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -473,7 +477,9 @@
     "active": true,
     "term": {
       "swedish": "tisdag",
-      "portuguese": "terça-feira"
+      "portuguese": "terça-feira",
+      "portuguesePlural": "terças-feiras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -508,7 +514,9 @@
     "active": true,
     "term": {
       "swedish": "onsdag",
-      "portuguese": "quarta-feira"
+      "portuguese": "quarta-feira",
+      "portuguesePlural": "quartas-feiras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -543,7 +551,9 @@
     "active": true,
     "term": {
       "swedish": "torsdag",
-      "portuguese": "quinta-feira"
+      "portuguese": "quinta-feira",
+      "portuguesePlural": "quintas-feiras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -578,7 +588,9 @@
     "active": true,
     "term": {
       "swedish": "fredag",
-      "portuguese": "sexta-feira"
+      "portuguese": "sexta-feira",
+      "portuguesePlural": "sextas-feiras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -613,7 +625,9 @@
     "active": true,
     "term": {
       "swedish": "lördag",
-      "portuguese": "sábado"
+      "portuguese": "sábado",
+      "portuguesePlural": "sábados",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -648,7 +662,9 @@
     "active": true,
     "term": {
       "swedish": "söndag",
-      "portuguese": "domingo"
+      "portuguese": "domingo",
+      "portuguesePlural": "domingos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2300,7 +2316,9 @@
     "active": true,
     "term": {
       "swedish": "sambo",
-      "portuguese": "companheiro/companheira que mora junto"
+      "portuguese": "companheiro/companheira que mora junto",
+      "portuguesePlural": "companheiros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2434,7 +2452,9 @@
     "active": true,
     "term": {
       "swedish": "flickvän",
-      "portuguese": "namorada"
+      "portuguese": "namorada",
+      "portuguesePlural": "namoradas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2469,7 +2489,9 @@
     "active": true,
     "term": {
       "swedish": "tjej",
-      "portuguese": "garota"
+      "portuguese": "garota",
+      "portuguesePlural": "garotas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2504,7 +2526,9 @@
     "active": true,
     "term": {
       "swedish": "pojkvän",
-      "portuguese": "namorado"
+      "portuguese": "namorado",
+      "portuguesePlural": "namorados",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2539,7 +2563,9 @@
     "active": true,
     "term": {
       "swedish": "kille",
-      "portuguese": "garoto"
+      "portuguese": "garoto",
+      "portuguesePlural": "garotos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2574,7 +2600,9 @@
     "active": true,
     "term": {
       "swedish": "fru",
-      "portuguese": "esposa"
+      "portuguese": "esposa",
+      "portuguesePlural": "esposas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2609,7 +2637,9 @@
     "active": true,
     "term": {
       "swedish": "man",
-      "portuguese": "marido / homem"
+      "portuguese": "marido / homem",
+      "portuguesePlural": "maridos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2644,7 +2674,9 @@
     "active": true,
     "term": {
       "swedish": "dotter",
-      "portuguese": "filha"
+      "portuguese": "filha",
+      "portuguesePlural": "filhas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2679,7 +2711,9 @@
     "active": true,
     "term": {
       "swedish": "son",
-      "portuguese": "filho"
+      "portuguese": "filho",
+      "portuguesePlural": "filhos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -2714,7 +2748,9 @@
     "active": true,
     "term": {
       "swedish": "barn",
-      "portuguese": "criança / filho"
+      "portuguese": "criança / filho",
+      "portuguesePlural": "crianças",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -3029,7 +3065,9 @@
     "active": true,
     "term": {
       "swedish": "student",
-      "portuguese": "estudante / estudante"
+      "portuguese": "estudante / estudante",
+      "portuguesePlural": "estudantes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -3064,7 +3102,9 @@
     "active": true,
     "term": {
       "swedish": "lärare",
-      "portuguese": "professor / professora"
+      "portuguese": "professor / professora",
+      "portuguesePlural": "professores",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -3165,7 +3205,9 @@
     "active": true,
     "term": {
       "swedish": "polska",
-      "portuguese": "polonês / polonesa"
+      "portuguese": "polonês / polonesa",
+      "portuguesePlural": "poloneses",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5415,7 +5457,9 @@
     "active": true,
     "term": {
       "swedish": "moln",
-      "portuguese": "nuvem"
+      "portuguese": "nuvem",
+      "portuguesePlural": "nuvens",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5452,7 +5496,9 @@
     "active": true,
     "term": {
       "swedish": "väderkvarn",
-      "portuguese": "moinho de vento"
+      "portuguese": "moinho de vento",
+      "portuguesePlural": "moinhos de vento",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5489,7 +5535,9 @@
     "active": true,
     "term": {
       "swedish": "golfströmmen",
-      "portuguese": "a Corrente do Golfo"
+      "portuguese": "a Corrente do Golfo",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5526,7 +5574,9 @@
     "active": true,
     "term": {
       "swedish": "konfetti",
-      "portuguese": "confete"
+      "portuguese": "confete",
+      "portuguesePlural": "confetes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5563,7 +5613,9 @@
     "active": true,
     "term": {
       "swedish": "rocklåt",
-      "portuguese": "música de rock"
+      "portuguese": "música de rock",
+      "portuguesePlural": "músicas de rock",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5600,7 +5652,9 @@
     "active": true,
     "term": {
       "swedish": "kassett",
-      "portuguese": "fita cassete"
+      "portuguese": "fita cassete",
+      "portuguesePlural": "fitas cassete",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5637,7 +5691,9 @@
     "active": true,
     "term": {
       "swedish": "majstång",
-      "portuguese": "mastro de midsommar"
+      "portuguese": "mastro de midsommar",
+      "portuguesePlural": "mastros de midsommar",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5674,7 +5730,9 @@
     "active": true,
     "term": {
       "swedish": "klocka",
-      "portuguese": "sino / relógio"
+      "portuguese": "sino / relógio",
+      "portuguesePlural": "sinos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5711,7 +5769,9 @@
     "active": true,
     "term": {
       "swedish": "lastbilsflak",
-      "portuguese": "carroceria de caminhão"
+      "portuguese": "carroceria de caminhão",
+      "portuguesePlural": "carrocerias de caminhão",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5748,7 +5808,9 @@
     "active": true,
     "term": {
       "swedish": "höst",
-      "portuguese": "outono"
+      "portuguese": "outono",
+      "portuguesePlural": "outonos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5785,7 +5847,9 @@
     "active": true,
     "term": {
       "swedish": "dröm",
-      "portuguese": "sonho"
+      "portuguese": "sonho",
+      "portuguesePlural": "sonhos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5822,7 +5886,9 @@
     "active": true,
     "term": {
       "swedish": "styrka",
-      "portuguese": "força"
+      "portuguese": "força",
+      "portuguesePlural": "forças",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5859,7 +5925,9 @@
     "active": true,
     "term": {
       "swedish": "mod",
-      "portuguese": "coragem"
+      "portuguese": "coragem",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5896,7 +5964,9 @@
     "active": true,
     "term": {
       "swedish": "applåd",
-      "portuguese": "aplauso"
+      "portuguese": "aplauso",
+      "portuguesePlural": "aplausos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5933,7 +6003,9 @@
     "active": true,
     "term": {
       "swedish": "frukost",
-      "portuguese": "café da manhã"
+      "portuguese": "café da manhã",
+      "portuguesePlural": "cafés da manhã",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -5970,7 +6042,9 @@
     "active": true,
     "term": {
       "swedish": "hav",
-      "portuguese": "mar"
+      "portuguese": "mar",
+      "portuguesePlural": "mares",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6007,7 +6081,9 @@
     "active": true,
     "term": {
       "swedish": "kyss",
-      "portuguese": "beijo"
+      "portuguese": "beijo",
+      "portuguesePlural": "beijos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6044,7 +6120,9 @@
     "active": true,
     "term": {
       "swedish": "tåg",
-      "portuguese": "trem"
+      "portuguese": "trem",
+      "portuguesePlural": "trens",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6081,7 +6159,9 @@
     "active": true,
     "term": {
       "swedish": "natt",
-      "portuguese": "noite"
+      "portuguese": "noite",
+      "portuguesePlural": "noites",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6118,7 +6198,9 @@
     "active": true,
     "term": {
       "swedish": "bil",
-      "portuguese": "carro"
+      "portuguese": "carro",
+      "portuguesePlural": "carros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6155,7 +6237,9 @@
     "active": true,
     "term": {
       "swedish": "syster",
-      "portuguese": "irmã"
+      "portuguese": "irmã",
+      "portuguesePlural": "irmãs",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6192,7 +6276,9 @@
     "active": true,
     "term": {
       "swedish": "knä",
-      "portuguese": "joelho / colo"
+      "portuguese": "joelho / colo",
+      "portuguesePlural": "joelhos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6229,7 +6315,9 @@
     "active": true,
     "term": {
       "swedish": "vår",
-      "portuguese": "primavera"
+      "portuguese": "primavera",
+      "portuguesePlural": "primaveras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6301,7 +6389,9 @@
     "active": true,
     "term": {
       "swedish": "gata",
-      "portuguese": "rua"
+      "portuguese": "rua",
+      "portuguesePlural": "ruas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6338,7 +6428,9 @@
     "active": true,
     "term": {
       "swedish": "ljud",
-      "portuguese": "som"
+      "portuguese": "som",
+      "portuguesePlural": "sons",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6375,7 +6467,9 @@
     "active": true,
     "term": {
       "swedish": "låt",
-      "portuguese": "música / canção"
+      "portuguese": "música / canção",
+      "portuguesePlural": "músicas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6412,7 +6506,9 @@
     "active": true,
     "term": {
       "swedish": "farväl",
-      "portuguese": "despedida"
+      "portuguese": "despedida",
+      "portuguesePlural": "despedidas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6449,7 +6545,9 @@
     "active": true,
     "term": {
       "swedish": "kyrka",
-      "portuguese": "igreja"
+      "portuguese": "igreja",
+      "portuguesePlural": "igrejas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6486,7 +6584,9 @@
     "active": true,
     "term": {
       "swedish": "psalm",
-      "portuguese": "hino / salmo"
+      "portuguese": "hino / salmo",
+      "portuguesePlural": "hinos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6523,7 +6623,9 @@
     "active": true,
     "term": {
       "swedish": "liv",
-      "portuguese": "vida"
+      "portuguese": "vida",
+      "portuguesePlural": "vidas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6560,7 +6662,9 @@
     "active": true,
     "term": {
       "swedish": "del",
-      "portuguese": "parte"
+      "portuguese": "parte",
+      "portuguesePlural": "partes",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6597,7 +6701,9 @@
     "active": true,
     "term": {
       "swedish": "hjärta",
-      "portuguese": "coração"
+      "portuguese": "coração",
+      "portuguesePlural": "corações",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6634,7 +6740,9 @@
     "active": true,
     "term": {
       "swedish": "slag",
-      "portuguese": "batida / golpe"
+      "portuguese": "batida / golpe",
+      "portuguesePlural": "batidas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6671,7 +6779,9 @@
     "active": true,
     "term": {
       "swedish": "sommar",
-      "portuguese": "verão"
+      "portuguese": "verão",
+      "portuguesePlural": "verões",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6708,7 +6818,9 @@
     "active": true,
     "term": {
       "swedish": "sak",
-      "portuguese": "coisa"
+      "portuguese": "coisa",
+      "portuguesePlural": "coisas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6745,7 +6857,9 @@
     "active": true,
     "term": {
       "swedish": "familj",
-      "portuguese": "família"
+      "portuguese": "família",
+      "portuguesePlural": "famílias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6782,7 +6896,9 @@
     "active": true,
     "term": {
       "swedish": "mamma",
-      "portuguese": "mãe"
+      "portuguese": "mãe",
+      "portuguesePlural": "mães",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6819,7 +6935,9 @@
     "active": true,
     "term": {
       "swedish": "pappa",
-      "portuguese": "pai"
+      "portuguese": "pai",
+      "portuguesePlural": "pais",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6856,7 +6974,9 @@
     "active": true,
     "term": {
       "swedish": "bror",
-      "portuguese": "irmão"
+      "portuguese": "irmão",
+      "portuguesePlural": "irmãos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6893,7 +7013,9 @@
     "active": true,
     "term": {
       "swedish": "syskon",
-      "portuguese": "irmão ou uma irmã"
+      "portuguese": "irmão ou uma irmã",
+      "portuguesePlural": "irmãos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6930,7 +7052,9 @@
     "active": true,
     "term": {
       "swedish": "hund",
-      "portuguese": "cachorro"
+      "portuguese": "cachorro",
+      "portuguesePlural": "cachorros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -6967,7 +7091,9 @@
     "active": true,
     "term": {
       "swedish": "katt",
-      "portuguese": "gato"
+      "portuguese": "gato",
+      "portuguesePlural": "gatos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7004,7 +7130,9 @@
     "active": true,
     "term": {
       "swedish": "släkt",
-      "portuguese": "família extensa; parentes"
+      "portuguese": "família extensa; parentes",
+      "portuguesePlural": "famílias extensas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7041,7 +7169,9 @@
     "active": true,
     "term": {
       "swedish": "moster",
-      "portuguese": "tia por parte de mãe"
+      "portuguese": "tia por parte de mãe",
+      "portuguesePlural": "tias por parte de mãe",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7078,7 +7208,9 @@
     "active": true,
     "term": {
       "swedish": "morbror",
-      "portuguese": "tio por parte de mãe"
+      "portuguese": "tio por parte de mãe",
+      "portuguesePlural": "tios por parte de mãe",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7115,7 +7247,9 @@
     "active": true,
     "term": {
       "swedish": "mormor",
-      "portuguese": "avó materna"
+      "portuguese": "avó materna",
+      "portuguesePlural": "avós maternas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7152,7 +7286,9 @@
     "active": true,
     "term": {
       "swedish": "morfar",
-      "portuguese": "avô materno"
+      "portuguese": "avô materno",
+      "portuguesePlural": "avôs maternos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7189,7 +7325,9 @@
     "active": true,
     "term": {
       "swedish": "faster",
-      "portuguese": "tia por parte de pai"
+      "portuguese": "tia por parte de pai",
+      "portuguesePlural": "tias por parte de pai",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7226,7 +7364,9 @@
     "active": true,
     "term": {
       "swedish": "farbror",
-      "portuguese": "tio por parte de pai"
+      "portuguese": "tio por parte de pai",
+      "portuguesePlural": "tios por parte de pai",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7263,7 +7403,9 @@
     "active": true,
     "term": {
       "swedish": "farmor",
-      "portuguese": "avó paterna"
+      "portuguese": "avó paterna",
+      "portuguesePlural": "avós paternas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7300,7 +7442,9 @@
     "active": true,
     "term": {
       "swedish": "farfar",
-      "portuguese": "avô paterno"
+      "portuguese": "avô paterno",
+      "portuguesePlural": "avôs paternos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7337,7 +7481,9 @@
     "active": true,
     "term": {
       "swedish": "barnbarn",
-      "portuguese": "neto; neta"
+      "portuguese": "neto; neta",
+      "portuguesePlural": "netos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7374,7 +7520,9 @@
     "active": true,
     "term": {
       "swedish": "kusin",
-      "portuguese": "primo; prima"
+      "portuguese": "primo; prima",
+      "portuguesePlural": "primos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7411,7 +7559,9 @@
     "active": true,
     "term": {
       "swedish": "svärfar",
-      "portuguese": "sogro"
+      "portuguese": "sogro",
+      "portuguesePlural": "sogros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7448,7 +7598,9 @@
     "active": true,
     "term": {
       "swedish": "svärmor",
-      "portuguese": "sogra"
+      "portuguese": "sogra",
+      "portuguesePlural": "sogras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7485,7 +7637,9 @@
     "active": true,
     "term": {
       "swedish": "svåger",
-      "portuguese": "cunhado"
+      "portuguese": "cunhado",
+      "portuguesePlural": "cunhados",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -7522,7 +7676,9 @@
     "active": true,
     "term": {
       "swedish": "svägerska",
-      "portuguese": "cunhada"
+      "portuguese": "cunhada",
+      "portuguesePlural": "cunhadas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9039,7 +9195,9 @@
     "active": true,
     "term": {
       "swedish": "mobil",
-      "portuguese": "celular"
+      "portuguese": "celular",
+      "portuguesePlural": "celulares",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9076,7 +9234,9 @@
     "active": true,
     "term": {
       "swedish": "busskort",
-      "portuguese": "cartão de ônibus; passe de ônibus"
+      "portuguese": "cartão de ônibus; passe de ônibus",
+      "portuguesePlural": "cartões de ônibus",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9483,7 +9643,9 @@
     "active": true,
     "term": {
       "swedish": "hus",
-      "portuguese": "casa"
+      "portuguese": "casa",
+      "portuguesePlural": "casas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9520,7 +9682,9 @@
     "active": true,
     "term": {
       "swedish": "lägenhet",
-      "portuguese": "apartamento"
+      "portuguese": "apartamento",
+      "portuguesePlural": "apartamentos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9557,7 +9721,9 @@
     "active": true,
     "term": {
       "swedish": "etta",
-      "portuguese": "apartamento tipo estúdio"
+      "portuguese": "apartamento tipo estúdio",
+      "portuguesePlural": "apartamentos tipo estúdio",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9594,7 +9760,9 @@
     "active": true,
     "term": {
       "swedish": "tvåa",
-      "portuguese": "apartamento de um quarto"
+      "portuguese": "apartamento de um quarto",
+      "portuguesePlural": "apartamentos de um quarto",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9631,7 +9799,9 @@
     "active": true,
     "term": {
       "swedish": "trea",
-      "portuguese": "apartamento de dois quartos"
+      "portuguese": "apartamento de dois quartos",
+      "portuguesePlural": "apartamentos de dois quartos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9668,7 +9838,9 @@
     "active": true,
     "term": {
       "swedish": "fyra",
-      "portuguese": "apartamento de três quartos"
+      "portuguese": "apartamento de três quartos",
+      "portuguesePlural": "apartamentos de três quartos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9705,7 +9877,9 @@
     "active": true,
     "term": {
       "swedish": "femma",
-      "portuguese": "apartamento de quatro quartos"
+      "portuguese": "apartamento de quatro quartos",
+      "portuguesePlural": "apartamentos de quatro quartos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9742,7 +9916,9 @@
     "active": true,
     "term": {
       "swedish": "sovrum",
-      "portuguese": "quarto"
+      "portuguese": "quarto",
+      "portuguesePlural": "quartos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9779,7 +9955,9 @@
     "active": true,
     "term": {
       "swedish": "vardagsrum",
-      "portuguese": "sala de estar"
+      "portuguese": "sala de estar",
+      "portuguesePlural": "salas de estar",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9816,7 +9994,9 @@
     "active": true,
     "term": {
       "swedish": "kök",
-      "portuguese": "cozinha"
+      "portuguese": "cozinha",
+      "portuguesePlural": "cozinhas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9853,7 +10033,9 @@
     "active": true,
     "term": {
       "swedish": "badrum",
-      "portuguese": "banheiro"
+      "portuguese": "banheiro",
+      "portuguesePlural": "banheiros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -9890,7 +10072,9 @@
     "active": true,
     "term": {
       "swedish": "kvadratmeter",
-      "portuguese": "metro quadrado"
+      "portuguese": "metro quadrado",
+      "portuguesePlural": "metros quadrados",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10639,7 +10823,9 @@
     "active": true,
     "term": {
       "swedish": "kafé",
-      "portuguese": "café / cafeteria"
+      "portuguese": "café / cafeteria",
+      "portuguesePlural": "cafés",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10674,7 +10860,9 @@
     "active": true,
     "term": {
       "swedish": "fika",
-      "portuguese": "pausa para café"
+      "portuguese": "pausa para café",
+      "portuguesePlural": "pausas para café",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10709,7 +10897,9 @@
     "active": true,
     "term": {
       "swedish": "kopp kaffe",
-      "portuguese": "xícara de café"
+      "portuguese": "xícara de café",
+      "portuguesePlural": "xícaras de café",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10744,7 +10934,9 @@
     "active": true,
     "term": {
       "swedish": "kopp te",
-      "portuguese": "xícara de chá"
+      "portuguese": "xícara de chá",
+      "portuguesePlural": "xícaras de chá",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10779,7 +10971,9 @@
     "active": true,
     "term": {
       "swedish": "latte",
-      "portuguese": "latte"
+      "portuguese": "latte",
+      "portuguesePlural": "lattes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10814,7 +11008,9 @@
     "active": true,
     "term": {
       "swedish": "påtår",
-      "portuguese": "refil de café"
+      "portuguese": "refil de café",
+      "portuguesePlural": "refis de café",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10884,7 +11080,9 @@
     "active": true,
     "term": {
       "swedish": "pengar",
-      "portuguese": "dinheiro"
+      "portuguese": "dinheiro",
+      "portuguesePlural": "dinheiros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -10919,7 +11117,9 @@
     "active": true,
     "term": {
       "swedish": "kronor",
-      "portuguese": "coroas suecas"
+      "portuguese": "coroas suecas",
+      "portuguesePlural": "coroas suecas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11129,7 +11329,9 @@
     "active": true,
     "term": {
       "swedish": "lussebulle",
-      "portuguese": "pão doce de açafrão"
+      "portuguese": "pão doce de açafrão",
+      "portuguesePlural": "pães doces de açafrão",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11164,7 +11366,9 @@
     "active": true,
     "term": {
       "swedish": "dammsugare",
-      "portuguese": "doce chamado dammsugare"
+      "portuguese": "doce chamado dammsugare",
+      "portuguesePlural": "doces chamados dammsugare",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11199,7 +11403,9 @@
     "active": true,
     "term": {
       "swedish": "glas vatten",
-      "portuguese": "copo de água"
+      "portuguese": "copo de água",
+      "portuguesePlural": "copos de água",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11339,7 +11545,9 @@
     "active": true,
     "term": {
       "swedish": "kniv",
-      "portuguese": "faca"
+      "portuguese": "faca",
+      "portuguesePlural": "facas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11374,7 +11582,9 @@
     "active": true,
     "term": {
       "swedish": "gaffel",
-      "portuguese": "garfo"
+      "portuguese": "garfo",
+      "portuguesePlural": "garfos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11409,7 +11619,9 @@
     "active": true,
     "term": {
       "swedish": "sked",
-      "portuguese": "colher"
+      "portuguese": "colher",
+      "portuguesePlural": "colheres",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11444,7 +11656,9 @@
     "active": true,
     "term": {
       "swedish": "tallrik",
-      "portuguese": "prato"
+      "portuguese": "prato",
+      "portuguesePlural": "pratos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11479,7 +11693,9 @@
     "active": true,
     "term": {
       "swedish": "servett",
-      "portuguese": "guardanapo"
+      "portuguese": "guardanapo",
+      "portuguesePlural": "guardanapos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11514,7 +11730,9 @@
     "active": true,
     "term": {
       "swedish": "stol",
-      "portuguese": "cadeira"
+      "portuguese": "cadeira",
+      "portuguesePlural": "cadeiras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11549,7 +11767,9 @@
     "active": true,
     "term": {
       "swedish": "bord",
-      "portuguese": "mesa"
+      "portuguese": "mesa",
+      "portuguesePlural": "mesas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11584,7 +11804,9 @@
     "active": true,
     "term": {
       "swedish": "toalett",
-      "portuguese": "banheiro / privada"
+      "portuguese": "banheiro / privada",
+      "portuguesePlural": "banheiros",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11759,7 +11981,9 @@
     "active": true,
     "term": {
       "swedish": "tid",
-      "portuguese": "horário"
+      "portuguese": "horário",
+      "portuguesePlural": "horários",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11864,7 +12088,9 @@
     "active": true,
     "term": {
       "swedish": "e-postadress",
-      "portuguese": "endereço de e-mail"
+      "portuguese": "endereço de e-mail",
+      "portuguesePlural": "endereços de e-mail",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -11969,7 +12195,9 @@
     "active": true,
     "term": {
       "swedish": "klasser",
-      "portuguese": "aulas"
+      "portuguese": "aulas",
+      "portuguesePlural": "aulas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12214,7 +12442,9 @@
     "active": true,
     "term": {
       "swedish": "månad",
-      "portuguese": "mês"
+      "portuguese": "mês",
+      "portuguesePlural": "meses",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12494,7 +12724,9 @@
     "active": true,
     "term": {
       "swedish": "år",
-      "portuguese": "ano"
+      "portuguese": "ano",
+      "portuguesePlural": "anos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12529,7 +12761,9 @@
     "active": true,
     "term": {
       "swedish": "kvartal",
-      "portuguese": "trimestre"
+      "portuguese": "trimestre",
+      "portuguesePlural": "trimestres",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12564,7 +12798,9 @@
     "active": true,
     "term": {
       "swedish": "vecka",
-      "portuguese": "semana"
+      "portuguese": "semana",
+      "portuguesePlural": "semanas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12599,7 +12835,9 @@
     "active": true,
     "term": {
       "swedish": "dygn",
-      "portuguese": "período de 24 horas"
+      "portuguese": "período de 24 horas",
+      "portuguesePlural": "períodos de 24 horas",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12634,7 +12872,9 @@
     "active": true,
     "term": {
       "swedish": "dag",
-      "portuguese": "dia"
+      "portuguese": "dia",
+      "portuguesePlural": "dias",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12669,7 +12909,9 @@
     "active": true,
     "term": {
       "swedish": "timme",
-      "portuguese": "hora"
+      "portuguese": "hora",
+      "portuguesePlural": "horas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12704,7 +12946,9 @@
     "active": true,
     "term": {
       "swedish": "halvtimme",
-      "portuguese": "meia hora"
+      "portuguese": "meia hora",
+      "portuguesePlural": "meias horas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12739,7 +12983,9 @@
     "active": true,
     "term": {
       "swedish": "minut",
-      "portuguese": "minuto"
+      "portuguese": "minuto",
+      "portuguesePlural": "minutos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -12774,7 +13020,9 @@
     "active": true,
     "term": {
       "swedish": "sekund",
-      "portuguese": "segundo"
+      "portuguese": "segundo",
+      "portuguesePlural": "segundos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -13264,7 +13512,9 @@
     "active": true,
     "term": {
       "swedish": "morgonrutin",
-      "portuguese": "rotina matinal"
+      "portuguese": "rotina matinal",
+      "portuguesePlural": "rotinas matinais",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -13649,7 +13899,9 @@
     "active": true,
     "term": {
       "swedish": "Melodifestivalen",
-      "portuguese": "a competição musical sueca que seleciona a participação da Suécia no Eurovision"
+      "portuguese": "a competição musical sueca que seleciona a participação da Suécia no Eurovision",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14069,7 +14321,9 @@
     "active": true,
     "term": {
       "swedish": "restaurang",
-      "portuguese": "restaurante"
+      "portuguese": "restaurante",
+      "portuguesePlural": "restaurantes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14104,7 +14358,9 @@
     "active": true,
     "term": {
       "swedish": "bio",
-      "portuguese": "cinema"
+      "portuguese": "cinema",
+      "portuguesePlural": "cinemas",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14139,7 +14395,9 @@
     "active": true,
     "term": {
       "swedish": "konsert",
-      "portuguese": "concerto"
+      "portuguese": "concerto",
+      "portuguesePlural": "concertos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14174,7 +14432,9 @@
     "active": true,
     "term": {
       "swedish": "museum",
-      "portuguese": "museu"
+      "portuguese": "museu",
+      "portuguesePlural": "museus",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14209,7 +14469,9 @@
     "active": true,
     "term": {
       "swedish": "krog",
-      "portuguese": "bar; restaurante; casa noturna"
+      "portuguese": "bar; restaurante; casa noturna",
+      "portuguesePlural": "bares",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14279,7 +14541,9 @@
     "active": true,
     "term": {
       "swedish": "fotboll",
-      "portuguese": "futebol"
+      "portuguese": "futebol",
+      "portuguesePlural": "futebóis",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14314,7 +14578,9 @@
     "active": true,
     "term": {
       "swedish": "piano",
-      "portuguese": "piano"
+      "portuguese": "piano",
+      "portuguesePlural": "pianos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14349,7 +14615,9 @@
     "active": true,
     "term": {
       "swedish": "gitarr",
-      "portuguese": "violão; guitarra"
+      "portuguese": "violão; guitarra",
+      "portuguesePlural": "violões",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14384,7 +14652,9 @@
     "active": true,
     "term": {
       "swedish": "dataspel",
-      "portuguese": "jogo de computador; videogame"
+      "portuguese": "jogo de computador; videogame",
+      "portuguesePlural": "jogos de computador",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14804,7 +15074,9 @@
     "active": true,
     "term": {
       "swedish": "kompis",
-      "portuguese": "amigo/amiga"
+      "portuguese": "amigo/amiga",
+      "portuguesePlural": "amigos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -14839,7 +15111,9 @@
     "active": true,
     "term": {
       "swedish": "gång",
-      "portuguese": "vez"
+      "portuguese": "vez",
+      "portuguesePlural": "vezes",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15364,7 +15638,9 @@
     "active": true,
     "term": {
       "swedish": "paprika",
-      "portuguese": "pimentão"
+      "portuguese": "pimentão",
+      "portuguesePlural": "pimentões",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15399,7 +15675,9 @@
     "active": true,
     "term": {
       "swedish": "tomat",
-      "portuguese": "tomate"
+      "portuguese": "tomate",
+      "portuguesePlural": "tomates",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15434,7 +15712,9 @@
     "active": true,
     "term": {
       "swedish": "apelsin",
-      "portuguese": "laranja"
+      "portuguese": "laranja",
+      "portuguesePlural": "laranjas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15469,7 +15749,9 @@
     "active": true,
     "term": {
       "swedish": "äpple",
-      "portuguese": "maçã"
+      "portuguese": "maçã",
+      "portuguesePlural": "maçãs",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15504,7 +15786,9 @@
     "active": true,
     "term": {
       "swedish": "päron",
-      "portuguese": "pera"
+      "portuguese": "pera",
+      "portuguesePlural": "peras",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15539,7 +15823,9 @@
     "active": true,
     "term": {
       "swedish": "köttfärs",
-      "portuguese": "carne moída"
+      "portuguese": "carne moída",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15574,7 +15860,9 @@
     "active": true,
     "term": {
       "swedish": "godis",
-      "portuguese": "doces; guloseimas"
+      "portuguese": "doces; guloseimas",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15609,7 +15897,9 @@
     "active": true,
     "term": {
       "swedish": "mjölk",
-      "portuguese": "leite"
+      "portuguese": "leite",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -15644,7 +15934,9 @@
     "active": true,
     "term": {
       "swedish": "bröd",
-      "portuguese": "pão"
+      "portuguese": "pão",
+      "portuguesePlural": "pães",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16169,7 +16461,9 @@
     "active": true,
     "term": {
       "swedish": "tidning",
-      "portuguese": "jornal / revista"
+      "portuguese": "jornal / revista",
+      "portuguesePlural": "jornais",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16194,7 +16488,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Sv-tidning.ogg"
       }
     }
   },
@@ -16204,7 +16498,9 @@
     "active": true,
     "term": {
       "swedish": "bulle",
-      "portuguese": "pãozinho / bolinho"
+      "portuguese": "pãozinho / bolinho",
+      "portuguesePlural": "pãezinhos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16239,7 +16535,9 @@
     "active": true,
     "term": {
       "swedish": "musiker",
-      "portuguese": "músico / musicista"
+      "portuguese": "músico / musicista",
+      "portuguesePlural": "músicos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16264,7 +16562,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Sv-musiker.ogg"
       }
     }
   },
@@ -16274,7 +16572,9 @@
     "active": true,
     "term": {
       "swedish": "nyckel",
-      "portuguese": "chave"
+      "portuguese": "chave",
+      "portuguesePlural": "chaves",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16299,7 +16599,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/LL-Q9027_%28swe%29-Christoffre-nyckel.wav"
       }
     }
   },
@@ -16309,7 +16609,9 @@
     "active": true,
     "term": {
       "swedish": "land",
-      "portuguese": "país"
+      "portuguese": "país",
+      "portuguesePlural": "países",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16344,7 +16646,9 @@
     "active": true,
     "term": {
       "swedish": "tå",
-      "portuguese": "dedo do pé"
+      "portuguese": "dedo do pé",
+      "portuguesePlural": "dedos do pé",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16369,7 +16673,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sv-en_t%C3%A5.ogg"
       }
     }
   },
@@ -16379,7 +16683,9 @@
     "active": true,
     "term": {
       "swedish": "sko",
-      "portuguese": "sapato"
+      "portuguese": "sapato",
+      "portuguesePlural": "sapatos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16404,7 +16710,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Sv-sko.ogg"
       }
     }
   },
@@ -16414,7 +16720,9 @@
     "active": true,
     "term": {
       "swedish": "öga",
-      "portuguese": "olho"
+      "portuguese": "olho",
+      "portuguesePlural": "olhos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16439,7 +16747,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sv-%C3%B6ga.ogg"
       }
     }
   },
@@ -16449,7 +16757,9 @@
     "active": true,
     "term": {
       "swedish": "öra",
-      "portuguese": "orelha"
+      "portuguese": "orelha",
+      "portuguesePlural": "orelhas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16474,7 +16784,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Sv-%C3%B6ra.ogg"
       }
     }
   },
@@ -16544,7 +16854,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Sv-n%C3%A5got.ogg"
       }
     }
   },
@@ -16579,7 +16889,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Sv-m%C3%A5nga.ogg"
       }
     }
   },
@@ -16614,7 +16924,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sv-fler.ogg"
       }
     }
   },
@@ -16649,7 +16959,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Sv-tillsammans.ogg"
       }
     }
   },
@@ -16694,7 +17004,9 @@
     "active": true,
     "term": {
       "swedish": "språkkurs",
-      "portuguese": "curso de línguas"
+      "portuguese": "curso de línguas",
+      "portuguesePlural": "cursos de línguas",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16729,7 +17041,9 @@
     "active": true,
     "term": {
       "swedish": "klassrum",
-      "portuguese": "sala de aula"
+      "portuguese": "sala de aula",
+      "portuguesePlural": "salas de aula",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16764,7 +17078,9 @@
     "active": true,
     "term": {
       "swedish": "film",
-      "portuguese": "filme"
+      "portuguese": "filme",
+      "portuguesePlural": "filmes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16789,7 +17105,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sv-film.ogg"
       }
     }
   },
@@ -16859,7 +17175,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sv-efter.ogg"
       }
     }
   },
@@ -16904,7 +17220,9 @@
     "active": true,
     "term": {
       "swedish": "klockan",
-      "portuguese": "às / o relógio"
+      "portuguese": "às / o relógio",
+      "portuguesePlural": "relógios",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16929,7 +17247,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/LL-Q9027_%28swe%29-Ainali-klockan.wav"
       }
     }
   },
@@ -16974,7 +17292,9 @@
     "active": true,
     "term": {
       "swedish": "födelsedag",
-      "portuguese": "aniversário"
+      "portuguese": "aniversário",
+      "portuguesePlural": "aniversários",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -16999,7 +17319,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Sv-en_f%C3%B6delsedag.ogg"
       }
     }
   },
@@ -17009,7 +17329,9 @@
     "active": true,
     "term": {
       "swedish": "present",
-      "portuguese": "presente"
+      "portuguese": "presente",
+      "portuguesePlural": "presentes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17034,7 +17356,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sv-en_present.ogg"
       }
     }
   },
@@ -17044,7 +17366,9 @@
     "active": true,
     "term": {
       "swedish": "gäster",
-      "portuguese": "convidados / convidadas"
+      "portuguese": "convidados / convidadas",
+      "portuguesePlural": "convidados",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17104,7 +17428,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Sv-innan.ogg"
       }
     }
   },
@@ -17139,7 +17463,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Sv-senare.ogg"
       }
     }
   },
@@ -17209,7 +17533,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sv-hj%C3%A4lper.ogg"
       }
     }
   },
@@ -17254,7 +17578,9 @@
     "active": true,
     "term": {
       "swedish": "fritid",
-      "portuguese": "tempo livre"
+      "portuguese": "tempo livre",
+      "portuguesePlural": "tempos livres",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17279,7 +17605,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Sv-fritid.ogg"
       }
     }
   },
@@ -17314,7 +17640,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sv-ber%C3%A4tta.ogg"
       }
     }
   },
@@ -17349,7 +17675,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sv-olika.ogg"
       }
     }
   },
@@ -17359,7 +17685,9 @@
     "active": true,
     "term": {
       "swedish": "helg",
-      "portuguese": "fim de semana"
+      "portuguese": "fim de semana",
+      "portuguesePlural": "fins de semana",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17384,7 +17712,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sv-helg.ogg"
       }
     }
   },
@@ -17394,7 +17722,9 @@
     "active": true,
     "term": {
       "swedish": "favorit",
-      "portuguese": "favorito / favorita"
+      "portuguese": "favorito / favorita",
+      "portuguesePlural": "favoritos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17419,7 +17749,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sv-favorit.ogg"
       }
     }
   },
@@ -17454,7 +17784,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sv-ledig.ogg"
       }
     }
   },
@@ -17464,7 +17794,9 @@
     "active": true,
     "term": {
       "swedish": "tåg",
-      "portuguese": "trem"
+      "portuguese": "trem",
+      "portuguesePlural": "trens",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17489,7 +17821,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sv-t%C3%A5g.ogg"
       }
     }
   },
@@ -17499,7 +17831,9 @@
     "active": true,
     "term": {
       "swedish": "station",
-      "portuguese": "estação"
+      "portuguese": "estação",
+      "portuguesePlural": "estações",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17524,7 +17858,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Sv-station.ogg"
       }
     }
   },
@@ -17534,7 +17868,9 @@
     "active": true,
     "term": {
       "swedish": "utställning",
-      "portuguese": "exposição"
+      "portuguese": "exposição",
+      "portuguesePlural": "exposições",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17559,7 +17895,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sv-utst%C3%A4llning.ogg"
       }
     }
   },
@@ -17594,7 +17930,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Sv-packa.ogg"
       }
     }
   },
@@ -17604,7 +17940,9 @@
     "active": true,
     "term": {
       "swedish": "ryggsäck",
-      "portuguese": "mochila"
+      "portuguese": "mochila",
+      "portuguesePlural": "mochilas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17709,7 +18047,9 @@
     "active": true,
     "term": {
       "swedish": "buss",
-      "portuguese": "ônibus"
+      "portuguese": "ônibus",
+      "portuguesePlural": "ônibus",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17734,7 +18074,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Sv-buss.ogg"
       }
     }
   },
@@ -17744,7 +18084,9 @@
     "active": true,
     "term": {
       "swedish": "tågstation",
-      "portuguese": "estação de trem"
+      "portuguese": "estação de trem",
+      "portuguesePlural": "estações de trem",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17779,7 +18121,9 @@
     "active": true,
     "term": {
       "swedish": "flyg",
-      "portuguese": "voo"
+      "portuguese": "voo",
+      "portuguesePlural": "voos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17814,7 +18158,9 @@
     "active": true,
     "term": {
       "swedish": "flygplan",
-      "portuguese": "avião"
+      "portuguese": "avião",
+      "portuguesePlural": "aviões",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17839,7 +18185,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Sv-flygplan.ogg"
       }
     }
   },
@@ -17849,7 +18195,9 @@
     "active": true,
     "term": {
       "swedish": "flygplats",
-      "portuguese": "aeroporto"
+      "portuguese": "aeroporto",
+      "portuguesePlural": "aeroportos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17874,7 +18222,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/LL-Q9027_%28swe%29-Moonhouse-flygplats.wav"
       }
     }
   },
@@ -17884,7 +18232,9 @@
     "active": true,
     "term": {
       "swedish": "flygbuss",
-      "portuguese": "ônibus do aeroporto"
+      "portuguese": "ônibus do aeroporto",
+      "portuguesePlural": "ônibus do aeroporto",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17919,7 +18269,9 @@
     "active": true,
     "term": {
       "swedish": "båt",
-      "portuguese": "barco"
+      "portuguese": "barco",
+      "portuguesePlural": "barcos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17944,7 +18296,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Sv-b%C3%A5t.ogg"
       }
     }
   },
@@ -17954,7 +18306,9 @@
     "active": true,
     "term": {
       "swedish": "spårvagn",
-      "portuguese": "bonde"
+      "portuguese": "bonde",
+      "portuguesePlural": "bondes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -17979,7 +18333,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sv-en_sp%C3%A5rvagn.ogg"
       }
     }
   },
@@ -17989,7 +18343,9 @@
     "active": true,
     "term": {
       "swedish": "tunnelbana",
-      "portuguese": "metrô"
+      "portuguese": "metrô",
+      "portuguesePlural": "metrôs",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18014,7 +18370,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sv-en_tunnelbana.ogg"
       }
     }
   },
@@ -18024,7 +18380,9 @@
     "active": true,
     "term": {
       "swedish": "biljett",
-      "portuguese": "bilhete / passagem"
+      "portuguese": "bilhete / passagem",
+      "portuguesePlural": "bilhetes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18049,7 +18407,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Sv-biljett.ogg"
       }
     }
   },
@@ -18059,7 +18417,9 @@
     "active": true,
     "term": {
       "swedish": "restid",
-      "portuguese": "tempo de viagem"
+      "portuguese": "tempo de viagem",
+      "portuguesePlural": "tempos de viagem",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18294,7 +18654,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Sv-l%C3%A4ngs.ogg"
       }
     }
   },
@@ -18329,7 +18689,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Sv-genom.ogg"
       }
     }
   },
@@ -18364,7 +18724,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Sv-tills.ogg"
       }
     }
   },
@@ -18374,7 +18734,9 @@
     "active": true,
     "term": {
       "swedish": "avfart",
-      "portuguese": "saída"
+      "portuguese": "saída",
+      "portuguesePlural": "saídas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18409,7 +18771,9 @@
     "active": true,
     "term": {
       "swedish": "påfart",
-      "portuguese": "entrada para a via"
+      "portuguese": "entrada para a via",
+      "portuguesePlural": "entradas para a via",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18479,7 +18843,9 @@
     "active": true,
     "term": {
       "swedish": "väg",
-      "portuguese": "estrada / caminho"
+      "portuguese": "estrada / caminho",
+      "portuguesePlural": "estradas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18504,7 +18870,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sv-v%C3%A4g.ogg"
       }
     }
   },
@@ -18514,7 +18880,9 @@
     "active": true,
     "term": {
       "swedish": "motorväg",
-      "portuguese": "rodovia / autoestrada"
+      "portuguese": "rodovia / autoestrada",
+      "portuguesePlural": "rodovias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18549,7 +18917,9 @@
     "active": true,
     "term": {
       "swedish": "rondell",
-      "portuguese": "rotatória"
+      "portuguese": "rotatória",
+      "portuguesePlural": "rotatórias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -18819,7 +19189,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sv-tro.ogg"
       }
     }
   },
@@ -18854,7 +19224,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Sv-flyga.ogg"
       }
     }
   },
@@ -18889,7 +19259,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Sv-k%C3%B6ra.ogg"
       }
     }
   },
@@ -18959,7 +19329,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sv-g%C3%A5.ogg"
       }
     }
   },
@@ -18994,7 +19364,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sv-hitta.ogg"
       }
     }
   },
@@ -19029,7 +19399,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sv-sova.ogg"
       }
     }
   },
@@ -19064,7 +19434,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sv-ligga.ogg"
       }
     }
   },
@@ -19099,7 +19469,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Sv-sitta.ogg"
       }
     }
   },
@@ -19134,7 +19504,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Sv-parkera.ogg"
       }
     }
   },
@@ -19169,7 +19539,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sv-hos.ogg"
       }
     }
   },
@@ -19204,7 +19574,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sv-p%C3%A5.ogg"
       }
     }
   },
@@ -19239,7 +19609,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Sv-till.ogg"
       }
     }
   },
@@ -19354,7 +19724,9 @@
     "active": true,
     "term": {
       "swedish": "mataffär",
-      "portuguese": "loja de alimentos / mercado"
+      "portuguese": "loja de alimentos / mercado",
+      "portuguesePlural": "lojas de alimentos",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19389,7 +19761,9 @@
     "active": true,
     "term": {
       "swedish": "bageri",
-      "portuguese": "padaria"
+      "portuguese": "padaria",
+      "portuguesePlural": "padarias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19424,7 +19798,9 @@
     "active": true,
     "term": {
       "swedish": "konditori",
-      "portuguese": "confeitaria"
+      "portuguese": "confeitaria",
+      "portuguesePlural": "confeitarias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19459,7 +19835,9 @@
     "active": true,
     "term": {
       "swedish": "apotek",
-      "portuguese": "farmácia"
+      "portuguese": "farmácia",
+      "portuguesePlural": "farmácias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19484,7 +19862,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/LL-Q9027_%28swe%29-Moonhouse-apotek.wav"
       }
     }
   },
@@ -19494,7 +19872,9 @@
     "active": true,
     "term": {
       "swedish": "klädaffär",
-      "portuguese": "loja de roupas"
+      "portuguese": "loja de roupas",
+      "portuguesePlural": "lojas de roupas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19529,7 +19909,9 @@
     "active": true,
     "term": {
       "swedish": "bank",
-      "portuguese": "banco"
+      "portuguese": "banco",
+      "portuguesePlural": "bancos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19554,7 +19936,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sv-bank.ogg"
       }
     }
   },
@@ -19564,7 +19946,9 @@
     "active": true,
     "term": {
       "swedish": "bankomat",
-      "portuguese": "caixa eletrônico"
+      "portuguese": "caixa eletrônico",
+      "portuguesePlural": "caixas eletrônicos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19599,7 +19983,9 @@
     "active": true,
     "term": {
       "swedish": "tobaksaffär",
-      "portuguese": "tabacaria"
+      "portuguese": "tabacaria",
+      "portuguesePlural": "tabacarias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19634,7 +20020,9 @@
     "active": true,
     "term": {
       "swedish": "posten",
-      "portuguese": "correios / agência dos correios"
+      "portuguese": "correios / agência dos correios",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19669,7 +20057,9 @@
     "active": true,
     "term": {
       "swedish": "kiosk",
-      "portuguese": "quiosque / banca de jornal"
+      "portuguese": "quiosque / banca de jornal",
+      "portuguesePlural": "quiosques",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19704,7 +20094,9 @@
     "active": true,
     "term": {
       "swedish": "pizzeria",
-      "portuguese": "pizzaria"
+      "portuguese": "pizzaria",
+      "portuguesePlural": "pizzarias",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19739,7 +20131,9 @@
     "active": true,
     "term": {
       "swedish": "blomsterhandel",
-      "portuguese": "floricultura"
+      "portuguese": "floricultura",
+      "portuguesePlural": "floriculturas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19774,7 +20168,9 @@
     "active": true,
     "term": {
       "swedish": "bensinstation",
-      "portuguese": "posto de gasolina"
+      "portuguese": "posto de gasolina",
+      "portuguesePlural": "postos de gasolina",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19809,7 +20205,9 @@
     "active": true,
     "term": {
       "swedish": "bensinmack",
-      "portuguese": "posto de gasolina"
+      "portuguese": "posto de gasolina",
+      "portuguesePlural": "postos de gasolina",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19844,7 +20242,9 @@
     "active": true,
     "term": {
       "swedish": "skola",
-      "portuguese": "escola"
+      "portuguese": "escola",
+      "portuguesePlural": "escolas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19869,7 +20269,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sv-skola.ogg"
       }
     }
   },
@@ -19879,7 +20279,9 @@
     "active": true,
     "term": {
       "swedish": "bibliotek",
-      "portuguese": "biblioteca"
+      "portuguese": "biblioteca",
+      "portuguesePlural": "bibliotecas",
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19904,7 +20306,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sv-bibliotek.ogg"
       }
     }
   },
@@ -19914,7 +20316,9 @@
     "active": true,
     "term": {
       "swedish": "Systembolaget",
-      "portuguese": "loja estatal oficial de bebidas alcoólicas"
+      "portuguese": "loja estatal oficial de bebidas alcoólicas",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
     },
     "grammar": {
       "type": "substantivo",
@@ -19974,7 +20378,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Sv-bredvid.ogg"
       }
     }
   },
@@ -20334,7 +20738,9 @@
     "active": true,
     "term": {
       "swedish": "januari",
-      "portuguese": "janeiro"
+      "portuguese": "janeiro",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20359,7 +20765,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Sv-januari.ogg"
       }
     }
   },
@@ -20369,7 +20775,9 @@
     "active": true,
     "term": {
       "swedish": "februari",
-      "portuguese": "fevereiro"
+      "portuguese": "fevereiro",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20394,7 +20802,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/LL-Q9027_%28swe%29-Moonhouse-februari.wav"
       }
     }
   },
@@ -20404,7 +20812,9 @@
     "active": true,
     "term": {
       "swedish": "mars",
-      "portuguese": "março"
+      "portuguese": "março",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20429,7 +20839,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sv-mars.ogg"
       }
     }
   },
@@ -20439,7 +20849,9 @@
     "active": true,
     "term": {
       "swedish": "april",
-      "portuguese": "abril"
+      "portuguese": "abril",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20464,7 +20876,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Sv-april.ogg"
       }
     }
   },
@@ -20474,7 +20886,9 @@
     "active": true,
     "term": {
       "swedish": "maj",
-      "portuguese": "maio"
+      "portuguese": "maio",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20499,7 +20913,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sv-maj.ogg"
       }
     }
   },
@@ -20509,7 +20923,9 @@
     "active": true,
     "term": {
       "swedish": "juni",
-      "portuguese": "junho"
+      "portuguese": "junho",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20534,7 +20950,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sv-juni.ogg"
       }
     }
   },
@@ -20544,7 +20960,9 @@
     "active": true,
     "term": {
       "swedish": "juli",
-      "portuguese": "julho"
+      "portuguese": "julho",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20569,7 +20987,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sv-juli.ogg"
       }
     }
   },
@@ -20579,7 +20997,9 @@
     "active": true,
     "term": {
       "swedish": "augusti",
-      "portuguese": "agosto"
+      "portuguese": "agosto",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20604,7 +21024,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sv-augusti.ogg"
       }
     }
   },
@@ -20614,7 +21034,9 @@
     "active": true,
     "term": {
       "swedish": "september",
-      "portuguese": "setembro"
+      "portuguese": "setembro",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20639,7 +21061,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Sv-september.ogg"
       }
     }
   },
@@ -20649,7 +21071,9 @@
     "active": true,
     "term": {
       "swedish": "oktober",
-      "portuguese": "outubro"
+      "portuguese": "outubro",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20674,7 +21098,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sv-oktober.ogg"
       }
     }
   },
@@ -20684,7 +21108,9 @@
     "active": true,
     "term": {
       "swedish": "november",
-      "portuguese": "novembro"
+      "portuguese": "novembro",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20709,7 +21135,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sv-november.ogg"
       }
     }
   },
@@ -20719,7 +21145,9 @@
     "active": true,
     "term": {
       "swedish": "december",
-      "portuguese": "dezembro"
+      "portuguese": "dezembro",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20744,7 +21172,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sv-december.ogg"
       }
     }
   },
@@ -20964,7 +21392,9 @@
     "active": true,
     "term": {
       "swedish": "styrelse",
-      "portuguese": "conselho / diretoria"
+      "portuguese": "conselho / diretoria",
+      "portuguesePlural": "conselhos",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
@@ -20989,7 +21419,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Sv-styrelse.ogg"
       }
     }
   },
@@ -21269,7 +21699,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sv-mitt.ogg"
       }
     }
   },
@@ -21304,7 +21734,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Sv-mina.ogg"
       }
     }
   },
@@ -21339,7 +21769,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Sv-ditt.ogg"
       }
     }
   },
@@ -21409,7 +21839,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Sv-hans.ogg"
       }
     }
   },
@@ -21444,7 +21874,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sv-hennes.ogg"
       }
     }
   },
@@ -21724,7 +22154,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Sv-era.ogg"
       }
     }
   },
@@ -21759,7 +22189,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sv-deras.ogg"
       }
     }
   },
@@ -21829,7 +22259,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sv-andra.ogg"
       }
     }
   },
@@ -21864,7 +22294,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sv-tredje.ogg"
       }
     }
   },
@@ -21899,7 +22329,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Sv-fj%C3%A4rde.ogg"
       }
     }
   },
@@ -21934,7 +22364,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sv-femte.ogg"
       }
     }
   },
@@ -21969,7 +22399,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sv-sj%C3%A4tte.ogg"
       }
     }
   },
@@ -22004,7 +22434,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sv-sjunde.ogg"
       }
     }
   },
@@ -22039,7 +22469,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Sv-%C3%A5ttonde.ogg"
       }
     }
   },
@@ -22074,7 +22504,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sv-nionde.ogg"
       }
     }
   },
@@ -22109,7 +22539,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sv-tionde.ogg"
       }
     }
   },
@@ -22144,7 +22574,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sv-elfte.ogg"
       }
     }
   },
@@ -22179,7 +22609,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Sv-tolfte.ogg"
       }
     }
   },
@@ -22249,7 +22679,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Sv-fjortonde.ogg"
       }
     }
   },
@@ -22459,7 +22889,7 @@
         "src": null
       },
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sv-tjugonde.ogg"
       }
     }
   },
