@@ -992,23 +992,6 @@ function updateQuestionLabel(content) {
 function updateAnswerGrammarForm(card) {
   answerGrammarForm.textContent = "";
   answerGrammarForm.classList.add("hidden");
-
-  if (
-    directionSelect.value !== "sv-pt" ||
-    !isNounWithGender(card) ||
-    !card._nounForm
-  ) {
-    return;
-  }
-
-  const label = NOUN_FORM_LABELS[card._nounForm];
-
-  if (!label) {
-    return;
-  }
-
-  answerGrammarForm.textContent = label;
-  answerGrammarForm.classList.remove("hidden");
 }
 
 function isNounWithGender(card) {
@@ -1017,13 +1000,6 @@ function isNounWithGender(card) {
     (card.grammar?.gender === "en" || card.grammar?.gender === "ett")
   );
 }
-
-const NOUN_FORM_LABELS = {
-  singularIndefinite: "singular indefinido",
-  singularDefinite: "singular definido",
-  pluralIndefinite: "plural indefinido",
-  pluralDefinite: "plural definido"
-};
 
 function getAvailableNounForms(card) {
   if (!isNounWithGender(card)) {
@@ -1061,7 +1037,8 @@ function createStudyOccurrence(card) {
   const occurrence = { ...card };
 
   if (
-    directionSelect.value === "sv-pt" &&
+    (directionSelect.value === "sv-pt" ||
+     directionSelect.value === "pt-sv") &&
     isNounWithGender(card)
   ) {
     occurrence._nounForm = chooseRandomNounForm(card);
@@ -1083,10 +1060,7 @@ function getStudySwedishText(card) {
    *
    * Nas demais direções mantém o comportamento antigo.
    */
-  if (
-    directionSelect.value !== "sv-pt" ||
-    !card._nounForm
-  ) {
+  if (!card._nounForm) { 
     return `${card.grammar.gender} ${swedish}`;
   }
 
@@ -1108,14 +1082,49 @@ function getStudySwedishText(card) {
   }
 }
 
+function getStudyPortugueseText(card) {
+  const singular = card.term?.portuguese || "";
+
+  if (!isNounWithGender(card) || !card._nounForm) {
+    return singular;
+  }
+
+  const plural = card.term?.portuguesePlural || singular;
+  const gender = card.term?.portugueseGender;
+
+  const singularArticle =
+    gender === "feminine" ? "a" : "o";
+
+  const pluralArticle =
+    gender === "feminine" ? "as" : "os";
+
+  switch (card._nounForm) {
+    case "singularIndefinite":
+      return singular;
+
+    case "singularDefinite":
+      return `${singularArticle} ${singular}`;
+
+    case "pluralIndefinite":
+      return plural;
+
+    case "pluralDefinite":
+      return `${pluralArticle} ${plural}`;
+
+    default:
+      return singular;
+  }
+}
+
 function getCardContent(card) {
   const direction = directionSelect.value;
   const studySwedish = getStudySwedishText(card);
+  const studyPortuguese = getStudyPortugueseText(card);
 
   if (direction === "pt-sv") {
     return {
       questionType: "text",
-      question: card.term.portuguese,
+      question: studyPortuguese,
       questionLabel: "Português",
       answer: studySwedish,
       answerLabel: "Sueco"
@@ -1156,7 +1165,7 @@ function getCardContent(card) {
     questionType: "text",
     question: studySwedish,
     questionLabel: "Sueco",
-    answer: card.term.portuguese,
+    answer: studyPortuguese,
     answerLabel: "Português"
   };
 }
