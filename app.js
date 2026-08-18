@@ -141,10 +141,6 @@ const writeResultBox = document.querySelector("#writeResultBox");
 const userAnswerText = document.querySelector("#userAnswerText");
 const comparisonFeedbackText = document.querySelector("#comparisonFeedbackText");
 
-const cardImageWrap = document.querySelector("#cardImageWrap");
-const cardImage = document.querySelector("#cardImage");
-const imageSwedishText = document.querySelector("#imageSwedishText");
-
 const cardAudioWrap = document.querySelector("#cardAudioWrap");
 const cardAudio = document.querySelector("#cardAudio");
 const playAudioButton = document.querySelector("#playAudioButton");
@@ -550,10 +546,6 @@ if (isNewWordsMode) {
 
 function getCardsAvailableForDirection(cardList) {
   const direction = directionSelect.value;
-
-  if (direction === "img-sv") {
-    return cardList.filter((card) => card.media?.image?.src);
-  }
 
   if (direction === "audio-pt" || direction === "audio-sv") {
     return cardList.filter((card) => card.media?.audio?.src);
@@ -979,7 +971,7 @@ function updateQuestionText(text) {
 }
 
 function updateQuestionLabel(content) {
-  if (content.questionType === "image" || content.questionType === "audio") {
+  if (content.questionType === "audio") {
     questionLabel.textContent = "";
     questionLabel.classList.add("hidden");
     return;
@@ -1131,16 +1123,6 @@ function getCardContent(card) {
     };
   }
 
-  if (direction === "img-sv") {
-    return {
-      questionType: "image",
-      question: "",
-      questionLabel: "Imagem",
-      answer: studySwedish,
-      answerLabel: "Sueco"
-    };
-  }
-
   if (direction === "audio-pt") {
     return {
       questionType: "audio",
@@ -1171,46 +1153,11 @@ function getCardContent(card) {
 }
 
 function showQuestionMedia(card, questionType) {
-  hideQuestionImage();
   hideQuestionAudio();
-
-  if (questionType === "image") {
-    showImageIfAvailable(card);
-  }
 
   if (questionType === "audio") {
     showAudioIfAvailable(card);
   }
-}
-
-function showImageIfAvailable(card) {
-  const image = card.media?.image;
-
-  if (!image || !image.src) {
-    hideQuestionImage();
-    return;
-  }
-
-  cardImage.src = image.src;
-  cardImage.alt = image.alt || "Imagem do flashcard";
-
-  imageSwedishText.textContent = card.term.portuguese;
-  imageSwedishText.classList.remove("hidden");
-
-  cardImageWrap.classList.remove("hidden");
-
-  cardImage.onerror = () => {
-    hideQuestionImage();
-  };
-}
-
-function hideQuestionImage() {
-  cardImageWrap.classList.add("hidden");
-  cardImage.removeAttribute("src");
-  cardImage.alt = "";
-
-  imageSwedishText.textContent = "";
-  imageSwedishText.classList.add("hidden");
 }
 
 function showAudioIfAvailable(card) {
@@ -2206,7 +2153,6 @@ function getOrdinalWord(number) {
 function isSwedishAnswerModeAvailable() {
   return (
     directionSelect.value === "pt-sv" ||
-    directionSelect.value === "img-sv" ||
     directionSelect.value === "audio-sv"
   );
 }
@@ -2522,12 +2468,11 @@ function createWordDetails(card) {
   }
 
   const hasAudio = Boolean(card.media?.audio?.src);
-  const hasImage = Boolean(card.media?.image?.src);
 
-  if (!hasAudio && !hasImage) {
+  if (!hasAudio) {
     const noMedia = document.createElement("p");
     noMedia.className = "word-meta";
-    noMedia.textContent = "Sem áudio ou imagem para esta palavra.";
+    noMedia.textContent = "Sem áudio para esta palavra.";
     details.appendChild(noMedia);
     return details;
   }
@@ -2543,16 +2488,6 @@ function createWordDetails(card) {
     audioButton.textContent = "Ouvir áudio";
 
     mediaActions.appendChild(audioButton);
-  }
-
-  if (hasImage) {
-    const image = document.createElement("img");
-    image.className = "word-image";
-    image.src = card.media.image.src;
-    image.alt = card.media.image.alt || getStudySwedishText(card);
-    image.loading = "lazy";
-
-    mediaActions.appendChild(image);
   }
 
   details.appendChild(mediaActions);
