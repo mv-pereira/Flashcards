@@ -36,42 +36,41 @@ let expandedWordCardId = null;
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
-const PRONUNCIATION_RULES = [
-  {
-    title: "1. A vogal depois de SK, G e K muda o som",
-    text: "Quando SK, G ou K vêm antes de A, O, U ou Å, o som tende a ser mais “duro”. Antes de E, I, Y, Ä ou Ö, o som costuma ficar mais “suave”.",
-    examples: ["gott", "gift", "gör", "göra", "kul", "komma", "kort", "att känna", "att köpa", "skild"]
-  },
-  {
-    title: "2. Combinações que não soam como seriam lidas em português",
-    text: "Algumas combinações têm som especial: TJ soa como um chiado suave; SJ, SKJ, STJ e SK antes de vogal suave têm um som de “ch” mais forte; CH varia conforme a palavra.",
-    examples: ["Tjena!", "sju", "att sjunga", "skild"]
-  },
-  {
-    title: "3. RS, RT, RD e RN se juntam na fala",
-    text: "Depois de R, as letras S, T, D e N costumam ser pronunciadas com a língua mais para trás. Na prática, não se fala como duas letras totalmente separadas.",
-    examples: ["torsdag", "Ursäkta?", "ett barn", "snart", "kort", "ett hjärta"]
-  },
-  {
-    title: "4. Algumas letras somem ou enfraquecem na fala rápida",
-    text: "O G final em palavras terminadas em -dag muitas vezes quase desaparece. Em várias palavras frequentes, letras como R, G ou H podem ficar bem fracas dependendo da frase e da região.",
-    examples: ["måndag", "tisdag", "onsdag", "fredag", "lördag", "söndag"]
-  },
-  {
-    title: "5. A sílaba tônica normalmente fica na parte mais importante da palavra",
-    text: "Palavras suecas comuns muitas vezes têm a primeira sílaba forte. Palavras com be- ou för- podem puxar a força para a segunda sílaba. Em frases, substantivos, verbos, adjetivos e advérbios costumam receber mais ênfase.",
-    examples: ["en bok", "att äta", "förstå", "forska", "komma"]
-  },
-  {
-    title: "6. Vogal longa x consoante longa",
-    text: "Uma vogal seguida de uma só consoante costuma soar mais longa. Quando há duas ou mais consoantes depois, a vogal costuma ficar mais curta e a consoante seguinte pesa mais.",
-    examples: ["en bok", "noll", "åtta", "komma", "kort"]
-  },
-  {
-    title: "7. Melodia da frase",
-    text: "O sueco não é falado “reto”: a voz sobe e desce, especialmente em vogais longas. Em afirmações, a melodia geralmente cai no final; em perguntas, pode subir ou variar conforme a região.",
-    examples: ["Hej!", "Tjena!", "Ursäkta?", "Jag förstår inte."]
-  }
+const PRONUNCIATION_RULES = [{
+		title: "1. A vogal depois de SK, G e K muda o som",
+		text: "Quando SK, G ou K vêm antes de A, O, U ou Å, o som tende a ser mais “duro”. Antes de E, I, Y, Ä ou Ö, o som costuma ficar mais “suave”.",
+		examples: ["gott", "gift", "gör", "göra", "kul", "komma", "kort", "att känna", "att köpa", "skild"]
+	},
+	{
+		title: "2. Combinações que não soam como seriam lidas em português",
+		text: "Algumas combinações têm som especial: TJ soa como um chiado suave; SJ, SKJ, STJ e SK antes de vogal suave têm um som de “ch” mais forte; CH varia conforme a palavra.",
+		examples: ["Tjena!", "sju", "att sjunga", "skild"]
+	},
+	{
+		title: "3. RS, RT, RD e RN se juntam na fala",
+		text: "Depois de R, as letras S, T, D e N costumam ser pronunciadas com a língua mais para trás. Na prática, não se fala como duas letras totalmente separadas.",
+		examples: ["torsdag", "Ursäkta?", "ett barn", "snart", "kort", "ett hjärta"]
+	},
+	{
+		title: "4. Algumas letras somem ou enfraquecem na fala rápida",
+		text: "O G final em palavras terminadas em -dag muitas vezes quase desaparece. Em várias palavras frequentes, letras como R, G ou H podem ficar bem fracas dependendo da frase e da região.",
+		examples: ["måndag", "tisdag", "onsdag", "fredag", "lördag", "söndag"]
+	},
+	{
+		title: "5. A sílaba tônica normalmente fica na parte mais importante da palavra",
+		text: "Palavras suecas comuns muitas vezes têm a primeira sílaba forte. Palavras com be- ou för- podem puxar a força para a segunda sílaba. Em frases, substantivos, verbos, adjetivos e advérbios costumam receber mais ênfase.",
+		examples: ["en bok", "att äta", "förstå", "forska", "komma"]
+	},
+	{
+		title: "6. Vogal longa x consoante longa",
+		text: "Uma vogal seguida de uma só consoante costuma soar mais longa. Quando há duas ou mais consoantes depois, a vogal costuma ficar mais curta e a consoante seguinte pesa mais.",
+		examples: ["en bok", "noll", "åtta", "komma", "kort"]
+	},
+	{
+		title: "7. Melodia da frase",
+		text: "O sueco não é falado “reto”: a voz sobe e desce, especialmente em vogais longas. Em afirmações, a melodia geralmente cai no final; em perguntas, pode subir ou variar conforme a região.",
+		examples: ["Hej!", "Tjena!", "Ursäkta?", "Jag förstår inte."]
+	}
 ];
 
 const newWordsToggleButton = document.querySelector("#newWordsToggleButton");
@@ -167,2686 +166,2711 @@ const wrongButton = document.querySelector("#wrongButton");
 const message = document.querySelector("#message");
 
 async function loadCards() {
-  try {
-    const response = await fetch(DATA_URL);
+	try {
+		const response = await fetch(DATA_URL);
 
-    if (!response.ok) {
-      throw new Error("Não foi possível carregar o arquivo words.json.");
-    }
+		if (!response.ok) {
+			throw new Error("Não foi possível carregar o arquivo words.json.");
+		}
 
-    const data = await response.json();
+		const data = await response.json();
 
-    allCards = data
-      .filter((card) => card.active)
-      .sort((a, b) => a.order - b.order);
+		allCards = data
+			.filter((card) => card.active)
+			.sort((a, b) => a.order - b.order);
 
-    stats = loadStats();
+		stats = loadStats();
 
-    if (allCards.length === 0) {
-      setupMessage.textContent = "Nenhum card ativo encontrado no JSON.";
-      return;
-    }
+		if (allCards.length === 0) {
+			setupMessage.textContent = "Nenhum card ativo encontrado no JSON.";
+			return;
+		}
 
-    fillFilterOptions();
-    updateModeUI();
-  } catch (error) {
-    console.error(error);
-    setupMessage.textContent = "Erro ao carregar os cards. Verifique data/words.json.";
-  }
+		fillFilterOptions();
+		updateModeUI();
+	} catch (error) {
+		console.error(error);
+		setupMessage.textContent = "Erro ao carregar os cards. Verifique data/words.json.";
+	}
 }
 
 function loadStats() {
-  const savedStats = localStorage.getItem(STORAGE_KEY);
+	const savedStats = localStorage.getItem(STORAGE_KEY);
 
-  if (!savedStats) {
-    return {};
-  }
+	if (!savedStats) {
+		return {};
+	}
 
-  try {
-    return JSON.parse(savedStats);
-  } catch (error) {
-    console.error("Erro ao ler estatísticas salvas:", error);
-    return {};
-  }
+	try {
+		return JSON.parse(savedStats);
+	} catch (error) {
+		console.error("Erro ao ler estatísticas salvas:", error);
+		return {};
+	}
 }
 
 function saveStats() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+	localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
 }
 
 function getCardStats(cardId) {
-  const key = String(cardId);
+	const key = String(cardId);
 
-  if (!stats[key]) {
-    stats[key] = {
-      correct: 0,
-      wrong: 0,
-      seen: 0,
-      lastResult: null,
-      lastSeen: null,
+	if (!stats[key]) {
+		stats[key] = {
+			correct: 0,
+			wrong: 0,
+			seen: 0,
+			lastResult: null,
+			lastSeen: null,
 
-      // SRS imediato para treino contínuo
-      mastery: 0,
-      streak: 0,
-      lapses: 0,
-      priority: 100,
-      lastAnsweredAt: null
-    };
-  }
+			// SRS imediato para treino contínuo
+			mastery: 0,
+			streak: 0,
+			lapses: 0,
+			priority: 100,
+			lastAnsweredAt: null
+		};
+	}
 
-  // Migração para usuários que já têm estatísticas salvas antigas
-  if (stats[key].mastery === undefined) {
-    stats[key].mastery = calculateInitialMastery(stats[key]);
-  }
+	// Migração para usuários que já têm estatísticas salvas antigas
+	if (stats[key].mastery === undefined) {
+		stats[key].mastery = calculateInitialMastery(stats[key]);
+	}
 
-  if (stats[key].streak === undefined) {
-    stats[key].streak = 0;
-  }
+	if (stats[key].streak === undefined) {
+		stats[key].streak = 0;
+	}
 
-  if (stats[key].lapses === undefined) {
-    stats[key].lapses = stats[key].wrong || 0;
-  }
+	if (stats[key].lapses === undefined) {
+		stats[key].lapses = stats[key].wrong || 0;
+	}
 
-  if (stats[key].priority === undefined) {
-    stats[key].priority = calculateCardPriority(stats[key]);
-  }
+	if (stats[key].priority === undefined) {
+		stats[key].priority = calculateCardPriority(stats[key]);
+	}
 
-  if (stats[key].lastAnsweredAt === undefined) {
-    stats[key].lastAnsweredAt = stats[key].lastSeen || null;
-  }
+	if (stats[key].lastAnsweredAt === undefined) {
+		stats[key].lastAnsweredAt = stats[key].lastSeen || null;
+	}
 
-  return stats[key];
+	return stats[key];
 }
 
 function calculateInitialMastery(cardStats) {
-  const correct = cardStats.correct || 0;
-  const wrong = cardStats.wrong || 0;
+	const correct = cardStats.correct || 0;
+	const wrong = cardStats.wrong || 0;
 
-  if (correct + wrong === 0) {
-    return 0;
-  }
+	if (correct + wrong === 0) {
+		return 0;
+	}
 
-  return clamp(correct - wrong * 2, -6, 8);
+	return clamp(correct - wrong * 2, -6, 8);
 }
 
 function updateCardStats(card, isCorrect) {
-  const cardStats = getCardStats(card.id);
-  const now = new Date();
+	const cardStats = getCardStats(card.id);
+	const now = new Date();
 
-  cardStats.seen++;
-  cardStats.lastSeen = now.toISOString();
-  cardStats.lastAnsweredAt = now.toISOString();
+	cardStats.seen++;
+	cardStats.lastSeen = now.toISOString();
+	cardStats.lastAnsweredAt = now.toISOString();
 
-  if (isCorrect) {
-    cardStats.correct++;
-    cardStats.lastResult = "correct";
-    cardStats.streak = (cardStats.streak || 0) + 1;
-    cardStats.mastery = clamp((cardStats.mastery || 0) + getCorrectMasteryGain(cardStats), -6, 10);
-  } else {
-    cardStats.wrong++;
-    cardStats.lastResult = "wrong";
-    cardStats.streak = 0;
-    cardStats.lapses = (cardStats.lapses || 0) + 1;
-    cardStats.mastery = clamp((cardStats.mastery || 0) - 3, -6, 10);
-  }
+	if (isCorrect) {
+		cardStats.correct++;
+		cardStats.lastResult = "correct";
+		cardStats.streak = (cardStats.streak || 0) + 1;
+		cardStats.mastery = clamp((cardStats.mastery || 0) + getCorrectMasteryGain(cardStats), -6, 10);
+	} else {
+		cardStats.wrong++;
+		cardStats.lastResult = "wrong";
+		cardStats.streak = 0;
+		cardStats.lapses = (cardStats.lapses || 0) + 1;
+		cardStats.mastery = clamp((cardStats.mastery || 0) - 3, -6, 10);
+	}
 
-  cardStats.priority = calculateCardPriority(cardStats);
+	cardStats.priority = calculateCardPriority(cardStats);
 
-  saveStats();
+	saveStats();
 }
 
 function getCorrectMasteryGain(cardStats) {
-  const streak = cardStats.streak || 0;
+	const streak = cardStats.streak || 0;
 
-  if (streak >= 4) {
-    return 0.75;
-  }
+	if (streak >= 4) {
+		return 0.75;
+	}
 
-  if (streak >= 2) {
-    return 1;
-  }
+	if (streak >= 2) {
+		return 1;
+	}
 
-  return 1.5;
+	return 1.5;
 }
 
 function calculateCardPriority(cardStats) {
-  const seen = cardStats.seen || 0;
-  const wrong = cardStats.wrong || 0;
-  const mastery = cardStats.mastery || 0;
-  const lapses = cardStats.lapses || 0;
+	const seen = cardStats.seen || 0;
+	const wrong = cardStats.wrong || 0;
+	const mastery = cardStats.mastery || 0;
+	const lapses = cardStats.lapses || 0;
 
-  if (seen === 0) {
-    return 120;
-  }
+	if (seen === 0) {
+		return 120;
+	}
 
-  let priority = 80;
+	let priority = 80;
 
-  priority += wrong * 14;
-  priority += lapses * 6;
-  priority -= mastery * 9;
-  priority -= (cardStats.streak || 0) * 5;
+	priority += wrong * 14;
+	priority += lapses * 6;
+	priority -= mastery * 9;
+	priority -= (cardStats.streak || 0) * 5;
 
-  if (cardStats.lastResult === "wrong") {
-    priority += 45;
-  }
+	if (cardStats.lastResult === "wrong") {
+		priority += 45;
+	}
 
-  return clamp(Math.round(priority), 5, 180);
+	return clamp(Math.round(priority), 5, 180);
 }
 
 function fillFilterOptions() {
-  fillCheckboxGroup(
-    typeFilterGroup,
-    getUniqueValues(allCards, (card) => card.grammar.type)
-  );
+	fillCheckboxGroup(
+		typeFilterGroup,
+		getUniqueValues(allCards, (card) => card.grammar.type)
+	);
 
-  fillCheckboxGroup(
-    themeFilterGroup,
-    getUniqueThemeValues(allCards)
-  );
+	fillCheckboxGroup(
+		themeFilterGroup,
+		getUniqueThemeValues(allCards)
+	);
 
-  fillCheckboxGroup(
-    sourceFilterGroup,
-    getUniqueValues(allCards, (card) => getCardSource(card))
-  );
+	fillCheckboxGroup(
+		sourceFilterGroup,
+		getUniqueValues(allCards, (card) => getCardSource(card))
+	);
 
-  updateSourceSpecificFilters();
+	updateSourceSpecificFilters();
 }
 
 function fillCheckboxGroup(container, values) {
-  container.innerHTML = "";
+	container.innerHTML = "";
 
-  values.forEach((value) => {
-    const label = document.createElement("label");
-    label.className = "checkbox-option";
+	values.forEach((value) => {
+		const label = document.createElement("label");
+		label.className = "checkbox-option";
 
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.value = String(value);
+		const checkbox = document.createElement("input");
+		checkbox.type = "checkbox";
+		checkbox.value = String(value);
 
-    const text = document.createElement("span");
-    text.textContent = String(value);
+		const text = document.createElement("span");
+		text.textContent = String(value);
 
-    label.append(checkbox, text);
-    container.appendChild(label);
-  });
+		label.append(checkbox, text);
+		container.appendChild(label);
+	});
 }
 
 function getCheckedValues(container) {
-  return [...container.querySelectorAll('input[type="checkbox"]:checked')]
-    .map((checkbox) => checkbox.value);
+	return [...container.querySelectorAll('input[type="checkbox"]:checked')]
+		.map((checkbox) => checkbox.value);
 }
 
 function hasCheckedValue(container, value) {
-  return getCheckedValues(container).includes(value);
+	return getCheckedValues(container).includes(value);
 }
 
 function getCardSource(card) {
-  const classification = card.classification || {};
+	const classification = card.classification || {};
 
-  if (classification.source) {
-    return classification.source;
-  }
+	if (classification.source) {
+		return classification.source;
+	}
 
-  if (classification.sourceTitle || classification.sourceArtist) {
-    return "música";
-  }
+	if (classification.sourceTitle || classification.sourceArtist) {
+		return "música";
+	}
 
-  return "livro";
+	return "livro";
 }
 
 function getCardSourceTitle(card) {
-  return card.classification?.sourceTitle || null;
+	return card.classification?.sourceTitle || null;
 }
 
 function updateSourceSpecificFilters() {
-  const selectedSources = getCheckedValues(sourceFilterGroup);
+	const selectedSources = getCheckedValues(sourceFilterGroup);
 
-  const shouldShowChapters = selectedSources.includes("livro");
-  const shouldShowSourceTitles = selectedSources.includes("música");
+	const shouldShowChapters = selectedSources.includes("livro");
+	const shouldShowSourceTitles = selectedSources.includes("música");
 
-  chapterFilterLabel.classList.toggle("hidden", !shouldShowChapters);
-  sourceTitleFilterLabel.classList.toggle("hidden", !shouldShowSourceTitles);
+	chapterFilterLabel.classList.toggle("hidden", !shouldShowChapters);
+	sourceTitleFilterLabel.classList.toggle("hidden", !shouldShowSourceTitles);
 
-  if (!shouldShowChapters) {
-    chapterFilterLabel.removeAttribute("open");
-  }
+	if (!shouldShowChapters) {
+		chapterFilterLabel.removeAttribute("open");
+	}
 
-  if (!shouldShowSourceTitles) {
-    sourceTitleFilterLabel.removeAttribute("open");
-  }
+	if (!shouldShowSourceTitles) {
+		sourceTitleFilterLabel.removeAttribute("open");
+	}
 
-  if (shouldShowChapters) {
-    fillCheckboxGroup(
-      chapterFilterGroup,
-      getUniqueValues(
-        allCards.filter((card) => getCardSource(card) === "livro"),
-        (card) => card.classification.chapter
-      )
-    );
-  } else {
-    chapterFilterGroup.innerHTML = "";
-  }
+	if (shouldShowChapters) {
+		fillCheckboxGroup(
+			chapterFilterGroup,
+			getUniqueValues(
+				allCards.filter((card) => getCardSource(card) === "livro"),
+				(card) => card.classification.chapter
+			)
+		);
+	} else {
+		chapterFilterGroup.innerHTML = "";
+	}
 
-  if (shouldShowSourceTitles) {
-    fillCheckboxGroup(
-      sourceTitleFilterGroup,
-      getUniqueValues(
-        allCards.filter((card) => getCardSource(card) === "música"),
-        (card) => getCardSourceTitle(card)
-      )
-    );
-  } else {
-    sourceTitleFilterGroup.innerHTML = "";
-  }
+	if (shouldShowSourceTitles) {
+		fillCheckboxGroup(
+			sourceTitleFilterGroup,
+			getUniqueValues(
+				allCards.filter((card) => getCardSource(card) === "música"),
+				(card) => getCardSourceTitle(card)
+			)
+		);
+	} else {
+		sourceTitleFilterGroup.innerHTML = "";
+	}
 }
 
 function getUniqueThemeValues(cardList) {
-  return [...new Set(cardList.flatMap(getCardThemes))]
-    .sort((a, b) => String(a).localeCompare(String(b), "pt-BR"));
+	return [...new Set(cardList.flatMap(getCardThemes))]
+		.sort((a, b) => String(a).localeCompare(String(b), "pt-BR"));
 }
 
 function getCardThemes(card) {
-  const classification = card.classification || {};
+	const classification = card.classification || {};
 
-  if (Array.isArray(classification.themes)) {
-    return classification.themes.filter(Boolean);
-  }
+	if (Array.isArray(classification.themes)) {
+		return classification.themes.filter(Boolean);
+	}
 
-  if (Array.isArray(classification.theme)) {
-    return classification.theme.filter(Boolean);
-  }
+	if (Array.isArray(classification.theme)) {
+		return classification.theme.filter(Boolean);
+	}
 
-  if (classification.theme) {
-    return [classification.theme];
-  }
+	if (classification.theme) {
+		return [classification.theme];
+	}
 
-  return [];
+	return [];
 }
 
 function getUniqueValues(list, getter) {
-  return [...new Set(list.map(getter).filter((value) => value !== null && value !== undefined))]
-    .sort((a, b) => {
-      if (typeof a === "number" && typeof b === "number") {
-        return a - b;
-      }
+	return [...new Set(list.map(getter).filter((value) => value !== null && value !== undefined))]
+		.sort((a, b) => {
+			if (typeof a === "number" && typeof b === "number") {
+				return a - b;
+			}
 
-      return String(a).localeCompare(String(b), "pt-BR");
-    });
+			return String(a).localeCompare(String(b), "pt-BR");
+		});
 }
 
 function getFilteredCards() {
-  const selectedTypes = getCheckedValues(typeFilterGroup);
-  const selectedThemes = getCheckedValues(themeFilterGroup);
-  const selectedSources = getCheckedValues(sourceFilterGroup);
-  const selectedChapters = getCheckedValues(chapterFilterGroup);
-  const selectedSourceTitles = getCheckedValues(sourceTitleFilterGroup);
+	const selectedTypes = getCheckedValues(typeFilterGroup);
+	const selectedThemes = getCheckedValues(themeFilterGroup);
+	const selectedSources = getCheckedValues(sourceFilterGroup);
+	const selectedChapters = getCheckedValues(chapterFilterGroup);
+	const selectedSourceTitles = getCheckedValues(sourceTitleFilterGroup);
 
-  return allCards.filter((card) => {
-    const matchesType =
-      selectedTypes.length === 0 ||
-      selectedTypes.includes(card.grammar.type);
+	return allCards.filter((card) => {
+		const matchesType =
+			selectedTypes.length === 0 ||
+			selectedTypes.includes(card.grammar.type);
 
-    const cardThemes = getCardThemes(card);
+		const cardThemes = getCardThemes(card);
 
-    const matchesTheme =
-      selectedThemes.length === 0 ||
-      cardThemes.some((theme) => selectedThemes.includes(theme));
+		const matchesTheme =
+			selectedThemes.length === 0 ||
+			cardThemes.some((theme) => selectedThemes.includes(theme));
 
-    const cardSource = getCardSource(card);
+		const cardSource = getCardSource(card);
 
-    const matchesSource =
-      selectedSources.length === 0 ||
-      selectedSources.includes(cardSource);
+		const matchesSource =
+			selectedSources.length === 0 ||
+			selectedSources.includes(cardSource);
 
-    const matchesChapter =
-      cardSource !== "livro" ||
-      selectedChapters.length === 0 ||
-      selectedChapters.includes(String(card.classification.chapter));
+		const matchesChapter =
+			cardSource !== "livro" ||
+			selectedChapters.length === 0 ||
+			selectedChapters.includes(String(card.classification.chapter));
 
-    const matchesSourceTitle =
-      cardSource !== "música" ||
-      selectedSourceTitles.length === 0 ||
-      selectedSourceTitles.includes(getCardSourceTitle(card));
+		const matchesSourceTitle =
+			cardSource !== "música" ||
+			selectedSourceTitles.length === 0 ||
+			selectedSourceTitles.includes(getCardSourceTitle(card));
 
-    return (
-      matchesType &&
-      matchesTheme &&
-      matchesSource &&
-      matchesChapter &&
-      matchesSourceTitle
-    );
-  });
+		return (
+			matchesType &&
+			matchesTheme &&
+			matchesSource &&
+			matchesChapter &&
+			matchesSourceTitle
+		);
+	});
 }
 
 function startSession() {
-baseSessionCards = getCardsAvailableForDirection(getFilteredCards());
+	baseSessionCards = getCardsAvailableForDirection(getFilteredCards());
 
-if (baseSessionCards.length === 0) {
-  setupMessage.textContent = "Nenhum card encontrado com esses filtros e essa direção.";
-  return;
-}
+	if (baseSessionCards.length === 0) {
+		setupMessage.textContent = "Nenhum card encontrado com esses filtros e essa direção.";
+		return;
+	}
 
-if (isNewWordsMode) {
-  startNewWordsSession(baseSessionCards);
-} else {
-  cards = buildFirstRoundDeck(baseSessionCards);
-}
+	if (isNewWordsMode) {
+		startNewWordsSession(baseSessionCards);
+	} else {
+		cards = buildFirstRoundDeck(baseSessionCards);
+	}
 
-  setupMessage.textContent = "";
+	setupMessage.textContent = "";
 
-  currentIndex = 0;
-  correctCount = 0;
-  wrongCount = 0;
-  sessionAnswers = [];
-  answerVisible = false;
-  isChangingCard = false;
+	currentIndex = 0;
+	correctCount = 0;
+	wrongCount = 0;
+	sessionAnswers = [];
+	answerVisible = false;
+	isChangingCard = false;
 
-  setupScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  studyScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	studyScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  startStudyTimer();
-  showCard();
+	startStudyTimer();
+	showCard();
 }
 
 function getCardsAvailableForDirection(cardList) {
-  const direction = directionSelect.value;
+	const direction = directionSelect.value;
 
-  if (direction === "audio-pt" || direction === "audio-sv") {
-    return cardList.filter((card) => card.media?.audio?.src);
-  }
+	if (direction === "audio-pt" || direction === "audio-sv") {
+		return cardList.filter((card) => card.media?.audio?.src);
+	}
 
-  return cardList;
+	return cardList;
 }
 
 function startNewWordsSession(filteredCards) {
-  newWordsPool = getNewWordsPool(filteredCards);
-  newWordsActiveCount = 1;
-  newWordsRoundResults = {};
-  newWordsCardProgress = {};
-  allNewWordsIntroduced = newWordsPool.length <= 1;
+	newWordsPool = getNewWordsPool(filteredCards);
+	newWordsActiveCount = 1;
+	newWordsRoundResults = {};
+	newWordsCardProgress = {};
+	allNewWordsIntroduced = newWordsPool.length <= 1;
 
-  cards = newWordsPool
-    .slice(0, newWordsActiveCount)
-    .map(createStudyOccurrence);
+	cards = newWordsPool
+		.slice(0, newWordsActiveCount)
+		.map(createStudyOccurrence);
 }
 
 function getNewWordProgress(cardId) {
-  const key = String(cardId);
+	const key = String(cardId);
 
-  if (!newWordsCardProgress[key]) {
-    newWordsCardProgress[key] = {
-      attempts: 0,
-      hadWrongAnswer: false,
-      awaitingConfirmation: false,
-      confirmed: false,
-      delayRounds: 0
-    };
-  }
+	if (!newWordsCardProgress[key]) {
+		newWordsCardProgress[key] = {
+			attempts: 0,
+			hadWrongAnswer: false,
+			awaitingConfirmation: false,
+			confirmed: false,
+			delayRounds: 0
+		};
+	}
 
-  return newWordsCardProgress[key];
+	return newWordsCardProgress[key];
 }
 
 function updateNewWordProgress(card, isCorrect) {
-  const progress = getNewWordProgress(card.id);
+	const progress = getNewWordProgress(card.id);
 
-  progress.attempts++;
+	progress.attempts++;
 
-  if (!isCorrect) {
-    // Se errou alguma vez, perde o benefício de ter acertado de primeira.
-    progress.hadWrongAnswer = true;
-    progress.awaitingConfirmation = false;
-    progress.confirmed = false;
-    progress.delayRounds = 0;
-    return;
-  }
+	if (!isCorrect) {
+		// Se errou alguma vez, perde o benefício de ter acertado de primeira.
+		progress.hadWrongAnswer = true;
+		progress.awaitingConfirmation = false;
+		progress.confirmed = false;
+		progress.delayRounds = 0;
+		return;
+	}
 
-  if (
-    progress.attempts === 1 &&
-    !progress.hadWrongAnswer
-  ) {
-    // Acertou a palavra logo na primeira apresentação.
-    progress.awaitingConfirmation = true;
-    progress.confirmed = false;
-    progress.delayRounds = NEW_WORD_FIRST_TRY_DELAY;
-    return;
-  }
+	if (
+		progress.attempts === 1 &&
+		!progress.hadWrongAnswer
+	) {
+		// Acertou a palavra logo na primeira apresentação.
+		progress.awaitingConfirmation = true;
+		progress.confirmed = false;
+		progress.delayRounds = NEW_WORD_FIRST_TRY_DELAY;
+		return;
+	}
 
-  if (progress.awaitingConfirmation) {
-    // Acertou novamente depois do período de espera.
-    progress.awaitingConfirmation = false;
-    progress.confirmed = true;
-    progress.delayRounds = 0;
-  }
+	if (progress.awaitingConfirmation) {
+		// Acertou novamente depois do período de espera.
+		progress.awaitingConfirmation = false;
+		progress.confirmed = true;
+		progress.delayRounds = 0;
+	}
 }
 
 function advanceNewWordsConfirmationDelays() {
-  Object.values(newWordsCardProgress).forEach((progress) => {
-    if (
-      progress.awaitingConfirmation &&
-      progress.delayRounds > 0
-    ) {
-      progress.delayRounds--;
-    }
-  });
+	Object.values(newWordsCardProgress).forEach((progress) => {
+		if (
+			progress.awaitingConfirmation &&
+			progress.delayRounds > 0
+		) {
+			progress.delayRounds--;
+		}
+	});
 }
 
 function canNewWordAdvance(card) {
-  const progress = getNewWordProgress(card.id);
+	const progress = getNewWordProgress(card.id);
 
-  // Uma palavra acertada de primeira não impede a entrada
-  // de novas palavras enquanto espera pela confirmação.
-  if (progress.awaitingConfirmation || progress.confirmed) {
-    return true;
-  }
+	// Uma palavra acertada de primeira não impede a entrada
+	// de novas palavras enquanto espera pela confirmação.
+	if (progress.awaitingConfirmation || progress.confirmed) {
+		return true;
+	}
 
-  return newWordsRoundResults[String(card.id)] === true;
+	return newWordsRoundResults[String(card.id)] === true;
 }
 
 function shouldShowNewWord(card) {
-  const progress = getNewWordProgress(card.id);
+	const progress = getNewWordProgress(card.id);
 
-  if (progress.confirmed) {
-    return false;
-  }
+	if (progress.confirmed) {
+		return false;
+	}
 
-  if (
-    progress.awaitingConfirmation &&
-    progress.delayRounds > 0
-  ) {
-    return false;
-  }
+	if (
+		progress.awaitingConfirmation &&
+		progress.delayRounds > 0
+	) {
+		return false;
+	}
 
-  return true;
+	return true;
 }
 
 function buildNewWordsRoundDeck(activeCards) {
-  let nextCards = activeCards.filter(shouldShowNewWord);
+	let nextCards = activeCards.filter(shouldShowNewWord);
 
-  /*
-   * Pode acontecer de todas as palavras ativas estarem esperando
-   * confirmação. Nesse caso, mostramos a palavra que estiver mais
-   * próxima de terminar seu período de espera, evitando um baralho vazio.
-   */
-  if (nextCards.length === 0) {
-    const awaitingCards = activeCards
-      .filter((card) => {
-        const progress = getNewWordProgress(card.id);
-        return progress.awaitingConfirmation;
-      })
-      .sort((cardA, cardB) => {
-        const progressA = getNewWordProgress(cardA.id);
-        const progressB = getNewWordProgress(cardB.id);
+	/*
+	 * Pode acontecer de todas as palavras ativas estarem esperando
+	 * confirmação. Nesse caso, mostramos a palavra que estiver mais
+	 * próxima de terminar seu período de espera, evitando um baralho vazio.
+	 */
+	if (nextCards.length === 0) {
+		const awaitingCards = activeCards
+			.filter((card) => {
+				const progress = getNewWordProgress(card.id);
+				return progress.awaitingConfirmation;
+			})
+			.sort((cardA, cardB) => {
+				const progressA = getNewWordProgress(cardA.id);
+				const progressB = getNewWordProgress(cardB.id);
 
-        return progressA.delayRounds - progressB.delayRounds;
-      });
+				return progressA.delayRounds - progressB.delayRounds;
+			});
 
-    if (awaitingCards.length > 0) {
-      const confirmationCard = awaitingCards[0];
-      const progress = getNewWordProgress(confirmationCard.id);
+		if (awaitingCards.length > 0) {
+			const confirmationCard = awaitingCards[0];
+			const progress = getNewWordProgress(confirmationCard.id);
 
-      progress.delayRounds = 0;
-      nextCards = [confirmationCard];
-    }
-  }
+			progress.delayRounds = 0;
+			nextCards = [confirmationCard];
+		}
+	}
 
-  /*
-   * Depois que todas tiverem sido confirmadas, mantém o comportamento
-   * contínuo antigo com o SRS geral.
-   */
-  if (nextCards.length === 0) {
-    return buildWeightedDeck(activeCards);
-  }
+	/*
+	 * Depois que todas tiverem sido confirmadas, mantém o comportamento
+	 * contínuo antigo com o SRS geral.
+	 */
+	if (nextCards.length === 0) {
+		return buildWeightedDeck(activeCards);
+	}
 
-  return shuffleArray(nextCards.map(createStudyOccurrence));
+	return shuffleArray(nextCards.map(createStudyOccurrence));
 }
 
 function getNewWordsPool(filteredCards) {
-  return shuffleArray(filteredCards);
+	return shuffleArray(filteredCards);
 }
 
 function clamp(value, min, max) {
-  return Math.min(Math.max(value, min), max);
+	return Math.min(Math.max(value, min), max);
 }
 
 function shuffleArray(array) {
-  const copy = [...array];
+	const copy = [...array];
 
-  for (let i = copy.length - 1; i > 0; i--) {
-    const randomIndex = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[randomIndex]] = [copy[randomIndex], copy[i]];
-  }
+	for (let i = copy.length - 1; i > 0; i--) {
+		const randomIndex = Math.floor(Math.random() * (i + 1));
+		[copy[i], copy[randomIndex]] = [copy[randomIndex], copy[i]];
+	}
 
-  return copy;
+	return copy;
 }
 
 function buildFirstRoundDeck(cardList) {
-  return buildSrsDeck(cardList);
+	return buildSrsDeck(cardList);
 }
 
 function openGrammarScreen() {
-  stopStudyTimer();
-  setupMessage.textContent = "";
+	stopStudyTimer();
+	setupMessage.textContent = "";
 
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  pluralScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	pluralScreen.classList.add("hidden");
 
-  grammarScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	grammarScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 }
 
 function backFromGrammarScreen() {
-  grammarScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  pluralScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
+	grammarScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	pluralScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
 
-  setupScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.remove("hidden");
+	setupScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.remove("hidden");
 }
 
 function openPronunciationRules() {
-  stopStudyTimer();
-  setupMessage.textContent = "";
+	stopStudyTimer();
+	setupMessage.textContent = "";
 
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  grammarScreen.classList.add("hidden");
-  pluralScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	grammarScreen.classList.add("hidden");
+	pluralScreen.classList.add("hidden");
 
-  pronunciationScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	pronunciationScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  renderPronunciationRules();
+	renderPronunciationRules();
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 }
 
 function backFromPronunciationRules() {
-  pronunciationScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
 
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  pluralScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	pluralScreen.classList.add("hidden");
 
-  grammarScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	grammarScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 }
 
 function openPluralRules() {
-  stopStudyTimer();
-  setupMessage.textContent = "";
+	stopStudyTimer();
+	setupMessage.textContent = "";
 
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  grammarScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	grammarScreen.classList.add("hidden");
 
-  pluralScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	pluralScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 }
 
 function backFromPluralRules() {
-  pluralScreen.classList.add("hidden");
+	pluralScreen.classList.add("hidden");
 
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
 
-  grammarScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	grammarScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 }
 
 function renderPronunciationRules() {
-  if (!pronunciationRulesList) {
-    return;
-  }
+	if (!pronunciationRulesList) {
+		return;
+	}
 
-  pronunciationRulesList.innerHTML = "";
+	pronunciationRulesList.innerHTML = "";
 
-  PRONUNCIATION_RULES.forEach((rule) => {
-    const article = document.createElement("article");
-    article.className = "pronunciation-rule";
+	PRONUNCIATION_RULES.forEach((rule) => {
+		const article = document.createElement("article");
+		article.className = "pronunciation-rule";
 
-    const title = document.createElement("h3");
-    title.textContent = rule.title;
+		const title = document.createElement("h3");
+		title.textContent = rule.title;
 
-    const text = document.createElement("p");
-    text.textContent = rule.text;
+		const text = document.createElement("p");
+		text.textContent = rule.text;
 
-    const examples = document.createElement("div");
-    examples.className = "pronunciation-examples";
+		const examples = document.createElement("div");
+		examples.className = "pronunciation-examples";
 
-    rule.examples
-      .map(findCardWithAudioBySwedishTerm)
-      .filter(Boolean)
-      .forEach((card) => {
-        examples.appendChild(createPronunciationExampleButton(card));
-      });
+		rule.examples
+			.map(findCardWithAudioBySwedishTerm)
+			.filter(Boolean)
+			.forEach((card) => {
+				examples.appendChild(createPronunciationExampleButton(card));
+			});
 
-    if (examples.children.length === 0) {
-      const empty = document.createElement("p");
-      empty.className = "pronunciation-empty";
-      empty.textContent = "Nenhum exemplo com áudio encontrado no words.json para esta regra.";
-      examples.appendChild(empty);
-    }
+		if (examples.children.length === 0) {
+			const empty = document.createElement("p");
+			empty.className = "pronunciation-empty";
+			empty.textContent = "Nenhum exemplo com áudio encontrado no words.json para esta regra.";
+			examples.appendChild(empty);
+		}
 
-    article.append(title, text, examples);
-    pronunciationRulesList.appendChild(article);
-  });
+		article.append(title, text, examples);
+		pronunciationRulesList.appendChild(article);
+	});
 }
 
 function findCardWithAudioBySwedishTerm(term) {
-  const normalizedTerm = normalizePronunciationTerm(term);
+	const normalizedTerm = normalizePronunciationTerm(term);
 
-  return allCards.find((card) => {
-    const swedish = card.term?.swedish || "";
-    const audioSrc = card.media?.audio?.src;
+	return allCards.find((card) => {
+		const swedish = card.term?.swedish || "";
+		const audioSrc = card.media?.audio?.src;
 
-    return audioSrc && normalizePronunciationTerm(swedish) === normalizedTerm;
-  });
+		return audioSrc && normalizePronunciationTerm(swedish) === normalizedTerm;
+	});
 }
 
 function normalizePronunciationTerm(value) {
-  return String(value)
-    .trim()
-    .toLocaleLowerCase("sv-SE")
-    .replace(/[.!?]+$/g, "");
+	return String(value)
+		.trim()
+		.toLocaleLowerCase("sv-SE")
+		.replace(/[.!?]+$/g, "");
 }
 
 function createPronunciationExampleButton(card) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "pronunciation-example";
-  button.dataset.audioSrc = card.media.audio.src;
+	const button = document.createElement("button");
+	button.type = "button";
+	button.className = "pronunciation-example";
+	button.dataset.audioSrc = card.media.audio.src;
 
-  const swedish = document.createElement("strong");
-  swedish.textContent = card.term.swedish;
+	const swedish = document.createElement("strong");
+	swedish.textContent = card.term.swedish;
 
-  const portuguese = document.createElement("span");
-  portuguese.textContent = card.term.portuguese;
+	const portuguese = document.createElement("span");
+	portuguese.textContent = card.term.portuguese;
 
-  const action = document.createElement("em");
-  action.textContent = "Ouvir";
+	const action = document.createElement("em");
+	action.textContent = "Ouvir";
 
-  button.append(swedish, portuguese, action);
-  return button;
+	button.append(swedish, portuguese, action);
+	return button;
 }
 
 function playPronunciationExample(event) {
-  const button = event.target.closest(".pronunciation-example");
+	const button = event.target.closest(".pronunciation-example");
 
-  if (!button) {
-    return;
-  }
+	if (!button) {
+		return;
+	}
 
-  const audioSrc = button.dataset.audioSrc;
+	const audioSrc = button.dataset.audioSrc;
 
-  if (!audioSrc) {
-    return;
-  }
+	if (!audioSrc) {
+		return;
+	}
 
-  const audio = new Audio(audioSrc);
-  audio.play().catch((error) => {
-    console.error("Erro ao tocar áudio do exemplo:", error);
-  });
+	const audio = new Audio(audioSrc);
+	audio.play().catch((error) => {
+		console.error("Erro ao tocar áudio do exemplo:", error);
+	});
 }
 
 function backToSetup() {
-  stopStudyTimer();
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  grammarScreen.classList.add("hidden");
-  pluralScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  setupScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.remove("hidden");
+	stopStudyTimer();
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	grammarScreen.classList.add("hidden");
+	pluralScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	setupScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.remove("hidden");
 
-  flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
-  answerVisible = false;
-  isChangingCard = false;
+	flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
+	answerVisible = false;
+	isChangingCard = false;
 }
 
 function repeatSession() {
-  if (baseSessionCards.length === 0) {
-    backToSetup();
-    return;
-  }
+	if (baseSessionCards.length === 0) {
+		backToSetup();
+		return;
+	}
 
-if (isNewWordsMode) {
-  startNewWordsSession(baseSessionCards);
-} else {
-  cards = buildFirstRoundDeck(baseSessionCards);
-}
+	if (isNewWordsMode) {
+		startNewWordsSession(baseSessionCards);
+	} else {
+		cards = buildFirstRoundDeck(baseSessionCards);
+	}
 
-  currentIndex = 0;
-  correctCount = 0;
-  wrongCount = 0;
-  sessionAnswers = [];
-  answerVisible = false;
-  isChangingCard = false;
+	currentIndex = 0;
+	correctCount = 0;
+	wrongCount = 0;
+	sessionAnswers = [];
+	answerVisible = false;
+	isChangingCard = false;
 
-  summaryScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  startStudyTimer();
-  showCard();
+	startStudyTimer();
+	showCard();
 }
 
 function showCard() {
-  const card = cards[currentIndex];
-  const content = getCardContent(card);
+	const card = cards[currentIndex];
+	const content = getCardContent(card);
 
-  answerVisible = false;
+	answerVisible = false;
 
-  flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
+	flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
 
-  updateQuestionLabel(content);
-  updateQuestionText(content.question);
-  answerText.textContent = content.answer;
-  answerLabel.textContent = content.answerLabel;
+	updateQuestionLabel(content);
+	updateQuestionText(content.question);
+	answerText.textContent = content.answer;
+	answerLabel.textContent = content.answerLabel;
 
-  updateAnswerGrammarForm(card);
+	updateAnswerGrammarForm(card);
 
-  showQuestionMedia(card, content.questionType);
-  resetAudioSwedishHint(card, content);
-  resetWriteMode();
-  updateModeUI();
+	showQuestionMedia(card, content.questionType);
+	resetAudioSwedishHint(card, content);
+	resetWriteMode();
+	updateModeUI();
 
-  correctButton.disabled = true;
-  wrongButton.disabled = true;
+	correctButton.disabled = true;
+	wrongButton.disabled = true;
 
-preloadLikelyAudios();
+	preloadLikelyAudios();
 
 }
 
 function preloadLikelyAudios() {
-  const upcomingCards = cards.slice(currentIndex, currentIndex + 4);
+	const upcomingCards = cards.slice(currentIndex, currentIndex + 4);
 
-  const priorityCards = [...baseSessionCards]
-    .filter((card) => card?.media?.audio?.src)
-    .sort((a, b) => {
-      const aStats = getCardStats(a.id);
-      const bStats = getCardStats(b.id);
+	const priorityCards = [...baseSessionCards]
+		.filter((card) => card?.media?.audio?.src)
+		.sort((a, b) => {
+			const aStats = getCardStats(a.id);
+			const bStats = getCardStats(b.id);
 
-      return calculateCardPriority(bStats) - calculateCardPriority(aStats);
-    })
-    .slice(0, 4);
+			return calculateCardPriority(bStats) - calculateCardPriority(aStats);
+		})
+		.slice(0, 4);
 
-  preloadAudioForCards([...upcomingCards, ...priorityCards], 8);
+	preloadAudioForCards([...upcomingCards, ...priorityCards], 8);
 }
 
 function resetAudioSwedishHint(card, content) {
-  audioSwedishText.textContent = "";
-  audioSwedishText.classList.add("hidden");
+	audioSwedishText.textContent = "";
+	audioSwedishText.classList.add("hidden");
 
-  showSwedishFromAudioButton.textContent = "Mostrar sueco";
-  showSwedishFromAudioButton.classList.add("hidden");
-  showSwedishFromAudioButton.disabled = true;
+	showSwedishFromAudioButton.textContent = "Mostrar sueco";
+	showSwedishFromAudioButton.classList.add("hidden");
+	showSwedishFromAudioButton.disabled = true;
 
-  if (content.questionType !== "audio") {
-    return;
-  }
+	if (content.questionType !== "audio") {
+		return;
+	}
 
-  if (directionSelect.value === "audio-sv") {
-    return;
-  }
+	if (directionSelect.value === "audio-sv") {
+		return;
+	}
 
-  showSwedishFromAudioButton.classList.remove("hidden");
-  showSwedishFromAudioButton.disabled = false;
+	showSwedishFromAudioButton.classList.remove("hidden");
+	showSwedishFromAudioButton.disabled = false;
 }
 
 function showSwedishFromAudio() {
-  const card = cards[currentIndex];
+	const card = cards[currentIndex];
 
-  if (!card) {
-    return;
-  }
+	if (!card) {
+		return;
+	}
 
-  audioSwedishText.textContent = getStudySwedishText(card);
-  audioSwedishText.classList.remove("hidden");
+	audioSwedishText.textContent = getStudySwedishText(card);
+	audioSwedishText.classList.remove("hidden");
 
-  showSwedishFromAudioButton.disabled = true;
-  showSwedishFromAudioButton.textContent = "Sueco mostrado";
+	showSwedishFromAudioButton.disabled = true;
+	showSwedishFromAudioButton.textContent = "Sueco mostrado";
 }
 
 function updateQuestionText(text) {
-  if (!text) {
-    questionText.textContent = "";
-    questionText.classList.add("hidden");
-    return;
-  }
+	if (!text) {
+		questionText.textContent = "";
+		questionText.classList.add("hidden");
+		return;
+	}
 
-  questionText.textContent = text;
-  questionText.classList.remove("hidden");
+	questionText.textContent = text;
+	questionText.classList.remove("hidden");
 }
 
 function updateQuestionLabel(content) {
-  if (content.questionType === "audio") {
-    questionLabel.textContent = "";
-    questionLabel.classList.add("hidden");
-    return;
-  }
+	if (content.questionType === "audio") {
+		questionLabel.textContent = "";
+		questionLabel.classList.add("hidden");
+		return;
+	}
 
-  questionLabel.textContent = content.questionLabel;
-  questionLabel.classList.remove("hidden");
+	questionLabel.textContent = content.questionLabel;
+	questionLabel.classList.remove("hidden");
 }
 
 function updateAnswerGrammarForm(card) {
-  answerGrammarForm.textContent = "";
-  answerGrammarForm.classList.add("hidden");
+	answerGrammarForm.textContent = "";
+	answerGrammarForm.classList.add("hidden");
 }
 
 function isNounWithGender(card) {
-  return (
-    card.grammar?.type === "substantivo" &&
-    (card.grammar?.gender === "en" || card.grammar?.gender === "ett")
-  );
+	return (
+		card.grammar?.type === "substantivo" &&
+		(card.grammar?.gender === "en" || card.grammar?.gender === "ett")
+	);
 }
 
 function getAvailableNounForms(card) {
-  if (!isNounWithGender(card)) {
-    return [];
-  }
+	if (!isNounWithGender(card)) {
+		return [];
+	}
 
-  const forms = ["singularIndefinite"];
+	const forms = ["singularIndefinite"];
 
-  if (card.grammar?.definiteSingular) {
-    forms.push("singularDefinite");
-  }
+	if (card.grammar?.definiteSingular) {
+		forms.push("singularDefinite");
+	}
 
-  if (card.grammar?.plural) {
-    forms.push("pluralIndefinite");
-  }
+	if (card.grammar?.plural) {
+		forms.push("pluralIndefinite");
+	}
 
-  if (card.grammar?.definitePlural) {
-    forms.push("pluralDefinite");
-  }
+	if (card.grammar?.definitePlural) {
+		forms.push("pluralDefinite");
+	}
 
-  return forms;
+	return forms;
 }
 
 function chooseRandomNounForm(card) {
-  const forms = getAvailableNounForms(card);
+	const forms = getAvailableNounForms(card);
 
-  if (forms.length === 0) {
-    return null;
-  }
+	if (forms.length === 0) {
+		return null;
+	}
 
-  return forms[Math.floor(Math.random() * forms.length)];
+	return forms[Math.floor(Math.random() * forms.length)];
 }
 
 function createStudyOccurrence(card) {
-  const occurrence = { ...card };
+	const occurrence = {
+		...card
+	};
 
-  if (
-    (directionSelect.value === "sv-pt" ||
-     directionSelect.value === "pt-sv") &&
-    isNounWithGender(card)
-  ) {
-    occurrence._nounForm = chooseRandomNounForm(card);
-  }
+	if (
+		(directionSelect.value === "sv-pt" ||
+			directionSelect.value === "pt-sv") &&
+		isNounWithGender(card)
+	) {
+		occurrence._nounForm = chooseRandomNounForm(card);
+	}
 
-  return occurrence;
+	return occurrence;
 }
 
 function getStudySwedishText(card) {
-  const swedish = card.term?.swedish || "";
+	const swedish = card.term?.swedish || "";
 
-  if (!isNounWithGender(card)) {
-    return swedish;
-  }
+	if (!isNounWithGender(card)) {
+		return swedish;
+	}
 
-  /*
-   * Por enquanto, as quatro formas são usadas somente
-   * em Sueco → Português.
-   *
-   * Nas demais direções mantém o comportamento antigo.
-   */
-  if (!card._nounForm) { 
-    return `${card.grammar.gender} ${swedish}`;
-  }
+	/*
+	 * Por enquanto, as quatro formas são usadas somente
+	 * em Sueco → Português.
+	 *
+	 * Nas demais direções mantém o comportamento antigo.
+	 */
+	if (!card._nounForm) {
+		return `${card.grammar.gender} ${swedish}`;
+	}
 
-  switch (card._nounForm) {
-    case "singularIndefinite":
-      return `${card.grammar.gender} ${swedish}`;
+	switch (card._nounForm) {
+		case "singularIndefinite":
+			return `${card.grammar.gender} ${swedish}`;
 
-    case "singularDefinite":
-      return card.grammar.definiteSingular || swedish;
+		case "singularDefinite":
+			return card.grammar.definiteSingular || swedish;
 
-    case "pluralIndefinite":
-      return card.grammar.plural || swedish;
+		case "pluralIndefinite":
+			return card.grammar.plural || swedish;
 
-    case "pluralDefinite":
-      return card.grammar.definitePlural || swedish;
+		case "pluralDefinite":
+			return card.grammar.definitePlural || swedish;
 
-    default:
-      return `${card.grammar.gender} ${swedish}`;
-  }
+		default:
+			return `${card.grammar.gender} ${swedish}`;
+	}
 }
 
 function getStudyPortugueseText(card) {
-  const singular = card.term?.portuguese || "";
+	const singular = card.term?.portuguese || "";
 
-  if (!isNounWithGender(card) || !card._nounForm) {
-    return singular;
-  }
+	if (!isNounWithGender(card) || !card._nounForm) {
+		return singular;
+	}
 
-  const plural = card.term?.portuguesePlural || singular;
-  const gender = card.term?.portugueseGender;
+	const plural = card.term?.portuguesePlural || singular;
+	const gender = card.term?.portugueseGender;
 
-  const singularArticle =
-    gender === "feminine" ? "a" : "o";
+	const singularArticle =
+		gender === "feminine" ? "a" : "o";
 
-  const pluralArticle =
-    gender === "feminine" ? "as" : "os";
+	const pluralArticle =
+		gender === "feminine" ? "as" : "os";
 
-  switch (card._nounForm) {
-    case "singularIndefinite":
-      return singular;
+	switch (card._nounForm) {
+		case "singularIndefinite":
+			return singular;
 
-    case "singularDefinite":
-      return `${singularArticle} ${singular}`;
+		case "singularDefinite":
+			return `${singularArticle} ${singular}`;
 
-    case "pluralIndefinite":
-      return plural;
+		case "pluralIndefinite":
+			return plural;
 
-    case "pluralDefinite":
-      return `${pluralArticle} ${plural}`;
+		case "pluralDefinite":
+			return `${pluralArticle} ${plural}`;
 
-    default:
-      return singular;
-  }
+		default:
+			return singular;
+	}
 }
 
 function getCardContent(card) {
-  const direction = directionSelect.value;
-  const studySwedish = getStudySwedishText(card);
-  const studyPortuguese = getStudyPortugueseText(card);
+	const direction = directionSelect.value;
+	const studySwedish = getStudySwedishText(card);
+	const studyPortuguese = getStudyPortugueseText(card);
 
-  if (direction === "pt-sv") {
-    return {
-      questionType: "text",
-      question: studyPortuguese,
-      questionLabel: "Português",
-      answer: studySwedish,
-      answerLabel: "Sueco"
-    };
-  }
+	if (direction === "pt-sv") {
+		return {
+			questionType: "text",
+			question: studyPortuguese,
+			questionLabel: "Português",
+			answer: studySwedish,
+			answerLabel: "Sueco"
+		};
+	}
 
-  if (direction === "audio-pt") {
-    return {
-      questionType: "audio",
-      question: "",
-      questionLabel: "Áudio em sueco",
-      answer: card.term.portuguese,
-      answerLabel: "Português"
-    };
-  }
+	if (direction === "audio-pt") {
+		return {
+			questionType: "audio",
+			question: "",
+			questionLabel: "Áudio em sueco",
+			answer: card.term.portuguese,
+			answerLabel: "Português"
+		};
+	}
 
-  if (direction === "audio-sv") {
-    return {
-      questionType: "audio",
-      question: "",
-      questionLabel: "Áudio em sueco",
-      answer: studySwedish,
-      answerLabel: "Sueco"
-    };
-  }
+	if (direction === "audio-sv") {
+		return {
+			questionType: "audio",
+			question: "",
+			questionLabel: "Áudio em sueco",
+			answer: studySwedish,
+			answerLabel: "Sueco"
+		};
+	}
 
-  return {
-    questionType: "text",
-    question: studySwedish,
-    questionLabel: "Sueco",
-    answer: studyPortuguese,
-    answerLabel: "Português"
-  };
+	return {
+		questionType: "text",
+		question: studySwedish,
+		questionLabel: "Sueco",
+		answer: studyPortuguese,
+		answerLabel: "Português"
+	};
 }
 
 function showQuestionMedia(card, questionType) {
-  hideQuestionAudio();
+	hideQuestionAudio();
 
-  if (questionType === "audio") {
-    showAudioIfAvailable(card);
-  }
+	if (questionType === "audio") {
+		showAudioIfAvailable(card);
+	}
 }
 
 function showAudioIfAvailable(card) {
-  const audio = card.media?.audio;
+	const audio = card.media?.audio;
 
-  if (!audio || !audio.src) {
-    hideQuestionAudio();
-    return;
-  }
+	if (!audio || !audio.src) {
+		hideQuestionAudio();
+		return;
+	}
 
-  cardAudio.src = audio.src;
-  cardAudioWrap.classList.remove("hidden");
+	cardAudio.src = audio.src;
+	cardAudioWrap.classList.remove("hidden");
 }
 
 function hideQuestionAudio() {
-  cardAudioWrap.classList.add("hidden");
-  cardAudio.pause();
-  cardAudio.removeAttribute("src");
-  cardAudio.load();
+	cardAudioWrap.classList.add("hidden");
+	cardAudio.pause();
+	cardAudio.removeAttribute("src");
+	cardAudio.load();
 }
 
 function revealAnswer() {
-  if (answerVisible || isChangingCard) {
-    return;
-  }
+	if (answerVisible || isChangingCard) {
+		return;
+	}
 
-  if (getAnswerMode() === "write") {
-    return;
-  }
+	if (getAnswerMode() === "write") {
+		return;
+	}
 
-  answerVisible = true;
+	answerVisible = true;
 
-  flashcard.classList.add("flipped");
-  correctButton.disabled = false;
-  wrongButton.disabled = false;
+	flashcard.classList.add("flipped");
+	correctButton.disabled = false;
+	wrongButton.disabled = false;
 
 }
 
 function wait(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
+	return new Promise((resolve) => {
+		setTimeout(resolve, ms);
+	});
 }
 
 function registerCurrentAnswer(isCorrect) {
-  const currentCard = cards[currentIndex];
+	const currentCard = cards[currentIndex];
 
-  if (isCorrect) {
-    correctCount++;
-  } else {
-    wrongCount++;
-  }
+	if (isCorrect) {
+		correctCount++;
+	} else {
+		wrongCount++;
+	}
 
-  if (isNewWordsMode) {
-    newWordsRoundResults[String(currentCard.id)] = isCorrect;
-    updateNewWordProgress(currentCard, isCorrect);
-  }
+	if (isNewWordsMode) {
+		newWordsRoundResults[String(currentCard.id)] = isCorrect;
+		updateNewWordProgress(currentCard, isCorrect);
+	}
 
-  sessionAnswers.push({
-    cardId: currentCard.id,
-    nounForm: currentCard._nounForm || null,
-    swedish: getStudySwedishText(currentCard),
-    portuguese: currentCard.term.portuguese,
-    isCorrect
-  });
+	sessionAnswers.push({
+		cardId: currentCard.id,
+		nounForm: currentCard._nounForm || null,
+		swedish: getStudySwedishText(currentCard),
+		portuguese: currentCard.term.portuguese,
+		isCorrect
+	});
 
-  updateCardStats(currentCard, isCorrect);
+	updateCardStats(currentCard, isCorrect);
 
-  if (!isCorrect) {
-    scheduleImmediateRetry(currentCard);
-    preloadAudioForCard(currentCard);
-  }
+	if (!isCorrect) {
+		scheduleImmediateRetry(currentCard);
+		preloadAudioForCard(currentCard);
+	}
 
-  return currentCard;
+	return currentCard;
 }
 
 function scheduleImmediateRetry(card) {
-  const insertIndex = Math.min(
-    cards.length,
-    currentIndex + getImmediateRetryGap()
-  );
+	const insertIndex = Math.min(
+		cards.length,
+		currentIndex + getImmediateRetryGap()
+	);
 
-  const alreadyScheduledSoon = cards
-    .slice(currentIndex + 1, insertIndex + 1)
-    .some((queuedCard) => isSameStudyOccurrence(queuedCard, card));
+	const alreadyScheduledSoon = cards
+		.slice(currentIndex + 1, insertIndex + 1)
+		.some((queuedCard) => isSameStudyOccurrence(queuedCard, card));
 
-  if (alreadyScheduledSoon) {
-    return;
-  }
+	if (alreadyScheduledSoon) {
+		return;
+	}
 
-  cards.splice(insertIndex, 0, card);
+	cards.splice(insertIndex, 0, card);
 }
 
 function isSameStudyOccurrence(cardA, cardB) {
-  return (
-    String(cardA.id) === String(cardB.id) &&
-    (cardA._nounForm || null) === (cardB._nounForm || null)
-  );
+	return (
+		String(cardA.id) === String(cardB.id) &&
+		(cardA._nounForm || null) === (cardB._nounForm || null)
+	);
 }
 
 function getImmediateRetryGap() {
-  const remainingCards = cards.length - currentIndex - 1;
+	const remainingCards = cards.length - currentIndex - 1;
 
-  if (remainingCards <= 2) {
-    return 2;
-  }
+	if (remainingCards <= 2) {
+		return 2;
+	}
 
-  return 3 + Math.floor(Math.random() * 3);
+	return 3 + Math.floor(Math.random() * 3);
 }
 
 async function markAnswer(isCorrect) {
-  if (!answerVisible || isChangingCard) {
-    return;
-  }
+	if (!answerVisible || isChangingCard) {
+		return;
+	}
 
-  isChangingCard = true;
+	isChangingCard = true;
 
-  correctButton.disabled = true;
-  wrongButton.disabled = true;
+	correctButton.disabled = true;
+	wrongButton.disabled = true;
 
-  registerCurrentAnswer(isCorrect);
+	registerCurrentAnswer(isCorrect);
 
-  flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
+	flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
 
-  await wait(220);
+	await wait(220);
 
-  goToNextCard();
+	goToNextCard();
 
-  isChangingCard = false;
+	isChangingCard = false;
 }
 
 function goToNextCard() {
-  currentIndex++;
+	currentIndex++;
 
-  if (currentIndex >= cards.length) {
-    currentIndex = 0;
+	if (currentIndex >= cards.length) {
+		currentIndex = 0;
 
-    if (isNewWordsMode) {
-      updateNewWordsDeckAfterRound();
-    } else {
-      cards = buildWeightedDeck(baseSessionCards);
-    }
-  }
+		if (isNewWordsMode) {
+			updateNewWordsDeckAfterRound();
+		} else {
+			cards = buildWeightedDeck(baseSessionCards);
+		}
+	}
 
-  showCard();
+	showCard();
 }
 
 function updateNewWordsDeckAfterRound() {
-  let activeCards = newWordsPool.slice(0, newWordsActiveCount);
+	let activeCards = newWordsPool.slice(0, newWordsActiveCount);
 
-  const allActiveCardsCanAdvance = activeCards.every((card) => {
-    return canNewWordAdvance(card);
-  });
+	const allActiveCardsCanAdvance = activeCards.every((card) => {
+		return canNewWordAdvance(card);
+	});
 
-  if (
-    allActiveCardsCanAdvance &&
-    newWordsActiveCount < newWordsPool.length
-  ) {
-    newWordsActiveCount++;
-  }
+	if (
+		allActiveCardsCanAdvance &&
+		newWordsActiveCount < newWordsPool.length
+	) {
+		newWordsActiveCount++;
+	}
 
-  allNewWordsIntroduced =
-    newWordsActiveCount >= newWordsPool.length;
+	allNewWordsIntroduced =
+		newWordsActiveCount >= newWordsPool.length;
 
-  // Reduz uma unidade do tempo de espera das palavras adiadas.
-  advanceNewWordsConfirmationDelays();
+	// Reduz uma unidade do tempo de espera das palavras adiadas.
+	advanceNewWordsConfirmationDelays();
 
-  newWordsRoundResults = {};
+	newWordsRoundResults = {};
 
-  activeCards = newWordsPool.slice(0, newWordsActiveCount);
-  cards = buildNewWordsRoundDeck(activeCards);
+	activeCards = newWordsPool.slice(0, newWordsActiveCount);
+	cards = buildNewWordsRoundDeck(activeCards);
 }
 
 function buildWeightedDeck(filteredCards) {
-  return buildSrsDeck(filteredCards);
+	return buildSrsDeck(filteredCards);
 }
 
 function buildSrsDeck(filteredCards) {
-  const deck = [];
+	const deck = [];
 
-  filteredCards.forEach((card) => {
-    const cardStats = getCardStats(card.id);
-    const repeatCount = getImmediateSrsRepeatCount(cardStats);
+	filteredCards.forEach((card) => {
+		const cardStats = getCardStats(card.id);
+		const repeatCount = getImmediateSrsRepeatCount(cardStats);
 
-    for (let i = 0; i < repeatCount; i++) {
-      deck.push(createStudyOccurrence(card));
-    }
-  });
+		for (let i = 0; i < repeatCount; i++) {
+			deck.push(createStudyOccurrence(card));
+		}
+	});
 
-  if (deck.length === 0) {
-    return shuffleArray(
-      filteredCards.map(createStudyOccurrence)
-    );
-  }
+	if (deck.length === 0) {
+		return shuffleArray(
+			filteredCards.map(createStudyOccurrence)
+		);
+	}
 
-  return shuffleArray(deck);
+	return shuffleArray(deck);
 }
 
 function getImmediateSrsRepeatCount(cardStats) {
-  const priority = calculateCardPriority(cardStats);
+	const priority = calculateCardPriority(cardStats);
 
-  if (priority >= 150) {
-    return 5;
-  }
+	if (priority >= 150) {
+		return 5;
+	}
 
-  if (priority >= 115) {
-    return 4;
-  }
+	if (priority >= 115) {
+		return 4;
+	}
 
-  if (priority >= 80) {
-    return 3;
-  }
+	if (priority >= 80) {
+		return 3;
+	}
 
-  if (priority >= 45) {
-    return 2;
-  }
+	if (priority >= 45) {
+		return 2;
+	}
 
-  return 1;
+	return 1;
 }
+
 function showSummary() {
-  stopStudyTimer();
-  studyScreen.classList.add("hidden");
-  setupScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  wordsScreen.classList.add("hidden");
-  summaryScreen.classList.remove("hidden");
+	stopStudyTimer();
+	studyScreen.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	wordsScreen.classList.add("hidden");
+	summaryScreen.classList.remove("hidden");
 
-  const total = correctCount + wrongCount;
-  const correctRate = total === 0 ? 0 : Math.round((correctCount / total) * 100);
+	const total = correctCount + wrongCount;
+	const correctRate = total === 0 ? 0 : Math.round((correctCount / total) * 100);
 
-  summaryTotal.textContent = total;
-  summaryCorrect.textContent = correctCount;
-  summaryWrong.textContent = wrongCount;
-  summaryCorrectRate.textContent = `${correctRate}%`;
-  summaryTime.textContent = formatTime(getElapsedStudySeconds());
+	summaryTotal.textContent = total;
+	summaryCorrect.textContent = correctCount;
+	summaryWrong.textContent = wrongCount;
+	summaryCorrectRate.textContent = `${correctRate}%`;
+	summaryTime.textContent = formatTime(getElapsedStudySeconds());
 
-  renderWrongList();
+	renderWrongList();
 }
 
 function renderWrongList() {
-  summaryWrongList.innerHTML = "";
+	summaryWrongList.innerHTML = "";
 
-  const wrongMap = new Map();
+	const wrongMap = new Map();
 
-  sessionAnswers
-    .filter((answer) => !answer.isCorrect)
-    .forEach((answer) => {
-      const current = wrongMap.get(answer.cardId) || {
-        swedish: answer.swedish,
-        portuguese: answer.portuguese,
-        count: 0
-      };
+	sessionAnswers
+		.filter((answer) => !answer.isCorrect)
+		.forEach((answer) => {
+			const current = wrongMap.get(answer.cardId) || {
+				swedish: answer.swedish,
+				portuguese: answer.portuguese,
+				count: 0
+			};
 
-      current.count++;
-      wrongMap.set(answer.cardId, current);
-    });
+			current.count++;
+			wrongMap.set(answer.cardId, current);
+		});
 
-  const wrongItems = [...wrongMap.values()]
-    .sort((a, b) => b.count - a.count)
-    .slice(0, 5);
+	const wrongItems = [...wrongMap.values()]
+		.sort((a, b) => b.count - a.count)
+		.slice(0, 5);
 
-  if (wrongItems.length === 0) {
-    const item = document.createElement("li");
-    item.textContent = "Nenhum erro nesta sessão.";
-    summaryWrongList.appendChild(item);
-    return;
-  }
+	if (wrongItems.length === 0) {
+		const item = document.createElement("li");
+		item.textContent = "Nenhum erro nesta sessão.";
+		summaryWrongList.appendChild(item);
+		return;
+	}
 
-  wrongItems.forEach((item) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${item.swedish} — ${item.portuguese} (${item.count} erro${item.count > 1 ? "s" : ""})`;
-    summaryWrongList.appendChild(listItem);
-  });
+	wrongItems.forEach((item) => {
+		const listItem = document.createElement("li");
+		listItem.textContent = `${item.swedish} — ${item.portuguese} (${item.count} erro${item.count > 1 ? "s" : ""})`;
+		summaryWrongList.appendChild(listItem);
+	});
 }
 
 function showError(errorMessage) {
-  questionText.textContent = "Erro";
-  answerText.textContent = "";
-  flashcard.classList.remove("flipped");
-  message.textContent = errorMessage;
+	questionText.textContent = "Erro";
+	answerText.textContent = "";
+	flashcard.classList.remove("flipped");
+	message.textContent = errorMessage;
 
-  correctButton.disabled = true;
-  wrongButton.disabled = true;
+	correctButton.disabled = true;
+	wrongButton.disabled = true;
 }
 
 function getAnswerMode() {
-  return answerModeSelect.value;
+	return answerModeSelect.value;
 }
 
 function updateModeUI() {
-  const canWriteInSwedish = isSwedishAnswerModeAvailable();
-  const forceWriteMode = directionSelect.value === "audio-sv";
+	const canWriteInSwedish = isSwedishAnswerModeAvailable();
+	const forceWriteMode = directionSelect.value === "audio-sv";
 
-  if (forceWriteMode) {
-    answerModeSelect.value = "write";
-    answerModeLabel.classList.add("hidden");
-  } else if (!canWriteInSwedish) {
-    answerModeSelect.value = "think";
-    answerModeLabel.classList.add("hidden");
-  } else {
-    answerModeLabel.classList.remove("hidden");
-  }
+	if (forceWriteMode) {
+		answerModeSelect.value = "write";
+		answerModeLabel.classList.add("hidden");
+	} else if (!canWriteInSwedish) {
+		answerModeSelect.value = "think";
+		answerModeLabel.classList.add("hidden");
+	} else {
+		answerModeLabel.classList.remove("hidden");
+	}
 
-  const shouldShowWriteBox =
-    canWriteInSwedish && getAnswerMode() === "write";
+	const shouldShowWriteBox =
+		canWriteInSwedish && getAnswerMode() === "write";
 
-  if (shouldShowWriteBox) {
-    writeBox.classList.remove("hidden");
-    resultButtons.classList.add("hidden");
-    flashcard.setAttribute("aria-disabled", "true");
-  } else {
-    writeBox.classList.add("hidden");
-    resultButtons.classList.remove("hidden");
-    flashcard.removeAttribute("aria-disabled");
-  }
+	if (shouldShowWriteBox) {
+		writeBox.classList.remove("hidden");
+		resultButtons.classList.add("hidden");
+		flashcard.setAttribute("aria-disabled", "true");
+	} else {
+		writeBox.classList.add("hidden");
+		resultButtons.classList.remove("hidden");
+		flashcard.removeAttribute("aria-disabled");
+	}
 }
 
 function resetWriteMode() {
-  writeComparisonDone = false;
+	writeComparisonDone = false;
 
-  answerInput.value = "";
-  answerInput.disabled = false;
+	answerInput.value = "";
+	answerInput.disabled = false;
 
-  checkAnswerButton.disabled = false;
+	checkAnswerButton.disabled = false;
 
-  nextWriteCardButton.classList.add("hidden");
-  nextWriteCardButton.disabled = true;
+	nextWriteCardButton.classList.add("hidden");
+	nextWriteCardButton.disabled = true;
 
-  writeResultBox.classList.add("hidden");
-  userAnswerText.textContent = "";
+	writeResultBox.classList.add("hidden");
+	userAnswerText.textContent = "";
 
-  comparisonFeedbackText.textContent = "";
-  comparisonFeedbackText.classList.remove("correct", "wrong");
+	comparisonFeedbackText.textContent = "";
+	comparisonFeedbackText.classList.remove("correct", "wrong");
 
-  backHint.classList.remove("hidden");
+	backHint.classList.remove("hidden");
 }
 
 function checkWrittenAnswer() {
-  if (isChangingCard || writeComparisonDone) {
-    return;
-  }
+	if (isChangingCard || writeComparisonDone) {
+		return;
+	}
 
-  if (!isSwedishAnswerModeAvailable()) {
-    message.textContent = "Modo escrita só está disponível quando a resposta é em sueco.";
-    return;
-  }
+	if (!isSwedishAnswerModeAvailable()) {
+		message.textContent = "Modo escrita só está disponível quando a resposta é em sueco.";
+		return;
+	}
 
-  const card = cards[currentIndex];
-  const content = getCardContent(card);
+	const card = cards[currentIndex];
+	const content = getCardContent(card);
 
-  const userAnswer = answerInput.value;
-  const expectedAnswer = content.answer;
+	const userAnswer = answerInput.value;
+	const expectedAnswer = content.answer;
 
-  if (!userAnswer.trim()) {
-    message.textContent = "Digite uma resposta antes de comparar.";
-    answerInput.focus();
-    return;
-  }
+	if (!userAnswer.trim()) {
+		message.textContent = "Digite uma resposta antes de comparar.";
+		answerInput.focus();
+		return;
+	}
 
-  const comparison = compareWrittenAnswer(userAnswer, expectedAnswer, card);
+	const comparison = compareWrittenAnswer(userAnswer, expectedAnswer, card);
 
-  answerVisible = true;
-  writeComparisonDone = true;
+	answerVisible = true;
+	writeComparisonDone = true;
 
-  flashcard.classList.add("flipped");
-  flashcard.classList.toggle("correct-preview", comparison.isCorrect);
-  flashcard.classList.toggle("wrong-preview", !comparison.isCorrect);
+	flashcard.classList.add("flipped");
+	flashcard.classList.toggle("correct-preview", comparison.isCorrect);
+	flashcard.classList.toggle("wrong-preview", !comparison.isCorrect);
 
-  userAnswerText.textContent = userAnswer;
-  comparisonFeedbackText.textContent = comparison.feedback;
-  comparisonFeedbackText.classList.toggle("correct", comparison.isCorrect);
-  comparisonFeedbackText.classList.toggle("wrong", !comparison.isCorrect);
-  writeResultBox.classList.remove("hidden");
+	userAnswerText.textContent = userAnswer;
+	comparisonFeedbackText.textContent = comparison.feedback;
+	comparisonFeedbackText.classList.toggle("correct", comparison.isCorrect);
+	comparisonFeedbackText.classList.toggle("wrong", !comparison.isCorrect);
+	writeResultBox.classList.remove("hidden");
 
-  backHint.classList.add("hidden");
+	backHint.classList.add("hidden");
 
-  answerInput.disabled = true;
-  checkAnswerButton.disabled = true;
+	answerInput.disabled = true;
+	checkAnswerButton.disabled = true;
 
-  nextWriteCardButton.classList.remove("hidden");
-  nextWriteCardButton.disabled = false;
+	nextWriteCardButton.classList.remove("hidden");
+	nextWriteCardButton.disabled = false;
 
-  registerCurrentAnswer(comparison.isCorrect);
+	registerCurrentAnswer(comparison.isCorrect);
 
 }
 
 async function nextWrittenCard() {
-  if (!writeComparisonDone || isChangingCard) {
-    return;
-  }
+	if (!writeComparisonDone || isChangingCard) {
+		return;
+	}
 
-  isChangingCard = true;
+	isChangingCard = true;
 
-  nextWriteCardButton.disabled = true;
+	nextWriteCardButton.disabled = true;
 
-  flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
+	flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
 
-  await wait(220);
+	await wait(220);
 
-  goToNextCard();
+	goToNextCard();
 
-  isChangingCard = false;
+	isChangingCard = false;
 }
 
 function compareWrittenAnswer(userAnswer, expectedAnswer, card) {
-  const normalizedUserAnswer = normalizeAnswer(userAnswer);
-  const normalizedExpectedAnswer = normalizeAnswer(expectedAnswer);
+	const normalizedUserAnswer = normalizeAnswer(userAnswer);
+	const normalizedExpectedAnswer = normalizeAnswer(expectedAnswer);
 
-  const comparison = getDamerauLevenshteinComparison(
-    normalizedUserAnswer,
-    normalizedExpectedAnswer
-  );
+	const comparison = getDamerauLevenshteinComparison(
+		normalizedUserAnswer,
+		normalizedExpectedAnswer
+	);
 
-  const isCorrect = comparison.distance === 0;
+	const isCorrect = comparison.distance === 0;
 
-  if (isCorrect) {
-    return {
-      isCorrect: true,
-      distance: 0,
-      feedback: "Resposta correta."
-    };
-  }
+	if (isCorrect) {
+		return {
+			isCorrect: true,
+			distance: 0,
+			feedback: "Resposta correta."
+		};
+	}
 
-  const nounComparison = compareNounWithGenderAnswer(
-    card,
-    normalizedUserAnswer,
-    normalizedExpectedAnswer
-  );
+	const nounComparison = compareNounWithGenderAnswer(
+		card,
+		normalizedUserAnswer,
+		normalizedExpectedAnswer
+	);
 
-  if (nounComparison) {
-    return nounComparison;
-  }
+	if (nounComparison) {
+		return nounComparison;
+	}
 
-  return {
-    isCorrect: false,
-    distance: comparison.distance,
-    feedback: buildComparisonFeedbackFromOperations(
-      comparison.operations,
-      normalizedUserAnswer,
-      normalizedExpectedAnswer
-    )
-  };
+	return {
+		isCorrect: false,
+		distance: comparison.distance,
+		feedback: buildComparisonFeedbackFromOperations(
+			comparison.operations,
+			normalizedUserAnswer,
+			normalizedExpectedAnswer
+		)
+	};
 }
 
 function getDamerauLevenshteinComparison(source, target) {
-  const sourceLength = source.length;
-  const targetLength = target.length;
+	const sourceLength = source.length;
+	const targetLength = target.length;
 
-  const distances = Array.from({ length: sourceLength + 1 }, () =>
-    Array(targetLength + 1).fill(0)
-  );
+	const distances = Array.from({
+			length: sourceLength + 1
+		}, () =>
+		Array(targetLength + 1).fill(0)
+	);
 
-  const steps = Array.from({ length: sourceLength + 1 }, () =>
-    Array(targetLength + 1).fill(null)
-  );
+	const steps = Array.from({
+			length: sourceLength + 1
+		}, () =>
+		Array(targetLength + 1).fill(null)
+	);
 
-  for (let i = 0; i <= sourceLength; i++) {
-    distances[i][0] = i;
+	for (let i = 0; i <= sourceLength; i++) {
+		distances[i][0] = i;
 
-    if (i > 0) {
-      steps[i][0] = {
-        type: "delete",
-        sourceIndex: i - 1,
-        targetIndex: 0
-      };
-    }
-  }
+		if (i > 0) {
+			steps[i][0] = {
+				type: "delete",
+				sourceIndex: i - 1,
+				targetIndex: 0
+			};
+		}
+	}
 
-  for (let j = 0; j <= targetLength; j++) {
-    distances[0][j] = j;
+	for (let j = 0; j <= targetLength; j++) {
+		distances[0][j] = j;
 
-    if (j > 0) {
-      steps[0][j] = {
-        type: "insert",
-        sourceIndex: 0,
-        targetIndex: j - 1
-      };
-    }
-  }
+		if (j > 0) {
+			steps[0][j] = {
+				type: "insert",
+				sourceIndex: 0,
+				targetIndex: j - 1
+			};
+		}
+	}
 
-  for (let i = 1; i <= sourceLength; i++) {
-    for (let j = 1; j <= targetLength; j++) {
-      const substitutionCost = source[i - 1] === target[j - 1] ? 0 : 1;
+	for (let i = 1; i <= sourceLength; i++) {
+		for (let j = 1; j <= targetLength; j++) {
+			const substitutionCost = source[i - 1] === target[j - 1] ? 0 : 1;
 
-      let bestDistance = distances[i - 1][j - 1] + substitutionCost;
-      let bestStep = {
-        type: substitutionCost === 0 ? "match" : "substitute",
-        sourceIndex: i - 1,
-        targetIndex: j - 1
-      };
+			let bestDistance = distances[i - 1][j - 1] + substitutionCost;
+			let bestStep = {
+				type: substitutionCost === 0 ? "match" : "substitute",
+				sourceIndex: i - 1,
+				targetIndex: j - 1
+			};
 
-      const deleteDistance = distances[i - 1][j] + 1;
-      if (deleteDistance < bestDistance) {
-        bestDistance = deleteDistance;
-        bestStep = {
-          type: "delete",
-          sourceIndex: i - 1,
-          targetIndex: j
-        };
-      }
+			const deleteDistance = distances[i - 1][j] + 1;
+			if (deleteDistance < bestDistance) {
+				bestDistance = deleteDistance;
+				bestStep = {
+					type: "delete",
+					sourceIndex: i - 1,
+					targetIndex: j
+				};
+			}
 
-      const insertDistance = distances[i][j - 1] + 1;
-      if (insertDistance < bestDistance) {
-        bestDistance = insertDistance;
-        bestStep = {
-          type: "insert",
-          sourceIndex: i,
-          targetIndex: j - 1
-        };
-      }
+			const insertDistance = distances[i][j - 1] + 1;
+			if (insertDistance < bestDistance) {
+				bestDistance = insertDistance;
+				bestStep = {
+					type: "insert",
+					sourceIndex: i,
+					targetIndex: j - 1
+				};
+			}
 
-      if (
-        i > 1 &&
-        j > 1 &&
-        source[i - 1] === target[j - 2] &&
-        source[i - 2] === target[j - 1]
-      ) {
-        const transposeDistance = distances[i - 2][j - 2] + 1;
+			if (
+				i > 1 &&
+				j > 1 &&
+				source[i - 1] === target[j - 2] &&
+				source[i - 2] === target[j - 1]
+			) {
+				const transposeDistance = distances[i - 2][j - 2] + 1;
 
-        if (transposeDistance < bestDistance) {
-          bestDistance = transposeDistance;
-          bestStep = {
-            type: "transpose",
-            sourceIndex: i - 2,
-            targetIndex: j - 2
-          };
-        }
-      }
+				if (transposeDistance < bestDistance) {
+					bestDistance = transposeDistance;
+					bestStep = {
+						type: "transpose",
+						sourceIndex: i - 2,
+						targetIndex: j - 2
+					};
+				}
+			}
 
-      distances[i][j] = bestDistance;
-      steps[i][j] = bestStep;
-    }
-  }
+			distances[i][j] = bestDistance;
+			steps[i][j] = bestStep;
+		}
+	}
 
-  const operations = [];
-  let i = sourceLength;
-  let j = targetLength;
+	const operations = [];
+	let i = sourceLength;
+	let j = targetLength;
 
-  while (i > 0 || j > 0) {
-    const step = steps[i][j];
+	while (i > 0 || j > 0) {
+		const step = steps[i][j];
 
-    if (!step) {
-      break;
-    }
+		if (!step) {
+			break;
+		}
 
-    if (step.type === "match") {
-      i--;
-      j--;
-      continue;
-    }
+		if (step.type === "match") {
+			i--;
+			j--;
+			continue;
+		}
 
-    if (step.type === "substitute") {
-      operations.push({
-        type: "substitute",
-        userChar: source[i - 1],
-        expectedChar: target[j - 1],
-        position: j
-      });
+		if (step.type === "substitute") {
+			operations.push({
+				type: "substitute",
+				userChar: source[i - 1],
+				expectedChar: target[j - 1],
+				position: j
+			});
 
-      i--;
-      j--;
-      continue;
-    }
+			i--;
+			j--;
+			continue;
+		}
 
-    if (step.type === "delete") {
-      operations.push({
-        type: "delete",
-        userChar: source[i - 1],
-        position: i
-      });
+		if (step.type === "delete") {
+			operations.push({
+				type: "delete",
+				userChar: source[i - 1],
+				position: i
+			});
 
-      i--;
-      continue;
-    }
+			i--;
+			continue;
+		}
 
-    if (step.type === "insert") {
-      operations.push({
-        type: "insert",
-        expectedChar: target[j - 1],
-        position: j
-      });
+		if (step.type === "insert") {
+			operations.push({
+				type: "insert",
+				expectedChar: target[j - 1],
+				position: j
+			});
 
-      j--;
-      continue;
-    }
+			j--;
+			continue;
+		}
 
-    if (step.type === "transpose") {
-      operations.push({
-        type: "transpose",
-        firstChar: source[i - 2],
-        secondChar: source[i - 1],
-        position: j - 1
-      });
+		if (step.type === "transpose") {
+			operations.push({
+				type: "transpose",
+				firstChar: source[i - 2],
+				secondChar: source[i - 1],
+				position: j - 1
+			});
 
-      i -= 2;
-      j -= 2;
-      continue;
-    }
-  }
+			i -= 2;
+			j -= 2;
+			continue;
+		}
+	}
 
-  operations.reverse();
+	operations.reverse();
 
-  return {
-    distance: distances[sourceLength][targetLength],
-    operations
-  };
+	return {
+		distance: distances[sourceLength][targetLength],
+		operations
+	};
 }
 
 function compareNounWithGenderAnswer(card, normalizedUserAnswer, normalizedExpectedAnswer) {
-  if (!isNounWithGender(card)) {
-    return null;
-  }
+	if (!isNounWithGender(card)) {
+		return null;
+	}
 
-  const expectedArticle = card.grammar.gender;
-  const expectedWord = normalizeAnswer(card.term?.swedish || "");
+	const expectedArticle = card.grammar.gender;
+	const expectedWord = normalizeAnswer(card.term?.swedish || "");
 
-  if (!expectedArticle || !expectedWord) {
-    return null;
-  }
+	if (!expectedArticle || !expectedWord) {
+		return null;
+	}
 
-  const userNounParts = splitNounAnswer(normalizedUserAnswer);
+	const userNounParts = splitNounAnswer(normalizedUserAnswer);
 
-  if (!userNounParts.word) {
-    return null;
-  }
+	if (!userNounParts.word) {
+		return null;
+	}
 
-  const feedbackParts = [];
-  let totalDistance = 0;
+	const feedbackParts = [];
+	let totalDistance = 0;
 
-  if (!userNounParts.article) {
-    feedbackParts.push("Faltou o artigo.");
-    totalDistance += 1;
-  } else if (userNounParts.article !== expectedArticle) {
-    const articleComparison = getDamerauLevenshteinComparison(
-      userNounParts.article,
-      expectedArticle
-    );
+	if (!userNounParts.article) {
+		feedbackParts.push("Faltou o artigo.");
+		totalDistance += 1;
+	} else if (userNounParts.article !== expectedArticle) {
+		const articleComparison = getDamerauLevenshteinComparison(
+			userNounParts.article,
+			expectedArticle
+		);
 
-    totalDistance += articleComparison.distance;
+		totalDistance += articleComparison.distance;
 
-    if (userNounParts.article === "en" || userNounParts.article === "ett") {
-      feedbackParts.push(`O artigo correto é "${expectedArticle}".`);
-    } else {
-      feedbackParts.push(
-        buildArticleFeedbackFromOperations(
-          articleComparison.operations,
-          userNounParts.article,
-          expectedArticle
-        )
-      );
-    }
-  }
+		if (userNounParts.article === "en" || userNounParts.article === "ett") {
+			feedbackParts.push(`O artigo correto é "${expectedArticle}".`);
+		} else {
+			feedbackParts.push(
+				buildArticleFeedbackFromOperations(
+					articleComparison.operations,
+					userNounParts.article,
+					expectedArticle
+				)
+			);
+		}
+	}
 
-  if (userNounParts.word !== expectedWord) {
-    const wordComparison = getDamerauLevenshteinComparison(
-      userNounParts.word,
-      expectedWord
-    );
+	if (userNounParts.word !== expectedWord) {
+		const wordComparison = getDamerauLevenshteinComparison(
+			userNounParts.word,
+			expectedWord
+		);
 
-    totalDistance += wordComparison.distance;
+		totalDistance += wordComparison.distance;
 
-    feedbackParts.push(
-      buildNounWordFeedbackFromOperations(
-        wordComparison.operations,
-        userNounParts.word,
-        expectedWord
-      )
-    );
-  }
+		feedbackParts.push(
+			buildNounWordFeedbackFromOperations(
+				wordComparison.operations,
+				userNounParts.word,
+				expectedWord
+			)
+		);
+	}
 
-  const cleanFeedbackParts = feedbackParts.filter(Boolean);
+	const cleanFeedbackParts = feedbackParts.filter(Boolean);
 
-  if (cleanFeedbackParts.length === 0) {
-    return null;
-  }
+	if (cleanFeedbackParts.length === 0) {
+		return null;
+	}
 
-  if (totalDistance > 4) {
-    return {
-      isCorrect: false,
-      distance: totalDistance,
-      feedback: `A resposta ficou muito diferente. Leia a forma correta com atenção e tente memorizá-la: "${normalizedExpectedAnswer}".`
-    };
-  }
+	if (totalDistance > 4) {
+		return {
+			isCorrect: false,
+			distance: totalDistance,
+			feedback: `A resposta ficou muito diferente. Leia a forma correta com atenção e tente memorizá-la: "${normalizedExpectedAnswer}".`
+		};
+	}
 
-  return {
-    isCorrect: false,
-    distance: totalDistance,
-    feedback: joinFeedbackParts(cleanFeedbackParts)
-  };
+	return {
+		isCorrect: false,
+		distance: totalDistance,
+		feedback: joinFeedbackParts(cleanFeedbackParts)
+	};
 }
 
 function splitNounAnswer(normalizedAnswer) {
-  const words = normalizedAnswer.split(/\s+/).filter(Boolean);
+	const words = normalizedAnswer.split(/\s+/).filter(Boolean);
 
-  if (words.length <= 1) {
-    return {
-      article: "",
-      word: normalizedAnswer,
-      hasArticleAttempt: false
-    };
-  }
+	if (words.length <= 1) {
+		return {
+			article: "",
+			word: normalizedAnswer,
+			hasArticleAttempt: false
+		};
+	}
 
-  return {
-    article: words[0],
-    word: words.slice(1).join(" "),
-    hasArticleAttempt: true
-  };
+	return {
+		article: words[0],
+		word: words.slice(1).join(" "),
+		hasArticleAttempt: true
+	};
 }
 
 function buildArticleFeedbackFromOperations(operations, userArticle, expectedArticle) {
-  const relevantOperations = operations.filter((operation) => {
-    return operation.type !== "match";
-  });
+	const relevantOperations = operations.filter((operation) => {
+		return operation.type !== "match";
+	});
 
-  if (relevantOperations.length === 0) {
-    return "";
-  }
+	if (relevantOperations.length === 0) {
+		return "";
+	}
 
-  return relevantOperations
-    .map((operation) => {
-      return formatArticleOperation(operation, userArticle, expectedArticle);
-    })
-    .filter(Boolean)
-    .join(" ");
+	return relevantOperations
+		.map((operation) => {
+			return formatArticleOperation(operation, userArticle, expectedArticle);
+		})
+		.filter(Boolean)
+		.join(" ");
 }
 
 function formatArticleOperation(operation, userArticle, expectedArticle) {
-  if (operation.type === "substitute") {
-    const location = describeArticleCharacterLocation(expectedArticle, operation.position);
+	if (operation.type === "substitute") {
+		const location = describeArticleCharacterLocation(expectedArticle, operation.position);
 
-    return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
-  }
+		return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
+	}
 
-  if (operation.type === "insert") {
-    const location = describeArticleCharacterLocation(expectedArticle, operation.position);
+	if (operation.type === "insert") {
+		const location = describeArticleCharacterLocation(expectedArticle, operation.position);
 
-    return `Faltou um "${operation.expectedChar}" ${location}.`;
-  }
+		return `Faltou um "${operation.expectedChar}" ${location}.`;
+	}
 
-  if (operation.type === "delete") {
-    const location = describeArticleCharacterLocation(userArticle, operation.position);
+	if (operation.type === "delete") {
+		const location = describeArticleCharacterLocation(userArticle, operation.position);
 
-    return `Há um "${operation.userChar}" extra ${location}.`;
-  }
+		return `Há um "${operation.userChar}" extra ${location}.`;
+	}
 
-  if (operation.type === "transpose") {
-    const location = describeArticleCharacterLocation(expectedArticle, operation.position);
+	if (operation.type === "transpose") {
+		const location = describeArticleCharacterLocation(expectedArticle, operation.position);
 
-    return `Algumas letras parecem estar invertidas ${location}.`;
-  }
+		return `Algumas letras parecem estar invertidas ${location}.`;
+	}
 
-  return "";
+	return "";
 }
 
 function describeArticleCharacterLocation(article, charPosition) {
-  const index = clamp(charPosition - 1, 0, Math.max(article.length - 1, 0));
-  const articlePart = getWordPart(index, article.length);
+	const index = clamp(charPosition - 1, 0, Math.max(article.length - 1, 0));
+	const articlePart = getWordPart(index, article.length);
 
-  return `${articlePart} do artigo`;
+	return `${articlePart} do artigo`;
 }
 
 function joinFeedbackParts(parts) {
-  if (parts.length === 1) {
-    return parts[0];
-  }
+	if (parts.length === 1) {
+		return parts[0];
+	}
 
-  if (parts.length === 2) {
-    return `${removeFinalPeriod(parts[0])} e ${lowercaseFirstLetter(parts[1])}`;
-  }
+	if (parts.length === 2) {
+		return `${removeFinalPeriod(parts[0])} e ${lowercaseFirstLetter(parts[1])}`;
+	}
 
-  const firstParts = parts.slice(0, -1).map(removeFinalPeriod);
-  const lastPart = lowercaseFirstLetter(parts[parts.length - 1]);
+	const firstParts = parts.slice(0, -1).map(removeFinalPeriod);
+	const lastPart = lowercaseFirstLetter(parts[parts.length - 1]);
 
-  return `${firstParts.join(", ")} e ${lastPart}`;
+	return `${firstParts.join(", ")} e ${lastPart}`;
 }
 
 function removeFinalPeriod(text) {
-  return text.replace(/\.$/, "");
+	return text.replace(/\.$/, "");
 }
 
 function lowercaseFirstLetter(text) {
-  if (!text) {
-    return text;
-  }
+	if (!text) {
+		return text;
+	}
 
-  return text.charAt(0).toLowerCase() + text.slice(1);
+	return text.charAt(0).toLowerCase() + text.slice(1);
 }
 
 function buildNounWordFeedbackFromOperations(operations, userWord, expectedWord) {
-  const relevantOperations = operations.filter((operation) => {
-    return operation.type !== "match";
-  });
+	const relevantOperations = operations.filter((operation) => {
+		return operation.type !== "match";
+	});
 
-  if (relevantOperations.length === 0) {
-    return "Resposta correta.";
-  }
+	if (relevantOperations.length === 0) {
+		return "Resposta correta.";
+	}
 
-  return relevantOperations
-    .map((operation) => {
-      return formatNounWordOperation(operation, userWord, expectedWord);
-    })
-    .filter(Boolean)
-    .join(" ");
+	return relevantOperations
+		.map((operation) => {
+			return formatNounWordOperation(operation, userWord, expectedWord);
+		})
+		.filter(Boolean)
+		.join(" ");
 }
 
 function formatNounWordOperation(operation, userWord, expectedWord) {
-  if (operation.type === "substitute") {
-    const location = describeNounWordCharacterLocation(expectedWord, operation.position);
+	if (operation.type === "substitute") {
+		const location = describeNounWordCharacterLocation(expectedWord, operation.position);
 
-    return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
-  }
+		return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
+	}
 
-  if (operation.type === "insert") {
-    const location = describeNounWordCharacterLocation(expectedWord, operation.position);
+	if (operation.type === "insert") {
+		const location = describeNounWordCharacterLocation(expectedWord, operation.position);
 
-    return `Faltou a letra "${operation.expectedChar}" ${location}.`;
-  }
+		return `Faltou a letra "${operation.expectedChar}" ${location}.`;
+	}
 
-  if (operation.type === "delete") {
-    const location = describeNounWordCharacterLocation(userWord, operation.position);
+	if (operation.type === "delete") {
+		const location = describeNounWordCharacterLocation(userWord, operation.position);
 
-    return `Há uma letra extra "${operation.userChar}" ${location}.`;
-  }
+		return `Há uma letra extra "${operation.userChar}" ${location}.`;
+	}
 
-  if (operation.type === "transpose") {
-    const location = describeNounWordCharacterLocation(expectedWord, operation.position);
+	if (operation.type === "transpose") {
+		const location = describeNounWordCharacterLocation(expectedWord, operation.position);
 
-    return `Algumas letras parecem estar invertidas ${location}.`;
-  }
+		return `Algumas letras parecem estar invertidas ${location}.`;
+	}
 
-  return "";
+	return "";
 }
 
 function describeNounWordCharacterLocation(word, charPosition) {
-  const index = clamp(charPosition - 1, 0, Math.max(word.length - 1, 0));
-  const wordPart = getWordPart(index, word.length);
+	const index = clamp(charPosition - 1, 0, Math.max(word.length - 1, 0));
+	const wordPart = getWordPart(index, word.length);
 
-  return `${wordPart} da palavra`;
+	return `${wordPart} da palavra`;
 }
 
 function buildComparisonFeedbackFromOperations(operations, userAnswer, expectedAnswer) {
-  const relevantOperations = operations.filter((operation) => {
-    return operation.type !== "match";
-  });
+	const relevantOperations = operations.filter((operation) => {
+		return operation.type !== "match";
+	});
 
-  if (relevantOperations.length === 0) {
-    return "Resposta correta.";
-  }
+	if (relevantOperations.length === 0) {
+		return "Resposta correta.";
+	}
 
-  if (relevantOperations.length > 4) {
-    return `A resposta ficou muito diferente. Leia a forma correta com atenção e tente memorizá-la: "${expectedAnswer}".`;
-  }
+	if (relevantOperations.length > 4) {
+		return `A resposta ficou muito diferente. Leia a forma correta com atenção e tente memorizá-la: "${expectedAnswer}".`;
+	}
 
-  return relevantOperations
-    .map((operation) => {
-      return formatComparisonOperation(operation, userAnswer, expectedAnswer);
-    })
-    .filter(Boolean)
-    .join(" ");
+	return relevantOperations
+		.map((operation) => {
+			return formatComparisonOperation(operation, userAnswer, expectedAnswer);
+		})
+		.filter(Boolean)
+		.join(" ");
 }
 
 function formatComparisonOperation(operation, userAnswer, expectedAnswer) {
-  if (operation.type === "substitute") {
-    const location = describeCharacterLocation(expectedAnswer, operation.position);
+	if (operation.type === "substitute") {
+		const location = describeCharacterLocation(expectedAnswer, operation.position);
 
-    return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
-  }
+		return `${capitalizeFirstLetter(location)}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
+	}
 
-  if (operation.type === "insert") {
-    const location = describeCharacterLocation(expectedAnswer, operation.position);
+	if (operation.type === "insert") {
+		const location = describeCharacterLocation(expectedAnswer, operation.position);
 
-    return `Faltou a letra "${operation.expectedChar}" ${location}.`;
-  }
+		return `Faltou a letra "${operation.expectedChar}" ${location}.`;
+	}
 
-  if (operation.type === "delete") {
-    const location = describeCharacterLocation(userAnswer, operation.position);
+	if (operation.type === "delete") {
+		const location = describeCharacterLocation(userAnswer, operation.position);
 
-    return `Há uma letra extra "${operation.userChar}" ${location}.`;
-  }
+		return `Há uma letra extra "${operation.userChar}" ${location}.`;
+	}
 
-  if (operation.type === "transpose") {
-    const location = describeCharacterLocation(expectedAnswer, operation.position);
+	if (operation.type === "transpose") {
+		const location = describeCharacterLocation(expectedAnswer, operation.position);
 
-    return `Algumas letras parecem estar invertidas ${location}.`;
-  }
+		return `Algumas letras parecem estar invertidas ${location}.`;
+	}
 
-  return "";
+	return "";
 }
 
 function describeCharacterLocation(text, charPosition) {
-  const index = clamp(charPosition - 1, 0, Math.max(text.length - 1, 0));
+	const index = clamp(charPosition - 1, 0, Math.max(text.length - 1, 0));
 
-  if (text[index] === " ") {
-    return describeSpaceLocation(text, index);
-  }
+	if (text[index] === " ") {
+		return describeSpaceLocation(text, index);
+	}
 
-  const wordRanges = getWordRanges(text);
-  const wordIndex = wordRanges.findIndex((range) => {
-    return index >= range.start && index <= range.end;
-  });
+	const wordRanges = getWordRanges(text);
+	const wordIndex = wordRanges.findIndex((range) => {
+		return index >= range.start && index <= range.end;
+	});
 
-  if (wordIndex === -1) {
-    return "em uma parte da resposta";
-  }
+	if (wordIndex === -1) {
+		return "em uma parte da resposta";
+	}
 
-  const wordRange = wordRanges[wordIndex];
-  const wordLength = wordRange.end - wordRange.start + 1;
-  const relativeIndex = index - wordRange.start;
+	const wordRange = wordRanges[wordIndex];
+	const wordLength = wordRange.end - wordRange.start + 1;
+	const relativeIndex = index - wordRange.start;
 
-  const wordPart = getWordPart(relativeIndex, wordLength);
-  const ordinalWord = getOrdinalWord(wordIndex + 1);
+	const wordPart = getWordPart(relativeIndex, wordLength);
+	const ordinalWord = getOrdinalWord(wordIndex + 1);
 
-  return `${wordPart} da ${ordinalWord} palavra`;
+	return `${wordPart} da ${ordinalWord} palavra`;
 }
 
 function describeSpaceLocation(text, spaceIndex) {
-  const textBeforeSpace = text.slice(0, spaceIndex).trim();
-  const textAfterSpace = text.slice(spaceIndex + 1).trim();
+	const textBeforeSpace = text.slice(0, spaceIndex).trim();
+	const textAfterSpace = text.slice(spaceIndex + 1).trim();
 
-  const wordsBefore = textBeforeSpace ? textBeforeSpace.split(/\s+/).length : 0;
-  const wordsAfter = textAfterSpace ? textAfterSpace.split(/\s+/).length : 0;
+	const wordsBefore = textBeforeSpace ? textBeforeSpace.split(/\s+/).length : 0;
+	const wordsAfter = textAfterSpace ? textAfterSpace.split(/\s+/).length : 0;
 
-  if (wordsBefore > 0 && wordsAfter > 0) {
-    const previousWord = getOrdinalWord(wordsBefore);
-    const nextWord = getOrdinalWord(wordsBefore + 1);
+	if (wordsBefore > 0 && wordsAfter > 0) {
+		const previousWord = getOrdinalWord(wordsBefore);
+		const nextWord = getOrdinalWord(wordsBefore + 1);
 
-    return `entre a ${previousWord} palavra e a ${nextWord} palavra`;
-  }
+		return `entre a ${previousWord} palavra e a ${nextWord} palavra`;
+	}
 
-  if (wordsBefore === 0) {
-    return "antes da primeira palavra";
-  }
+	if (wordsBefore === 0) {
+		return "antes da primeira palavra";
+	}
 
-  return `depois da ${getOrdinalWord(wordsBefore)} palavra`;
+	return `depois da ${getOrdinalWord(wordsBefore)} palavra`;
 }
 
 function getWordRanges(text) {
-  const ranges = [];
-  const wordRegex = /\S+/g;
-  let match;
+	const ranges = [];
+	const wordRegex = /\S+/g;
+	let match;
 
-  while ((match = wordRegex.exec(text)) !== null) {
-    ranges.push({
-      start: match.index,
-      end: match.index + match[0].length - 1,
-      word: match[0]
-    });
-  }
+	while ((match = wordRegex.exec(text)) !== null) {
+		ranges.push({
+			start: match.index,
+			end: match.index + match[0].length - 1,
+			word: match[0]
+		});
+	}
 
-  return ranges;
+	return ranges;
 }
 
 function getWordPart(relativeIndex, wordLength) {
-  if (wordLength <= 1) {
-    return "na palavra";
-  }
+	if (wordLength <= 1) {
+		return "na palavra";
+	}
 
-  if (wordLength === 2) {
-    return relativeIndex === 0 ? "no início" : "no final";
-  }
+	if (wordLength === 2) {
+		return relativeIndex === 0 ? "no início" : "no final";
+	}
 
-  const firstThirdLimit = Math.ceil(wordLength / 3);
-  const lastThirdStart = Math.floor((wordLength * 2) / 3);
+	const firstThirdLimit = Math.ceil(wordLength / 3);
+	const lastThirdStart = Math.floor((wordLength * 2) / 3);
 
-  if (relativeIndex < firstThirdLimit) {
-    return "no início";
-  }
+	if (relativeIndex < firstThirdLimit) {
+		return "no início";
+	}
 
-  if (relativeIndex >= lastThirdStart) {
-    return "no final";
-  }
+	if (relativeIndex >= lastThirdStart) {
+		return "no final";
+	}
 
-  return "no meio";
+	return "no meio";
 }
 
 function getOrdinalWord(number) {
-  const ordinals = [
-    "primeira",
-    "segunda",
-    "terceira",
-    "quarta",
-    "quinta",
-    "sexta",
-    "sétima",
-    "oitava",
-    "nona",
-    "décima"
-  ];
+	const ordinals = [
+		"primeira",
+		"segunda",
+		"terceira",
+		"quarta",
+		"quinta",
+		"sexta",
+		"sétima",
+		"oitava",
+		"nona",
+		"décima"
+	];
 
-  return ordinals[number - 1] || `${number}ª`;
+	return ordinals[number - 1] || `${number}ª`;
 }
 
 function isSwedishAnswerModeAvailable() {
-  return (
-    directionSelect.value === "pt-sv" ||
-    directionSelect.value === "audio-sv"
-  );
+	return (
+		directionSelect.value === "pt-sv" ||
+		directionSelect.value === "audio-sv"
+	);
 }
 
 function normalizeAnswer(value) {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/[.,!?;:()"]/g, "")
-    .replace(/\s+/g, " ");
+	return value
+		.toLowerCase()
+		.trim()
+		.replace(/[.,!?;:()"]/g, "")
+		.replace(/\s+/g, " ");
 }
 
 function applySavedTheme() {
-  const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+	const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
 
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
-  } else {
-    document.body.classList.remove("dark-theme");
-  }
+	if (savedTheme === "dark") {
+		document.body.classList.add("dark-theme");
+	} else {
+		document.body.classList.remove("dark-theme");
+	}
 
-  updateThemeButtonText();
+	updateThemeButtonText();
 }
 
 function toggleTheme() {
-  const isDark = document.body.classList.toggle("dark-theme");
+	const isDark = document.body.classList.toggle("dark-theme");
 
-  localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
-  updateThemeButtonText();
+	localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
+	updateThemeButtonText();
 }
 
 function updateThemeButtonText() {
-  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+	const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
-  if (document.body.classList.contains("dark-theme")) {
-    themeToggleButton.textContent = "Tema claro";
+	if (document.body.classList.contains("dark-theme")) {
+		themeToggleButton.textContent = "Tema claro";
 
-    if (themeColorMeta) {
-      themeColorMeta.setAttribute("content", "#101A2B");
-    }
-  } else {
-    themeToggleButton.textContent = "Tema escuro";
+		if (themeColorMeta) {
+			themeColorMeta.setAttribute("content", "#101A2B");
+		}
+	} else {
+		themeToggleButton.textContent = "Tema escuro";
 
-    if (themeColorMeta) {
-      themeColorMeta.setAttribute("content", "#FFF7D8");
-   }
-  }
+		if (themeColorMeta) {
+			themeColorMeta.setAttribute("content", "#FFF7D8");
+		}
+	}
 }
 
 function startStudyTimer() {
-  sessionStartTime = Date.now();
-  elapsedBeforePause = 0;
+	sessionStartTime = Date.now();
+	elapsedBeforePause = 0;
 
-  if (timerIntervalId) {
-    clearInterval(timerIntervalId);
-    timerIntervalId = null;
-  }
+	if (timerIntervalId) {
+		clearInterval(timerIntervalId);
+		timerIntervalId = null;
+	}
 }
 
 function stopStudyTimer() {
-  if (timerIntervalId) {
-    clearInterval(timerIntervalId);
-    timerIntervalId = null;
-  }
+	if (timerIntervalId) {
+		clearInterval(timerIntervalId);
+		timerIntervalId = null;
+	}
 }
 
 function getElapsedStudySeconds() {
-  if (!sessionStartTime) {
-    return 0;
-  }
+	if (!sessionStartTime) {
+		return 0;
+	}
 
-  return Math.floor((Date.now() - sessionStartTime) / 1000) + elapsedBeforePause;
+	return Math.floor((Date.now() - sessionStartTime) / 1000) + elapsedBeforePause;
 }
 
 function formatTime(totalSeconds) {
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = totalSeconds % 60;
+	const minutes = Math.floor(totalSeconds / 60);
+	const seconds = totalSeconds % 60;
 
-  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+	return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
 function toggleNewWordsMode() {
-  isNewWordsMode = !isNewWordsMode;
-  updateNewWordsModeUI();
+	isNewWordsMode = !isNewWordsMode;
+	updateNewWordsModeUI();
 }
 
 function updateNewWordsModeUI() {
-  if (isNewWordsMode) {
-    newWordsToggleButton.classList.add("active");
-    newWordsToggleButton.textContent = "Palavras novas: ligado";
-  } else {
-    newWordsToggleButton.classList.remove("active");
-    newWordsToggleButton.textContent = "Palavras novas";
-  }
+	if (isNewWordsMode) {
+		newWordsToggleButton.classList.add("active");
+		newWordsToggleButton.textContent = "Palavras novas: ligado";
+	} else {
+		newWordsToggleButton.classList.remove("active");
+		newWordsToggleButton.textContent = "Palavras novas";
+	}
 }
 
 function capitalizeFirstLetter(text) {
-  if (!text) {
-    return "";
-  }
+	if (!text) {
+		return "";
+	}
 
-  return text.charAt(0).toUpperCase() + text.slice(1);
+	return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 function openWordsScreen(viewMode = "all") {
-  stopStudyTimer();
-  setupMessage.textContent = "";
-  wordsViewMode = viewMode;
+	stopStudyTimer();
+	setupMessage.textContent = "";
+	wordsViewMode = viewMode;
 
-  expandedWordCardId = null;
+	expandedWordCardId = null;
 
-  setupScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  wordsScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.add("hidden");
+	setupScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	wordsScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.add("hidden");
 
-  renderWordsList();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+	renderWordsList();
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 }
 
 function backFromWordsScreen() {
-  wordsScreen.classList.add("hidden");
-  studyScreen.classList.add("hidden");
-  summaryScreen.classList.add("hidden");
-  pronunciationScreen.classList.add("hidden");
-  setupScreen.classList.remove("hidden");
-  newWordsToggleButton.classList.remove("hidden");
+	wordsScreen.classList.add("hidden");
+	studyScreen.classList.add("hidden");
+	summaryScreen.classList.add("hidden");
+	pronunciationScreen.classList.add("hidden");
+	setupScreen.classList.remove("hidden");
+	newWordsToggleButton.classList.remove("hidden");
 }
 
 function toggleWordsDirection() {
-  wordsDirection = wordsDirection === "sv-pt" ? "pt-sv" : "sv-pt";
-  expandedWordCardId = null;
-  renderWordsList();
+	wordsDirection = wordsDirection === "sv-pt" ? "pt-sv" : "sv-pt";
+	expandedWordCardId = null;
+	renderWordsList();
 }
 
 function renderWordsList() {
-  if (!wordsList) {
-    return;
-  }
+	if (!wordsList) {
+		return;
+	}
 
-  const filteredCards = getCardsForWordsView();
+	const filteredCards = getCardsForWordsView();
 
-  updateWordsScreenText(filteredCards.length);
+	updateWordsScreenText(filteredCards.length);
 
-  wordsDirectionButton.textContent =
-    wordsDirection === "sv-pt" ? "Sueco → Português" : "Português → Sueco";
+	wordsDirectionButton.textContent =
+		wordsDirection === "sv-pt" ? "Sueco → Português" : "Português → Sueco";
 
-  wordsList.innerHTML = "";
+	wordsList.innerHTML = "";
 
-  if (filteredCards.length === 0) {
-    const emptyMessage = document.createElement("p");
-    emptyMessage.className = "words-empty";
-    emptyMessage.textContent = getEmptyWordsMessage();
-    wordsList.appendChild(emptyMessage);
-    return;
-  }
+	if (filteredCards.length === 0) {
+		const emptyMessage = document.createElement("p");
+		emptyMessage.className = "words-empty";
+		emptyMessage.textContent = getEmptyWordsMessage();
+		wordsList.appendChild(emptyMessage);
+		return;
+	}
 
-  const sortedCards = sortCardsForWordsView(filteredCards);
+	const sortedCards = sortCardsForWordsView(filteredCards);
 
-  sortedCards.forEach((card) => {
-    wordsList.appendChild(createWordItem(card));
-  });
+	sortedCards.forEach((card) => {
+		wordsList.appendChild(createWordItem(card));
+	});
 }
 
 function getCardsForWordsView() {
-  const filteredCards = getFilteredCards();
+	const filteredCards = getFilteredCards();
 
-  if (wordsViewMode !== "wrong") {
-    return filteredCards;
-  }
+	if (wordsViewMode !== "wrong") {
+		return filteredCards;
+	}
 
-  return filteredCards.filter((card) => {
-    const cardStats = getExistingCardStats(card.id);
+	return filteredCards.filter((card) => {
+		const cardStats = getExistingCardStats(card.id);
 
-    return cardStats && (cardStats.wrong || 0) > 0;
-  });
+		return cardStats && (cardStats.wrong || 0) > 0;
+	});
 }
 
 function getExistingCardStats(cardId) {
-  return stats[String(cardId)] || null;
+	return stats[String(cardId)] || null;
 }
 
 function updateWordsScreenText(cardCount) {
-  if (wordsViewMode === "wrong") {
-    wordsScreenTitle.textContent = "Revisar erros";
-    wordsScreenDescription.textContent =
-      "Lista das palavras com erro salvo, respeitando os filtros escolhidos na configuração.";
-    wordsCount.textContent =
-      cardCount === 1
-        ? "1 palavra com erro"
-        : `${cardCount} palavras com erro`;
-    return;
-  }
+	if (wordsViewMode === "wrong") {
+		wordsScreenTitle.textContent = "Revisar erros";
+		wordsScreenDescription.textContent =
+			"Lista das palavras com erro salvo, respeitando os filtros escolhidos na configuração.";
+		wordsCount.textContent =
+			cardCount === 1 ?
+			"1 palavra com erro" :
+			`${cardCount} palavras com erro`;
+		return;
+	}
 
-  wordsScreenTitle.textContent = "Palavras";
-  wordsScreenDescription.textContent =
-    "Lista gerada de acordo com os filtros escolhidos na configuração.";
-  wordsCount.textContent =
-    cardCount === 1
-      ? "1 palavra"
-      : `${cardCount} palavras`;
+	wordsScreenTitle.textContent = "Palavras";
+	wordsScreenDescription.textContent =
+		"Lista gerada de acordo com os filtros escolhidos na configuração.";
+	wordsCount.textContent =
+		cardCount === 1 ?
+		"1 palavra" :
+		`${cardCount} palavras`;
 }
 
 function getEmptyWordsMessage() {
-  if (wordsViewMode === "wrong") {
-    return "Nenhuma palavra com erro encontrada com esses filtros.";
-  }
+	if (wordsViewMode === "wrong") {
+		return "Nenhuma palavra com erro encontrada com esses filtros.";
+	}
 
-  return "Nenhuma palavra encontrada com esses filtros.";
+	return "Nenhuma palavra encontrada com esses filtros.";
 }
 
 function getWordSortText(card) {
-  if (wordsDirection === "sv-pt") {
-    return card.term?.swedish || "";
-  }
+	if (wordsDirection === "sv-pt") {
+		return card.term?.swedish || "";
+	}
 
-  return card.term?.portuguese || "";
+	return card.term?.portuguese || "";
 }
 
 function sortCardsForWordsView(cardList) {
-  if (wordsViewMode === "wrong") {
-    return [...cardList].sort((a, b) => {
-      const aStats = getExistingCardStats(a.id) || {};
-      const bStats = getExistingCardStats(b.id) || {};
+	if (wordsViewMode === "wrong") {
+		return [...cardList].sort((a, b) => {
+			const aStats = getExistingCardStats(a.id) || {};
+			const bStats = getExistingCardStats(b.id) || {};
 
-      const wrongDifference = (bStats.wrong || 0) - (aStats.wrong || 0);
+			const wrongDifference = (bStats.wrong || 0) - (aStats.wrong || 0);
 
-      if (wrongDifference !== 0) {
-        return wrongDifference;
-      }
+			if (wrongDifference !== 0) {
+				return wrongDifference;
+			}
 
-      const aRate = getWrongRate(aStats);
-      const bRate = getWrongRate(bStats);
+			const aRate = getWrongRate(aStats);
+			const bRate = getWrongRate(bStats);
 
-      if (bRate !== aRate) {
-        return bRate - aRate;
-      }
+			if (bRate !== aRate) {
+				return bRate - aRate;
+			}
 
-      return getWordSortText(a).localeCompare(getWordSortText(b), "sv-SE");
-    });
-  }
+			return getWordSortText(a).localeCompare(getWordSortText(b), "sv-SE");
+		});
+	}
 
-  return [...cardList].sort((a, b) => {
-    const aText = getWordSortText(a);
-    const bText = getWordSortText(b);
+	return [...cardList].sort((a, b) => {
+		const aText = getWordSortText(a);
+		const bText = getWordSortText(b);
 
-    return aText.localeCompare(bText, "sv-SE");
-  });
+		return aText.localeCompare(bText, "sv-SE");
+	});
 }
 
 function getWrongRate(cardStats) {
-  const correct = cardStats.correct || 0;
-  const wrong = cardStats.wrong || 0;
-  const total = correct + wrong;
+	const correct = cardStats.correct || 0;
+	const wrong = cardStats.wrong || 0;
+	const total = correct + wrong;
 
-  if (total === 0) {
-    return 0;
-  }
+	if (total === 0) {
+		return 0;
+	}
 
-  return wrong / total;
+	return wrong / total;
 }
 
 function getWordStatsSummary(card) {
-  const cardStats = getExistingCardStats(card.id) || {};
-  const correct = cardStats.correct || 0;
-  const wrong = cardStats.wrong || 0;
-  const total = correct + wrong;
-  const wrongRate = total === 0 ? 0 : Math.round((wrong / total) * 100);
+	const cardStats = getExistingCardStats(card.id) || {};
+	const correct = cardStats.correct || 0;
+	const wrong = cardStats.wrong || 0;
+	const total = correct + wrong;
+	const wrongRate = total === 0 ? 0 : Math.round((wrong / total) * 100);
 
-  return `${wrong} erro${wrong === 1 ? "" : "s"} · ${correct} acerto${correct === 1 ? "" : "s"} · ${wrongRate}% de erro`;
+	return `${wrong} erro${wrong === 1 ? "" : "s"} · ${correct} acerto${correct === 1 ? "" : "s"} · ${wrongRate}% de erro`;
 }
 
 function createWordItem(card) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "word-item";
-  button.dataset.cardId = String(card.id);
+	const button = document.createElement("button");
+	button.type = "button";
+	button.className = "word-item";
+	button.dataset.cardId = String(card.id);
 
-  const main = document.createElement("div");
-  main.className = "word-item-main";
+	const main = document.createElement("div");
+	main.className = "word-item-main";
 
-  const primary = document.createElement("strong");
-  primary.textContent = getWordPrimaryText(card);
+	const primary = document.createElement("strong");
+	primary.textContent = getWordPrimaryText(card);
 
-  const secondary = document.createElement("span");
-  secondary.textContent = getWordSecondaryText(card);
+	const secondary = document.createElement("span");
+	secondary.textContent = getWordSecondaryText(card);
 
-  main.append(primary, secondary);
-  button.appendChild(main);
+	main.append(primary, secondary);
+	button.appendChild(main);
 
-  if (String(card.id) === String(expandedWordCardId)) {
-    button.appendChild(createWordDetails(card));
-  }
+	if (String(card.id) === String(expandedWordCardId)) {
+		button.appendChild(createWordDetails(card));
+	}
 
-  return button;
+	return button;
 }
 
 function createWordDetails(card) {
-  const details = document.createElement("div");
-  details.className = "word-details";
+	const details = document.createElement("div");
+	details.className = "word-details";
 
-  const meta = document.createElement("p");
-  meta.className = "word-meta";
-  meta.textContent = getWordMetaText(card);
-  details.appendChild(meta);
+	const meta = document.createElement("p");
+	meta.className = "word-meta";
+	meta.textContent = getWordMetaText(card);
+	details.appendChild(meta);
 
-  const grammarDetails = createWordGrammarDetails(card);
+	const grammarDetails = createWordGrammarDetails(card);
 
-  if (grammarDetails) {
-    details.appendChild(grammarDetails);
-  }
+	if (grammarDetails) {
+		details.appendChild(grammarDetails);
+	}
 
-  const hasAudio = Boolean(card.media?.audio?.src);
+	const hasAudio = Boolean(card.media?.audio?.src);
 
-  if (!hasAudio) {
-    const noMedia = document.createElement("p");
-    noMedia.className = "word-meta";
-    noMedia.textContent = "Sem áudio para esta palavra.";
-    details.appendChild(noMedia);
-    return details;
-  }
+	if (!hasAudio) {
+		const noMedia = document.createElement("p");
+		noMedia.className = "word-meta";
+		noMedia.textContent = "Sem áudio para esta palavra.";
+		details.appendChild(noMedia);
+		return details;
+	}
 
-  const mediaActions = document.createElement("div");
-  mediaActions.className = "word-media-actions";
+	const mediaActions = document.createElement("div");
+	mediaActions.className = "word-media-actions";
 
-  if (hasAudio) {
-    const audioButton = document.createElement("button");
-    audioButton.type = "button";
-    audioButton.className = "word-audio-button";
-    audioButton.dataset.audioSrc = card.media.audio.src;
-    audioButton.textContent = "Ouvir áudio";
+	if (hasAudio) {
+		const audioButton = document.createElement("button");
+		audioButton.type = "button";
+		audioButton.className = "word-audio-button";
+		audioButton.dataset.audioSrc = card.media.audio.src;
+		audioButton.textContent = "Ouvir áudio";
 
-    mediaActions.appendChild(audioButton);
-  }
+		mediaActions.appendChild(audioButton);
+	}
 
-  details.appendChild(mediaActions);
+	details.appendChild(mediaActions);
 
-  return details;
+	return details;
 }
 
 function createWordGrammarDetails(card) {
-  const grammar = card.grammar;
+	const grammar = card.grammar;
 
-  if (!grammar) {
-    return null;
-  }
+	if (!grammar) {
+		return null;
+	}
 
-  const rows = [];
+	const rows = [];
 
-  if (grammar.type === "substantivo") {
-    if (grammar.definiteSingular) {
-      rows.push({
-        label: "Singular definido",
-        value: grammar.definiteSingular
-      });
-    }
+	if (grammar.type === "substantivo") {
+		if (grammar.definiteSingular) {
+			rows.push({
+				label: "Singular definido",
+				value: grammar.definiteSingular
+			});
+		}
 
-    if (grammar.plural) {
-      rows.push({
-        label: "Plural indefinido",
-        value: grammar.plural
-      });
-    }
+		if (grammar.plural) {
+			rows.push({
+				label: "Plural indefinido",
+				value: grammar.plural
+			});
+		}
 
-    if (grammar.definitePlural) {
-      rows.push({
-        label: "Plural definido",
-        value: grammar.definitePlural
-      });
-    }
-  }
+		if (grammar.definitePlural) {
+			rows.push({
+				label: "Plural definido",
+				value: grammar.definitePlural
+			});
+		}
+	}
 
-  if (grammar.type === "verbo") {
-    if (grammar.infinitive) {
-      rows.push({
-        label: "Infinitivo",
-        value: grammar.infinitive
-      });
-    }
+	if (grammar.type === "verbo") {
+		if (grammar.infinitive) {
+			rows.push({
+				label: "Infinitivo",
+				value: grammar.infinitive
+			});
+		}
 
-    if (grammar.present) {
-      rows.push({
-        label: "Presente",
-        value: grammar.present
-      });
-    }
+		if (grammar.present) {
+			rows.push({
+				label: "Presente",
+				value: grammar.present
+			});
+		}
 
-    if (grammar.past) {
-      rows.push({
-        label: "Passado",
-        value: grammar.past
-      });
-    }
+		if (grammar.past) {
+			rows.push({
+				label: "Passado",
+				value: grammar.past
+			});
+		}
 
-    if (grammar.supine) {
-      rows.push({
-        label: "Supino",
-        value: grammar.supine
-      });
-    }
-  }
+		if (grammar.supine) {
+			rows.push({
+				label: "Supino",
+				value: grammar.supine
+			});
+		}
+	}
 
-  if (rows.length === 0) {
-    return null;
-  }
+	if (rows.length === 0) {
+		return null;
+	}
 
-  const container = document.createElement("div");
-  container.className = "word-grammar-details";
+	const container = document.createElement("div");
+	container.className = "word-grammar-details";
 
-  rows.forEach((row) => {
-    const line = document.createElement("p");
-    line.className = "word-grammar-row";
+	rows.forEach((row) => {
+		const line = document.createElement("p");
+		line.className = "word-grammar-row";
 
-    const label = document.createElement("strong");
-    label.textContent = `${row.label}:`;
+		const label = document.createElement("strong");
+		label.textContent = `${row.label}:`;
 
-    const value = document.createElement("span");
-    value.textContent = row.value;
+		const value = document.createElement("span");
+		value.textContent = row.value;
 
-    line.append(label, value);
-    container.appendChild(line);
-  });
+		line.append(label, value);
+		container.appendChild(line);
+	});
 
-  return container;
+	return container;
 }
 
 function getWordSwedishListText(card) {
-  const swedish = card.term?.swedish || "";
+	const swedish = card.term?.swedish || "";
 
-  if (!isNounWithGender(card)) {
-    return swedish;
-  }
+	if (!isNounWithGender(card)) {
+		return swedish;
+	}
 
-  return `${swedish} · ${card.grammar.gender}`;
+	return `${swedish} · ${card.grammar.gender}`;
 }
 
 function getWordPrimaryText(card) {
-  if (wordsDirection === "sv-pt") {
-    return getWordSwedishListText(card);
-  }
+	if (wordsDirection === "sv-pt") {
+		return getWordSwedishListText(card);
+	}
 
-  return card.term.portuguese;
+	return card.term.portuguese;
 }
 
 function getWordSecondaryText(card) {
-  const translation = wordsDirection === "sv-pt"
-    ? card.term.portuguese
-    : getWordSwedishListText(card);
+	const translation = wordsDirection === "sv-pt" ?
+		card.term.portuguese :
+		getWordSwedishListText(card);
 
-  if (wordsViewMode !== "wrong") {
-    return translation;
-  }
+	if (wordsViewMode !== "wrong") {
+		return translation;
+	}
 
-  return `${translation} · ${getWordStatsSummary(card)}`;
+	return `${translation} · ${getWordStatsSummary(card)}`;
 }
 
 function getWordMetaText(card) {
-  const parts = [];
+	const parts = [];
 
-  if (wordsViewMode === "wrong") {
-    parts.push(getWordStatsSummary(card));
-  }
+	if (wordsViewMode === "wrong") {
+		parts.push(getWordStatsSummary(card));
+	}
 
-  if (card.grammar?.type) {
-    parts.push(`Tipo: ${card.grammar.type}`);
-  }
+	if (card.grammar?.type) {
+		parts.push(`Tipo: ${card.grammar.type}`);
+	}
 
-  const themes = getCardThemes(card);
+	const themes = getCardThemes(card);
 
-  if (themes.length > 0) {
-    parts.push(`Tema: ${themes.join(", ")}`);
-  }
+	if (themes.length > 0) {
+		parts.push(`Tema: ${themes.join(", ")}`);
+	}
 
-  const source = getCardSource(card);
+	const source = getCardSource(card);
 
-  if (source) {
-    parts.push(`Origem: ${source}`);
-  }
+	if (source) {
+		parts.push(`Origem: ${source}`);
+	}
 
-  if (source === "livro" && card.classification?.chapter) {
-    parts.push(`Capítulo: ${card.classification.chapter}`);
-  }
+	if (source === "livro" && card.classification?.chapter) {
+		parts.push(`Capítulo: ${card.classification.chapter}`);
+	}
 
-  if (source === "música" && getCardSourceTitle(card)) {
-    parts.push(`Música: ${getCardSourceTitle(card)}`);
-  }
+	if (source === "música" && getCardSourceTitle(card)) {
+		parts.push(`Música: ${getCardSourceTitle(card)}`);
+	}
 
-  return parts.join(" · ");
+	return parts.join(" · ");
 }
 
 function handleWordsListClick(event) {
-  const audioButton = event.target.closest(".word-audio-button");
+	const audioButton = event.target.closest(".word-audio-button");
 
-  if (audioButton) {
-    event.stopPropagation();
+	if (audioButton) {
+		event.stopPropagation();
 
-    const audioSrc = audioButton.dataset.audioSrc;
+		const audioSrc = audioButton.dataset.audioSrc;
 
-    if (!audioSrc) {
-      return;
-    }
+		if (!audioSrc) {
+			return;
+		}
 
-    const audio = new Audio(audioSrc);
-    audio.play().catch((error) => {
-      console.error("Erro ao tocar áudio da palavra:", error);
-    });
+		const audio = new Audio(audioSrc);
+		audio.play().catch((error) => {
+			console.error("Erro ao tocar áudio da palavra:", error);
+		});
 
-    return;
-  }
+		return;
+	}
 
-  const wordItem = event.target.closest(".word-item");
+	const wordItem = event.target.closest(".word-item");
 
-  if (!wordItem) {
-    return;
-  }
+	if (!wordItem) {
+		return;
+	}
 
-  const cardId = wordItem.dataset.cardId;
+	const cardId = wordItem.dataset.cardId;
 
-  if (String(expandedWordCardId) === String(cardId)) {
-    expandedWordCardId = null;
-  } else {
-    expandedWordCardId = cardId;
-  }
+	if (String(expandedWordCardId) === String(cardId)) {
+		expandedWordCardId = null;
+	} else {
+		expandedWordCardId = cardId;
+	}
 
-  renderWordsList();
+	renderWordsList();
 }
 
 function resetStats() {
-  const filteredCards = getFilteredCards();
+	const filteredCards = getFilteredCards();
 
-  if (filteredCards.length === 0) {
-    setupMessage.textContent = "Nenhuma palavra encontrada com os filtros atuais.";
-    return;
-  }
+	if (filteredCards.length === 0) {
+		setupMessage.textContent = "Nenhuma palavra encontrada com os filtros atuais.";
+		return;
+	}
 
-  const shouldReset = window.confirm(
-    `Tem certeza que deseja zerar o progresso de ${filteredCards.length} palavra(s) dos filtros atuais? As demais palavras permanecerão inalteradas.`
-  );
+	const shouldReset = window.confirm(
+		`Tem certeza que deseja zerar o progresso de ${filteredCards.length} palavra(s) dos filtros atuais? As demais palavras permanecerão inalteradas.`
+	);
 
-  if (!shouldReset) {
-    return;
-  }
+	if (!shouldReset) {
+		return;
+	}
 
-  filteredCards.forEach((card) => {
-    delete stats[String(card.id)];
-  });
+	filteredCards.forEach((card) => {
+		delete stats[String(card.id)];
+	});
 
-  if (Object.keys(stats).length === 0) {
-    localStorage.removeItem(STORAGE_KEY);
-  } else {
-    saveStats();
-  }
+	if (Object.keys(stats).length === 0) {
+		localStorage.removeItem(STORAGE_KEY);
+	} else {
+		saveStats();
+	}
 
-  correctCount = 0;
-  wrongCount = 0;
-  sessionAnswers = [];
+	correctCount = 0;
+	wrongCount = 0;
+	sessionAnswers = [];
 
-  setupMessage.textContent = `Progresso zerado para ${filteredCards.length} palavra(s) dos filtros atuais. As demais palavras foram mantidas.`;
+	setupMessage.textContent = `Progresso zerado para ${filteredCards.length} palavra(s) dos filtros atuais. As demais palavras foram mantidas.`;
 }
 
 const audioPreloadCache = new Map();
 
 function preloadAudioForCard(card) {
-  const audioSrc = card?.media?.audio?.src;
+	const audioSrc = card?.media?.audio?.src;
 
-  if (!audioSrc || audioPreloadCache.has(audioSrc)) {
-    return;
-  }
+	if (!audioSrc || audioPreloadCache.has(audioSrc)) {
+		return;
+	}
 
-  const audio = new Audio();
-  audio.preload = "auto";
-  audio.src = audioSrc;
-  audio.load();
+	const audio = new Audio();
+	audio.preload = "auto";
+	audio.src = audioSrc;
+	audio.load();
 
-  audioPreloadCache.set(audioSrc, audio);
+	audioPreloadCache.set(audioSrc, audio);
 }
 
 function preloadAudioForCards(cardList, limit = 6) {
-  cardList
-    .filter((card) => card?.media?.audio?.src)
-    .slice(0, limit)
-    .forEach(preloadAudioForCard);
+	cardList
+		.filter((card) => card?.media?.audio?.src)
+		.slice(0, limit)
+		.forEach(preloadAudioForCard);
 }
 
 flashcard.addEventListener("click", revealAnswer);
 
 flashcard.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" || event.key === " ") {
-    event.preventDefault();
-    revealAnswer();
-  }
+	if (event.key === "Enter" || event.key === " ") {
+		event.preventDefault();
+		revealAnswer();
+	}
 });
 
 checkAnswerButton.addEventListener("click", checkWrittenAnswer);
 nextWriteCardButton.addEventListener("click", nextWrittenCard);
 
 answerInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    checkWrittenAnswer();
-  }
+	if (event.key === "Enter") {
+		checkWrittenAnswer();
+	}
 });
 
 playAudioButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  cardAudio.currentTime = 0;
-  cardAudio.play();
+	event.stopPropagation();
+	cardAudio.currentTime = 0;
+	cardAudio.play();
 });
 
 showSwedishFromAudioButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  showSwedishFromAudio();
+	event.stopPropagation();
+	showSwedishFromAudio();
 });
 
 themeToggleButton.addEventListener("click", toggleTheme);
@@ -2883,8 +2907,8 @@ wrongButton.addEventListener("click", () => markAnswer(false));
 newWordsToggleButton.addEventListener("click", toggleNewWordsMode);
 
 sourceFilterGroup.addEventListener("change", () => {
-  setupMessage.textContent = "";
-  updateSourceSpecificFilters();
+	setupMessage.textContent = "";
+	updateSourceSpecificFilters();
 });
 
 applySavedTheme();

@@ -855,7 +855,16 @@ body.dark-theme .comparison-feedback.wrong {
 
 .plural-rule h3,
 .plural-rule h4 {
-  margin: 0;
+  margin: 20px 0 2px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+.plural-rule h4:first-of-type {
+  margin-top: 4px;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .plural-rule h3 {
@@ -877,14 +886,20 @@ body.dark-theme .comparison-feedback.wrong {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
+
+  padding: 12px;
+  margin-top: 4px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
 }
 
 .plural-example-grid span {
   min-width: 0;
   padding: 10px;
-  border-radius: 12px;
-  background: var(--card);
-  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--soft);
 }
 
 .plural-example-grid strong,

@@ -1,538 +1,578 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#FFF7D8" />
-
-<title>Flashcards de Sueco</title>
-
-<link rel="manifest" href="manifest.json" />
-
-<link rel="icon" href="assets/images/favicon.ico" sizes="any" />
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-
-<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
-
-<link rel="stylesheet" href="style.css" />
-<script src="app.js" defer></script>
-</head>
-
-<body>
-  <main class="app">
-<header class="app-header">
-  <div>
-    <p class="eyebrow">Sueco</p>
-    <h1>Flashcards</h1>
-  </div>
-
-  <div class="header-actions">
-    <button id="newWordsToggleButton" class="theme-toggle-button" type="button">
-      Palavras novas
-    </button>
-
-    <button id="themeToggleButton" class="theme-toggle-button" type="button">
-      Tema escuro
-    </button>
-  </div>
-</header>
-
-<section id="setupScreen" class="setup-screen" aria-label="Configuração da sessão">
-  <div class="setup-card">
-    <h2>Configurar estudo</h2>
-
-<details class="checkbox-filter">
-  <summary>Tipo de palavra</summary>
-  <div id="typeFilterGroup" class="checkbox-options"></div>
-  <p class="filter-hint">Nenhuma opção marcada = todos</p>
-</details>
-
-<details class="checkbox-filter">
-  <summary>Tema</summary>
-  <div id="themeFilterGroup" class="checkbox-options"></div>
-  <p class="filter-hint">Nenhuma opção marcada = todos</p>
-</details>
-
-<details class="checkbox-filter">
-  <summary>Origem</summary>
-  <div id="sourceFilterGroup" class="checkbox-options"></div>
-  <p class="filter-hint">Nenhuma opção marcada = todas</p>
-</details>
-
-<details id="chapterFilterLabel" class="checkbox-filter hidden">
-  <summary>Capítulo do livro</summary>
-  <div id="chapterFilterGroup" class="checkbox-options"></div>
-  <p class="filter-hint">Nenhuma opção marcada = todos</p>
-</details>
-
-<details id="sourceTitleFilterLabel" class="checkbox-filter hidden">
-  <summary>Música</summary>
-  <div id="sourceTitleFilterGroup" class="checkbox-options"></div>
-  <p class="filter-hint">Nenhuma opção marcada = todas</p>
-</details>
-
-    <label for="directionSelect">
-      Direção
-  <select id="directionSelect">
-    <option value="sv-pt">Sueco → Português</option>
-    <option value="pt-sv">Português → Sueco</option>
-    <option value="audio-pt">Áudio sueco → Português</option>
-    <option value="audio-sv">Áudio sueco → Escrever sueco</option>
-      </select>
-    </label>
-
-    <label id="answerModeLabel" for="answerModeSelect">
-      Modo
-      <select id="answerModeSelect">
-        <option value="think">Pensar e virar</option>
-        <option value="write">Escrever em sueco</option>
-      </select>
-    </label>
-
-<button id="startSessionButton" class="button button-primary" type="button">
-  Começar estudo
-</button>
-
-<button id="wordsButton" class="button button-secondary" type="button">
-  Palavras
-</button>
-
-<button id="grammarButton" class="button button-secondary" type="button">
-  Gramática
-</button>
-
-<button id="wrongWordsButton" class="button button-secondary" type="button">
-  Revisar erros
-</button>
-
-<button id="resetStatsButton" class="button button-secondary" type="button">
-  Zerar progresso
-</button>
-
-<p id="setupMessage" class="setup-message"></p>
-</section>
-
-
-<section id="studyScreen" class="study-screen hidden" aria-label="Sessão de estudo">
-
-<button id="backToSetupButton" class="back-button" type="button">
-  ← Configurações
-</button>
-
-<section id="flashcard" class="card" aria-label="Flashcard atual" role="button" tabindex="0">
-  <div class="card-inner">
-<div class="card-face card-front">
-
-<div id="cardAudioWrap" class="card-audio-wrap hidden">
-  <button id="playAudioButton" class="audio-button" type="button">
-    Ouvir áudio
-  </button>
-
-  <button id="showSwedishFromAudioButton" class="audio-secondary-button" type="button">
-    Mostrar sueco
-  </button>
-
-  <p id="audioSwedishText" class="audio-swedish-text hidden"></p>
-
-  <audio id="cardAudio" preload="metadata"></audio>
-</div>
-
-  <p id="questionLabel" class="card-label">Sueco</p>
-  <h2 id="questionText" class="question">Carregando...</h2>
-</div>
-
-    <div class="card-face card-back">
-      <p id="answerLabel" class="card-label">Português</p>
-      <p id="answerText" class="answer"></p>
-      <p id="answerGrammarForm" class="answer-grammar-form hidden"></p>
-
-<div id="writeResultBox" class="write-result-box hidden">
-  <p>Sua resposta:</p>
-  <strong id="userAnswerText"></strong>
-  <p id="comparisonFeedbackText" class="comparison-feedback"></p>
-</div>
-
-      <p id="backHint" class="back-hint">Marque se você acertou ou errou.</p>
-    </div>
-  </div>
-</section>
-
-
-<section class="controls" aria-label="Controles do flashcard">
-  <div id="writeBox" class="write-box hidden">
-    <label for="answerInput">Escreva sua resposta</label>
-    <input
-      id="answerInput"
-      type="text"
-      autocomplete="off"
-      autocorrect="off"
-      autocapitalize="none"
-      spellcheck="false"
-      inputmode="text"
-      enterkeyhint="done"
-      placeholder="Digite aqui..."
-    />
-
-    <button id="checkAnswerButton" class="button button-primary" type="button">
-      Comparar resposta
-    </button>
-    <button id="nextWriteCardButton" class="button button-secondary hidden" type="button">
-      Próximo card
-    </button>
-  </div>
-
-  <div id="resultButtons" class="result-buttons">
-    <button id="wrongButton" class="button button-wrong" type="button" disabled>
-      Errei
-    </button>
-
-    <button id="correctButton" class="button button-correct" type="button" disabled>
-      Acertei
-    </button>
-  </div>
-
-  <button id="finishSessionButton" class="button button-secondary" type="button">
-    Encerrar sessão
-  </button>
-</section>
-
-    <p id="message" class="message" role="status"></p>
-</section>
-
-<section id="grammarScreen" class="grammar-screen hidden" aria-label="Gramática">
-  <button id="backFromGrammarButton" class="back-button" type="button">
-    ← Voltar
-  </button>
-
-  <div class="grammar-card">
-    <div class="grammar-heading">
-      <p class="eyebrow">Sueco</p>
-      <h2>Gramática</h2>
-      <p>Escolha o conteúdo que deseja consultar.</p>
-    </div>
-
-    <div class="grammar-menu">
-      <button id="pronunciationRulesButton" class="button button-secondary" type="button">
-        Regras de pronúncia
-      </button>
-
-      <button id="pluralRulesButton" class="button button-secondary" type="button">
-        Plural dos substantivos
-      </button>
-    </div>
-  </div>
-</section>
-
-<section id="pronunciationScreen" class="pronunciation-screen hidden" aria-label="Regras de pronúncia">
-  <button id="backFromPronunciationButton" class="back-button" type="button">
-    ← Voltar
-  </button>
-
-  <div class="pronunciation-card">
-    <div class="pronunciation-heading">
-      <p class="eyebrow">Sueco</p>
-      <h2>Regras de pronúncia</h2>
-      <p>
-        Resumo prático em português com exemplos do seu words.json.
-        Toque em “Ouvir” para escutar uma palavra de exemplo.
-      </p>
-    </div>
-
-    <div id="pronunciationRulesList" class="pronunciation-rules-list"></div>
-  </div>
-</section>
-
-<section id="pluralScreen" class="plural-screen hidden" aria-label="Plural dos substantivos em sueco">
-  <button id="backFromPluralButton" class="back-button" type="button">
-    ← Gramática
-  </button>
-
-  <div class="plural-card">
-    <div class="plural-heading">
-      <p class="eyebrow">Gramática</p>
-      <h2>Plural dos substantivos</h2>
-      <p>
-        As quatro formas apresentadas são:
-        singular indefinido, singular definido,
-        plural indefinido e plural definido.
-      </p>
-    </div>
-
-    <div class="plural-rules-list">
-
-      <article class="plural-rule">
-        <h3>Grupo 1 — plural em -or</h3>
-        <p>
-          Palavras <em>en</em> cujo singular indefinido termina em
-          <strong>-a</strong>. Retira-se o <strong>-a</strong> e
-          acrescenta-se <strong>-or</strong>. No plural definido,
-          acrescenta-se <strong>-na</strong>.
-        </p>
-
-        <div class="plural-example-grid">
-          <span><strong>en paprika</strong><small>um pimentão</small></span>
-          <span><strong>paprikan</strong><small>o pimentão</small></span>
-          <span><strong>paprikor</strong><small>pimentões</small></span>
-          <span><strong>paprikorna</strong><small>os pimentões</small></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#FFF7D8" />
+    <title>Flashcards de Sueco</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Sueco</p>
+          <h1>Flashcards</h1>
         </div>
-      </article>
-
-      <article class="plural-rule">
-        <h3>Grupo 2 — plural em -ar</h3>
-        <p>
-          Também são palavras <em>en</em>. Geralmente são palavras curtas
-          terminadas em consoante ou <strong>-e</strong>, além de muitas
-          palavras terminadas em <strong>-ing</strong>. Recebem
-          <strong>-ar</strong> no plural e <strong>-na</strong> no plural definido.
-        </p>
-
-        <div class="plural-example-grid">
-          <span><strong>en hund</strong><small>um cachorro</small></span>
-          <span><strong>hunden</strong><small>o cachorro</small></span>
-          <span><strong>hundar</strong><small>cachorros</small></span>
-          <span><strong>hundarna</strong><small>os cachorros</small></span>
+        <div class="header-actions">
+          <button id="newWordsToggleButton" class="theme-toggle-button" type="button"> Palavras novas </button>
+          <button id="themeToggleButton" class="theme-toggle-button" type="button"> Tema escuro </button>
         </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en bulle</strong><small>um pãozinho</small></span>
-          <span><strong>bullen</strong><small>o pãozinho</small></span>
-          <span><strong>bullar</strong><small>pãezinhos</small></span>
-          <span><strong>bullarna</strong><small>os pãezinhos</small></span>
+      </header>
+      <section id="setupScreen" class="setup-screen" aria-label="Configuração da sessão">
+        <div class="setup-card">
+          <h2>Configurar estudo</h2>
+          <details class="checkbox-filter">
+            <summary>Tipo de palavra</summary>
+            <div id="typeFilterGroup" class="checkbox-options"></div>
+            <p class="filter-hint">Nenhuma opção marcada = todos</p>
+          </details>
+          <details class="checkbox-filter">
+            <summary>Tema</summary>
+            <div id="themeFilterGroup" class="checkbox-options"></div>
+            <p class="filter-hint">Nenhuma opção marcada = todos</p>
+          </details>
+          <details class="checkbox-filter">
+            <summary>Origem</summary>
+            <div id="sourceFilterGroup" class="checkbox-options"></div>
+            <p class="filter-hint">Nenhuma opção marcada = todas</p>
+          </details>
+          <details id="chapterFilterLabel" class="checkbox-filter hidden">
+            <summary>Capítulo do livro</summary>
+            <div id="chapterFilterGroup" class="checkbox-options"></div>
+            <p class="filter-hint">Nenhuma opção marcada = todos</p>
+          </details>
+          <details id="sourceTitleFilterLabel" class="checkbox-filter hidden">
+            <summary>Música</summary>
+            <div id="sourceTitleFilterGroup" class="checkbox-options"></div>
+            <p class="filter-hint">Nenhuma opção marcada = todas</p>
+          </details>
+          <label for="directionSelect"> Direção <select id="directionSelect">
+              <option value="sv-pt">Sueco → Português</option>
+              <option value="pt-sv">Português → Sueco</option>
+              <option value="audio-pt">Áudio sueco → Português</option>
+              <option value="audio-sv">Áudio sueco → Escrever sueco</option>
+            </select>
+          </label>
+          <label id="answerModeLabel" for="answerModeSelect"> Modo <select id="answerModeSelect">
+              <option value="think">Pensar e virar</option>
+              <option value="write">Escrever em sueco</option>
+            </select>
+          </label>
+          <button id="startSessionButton" class="button button-primary" type="button"> Começar estudo </button>
+          <button id="wordsButton" class="button button-secondary" type="button"> Palavras </button>
+          <button id="grammarButton" class="button button-secondary" type="button"> Gramática </button>
+          <button id="wrongWordsButton" class="button button-secondary" type="button"> Revisar erros </button>
+          <button id="resetStatsButton" class="button button-secondary" type="button"> Zerar progresso </button>
+          <p id="setupMessage" class="setup-message"></p>
+      </section>
+      <section id="studyScreen" class="study-screen hidden" aria-label="Sessão de estudo">
+        <button id="backToSetupButton" class="back-button" type="button"> ← Configurações </button>
+        <section id="flashcard" class="card" aria-label="Flashcard atual" role="button" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <div id="cardAudioWrap" class="card-audio-wrap hidden">
+                <button id="playAudioButton" class="audio-button" type="button"> Ouvir áudio </button>
+                <button id="showSwedishFromAudioButton" class="audio-secondary-button" type="button"> Mostrar sueco </button>
+                <p id="audioSwedishText" class="audio-swedish-text hidden"></p>
+                <audio id="cardAudio" preload="metadata"></audio>
+              </div>
+              <p id="questionLabel" class="card-label">Sueco</p>
+              <h2 id="questionText" class="question">Carregando...</h2>
+            </div>
+            <div class="card-face card-back">
+              <p id="answerLabel" class="card-label">Português</p>
+              <p id="answerText" class="answer"></p>
+              <p id="answerGrammarForm" class="answer-grammar-form hidden"></p>
+              <div id="writeResultBox" class="write-result-box hidden">
+                <p>Sua resposta:</p>
+                <strong id="userAnswerText"></strong>
+                <p id="comparisonFeedbackText" class="comparison-feedback"></p>
+              </div>
+              <p id="backHint" class="back-hint">Marque se você acertou ou errou.</p>
+            </div>
+          </div>
+        </section>
+        <section class="controls" aria-label="Controles do flashcard">
+          <div id="writeBox" class="write-box hidden">
+            <label for="answerInput">Escreva sua resposta</label>
+            <input id="answerInput" type="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" inputmode="text" enterkeyhint="done" placeholder="Digite aqui..." />
+            <button id="checkAnswerButton" class="button button-primary" type="button"> Comparar resposta </button>
+            <button id="nextWriteCardButton" class="button button-secondary hidden" type="button"> Próximo card </button>
+          </div>
+          <div id="resultButtons" class="result-buttons">
+            <button id="wrongButton" class="button button-wrong" type="button" disabled> Errei </button>
+            <button id="correctButton" class="button button-correct" type="button" disabled> Acertei </button>
+          </div>
+          <button id="finishSessionButton" class="button button-secondary" type="button"> Encerrar sessão </button>
+        </section>
+        <p id="message" class="message" role="status"></p>
+      </section>
+      <section id="grammarScreen" class="grammar-screen hidden" aria-label="Gramática">
+        <button id="backFromGrammarButton" class="back-button" type="button"> ← Voltar </button>
+        <div class="grammar-card">
+          <div class="grammar-heading">
+            <p class="eyebrow">Sueco</p>
+            <h2>Gramática</h2>
+            <p>Escolha o conteúdo que deseja consultar.</p>
+          </div>
+          <div class="grammar-menu">
+            <button id="pronunciationRulesButton" class="button button-secondary" type="button"> Regras de pronúncia </button>
+            <button id="pluralRulesButton" class="button button-secondary" type="button"> Plural dos substantivos </button>
+          </div>
         </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en tidning</strong><small>um jornal</small></span>
-          <span><strong>tidningen</strong><small>o jornal</small></span>
-          <span><strong>tidningar</strong><small>jornais</small></span>
-          <span><strong>tidningarna</strong><small>os jornais</small></span>
+      </section>
+      <section id="pronunciationScreen" class="pronunciation-screen hidden" aria-label="Regras de pronúncia">
+        <button id="backFromPronunciationButton" class="back-button" type="button"> ← Voltar </button>
+        <div class="pronunciation-card">
+          <div class="pronunciation-heading">
+            <p class="eyebrow">Sueco</p>
+            <h2>Regras de pronúncia</h2>
+            <p> Resumo prático em português com exemplos do seu words.json. Toque em “Ouvir” para escutar uma palavra de exemplo. </p>
+          </div>
+          <div id="pronunciationRulesList" class="pronunciation-rules-list"></div>
         </div>
-      </article>
-
-      <article class="plural-rule">
-        <h3>Grupo 3 — plural em -er</h3>
-        <p>
-          Principalmente palavras <em>en</em> mais longas terminadas em
-          consoante. Muitas são palavras de origem estrangeira.
-          Recebem <strong>-er</strong> no plural e <strong>-na</strong>
-          no plural definido.
-        </p>
-
-        <div class="plural-example-grid">
-          <span><strong>en apelsin</strong><small>uma laranja</small></span>
-          <span><strong>apelsinen</strong><small>a laranja</small></span>
-          <span><strong>apelsiner</strong><small>laranjas</small></span>
-          <span><strong>apelsinerna</strong><small>as laranjas</small></span>
+      </section>
+      <section id="pluralScreen" class="plural-screen hidden" aria-label="Plural dos substantivos em sueco">
+        <button id="backFromPluralButton" class="back-button" type="button"> ← Gramática </button>
+        <div class="plural-card">
+          <div class="plural-heading">
+            <p class="eyebrow">Gramática</p>
+            <h2>Plural dos substantivos</h2>
+            <p> As quatro formas apresentadas são: singular indefinido, singular definido, plural indefinido e plural definido. </p>
+          </div>
+          <div class="plural-rules-list">
+            <article class="plural-rule">
+              <h3>Grupo 1 — plural em -or</h3>
+              <p> Palavras <em>en</em> cujo singular indefinido termina em <strong>-a</strong>. Retira-se o <strong>-a</strong> e acrescenta-se <strong>-or</strong>. No plural definido, acrescenta-se <strong>-na</strong>. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en paprika</strong>
+                  <small>um pimentão</small>
+                </span>
+                <span>
+                  <strong>paprikan</strong>
+                  <small>o pimentão</small>
+                </span>
+                <span>
+                  <strong>paprikor</strong>
+                  <small>pimentões</small>
+                </span>
+                <span>
+                  <strong>paprikorna</strong>
+                  <small>os pimentões</small>
+                </span>
+              </div>
+            </article>
+            <article class="plural-rule">
+              <h3>Grupo 2 — plural em -ar</h3>
+              <p> Também são palavras <em>en</em>. Geralmente são palavras curtas terminadas em consoante ou <strong>-e</strong>, além de muitas palavras terminadas em <strong>-ing</strong>. Recebem <strong>-ar</strong> no plural e <strong>-na</strong> no plural definido. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en hund</strong>
+                  <small>um cachorro</small>
+                </span>
+                <span>
+                  <strong>hunden</strong>
+                  <small>o cachorro</small>
+                </span>
+                <span>
+                  <strong>hundar</strong>
+                  <small>cachorros</small>
+                </span>
+                <span>
+                  <strong>hundarna</strong>
+                  <small>os cachorros</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en bulle</strong>
+                  <small>um pãozinho</small>
+                </span>
+                <span>
+                  <strong>bullen</strong>
+                  <small>o pãozinho</small>
+                </span>
+                <span>
+                  <strong>bullar</strong>
+                  <small>pãezinhos</small>
+                </span>
+                <span>
+                  <strong>bullarna</strong>
+                  <small>os pãezinhos</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en tidning</strong>
+                  <small>um jornal</small>
+                </span>
+                <span>
+                  <strong>tidningen</strong>
+                  <small>o jornal</small>
+                </span>
+                <span>
+                  <strong>tidningar</strong>
+                  <small>jornais</small>
+                </span>
+                <span>
+                  <strong>tidningarna</strong>
+                  <small>os jornais</small>
+                </span>
+              </div>
+            </article>
+            <article class="plural-rule">
+              <h3>Grupo 3 — plural em -er</h3>
+              <p> Principalmente palavras <em>en</em> mais longas terminadas em consoante. Muitas são palavras de origem estrangeira. Recebem <strong>-er</strong> no plural e <strong>-na</strong> no plural definido. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en apelsin</strong>
+                  <small>uma laranja</small>
+                </span>
+                <span>
+                  <strong>apelsinen</strong>
+                  <small>a laranja</small>
+                </span>
+                <span>
+                  <strong>apelsiner</strong>
+                  <small>laranjas</small>
+                </span>
+                <span>
+                  <strong>apelsinerna</strong>
+                  <small>as laranjas</small>
+                </span>
+              </div>
+            </article>
+            <article class="plural-rule">
+              <h3>Grupo 4 — palavras ett terminadas em vogal</h3>
+              <p> Palavras <em>ett</em> terminadas em vogal normalmente recebem <strong>-n</strong> no plural indefinido e <strong>-a</strong> no plural definido. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>ett äpple</strong>
+                  <small>uma maçã</small>
+                </span>
+                <span>
+                  <strong>äpplet</strong>
+                  <small>a maçã</small>
+                </span>
+                <span>
+                  <strong>äpplen</strong>
+                  <small>maçãs</small>
+                </span>
+                <span>
+                  <strong>äpplena</strong>
+                  <small>as maçãs</small>
+                </span>
+              </div>
+            </article>
+            <article class="plural-rule">
+              <h3>Grupo 5 — palavras ett terminadas em consoante</h3>
+              <p> Normalmente não recebem nenhuma terminação no plural indefinido. No plural definido, acrescenta-se <strong>-en</strong>. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>ett päron</strong>
+                  <small>uma pera</small>
+                </span>
+                <span>
+                  <strong>päronet</strong>
+                  <small>a pera</small>
+                </span>
+                <span>
+                  <strong>päron</strong>
+                  <small>peras</small>
+                </span>
+                <span>
+                  <strong>päronen</strong>
+                  <small>as peras</small>
+                </span>
+              </div>
+            </article>
+            <article class="plural-rule plural-rule-special">
+              <h3>Casos especiais</h3>
+              <h4>1. Palavras terminadas em -are</h4>
+              <p> O plural indefinido geralmente é igual ao singular indefinido. No plural definido, acrescenta-se <strong>-na</strong>. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en lärare</strong>
+                  <small>um professor</small>
+                </span>
+                <span>
+                  <strong>läraren</strong>
+                  <small>o professor</small>
+                </span>
+                <span>
+                  <strong>lärare</strong>
+                  <small>professores</small>
+                </span>
+                <span>
+                  <strong>lärarna</strong>
+                  <small>os professores</small>
+                </span>
+              </div>
+              <h4>2. Palavras terminadas em -er</h4>
+              <p> Algumas palavras terminadas em <strong>-er</strong>, especialmente nomes de profissão ou de pessoa, mantêm a mesma forma no plural indefinido. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en musiker</strong>
+                  <small>um músico</small>
+                </span>
+                <span>
+                  <strong>musikern</strong>
+                  <small>o músico</small>
+                </span>
+                <span>
+                  <strong>musiker</strong>
+                  <small>músicos</small>
+                </span>
+                <span>
+                  <strong>musikerna</strong>
+                  <small>os músicos</small>
+                </span>
+              </div>
+              <h4>3. Queda de vogal</h4>
+              <p> Em algumas palavras, uma vogal interna desaparece quando o plural é formado. Isso acontece, por exemplo, em <strong>syster → systrar</strong> e <strong>nyckel → nycklar</strong>. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en syster</strong>
+                  <small>uma irmã</small>
+                </span>
+                <span>
+                  <strong>systern</strong>
+                  <small>a irmã</small>
+                </span>
+                <span>
+                  <strong>systrar</strong>
+                  <small>irmãs</small>
+                </span>
+                <span>
+                  <strong>systrarna</strong>
+                  <small>as irmãs</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en nyckel</strong>
+                  <small>uma chave</small>
+                </span>
+                <span>
+                  <strong>nyckeln</strong>
+                  <small>a chave</small>
+                </span>
+                <span>
+                  <strong>nycklar</strong>
+                  <small>chaves</small>
+                </span>
+                <span>
+                  <strong>nycklarna</strong>
+                  <small>as chaves</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en dotter</strong>
+                  <small>uma filha</small>
+                </span>
+                <span>
+                  <strong>dottern</strong>
+                  <small>a filha</small>
+                </span>
+                <span>
+                  <strong>döttrar</strong>
+                  <small>filhas</small>
+                </span>
+                <span>
+                  <strong>döttrarna</strong>
+                  <small>as filhas</small>
+                </span>
+              </div>
+              <h4>4. Mudança de vogal</h4>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>ett land</strong>
+                  <small>um país</small>
+                </span>
+                <span>
+                  <strong>landet</strong>
+                  <small>o país</small>
+                </span>
+                <span>
+                  <strong>länder</strong>
+                  <small>países</small>
+                </span>
+                <span>
+                  <strong>länderna</strong>
+                  <small>os países</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en son</strong>
+                  <small>um filho</small>
+                </span>
+                <span>
+                  <strong>sonen</strong>
+                  <small>o filho</small>
+                </span>
+                <span>
+                  <strong>söner</strong>
+                  <small>filhos</small>
+                </span>
+                <span>
+                  <strong>sönerna</strong>
+                  <small>os filhos</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en bok</strong>
+                  <small>um livro</small>
+                </span>
+                <span>
+                  <strong>boken</strong>
+                  <small>o livro</small>
+                </span>
+                <span>
+                  <strong>böcker</strong>
+                  <small>livros</small>
+                </span>
+                <span>
+                  <strong>böckerna</strong>
+                  <small>os livros</small>
+                </span>
+              </div>
+              <h4>5. Formas especiais que vale memorizar</h4>
+              <p> Algumas palavras seguem padrões menos comuns. Como são frequentes, vale aprender o singular e o plural juntos. </p>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en tå</strong>
+                  <small>um dedo do pé</small>
+                </span>
+                <span>
+                  <strong>tån</strong>
+                  <small>o dedo do pé</small>
+                </span>
+                <span>
+                  <strong>tår</strong>
+                  <small>dedos do pé</small>
+                </span>
+                <span>
+                  <strong>tårna</strong>
+                  <small>os dedos do pé</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>en sko</strong>
+                  <small>um sapato</small>
+                </span>
+                <span>
+                  <strong>skon</strong>
+                  <small>o sapato</small>
+                </span>
+                <span>
+                  <strong>skor</strong>
+                  <small>sapatos</small>
+                </span>
+                <span>
+                  <strong>skorna</strong>
+                  <small>os sapatos</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>ett öga</strong>
+                  <small>um olho</small>
+                </span>
+                <span>
+                  <strong>ögat</strong>
+                  <small>o olho</small>
+                </span>
+                <span>
+                  <strong>ögon</strong>
+                  <small>olhos</small>
+                </span>
+                <span>
+                  <strong>ögonen</strong>
+                  <small>os olhos</small>
+                </span>
+              </div>
+              <div class="plural-example-grid">
+                <span>
+                  <strong>ett öra</strong>
+                  <small>uma orelha</small>
+                </span>
+                <span>
+                  <strong>örat</strong>
+                  <small>a orelha</small>
+                </span>
+                <span>
+                  <strong>öron</strong>
+                  <small>orelhas</small>
+                </span>
+                <span>
+                  <strong>öronen</strong>
+                  <small>as orelhas</small>
+                </span>
+              </div>
+            </article>
+          </div>
         </div>
-      </article>
-
-      <article class="plural-rule">
-        <h3>Grupo 4 — palavras ett terminadas em vogal</h3>
-        <p>
-          Palavras <em>ett</em> terminadas em vogal normalmente recebem
-          <strong>-n</strong> no plural indefinido e <strong>-a</strong>
-          no plural definido.
-        </p>
-
-        <div class="plural-example-grid">
-          <span><strong>ett äpple</strong><small>uma maçã</small></span>
-          <span><strong>äpplet</strong><small>a maçã</small></span>
-          <span><strong>äpplen</strong><small>maçãs</small></span>
-          <span><strong>äpplena</strong><small>as maçãs</small></span>
+      </section>
+      <section id="wordsScreen" class="words-screen hidden" aria-label="Palavras filtradas">
+        <button id="backFromWordsButton" class="back-button" type="button"> ← Voltar </button>
+        <div class="words-card">
+          <div class="words-heading">
+            <p class="eyebrow">Dicionário</p>
+            <h2 id="wordsScreenTitle">Palavras</h2>
+            <p id="wordsScreenDescription"> Lista gerada de acordo com os filtros escolhidos na configuração. </p>
+          </div>
+          <div class="words-toolbar">
+            <button id="wordsDirectionButton" class="theme-toggle-button" type="button"> Sueco → Português </button>
+            <p id="wordsCount" class="words-count"></p>
+          </div>
+          <div id="wordsList" class="words-list"></div>
         </div>
-      </article>
-
-      <article class="plural-rule">
-        <h3>Grupo 5 — palavras ett terminadas em consoante</h3>
-        <p>
-          Normalmente não recebem nenhuma terminação no plural indefinido.
-          No plural definido, acrescenta-se <strong>-en</strong>.
-        </p>
-
-        <div class="plural-example-grid">
-          <span><strong>ett päron</strong><small>uma pera</small></span>
-          <span><strong>päronet</strong><small>a pera</small></span>
-          <span><strong>päron</strong><small>peras</small></span>
-          <span><strong>päronen</strong><small>as peras</small></span>
+      </section>
+      <section id="summaryScreen" class="summary-screen hidden" aria-label="Resumo da sessão">
+        <div class="summary-card">
+          <h2>Resumo da sessão</h2>
+          <div class="summary-grid">
+            <div>
+              <span>Cards respondidos</span>
+              <strong id="summaryTotal">0</strong>
+            </div>
+            <div>
+              <span>Acertos</span>
+              <strong id="summaryCorrect">0</strong>
+            </div>
+            <div>
+              <span>Erros</span>
+              <strong id="summaryWrong">0</strong>
+            </div>
+            <div>
+              <span>Taxa de acerto</span>
+              <strong id="summaryCorrectRate">0%</strong>
+            </div>
+            <div>
+              <span>Tempo</span>
+              <strong id="summaryTime">00:00</strong>
+            </div>
+          </div>
+          <h3>Mais erradas nesta sessão</h3>
+          <ol id="summaryWrongList" class="summary-list"></ol>
+          <div class="summary-actions">
+            <button id="repeatSessionButton" class="button button-primary" type="button"> Repetir sessão </button>
+            <button id="newSessionButton" class="button button-secondary" type="button"> Nova configuração </button>
+          </div>
         </div>
-      </article>
-
-      <article class="plural-rule plural-rule-special">
-        <h3>Casos especiais</h3>
-
-        <h4>1. Palavras terminadas em -are</h4>
-        <p>O plural indefinido normalmente não recebe terminação.</p>
-
-        <div class="plural-example-grid">
-          <span><strong>en lärare</strong><small>um professor</small></span>
-          <span><strong>läraren</strong><small>o professor</small></span>
-          <span><strong>lärare</strong><small>professores</small></span>
-          <span><strong>lärarna</strong><small>os professores</small></span>
-        </div>
-
-        <h4>2. Palavras terminadas em -er</h4>
-
-        <div class="plural-example-grid">
-          <span><strong>en musiker</strong><small>um músico</small></span>
-          <span><strong>musikern</strong><small>o músico</small></span>
-          <span><strong>musiker</strong><small>músicos</small></span>
-          <span><strong>musikerna</strong><small>os músicos</small></span>
-        </div>
-
-        <h4>3. Queda de vogal</h4>
-
-        <div class="plural-example-grid">
-          <span><strong>en syster</strong><small>uma irmã</small></span>
-          <span><strong>systern</strong><small>a irmã</small></span>
-          <span><strong>systrar</strong><small>irmãs</small></span>
-          <span><strong>systrarna</strong><small>as irmãs</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en nyckel</strong><small>uma chave</small></span>
-          <span><strong>nyckeln</strong><small>a chave</small></span>
-          <span><strong>nycklar</strong><small>chaves</small></span>
-          <span><strong>nycklarna</strong><small>as chaves</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en dotter</strong><small>uma filha</small></span>
-          <span><strong>dottern</strong><small>a filha</small></span>
-          <span><strong>döttrar</strong><small>filhas</small></span>
-          <span><strong>döttrarna</strong><small>as filhas</small></span>
-        </div>
-
-        <h4>4. Mudança de vogal</h4>
-
-        <div class="plural-example-grid">
-          <span><strong>ett land</strong><small>um país</small></span>
-          <span><strong>landet</strong><small>o país</small></span>
-          <span><strong>länder</strong><small>países</small></span>
-          <span><strong>länderna</strong><small>os países</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en son</strong><small>um filho</small></span>
-          <span><strong>sonen</strong><small>o filho</small></span>
-          <span><strong>söner</strong><small>filhos</small></span>
-          <span><strong>sönerna</strong><small>os filhos</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en bok</strong><small>um livro</small></span>
-          <span><strong>boken</strong><small>o livro</small></span>
-          <span><strong>böcker</strong><small>livros</small></span>
-          <span><strong>böckerna</strong><small>os livros</small></span>
-        </div>
-
-        <h4>5. Plurais menos regulares</h4>
-
-        <div class="plural-example-grid">
-          <span><strong>en tå</strong><small>um dedo do pé</small></span>
-          <span><strong>tån</strong><small>o dedo do pé</small></span>
-          <span><strong>tår</strong><small>dedos do pé</small></span>
-          <span><strong>tårna</strong><small>os dedos do pé</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>en sko</strong><small>um sapato</small></span>
-          <span><strong>skon</strong><small>o sapato</small></span>
-          <span><strong>skor</strong><small>sapatos</small></span>
-          <span><strong>skorna</strong><small>os sapatos</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>ett öga</strong><small>um olho</small></span>
-          <span><strong>ögat</strong><small>o olho</small></span>
-          <span><strong>ögon</strong><small>olhos</small></span>
-          <span><strong>ögonen</strong><small>os olhos</small></span>
-        </div>
-
-        <div class="plural-example-grid">
-          <span><strong>ett öra</strong><small>uma orelha</small></span>
-          <span><strong>örat</strong><small>a orelha</small></span>
-          <span><strong>öron</strong><small>orelhas</small></span>
-          <span><strong>öronen</strong><small>as orelhas</small></span>
-        </div>
-
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="wordsScreen" class="words-screen hidden" aria-label="Palavras filtradas">
-  <button id="backFromWordsButton" class="back-button" type="button">
-    ← Voltar
-  </button>
-
-  <div class="words-card">
-    <div class="words-heading">
-       <p class="eyebrow">Dicionário</p>
-       <h2 id="wordsScreenTitle">Palavras</h2>
-       <p id="wordsScreenDescription">
-         Lista gerada de acordo com os filtros escolhidos na configuração.
-       </p>
-     </div>
-
-    <div class="words-toolbar">
-      <button id="wordsDirectionButton" class="theme-toggle-button" type="button">
-        Sueco → Português
-      </button>
-
-      <p id="wordsCount" class="words-count"></p>
-    </div>
-
-    <div id="wordsList" class="words-list"></div>
-  </div>
-</section>
-
-<section id="summaryScreen" class="summary-screen hidden" aria-label="Resumo da sessão">
-  <div class="summary-card">
-    <h2>Resumo da sessão</h2>
-
-    <div class="summary-grid">
-      <div>
-        <span>Cards respondidos</span>
-        <strong id="summaryTotal">0</strong>
-      </div>
-
-      <div>
-        <span>Acertos</span>
-        <strong id="summaryCorrect">0</strong>
-      </div>
-
-      <div>
-        <span>Erros</span>
-        <strong id="summaryWrong">0</strong>
-      </div>
-
-      <div>
-        <span>Taxa de acerto</span>
-        <strong id="summaryCorrectRate">0%</strong>
-      </div>
-
-<div>
-  <span>Tempo</span>
-  <strong id="summaryTime">00:00</strong>
-</div>
-    </div>
-
-    <h3>Mais erradas nesta sessão</h3>
-    <ol id="summaryWrongList" class="summary-list"></ol>
-
-    <div class="summary-actions">
-      <button id="repeatSessionButton" class="button button-primary" type="button">
-        Repetir sessão
-      </button>
-
-      <button id="newSessionButton" class="button button-secondary" type="button">
-        Nova configuração
-      </button>
-    </div>
-  </div>
-</section>
-
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
