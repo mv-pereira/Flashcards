@@ -1,7 +1,16 @@
 JSON="words.json"
-START_ID=400
+START_ID=657
 END_ID=$(jq '[.[].id] | max' "$JSON")
-DELAY=10
+
+DELAY_MIN=8
+DELAY_MAX=13
+
+random_delay() {
+  local delay
+  delay=$(( RANDOM % (DELAY_MAX - DELAY_MIN + 1) + DELAY_MIN ))
+  echo "Aguardando ${delay}s..."
+  sleep "$delay"
+}
 
 cp "$JSON" "$JSON.bak"
 
@@ -69,11 +78,11 @@ for ID in $(seq "$START_ID" "$END_ID"); do
     ][0] // empty
   ')
 
-if [ -z "$SWEDISH_INDEX" ]; then
-  echo "Sem seção Swedish."
-  sleep "$DELAY"
-  continue
-fi
+  if [ -z "$SWEDISH_INDEX" ]; then
+    echo "Sem seção Swedish."
+    random_delay
+    continue
+  fi
 
   FILE_TITLE=$(
     curl -fsSG \
@@ -97,7 +106,7 @@ fi
 
   if [ -z "$FILE_TITLE" ]; then
     echo "Nenhum arquivo .ogg ou .wav encontrado."
-    sleep "$DELAY"
+    random_delay
     continue
   fi
 
@@ -126,7 +135,7 @@ fi
 
   if [ -z "$AUDIO_URL" ]; then
     echo "Commons não retornou URL válido."
-    sleep "$DELAY"
+    random_delay
     continue
   fi
 
@@ -151,7 +160,7 @@ fi
     mv "$TMP" "$JSON"
 
   echo "Atualizado: $AUDIO_URL"
-  sleep "$DELAY"
+  random_delay
 done
 
 echo
