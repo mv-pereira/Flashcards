@@ -16218,8 +16218,8 @@
     "order": 496,
     "active": true,
     "term": {
-      "swedish": "städar",
-      "portuguese": "limpa / arruma"
+      "swedish": "städa",
+      "portuguese": "limpar / arrumar"
     },
     "grammar": {
       "type": "verbo",
@@ -16241,7 +16241,7 @@
     },
     "media": {
       "audio": {
-        "src": null
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sv-st%C3%A4da.ogg"
       }
     }
   },
@@ -16250,7 +16250,7 @@
     "order": 497,
     "active": true,
     "term": {
-      "swedish": "hjälper",
+      "swedish": "hjälpa",
       "portuguese": "ajuda"
     },
     "grammar": {
@@ -16273,7 +16273,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sv-hj%C3%A4lper.ogg"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Sv-hj%C3%A4lpa.ogg"
       }
     }
   },
