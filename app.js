@@ -160,6 +160,11 @@ const flashcard = document.querySelector("#flashcard");
 const answerText = document.querySelector("#answerText");
 const answerGrammarForm = document.querySelector("#answerGrammarForm");
 
+const pronunciationButton = document.querySelector("#pronunciationButton");
+
+const frontPronunciationButton = document.querySelector("#frontPronunciationButton");
+const backPronunciationButton = document.querySelector("#backPronunciationButton");
+
 const resultButtons = document.querySelector("#resultButtons");
 const correctButton = document.querySelector("#correctButton");
 const wrongButton = document.querySelector("#wrongButton");
@@ -1250,11 +1255,51 @@ function getCardContent(card) {
 }
 
 function showQuestionMedia(card, questionType) {
-	hideQuestionAudio();
+  hideQuestionAudio();
 
-	if (questionType === "audio") {
-		showAudioIfAvailable(card);
-	}
+  updatePronunciationButton(card);
+
+  if (questionType === "audio") {
+    showAudioIfAvailable(card);
+  }
+}
+
+function updatePronunciationButton(card) {
+  const audioSrc = card?.media?.audio?.src;
+  const direction = directionSelect.value;
+
+  if (!audioSrc || (direction !== "sv-pt" && direction !== "pt-sv")) {
+    pronunciationButton.classList.add("hidden");
+    return;
+  }
+
+  const targetFace =
+    direction === "sv-pt"
+      ? flashcard.querySelector(".card-front")
+      : flashcard.querySelector(".card-back");
+
+  targetFace.appendChild(pronunciationButton);
+
+  pronunciationButton.classList.remove("hidden");
+}
+
+function playCurrentCardPronunciation(event) {
+  event.stopPropagation();
+
+  const card = cards[currentIndex];
+  const audioSrc = card?.media?.audio?.src;
+
+  if (!audioSrc) {
+    return;
+  }
+
+  cardAudio.pause();
+  cardAudio.src = audioSrc;
+  cardAudio.currentTime = 0;
+
+  cardAudio.play().catch((error) => {
+    console.error("Erro ao tocar pronúncia:", error);
+  });
 }
 
 function showAudioIfAvailable(card) {
@@ -2910,6 +2955,11 @@ sourceFilterGroup.addEventListener("change", () => {
 	setupMessage.textContent = "";
 	updateSourceSpecificFilters();
 });
+
+pronunciationButton.addEventListener(
+  "click",
+  playCurrentCardPronunciation
+);
 
 applySavedTheme();
 updateNewWordsModeUI();
