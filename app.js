@@ -1277,20 +1277,20 @@ function hideQuestionAudio() {
 }
 
 function revealAnswer() {
-	if (answerVisible || isChangingCard) {
-		return;
-	}
+    if (isChangingCard) {
+        return;
+    }
 
-	if (getAnswerMode() === "write") {
-		return;
-	}
+    if (getAnswerMode() === "write") {
+        return;
+    }
 
-	answerVisible = true;
+    answerVisible = !answerVisible;
 
-	flashcard.classList.add("flipped");
-	correctButton.disabled = false;
-	wrongButton.disabled = false;
+    flashcard.classList.toggle("flipped", answerVisible);
 
+    correctButton.disabled = !answerVisible;
+    wrongButton.disabled = !answerVisible;
 }
 
 function wait(ms) {
