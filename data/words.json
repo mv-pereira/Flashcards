@@ -7271,7 +7271,7 @@
     "active": true,
     "term": {
       "swedish": "din",
-      "portuguese": "seu; sua; teu; tua"
+      "portuguese": "teu (en)"
     },
     "grammar": {
       "type": "outros",
@@ -16251,7 +16251,7 @@
     "active": true,
     "term": {
       "swedish": "hjälpa",
-      "portuguese": "ajuda"
+      "portuguese": "ajudar"
     },
     "grammar": {
       "type": "verbo",
@@ -20037,7 +20037,7 @@
     "active": true,
     "term": {
       "swedish": "min",
-      "portuguese": "meu / minha"
+      "portuguese": "meu (en)"
     },
     "grammar": {
       "type": "pronome",
@@ -20069,7 +20069,7 @@
     "active": true,
     "term": {
       "swedish": "mitt",
-      "portuguese": "meu / minha"
+      "portuguese": "meu (ett)"
     },
     "grammar": {
       "type": "pronome",
@@ -20101,7 +20101,7 @@
     "active": true,
     "term": {
       "swedish": "mina",
-      "portuguese": "meus / minhas"
+      "portuguese": "meus"
     },
     "grammar": {
       "type": "pronome",
@@ -20133,7 +20133,7 @@
     "active": true,
     "term": {
       "swedish": "ditt",
-      "portuguese": "seu / sua"
+      "portuguese": "teu (ett)"
     },
     "grammar": {
       "type": "pronome",
@@ -20165,7 +20165,7 @@
     "active": true,
     "term": {
       "swedish": "dina",
-      "portuguese": "seus / suas"
+      "portuguese": "teus"
     },
     "grammar": {
       "type": "pronome",
@@ -20293,7 +20293,7 @@
     "active": true,
     "term": {
       "swedish": "dess",
-      "portuguese": "seu / sua (de coisa/animal)"
+      "portuguese": "dele (de coisa/animal)"
     },
     "grammar": {
       "type": "pronome",
@@ -20357,7 +20357,7 @@
     "active": true,
     "term": {
       "swedish": "vårt",
-      "portuguese": "nosso / nossa"
+      "portuguese": "nosso (ett)"
     },
     "grammar": {
       "type": "pronome",
@@ -20389,7 +20389,7 @@
     "active": true,
     "term": {
       "swedish": "våra",
-      "portuguese": "nossos / nossas"
+      "portuguese": "nossos"
     },
     "grammar": {
       "type": "pronome",
@@ -20421,7 +20421,7 @@
     "active": true,
     "term": {
       "swedish": "er",
-      "portuguese": "seu / sua / de vocês"
+      "portuguese": "vosso (en)"
     },
     "grammar": {
       "type": "pronome",
@@ -20453,7 +20453,7 @@
     "active": true,
     "term": {
       "swedish": "ert",
-      "portuguese": "seu / sua / de vocês"
+      "portuguese": "vosso (ett)"
     },
     "grammar": {
       "type": "pronome",
@@ -20485,7 +20485,7 @@
     "active": true,
     "term": {
       "swedish": "era",
-      "portuguese": "seus / suas / de vocês"
+      "portuguese": "vossos"
     },
     "grammar": {
       "type": "pronome",
@@ -20517,7 +20517,7 @@
     "active": true,
     "term": {
       "swedish": "deras",
-      "portuguese": "deles / delas"
+      "portuguese": "deles"
     },
     "grammar": {
       "type": "pronome",
@@ -21500,6 +21500,38 @@
     "media": {
       "audio": {
         "src": null
+      }
+    }
+  },
+  {
+    "id": 658,
+    "order": 658,
+    "active": true,
+    "term": {
+      "swedish": "vår",
+      "portuguese": "nosso (en)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 5,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Sv-v%C3%A5r.ogg"
       }
     }
   }
