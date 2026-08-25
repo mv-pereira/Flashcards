@@ -33,6 +33,7 @@ let wordsDirection = "sv-pt";
 let wordsViewMode = "all";
 let expandedWordCardId = null;
 
+
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
@@ -2410,6 +2411,7 @@ function openWordsScreen(viewMode = "all") {
 	wordsViewMode = viewMode;
 
 	expandedWordCardId = null;
+        expandedWordsLetter = null;
 
 	setupScreen.classList.add("hidden");
 	studyScreen.classList.add("hidden");
@@ -2437,36 +2439,55 @@ function backFromWordsScreen() {
 function toggleWordsDirection() {
 	wordsDirection = wordsDirection === "sv-pt" ? "pt-sv" : "sv-pt";
 	expandedWordCardId = null;
+        expandedWordsLetter = null;
 	renderWordsList();
 }
 
 function renderWordsList() {
-	if (!wordsList) {
-		return;
-	}
+    if (!wordsList) {
+        return;
+    }
 
-	const filteredCards = getCardsForWordsView();
+    const filteredCards = getCardsForWordsView();
 
-	updateWordsScreenText(filteredCards.length);
+    updateWordsScreenText(filteredCards.length);
 
-	wordsDirectionButton.textContent =
-		wordsDirection === "sv-pt" ? "Sueco → Português" : "Português → Sueco";
+    wordsDirectionButton.textContent =
+        wordsDirection === "sv-pt"
+            ? "Sueco → Português"
+            : "Português → Sueco";
 
-	wordsList.innerHTML = "";
+    wordsList.innerHTML = "";
 
-	if (filteredCards.length === 0) {
-		const emptyMessage = document.createElement("p");
-		emptyMessage.className = "words-empty";
-		emptyMessage.textContent = getEmptyWordsMessage();
-		wordsList.appendChild(emptyMessage);
-		return;
-	}
+    if (filteredCards.length === 0) {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.className = "words-empty";
+        emptyMessage.textContent = getEmptyWordsMessage();
+        wordsList.appendChild(emptyMessage);
+        return;
+    }
 
-	const sortedCards = sortCardsForWordsView(filteredCards);
+    const sortedCards = sortCardsForWordsView(filteredCards);
 
-	sortedCards.forEach((card) => {
-		wordsList.appendChild(createWordItem(card));
-	});
+    // Mantém "Revisar erros" como está hoje:
+    // ordenado pela quantidade/taxa de erros.
+    if (wordsViewMode === "wrong") {
+        sortedCards.forEach((card) => {
+            wordsList.appendChild(createWordItem(card));
+        });
+
+        return;
+    }
+
+    // Tela normal "Palavras":
+    // agrupa alfabeticamente.
+    const groupedCards = groupCardsByInitial(sortedCards);
+
+    groupedCards.forEach((cardsInGroup, letter) => {
+        wordsList.appendChild(
+            createWordLetterGroup(letter, cardsInGroup)
+        );
+    });
 }
 
 function getCardsForWordsView() {
@@ -2522,6 +2543,102 @@ function getWordSortText(card) {
 	}
 
 	return card.term?.portuguese || "";
+}
+
+function getWordInitial(card) {
+    const text = getWordSortText(card).trim();
+
+    if (!text) {
+        return "#";
+    }
+
+    const locale =
+        wordsDirection === "sv-pt"
+            ? "sv-SE"
+            : "pt-BR";
+
+    let initial = Array.from(text)[0].toLocaleUpperCase(locale);
+
+    // Em português, Á/Ã/Â ficam junto de A,
+    // É/Ê junto de E etc.
+    if (wordsDirection === "pt-sv") {
+        initial = initial
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    return initial;
+}
+
+function groupCardsByInitial(cardList) {
+    const groups = new Map();
+
+    cardList.forEach((card) => {
+        const letter = getWordInitial(card);
+
+        if (!groups.has(letter)) {
+            groups.set(letter, []);
+        }
+
+        groups.get(letter).push(card);
+    });
+
+    return groups;
+}
+
+function createWordLetterGroup(letter, cardList) {
+    const details = document.createElement("details");
+    details.className = "word-letter-group";
+    details.dataset.letter = letter;
+
+    // Reabre a letra depois que uma palavra individual
+    // for expandida.
+    details.open = expandedWordsLetter === letter;
+
+    const summary = document.createElement("summary");
+    summary.className = "word-letter-summary";
+
+    const letterText = document.createElement("strong");
+    letterText.textContent = letter;
+
+    const count = document.createElement("span");
+    count.className = "word-letter-count";
+    count.textContent =
+        `${cardList.length} ${cardList.length === 1 ? "palavra" : "palavras"}`;
+
+    summary.append(letterText, count);
+
+    const content = document.createElement("div");
+    content.className = "word-letter-content";
+
+    cardList.forEach((card) => {
+        content.appendChild(createWordItem(card));
+    });
+
+    details.append(summary, content);
+
+    details.addEventListener("toggle", () => {
+        if (!details.open) {
+            if (expandedWordsLetter === letter) {
+                expandedWordsLetter = null;
+            }
+
+            return;
+        }
+
+        expandedWordsLetter = letter;
+
+        // Fecha todas as outras letras.
+        wordsList
+            .querySelectorAll(".word-letter-group")
+            .forEach((group) => {
+                if (group !== details) {
+                    group.open = false;
+                }
+            });
+    });
+
+    return details;
 }
 
 function sortCardsForWordsView(cardList) {
