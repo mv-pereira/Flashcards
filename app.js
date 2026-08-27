@@ -37,6 +37,9 @@ let expandedWordCardId = null;
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
+const UNDEREXPOSURE_PRIORITY_PER_VIEW = 25;
+const UNDEREXPOSURE_MAX_GAP = 6;
+
 const PRONUNCIATION_RULES = [{
 		title: "1. A vogal depois de SK, G e K muda o som",
 		text: "Quando SK, G ou K vêm antes de A, O, U ou Å, o som tende a ser mais “duro”. Antes de E, I, Y, Ä ou Ö, o som costuma ficar mais “suave”.",
@@ -249,7 +252,7 @@ function getCardStats(cardId) {
 	}
 
 	if (stats[key].lapses === undefined) {
-		stats[key].lapses = stats[key].wrong || 0;
+		stats[key].lapses = 0;
 	}
 
 	if (stats[key].priority === undefined) {
@@ -278,6 +281,10 @@ function updateCardStats(card, isCorrect) {
 	const cardStats = getCardStats(card.id);
 	const now = new Date();
 
+	// Guarda o estado ANTES da resposta atual
+	const previousMastery = cardStats.mastery || 0;
+	const previousStreak = cardStats.streak || 0;
+
 	cardStats.seen++;
 	cardStats.lastSeen = now.toISOString();
 	cardStats.lastAnsweredAt = now.toISOString();
@@ -285,14 +292,33 @@ function updateCardStats(card, isCorrect) {
 	if (isCorrect) {
 		cardStats.correct++;
 		cardStats.lastResult = "correct";
-		cardStats.streak = (cardStats.streak || 0) + 1;
-		cardStats.mastery = clamp((cardStats.mastery || 0) + getCorrectMasteryGain(cardStats), -6, 10);
+		cardStats.streak = previousStreak + 1;
+
+		cardStats.mastery = clamp(
+			previousMastery + getCorrectMasteryGain(cardStats),
+			-6,
+			10
+		);
 	} else {
 		cardStats.wrong++;
 		cardStats.lastResult = "wrong";
+
+		// Só é lapse se a palavra já estava aprendida
+		const wasLearned =
+			previousStreak >= 3 ||
+			previousMastery >= 4;
+
+		if (wasLearned) {
+			cardStats.lapses = (cardStats.lapses || 0) + 1;
+		}
+
 		cardStats.streak = 0;
-		cardStats.lapses = (cardStats.lapses || 0) + 1;
-		cardStats.mastery = clamp((cardStats.mastery || 0) - 3, -6, 10);
+
+		cardStats.mastery = clamp(
+			previousMastery - 3,
+			-6,
+			10
+		);
 	}
 
 	cardStats.priority = calculateCardPriority(cardStats);
@@ -314,18 +340,28 @@ function getCorrectMasteryGain(cardStats) {
 	return 1.5;
 }
 
+function getMaxSeenAmongCards(cardList = baseSessionCards) {
+	if (!cardList || cardList.length === 0) {
+		return 0;
+	}
+
+	return Math.max(
+		0,
+		...cardList.map((card) => {
+			return stats[String(card.id)]?.seen || 0;
+		})
+	);
+}
+
 function calculateCardPriority(cardStats) {
 	const seen = cardStats.seen || 0;
 	const wrong = cardStats.wrong || 0;
 	const mastery = cardStats.mastery || 0;
 	const lapses = cardStats.lapses || 0;
 
-	if (seen === 0) {
-		return 120;
-	}
-
 	let priority = 80;
 
+	// Prioridade pela dificuldade
 	priority += wrong * 14;
 	priority += lapses * 6;
 	priority -= mastery * 9;
@@ -335,7 +371,23 @@ function calculateCardPriority(cardStats) {
 		priority += 45;
 	}
 
-	return clamp(Math.round(priority), 5, 180);
+	// Prioridade por pouca exposição
+	const maxSeen = getMaxSeenAmongCards();
+
+	const exposureGap = clamp(
+		maxSeen - seen,
+		0,
+		UNDEREXPOSURE_MAX_GAP
+	);
+
+	priority += exposureGap * UNDEREXPOSURE_PRIORITY_PER_VIEW;
+
+	// Cards nunca vistos continuam com prioridade alta
+	if (seen === 0) {
+		priority += 50;
+	}
+
+	return clamp(Math.round(priority), 5, 220);
 }
 
 function fillFilterOptions() {
@@ -1479,24 +1531,43 @@ function buildWeightedDeck(filteredCards) {
 }
 
 function buildSrsDeck(filteredCards) {
-	const deck = [];
+	if (filteredCards.length === 0) {
+		return [];
+	}
 
-	filteredCards.forEach((card) => {
+	const sortedCards = [...filteredCards].sort((cardA, cardB) => {
+		const statsA = getCardStats(cardA.id);
+		const statsB = getCardStats(cardB.id);
+
+		const priorityA = calculateCardPriority(statsA);
+		const priorityB = calculateCardPriority(statsB);
+
+		// Primeiro: maior prioridade
+		if (priorityA !== priorityB) {
+			return priorityB - priorityA;
+		}
+
+		// Em empate: menos vista primeiro
+		return (statsA.seen || 0) - (statsB.seen || 0);
+	});
+
+	const firstPass = sortedCards.map(createStudyOccurrence);
+	const extraCards = [];
+
+	sortedCards.forEach((card) => {
 		const cardStats = getCardStats(card.id);
 		const repeatCount = getImmediateSrsRepeatCount(cardStats);
 
-		for (let i = 0; i < repeatCount; i++) {
-			deck.push(createStudyOccurrence(card));
+		// A primeira ocorrência já está em firstPass.
+		for (let i = 1; i < repeatCount; i++) {
+			extraCards.push(createStudyOccurrence(card));
 		}
 	});
 
-	if (deck.length === 0) {
-		return shuffleArray(
-			filteredCards.map(createStudyOccurrence)
-		);
-	}
-
-	return shuffleArray(deck);
+	return [
+		...firstPass,
+		...shuffleArray(extraCards)
+	];
 }
 
 function getImmediateSrsRepeatCount(cardStats) {
