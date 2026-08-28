@@ -39,7 +39,11 @@
     "active": true,
     "term": {
       "swedish": "äta",
-      "portuguese": "comer"
+      "portuguese": "comer",
+      "portugueseInfinitive": "comer",
+      "portuguesePresent": "come",
+      "portuguesePast": "comeu",
+      "portugueseSupine": "comido"
     },
     "grammar": {
       "type": "verbo",
@@ -2665,7 +2669,11 @@
     "active": true,
     "term": {
       "swedish": "arbeta",
-      "portuguese": "trabalhar"
+      "portuguese": "trabalhar",
+      "portugueseInfinitive": "trabalhar",
+      "portuguesePresent": "trabalha",
+      "portuguesePast": "trabalhou",
+      "portugueseSupine": "trabalhado"
     },
     "grammar": {
       "type": "verbo",
@@ -2697,7 +2705,11 @@
     "active": true,
     "term": {
       "swedish": "jobba",
-      "portuguese": "trabalhar (informal)"
+      "portuguese": "trabalhar (informal)",
+      "portugueseInfinitive": "trabalhar (informal)",
+      "portuguesePresent": "trabalha (informal)",
+      "portuguesePast": "trabalhou (informal)",
+      "portugueseSupine": "trabalhado (informal)"
     },
     "grammar": {
       "type": "verbo",
@@ -2729,7 +2741,11 @@
     "active": true,
     "term": {
       "swedish": "studera",
-      "portuguese": "estudar"
+      "portuguese": "estudar",
+      "portugueseInfinitive": "estudar",
+      "portuguesePresent": "estuda",
+      "portuguesePast": "estudou",
+      "portugueseSupine": "estudado"
     },
     "grammar": {
       "type": "verbo",
@@ -2761,7 +2777,11 @@
     "active": true,
     "term": {
       "swedish": "plugga",
-      "portuguese": "estudar (informal)"
+      "portuguese": "estudar (informal)",
+      "portugueseInfinitive": "estudar (informal)",
+      "portuguesePresent": "estuda (informal)",
+      "portuguesePast": "estudou (informal)",
+      "portugueseSupine": "estudado (informal)"
     },
     "grammar": {
       "type": "verbo",
@@ -2793,7 +2813,11 @@
     "active": true,
     "term": {
       "swedish": "forska",
-      "portuguese": "pesquisar / fazer pesquisa"
+      "portuguese": "pesquisar / fazer pesquisa",
+      "portugueseInfinitive": "pesquisar / fazer pesquisa",
+      "portuguesePresent": "pesquisa / faz pesquisa",
+      "portuguesePast": "pesquisou / fez pesquisa",
+      "portugueseSupine": "pesquisado / feito pesquisa"
     },
     "grammar": {
       "type": "verbo",
@@ -2825,7 +2849,11 @@
     "active": true,
     "term": {
       "swedish": "undervisa",
-      "portuguese": "ensinar"
+      "portuguese": "ensinar",
+      "portugueseInfinitive": "ensinar",
+      "portuguesePresent": "ensina",
+      "portuguesePast": "ensinou",
+      "portugueseSupine": "ensinado"
     },
     "grammar": {
       "type": "verbo",
@@ -2857,7 +2885,11 @@
     "active": true,
     "term": {
       "swedish": "tala",
-      "portuguese": "falar"
+      "portuguese": "falar",
+      "portugueseInfinitive": "falar",
+      "portuguesePresent": "fala",
+      "portuguesePast": "falou",
+      "portugueseSupine": "falado"
     },
     "grammar": {
       "type": "verbo",
@@ -2889,7 +2921,11 @@
     "active": true,
     "term": {
       "swedish": "prata",
-      "portuguese": "falar (informal)"
+      "portuguese": "falar (informal)",
+      "portugueseInfinitive": "falar (informal)",
+      "portuguesePresent": "fala (informal)",
+      "portuguesePast": "falou (informal)",
+      "portugueseSupine": "falado (informal)"
     },
     "grammar": {
       "type": "verbo",
@@ -3215,7 +3251,11 @@
     "active": true,
     "term": {
       "swedish": "göra",
-      "portuguese": "fazer"
+      "portuguese": "fazer",
+      "portugueseInfinitive": "fazer",
+      "portuguesePresent": "faz",
+      "portuguesePast": "fez",
+      "portugueseSupine": "feito"
     },
     "grammar": {
       "type": "verbo",
@@ -3343,7 +3383,11 @@
     "active": true,
     "term": {
       "swedish": "komma",
-      "portuguese": "vir"
+      "portuguese": "vir",
+      "portugueseInfinitive": "vir",
+      "portuguesePresent": "vem",
+      "portuguesePast": "veio",
+      "portugueseSupine": "vindo"
     },
     "grammar": {
       "type": "verbo",
@@ -3375,7 +3419,11 @@
     "active": true,
     "term": {
       "swedish": "heta",
-      "portuguese": "chamar-se"
+      "portuguese": "chamar-se",
+      "portugueseInfinitive": "chamar-se",
+      "portuguesePresent": "chama-se",
+      "portuguesePast": "chamou-se",
+      "portugueseSupine": "chamado"
     },
     "grammar": {
       "type": "verbo",
@@ -3407,7 +3455,11 @@
     "active": true,
     "term": {
       "swedish": "bo",
-      "portuguese": "morar"
+      "portuguese": "morar",
+      "portugueseInfinitive": "morar",
+      "portuguesePresent": "mora",
+      "portuguesePast": "morou",
+      "portugueseSupine": "morado"
     },
     "grammar": {
       "type": "verbo",
@@ -3439,7 +3491,11 @@
     "active": true,
     "term": {
       "swedish": "förstå",
-      "portuguese": "entender"
+      "portuguese": "entender",
+      "portugueseInfinitive": "entender",
+      "portuguesePresent": "entende",
+      "portuguesePast": "entendeu",
+      "portugueseSupine": "entendido"
     },
     "grammar": {
       "type": "verbo",
@@ -3471,7 +3527,11 @@
     "active": true,
     "term": {
       "swedish": "må",
-      "portuguese": "sentir-se / estar"
+      "portuguese": "sentir-se / estar",
+      "portugueseInfinitive": "sentir-se / estar",
+      "portuguesePresent": "sente-se / está",
+      "portuguesePast": "sentiu-se / esteve",
+      "portugueseSupine": "sentido / estado"
     },
     "grammar": {
       "type": "verbo",
@@ -3503,7 +3563,11 @@
     "active": true,
     "term": {
       "swedish": "vara",
-      "portuguese": "ser / estar"
+      "portuguese": "ser / estar",
+      "portugueseInfinitive": "ser / estar",
+      "portuguesePresent": "é / está",
+      "portuguesePast": "foi / esteve",
+      "portugueseSupine": "sido / estado"
     },
     "grammar": {
       "type": "verbo",
@@ -3535,7 +3599,11 @@
     "active": true,
     "term": {
       "swedish": "göra",
-      "portuguese": "fazer"
+      "portuguese": "fazer",
+      "portugueseInfinitive": "fazer",
+      "portuguesePresent": "faz",
+      "portuguesePast": "fez",
+      "portugueseSupine": "feito"
     },
     "grammar": {
       "type": "verbo",
@@ -4471,7 +4539,11 @@
     "active": true,
     "term": {
       "swedish": "ringa",
-      "portuguese": "tocar / telefonar"
+      "portuguese": "tocar / telefonar",
+      "portugueseInfinitive": "tocar / telefonar",
+      "portuguesePresent": "toca / telefona",
+      "portuguesePast": "tocou / telefonou",
+      "portugueseSupine": "tocado / telefonado"
     },
     "grammar": {
       "type": "verbo",
@@ -4505,7 +4577,11 @@
     "active": true,
     "term": {
       "swedish": "känna",
-      "portuguese": "sentir"
+      "portuguese": "sentir",
+      "portugueseInfinitive": "sentir",
+      "portuguesePresent": "sente",
+      "portuguesePast": "sentiu",
+      "portugueseSupine": "sentido"
     },
     "grammar": {
       "type": "verbo",
@@ -4539,7 +4615,11 @@
     "active": true,
     "term": {
       "swedish": "blekna",
-      "portuguese": "desbotar / empalidecer"
+      "portuguese": "desbotar / empalidecer",
+      "portugueseInfinitive": "desbotar / empalidecer",
+      "portuguesePresent": "desbota / empalidece",
+      "portuguesePast": "desbotou / empalideceu",
+      "portugueseSupine": "desbotado / empalidecido"
     },
     "grammar": {
       "type": "verbo",
@@ -4573,7 +4653,11 @@
     "active": true,
     "term": {
       "swedish": "vända",
-      "portuguese": "virar / mudar de direção"
+      "portuguese": "virar / mudar de direção",
+      "portugueseInfinitive": "virar / mudar de direção",
+      "portuguesePresent": "vira / muda de direção",
+      "portuguesePast": "virou / mudou de direção",
+      "portugueseSupine": "virado / mudado de direção"
     },
     "grammar": {
       "type": "verbo",
@@ -4607,7 +4691,11 @@
     "active": true,
     "term": {
       "swedish": "resa",
-      "portuguese": "erguer / levantar"
+      "portuguese": "erguer / levantar",
+      "portugueseInfinitive": "erguer / levantar",
+      "portuguesePresent": "ergue / levanta",
+      "portuguesePast": "ergueu / levantou",
+      "portugueseSupine": "erguido / levantado"
     },
     "grammar": {
       "type": "verbo",
@@ -4641,7 +4729,11 @@
     "active": true,
     "term": {
       "swedish": "rulla",
-      "portuguese": "rolar / andar sobre rodas"
+      "portuguese": "rolar / andar sobre rodas",
+      "portugueseInfinitive": "rolar / andar sobre rodas",
+      "portuguesePresent": "rola / anda sobre rodas",
+      "portuguesePast": "rolou / andou sobre rodas",
+      "portugueseSupine": "rolado / andado sobre rodas"
     },
     "grammar": {
       "type": "verbo",
@@ -4675,7 +4767,11 @@
     "active": true,
     "term": {
       "swedish": "hälsa",
-      "portuguese": "cumprimentar / saudar"
+      "portuguese": "cumprimentar / saudar",
+      "portugueseInfinitive": "cumprimentar / saudar",
+      "portuguesePresent": "cumprimenta / saúda",
+      "portuguesePast": "cumprimentou / saudou",
+      "portugueseSupine": "cumprimentado / saudado"
     },
     "grammar": {
       "type": "verbo",
@@ -4743,7 +4839,11 @@
     "active": true,
     "term": {
       "swedish": "jaga",
-      "portuguese": "perseguir / caçar"
+      "portuguese": "perseguir / caçar",
+      "portugueseInfinitive": "perseguir / caçar",
+      "portuguesePresent": "persegue / caça",
+      "portuguesePast": "perseguiu / caçou",
+      "portugueseSupine": "perseguido / caçado"
     },
     "grammar": {
       "type": "verbo",
@@ -4777,7 +4877,11 @@
     "active": true,
     "term": {
       "swedish": "finnas",
-      "portuguese": "existir / haver"
+      "portuguese": "existir / haver",
+      "portugueseInfinitive": "existir / haver",
+      "portuguesePresent": "existe / há",
+      "portuguesePast": "existiu / houve",
+      "portugueseSupine": "existido / havido"
     },
     "grammar": {
       "type": "verbo",
@@ -4811,7 +4915,11 @@
     "active": true,
     "term": {
       "swedish": "dunsta",
-      "portuguese": "evaporar"
+      "portuguese": "evaporar",
+      "portugueseInfinitive": "evaporar",
+      "portuguesePresent": "evapora",
+      "portuguesePast": "evaporou",
+      "portugueseSupine": "evaporado"
     },
     "grammar": {
       "type": "verbo",
@@ -4845,7 +4953,11 @@
     "active": true,
     "term": {
       "swedish": "tystna",
-      "portuguese": "silenciar / calar-se"
+      "portuguese": "silenciar / calar-se",
+      "portugueseInfinitive": "silenciar / calar-se",
+      "portuguesePresent": "silencia / cala-se",
+      "portuguesePast": "silenciou / calou-se",
+      "portugueseSupine": "silenciado / calado"
     },
     "grammar": {
       "type": "verbo",
@@ -4879,7 +4991,11 @@
     "active": true,
     "term": {
       "swedish": "köpa",
-      "portuguese": "comprar"
+      "portuguese": "comprar",
+      "portugueseInfinitive": "comprar",
+      "portuguesePresent": "compra",
+      "portuguesePast": "comprou",
+      "portugueseSupine": "comprado"
     },
     "grammar": {
       "type": "verbo",
@@ -4913,7 +5029,11 @@
     "active": true,
     "term": {
       "swedish": "beskriva",
-      "portuguese": "descrever"
+      "portuguese": "descrever",
+      "portugueseInfinitive": "descrever",
+      "portuguesePresent": "descreve",
+      "portuguesePast": "descreveu",
+      "portugueseSupine": "descrito"
     },
     "grammar": {
       "type": "verbo",
@@ -4981,7 +5101,11 @@
     "active": true,
     "term": {
       "swedish": "veta",
-      "portuguese": "saber"
+      "portuguese": "saber",
+      "portugueseInfinitive": "saber",
+      "portuguesePresent": "sabe",
+      "portuguesePast": "soube",
+      "portugueseSupine": "sabido"
     },
     "grammar": {
       "type": "verbo",
@@ -5015,7 +5139,11 @@
     "active": true,
     "term": {
       "swedish": "tänka",
-      "portuguese": "pensar"
+      "portuguese": "pensar",
+      "portugueseInfinitive": "pensar",
+      "portuguesePresent": "pensa",
+      "portuguesePast": "pensou",
+      "portugueseSupine": "pensado"
     },
     "grammar": {
       "type": "verbo",
@@ -5049,7 +5177,11 @@
     "active": true,
     "term": {
       "swedish": "klappa",
-      "portuguese": "bater / pulsar"
+      "portuguese": "bater / pulsar",
+      "portugueseInfinitive": "bater / pulsar",
+      "portuguesePresent": "bate / pulsa",
+      "portuguesePast": "bateu / pulsou",
+      "portugueseSupine": "batido / pulsado"
     },
     "grammar": {
       "type": "verbo",
@@ -5083,7 +5215,11 @@
     "active": true,
     "term": {
       "swedish": "vibrera",
-      "portuguese": "vibrar"
+      "portuguese": "vibrar",
+      "portugueseInfinitive": "vibrar",
+      "portuguesePresent": "vibra",
+      "portuguesePast": "vibrou",
+      "portugueseSupine": "vibrado"
     },
     "grammar": {
       "type": "verbo",
@@ -5117,7 +5253,11 @@
     "active": true,
     "term": {
       "swedish": "sjunga",
-      "portuguese": "cantar"
+      "portuguese": "cantar",
+      "portugueseInfinitive": "cantar",
+      "portuguesePresent": "canta",
+      "portuguesePast": "cantou",
+      "portugueseSupine": "cantado"
     },
     "grammar": {
       "type": "verbo",
@@ -5151,7 +5291,11 @@
     "active": true,
     "term": {
       "swedish": "hända",
-      "portuguese": "acontecer"
+      "portuguese": "acontecer",
+      "portugueseInfinitive": "acontecer",
+      "portuguesePresent": "acontece",
+      "portuguesePast": "aconteceu",
+      "portugueseSupine": "acontecido"
     },
     "grammar": {
       "type": "verbo",
@@ -11223,7 +11367,11 @@
     "active": true,
     "term": {
       "swedish": "boka",
-      "portuguese": "reservar / marcar"
+      "portuguese": "reservar / marcar",
+      "portugueseInfinitive": "reservar / marcar",
+      "portuguesePresent": "reserva / marca",
+      "portuguesePast": "reservou / marcou",
+      "portugueseSupine": "reservado / marcado"
     },
     "grammar": {
       "type": "verbo",
@@ -11515,7 +11663,11 @@
     "active": true,
     "term": {
       "swedish": "öppna",
-      "portuguese": "abrir"
+      "portuguese": "abrir",
+      "portugueseInfinitive": "abrir",
+      "portuguesePresent": "abre",
+      "portuguesePast": "abriu",
+      "portugueseSupine": "aberto"
     },
     "grammar": {
       "type": "verbo",
@@ -11547,7 +11699,11 @@
     "active": true,
     "term": {
       "swedish": "stänga",
-      "portuguese": "fechar"
+      "portuguese": "fechar",
+      "portugueseInfinitive": "fechar",
+      "portuguesePresent": "fecha",
+      "portuguesePast": "fechou",
+      "portugueseSupine": "fechado"
     },
     "grammar": {
       "type": "verbo",
@@ -12175,7 +12331,11 @@
     "active": true,
     "term": {
       "swedish": "vakna",
-      "portuguese": "acordar"
+      "portuguese": "acordar",
+      "portugueseInfinitive": "acordar",
+      "portuguesePresent": "acorda",
+      "portuguesePast": "acordou",
+      "portugueseSupine": "acordado"
     },
     "grammar": {
       "type": "verbo",
@@ -12463,7 +12623,11 @@
     "active": true,
     "term": {
       "swedish": "diska",
-      "portuguese": "lavar a louça"
+      "portuguese": "lavar a louça",
+      "portugueseInfinitive": "lavar a louça",
+      "portuguesePresent": "lava a louça",
+      "portuguesePast": "lavou a louça",
+      "portugueseSupine": "lavado a louça"
     },
     "grammar": {
       "type": "verbo",
@@ -12559,7 +12723,11 @@
     "active": true,
     "term": {
       "swedish": "somna",
-      "portuguese": "adormecer"
+      "portuguese": "adormecer",
+      "portugueseInfinitive": "adormecer",
+      "portuguesePresent": "adormece",
+      "portuguesePast": "adormeceu",
+      "portugueseSupine": "adormecido"
     },
     "grammar": {
       "type": "verbo",
@@ -12657,7 +12825,11 @@
     "active": true,
     "term": {
       "swedish": "springa",
-      "portuguese": "correr"
+      "portuguese": "correr",
+      "portugueseInfinitive": "correr",
+      "portuguesePresent": "corre",
+      "portuguesePast": "correu",
+      "portugueseSupine": "corrido"
     },
     "grammar": {
       "type": "verbo",
@@ -12817,7 +12989,11 @@
     "active": true,
     "term": {
       "swedish": "sluta",
-      "portuguese": "terminar"
+      "portuguese": "terminar",
+      "portugueseInfinitive": "terminar",
+      "portuguesePresent": "termina",
+      "portuguesePast": "terminou",
+      "portugueseSupine": "terminado"
     },
     "grammar": {
       "type": "verbo",
@@ -12979,7 +13155,11 @@
     "active": true,
     "term": {
       "swedish": "älska",
-      "portuguese": "amar"
+      "portuguese": "amar",
+      "portugueseInfinitive": "amar",
+      "portuguesePresent": "ama",
+      "portuguesePast": "amou",
+      "portugueseSupine": "amado"
     },
     "grammar": {
       "type": "verbo",
@@ -13043,7 +13223,11 @@
     "active": true,
     "term": {
       "swedish": "betyda",
-      "portuguese": "significar"
+      "portuguese": "significar",
+      "portugueseInfinitive": "significar",
+      "portuguesePresent": "significa",
+      "portuguesePast": "significou",
+      "portugueseSupine": "significado"
     },
     "grammar": {
       "type": "verbo",
@@ -13139,7 +13323,11 @@
     "active": true,
     "term": {
       "swedish": "träna",
-      "portuguese": "treinar; fazer exercício"
+      "portuguese": "treinar; fazer exercício",
+      "portugueseInfinitive": "treinar; fazer exercício",
+      "portuguesePresent": "treina; faz exercício",
+      "portuguesePast": "treinou; fez exercício",
+      "portugueseSupine": "treinado; feito exercício"
     },
     "grammar": {
       "type": "verbo",
@@ -13171,7 +13359,11 @@
     "active": true,
     "term": {
       "swedish": "simma",
-      "portuguese": "nadar"
+      "portuguese": "nadar",
+      "portugueseInfinitive": "nadar",
+      "portuguesePresent": "nada",
+      "portuguesePast": "nadou",
+      "portugueseSupine": "nadado"
     },
     "grammar": {
       "type": "verbo",
@@ -13203,7 +13395,11 @@
     "active": true,
     "term": {
       "swedish": "promenera",
-      "portuguese": "passear; caminhar"
+      "portuguese": "passear; caminhar",
+      "portugueseInfinitive": "passear; caminhar",
+      "portuguesePresent": "passeia; caminha",
+      "portuguesePast": "passeou; caminhou",
+      "portugueseSupine": "passeado; caminhado"
     },
     "grammar": {
       "type": "verbo",
@@ -13235,7 +13431,11 @@
     "active": true,
     "term": {
       "swedish": "shoppa",
-      "portuguese": "fazer compras"
+      "portuguese": "fazer compras",
+      "portugueseInfinitive": "fazer compras",
+      "portuguesePresent": "faz compras",
+      "portuguesePast": "fez compras",
+      "portugueseSupine": "feito compras"
     },
     "grammar": {
       "type": "verbo",
@@ -13267,7 +13467,11 @@
     "active": true,
     "term": {
       "swedish": "handla",
-      "portuguese": "fazer compras; comprar"
+      "portuguese": "fazer compras; comprar",
+      "portugueseInfinitive": "fazer compras; comprar",
+      "portuguesePresent": "faz compras; compra",
+      "portuguesePast": "fez compras; comprou",
+      "portugueseSupine": "feito compras; comprado"
     },
     "grammar": {
       "type": "verbo",
@@ -13501,7 +13705,11 @@
     "active": true,
     "term": {
       "swedish": "spela",
-      "portuguese": "jogar; tocar"
+      "portuguese": "jogar; tocar",
+      "portugueseInfinitive": "jogar; tocar",
+      "portuguesePresent": "joga; toca",
+      "portuguesePast": "jogou; tocou",
+      "portugueseSupine": "jogado; tocado"
     },
     "grammar": {
       "type": "verbo",
@@ -14217,7 +14425,11 @@
     "active": true,
     "term": {
       "swedish": "måste",
-      "portuguese": "ter que; precisar"
+      "portuguese": "ter que; precisar",
+      "portugueseInfinitive": "ter que; precisar",
+      "portuguesePresent": "tem que; precisa",
+      "portuguesePast": "teve que; precisou",
+      "portugueseSupine": "tido que; precisado"
     },
     "grammar": {
       "type": "verbo",
@@ -14249,7 +14461,11 @@
     "active": true,
     "term": {
       "swedish": "vilja",
-      "portuguese": "querer"
+      "portuguese": "querer",
+      "portugueseInfinitive": "querer",
+      "portuguesePresent": "quer",
+      "portuguesePast": "quis",
+      "portugueseSupine": "querido"
     },
     "grammar": {
       "type": "verbo",
@@ -14281,7 +14497,11 @@
     "active": true,
     "term": {
       "swedish": "kunna",
-      "portuguese": "poder; ser capaz de"
+      "portuguese": "poder; ser capaz de",
+      "portugueseInfinitive": "poder; ser capaz de",
+      "portuguesePresent": "pode; é capaz de",
+      "portuguesePast": "pôde; foi capaz de",
+      "portugueseSupine": "podido; sido capaz de"
     },
     "grammar": {
       "type": "verbo",
@@ -14313,7 +14533,11 @@
     "active": true,
     "term": {
       "swedish": "ska",
-      "portuguese": "ir; dever; indicar futuro"
+      "portuguese": "ir; dever; indicar futuro",
+      "portugueseInfinitive": "ir; dever; indicar futuro",
+      "portuguesePresent": "vai; deve; indica futuro",
+      "portuguesePast": "iria; deveria; indicaria futuro",
+      "portugueseSupine": "ido; devido; indicado futuro"
     },
     "grammar": {
       "type": "verbo",
@@ -14345,7 +14569,11 @@
     "active": true,
     "term": {
       "swedish": "böra",
-      "portuguese": "dever; seria recomendável"
+      "portuguese": "dever; seria recomendável",
+      "portugueseInfinitive": "dever; ser recomendável",
+      "portuguesePresent": "deve; é recomendável",
+      "portuguesePast": "deveria; seria recomendável",
+      "portugueseSupine": "devido; sido recomendável"
     },
     "grammar": {
       "type": "verbo",
@@ -14377,7 +14605,11 @@
     "active": true,
     "term": {
       "swedish": "få",
-      "portuguese": "poder; ter permissão; receber"
+      "portuguese": "poder; ter permissão; receber",
+      "portugueseInfinitive": "poder; ter permissão; receber",
+      "portuguesePresent": "pode; tem permissão; recebe",
+      "portuguesePast": "pôde; teve permissão; recebeu",
+      "portugueseSupine": "podido; tido permissão; recebido"
     },
     "grammar": {
       "type": "verbo",
@@ -14409,7 +14641,11 @@
     "active": true,
     "term": {
       "swedish": "behöva",
-      "portuguese": "precisar"
+      "portuguese": "precisar",
+      "portugueseInfinitive": "precisar",
+      "portuguesePresent": "precisa",
+      "portuguesePast": "precisou",
+      "portugueseSupine": "precisado"
     },
     "grammar": {
       "type": "verbo",
@@ -14441,7 +14677,11 @@
     "active": true,
     "term": {
       "swedish": "bruka",
-      "portuguese": "costumar"
+      "portuguese": "costumar",
+      "portugueseInfinitive": "costumar",
+      "portuguesePresent": "costuma",
+      "portuguesePast": "costumava",
+      "portugueseSupine": "costumado"
     },
     "grammar": {
       "type": "verbo",
@@ -14473,7 +14713,11 @@
     "active": true,
     "term": {
       "swedish": "läsa",
-      "portuguese": "ler"
+      "portuguese": "ler",
+      "portugueseInfinitive": "ler",
+      "portuguesePresent": "lê",
+      "portuguesePast": "leu",
+      "portugueseSupine": "lido"
     },
     "grammar": {
       "type": "verbo",
@@ -14505,7 +14749,11 @@
     "active": true,
     "term": {
       "swedish": "åka",
-      "portuguese": "ir; viajar (em veículo)"
+      "portuguese": "ir; viajar (em veículo)",
+      "portugueseInfinitive": "ir; viajar (em veículo)",
+      "portuguesePresent": "vai; viaja (em veículo)",
+      "portuguesePast": "foi; viajou (em veículo)",
+      "portugueseSupine": "ido; viajado (em veículo)"
     },
     "grammar": {
       "type": "verbo",
@@ -15597,7 +15845,11 @@
     "active": true,
     "term": {
       "swedish": "träffar",
-      "portuguese": "encontra / encontra-se com"
+      "portuguese": "encontra / encontra-se com",
+      "portugueseInfinitive": "encontrar / encontrar-se com",
+      "portuguesePresent": "encontra / encontra-se com",
+      "portuguesePast": "encontrou / encontrou-se com",
+      "portugueseSupine": "encontrado"
     },
     "grammar": {
       "type": "verbo",
@@ -16219,7 +16471,11 @@
     "active": true,
     "term": {
       "swedish": "städa",
-      "portuguese": "limpar / arrumar"
+      "portuguese": "limpar / arrumar",
+      "portugueseInfinitive": "limpar / arrumar",
+      "portuguesePresent": "limpa / arruma",
+      "portuguesePast": "limpou / arrumou",
+      "portugueseSupine": "limpo / arrumado"
     },
     "grammar": {
       "type": "verbo",
@@ -16251,7 +16507,11 @@
     "active": true,
     "term": {
       "swedish": "hjälpa",
-      "portuguese": "ajudar"
+      "portuguese": "ajudar",
+      "portugueseInfinitive": "ajudar",
+      "portuguesePresent": "ajuda",
+      "portuguesePast": "ajudou",
+      "portugueseSupine": "ajudado"
     },
     "grammar": {
       "type": "verbo",
@@ -16349,7 +16609,11 @@
     "active": true,
     "term": {
       "swedish": "berätta",
-      "portuguese": "contar / falar sobre"
+      "portuguese": "contar / falar sobre",
+      "portugueseInfinitive": "contar / falar sobre",
+      "portuguesePresent": "conta / fala sobre",
+      "portuguesePast": "contou / falou sobre",
+      "portugueseSupine": "contado / falado sobre"
     },
     "grammar": {
       "type": "verbo",
@@ -16615,7 +16879,11 @@
     "active": true,
     "term": {
       "swedish": "packa",
-      "portuguese": "arrumar a mala / fazer as malas"
+      "portuguese": "arrumar a mala / fazer as malas",
+      "portugueseInfinitive": "arrumar a mala / fazer as malas",
+      "portuguesePresent": "arruma a mala / faz as malas",
+      "portuguesePast": "arrumou a mala / fez as malas",
+      "portugueseSupine": "arrumado a mala / feito as malas"
     },
     "grammar": {
       "type": "verbo",
@@ -17769,7 +18037,11 @@
     "active": true,
     "term": {
       "swedish": "tro",
-      "portuguese": "acreditar"
+      "portuguese": "acreditar",
+      "portugueseInfinitive": "acreditar",
+      "portuguesePresent": "acredita",
+      "portuguesePast": "acreditou",
+      "portugueseSupine": "acreditado"
     },
     "grammar": {
       "type": "verbo",
@@ -17801,7 +18073,11 @@
     "active": true,
     "term": {
       "swedish": "flyga",
-      "portuguese": "voar"
+      "portuguese": "voar",
+      "portugueseInfinitive": "voar",
+      "portuguesePresent": "voa",
+      "portuguesePast": "voou",
+      "portugueseSupine": "voado"
     },
     "grammar": {
       "type": "verbo",
@@ -17833,7 +18109,11 @@
     "active": true,
     "term": {
       "swedish": "köra",
-      "portuguese": "dirigir"
+      "portuguese": "dirigir",
+      "portugueseInfinitive": "dirigir",
+      "portuguesePresent": "dirige",
+      "portuguesePast": "dirigiu",
+      "portugueseSupine": "dirigido"
     },
     "grammar": {
       "type": "verbo",
@@ -17865,7 +18145,11 @@
     "active": true,
     "term": {
       "swedish": "cykla",
-      "portuguese": "andar de bicicleta"
+      "portuguese": "andar de bicicleta",
+      "portugueseInfinitive": "andar de bicicleta",
+      "portuguesePresent": "anda de bicicleta",
+      "portuguesePast": "andou de bicicleta",
+      "portugueseSupine": "andado de bicicleta"
     },
     "grammar": {
       "type": "verbo",
@@ -17897,7 +18181,11 @@
     "active": true,
     "term": {
       "swedish": "gå",
-      "portuguese": "ir / caminhar"
+      "portuguese": "ir / caminhar",
+      "portugueseInfinitive": "ir / caminhar",
+      "portuguesePresent": "vai / caminha",
+      "portuguesePast": "foi / caminhou",
+      "portugueseSupine": "ido / caminhado"
     },
     "grammar": {
       "type": "verbo",
@@ -17929,7 +18217,11 @@
     "active": true,
     "term": {
       "swedish": "hitta",
-      "portuguese": "encontrar o caminho"
+      "portuguese": "encontrar o caminho",
+      "portugueseInfinitive": "encontrar o caminho",
+      "portuguesePresent": "encontra o caminho",
+      "portuguesePast": "encontrou o caminho",
+      "portugueseSupine": "encontrado o caminho"
     },
     "grammar": {
       "type": "verbo",
@@ -17961,7 +18253,11 @@
     "active": true,
     "term": {
       "swedish": "sova",
-      "portuguese": "dormir"
+      "portuguese": "dormir",
+      "portugueseInfinitive": "dormir",
+      "portuguesePresent": "dorme",
+      "portuguesePast": "dormiu",
+      "portugueseSupine": "dormido"
     },
     "grammar": {
       "type": "verbo",
@@ -17993,7 +18289,11 @@
     "active": true,
     "term": {
       "swedish": "ligga",
-      "portuguese": "estar situado / deitado"
+      "portuguese": "estar situado / deitado",
+      "portugueseInfinitive": "estar situado / deitado",
+      "portuguesePresent": "está situado / deitado",
+      "portuguesePast": "esteve situado / deitado",
+      "portugueseSupine": "estado situado / deitado"
     },
     "grammar": {
       "type": "verbo",
@@ -18025,7 +18325,11 @@
     "active": true,
     "term": {
       "swedish": "sitta",
-      "portuguese": "sentar / estar sentado"
+      "portuguese": "sentar / estar sentado",
+      "portugueseInfinitive": "sentar / estar sentado",
+      "portuguesePresent": "senta / está sentado",
+      "portuguesePast": "sentou / esteve sentado",
+      "portugueseSupine": "sentado / estado sentado"
     },
     "grammar": {
       "type": "verbo",
@@ -18057,7 +18361,11 @@
     "active": true,
     "term": {
       "swedish": "parkera",
-      "portuguese": "estacionar"
+      "portuguese": "estacionar",
+      "portugueseInfinitive": "estacionar",
+      "portuguesePresent": "estaciona",
+      "portuguesePast": "estacionou",
+      "portugueseSupine": "estacionado"
     },
     "grammar": {
       "type": "verbo",
@@ -22481,7 +22789,11 @@
     "active": true,
     "term": {
       "swedish": "se ut",
-      "portuguese": "parecer / ter aparência de"
+      "portuguese": "parecer / ter aparência de",
+      "portugueseInfinitive": "parecer / ter aparência de",
+      "portuguesePresent": "parece / tem aparência de",
+      "portuguesePast": "pareceu / teve aparência de",
+      "portugueseSupine": "parecido / tido aparência de"
     },
     "grammar": {
       "type": "verbo",
@@ -22543,7 +22855,11 @@
     "active": true,
     "term": {
       "swedish": "höra",
-      "portuguese": "ouvir"
+      "portuguese": "ouvir",
+      "portugueseInfinitive": "ouvir",
+      "portuguesePresent": "ouve",
+      "portuguesePast": "ouviu",
+      "portugueseSupine": "ouvido"
     },
     "grammar": {
       "type": "verbo",
@@ -22639,7 +22955,11 @@
     "active": true,
     "term": {
       "swedish": "säga till",
-      "portuguese": "avisar / dizer para alguém / dar um toque"
+      "portuguese": "avisar / dizer para alguém / dar um toque",
+      "portugueseInfinitive": "avisar / dizer para alguém / dar um toque",
+      "portuguesePresent": "avisa / diz para alguém / dá um toque",
+      "portuguesePast": "avisou / disse para alguém / deu um toque",
+      "portugueseSupine": "avisado / dito para alguém / dado um toque"
     },
     "grammar": {
       "type": "verbo",
@@ -23067,7 +23387,11 @@
     "active": true,
     "term": {
       "swedish": "lägga sig",
-      "portuguese": "deitar-se / ir se deitar"
+      "portuguese": "deitar-se / ir se deitar",
+      "portugueseInfinitive": "deitar-se / ir se deitar",
+      "portuguesePresent": "deita-se / vai se deitar",
+      "portuguesePast": "deitou-se / foi se deitar",
+      "portugueseSupine": "deitado / ido se deitar"
     },
     "grammar": {
       "type": "verbo",
@@ -23097,7 +23421,11 @@
     "active": true,
     "term": {
       "swedish": "gilla",
-      "portuguese": "gostar"
+      "portuguese": "gostar",
+      "portugueseInfinitive": "gostar",
+      "portuguesePresent": "gosta",
+      "portuguesePast": "gostou",
+      "portugueseSupine": "gostado"
     },
     "grammar": {
       "type": "verbo",
@@ -23129,7 +23457,11 @@
     "active": true,
     "term": {
       "swedish": "tycka om",
-      "portuguese": "gostar de"
+      "portuguese": "gostar de",
+      "portugueseInfinitive": "gostar de",
+      "portuguesePresent": "gosta de",
+      "portuguesePast": "gostou de",
+      "portugueseSupine": "gostado de"
     },
     "grammar": {
       "type": "verbo",
@@ -23159,7 +23491,11 @@
     "active": true,
     "term": {
       "swedish": "hata",
-      "portuguese": "odiar"
+      "portuguese": "odiar",
+      "portugueseInfinitive": "odiar",
+      "portuguesePresent": "odeia",
+      "portuguesePast": "odiou",
+      "portugueseSupine": "odiado"
     },
     "grammar": {
       "type": "verbo",
@@ -23581,7 +23917,11 @@
     "active": true,
     "term": {
       "swedish": "se",
-      "portuguese": "ver"
+      "portuguese": "ver",
+      "portugueseInfinitive": "ver",
+      "portuguesePresent": "vê",
+      "portuguesePast": "viu",
+      "portugueseSupine": "visto"
     },
     "grammar": {
       "type": "verbo",
@@ -23613,7 +23953,11 @@
     "active": true,
     "term": {
       "swedish": "ha",
-      "portuguese": "ter"
+      "portuguese": "ter",
+      "portugueseInfinitive": "ter",
+      "portuguesePresent": "tem",
+      "portuguesePast": "teve",
+      "portugueseSupine": "tido"
     },
     "grammar": {
       "type": "verbo",
@@ -23645,7 +23989,11 @@
     "active": true,
     "term": {
       "swedish": "vinna",
-      "portuguese": "ganhar / vencer"
+      "portuguese": "ganhar / vencer",
+      "portugueseInfinitive": "ganhar / vencer",
+      "portuguesePresent": "ganha / vence",
+      "portuguesePast": "ganhou / venceu",
+      "portugueseSupine": "ganhado / vencido"
     },
     "grammar": {
       "type": "verbo",
@@ -23741,7 +24089,11 @@
     "active": true,
     "term": {
       "swedish": "planera",
-      "portuguese": "planejar"
+      "portuguese": "planejar",
+      "portugueseInfinitive": "planejar",
+      "portuguesePresent": "planeja",
+      "portuguesePast": "planejou",
+      "portugueseSupine": "planejado"
     },
     "grammar": {
       "type": "verbo",
@@ -24075,7 +24427,11 @@
     "active": true,
     "term": {
       "swedish": "snöa",
-      "portuguese": "nevar"
+      "portuguese": "nevar",
+      "portugueseInfinitive": "nevar",
+      "portuguesePresent": "neva",
+      "portuguesePast": "nevou",
+      "portugueseSupine": "nevado"
     },
     "grammar": {
       "type": "verbo",
@@ -24235,7 +24591,11 @@
     "active": true,
     "term": {
       "swedish": "bli",
-      "portuguese": "tornar-se / ficar"
+      "portuguese": "tornar-se / ficar",
+      "portugueseInfinitive": "tornar-se / ficar",
+      "portuguesePresent": "torna-se / fica",
+      "portuguesePast": "tornou-se / ficou",
+      "portugueseSupine": "tornado / ficado"
     },
     "grammar": {
       "type": "verbo",
@@ -24267,7 +24627,11 @@
     "active": true,
     "term": {
       "swedish": "längta",
-      "portuguese": "ansiar / sentir saudade / desejar muito"
+      "portuguese": "ansiar / sentir saudade / desejar muito",
+      "portugueseInfinitive": "ansiar / sentir saudade / desejar muito",
+      "portuguesePresent": "anseia / sente saudade / deseja muito",
+      "portuguesePast": "ansiou / sentiu saudade / desejou muito",
+      "portugueseSupine": "ansiado / sentido saudade / desejado muito"
     },
     "grammar": {
       "type": "verbo",
@@ -24297,7 +24661,11 @@
     "active": true,
     "term": {
       "swedish": "regna",
-      "portuguese": "chover"
+      "portuguese": "chover",
+      "portugueseInfinitive": "chover",
+      "portuguesePresent": "chove",
+      "portuguesePast": "choveu",
+      "portugueseSupine": "chovido"
     },
     "grammar": {
       "type": "verbo",
@@ -24327,7 +24695,11 @@
     "active": true,
     "term": {
       "swedish": "blåsa",
-      "portuguese": "ventar / soprar"
+      "portuguese": "ventar / soprar",
+      "portugueseInfinitive": "ventar / soprar",
+      "portuguesePresent": "venta / sopra",
+      "portuguesePast": "ventou / soprou",
+      "portugueseSupine": "ventado / soprado"
     },
     "grammar": {
       "type": "verbo",
