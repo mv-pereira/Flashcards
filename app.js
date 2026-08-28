@@ -32,6 +32,7 @@ let timerIntervalId = null;
 let wordsDirection = "sv-pt";
 let wordsViewMode = "all";
 let expandedWordCardId = null;
+let expandedWordsLetter = null;
 
 
 const STORAGE_KEY = "flashcardsSuecoStats";
@@ -123,6 +124,10 @@ const pluralRulesButton = document.querySelector("#pluralRulesButton");
 const pluralScreen = document.querySelector("#pluralScreen");
 const backFromPluralButton = document.querySelector("#backFromPluralButton");
 
+const verbFormsButton = document.querySelector("#verbFormsButton");
+const verbFormsScreen = document.querySelector("#verbFormsScreen");
+const backFromVerbFormsButton = document.querySelector("#backFromVerbFormsButton");
+
 const resetStatsButton = document.querySelector("#resetStatsButton");
 
 const wordsButton = document.querySelector("#wordsButton");
@@ -134,6 +139,33 @@ const wordsScreenDescription = document.querySelector("#wordsScreenDescription")
 const wordsDirectionButton = document.querySelector("#wordsDirectionButton");
 const wordsCount = document.querySelector("#wordsCount");
 const wordsList = document.querySelector("#wordsList");
+
+const appScreens = [
+	setupScreen,
+	studyScreen,
+	summaryScreen,
+	pronunciationScreen,
+	grammarScreen,
+	pluralScreen,
+	verbFormsScreen,
+	wordsScreen
+];
+
+function hideAllScreens() {
+	appScreens.forEach((screen) => {
+		screen.classList.add("hidden");
+	});
+}
+
+function showScreen(screen) {
+	hideAllScreens();
+	screen.classList.remove("hidden");
+
+	newWordsToggleButton.classList.toggle(
+		"hidden",
+		screen !== setupScreen
+	);
+}
 
 const questionLabel = document.querySelector("#questionLabel");
 
@@ -598,12 +630,7 @@ function startSession() {
 	answerVisible = false;
 	isChangingCard = false;
 
-	setupScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	studyScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(studyScreen);
 
 	startStudyTimer();
 	showCard();
@@ -788,15 +815,7 @@ function openGrammarScreen() {
 	stopStudyTimer();
 	setupMessage.textContent = "";
 
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	pluralScreen.classList.add("hidden");
-
-	grammarScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(grammarScreen);
 
 	window.scrollTo({
 		top: 0,
@@ -805,30 +824,14 @@ function openGrammarScreen() {
 }
 
 function backFromGrammarScreen() {
-	grammarScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	pluralScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-
-	setupScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.remove("hidden");
+	showScreen(setupScreen);
 }
 
 function openPronunciationRules() {
 	stopStudyTimer();
 	setupMessage.textContent = "";
 
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	grammarScreen.classList.add("hidden");
-	pluralScreen.classList.add("hidden");
-
-	pronunciationScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(pronunciationScreen);
 
 	renderPronunciationRules();
 
@@ -839,16 +842,7 @@ function openPronunciationRules() {
 }
 
 function backFromPronunciationRules() {
-	pronunciationScreen.classList.add("hidden");
-
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	pluralScreen.classList.add("hidden");
-
-	grammarScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(grammarScreen);
 
 	window.scrollTo({
 		top: 0,
@@ -860,15 +854,7 @@ function openPluralRules() {
 	stopStudyTimer();
 	setupMessage.textContent = "";
 
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	grammarScreen.classList.add("hidden");
-
-	pluralScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(pluralScreen);
 
 	window.scrollTo({
 		top: 0,
@@ -877,16 +863,28 @@ function openPluralRules() {
 }
 
 function backFromPluralRules() {
-	pluralScreen.classList.add("hidden");
+	showScreen(grammarScreen);
 
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+}
 
-	grammarScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+function openVerbForms() {
+	stopStudyTimer();
+	setupMessage.textContent = "";
+
+	showScreen(verbFormsScreen);
+
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+}
+
+function backFromVerbForms() {
+	showScreen(grammarScreen);
 
 	window.scrollTo({
 		top: 0,
@@ -991,14 +989,7 @@ function playPronunciationExample(event) {
 
 function backToSetup() {
 	stopStudyTimer();
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	grammarScreen.classList.add("hidden");
-	pluralScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	setupScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.remove("hidden");
+	showScreen(setupScreen);
 
 	flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
 	answerVisible = false;
@@ -1024,12 +1015,7 @@ function repeatSession() {
 	answerVisible = false;
 	isChangingCard = false;
 
-	summaryScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(studyScreen);
 
 	startStudyTimer();
 	showCard();
@@ -1178,17 +1164,57 @@ function chooseRandomNounForm(card) {
 	return forms[Math.floor(Math.random() * forms.length)];
 }
 
+function isVerb(card) {
+	return card.grammar?.type === "verbo";
+}
+
+function getAvailableVerbForms(card) {
+	if (!isVerb(card)) {
+		return [];
+	}
+
+	const forms = [];
+
+	if (card.grammar?.infinitive && card.term?.portugueseInfinitive) {
+		forms.push("infinitive");
+	}
+
+	if (card.grammar?.past && card.term?.portuguesePast) {
+		forms.push("past");
+	}
+
+	if (card.grammar?.supine && card.term?.portugueseSupine) {
+		forms.push("supine");
+	}
+
+	return forms;
+}
+
+function chooseRandomVerbForm(card) {
+	const forms = getAvailableVerbForms(card);
+
+	if (forms.length === 0) {
+		return null;
+	}
+
+	return forms[Math.floor(Math.random() * forms.length)];
+}
+
 function createStudyOccurrence(card) {
 	const occurrence = {
 		...card
 	};
 
-	if (
-		(directionSelect.value === "sv-pt" ||
-			directionSelect.value === "pt-sv") &&
-		isNounWithGender(card)
-	) {
+	const isTextDirection =
+		directionSelect.value === "sv-pt" ||
+		directionSelect.value === "pt-sv";
+
+	if (isTextDirection && isNounWithGender(card)) {
 		occurrence._nounForm = chooseRandomNounForm(card);
+	}
+
+	if (isTextDirection && isVerb(card)) {
+		occurrence._verbForm = chooseRandomVerbForm(card);
 	}
 
 	return occurrence;
@@ -1197,16 +1223,29 @@ function createStudyOccurrence(card) {
 function getStudySwedishText(card) {
 	const swedish = card.term?.swedish || "";
 
+	if (isVerb(card) && card._verbForm) {
+		switch (card._verbForm) {
+			case "infinitive":
+				return card.grammar.infinitive || swedish;
+
+			case "present":
+				return card.grammar.present || swedish;
+
+			case "past":
+				return card.grammar.past || swedish;
+
+			case "supine":
+				return card.grammar.supine || swedish;
+
+			default:
+				return swedish;
+		}
+	}
+
 	if (!isNounWithGender(card)) {
 		return swedish;
 	}
 
-	/*
-	 * Por enquanto, as quatro formas são usadas somente
-	 * em Sueco → Português.
-	 *
-	 * Nas demais direções mantém o comportamento antigo.
-	 */
 	if (!card._nounForm) {
 		return `${card.grammar.gender} ${swedish}`;
 	}
@@ -1230,13 +1269,32 @@ function getStudySwedishText(card) {
 }
 
 function getStudyPortugueseText(card) {
-	const singular = card.term?.portuguese || "";
+	const portuguese = card.term?.portuguese || "";
 
-	if (!isNounWithGender(card) || !card._nounForm) {
-		return singular;
+	if (isVerb(card) && card._verbForm) {
+		switch (card._verbForm) {
+			case "infinitive":
+				return card.term.portugueseInfinitive || portuguese;
+
+			case "present":
+				return card.term.portuguesePresent || portuguese;
+
+			case "past":
+				return card.term.portuguesePast || portuguese;
+
+			case "supine":
+				return card.term.portugueseSupine || portuguese;
+
+			default:
+				return portuguese;
+		}
 	}
 
-	const plural = card.term?.portuguesePlural || singular;
+	if (!isNounWithGender(card) || !card._nounForm) {
+		return portuguese;
+	}
+
+	const plural = card.term?.portuguesePlural || portuguese;
 	const gender = card.term?.portugueseGender;
 
 	const singularArticle =
@@ -1247,10 +1305,10 @@ function getStudyPortugueseText(card) {
 
 	switch (card._nounForm) {
 		case "singularIndefinite":
-			return singular;
+			return portuguese;
 
 		case "singularDefinite":
-			return `${singularArticle} ${singular}`;
+			return `${singularArticle} ${portuguese}`;
 
 		case "pluralIndefinite":
 			return plural;
@@ -1259,7 +1317,7 @@ function getStudyPortugueseText(card) {
 			return `${pluralArticle} ${plural}`;
 
 		default:
-			return singular;
+			return portuguese;
 	}
 }
 
@@ -1414,8 +1472,9 @@ function registerCurrentAnswer(isCorrect) {
 	sessionAnswers.push({
 		cardId: currentCard.id,
 		nounForm: currentCard._nounForm || null,
+		verbForm: currentCard._verbForm || null,
 		swedish: getStudySwedishText(currentCard),
-		portuguese: currentCard.term.portuguese,
+		portuguese: getStudyPortugueseText(currentCard),
 		isCorrect
 	});
 
@@ -1449,7 +1508,8 @@ function scheduleImmediateRetry(card) {
 function isSameStudyOccurrence(cardA, cardB) {
 	return (
 		String(cardA.id) === String(cardB.id) &&
-		(cardA._nounForm || null) === (cardB._nounForm || null)
+		(cardA._nounForm || null) === (cardB._nounForm || null) &&
+		(cardA._verbForm || null) === (cardB._verbForm || null)
 	);
 }
 
@@ -1594,11 +1654,7 @@ function getImmediateSrsRepeatCount(cardStats) {
 
 function showSummary() {
 	stopStudyTimer();
-	studyScreen.classList.add("hidden");
-	setupScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	wordsScreen.classList.add("hidden");
-	summaryScreen.classList.remove("hidden");
+	showScreen(summaryScreen);
 
 	const total = correctCount + wrongCount;
 	const correctRate = total === 0 ? 0 : Math.round((correctCount / total) * 100);
@@ -1620,14 +1676,20 @@ function renderWrongList() {
 	sessionAnswers
 		.filter((answer) => !answer.isCorrect)
 		.forEach((answer) => {
-			const current = wrongMap.get(answer.cardId) || {
+			const occurrenceKey = [
+				answer.cardId,
+				answer.nounForm || "",
+				answer.verbForm || ""
+			].join("|");
+
+			const current = wrongMap.get(occurrenceKey) || {
 				swedish: answer.swedish,
 				portuguese: answer.portuguese,
 				count: 0
 			};
 
 			current.count++;
-			wrongMap.set(answer.cardId, current);
+			wrongMap.set(occurrenceKey, current);
 		});
 
 	const wrongItems = [...wrongMap.values()]
@@ -2484,12 +2546,7 @@ function openWordsScreen(viewMode = "all") {
 	expandedWordCardId = null;
         expandedWordsLetter = null;
 
-	setupScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	wordsScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.add("hidden");
+	showScreen(wordsScreen);
 
 	renderWordsList();
 	window.scrollTo({
@@ -2499,12 +2556,7 @@ function openWordsScreen(viewMode = "all") {
 }
 
 function backFromWordsScreen() {
-	wordsScreen.classList.add("hidden");
-	studyScreen.classList.add("hidden");
-	summaryScreen.classList.add("hidden");
-	pronunciationScreen.classList.add("hidden");
-	setupScreen.classList.remove("hidden");
-	newWordsToggleButton.classList.remove("hidden");
+	showScreen(setupScreen);
 }
 
 function toggleWordsDirection() {
@@ -3121,6 +3173,10 @@ backFromGrammarButton.addEventListener("click", backFromGrammarScreen);
 
 pluralRulesButton.addEventListener("click", openPluralRules);
 backFromPluralButton.addEventListener("click", backFromPluralRules);
+
+verbFormsButton.addEventListener("click", openVerbForms);
+backFromVerbFormsButton.addEventListener("click", backFromVerbForms);
+
 pronunciationRulesList.addEventListener("click", playPronunciationExample);
 
 resetStatsButton.addEventListener("click", resetStats);
