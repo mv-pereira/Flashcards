@@ -33,6 +33,7 @@ let wordsDirection = "sv-pt";
 let wordsViewMode = "all";
 let expandedWordCardId = null;
 let expandedWordsLetter = null;
+let cardsSinceUnseen = 0;
 
 
 const STORAGE_KEY = "flashcardsSuecoStats";
@@ -40,6 +41,14 @@ const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
 const UNDEREXPOSURE_PRIORITY_PER_VIEW = 25;
 const UNDEREXPOSURE_MAX_GAP = 6;
+const UNSEEN_CARD_MAX_GAP = 4;
+
+const UNSEEN_MIN_ACCURACY = 0.60;
+const UNSEEN_ACCURACY_WINDOW = 10;
+const UNSEEN_MIN_ANSWERS = 5;
+
+const UNSEEN_HARD_MAX_GAP = 15;
+const UNSEEN_HARD_MIN_ACCURACY = 0.50;
 
 const PRONUNCIATION_RULES = [{
 		title: "1. A vogal depois de SK, G e K muda o som",
@@ -626,6 +635,7 @@ function startSession() {
 	currentIndex = 0;
 	correctCount = 0;
 	wrongCount = 0;
+	cardsSinceUnseen = 0;
 	sessionAnswers = [];
 	answerVisible = false;
 	isChangingCard = false;
@@ -1011,6 +1021,7 @@ function repeatSession() {
 	currentIndex = 0;
 	correctCount = 0;
 	wrongCount = 0;
+	cardsSinceUnseen = 0;
 	sessionAnswers = [];
 	answerVisible = false;
 	isChangingCard = false;
@@ -1471,6 +1482,7 @@ function wait(ms) {
 
 function registerCurrentAnswer(isCorrect) {
 	const currentCard = cards[currentIndex];
+	const wasUnseen = (getCardStats(currentCard.id).seen || 0) === 0;
 
 	if (isCorrect) {
 		correctCount++;
@@ -1493,6 +1505,14 @@ function registerCurrentAnswer(isCorrect) {
 	});
 
 	updateCardStats(currentCard, isCorrect);
+
+	if (!isNewWordsMode) {
+ 	   if (wasUnseen) {
+ 	       cardsSinceUnseen = 0;
+ 	   } else {
+ 	       cardsSinceUnseen++;
+ 	   }
+	}
 
 	if (!isCorrect) {
 		scheduleImmediateRetry(currentCard);
@@ -1558,20 +1578,107 @@ async function markAnswer(isCorrect) {
 	isChangingCard = false;
 }
 
-function goToNextCard() {
-	currentIndex++;
+function getRecentAccuracy() {
+    const recentAnswers = sessionAnswers.slice(
+        -UNSEEN_ACCURACY_WINDOW
+    );
 
-	if (currentIndex >= cards.length) {
-		currentIndex = 0;
+    // Ainda não há respostas suficientes
+    // para avaliar o desempenho recente.
+    if (recentAnswers.length < UNSEEN_MIN_ANSWERS) {
+        return null;
+    }
 
-		if (isNewWordsMode) {
-			updateNewWordsDeckAfterRound();
-		} else {
-			cards = buildWeightedDeck(baseSessionCards);
-		}
+    const correctAnswers = recentAnswers.filter((answer) => {
+        return answer.isCorrect;
+    }).length;
+
+    return correctAnswers / recentAnswers.length;
+}
+
+function canIntroduceUnseenCard() {
+    if (isNewWordsMode) {
+        return false;
+    }
+
+    const accuracy = getRecentAccuracy();
+
+    if (accuracy === null) {
+        return false;
+    }
+
+    // Regra normal:
+    // após 4 cards, libera uma palavra nova
+    // se a taxa recente for de pelo menos 60%.
+    if (
+        cardsSinceUnseen >= UNSEEN_CARD_MAX_GAP &&
+        accuracy >= UNSEEN_MIN_ACCURACY
+    ) {
+        return true;
+    }
+
+    // Regra de espera prolongada:
+    // após 15 cards, reduz a exigência para 50%.
+    if (
+        cardsSinceUnseen >= UNSEEN_HARD_MAX_GAP &&
+        accuracy >= UNSEEN_HARD_MIN_ACCURACY
+    ) {
+        return true;
+    }
+
+    return false;
+}
+
+function prioritizeUnseenCardIfNeeded() {
+	if (!canIntroduceUnseenCard()) {
+	    return;
 	}
 
-	showCard();
+    const unseenIndex = cards.findIndex((card, index) => {
+        if (index < currentIndex) {
+            return false;
+        }
+
+        const cardStats = getCardStats(card.id);
+
+        return (cardStats.seen || 0) === 0;
+    });
+
+    // Não existem mais palavras nunca vistas nessa fila.
+    if (unseenIndex === -1) {
+        return;
+    }
+
+    // A próxima já é uma palavra nunca vista.
+    if (unseenIndex === currentIndex) {
+        return;
+    }
+
+    // Remove da posição atual...
+    const [unseenCard] = cards.splice(unseenIndex, 1);
+
+    // ...e coloca como próximo card.
+    cards.splice(currentIndex, 0, unseenCard);
+}
+
+function goToNextCard() {
+    currentIndex++;
+
+    if (currentIndex >= cards.length) {
+        currentIndex = 0;
+
+        if (isNewWordsMode) {
+            updateNewWordsDeckAfterRound();
+        } else {
+            cards = buildWeightedDeck(baseSessionCards);
+        }
+    }
+
+    if (!isNewWordsMode) {
+        prioritizeUnseenCardIfNeeded();
+    }
+
+    showCard();
 }
 
 function updateNewWordsDeckAfterRound() {
