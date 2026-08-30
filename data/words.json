@@ -21977,7 +21977,7 @@
     "active": true,
     "term": {
       "swedish": "i morse",
-      "portuguese": "hoje de manhã / mais cedo esta manhã"
+      "portuguese": "hoje de manhã"
     },
     "grammar": {
       "type": "expressão",
@@ -22367,7 +22367,7 @@
     "active": true,
     "term": {
       "swedish": "förra",
-      "portuguese": "passado / passada / anterior"
+      "portuguese": "passado / anterior"
     },
     "grammar": {
       "type": "adjetivo",
@@ -22757,7 +22757,7 @@
     "active": true,
     "term": {
       "swedish": "trött",
-      "portuguese": "cansado / cansada"
+      "portuguese": "cansado"
     },
     "grammar": {
       "type": "adjetivo",
@@ -22989,7 +22989,7 @@
     "active": true,
     "term": {
       "swedish": "var hemma",
-      "portuguese": "estava / fiquei em casa"
+      "portuguese": "fiquei em casa"
     },
     "grammar": {
       "type": "expressão",
@@ -23169,7 +23169,7 @@
     "active": true,
     "term": {
       "swedish": "jag la mig",
-      "portuguese": "eu fui me deitar / me deitei"
+      "portuguese": "me deitei"
     },
     "grammar": {
       "type": "expressão",
@@ -23199,7 +23199,7 @@
     "active": true,
     "term": {
       "swedish": "det förstår jag",
-      "portuguese": "isso eu entendo / eu entendo"
+      "portuguese": "isso eu entendo"
     },
     "grammar": {
       "type": "expressão",
@@ -23387,11 +23387,11 @@
     "active": true,
     "term": {
       "swedish": "lägga sig",
-      "portuguese": "deitar-se / ir se deitar",
-      "portugueseInfinitive": "deitar-se / ir se deitar",
-      "portuguesePresent": "deita-se / vai se deitar",
-      "portuguesePast": "deitou-se / foi se deitar",
-      "portugueseSupine": "deitado / ido se deitar"
+      "portuguese": "deitar-se",
+      "portugueseInfinitive": "deitar-se",
+      "portuguesePresent": "deita-se",
+      "portuguesePast": "deitou-se",
+      "portugueseSupine": "deitado"
     },
     "grammar": {
       "type": "verbo",
@@ -23797,7 +23797,7 @@
     "active": true,
     "term": {
       "swedish": "nästa vecka",
-      "portuguese": "semana que vem / próxima semana"
+      "portuguese": "próxima semana"
     },
     "grammar": {
       "type": "expressão",
@@ -23989,11 +23989,11 @@
     "active": true,
     "term": {
       "swedish": "vinna",
-      "portuguese": "ganhar / vencer",
-      "portugueseInfinitive": "ganhar / vencer",
-      "portuguesePresent": "ganha / vence",
-      "portuguesePast": "ganhou / venceu",
-      "portugueseSupine": "ganhado / vencido"
+      "portuguese": "vencer",
+      "portugueseInfinitive": "vencer",
+      "portuguesePresent": "vence",
+      "portuguesePast": "venceu",
+      "portugueseSupine": "vencido"
     },
     "grammar": {
       "type": "verbo",
@@ -24155,7 +24155,7 @@
     "active": true,
     "term": {
       "swedish": "Vad kallt det är.",
-      "portuguese": "Como está frio! / Que frio!"
+      "portuguese": "Como está frio!"
     },
     "grammar": {
       "type": "expressão",
@@ -24365,7 +24365,7 @@
     "active": true,
     "term": {
       "swedish": "kall",
-      "portuguese": "frio / fria"
+      "portuguese": "frio"
     },
     "grammar": {
       "type": "adjetivo",
