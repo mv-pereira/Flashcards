@@ -22921,8 +22921,8 @@
     "active": true,
     "term": {
       "swedish": "sätt",
-      "portuguese": "maneira / jeito",
-      "portuguesePlural": "maneiras / jeitos",
+      "portuguese": "jeito / maneira",
+      "portuguesePlural": "jeitos / maneiras",
       "portugueseGender": "masculine"
     },
     "grammar": {
