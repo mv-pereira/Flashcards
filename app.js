@@ -35,6 +35,8 @@ let expandedWordCardId = null;
 let expandedWordsLetter = null;
 let cardsSinceUnseen = 0;
 
+let currentExercise = null;
+let exerciseFinished = false;
 
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
@@ -149,15 +151,33 @@ const wordsDirectionButton = document.querySelector("#wordsDirectionButton");
 const wordsCount = document.querySelector("#wordsCount");
 const wordsList = document.querySelector("#wordsList");
 
+const exerciseButton = document.querySelector("#exerciseButton");
+const exerciseScreen = document.querySelector("#exerciseScreen");
+const backFromExerciseButton = document.querySelector("#backFromExerciseButton");
+
+const exerciseImportPanel = document.querySelector("#exerciseImportPanel");
+const exerciseSourceInput = document.querySelector("#exerciseSourceInput");
+const generateExerciseButton = document.querySelector("#generateExerciseButton");
+const exerciseImportMessage = document.querySelector("#exerciseImportMessage");
+
+const exerciseRenderedPanel = document.querySelector("#exerciseRenderedPanel");
+const exerciseTitle = document.querySelector("#exerciseTitle");
+const exerciseResultSummary = document.querySelector("#exerciseResultSummary");
+const exerciseBlocks = document.querySelector("#exerciseBlocks");
+
+const finishExerciseButton = document.querySelector("#finishExerciseButton");
+const newExerciseButton = document.querySelector("#newExerciseButton");
+
 const appScreens = [
-	setupScreen,
-	studyScreen,
-	summaryScreen,
-	pronunciationScreen,
-	grammarScreen,
-	pluralScreen,
-	verbFormsScreen,
-	wordsScreen
+  setupScreen,
+  studyScreen,
+  summaryScreen,
+  pronunciationScreen,
+  grammarScreen,
+  pluralScreen,
+  verbFormsScreen,
+  wordsScreen,
+  exerciseScreen
 ];
 
 function hideAllScreens() {
@@ -3193,6 +3213,1946 @@ function handleWordsListClick(event) {
 	renderWordsList();
 }
 
+function openExerciseScreen() {
+  exerciseImportMessage.textContent = "";
+  showScreen(exerciseScreen);
+}
+
+function backFromExerciseScreen() {
+  showScreen(setupScreen);
+}
+
+function resetExerciseScreen() {
+  currentExercise = null;
+  exerciseFinished = false;
+
+  exerciseSourceInput.value = "";
+  exerciseImportMessage.textContent = "";
+
+  exerciseTitle.textContent = "";
+
+  exerciseBlocks.replaceChildren();
+  exerciseResultSummary.replaceChildren();
+
+  exerciseImportPanel.classList.remove("hidden");
+  exerciseRenderedPanel.classList.add("hidden");
+
+  exerciseResultSummary.classList.add("hidden");
+
+  finishExerciseButton.classList.remove("hidden");
+  newExerciseButton.classList.add("hidden");
+
+  exerciseSourceInput.focus();
+}
+
+function generateExercise() {
+  exerciseImportMessage.textContent = "";
+
+  try {
+    const parsedExercise = parseExerciseText(
+      exerciseSourceInput.value
+    );
+
+    currentExercise = parsedExercise;
+    exerciseFinished = false;
+
+    renderExercise();
+
+    exerciseImportPanel.classList.add("hidden");
+    exerciseRenderedPanel.classList.remove("hidden");
+
+    exerciseResultSummary.classList.add("hidden");
+
+    finishExerciseButton.classList.remove("hidden");
+    newExerciseButton.classList.add("hidden");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  } catch (error) {
+    console.error(error);
+
+    exerciseImportMessage.textContent =
+      error.message ||
+      "Não foi possível interpretar o exercício.";
+  }
+}
+
+function parseExerciseText(rawText) {
+  const text = String(rawText || "")
+    .replace(/\r\n?/g, "\n")
+    .trim();
+
+  if (!text) {
+    throw new Error(
+      "Cole um exercício antes de gerar."
+    );
+  }
+
+  const lines = text.split("\n");
+
+  if (lines[0].trim() !== "[EXERCICIO]") {
+    throw new Error(
+      'O exercício deve começar exatamente com "[EXERCICIO]".'
+    );
+  }
+
+  let lastNonEmptyIndex = lines.length - 1;
+
+  while (
+    lastNonEmptyIndex >= 0 &&
+    !lines[lastNonEmptyIndex].trim()
+  ) {
+    lastNonEmptyIndex--;
+  }
+
+  if (
+    lastNonEmptyIndex < 0 ||
+    lines[lastNonEmptyIndex].trim() !== "[FIM]"
+  ) {
+    throw new Error(
+      'O exercício deve terminar exatamente com "[FIM]".'
+    );
+  }
+
+  let title = "";
+  const blocks = [];
+
+  let questionNumber = 0;
+  let i = 1;
+
+  while (i <= lastNonEmptyIndex) {
+    const line = lines[i].trim();
+
+    if (!line) {
+      i++;
+      continue;
+    }
+
+    if (line === "[FIM]") {
+      break;
+    }
+
+    if (line.startsWith("TITULO:")) {
+      if (title) {
+        throw new Error(
+          `Linha ${i + 1}: existe mais de um campo TITULO.`
+        );
+      }
+
+      title = line
+        .slice("TITULO:".length)
+        .trim();
+
+      if (!title) {
+        throw new Error(
+          `Linha ${i + 1}: o campo TITULO está vazio.`
+        );
+      }
+
+      i++;
+      continue;
+    }
+
+    if (line === "[TEXTO]") {
+      const startLine = i + 1;
+      const contentLines = [];
+
+      i++;
+
+      while (
+        i <= lastNonEmptyIndex &&
+        !isExerciseStructuralMarker(
+          lines[i].trim()
+        )
+      ) {
+        contentLines.push(lines[i]);
+        i++;
+      }
+
+      const content = contentLines
+        .join("\n")
+        .trim();
+
+      if (!content) {
+        throw new Error(
+          `Linha ${startLine}: o bloco [TEXTO] está vazio.`
+        );
+      }
+
+      blocks.push({
+        kind: "text",
+        text: content
+      });
+
+      continue;
+    }
+
+    if (line === "[QUESTAO]") {
+      questionNumber++;
+
+      const startLine = i + 1;
+      const questionLines = [];
+
+      i++;
+
+      while (
+        i <= lastNonEmptyIndex &&
+        !isExerciseStructuralMarker(
+          lines[i].trim()
+        )
+      ) {
+        questionLines.push(lines[i]);
+        i++;
+      }
+
+      blocks.push({
+        kind: "question",
+
+        question: parseExerciseQuestion(
+          questionLines,
+          questionNumber,
+          startLine
+        )
+      });
+
+      continue;
+    }
+
+    throw new Error(
+      `Linha ${i + 1}: conteúdo fora de um bloco reconhecido: "${line}".`
+    );
+  }
+
+  if (!title) {
+    throw new Error(
+      "O exercício precisa de um campo TITULO:."
+    );
+  }
+
+  const questions = blocks.filter(
+    (block) => block.kind === "question"
+  );
+
+  if (questions.length === 0) {
+    throw new Error(
+      "O exercício precisa ter pelo menos uma [QUESTAO]."
+    );
+  }
+
+  return {
+    title,
+    blocks,
+    questionCount: questions.length
+  };
+}
+
+function isExerciseStructuralMarker(line) {
+  return (
+    line === "[TEXTO]" ||
+    line === "[QUESTAO]" ||
+    line === "[FIM]" ||
+    line === "[EXERCICIO]"
+  );
+}
+
+function parseExerciseQuestion(
+  lines,
+  questionNumber,
+  startLine
+) {
+  const meaningfulLines = lines
+    .map((line, index) => ({
+      text: line.trim(),
+      lineNumber: startLine + index + 1
+    }))
+    .filter((item) => item.text);
+
+  if (meaningfulLines.length === 0) {
+    throw new Error(
+      `Questão ${questionNumber}: a questão está vazia.`
+    );
+  }
+
+  const firstLine = meaningfulLines[0];
+
+  if (!firstLine.text.startsWith("TIPO:")) {
+    throw new Error(
+      `Questão ${questionNumber}: a primeira linha deve ser TIPO: MULTIPLA, TIPO: VF ou TIPO: ESCRITA.`
+    );
+  }
+
+  const type = firstLine.text
+    .slice("TIPO:".length)
+    .trim()
+    .toUpperCase();
+
+  if (
+    ![
+      "MULTIPLA",
+      "VF",
+      "ESCRITA"
+    ].includes(type)
+  ) {
+    throw new Error(
+      `Questão ${questionNumber}: tipo "${type}" desconhecido. Use MULTIPLA, VF ou ESCRITA.`
+    );
+  }
+
+  const promptLines = [];
+  const options = [];
+
+  let rawAnswer = "";
+  let explanation = "";
+
+  let answerFound = false;
+  let explanationFound = false;
+
+  for (
+    const item
+    of meaningfulLines.slice(1)
+  ) {
+    const line = item.text;
+
+    if (line.startsWith("RESPOSTA:")) {
+      if (answerFound) {
+        throw new Error(
+          `Questão ${questionNumber}: existe mais de um campo RESPOSTA.`
+        );
+      }
+
+      rawAnswer = line
+        .slice("RESPOSTA:".length)
+        .trim();
+
+      answerFound = true;
+
+      if (!rawAnswer) {
+        throw new Error(
+          `Questão ${questionNumber}: o campo RESPOSTA está vazio.`
+        );
+      }
+
+      continue;
+    }
+
+    if (line.startsWith("EXPLICACAO:")) {
+      if (explanationFound) {
+        throw new Error(
+          `Questão ${questionNumber}: existe mais de um campo EXPLICACAO.`
+        );
+      }
+
+      explanation = line
+        .slice("EXPLICACAO:".length)
+        .trim();
+
+      explanationFound = true;
+
+      if (!explanation) {
+        throw new Error(
+          `Questão ${questionNumber}: EXPLICACAO está vazia; remova a linha ou escreva a explicação.`
+        );
+      }
+
+      continue;
+    }
+
+    if (type === "MULTIPLA") {
+      const optionMatch =
+        line.match(/^([A-Z])\)\s+(.+)$/);
+
+      if (optionMatch) {
+        options.push({
+          letter: optionMatch[1],
+          text: optionMatch[2].trim()
+        });
+
+        continue;
+      }
+    }
+
+    if (
+      answerFound ||
+      explanationFound
+    ) {
+      throw new Error(
+        `Questão ${questionNumber}: há conteúdo inesperado depois de RESPOSTA/EXPLICACAO: "${line}".`
+      );
+    }
+
+    promptLines.push(line);
+  }
+
+  const prompt = promptLines
+    .join("\n")
+    .trim();
+
+  if (!prompt) {
+    throw new Error(
+      `Questão ${questionNumber}: falta o enunciado.`
+    );
+  }
+
+  if (!answerFound) {
+    throw new Error(
+      `Questão ${questionNumber}: falta o campo RESPOSTA:.`
+    );
+  }
+
+  if (type === "MULTIPLA") {
+    validateMultipleChoiceQuestion(
+      options,
+      rawAnswer,
+      questionNumber
+    );
+
+    return {
+      type,
+      prompt,
+      options,
+      answer: rawAnswer.toUpperCase(),
+      explanation
+    };
+  }
+
+  if (type === "VF") {
+    const answer =
+      rawAnswer.toUpperCase();
+
+    if (
+      answer !== "V" &&
+      answer !== "F"
+    ) {
+      throw new Error(
+        `Questão ${questionNumber}: questões VF aceitam apenas RESPOSTA: V ou RESPOSTA: F.`
+      );
+    }
+
+    return {
+      type,
+      prompt,
+      answer,
+      explanation
+    };
+  }
+
+  const answerParts = rawAnswer
+    .split("|")
+    .map(
+      (answer) => answer.trim()
+    );
+
+  if (
+    answerParts.some(
+      (answer) => !answer
+    )
+  ) {
+    throw new Error(
+      `Questão ${questionNumber}: há uma resposta vazia ao redor do caractere |.`
+    );
+  }
+
+  return {
+    type,
+    prompt,
+    answers: answerParts,
+    explanation
+  };
+}
+
+function validateMultipleChoiceQuestion(
+  options,
+  rawAnswer,
+  questionNumber
+) {
+  if (options.length < 2) {
+    throw new Error(
+      `Questão ${questionNumber}: uma questão MULTIPLA precisa ter pelo menos duas alternativas.`
+    );
+  }
+
+  options.forEach(
+    (option, index) => {
+      const expectedLetter =
+        String.fromCharCode(
+          65 + index
+        );
+
+      if (
+        option.letter !==
+        expectedLetter
+      ) {
+        throw new Error(
+          `Questão ${questionNumber}: as alternativas devem ser sequenciais começando por A). Esperado ${expectedLetter}), encontrado ${option.letter}).`
+        );
+      }
+    }
+  );
+
+  const answer =
+    rawAnswer.toUpperCase();
+
+  if (
+    !/^[A-Z]$/.test(answer)
+  ) {
+    throw new Error(
+      `Questão ${questionNumber}: RESPOSTA de múltipla escolha deve conter somente a letra da alternativa.`
+    );
+  }
+
+  if (
+    !options.some(
+      (option) =>
+        option.letter === answer
+    )
+  ) {
+    throw new Error(
+      `Questão ${questionNumber}: a resposta ${answer} não corresponde a nenhuma alternativa existente.`
+    );
+  }
+}
+
+function renderExercise() {
+  exerciseTitle.textContent =
+    currentExercise.title;
+
+  exerciseBlocks.replaceChildren();
+  exerciseResultSummary.replaceChildren();
+
+  let textNumber = 0;
+  let questionIndex = 0;
+
+  currentExercise.blocks.forEach(
+    (block) => {
+      if (block.kind === "text") {
+        textNumber++;
+
+        exerciseBlocks.appendChild(
+          createExerciseTextBlock(
+            block.text,
+            textNumber
+          )
+        );
+
+        return;
+      }
+
+      exerciseBlocks.appendChild(
+        createExerciseQuestionBlock(
+          block.question,
+          questionIndex
+        )
+      );
+
+      questionIndex++;
+    }
+  );
+}
+
+function createExerciseTextBlock(
+  text,
+  textNumber
+) {
+  const article =
+    document.createElement("article");
+
+  article.className =
+    "exercise-reading-block";
+
+  const label =
+    document.createElement("p");
+
+  label.className =
+    "exercise-block-label";
+
+  label.textContent =
+    textNumber === 1
+      ? "Texto"
+      : `Texto ${textNumber}`;
+
+  const paragraph =
+    document.createElement("p");
+
+  paragraph.className =
+    "exercise-reading-text";
+
+  paragraph.textContent = text;
+
+  article.append(
+    label,
+    paragraph
+  );
+
+  return article;
+}
+
+function createExerciseQuestionBlock(
+  question,
+  questionIndex
+) {
+  const article =
+    document.createElement("article");
+
+  article.className =
+    "exercise-question-card";
+
+  article.dataset.exerciseQuestionIndex =
+    String(questionIndex);
+
+  const number =
+    document.createElement("p");
+
+  number.className =
+    "exercise-question-number";
+
+  number.textContent =
+    `Questão ${questionIndex + 1}`;
+
+  const prompt =
+    document.createElement("p");
+
+  prompt.className =
+    "exercise-question-prompt";
+
+  prompt.textContent =
+    question.prompt;
+
+  article.append(
+    number,
+    prompt
+  );
+
+  if (
+    question.type === "MULTIPLA"
+  ) {
+    article.appendChild(
+      createExerciseMultipleOptions(
+        question,
+        questionIndex
+      )
+    );
+  } else if (
+    question.type === "VF"
+  ) {
+    article.appendChild(
+      createExerciseTrueFalseOptions(
+        questionIndex
+      )
+    );
+  } else {
+    article.appendChild(
+      createExerciseWrittenInput(
+        questionIndex
+      )
+    );
+  }
+
+  const feedback =
+    document.createElement("div");
+
+  feedback.className =
+    "exercise-feedback hidden";
+
+  feedback.dataset.exerciseFeedback =
+    String(questionIndex);
+
+  article.appendChild(feedback);
+
+  return article;
+}
+
+function createExerciseMultipleOptions(
+  question,
+  questionIndex
+) {
+  const wrapper =
+    document.createElement("div");
+
+  wrapper.className =
+    "exercise-options";
+
+  question.options.forEach(
+    (option) => {
+      wrapper.appendChild(
+        createExerciseOption(
+          `exercise-question-${questionIndex}`,
+          option.letter,
+          `${option.letter}) ${option.text}`
+        )
+      );
+    }
+  );
+
+  return wrapper;
+}
+
+function createExerciseTrueFalseOptions(
+  questionIndex
+) {
+  const wrapper =
+    document.createElement("div");
+
+  wrapper.className =
+    "exercise-options exercise-options-vf";
+
+  wrapper.append(
+    createExerciseOption(
+      `exercise-question-${questionIndex}`,
+      "V",
+      "Verdadeiro"
+    ),
+
+    createExerciseOption(
+      `exercise-question-${questionIndex}`,
+      "F",
+      "Falso"
+    )
+  );
+
+  return wrapper;
+}
+
+function createExerciseOption(
+  name,
+  value,
+  labelText
+) {
+  const label =
+    document.createElement("label");
+
+  label.className =
+    "exercise-option";
+
+  const input =
+    document.createElement("input");
+
+  input.type = "radio";
+  input.name = name;
+  input.value = value;
+
+  const text =
+    document.createElement("span");
+
+  text.textContent = labelText;
+
+  label.append(
+    input,
+    text
+  );
+
+  return label;
+}
+
+function createExerciseWrittenInput(
+  questionIndex
+) {
+  const input =
+    document.createElement("input");
+
+  input.className =
+    "exercise-written-input";
+
+  input.type = "text";
+
+  input.autocomplete = "off";
+  input.autocorrect = "off";
+  input.spellcheck = false;
+
+  input.dataset.exerciseWrittenInput =
+    String(questionIndex);
+
+  input.placeholder =
+    "Digite sua resposta...";
+
+  return input;
+}
+
+function finishExercise() {
+  if (
+    !currentExercise ||
+    exerciseFinished
+  ) {
+    return;
+  }
+
+  const questions =
+    currentExercise.blocks
+      .filter(
+        (block) =>
+          block.kind === "question"
+      )
+      .map(
+        (block) =>
+          block.question
+      );
+
+  let totalScore = 0;
+
+  const counts = {
+    correct: 0,
+    almost: 0,
+    partial: 0,
+    wrong: 0,
+    unanswered: 0
+  };
+
+  questions.forEach(
+    (question, questionIndex) => {
+      const article =
+        exerciseBlocks.querySelector(
+          `[data-exercise-question-index="${questionIndex}"]`
+        );
+
+      const userAnswer =
+        getExerciseUserAnswer(
+          question,
+          questionIndex,
+          article
+        );
+
+      const result =
+        gradeExerciseQuestion(
+          question,
+          userAnswer
+        );
+
+      totalScore += result.score;
+
+      counts[result.status]++;
+
+      renderExerciseQuestionFeedback(
+        article,
+        question,
+        userAnswer,
+        result
+      );
+
+      article
+        .querySelectorAll("input")
+        .forEach(
+          (input) => {
+            input.disabled = true;
+          }
+        );
+    }
+  );
+
+  exerciseFinished = true;
+
+  finishExerciseButton.classList.add(
+    "hidden"
+  );
+
+  newExerciseButton.classList.remove(
+    "hidden"
+  );
+
+  renderExerciseResultSummary(
+    totalScore,
+    questions.length,
+    counts
+  );
+
+  exerciseResultSummary.classList.remove(
+    "hidden"
+  );
+
+  exerciseResultSummary.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
+function getExerciseUserAnswer(
+  question,
+  questionIndex,
+  article
+) {
+  if (
+    question.type === "ESCRITA"
+  ) {
+    const input =
+      article.querySelector(
+        `[data-exercise-written-input="${questionIndex}"]`
+      );
+
+    return input
+      ? input.value.trim()
+      : "";
+  }
+
+  const checked =
+    article.querySelector(
+      `input[name="exercise-question-${questionIndex}"]:checked`
+    );
+
+  return checked
+    ? checked.value
+    : "";
+}
+
+function gradeExerciseQuestion(
+  question,
+  userAnswer
+) {
+  const isEmptyWrittenAnswer =
+    question.type === "ESCRITA" &&
+    !normalizeAnswer(userAnswer);
+
+  if (
+    !userAnswer ||
+    isEmptyWrittenAnswer
+  ) {
+    return {
+      score: 0,
+      status: "unanswered",
+
+      expectedAnswer:
+        getExerciseExpectedAnswerText(
+          question
+        ),
+
+      feedback: [
+        "Questão não respondida."
+      ]
+    };
+  }
+
+  if (
+    question.type === "MULTIPLA" ||
+    question.type === "VF"
+  ) {
+    const isCorrect =
+      userAnswer ===
+      question.answer;
+
+    return {
+      score: isCorrect ? 1 : 0,
+
+      status:
+        isCorrect
+          ? "correct"
+          : "wrong",
+
+      expectedAnswer:
+        getExerciseExpectedAnswerText(
+          question
+        ),
+
+      feedback: [
+        isCorrect
+          ? "Resposta correta."
+          : "Resposta incorreta."
+      ]
+    };
+  }
+
+  return compareExerciseWrittenAnswer(
+    userAnswer,
+    question.answers
+  );
+}
+
+function getExerciseExpectedAnswerText(
+  question
+) {
+  if (
+    question.type === "MULTIPLA"
+  ) {
+    const option =
+      question.options.find(
+        (item) =>
+          item.letter ===
+          question.answer
+      );
+
+    return option
+      ? `${option.letter}) ${option.text}`
+      : question.answer;
+  }
+
+  if (
+    question.type === "VF"
+  ) {
+    return question.answer === "V"
+      ? "Verdadeiro"
+      : "Falso";
+  }
+
+  return question.answers[0] || "";
+}
+
+function getExerciseDisplayedUserAnswer(
+  question,
+  userAnswer
+) {
+  if (!userAnswer) {
+    return "Não respondida";
+  }
+
+  if (
+    question.type === "MULTIPLA"
+  ) {
+    const option =
+      question.options.find(
+        (item) =>
+          item.letter === userAnswer
+      );
+
+    return option
+      ? `${option.letter}) ${option.text}`
+      : userAnswer;
+  }
+
+  if (
+    question.type === "VF"
+  ) {
+    return userAnswer === "V"
+      ? "Verdadeiro"
+      : "Falso";
+  }
+
+  return userAnswer;
+}
+
+function compareExerciseWrittenAnswer(
+  userAnswer,
+  acceptedAnswers
+) {
+  const normalizedUserAnswer =
+    normalizeAnswer(userAnswer);
+
+  const candidates =
+    acceptedAnswers.map(
+      (acceptedAnswer) => {
+        const normalizedExpectedAnswer =
+          normalizeAnswer(
+            acceptedAnswer
+          );
+
+        if (
+          normalizedUserAnswer ===
+          normalizedExpectedAnswer
+        ) {
+          return {
+            score: 1,
+            status: "correct",
+
+            expectedAnswer:
+              acceptedAnswer,
+
+            normalizedExpectedAnswer,
+
+            feedback: [
+              "Resposta correta."
+            ],
+
+            charDistance: 0
+          };
+        }
+
+        return evaluateExerciseWrittenCandidate(
+          normalizedUserAnswer,
+          normalizedExpectedAnswer,
+          acceptedAnswer
+        );
+      }
+    );
+
+  candidates.sort(
+    (a, b) => {
+      if (
+        b.score !== a.score
+      ) {
+        return b.score - a.score;
+      }
+
+      return (
+        a.charDistance -
+        b.charDistance
+      );
+    }
+  );
+
+  return candidates[0];
+}
+
+function evaluateExerciseWrittenCandidate(
+  normalizedUserAnswer,
+  normalizedExpectedAnswer,
+  originalExpectedAnswer
+) {
+  const charComparison =
+    getDamerauLevenshteinComparison(
+      normalizedUserAnswer,
+      normalizedExpectedAnswer
+    );
+
+  const maxCharLength =
+    Math.max(
+      normalizedUserAnswer.length,
+      normalizedExpectedAnswer.length,
+      1
+    );
+
+  const orthographyScore =
+    clamp(
+      1 -
+        charComparison.distance /
+          maxCharLength,
+      0,
+      1
+    );
+
+  const userWords =
+    normalizedUserAnswer
+      .split(/\s+/)
+      .filter(Boolean);
+
+  const expectedWords =
+    normalizedExpectedAnswer
+      .split(/\s+/)
+      .filter(Boolean);
+
+  const wordComparison =
+    getExerciseWordComparison(
+      userWords,
+      expectedWords
+    );
+
+  const maxWordLength =
+    Math.max(
+      userWords.length,
+      expectedWords.length,
+      1
+    );
+
+  const contentScore =
+    clamp(
+      1 -
+        wordComparison.distance /
+          maxWordLength,
+      0,
+      1
+    );
+
+  const score =
+    clamp(
+      contentScore * 0.7 +
+        orthographyScore * 0.3,
+      0,
+      0.9999
+    );
+
+  return {
+    score,
+
+    status:
+      getExerciseWrittenStatus(
+        score
+      ),
+
+    expectedAnswer:
+      originalExpectedAnswer,
+
+    normalizedExpectedAnswer,
+
+    charDistance:
+      charComparison.distance,
+
+    feedback:
+      buildExerciseWrittenFeedback(
+        wordComparison.operations
+      )
+  };
+}
+
+function getExerciseWrittenStatus(
+  score
+) {
+  if (score >= 0.85) {
+    return "almost";
+  }
+
+  if (score >= 0.5) {
+    return "partial";
+  }
+
+  return "wrong";
+}
+
+function getExerciseWordComparison(
+  sourceWords,
+  targetWords
+) {
+  const sourceLength =
+    sourceWords.length;
+
+  const targetLength =
+    targetWords.length;
+
+  const distances =
+    Array.from(
+      {
+        length:
+          sourceLength + 1
+      },
+      () =>
+        Array(
+          targetLength + 1
+        ).fill(0)
+    );
+
+  const steps =
+    Array.from(
+      {
+        length:
+          sourceLength + 1
+      },
+      () =>
+        Array(
+          targetLength + 1
+        ).fill(null)
+    );
+
+  for (
+    let i = 1;
+    i <= sourceLength;
+    i++
+  ) {
+    distances[i][0] = i;
+
+    steps[i][0] = {
+      type: "delete"
+    };
+  }
+
+  for (
+    let j = 1;
+    j <= targetLength;
+    j++
+  ) {
+    distances[0][j] = j;
+
+    steps[0][j] = {
+      type: "insert"
+    };
+  }
+
+  for (
+    let i = 1;
+    i <= sourceLength;
+    i++
+  ) {
+    for (
+      let j = 1;
+      j <= targetLength;
+      j++
+    ) {
+      const userWord =
+        sourceWords[i - 1];
+
+      const expectedWord =
+        targetWords[j - 1];
+
+      const similarity =
+        getExerciseWordSimilarity(
+          userWord,
+          expectedWord
+        );
+
+      let substitutionCost = 0;
+
+      if (
+        userWord !== expectedWord
+      ) {
+        substitutionCost =
+          similarity >= 0.6
+            ? (1 - similarity) * 0.6
+            : 1;
+      }
+
+      let bestDistance =
+        distances[i - 1][j - 1] +
+        substitutionCost;
+
+      let bestStep = {
+        type:
+          substitutionCost === 0
+            ? "match"
+            : "substitute",
+
+        similarity
+      };
+
+      const deleteDistance =
+        distances[i - 1][j] + 1;
+
+      if (
+        deleteDistance <
+        bestDistance
+      ) {
+        bestDistance =
+          deleteDistance;
+
+        bestStep = {
+          type: "delete"
+        };
+      }
+
+      const insertDistance =
+        distances[i][j - 1] + 1;
+
+      if (
+        insertDistance <
+        bestDistance
+      ) {
+        bestDistance =
+          insertDistance;
+
+        bestStep = {
+          type: "insert"
+        };
+      }
+
+      distances[i][j] =
+        bestDistance;
+
+      steps[i][j] =
+        bestStep;
+    }
+  }
+
+  const operations = [];
+
+  let i = sourceLength;
+  let j = targetLength;
+
+  while (
+    i > 0 ||
+    j > 0
+  ) {
+    const step =
+      steps[i][j];
+
+    if (!step) {
+      break;
+    }
+
+    if (
+      step.type === "match"
+    ) {
+      i--;
+      j--;
+
+      continue;
+    }
+
+    if (
+      step.type === "substitute"
+    ) {
+      operations.push({
+        type: "substitute",
+
+        userWord:
+          sourceWords[i - 1],
+
+        expectedWord:
+          targetWords[j - 1],
+
+        userIndex:
+          i - 1,
+
+        expectedIndex:
+          j - 1,
+
+        similarity:
+          step.similarity
+      });
+
+      i--;
+      j--;
+
+      continue;
+    }
+
+    if (
+      step.type === "delete"
+    ) {
+      operations.push({
+        type: "delete",
+
+        userWord:
+          sourceWords[i - 1],
+
+        userIndex:
+          i - 1,
+
+        expectedIndex:
+          j
+      });
+
+      i--;
+
+      continue;
+    }
+
+    if (
+      step.type === "insert"
+    ) {
+      operations.push({
+        type: "insert",
+
+        expectedWord:
+          targetWords[j - 1],
+
+        userIndex:
+          i,
+
+        expectedIndex:
+          j - 1
+      });
+
+      j--;
+    }
+  }
+
+  operations.reverse();
+
+  return {
+    distance:
+      distances[
+        sourceLength
+      ][
+        targetLength
+      ],
+
+    operations
+  };
+}
+
+function getExerciseWordSimilarity(
+  userWord,
+  expectedWord
+) {
+  if (
+    userWord === expectedWord
+  ) {
+    return 1;
+  }
+
+  const comparison =
+    getDamerauLevenshteinComparison(
+      userWord,
+      expectedWord
+    );
+
+  const maxLength =
+    Math.max(
+      userWord.length,
+      expectedWord.length,
+      1
+    );
+
+  return clamp(
+    1 -
+      comparison.distance /
+        maxLength,
+    0,
+    1
+  );
+}
+
+function buildExerciseWrittenFeedback(
+  operations
+) {
+  if (!operations.length) {
+    return [
+      "Resposta correta."
+    ];
+  }
+
+  const missingWords =
+    operations
+      .filter(
+        (operation) =>
+          operation.type ===
+          "insert"
+      )
+      .map(
+        (operation) =>
+          operation.expectedWord
+      );
+
+  const extraWords =
+    operations
+      .filter(
+        (operation) =>
+          operation.type ===
+          "delete"
+      )
+      .map(
+        (operation) =>
+          operation.userWord
+      );
+
+  const feedback = [];
+
+  if (
+    missingWords.length === 1
+  ) {
+    feedback.push(
+      `Faltou a palavra "${missingWords[0]}".`
+    );
+  } else if (
+    missingWords.length > 1
+  ) {
+    feedback.push(
+      `Faltaram as palavras ${formatExerciseQuotedList(missingWords)}.`
+    );
+  }
+
+  if (
+    extraWords.length === 1
+  ) {
+    feedback.push(
+      `Há uma palavra extra: "${extraWords[0]}".`
+    );
+  } else if (
+    extraWords.length > 1
+  ) {
+    feedback.push(
+      `Há palavras extras: ${formatExerciseQuotedList(extraWords)}.`
+    );
+  }
+
+  operations
+    .filter(
+      (operation) =>
+        operation.type ===
+        "substitute"
+    )
+    .forEach(
+      (operation) => {
+        if (
+          operation.similarity >=
+          0.6
+        ) {
+          feedback.push(
+            ...buildExerciseWordSpellingFeedback(
+              operation.userWord,
+              operation.expectedWord,
+              operation.expectedIndex +
+                1
+            )
+          );
+        } else {
+          feedback.push(
+            `Na ${getOrdinalWord(operation.expectedIndex + 1)} palavra, você escreveu "${operation.userWord}", mas o esperado era "${operation.expectedWord}".`
+          );
+        }
+      }
+    );
+
+  if (
+    feedback.length === 0
+  ) {
+    return [
+      "A resposta ficou diferente da forma esperada."
+    ];
+  }
+
+  return feedback.slice(0, 6);
+}
+
+function buildExerciseWordSpellingFeedback(
+  userWord,
+  expectedWord,
+  wordNumber
+) {
+  const comparison =
+    getDamerauLevenshteinComparison(
+      userWord,
+      expectedWord
+    );
+
+  const prefix =
+    `Na ${getOrdinalWord(wordNumber)} palavra`;
+
+  if (
+    comparison.operations.length >
+    3
+  ) {
+    return [
+      `${prefix}, você escreveu "${userWord}", mas o correto é "${expectedWord}".`
+    ];
+  }
+
+  return comparison.operations.map(
+    (operation) => {
+      if (
+        operation.type ===
+        "substitute"
+      ) {
+        const part =
+          getWordPart(
+            clamp(
+              operation.position -
+                1,
+              0,
+              expectedWord.length -
+                1
+            ),
+
+            expectedWord.length
+          );
+
+        return `${prefix}, ${part}, você escreveu "${operation.userChar}", mas o correto é "${operation.expectedChar}".`;
+      }
+
+      if (
+        operation.type ===
+        "insert"
+      ) {
+        const part =
+          getWordPart(
+            clamp(
+              operation.position -
+                1,
+              0,
+              expectedWord.length -
+                1
+            ),
+
+            expectedWord.length
+          );
+
+        return `${prefix}, faltou a letra "${operation.expectedChar}" ${part}.`;
+      }
+
+      if (
+        operation.type ===
+        "delete"
+      ) {
+        const part =
+          getWordPart(
+            clamp(
+              operation.position -
+                1,
+              0,
+              userWord.length -
+                1
+            ),
+
+            userWord.length
+          );
+
+        return `${prefix}, há uma letra extra "${operation.userChar}" ${part}.`;
+      }
+
+      if (
+        operation.type ===
+        "transpose"
+      ) {
+        return `${prefix}, algumas letras parecem estar invertidas.`;
+      }
+
+      return `${prefix}, a grafia está diferente.`;
+    }
+  );
+}
+
+function formatExerciseQuotedList(
+  items
+) {
+  const quoted =
+    items.map(
+      (item) => `"${item}"`
+    );
+
+  if (
+    quoted.length <= 1
+  ) {
+    return quoted[0] || "";
+  }
+
+  if (
+    quoted.length === 2
+  ) {
+    return (
+      `${quoted[0]} e ${quoted[1]}`
+    );
+  }
+
+  return (
+    `${quoted
+      .slice(0, -1)
+      .join(", ")} e ${quoted[quoted.length - 1]}`
+  );
+}
+
+function renderExerciseQuestionFeedback(
+  article,
+  question,
+  userAnswer,
+  result
+) {
+  const feedbackBox =
+    article.querySelector(
+      "[data-exercise-feedback]"
+    );
+
+  feedbackBox.replaceChildren();
+
+  feedbackBox.className =
+    `exercise-feedback exercise-feedback-${result.status}`;
+
+  const heading =
+    document.createElement(
+      "strong"
+    );
+
+  heading.className =
+    "exercise-feedback-title";
+
+  heading.textContent =
+    getExerciseStatusLabel(
+      result.status,
+      result.score,
+      question.type
+    );
+
+  const userLine =
+    document.createElement("p");
+
+  userLine.textContent =
+    `Sua resposta: ${getExerciseDisplayedUserAnswer(question, userAnswer)}`;
+
+  const expectedLine =
+    document.createElement("p");
+
+  expectedLine.textContent =
+    `Resposta esperada: ${result.expectedAnswer}`;
+
+  feedbackBox.append(
+    heading,
+    userLine,
+    expectedLine
+  );
+
+  result.feedback.forEach(
+    (message) => {
+      if (
+        message ===
+        "Resposta correta."
+      ) {
+        return;
+      }
+
+      const paragraph =
+        document.createElement(
+          "p"
+        );
+
+      paragraph.className =
+        "exercise-feedback-detail";
+
+      paragraph.textContent =
+        message;
+
+      feedbackBox.appendChild(
+        paragraph
+      );
+    }
+  );
+
+  if (
+    question.explanation
+  ) {
+    const explanation =
+      document.createElement(
+        "p"
+      );
+
+    explanation.className =
+      "exercise-explanation";
+
+    explanation.textContent =
+      `Explicação: ${question.explanation}`;
+
+    feedbackBox.appendChild(
+      explanation
+    );
+  }
+}
+
+function getExerciseStatusLabel(
+  status,
+  score,
+  questionType
+) {
+  if (
+    status === "correct"
+  ) {
+    return "✅ Correta";
+  }
+
+  if (
+    status === "almost"
+  ) {
+    return (
+      `🟢 Quase correta — ${Math.round(score * 100)}%`
+    );
+  }
+
+  if (
+    status === "partial"
+  ) {
+    return (
+      `🟡 Parcialmente correta — ${Math.round(score * 100)}%`
+    );
+  }
+
+  if (
+    status === "unanswered"
+  ) {
+    return (
+      "⚪ Não respondida — 0%"
+    );
+  }
+
+  if (
+    questionType === "ESCRITA"
+  ) {
+    return (
+      `❌ Incorreta — ${Math.round(score * 100)}%`
+    );
+  }
+
+  return "❌ Incorreta";
+}
+
+function renderExerciseResultSummary(
+  totalScore,
+  questionCount,
+  counts
+) {
+  exerciseResultSummary.replaceChildren();
+
+  const title =
+    document.createElement("h3");
+
+  title.textContent =
+    "Resultado do exercício";
+
+  const percentage =
+    questionCount > 0
+      ? (
+          totalScore /
+          questionCount
+        ) * 100
+      : 0;
+
+  const score =
+    document.createElement("p");
+
+  score.className =
+    "exercise-result-score";
+
+  score.textContent =
+    `${formatExercisePoints(totalScore)} / ${questionCount} pontos · ${percentage
+      .toFixed(1)
+      .replace(".", ",")}%`;
+
+  const grid =
+    document.createElement("div");
+
+  grid.className =
+    "exercise-result-grid";
+
+  appendExerciseResultMetric(
+    grid,
+    "Corretas",
+    counts.correct
+  );
+
+  appendExerciseResultMetric(
+    grid,
+    "Quase corretas",
+    counts.almost
+  );
+
+  appendExerciseResultMetric(
+    grid,
+    "Parciais",
+    counts.partial
+  );
+
+  appendExerciseResultMetric(
+    grid,
+    "Incorretas",
+    counts.wrong
+  );
+
+  appendExerciseResultMetric(
+    grid,
+    "Não respondidas",
+    counts.unanswered
+  );
+
+  exerciseResultSummary.append(
+    title,
+    score,
+    grid
+  );
+}
+
+function appendExerciseResultMetric(
+  container,
+  label,
+  value
+) {
+  const item =
+    document.createElement("div");
+
+  const labelElement =
+    document.createElement("span");
+
+  labelElement.textContent =
+    label;
+
+  const valueElement =
+    document.createElement(
+      "strong"
+    );
+
+  valueElement.textContent =
+    String(value);
+
+  item.append(
+    labelElement,
+    valueElement
+  );
+
+  container.appendChild(
+    item
+  );
+}
+
+function formatExercisePoints(
+  value
+) {
+  return value.toLocaleString(
+    "pt-BR",
+    {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2
+    }
+  );
+}
+
 function resetStats() {
 	const filteredCards = getFilteredCards();
 
@@ -3306,6 +5266,31 @@ wrongWordsButton.addEventListener("click", () => openWordsScreen("wrong"));
 backFromWordsButton.addEventListener("click", backFromWordsScreen);
 wordsDirectionButton.addEventListener("click", toggleWordsDirection);
 wordsList.addEventListener("click", handleWordsListClick);
+
+exerciseButton.addEventListener(
+  "click",
+  openExerciseScreen
+);
+
+backFromExerciseButton.addEventListener(
+  "click",
+  backFromExerciseScreen
+);
+
+generateExerciseButton.addEventListener(
+  "click",
+  generateExercise
+);
+
+finishExerciseButton.addEventListener(
+  "click",
+  finishExercise
+);
+
+newExerciseButton.addEventListener(
+  "click",
+  resetExerciseScreen
+);
 
 finishSessionButton.addEventListener("click", showSummary);
 repeatSessionButton.addEventListener("click", repeatSession);
