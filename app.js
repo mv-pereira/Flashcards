@@ -1209,6 +1209,20 @@ function createStudyOccurrence(card) {
 		directionSelect.value === "sv-pt" ||
 		directionSelect.value === "pt-sv";
 
+	// No modo "Novas palavras", sempre usar a forma básica
+	if (isNewWordsMode) {
+		if (isNounWithGender(card)) {
+			occurrence._nounForm = "singularIndefinite";
+		}
+
+		if (isVerb(card)) {
+			occurrence._verbForm = "infinitive";
+		}
+
+		return occurrence;
+	}
+
+	// Nos outros modos, mantém o comportamento atual
 	if (isTextDirection && isNounWithGender(card)) {
 		occurrence._nounForm = chooseRandomNounForm(card);
 	}
