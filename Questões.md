@@ -355,17 +355,25 @@ Não force uma estrutura gramatical se para isso for necessário introduzir voca
 
 ---
 
-# 3. QUANTIDADE DE QUESTÕES
+# 3. QUANTIDADE DE QUESTÕES E SUBITENS
 
-Quando eu solicitar 15 questões, produza exatamente 15.
+Quando eu solicitar determinada quantidade de questões, essa quantidade se refere ao número de blocos [QUESTAO].
 
-Na ausência de outra distribuição, utilize:
+Questões de compreensão, MULTIPLA e VF normalmente correspondem a uma única tarefa.
 
-* 5 questões de múltipla escolha;
-* 5 questões de verdadeiro ou falso;
-* 5 questões de resposta escrita.
+Questões gramaticais do tipo ESCRITA podem conter vários subitens a), b), c), d) etc.
 
-Se eu solicitar outra distribuição explicitamente, siga a nova distribuição.
+Os subitens internos não aumentam a contagem de blocos [QUESTAO].
+
+Entretanto, controle o tamanho total do exercício.
+
+Em um exercício padrão de 15 [QUESTAO], não transforme todas as questões gramaticais em blocos de 8 subitens.
+
+Como referência, utilize normalmente entre 2 e 4 questões gramaticais agrupadas.
+
+Cada questão agrupada pode conter aproximadamente 4 a 8 subitens conforme a complexidade da tarefa.
+
+As demais questões escritas podem continuar sendo questões individuais quando isso for pedagogicamente mais adequado.
 
 ---
 
@@ -465,89 +473,258 @@ Crie várias oportunidades para praticar esses elementos por meio de:
 - compreensão contextual.
 
 
-# 4.2 EXERCÍCIOS ESTRUTURAIS E DE PREENCHIMENTO
+# 4.2 EXERCÍCIOS GRAMATICAIS AGRUPADOS
 
-É desejável criar questões semelhantes a exercícios tradicionais de livro didático.
+Questões gramaticais e estruturais devem, sempre que adequado, seguir o formato tradicional de exercícios de livro didático.
 
-Isso inclui:
+Em vez de criar uma [QUESTAO] independente para cada pequena transformação ou lacuna, é permitido e desejável reunir vários subitens relacionados sob uma única [QUESTAO].
 
-- completar uma frase com a palavra correta;
-- escolher entre duas ou mais formas gramaticais;
-- transformar uma frase;
-- conjugar um verbo;
-- escrever um plural;
-- escrever uma forma definida;
-- escolher o pronome correto;
-- escolher o advérbio correto;
-- completar uma preposição;
-- escrever uma data por extenso;
-- escrever ou interpretar um horário;
-- completar uma frase usando contexto gramatical.
+Esse formato deve ser utilizado principalmente quando vários itens praticarem a mesma regra ou estrutura gramatical.
 
-Essas questões devem utilizar os três tipos já suportados pelo aplicativo:
+O formato de subitens agrupados é suportado exclusivamente em questões:
 
 TIPO: ESCRITA
-TIPO: MULTIPLA
-TIPO: VF
 
-Para exercícios de lacuna, prefira TIPO: ESCRITA quando o estudante deve produzir a palavra.
+Não utilize subitens agrupados em questões TIPO: MULTIPLA ou TIPO: VF.
+
+Toda questão escrita agrupada deve possuir uma instrução geral antes do primeiro subitem a).
+
+Correto:
+
+[QUESTAO]
+TIPO: ESCRITA
+Complete com o pronome possessivo correto.
+
+a) ...
+b) ...
+
+RESPOSTA: a=...; b=...
+
+Incorreto:
+
+[QUESTAO]
+TIPO: ESCRITA
+a) ...
+b) ...
+
+RESPOSTA: a=...; b=...
+
+O aplicativo exige que exista um enunciado ou instrução geral antes de a).
+
+Exemplos adequados:
+
+- completar várias frases com possessivos;
+- conjugar vários verbos;
+- transformar várias frases para o pretérito;
+- transformar frases para o perfeito;
+- escolher formas en/ett/plural;
+- produzir formas definidas;
+- produzir plurais;
+- completar preposições;
+- completar advérbios;
+- reorganizar a ordem das palavras;
+- transformar frases começando por determinada expressão;
+- praticar concordância de adjetivos;
+- completar estruturas com verbos modais;
+- praticar datas, horas ou expressões temporais;
+- outras séries de exercícios que trabalhem a mesma estrutura.
+
+Os subitens devem ser identificados por letras minúsculas:
+
+a)
+b)
+c)
+d)
+e)
+f)
+
+etc.
+
+Não utilize letras maiúsculas para identificar subitens gramaticais, pois A), B), C), D) etc. ficam reservadas às alternativas de questões do tipo MULTIPLA.
 
 Exemplo:
 
 [QUESTAO]
 TIPO: ESCRITA
-Complete com här, där, hit ou dit:
+Complete com o pronome possessivo correto.
 
-Jag är på stationen nu. Jag väntar ____.
+a) Jag har en biljett. Det är ____ biljett.
+b) Jag har ett flyg. Det är ____ flyg.
+c) Jag har två väskor. Det är ____ väskor.
 
-RESPOSTA: här
-EXPLICACAO: "Här" indica localização no lugar onde a pessoa está.
+RESPOSTA: a=min; b=mitt; c=mina
+EXPLICACAO: O possessivo deve concordar com substantivos en, ett ou plural.
 
-Também é possível utilizar múltipla escolha:
+# 4.2.1 QUANTIDADE DE SUBITENS
+
+Tecnicamente, uma questão agrupada deve possuir no mínimo 2 subitens.
+
+Os subitens devem começar obrigatoriamente por:
+
+a)
+b)
+
+e continuar em sequência alfabética, sem pular letras.
+
+Utilize somente letras minúsculas simples de a até z.
+
+O mínimo técnico de 2 subitens não altera a recomendação pedagógica abaixo: normalmente prefira 4 a 8 subitens.
+
+Uma questão gramatical agrupada deve normalmente conter entre 4 e 8 subitens.
+
+Utilize menos subitens quando:
+
+- as transformações forem longas;
+- cada resposta exigir uma frase inteira;
+- o exercício for linguisticamente mais complexo.
+
+Utilize mais subitens quando:
+
+- as respostas forem palavras curtas;
+- o objetivo for repetição controlada;
+- o padrão gramatical exigir contraste entre várias formas.
+
+Evite criar blocos excessivamente longos.
+
+Como referência:
+
+- respostas de uma palavra: aproximadamente 5 a 8 subitens;
+- respostas curtas: aproximadamente 4 a 6 subitens;
+- transformação de frases inteiras: aproximadamente 3 a 5 subitens.
+
+# 4.2.2 RESPOSTAS DOS SUBITENS
+
+Quando uma [QUESTAO] contiver vários subitens, todas as respostas devem aparecer na mesma linha de RESPOSTA:.
+
+Utilize a seguinte sintaxe:
+
+RESPOSTA: a=resposta; b=resposta; c=resposta; d=resposta
+
+O sinal de ponto e vírgula separa as respostas dos diferentes subitens.
+
+Exemplo:
+
+RESPOSTA: a=min; b=mitt; c=mina; d=din; e=ditt; f=dina
+
+A letra do subitem deve sempre ser seguida por "=".
+
+A ordem das respostas em RESPOSTA: deve ser a mesma ordem dos subitens apresentados na questão.
+
+Não omita a identificação da letra.
+
+Correto:
+
+RESPOSTA: a=min; b=mitt; c=mina
+
+Incorreto:
+
+RESPOSTA: min; mitt; mina
+
+# 4.2.3 MAIS DE UMA RESPOSTA CORRETA EM UM SUBITEM
+
+O caractere | continua significando alternativas igualmente corretas PARA O MESMO SUBITEM.
+
+O ponto e vírgula ; separa SUBITENS DIFERENTES.
+
+Exemplo:
+
+RESPOSTA: a=Hon arbetar på ett sjukhus. | På ett sjukhus.; b=Han bor i Stockholm. | I Stockholm.
+
+Portanto:
+
+| = respostas alternativas para o mesmo subitem
+
+; = separação entre subitens diferentes
+
+Nunca utilize | para separar a resposta de a) da resposta de b).
+
+# 4.2.4 CORREÇÃO DOS SUBITENS
+
+Cada subitem de uma questão gramatical agrupada deve ser considerado uma unidade de resposta independente.
+
+O aplicativo deverá poder considerar, por exemplo:
+
+a) correta;
+b) incorreta;
+c) parcialmente correta;
+d) correta.
+
+Um erro em um subitem não deve tornar automaticamente todos os demais subitens incorretos.
+
+Para questões com vários subitens, cada subitem possui o mesmo peso dentro da [QUESTAO].
+
+A pontuação global da questão agrupada é calculada pela média aritmética das pontuações dos seus subitens.
+
+Exemplo:
+
+Se uma questão possuir 4 subitens com as seguintes pontuações:
+
+a) 100%
+b) 100%
+c) 50%
+d) 0%
+
+a pontuação da questão será:
+
+(1 + 1 + 0,5 + 0) / 4 = 0,625
+
+Portanto, a [QUESTAO] valerá 0,625 ponto.
+
+Independentemente da quantidade de subitens, cada bloco [QUESTAO] continua valendo no máximo 1 ponto.
+
+Os subitens não aumentam a quantidade total de pontos possíveis da prova.
+
+Cada subitem continua sendo corrigido individualmente e pode receber seu próprio resultado:
+
+- correta;
+- quase correta;
+- parcialmente correta;
+- incorreta;
+- não respondida.
+
+O resultado global da questão agrupada é calculado a partir da média dos subitens.
+
+A análise de respostas escritas continuará utilizando as mesmas regras de:
+
+- normalização;
+- comparação por palavras;
+- comparação por letras;
+- respostas alternativas;
+- acerto parcial.
+
+# 4.2.5 PADRÃO PEDAGÓGICO
+
+Sempre que vários conteúdos puderem ser praticados de forma natural sob a mesma instrução, prefira um exercício agrupado a várias questões isoladas quase idênticas.
+
+Por exemplo, em vez de produzir:
 
 [QUESTAO]
-TIPO: MULTIPLA
-Complete corretamente:
+Complete com o possessivo correto:
+Jag har en biljett. Det är ____ biljett.
 
-Jag är hemma. Kan du komma ____?
+[QUESTAO]
+Complete com o possessivo correto:
+Jag har ett flyg. Det är ____ flyg.
 
-A) här
-B) där
-C) hit
-D) dit
+[QUESTAO]
+Complete com o possessivo correto:
+Jag har två väskor. Det är ____ väskor.
 
-RESPOSTA: C
-EXPLICACAO: "Hit" indica movimento em direção ao lugar onde está quem fala.
-
-Para transformações verbais:
+prefira:
 
 [QUESTAO]
 TIPO: ESCRITA
-Transforme para o pretérito:
+Complete com o pronome possessivo correto.
 
-Jag arbetar idag.
+a) Jag har en biljett. Det är ____ biljett.
+b) Jag har ett flyg. Det är ____ flyg.
+c) Jag har två väskor. Det är ____ väskor.
 
-RESPOSTA: Jag arbetade idag.
-EXPLICACAO: O pretérito de "arbeta" é "arbetade".
+RESPOSTA: a=min; b=mitt; c=mina
 
-Para possessivos:
+Esse formato deve ser especialmente favorecido nas questões gramaticais independentes do texto principal.
 
-[QUESTAO]
-TIPO: MULTIPLA
-Complete corretamente:
-
-Vi har ett projekt. ____ projekt är viktigt.
-
-A) Vår
-B) Vårt
-C) Våra
-
-RESPOSTA: B
-EXPLICACAO: "projekt" é ett, portanto o possessivo correspondente é "vårt".
-
-Cada lacuna deve normalmente constituir uma questão separada.
-
-Não crie uma única [QUESTAO] contendo dez lacunas independentes, pois o aplicativo corrige cada [QUESTAO] individualmente.
+Questões de compreensão textual, múltipla escolha e verdadeiro ou falso normalmente devem continuar contendo apenas uma tarefa principal por [QUESTAO].
 
 
 # 4.3 DATAS, CALENDÁRIO E HORAS
@@ -794,27 +971,78 @@ Não coloque uma questão de interpretação do Texto 1 depois do Texto 2 ou do 
 
 Questões que comparem dois ou mais textos podem aparecer somente depois que todos os textos envolvidos já tiverem sido apresentados.
 
+# 8.2 DIVERSIFICAÇÃO DE VOCABULÁRIO ENTRE VÁRIOS TEXTOS
+
+Quando houver mais de um bloco [TEXTO], os textos seguintes devem procurar ampliar a cobertura do vocabulário autorizado.
+
+Não reutilize em todos os textos exatamente o mesmo conjunto de palavras apenas por serem fáceis de combinar.
+
+O primeiro texto pode estabelecer o contexto utilizando o vocabulário autorizado normalmente.
+
+A partir do segundo texto, dê prioridade a palavras, expressões e estruturas autorizadas que ainda não tenham sido utilizadas nos textos anteriores.
+
+Essa diversificação deve dar prioridade especial ao vocabulário proveniente do capítulo mais alto do intervalo solicitado.
+
+Portanto, se forem produzidos vários textos:
+
+- o Texto 1 deve privilegiar o conteúdo recente normalmente;
+- o Texto 2 deve privilegiar, entre o vocabulário autorizado, palavras do capítulo mais recente que não tenham aparecido no Texto 1;
+- o Texto 3 deve privilegiar palavras do capítulo mais recente que ainda não tenham aparecido nos Textos 1 e 2;
+- textos posteriores devem continuar seguindo a mesma lógica cumulativa.
+
+Depois de explorar vocabulário ainda não utilizado do capítulo mais recente, aplique a mesma lógica ao capítulo imediatamente anterior e, em seguida, aos capítulos mais antigos quando necessário.
+
+O objetivo é aumentar progressivamente a variedade lexical e a cobertura do material estudado ao longo dos diferentes textos.
+
+Essa regra é uma prioridade, não uma proibição absoluta de repetição.
+
+É permitido repetir palavras quando forem necessárias para:
+
+- manter coerência e continuidade;
+- construir frases gramaticalmente corretas;
+- reutilizar personagens, lugares ou referentes;
+- utilizar artigos, pronomes, auxiliares, preposições, conjunções e outras palavras funcionais já autorizadas;
+- manter palavras essenciais ao contexto;
+- praticar deliberadamente determinada estrutura;
+- lidar com vocabulário autorizado insuficiente.
+
+Entretanto, substantivos, verbos, adjetivos, advérbios e expressões de conteúdo não devem ser repetidos desnecessariamente entre todos os textos quando houver outras opções autorizadas ainda não exploradas.
+
+Antes de produzir cada novo [TEXTO], verifique silenciosamente:
+
+1. quais palavras e expressões autorizadas já apareceram nos textos anteriores;
+2. quais palavras do capítulo mais recente ainda não foram utilizadas;
+3. quais dessas palavras podem ser combinadas naturalmente em um novo contexto;
+4. quais estruturas gramaticais recentes ainda podem ser exploradas.
+
+Prefira construir o novo texto a partir desse vocabulário ainda pouco ou não utilizado.
+
+Não introduza vocabulário externo para obter variedade.
+
+Se o vocabulário autorizado restante não permitir um texto natural e gramaticalmente correto, reutilize palavras já empregadas conforme necessário.
+
 ---
 
 # 9. IDENTIFICAÇÃO DAS QUESTÕES
 
-Cada nova questão deve começar exatamente com:
+Cada nova questão principal deve começar exatamente com:
 
 [QUESTAO]
 
-Não numere as questões manualmente.
+Não numere manualmente as questões principais.
 
-Não escreva:
+Entretanto, dentro de uma questão gramatical agrupada, utilize letras minúsculas para os subitens:
 
-Questão 1
+a)
+b)
+c)
+d)
 
-1.
+etc.
 
-1)
+Essas letras são subitens internos e não representam novas marcações estruturais.
 
-Pergunta 1
-
-O próprio aplicativo será responsável pela numeração.
+Não coloque [QUESTAO] antes de cada subitem de um exercício agrupado.
 
 ---
 
@@ -1000,19 +1228,33 @@ A questão escrita deve ter uma resposta suficientemente objetiva para ser corri
 
 # 12.1 MAIS DE UMA RESPOSTA CORRETA
 
-Quando mais de uma formulação legítima puder ser aceita, coloque todas na mesma linha de `RESPOSTA:` separadas por:
+Quando mais de uma formulação legítima puder ser aceita, coloque todas na mesma linha de RESPOSTA: separadas por:
 
 |
 
-Exemplo:
+Exemplo de questão escrita individual:
 
 RESPOSTA: Hon arbetar på ett sjukhus. | På ett sjukhus.
 
-O caractere `|` significa:
+O caractere | significa:
 
 "qualquer uma dessas respostas deve ser considerada correta".
 
 Pode haver duas ou mais respostas alternativas.
+
+Em uma questão ESCRITA agrupada, | continua separando respostas alternativas do MESMO subitem, enquanto ; separa subitens diferentes.
+
+Exemplo:
+
+RESPOSTA: a=Hon arbetar på ett sjukhus. | På ett sjukhus.; b=Han bor i Stockholm. | I Stockholm.
+
+Portanto:
+
+| = respostas alternativas para a mesma unidade de resposta
+
+; = separação entre subitens de uma questão agrupada
+
+Nunca utilize | para separar subitens diferentes.
 
 ---
 
@@ -1065,6 +1307,20 @@ O texto do exercício NÃO deve calcular a nota da resposta escrita.
 O aplicativo fará essa análise.
 
 Para cada resposta escrita, o aplicativo comparará a resposta do usuário com todas as formas cadastradas em:
+
+Em questões escritas agrupadas, essa comparação é realizada separadamente para cada subitem.
+
+Exemplo:
+
+RESPOSTA: a=min; b=mitt | alternativ_form; c=mina
+
+O aplicativo corrigirá:
+
+- a) independentemente;
+- b) independentemente, comparando a resposta com todas as formas separadas por |;
+- c) independentemente.
+
+A resposta dada em um subitem não será comparada com as respostas cadastradas para outro subitem.
 
 RESPOSTA:
 
@@ -1400,6 +1656,21 @@ Antes de entregar o exercício, confira silenciosamente:
 * existe `[FIM]`;
 * nada relevante aparece depois de `[FIM]`.
 
+Para questões gramaticais agrupadas, confira também silenciosamente que:
+
+- todos os subitens possuem resposta;
+- nenhuma letra foi omitida;
+- as letras estão em sequência;
+- cada resposta corresponde ao subitem correto;
+- a quantidade de respostas coincide com a quantidade de subitens;
+- ; separa subitens;
+- | é utilizado somente para respostas alternativas do mesmo subitem;
+- os subitens realmente praticam a mesma estrutura ou regra;
+- não foi criado um agrupamento artificial de tarefas sem relação entre si.
+- a questão agrupada utiliza obrigatoriamente TIPO: ESCRITA;
+- existe uma instrução geral antes do subitem a);
+- a linha RESPOSTA: da questão agrupada começa por a=.
+
 ---
 
 # 20. VALIDAÇÃO DAS QUESTÕES DE MÚLTIPLA ESCOLHA
@@ -1605,18 +1876,35 @@ Pergunta objetiva preferencialmente em português.
 RESPOSTA: Primeira resposta correta. | Segunda resposta correta.
 EXPLICACAO: Explicação pedagógica opcional.
 
+[QUESTAO]
+TIPO: ESCRITA
+Complete ou transforme os itens conforme a instrução.
+
+a) Primeiro subitem.
+b) Segundo subitem.
+c) Terceiro subitem.
+d) Quarto subitem.
+
+RESPOSTA: a=Resposta correta do primeiro item.; b=Resposta correta do segundo item.; c=Resposta correta do terceiro item.; d=Resposta correta do quarto item.
+EXPLICACAO: Explicação pedagógica opcional.
+
 [FIM]
 
 ---
 
-# 29. EXEMPLO DE QUESTÃO GRAMATICAL
+# 29. EXEMPLO DE QUESTÃO GRAMATICAL AGRUPADA
 
 [QUESTAO]
 TIPO: ESCRITA
-Qual é o pretérito do verbo "ha"?
+Transforme os verbos para a forma solicitada.
 
-RESPOSTA: hade
-EXPLICACAO: O pretérito de "ha" é "hade".
+a) ...
+b) ...
+c) ...
+d) ...
+
+RESPOSTA: a=...; b=...; c=...; d=...
+EXPLICACAO: Explicação pedagógica opcional.
 
 ---
 
@@ -1680,6 +1968,8 @@ Use exclusivamente o vocabulário autorizado segundo esta especificação.
 
 Se houver mais de um texto, não coloque os textos em sequência.
 
+Quando houver mais de um texto, faça com que cada texto seguinte privilegie vocabulário autorizado ainda não utilizado nos textos anteriores, dando prioridade máxima às palavras do capítulo mais recente.
+
 Após cada [TEXTO], coloque imediatamente as questões de compreensão e interpretação referentes àquele texto.
 
 Depois do último texto e de suas questões específicas, coloque as demais questões gramaticais, estruturais, de transformação e revisão.
@@ -1720,6 +2010,14 @@ Isso pode incluir, conforme o material disponível:
 - horas;
 - expressões temporais;
 - outros grupos gramaticais presentes no JSON.
+
+Entre as questões gramaticais do tipo ESCRITA, utilize normalmente de 2 a 4 questões agrupadas com subitens a), b), c) etc., conforme as regras da seção 4.2.
+
+Questões agrupadas devem utilizar exclusivamente TIPO: ESCRITA.
+
+Cada questão agrupada deve possuir uma instrução geral antes de a) e respostas no formato:
+
+RESPOSTA: a=...; b=...; c=...
 
 Inclua exercícios tradicionais de completar, escolher e transformar frases quando forem adequados.
 
