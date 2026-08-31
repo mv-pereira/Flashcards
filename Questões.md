@@ -1954,9 +1954,9 @@ Use o arquivo `words.json` anexado.
 
 CAPÍTULOS: 0 até X
 
-TAMANHO DO TEXTO: aproximadamente 300 palavras
+TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 150 palavras cada;
 
-QUANTIDADE DE QUESTÕES: 15
+QUANTIDADE DE QUESTÕES: 25
 
 DISTRIBUIÇÃO:
 Divida aproximadamente por igual entre Múltipla Escolha, Verdadeiro ou Falso e Escrita, exemplo, 15 questões:
