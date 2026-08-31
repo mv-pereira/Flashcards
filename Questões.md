@@ -1993,9 +1993,9 @@ Aproximadamente metade das questões deve avaliar diretamente gramática, transf
 
 Antes de gerar as questões, analise silenciosamente quais conteúdos gramaticais ou funcionais foram introduzidos ou enfatizados nos capítulos autorizados, dando prioridade ao capítulo mais recente.
 
-Crie questões específicas sobre esses conteúdos.
+Crie questões específicas sobre esses conteúdos. Tente não fazer questões fáceis, produza questões de dificuldade média à difícil.
 
-Isso pode incluir, conforme o material disponível:
+Isso pode incluir, conforme o material disponível, focado no último capítulo:
 
 - pretérito e outras formas verbais;
 - demonstrativos;
