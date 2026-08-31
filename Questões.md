@@ -472,6 +472,64 @@ Crie várias oportunidades para praticar esses elementos por meio de:
 - transformação de frases;
 - compreensão contextual.
 
+# 4.1 EVITAR CÓPIA LITERAL DO TEXTO
+
+Questões de resposta escrita não devem, como regra geral, limitar-se a reproduzir uma frase do texto com uma única palavra ou expressão retirada para que o estudante simplesmente a copie.
+
+Evite especialmente questões como:
+
+TIPO: ESCRITA
+Complete com a expressão usada no texto:
+Anna var hemma ____.
+
+quando a frase correspondente aparecer praticamente igual no bloco [TEXTO].
+
+Esse tipo de questão exige principalmente localização visual e transcrição, oferecendo pouca prática linguística.
+
+Quando uma questão escrita utilizar conteúdo do texto, prefira exigir alguma transformação, adaptação ou aplicação do conteúdo estudado.
+
+Por exemplo, pode ser necessário:
+
+- alterar número;
+- alterar singular para plural;
+- alterar definido ou indefinido;
+- alterar pessoa ou pronome;
+- alterar possessivo;
+- transformar presente em pretérito ou perfeito;
+- utilizar outra expressão temporal;
+- reorganizar a ordem da frase;
+- modificar uma quantidade;
+- modificar uma data ou horário;
+- substituir uma informação por outra fornecida no enunciado;
+- aplicar a mesma estrutura em uma nova situação.
+
+Exemplo:
+
+Se no texto aparecer:
+
+Restiden är en timme.
+
+prefira uma questão como:
+
+Se o percurso durasse três horas, complete corretamente:
+
+Restiden är ____.
+
+RESPOSTA: tre timmar
+
+em vez de:
+
+Complete segundo o texto:
+
+Restiden är en ____.
+
+RESPOSTA: timme
+
+Questões de compreensão podem continuar perguntando informações presentes no texto, especialmente nos tipos MULTIPLA e VF.
+
+Questões ESCRITA também podem depender do texto, mas devem preferencialmente exigir produção, transformação ou aplicação, e não mera cópia literal de um trecho imediatamente localizável.
+
+Uma questão de cópia literal só deve ser utilizada excepcionalmente quando a memorização ou reconhecimento exato de determinada expressão for deliberadamente o objetivo pedagógico.
 
 # 4.2 EXERCÍCIOS GRAMATICAIS AGRUPADOS
 
@@ -1484,6 +1542,12 @@ O que Erik fez pela manhã?
 
 Escreva a forma definida de "ett år".
 
+Ser objetiva não significa que a questão deva ser uma simples cópia do texto.
+
+Sempre que possível, uma questão ESCRITA deve exigir que o estudante produza ou adapte a resposta usando o vocabulário e a gramática estudados.
+
+Evite reproduzir literalmente uma frase do [TEXTO] substituindo apenas uma palavra por uma lacuna quando a resposta puder ser encontrada por simples localização visual.
+
 Evite perguntas como:
 
 Explique livremente o texto.
@@ -1758,6 +1822,10 @@ As questões devem exigir algum raciocínio, mas permanecer dentro do conteúdo 
 
 Não transforme a prova em simples reconhecimento mecânico de palavras isoladas.
 
+Também evite transformar questões escritas em exercícios de mera localização e cópia de palavras do texto.
+
+Quando uma informação retirada do texto for utilizada em uma questão ESCRITA, prefira pedir ao estudante que transforme, adapte, combine ou reutilize essa informação em uma nova construção.
+
 ---
 
 # 25. AUDITORIA SILENCIOSA DO VOCABULÁRIO
@@ -1994,6 +2062,10 @@ Aproximadamente metade das questões deve avaliar diretamente gramática, transf
 Antes de gerar as questões, analise silenciosamente quais conteúdos gramaticais ou funcionais foram introduzidos ou enfatizados nos capítulos autorizados, dando prioridade ao capítulo mais recente.
 
 Crie questões específicas sobre esses conteúdos. Tente não fazer questões fáceis, produza questões de dificuldade média à difícil.
+
+Evite questões ESCRITA que apenas reproduzam literalmente uma frase do texto com uma palavra retirada para ser copiada.
+
+Quando uma questão escrita se basear em uma informação do texto, prefira exigir transformação ou aplicação, como mudança de tempo verbal, número, forma definida/indefinida, possessivo, ordem da frase, quantidade, data, horário ou substituição de uma informação por outra fornecida no enunciado.
 
 Isso pode incluir, conforme o material disponível, focado no último capítulo:
 
