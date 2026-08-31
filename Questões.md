@@ -226,6 +226,47 @@ Quando houver conflito entre naturalidade e restrição de vocabulário, siga es
 
 Nunca introduza vocabulário comum externo apenas para tornar o texto mais bonito ou mais natural.
 
+# 1.6 PRIORIDADE DOS CAPÍTULOS MAIS RECENTES
+
+Embora todo o intervalo de capítulos informado esteja autorizado, os capítulos NÃO devem receber o mesmo peso.
+
+Dê sempre prioridade ao vocabulário, às estruturas e à gramática dos capítulos mais altos do intervalo solicitado, pois representam o conteúdo estudado mais recentemente.
+
+Exemplo:
+
+Se o pedido for:
+
+CAPÍTULOS: 0 até 6
+
+a prioridade deve ser aproximadamente:
+
+1. capítulo 6 — prioridade máxima;
+2. capítulo 5 — prioridade alta;
+3. capítulo 4 — prioridade secundária;
+4. capítulos 0 a 3 — principalmente revisão e apoio.
+
+O exercício deve funcionar como uma revisão cumulativa, mas com forte concentração no conteúdo mais recente.
+
+Sempre que possível:
+
+- use mais vocabulário do capítulo mais alto;
+- reutilize estruturas introduzidas no capítulo mais alto;
+- faça mais perguntas sobre o capítulo mais alto;
+- utilize o capítulo imediatamente anterior como segunda prioridade;
+- utilize capítulos antigos principalmente para construir contexto e revisar conhecimentos anteriores.
+
+Não distribua o exercício uniformemente entre todos os capítulos.
+
+Como referência, em um exercício de 15 questões:
+
+- aproximadamente 6 a 8 questões devem enfatizar diretamente o capítulo mais alto;
+- aproximadamente 3 a 5 questões devem enfatizar o capítulo imediatamente anterior;
+- as questões restantes podem revisar capítulos anteriores ou combinar conteúdos de vários capítulos.
+
+Essa distribuição não precisa ser matemática quando o conteúdo disponível não permitir, mas a predominância dos capítulos mais recentes deve ser clara.
+
+Se o capítulo mais alto tiver pouco conteúdo suficiente para produzir questões de qualidade, utilize progressivamente o capítulo anterior, sem introduzir conteúdo externo.
+
 ---
 
 # 2. TEXTO PRINCIPAL
@@ -266,6 +307,21 @@ Pode assumir a forma de:
 * combinação dessas formas.
 
 Evite produzir apenas uma coleção de frases desconectadas para encaixar palavras do JSON.
+
+O texto principal também deve privilegiar os capítulos mais recentes.
+
+Não tente representar cada capítulo de maneira uniforme.
+
+Se os capítulos autorizados forem 0 até X, utilize especialmente vocabulário e estruturas do capítulo X e, em segundo lugar, do capítulo X-1.
+
+Vocabulário de capítulos anteriores deve servir principalmente para:
+
+- conectar as frases;
+- construir contexto;
+- revisar conteúdo antigo;
+- permitir o uso natural do conteúdo mais recente.
+
+O texto deve criar oportunidades naturais para reutilizar o conteúdo introduzido mais recentemente.
 
 ---
 
@@ -315,38 +371,233 @@ Se eu solicitar outra distribuição explicitamente, siga a nova distribuição.
 
 # 4. OBJETIVOS DAS QUESTÕES
 
-As questões podem avaliar:
+As questões NÃO devem ser predominantemente de interpretação de texto.
 
-* compreensão do texto;
-* localização de informações;
-* interpretação;
-* vocabulário;
-* significado contextual;
-* plural;
-* singular;
-* formas definidas;
-* formas indefinidas;
-* gênero `en` ou `ett`;
-* formas verbais;
-* infinitivo;
-* presente;
-* pretérito;
-* supino;
-* perfeito;
-* imperativo;
-* pronomes;
-* preposições;
-* advérbios;
-* ordem das palavras;
-* transformação de frases;
-* reconhecimento de estruturas;
-* produção escrita curta;
-* tradução;
-* aplicação gramatical.
+O exercício deve combinar obrigatoriamente dois grandes grupos:
 
-Misture compreensão textual e conhecimento gramatical.
+1. compreensão e uso do texto;
+2. prática gramatical e estrutural do conteúdo já estudado.
 
-Não faça todas as questões simplesmente pedindo para localizar literalmente uma frase no texto.
+Em um exercício padrão de 15 questões, procure utilizar aproximadamente:
+
+- 7 a 9 questões de compreensão, vocabulário e uso contextual;
+- 6 a 8 questões de gramática, transformação, completamento ou produção controlada.
+
+Essa distribuição pode variar conforme o conteúdo dos capítulos, mas deve sempre existir uma quantidade significativa de questões gramaticais.
+
+As questões gramaticais podem avaliar, quando o conteúdo autorizado permitir:
+
+- conjugação verbal;
+- infinitivo;
+- presente;
+- pretérito;
+- supino;
+- perfeito;
+- imperativo;
+- plural;
+- singular;
+- formas definidas;
+- formas indefinidas;
+- gênero en/ett;
+- artigos;
+- pronomes pessoais;
+- pronomes possessivos;
+- pronomes demonstrativos;
+- advérbios;
+- advérbios de lugar;
+- advérbios de direção;
+- preposições;
+- ordem das palavras;
+- negação;
+- posição de advérbios;
+- concordância;
+- numerais;
+- números ordinais;
+- datas;
+- meses;
+- dias da semana;
+- horas e formas de dizer as horas;
+- expressões de tempo;
+- transformação de frases;
+- escolha entre formas gramaticais semelhantes;
+- preenchimento de lacunas.
+
+Não faça todas as questões simplesmente pedindo informações contidas no texto.
+
+O texto principal é uma das fontes do exercício, mas NÃO é necessário que todas as questões dependam dele.
+
+Questões puramente gramaticais podem ser independentes do texto principal, desde que utilizem somente vocabulário e estruturas autorizadas.
+
+Dê PRIORIDADE MÁXIMA ao capítulo mais alto incluído no pedido.
+
+Considere esse capítulo como o foco principal do exercício, pois representa o conteúdo estudado mais recentemente.
+
+Depois, considere o capítulo imediatamente anterior como segunda prioridade.
+
+Os capítulos mais antigos devem funcionar principalmente como revisão acumulada e suporte para o conteúdo novo.
+
+Antes de criar as questões:
+
+1. examine o capítulo mais alto;
+2. identifique o novo vocabulário e os novos grupos gramaticais ou funcionais presentes nele;
+3. crie várias questões diretamente relacionadas a esses conteúdos;
+4. examine o capítulo imediatamente anterior;
+5. utilize os capítulos restantes para revisão e integração.
+
+Se o capítulo mais recente introduzir mais de um conteúdo relevante, tente representar vários deles.
+
+Exemplo conceitual:
+
+Se o capítulo mais alto introduzir:
+
+- pretérito;
+- novos advérbios;
+- novas expressões temporais;
+
+não produza apenas uma questão sobre pretérito.
+
+Crie várias oportunidades para praticar esses elementos por meio de:
+
+- conjugação;
+- preenchimento;
+- escolha de formas;
+- transformação de frases;
+- compreensão contextual.
+
+# 4.2 EXERCÍCIOS ESTRUTURAIS E DE PREENCHIMENTO
+
+É desejável criar questões semelhantes a exercícios tradicionais de livro didático.
+
+Isso inclui:
+
+- completar uma frase com a palavra correta;
+- escolher entre duas ou mais formas gramaticais;
+- transformar uma frase;
+- conjugar um verbo;
+- escrever um plural;
+- escrever uma forma definida;
+- escolher o pronome correto;
+- escolher o advérbio correto;
+- completar uma preposição;
+- escrever uma data por extenso;
+- escrever ou interpretar um horário;
+- completar uma frase usando contexto gramatical.
+
+Essas questões devem utilizar os três tipos já suportados pelo aplicativo:
+
+TIPO: ESCRITA
+TIPO: MULTIPLA
+TIPO: VF
+
+Para exercícios de lacuna, prefira TIPO: ESCRITA quando o estudante deve produzir a palavra.
+
+Exemplo:
+
+[QUESTAO]
+TIPO: ESCRITA
+Complete com här, där, hit ou dit:
+
+Jag är på stationen nu. Jag väntar ____.
+
+RESPOSTA: här
+EXPLICACAO: "Här" indica localização no lugar onde a pessoa está.
+
+Também é possível utilizar múltipla escolha:
+
+[QUESTAO]
+TIPO: MULTIPLA
+Complete corretamente:
+
+Jag är hemma. Kan du komma ____?
+
+A) här
+B) där
+C) hit
+D) dit
+
+RESPOSTA: C
+EXPLICACAO: "Hit" indica movimento em direção ao lugar onde está quem fala.
+
+Para transformações verbais:
+
+[QUESTAO]
+TIPO: ESCRITA
+Transforme para o pretérito:
+
+Jag arbetar idag.
+
+RESPOSTA: Jag arbetade idag.
+EXPLICACAO: O pretérito de "arbeta" é "arbetade".
+
+Para possessivos:
+
+[QUESTAO]
+TIPO: MULTIPLA
+Complete corretamente:
+
+Vi har ett projekt. ____ projekt är viktigt.
+
+A) Vår
+B) Vårt
+C) Våra
+
+RESPOSTA: B
+EXPLICACAO: "projekt" é ett, portanto o possessivo correspondente é "vårt".
+
+Cada lacuna deve normalmente constituir uma questão separada.
+
+Não crie uma única [QUESTAO] contendo dez lacunas independentes, pois o aplicativo corrige cada [QUESTAO] individualmente.
+
+
+# 4.3 DATAS, CALENDÁRIO E HORAS
+
+Quando os capítulos autorizados contiverem o vocabulário necessário, inclua também exercícios envolvendo calendário, datas e horas.
+
+Podem ser avaliados:
+
+- dias da semana;
+- meses;
+- números cardinais;
+- números ordinais;
+- datas numéricas;
+- datas escritas por extenso;
+- aniversário;
+- idade;
+- horários;
+- horas inteiras;
+- minutos;
+- partes do dia;
+- expressões como hoje, ontem, amanhã, manhã, tarde, noite;
+- relações temporais como antes, depois, agora, já e outras presentes no material.
+
+Exemplos de questões possíveis:
+
+[QUESTAO]
+TIPO: ESCRITA
+Escreva 5/2 por extenso em sueco.
+
+RESPOSTA: den femte februari
+
+[QUESTAO]
+TIPO: ESCRITA
+Escreva 11/6 por extenso em sueco.
+
+RESPOSTA: den elfte juni
+
+[QUESTAO]
+TIPO: MULTIPLA
+Qual alternativa corresponde corretamente à data 2/3?
+
+A) den två mars
+B) den andra mars
+C) den andre mars
+D) den andra maj
+
+RESPOSTA: B
+
+Também podem ser criados exercícios com horas quando as formas necessárias para expressar o horário estiverem disponíveis no vocabulário autorizado.
+
+Não introduza formas de dizer datas ou horas que ainda exijam vocabulário não autorizado.
 
 ---
 
@@ -1119,33 +1370,31 @@ Confira silenciosamente que:
 
 ---
 
-# 23. VARIEDADE PEDAGÓGICA
+# 23. VARIEDADE PEDAGÓGICA E PRIORIDADE POR RECÊNCIA
 
-Distribua as questões entre diferentes habilidades.
+O exercício deve obrigatoriamente combinar:
 
-Sempre que o material permitir, misture:
+- compreensão textual;
+- vocabulário contextual;
+- gramática;
+- transformação;
+- produção controlada.
 
-* compreensão direta;
-* inferência simples;
-* vocabulário;
-* tradução;
-* reconhecimento de formas;
-* produção de formas;
-* plural;
-* definido/indefinido;
-* `en`/`ett`;
-* presente;
-* pretérito;
-* infinitivo;
-* supino;
-* imperativo;
-* preposição;
-* pronome;
-* ordem das palavras;
-* transformação de frases;
-* interpretação de acontecimentos.
+Porém, a distribuição dos conteúdos deve privilegiar fortemente os capítulos mais recentes.
 
-Não é obrigatório usar todas essas categorias em todo exercício.
+O capítulo mais alto do intervalo solicitado deve aparecer como o principal foco pedagógico da prova.
+
+O capítulo imediatamente anterior deve funcionar como segundo foco.
+
+Capítulos mais antigos devem aparecer principalmente como revisão cumulativa.
+
+Em um exercício padrão de 15 questões, procure aproximadamente:
+
+- 6 a 8 questões focadas diretamente no capítulo mais recente;
+- 3 a 5 questões focadas no capítulo imediatamente anterior;
+- 2 a 5 questões de revisão ou integração com capítulos anteriores.
+
+Uma questão pode contar como integração quando combina conteúdo recente com vocabulário antigo.
 
 ---
 
@@ -1373,6 +1622,30 @@ Lembre-se de que:
 * cadastre mais de uma resposta escrita quando houver múltiplas formulações realmente corretas;
 * não tente calcular acerto parcial no próprio exercício, pois o aplicativo fará isso;
 * utilize `EXPLICACAO:` somente quando houver valor pedagógico.
+
+Aproximadamente metade das questões deve avaliar diretamente gramática, transformação ou uso estrutural, e não apenas interpretação do texto.
+
+Antes de gerar as questões, analise silenciosamente quais conteúdos gramaticais ou funcionais foram introduzidos ou enfatizados nos capítulos autorizados, dando prioridade ao capítulo mais recente.
+
+Crie questões específicas sobre esses conteúdos.
+
+Isso pode incluir, conforme o material disponível:
+
+- pretérito e outras formas verbais;
+- demonstrativos;
+- possessivos;
+- advérbios;
+- posição versus direção;
+- preposições;
+- plural e definido;
+- datas;
+- meses;
+- ordinais;
+- horas;
+- expressões temporais;
+- outros grupos gramaticais presentes no JSON.
+
+Inclua exercícios tradicionais de completar, escolher e transformar frases quando forem adequados.
 
 Faça uma auditoria silenciosa final do vocabulário, da gramática, do gabarito e da formatação.
 
