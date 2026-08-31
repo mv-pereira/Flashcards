@@ -1430,14 +1430,17 @@ body.dark-theme .comparison-feedback.wrong {
 
 .exercise-vocab-word {
   appearance: none;
+  -webkit-appearance: none;
 
   margin: 0;
   padding: 0;
 
-  border: 0;
+  border: 0 !important;
+  border-bottom: 0 !important;
   border-radius: 0;
 
-  background: transparent;
+  background: transparent !important;
+  background-image: none !important;
   color: inherit;
 
   font: inherit;
@@ -1445,7 +1448,11 @@ body.dark-theme .comparison-feedback.wrong {
 
   cursor: inherit;
 
-  text-decoration: none;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-style: solid !important;
+
+  box-shadow: none !important;
 }
 
 .exercise-vocab-word:hover,
