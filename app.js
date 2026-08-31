@@ -38,6 +38,9 @@ let cardsSinceUnseen = 0;
 let currentExercise = null;
 let exerciseFinished = false;
 
+let exerciseVocabularyIndex = new Map();
+let expandedExerciseVocabulary = null;
+
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
@@ -248,6 +251,8 @@ async function loadCards() {
 		allCards = data
 			.filter((card) => card.active)
 			.sort((a, b) => a.order - b.order);
+
+		buildExerciseVocabularyIndex();
 
 		stats = loadStats();
 
@@ -3585,16 +3590,6 @@ function parseExerciseQuestion(
     promptLines.push(line);
   }
 
-  const prompt = promptLines
-    .join("\n")
-    .trim();
-
-  if (!prompt) {
-    throw new Error(
-      `Questão ${questionNumber}: falta o enunciado.`
-    );
-  }
-
   if (!answerFound) {
     throw new Error(
       `Questão ${questionNumber}: falta o campo RESPOSTA:.`
@@ -3602,6 +3597,16 @@ function parseExerciseQuestion(
   }
 
   if (type === "MULTIPLA") {
+    const prompt = promptLines
+      .join("\n")
+      .trim();
+
+    if (!prompt) {
+      throw new Error(
+        `Questão ${questionNumber}: falta o enunciado.`
+      );
+    }
+
     validateMultipleChoiceQuestion(
       options,
       rawAnswer,
@@ -3618,6 +3623,16 @@ function parseExerciseQuestion(
   }
 
   if (type === "VF") {
+    const prompt = promptLines
+      .join("\n")
+      .trim();
+
+    if (!prompt) {
+      throw new Error(
+        `Questão ${questionNumber}: falta o enunciado.`
+      );
+    }
+
     const answer =
       rawAnswer.toUpperCase();
 
@@ -3636,6 +3651,38 @@ function parseExerciseQuestion(
       answer,
       explanation
     };
+  }
+
+  const groupedAnswers =
+    parseExerciseGroupedWrittenAnswers(
+      rawAnswer,
+      questionNumber
+    );
+
+  if (groupedAnswers) {
+    const groupedQuestion =
+      parseExerciseGroupedWrittenPrompt(
+        promptLines,
+        groupedAnswers,
+        questionNumber
+      );
+
+    return {
+      type,
+      prompt: groupedQuestion.prompt,
+      subitems: groupedQuestion.subitems,
+      explanation
+    };
+  }
+
+  const prompt = promptLines
+    .join("\n")
+    .trim();
+
+  if (!prompt) {
+    throw new Error(
+      `Questão ${questionNumber}: falta o enunciado.`
+    );
   }
 
   const answerParts = rawAnswer
@@ -3659,6 +3706,209 @@ function parseExerciseQuestion(
     prompt,
     answers: answerParts,
     explanation
+  };
+}
+
+function parseExerciseGroupedWrittenAnswers(
+  rawAnswer,
+  questionNumber
+) {
+  if (!/^a\s*=/.test(rawAnswer)) {
+    return null;
+  }
+
+  const markerRegex =
+    /(?:^|;\s*)([a-z])\s*=/g;
+
+  const matches = [
+    ...rawAnswer.matchAll(markerRegex)
+  ];
+
+  if (matches.length < 2) {
+    throw new Error(
+      `Questão ${questionNumber}: uma questão escrita agrupada precisa ter pelo menos os subitens a) e b).`
+    );
+  }
+
+  const entries = matches.map(
+    (match, index) => {
+      const letter = match[1];
+
+      const valueStart =
+        match.index + match[0].length;
+
+      const valueEnd =
+        index + 1 < matches.length
+          ? matches[index + 1].index
+          : rawAnswer.length;
+
+      const rawValue = rawAnswer
+        .slice(valueStart, valueEnd)
+        .trim();
+
+      const answers = rawValue
+        .split("|")
+        .map((answer) => answer.trim());
+
+      if (
+        answers.some(
+          (answer) => !answer
+        )
+      ) {
+        throw new Error(
+          `Questão ${questionNumber}, subitem ${letter}): existe uma resposta vazia.`
+        );
+      }
+
+      return {
+        letter,
+        answers
+      };
+    }
+  );
+
+  entries.forEach(
+    (entry, index) => {
+      const expectedLetter =
+        String.fromCharCode(97 + index);
+
+      if (
+        entry.letter !== expectedLetter
+      ) {
+        throw new Error(
+          `Questão ${questionNumber}: as respostas dos subitens devem ser sequenciais começando por a=. Esperado ${expectedLetter}=, encontrado ${entry.letter}=.`
+        );
+      }
+    }
+  );
+
+  return entries;
+}
+
+function parseExerciseGroupedWrittenPrompt(
+  promptLines,
+  groupedAnswers,
+  questionNumber
+) {
+  const instructionLines = [];
+  const subitems = [];
+
+  let currentSubitem = null;
+
+  promptLines.forEach((line) => {
+    const match =
+      line.match(/^([a-z])\)\s*(.*)$/);
+
+    if (match) {
+      if (currentSubitem) {
+        subitems.push(
+          currentSubitem
+        );
+      }
+
+      currentSubitem = {
+        letter: match[1],
+        lines: match[2]
+          ? [match[2]]
+          : []
+      };
+
+      return;
+    }
+
+    if (currentSubitem) {
+      currentSubitem.lines.push(
+        line
+      );
+    } else {
+      instructionLines.push(
+        line
+      );
+    }
+  });
+
+  if (currentSubitem) {
+    subitems.push(
+      currentSubitem
+    );
+  }
+
+  const prompt = instructionLines
+    .join("\n")
+    .trim();
+
+  if (!prompt) {
+    throw new Error(
+      `Questão ${questionNumber}: uma questão escrita agrupada precisa ter uma instrução geral antes do subitem a).`
+    );
+  }
+
+  if (subitems.length < 2) {
+    throw new Error(
+      `Questão ${questionNumber}: RESPOSTA usa o formato agrupado, mas não foram encontrados pelo menos os subitens a) e b) no enunciado.`
+    );
+  }
+
+  if (
+    subitems.length !==
+    groupedAnswers.length
+  ) {
+    throw new Error(
+      `Questão ${questionNumber}: a quantidade de subitens (${subitems.length}) não corresponde à quantidade de respostas (${groupedAnswers.length}).`
+    );
+  }
+
+  const parsedSubitems =
+    subitems.map(
+      (subitem, index) => {
+        const expectedLetter =
+          String.fromCharCode(
+            97 + index
+          );
+
+        if (
+          subitem.letter !==
+          expectedLetter
+        ) {
+          throw new Error(
+            `Questão ${questionNumber}: os subitens devem ser sequenciais começando por a). Esperado ${expectedLetter}), encontrado ${subitem.letter}).`
+          );
+        }
+
+        const answerEntry =
+          groupedAnswers[index];
+
+        if (
+          answerEntry.letter !==
+          subitem.letter
+        ) {
+          throw new Error(
+            `Questão ${questionNumber}: o subitem ${subitem.letter}) não corresponde à resposta ${answerEntry.letter}=.`
+          );
+        }
+
+        const subitemPrompt =
+          subitem.lines
+            .join("\n")
+            .trim();
+
+        if (!subitemPrompt) {
+          throw new Error(
+            `Questão ${questionNumber}: o subitem ${subitem.letter}) está vazio.`
+          );
+        }
+
+        return {
+          letter: subitem.letter,
+          prompt: subitemPrompt,
+          answers: answerEntry.answers
+        };
+      }
+    );
+
+  return {
+    prompt,
+    subitems: parsedSubitems
   };
 }
 
@@ -3778,7 +4028,10 @@ function createExerciseTextBlock(
   paragraph.className =
     "exercise-reading-text";
 
-  paragraph.textContent = text;
+  renderExerciseInteractiveText(
+    paragraph,
+    text
+  );
 
   article.append(
     label,
@@ -3786,6 +4039,575 @@ function createExerciseTextBlock(
   );
 
   return article;
+}
+
+function buildExerciseVocabularyIndex() {
+  exerciseVocabularyIndex = new Map();
+
+  allCards.forEach((card) => {
+    const swedish = String(
+      card.term?.swedish || ""
+    ).trim();
+
+    if (!swedish) {
+      return;
+    }
+
+    const words =
+      extractExerciseSwedishWords(
+        swedish
+      );
+
+    const isSingleWord =
+      words.length === 1 &&
+      normalizeExerciseVocabularyForm(
+        words[0]
+      ) ===
+        normalizeExerciseVocabularyForm(
+          swedish
+        );
+
+    if (isSingleWord) {
+      registerExerciseVocabularyForm(
+        swedish,
+        {
+          source: "direct",
+          priority: 30,
+          card,
+          formType: "base"
+        }
+      );
+    } else {
+      words.forEach((word) => {
+        registerExerciseVocabularyForm(
+          word,
+          {
+            source: "expression",
+            priority: 10,
+            card,
+            expression: swedish
+          }
+        );
+      });
+    }
+
+    registerExerciseStoredInflections(
+      card
+    );
+
+    registerExerciseRegularAdjectiveForms(
+      card,
+      isSingleWord ? swedish : ""
+    );
+  });
+}
+
+function registerExerciseVocabularyForm(
+  form,
+  entry
+) {
+  const key =
+    normalizeExerciseVocabularyForm(form);
+
+  if (!key) {
+    return;
+  }
+
+  const current =
+    exerciseVocabularyIndex.get(key);
+
+  if (
+    !current ||
+    entry.priority > current.priority
+  ) {
+    exerciseVocabularyIndex.set(
+      key,
+      entry
+    );
+  }
+}
+
+function registerExerciseStoredInflections(
+  card
+) {
+  const grammar = card.grammar || {};
+
+  const forms = [];
+
+  if (grammar.type === "substantivo") {
+    forms.push(
+      ["plural", "plural"],
+      [
+        "definiteSingular",
+        "definiteSingular"
+      ],
+      [
+        "definitePlural",
+        "definitePlural"
+      ]
+    );
+  }
+
+  if (grammar.type === "verbo") {
+    forms.push(
+      ["infinitive", "infinitive"],
+      ["present", "present"],
+      ["past", "past"],
+      ["supine", "supine"]
+    );
+  }
+
+  forms.forEach(([field, formType]) => {
+    const form = grammar[field];
+
+    if (!form) {
+      return;
+    }
+
+    registerExerciseVocabularyForm(
+      form,
+      {
+        source: "inflection",
+        priority: 20,
+        card,
+        formType
+      }
+    );
+  });
+}
+
+function registerExerciseRegularAdjectiveForms(
+  card,
+  swedish
+) {
+  if (
+    card.grammar?.type !== "adjetivo" ||
+    !swedish
+  ) {
+    return;
+  }
+
+  const base =
+    normalizeExerciseVocabularyForm(
+      swedish
+    );
+
+  if (
+    !base ||
+    !/^[\p{L}\p{M}]+$/u.test(base)
+  ) {
+    return;
+  }
+
+  // Reconhece apenas o padrão regular mais seguro:
+  // base + t para ett
+  // base + a para plural/definido.
+  //
+  // Formas com alteração de radical ou outras
+  // irregularidades devem continuar explícitas
+  // no JSON para reconhecimento perfeito.
+
+  if (
+    /[aeiouyåäö]$/u.test(base) ||
+    /(?:al|el|er|en|d|t)$/u.test(base)
+  ) {
+    return;
+  }
+
+  registerExerciseVocabularyForm(
+    `${base}t`,
+    {
+      source: "inflection",
+      priority: 20,
+      card,
+      formType: "adjectiveNeuter"
+    }
+  );
+
+  registerExerciseVocabularyForm(
+    `${base}a`,
+    {
+      source: "inflection",
+      priority: 20,
+      card,
+      formType: "adjectivePlural"
+    }
+  );
+}
+
+function extractExerciseSwedishWords(text) {
+  return String(text || "").match(
+    /[\p{L}\p{M}]+(?:['’\-][\p{L}\p{M}]+)*/gu
+  ) || [];
+}
+
+function normalizeExerciseVocabularyForm(
+  value
+) {
+  return String(value || "")
+    .normalize("NFC")
+    .toLocaleLowerCase("sv-SE")
+    .trim();
+}
+
+function renderExerciseInteractiveText(
+  container,
+  text
+) {
+  container.replaceChildren();
+
+  const source = String(text || "");
+
+  const wordRegex =
+    /[\p{L}\p{M}]+(?:['’\-][\p{L}\p{M}]+)*/gu;
+
+  let lastIndex = 0;
+
+  for (const match of source.matchAll(
+    wordRegex
+  )) {
+    const index = match.index || 0;
+    const word = match[0];
+
+    if (index > lastIndex) {
+      container.appendChild(
+        document.createTextNode(
+          source.slice(
+            lastIndex,
+            index
+          )
+        )
+      );
+    }
+
+    const entry =
+      exerciseVocabularyIndex.get(
+        normalizeExerciseVocabularyForm(
+          word
+        )
+      );
+
+    if (entry) {
+      container.appendChild(
+        createExerciseVocabularyToken(
+          word,
+          entry
+        )
+      );
+    } else {
+      container.appendChild(
+        document.createTextNode(word)
+      );
+    }
+
+    lastIndex =
+      index + word.length;
+  }
+
+  if (lastIndex < source.length) {
+    container.appendChild(
+      document.createTextNode(
+        source.slice(lastIndex)
+      )
+    );
+  }
+}
+
+function createExerciseVocabularyToken(
+  word,
+  entry
+) {
+  const wrapper =
+    document.createElement("span");
+
+  wrapper.className =
+    "exercise-vocab-token";
+
+  const button =
+    document.createElement("button");
+
+  button.type = "button";
+
+  button.className =
+    "exercise-vocab-word";
+
+  button.textContent = word;
+
+  button.title =
+    "Consultar no words.json";
+
+  button.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  const details =
+    createExerciseVocabularyDetails(
+      word,
+      entry
+    );
+
+  details.classList.add("hidden");
+
+  button.addEventListener(
+    "click",
+    () => {
+      const shouldOpen =
+        details.classList.contains(
+          "hidden"
+        );
+
+      closeExpandedExerciseVocabulary();
+
+      if (!shouldOpen) {
+        return;
+      }
+
+      details.classList.remove(
+        "hidden"
+      );
+
+      button.setAttribute(
+        "aria-expanded",
+        "true"
+      );
+
+      expandedExerciseVocabulary = {
+        button,
+        details
+      };
+    }
+  );
+
+  wrapper.append(
+    button,
+    details
+  );
+
+  return wrapper;
+}
+
+function closeExpandedExerciseVocabulary() {
+  if (!expandedExerciseVocabulary) {
+    return;
+  }
+
+  expandedExerciseVocabulary.details
+    .classList.add("hidden");
+
+  expandedExerciseVocabulary.button
+    .setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+  expandedExerciseVocabulary = null;
+}
+
+function createExerciseVocabularyDetails(
+  word,
+  entry
+) {
+  const details =
+    document.createElement("span");
+
+  details.className =
+    "exercise-vocab-details";
+
+  details.setAttribute(
+    "role",
+    "note"
+  );
+
+  const title =
+    document.createElement("span");
+
+  title.className =
+    "exercise-vocab-detail-title";
+
+  title.textContent = word;
+
+  details.appendChild(title);
+
+  if (entry.source === "expression") {
+    const info =
+      document.createElement("span");
+
+    info.className =
+      "exercise-vocab-detail-meta";
+
+    info.textContent =
+      "Sem tradução individual cadastrada. Palavra encontrada em uma expressão do JSON:";
+
+    const expression =
+      document.createElement("span");
+
+    expression.className =
+      "exercise-vocab-detail-expression";
+
+    expression.textContent =
+      entry.expression;
+
+    const translation =
+      document.createElement("span");
+
+    translation.className =
+      "exercise-vocab-detail-translation";
+
+    translation.textContent =
+      entry.card.term?.portuguese || "";
+
+    details.append(
+      info,
+      expression,
+      translation
+    );
+
+    return details;
+  }
+
+  const translation =
+    getExercisePortugueseForEntry(
+      entry
+    );
+
+  if (translation) {
+    const translationLine =
+      document.createElement("span");
+
+    translationLine.className =
+      "exercise-vocab-detail-translation";
+
+    translationLine.textContent =
+      translation;
+
+    details.appendChild(
+      translationLine
+    );
+  }
+
+  const formDescription =
+    getExerciseVocabularyFormDescription(
+      entry
+    );
+
+  if (formDescription) {
+    const formLine =
+      document.createElement("span");
+
+    formLine.className =
+      "exercise-vocab-detail-meta";
+
+    formLine.textContent =
+      formDescription;
+
+    details.appendChild(formLine);
+  }
+
+  return details;
+}
+
+function getExercisePortugueseForEntry(
+  entry
+) {
+  const term =
+    entry.card?.term || {};
+
+  switch (entry.formType) {
+    case "infinitive":
+      return (
+        term.portugueseInfinitive ||
+        term.portuguese ||
+        ""
+      );
+
+    case "present":
+      return (
+        term.portuguesePresent ||
+        term.portuguese ||
+        ""
+      );
+
+    case "past":
+      return (
+        term.portuguesePast ||
+        term.portuguese ||
+        ""
+      );
+
+    case "supine":
+      return (
+        term.portugueseSupine ||
+        term.portuguese ||
+        ""
+      );
+
+    case "plural":
+    case "definitePlural":
+      return (
+        term.portuguesePlural ||
+        term.portuguese ||
+        ""
+      );
+
+    default:
+      return (
+        term.portuguese ||
+        ""
+      );
+  }
+}
+
+function getExerciseVocabularyFormDescription(
+  entry
+) {
+  if (
+    entry.source !== "inflection"
+  ) {
+    return "";
+  }
+
+  const base = String(
+    entry.card?.term?.swedish || ""
+  ).trim();
+
+  const labels = {
+    infinitive:
+      "Infinitivo",
+
+    present:
+      "Presente",
+
+    past:
+      "Pretérito",
+
+    supine:
+      "Supino",
+
+    plural:
+      "Plural",
+
+    definiteSingular:
+      "Singular definido",
+
+    definitePlural:
+      "Plural definido",
+
+    adjectiveNeuter:
+      "Forma do adjetivo com substantivo ett",
+
+    adjectivePlural:
+      "Forma do adjetivo no plural/definido"
+  };
+
+  const label =
+    labels[entry.formType];
+
+  if (!label || !base) {
+    return "";
+  }
+
+  return `${label} de ${base}`;
 }
 
 function createExerciseQuestionBlock(
@@ -3838,6 +4660,16 @@ function createExerciseQuestionBlock(
   ) {
     article.appendChild(
       createExerciseTrueFalseOptions(
+        questionIndex
+      )
+    );
+  } else if (
+    Array.isArray(question.subitems) &&
+    question.subitems.length > 0
+  ) {
+    article.appendChild(
+      createExerciseGroupedWrittenInputs(
+        question,
         questionIndex
       )
     );
@@ -3945,8 +4777,81 @@ function createExerciseOption(
   return label;
 }
 
-function createExerciseWrittenInput(
+function createExerciseGroupedWrittenInputs(
+  question,
   questionIndex
+) {
+  const wrapper =
+    document.createElement("div");
+
+  wrapper.className =
+    "exercise-written-group";
+
+  question.subitems.forEach(
+    (subitem) => {
+      const item =
+        document.createElement("div");
+
+      item.className =
+        "exercise-written-subitem";
+
+      const label =
+        document.createElement("label");
+
+      label.className =
+        "exercise-written-subitem-prompt";
+
+      const inputId =
+        `exercise-written-${questionIndex}-${subitem.letter}`;
+
+      label.htmlFor = inputId;
+
+      const letter =
+        document.createElement("strong");
+
+      letter.className =
+        "exercise-written-subitem-letter";
+
+      letter.textContent =
+        `${subitem.letter})`;
+
+      const text =
+        document.createElement("span");
+
+      text.className =
+        "exercise-written-subitem-text";
+
+      text.textContent =
+        subitem.prompt;
+
+      label.append(
+        letter,
+        text
+      );
+
+      const input =
+        createExerciseWrittenInput(
+          questionIndex,
+          subitem.letter
+        );
+
+      input.id = inputId;
+
+      item.append(
+        label,
+        input
+      );
+
+      wrapper.appendChild(item);
+    }
+  );
+
+  return wrapper;
+}
+
+function createExerciseWrittenInput(
+  questionIndex,
+  subitemLetter = null
 ) {
   const input =
     document.createElement("input");
@@ -3963,8 +4868,16 @@ function createExerciseWrittenInput(
   input.dataset.exerciseWrittenInput =
     String(questionIndex);
 
-  input.placeholder =
-    "Digite sua resposta...";
+  if (subitemLetter) {
+    input.dataset.exerciseSubitem =
+      subitemLetter;
+
+    input.placeholder =
+      `Resposta ${subitemLetter})...`;
+  } else {
+    input.placeholder =
+      "Digite sua resposta...";
+  }
 
   return input;
 }
@@ -4071,6 +4984,30 @@ function getExerciseUserAnswer(
   article
 ) {
   if (
+    question.type === "ESCRITA" &&
+    Array.isArray(question.subitems) &&
+    question.subitems.length > 0
+  ) {
+    const answers = {};
+
+    question.subitems.forEach(
+      (subitem) => {
+        const input =
+          article.querySelector(
+            `[data-exercise-written-input="${questionIndex}"][data-exercise-subitem="${subitem.letter}"]`
+          );
+
+        answers[subitem.letter] =
+          input
+            ? input.value.trim()
+            : "";
+      }
+    );
+
+    return answers;
+  }
+
+  if (
     question.type === "ESCRITA"
   ) {
     const input =
@@ -4097,6 +5034,17 @@ function gradeExerciseQuestion(
   question,
   userAnswer
 ) {
+  if (
+    question.type === "ESCRITA" &&
+    Array.isArray(question.subitems) &&
+    question.subitems.length > 0
+  ) {
+    return gradeExerciseGroupedWrittenQuestion(
+      question,
+      userAnswer
+    );
+  }
+
   const isEmptyWrittenAnswer =
     question.type === "ESCRITA" &&
     !normalizeAnswer(userAnswer);
@@ -4153,6 +5101,91 @@ function gradeExerciseQuestion(
     userAnswer,
     question.answers
   );
+}
+
+function gradeExerciseGroupedWrittenQuestion(
+  question,
+  userAnswers
+) {
+  const answers =
+    userAnswers &&
+    typeof userAnswers === "object"
+      ? userAnswers
+      : {};
+
+  const subitemResults =
+    question.subitems.map(
+      (subitem) => {
+        const userAnswer =
+          answers[subitem.letter] || "";
+
+        if (!normalizeAnswer(userAnswer)) {
+          return {
+            letter: subitem.letter,
+            userAnswer,
+            score: 0,
+            status: "unanswered",
+            expectedAnswer:
+              subitem.answers[0] || "",
+            feedback: [
+              "Subitem não respondido."
+            ]
+          };
+        }
+
+        const result =
+          compareExerciseWrittenAnswer(
+            userAnswer,
+            subitem.answers
+          );
+
+        return {
+          ...result,
+          letter: subitem.letter,
+          userAnswer
+        };
+      }
+    );
+
+  const score =
+    subitemResults.reduce(
+      (sum, result) =>
+        sum + result.score,
+      0
+    ) / subitemResults.length;
+
+  const allUnanswered =
+    subitemResults.every(
+      (result) =>
+        result.status === "unanswered"
+    );
+
+  let status = "wrong";
+
+  if (allUnanswered) {
+    status = "unanswered";
+  } else if (score === 1) {
+    status = "correct";
+  } else {
+    status =
+      getExerciseWrittenStatus(
+        score
+      );
+  }
+
+  return {
+    score,
+    status,
+    expectedAnswer:
+      question.subitems
+        .map(
+          (subitem) =>
+            `${subitem.letter}) ${subitem.answers[0] || ""}`
+        )
+        .join("; "),
+    feedback: [],
+    subitemResults
+  };
 }
 
 function getExerciseExpectedAnswerText(
@@ -4909,6 +5942,20 @@ function renderExerciseQuestionFeedback(
   feedbackBox.className =
     `exercise-feedback exercise-feedback-${result.status}`;
 
+  if (
+    question.type === "ESCRITA" &&
+    Array.isArray(question.subitems) &&
+    question.subitems.length > 0
+  ) {
+    renderExerciseGroupedWrittenFeedback(
+      feedbackBox,
+      question,
+      result
+    );
+
+    return;
+  }
+
   const heading =
     document.createElement(
       "strong"
@@ -4968,24 +6015,136 @@ function renderExerciseQuestionFeedback(
     }
   );
 
-  if (
-    question.explanation
-  ) {
-    const explanation =
-      document.createElement(
-        "p"
+  appendExerciseExplanation(
+    feedbackBox,
+    question
+  );
+}
+
+function renderExerciseGroupedWrittenFeedback(
+  feedbackBox,
+  question,
+  result
+) {
+  const heading =
+    document.createElement(
+      "strong"
+    );
+
+  heading.className =
+    "exercise-feedback-title";
+
+  heading.textContent =
+    getExerciseStatusLabel(
+      result.status,
+      result.score,
+      "ESCRITA"
+    );
+
+  const list =
+    document.createElement("div");
+
+  list.className =
+    "exercise-subitem-feedback-list";
+
+  result.subitemResults.forEach(
+    (subitemResult) => {
+      const item =
+        document.createElement("div");
+
+      item.className =
+        `exercise-subitem-feedback exercise-subitem-feedback-${subitemResult.status}`;
+
+      const title =
+        document.createElement(
+          "strong"
+        );
+
+      title.className =
+        "exercise-subitem-feedback-title";
+
+      title.textContent =
+        `${subitemResult.letter}) ${getExerciseStatusLabel(
+          subitemResult.status,
+          subitemResult.score,
+          "ESCRITA"
+        )}`;
+
+      const userLine =
+        document.createElement("p");
+
+      userLine.textContent =
+        `Sua resposta: ${subitemResult.userAnswer || "Não respondida"}`;
+
+      const expectedLine =
+        document.createElement("p");
+
+      expectedLine.textContent =
+        `Resposta esperada: ${subitemResult.expectedAnswer}`;
+
+      item.append(
+        title,
+        userLine,
+        expectedLine
       );
 
-    explanation.className =
-      "exercise-explanation";
+      subitemResult.feedback.forEach(
+        (message) => {
+          if (
+            message === "Resposta correta." ||
+            message === "Subitem não respondido."
+          ) {
+            return;
+          }
 
-    explanation.textContent =
-      `Explicação: ${question.explanation}`;
+          const detail =
+            document.createElement("p");
 
-    feedbackBox.appendChild(
-      explanation
-    );
+          detail.className =
+            "exercise-feedback-detail";
+
+          detail.textContent =
+            message;
+
+          item.appendChild(detail);
+        }
+      );
+
+      list.appendChild(item);
+    }
+  );
+
+  feedbackBox.append(
+    heading,
+    list
+  );
+
+  appendExerciseExplanation(
+    feedbackBox,
+    question
+  );
+}
+
+function appendExerciseExplanation(
+  feedbackBox,
+  question
+) {
+  if (!question.explanation) {
+    return;
   }
+
+  const explanation =
+    document.createElement("p");
+
+  explanation.className =
+    "exercise-explanation";
+
+  explanation.textContent =
+    `Explicação: ${question.explanation}`;
+
+  feedbackBox.appendChild(
+    explanation
+  );
 }
 
 function getExerciseStatusLabel(
