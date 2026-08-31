@@ -464,6 +464,7 @@ Crie várias oportunidades para praticar esses elementos por meio de:
 - transformação de frases;
 - compreensão contextual.
 
+
 # 4.2 EXERCÍCIOS ESTRUTURAIS E DE PREENCHIMENTO
 
 É desejável criar questões semelhantes a exercícios tradicionais de livro didático.
@@ -723,6 +724,75 @@ Segundo texto.
 Outras questões.
 
 Isso permite criar exercícios com diferentes situações ou pequenos blocos de leitura ao longo da prova.
+
+# 8.1 ORDEM QUANDO HOUVER VÁRIOS TEXTOS
+
+Quando o exercício tiver mais de um bloco [TEXTO], NÃO coloque todos os textos em sequência antes das questões.
+
+Cada texto deve ser seguido imediatamente pelas questões de compreensão, interpretação ou vocabulário contextual que dependam especificamente daquele texto.
+
+A estrutura desejada é:
+
+[TEXTO]
+Texto 1
+
+[QUESTAO]
+Questão de interpretação do Texto 1
+
+[QUESTAO]
+Outra questão relacionada ao Texto 1
+
+[TEXTO]
+Texto 2
+
+[QUESTAO]
+Questão de interpretação do Texto 2
+
+[QUESTAO]
+Outra questão relacionada ao Texto 2
+
+[TEXTO]
+Texto 3
+
+[QUESTAO]
+Questão de interpretação do Texto 3
+
+[QUESTAO]
+Outra questão relacionada ao Texto 3
+
+Depois que todos os textos e suas respectivas questões de compreensão tiverem sido apresentados, coloque as questões independentes do texto, como:
+
+- gramática;
+- transformação de frases;
+- conjugação;
+- pretérito;
+- supino;
+- plural;
+- definido/indefinido;
+- demonstrativos;
+- possessivos;
+- advérbios;
+- preposições;
+- datas;
+- horas;
+- preenchimento de lacunas;
+- outras questões estruturais.
+
+Portanto, quando houver vários textos, siga preferencialmente esta ordem:
+
+1. Texto 1;
+2. questões diretamente relacionadas ao Texto 1;
+3. Texto 2;
+4. questões diretamente relacionadas ao Texto 2;
+5. Texto 3;
+6. questões diretamente relacionadas ao Texto 3;
+7. demais questões gramaticais, estruturais ou de revisão.
+
+Adapte a mesma lógica para qualquer quantidade de textos.
+
+Não coloque uma questão de interpretação do Texto 1 depois do Texto 2 ou do Texto 3, salvo se a questão exigir deliberadamente comparação entre textos.
+
+Questões que comparem dois ou mais textos podem aparecer somente depois que todos os textos envolvidos já tiverem sido apresentados.
 
 ---
 
@@ -1601,12 +1671,18 @@ TAMANHO DO TEXTO: aproximadamente 300 palavras
 QUANTIDADE DE QUESTÕES: 15
 
 DISTRIBUIÇÃO:
-
+Divida aproximadamente por igual entre Múltipla Escolha, Verdadeiro ou Falso e Escrita, exemplo, 15 questões:
 * 5 múltipla escolha;
 * 5 verdadeiro ou falso;
 * 5 resposta escrita.
 
 Use exclusivamente o vocabulário autorizado segundo esta especificação.
+
+Se houver mais de um texto, não coloque os textos em sequência.
+
+Após cada [TEXTO], coloque imediatamente as questões de compreensão e interpretação referentes àquele texto.
+
+Depois do último texto e de suas questões específicas, coloque as demais questões gramaticais, estruturais, de transformação e revisão.
 
 Lembre-se de que:
 
