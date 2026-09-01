@@ -4409,12 +4409,14 @@ function renderExerciseInteractiveText(
   }
 
   /*
-   * Descobre quantas palavras possui a maior
-   * expressão registrada no índice.
+   * Descobre o maior número de palavras
+   * existente em uma entrada do índice.
    *
-   * Exemplo:
-   * "lade sig" = 2 palavras
-   * "sagt till" = 2 palavras
+   * Exemplos:
+   *
+   * "bok" = 1
+   * "i måndags" = 2
+   * "lade sig" = 2
    */
   let maxVocabularyWords = 1;
 
@@ -4440,14 +4442,8 @@ function renderExerciseInteractiveText(
       words[wordIndex];
 
     /*
-     * Preserva tudo que existe antes da
-     * palavra atual:
-     *
-     * espaços
-     * pontuação
-     * quebras
-     * parênteses
-     * etc.
+     * Preserva pontuação, espaços etc.
+     * existentes antes da palavra atual.
      */
     if (current.start > cursor) {
       container.appendChild(
@@ -4473,14 +4469,22 @@ function renderExerciseInteractiveText(
       );
 
     /*
-     * Procura primeiro a expressão mais
-     * longa possível.
+     * Procura primeiro a expressão
+     * mais longa possível.
      *
-     * Portanto:
+     * Assim:
+     *
+     * "i måndags"
+     *
+     * é procurado antes de:
+     *
+     * "i"
+     *
+     * e:
      *
      * "lade sig"
      *
-     * é testado antes de:
+     * é procurado antes de:
      *
      * "lade"
      */
@@ -4493,22 +4497,13 @@ function renderExerciseInteractiveText(
       let validSequence = true;
 
       /*
-       * Duas palavras só podem formar uma
-       * expressão quando entre elas houver
-       * apenas espaço.
+       * Entre as palavras da expressão
+       * pode existir apenas espaço.
        *
-       * Assim:
-       *
-       * lade sig
-       *
-       * pode ser reconhecido.
-       *
-       * Mas:
-       *
-       * lade, sig
-       *
-       * não será considerado a expressão
-       * "lade sig".
+       * "i måndags"     -> válido
+       * "i, måndags"    -> inválido
+       * "lade sig"      -> válido
+       * "lade. sig"     -> inválido
        */
       for (
         let separatorIndex =
@@ -4568,9 +4563,9 @@ function renderExerciseInteractiveText(
         endIndex;
 
       /*
-       * Como estamos procurando da
-       * expressão maior para a menor,
-       * a primeira encontrada é a melhor.
+       * Estamos indo da expressão
+       * maior para a menor.
+       * A primeira encontrada vence.
        */
       break;
     }
@@ -4579,6 +4574,11 @@ function renderExerciseInteractiveText(
       const finalWord =
         words[matchedEndIndex];
 
+      /*
+       * Usa o texto original para manter
+       * maiúsculas/minúsculas exatamente
+       * como aparecem no exercício.
+       */
       const visibleText =
         source.slice(
           current.start,
@@ -4601,8 +4601,7 @@ function renderExerciseInteractiveText(
     }
 
     /*
-     * Nenhuma palavra ou expressão foi
-     * encontrada no vocabulário.
+     * Nada correspondente no JSON.
      */
     container.appendChild(
       document.createTextNode(
@@ -4615,8 +4614,8 @@ function renderExerciseInteractiveText(
   }
 
   /*
-   * Preserva pontuação ou qualquer outro
-   * conteúdo depois da última palavra.
+   * Preserva o que vier depois
+   * da última palavra.
    */
   if (cursor < source.length) {
     container.appendChild(
