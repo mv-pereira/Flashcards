@@ -1148,6 +1148,24 @@ Depois de explorar vocabulário ainda não utilizado do capítulo mais recente, 
 
 O objetivo é aumentar progressivamente a variedade lexical e a cobertura do material estudado ao longo dos diferentes textos.
 
+O objetivo da diversificação entre os blocos [TEXTO] é MAXIMIZAR A COBERTURA DO VOCABULÁRIO AUTORIZADO ao longo do conjunto de textos.
+
+Sempre que houver vocabulário autorizado ainda não utilizado que possa ser empregado de forma natural e gramaticalmente correta, prefira esse vocabulário em vez de repetir desnecessariamente palavras de conteúdo já utilizadas nos textos anteriores.
+
+Assim, cada novo [TEXTO] deve funcionar, tanto quanto possível, como uma oportunidade para explorar uma parte diferente do vocabulário disponível.
+
+Por exemplo, se uma parcela significativa do vocabulário relevante de determinado capítulo já tiver sido utilizada em um texto anterior, o texto seguinte deve procurar utilizar principalmente outras palavras e expressões autorizadas desse mesmo capítulo que ainda não tenham aparecido.
+
+Não é necessário dividir o vocabulário em proporções matemáticas iguais entre os textos. A distribuição deve depender da possibilidade de construir textos naturais, coerentes e gramaticalmente corretos.
+
+A prioridade é:
+
+1. utilizar vocabulário relevante ainda não empregado nos textos anteriores;
+2. ampliar progressivamente a cobertura lexical do conjunto;
+3. repetir vocabulário de conteúdo já utilizado somente quando isso contribuir para a naturalidade, coerência, gramática ou objetivo pedagógico.
+
+Ao finalizar todos os blocos [TEXTO], procure ter utilizado a maior variedade possível de palavras e expressões autorizadas, especialmente dos capítulos mais recentes, sem sacrificar a qualidade linguística dos textos.
+
 Essa regra é uma prioridade, não uma proibição absoluta de repetição.
 
 É permitido repetir palavras quando forem necessárias para:
@@ -1177,9 +1195,46 @@ Se o vocabulário autorizado restante não permitir um texto natural e gramatica
 
 # 8.3 DIVERSIFICAÇÃO DE TEMA E ESTILO ENTRE VÁRIOS TEXTOS
 
-O segundo texto deve ter ser o mais diferente possível do primeiro texto. Se o primeiro for mais dissertivo, o segundo pode ser um diálogo. Já o terceiro pode ser mais um discurso, para diferenciar do primeiro e do segundo, assim sucessivamente.
+Quando houver mais de um bloco [TEXTO], os textos devem ser suficientemente diferentes entre si quanto ao tema, à situação, à organização e ao estilo de escrita.
 
-Os nomes próprios não devem se repetir.
+Não associe nenhum estilo específico à posição do texto. O Texto 1, o Texto 2, o Texto 3 e os demais não possuem formato previamente determinado.
+
+Para cada novo texto, considere os textos já produzidos e escolha uma forma de apresentação que aumente a variedade do conjunto.
+
+Podem ser utilizadas, conforme forem adequadas ao vocabulário autorizado e ao conteúdo disponível:
+
+* narrativa;
+* diálogo;
+* descrição;
+* relato;
+* situação cotidiana;
+* pequena história;
+* texto expositivo ou dissertativo;
+* discurso ou fala dirigida a outras pessoas;
+* sequência de acontecimentos;
+* combinação de duas ou mais dessas formas;
+* outras organizações textuais compatíveis com as regras desta especificação.
+
+Essas possibilidades são apenas categorias disponíveis e NÃO representam uma sequência, ordem de preferência ou modelo a ser seguido.
+
+Não utilize automaticamente o mesmo tipo textual para uma determinada posição. Em exercícios diferentes, qualquer uma dessas formas pode aparecer como primeiro, segundo, terceiro ou outro texto.
+
+A diversificação deve ser determinada pelo contraste com os demais textos do exercício atual, e não por uma sequência fixa de estilos.
+
+Além do estilo, procure variar também, quando o vocabulário autorizado permitir:
+
+* situação e contexto;
+* participantes;
+* lugar;
+* momento ou sequência temporal;
+* foco narrativo ou comunicativo;
+* estrutura das frases;
+* proporção entre descrição, ação, exposição e fala.
+
+Os textos não precisam ser completamente diferentes em todos esses aspectos ao mesmo tempo. O objetivo é evitar que vários blocos [TEXTO] sejam apenas variações superficiais da mesma situação ou da mesma estrutura.
+
+Os nomes próprios utilizados em diferentes textos não devem se repetir, salvo quando a repetição for deliberadamente necessária para relacionar dois ou mais textos.
+
 
 ---
 
@@ -1937,6 +1992,45 @@ Também evite transformar questões escritas em exercícios de mera localizaçã
 
 Quando uma informação retirada do texto for utilizada em uma questão ESCRITA, prefira pedir ao estudante que transforme, adapte, combine ou reutilize essa informação em uma nova construção.
 
+DIFICULDADE: média - alta
+
+Considere a dificuldade indicada como referência para a elaboração do conjunto das questões, respeitando sempre os limites do vocabulário e da gramática autorizados.
+
+A dificuldade deve ser ajustada principalmente pela quantidade de recuperação, combinação, distinção, transformação e aplicação exigida do estudante, e não pela introdução de conteúdo ainda não estudado.
+
+Não é necessário que todas as questões possuam exatamente o mesmo nível de dificuldade. Pode haver alguma variação natural, mas a predominância do exercício deve corresponder à dificuldade solicitada.
+
+
+# 24.1 CONTROLE DE PISTAS E EXIGÊNCIA COGNITIVA
+
+Ao formular uma questão, forneça apenas as informações necessárias para que ela seja objetiva, solucionável e compatível com o conteúdo estudado.
+
+Evite incluir no próprio enunciado informações que revelem direta ou indiretamente uma etapa do raciocínio que o estudante já possui conhecimento suficiente para realizar sozinho.
+
+Antes de finalizar cada questão, identifique silenciosamente quais conhecimentos ou decisões o estudante precisa mobilizar para chegar à resposta.
+
+Se alguma informação fornecida no enunciado eliminar desnecessariamente uma dessas decisões, reformule a questão retirando ou reduzindo essa pista, desde que isso não crie ambiguidade nem exija conhecimento não estudado.
+
+Sempre que o conteúdo autorizado permitir, prefira questões que exijam combinar, recuperar, distinguir, transformar ou aplicar mais de um conhecimento já estudado, em vez de questões cuja resposta possa ser obtida por associação imediata com uma informação explicitamente fornecida.
+
+Entretanto, não remova informações necessárias para tornar a questão objetiva ou para delimitar claramente o conhecimento que está sendo avaliado.
+
+Uma questão pode deliberadamente fornecer parte da informação quando o objetivo pedagógico for isolar uma habilidade específica. Essa simplificação deve ser intencional e não resultado automático da maneira como o enunciado foi construído.
+
+A dificuldade deve resultar principalmente da necessidade de recuperar e aplicar o conteúdo estudado, e não de:
+
+* vocabulário não autorizado;
+* instruções confusas;
+* ambiguidades;
+* pegadinhas;
+* informações externas;
+* formulações artificialmente complexas.
+
+Durante a revisão final, considere excessivamente fácil uma questão em que grande parte do raciocínio necessário para obter a resposta já esteja explícita no próprio enunciado.
+
+Quando isso ocorrer e o conteúdo estudado permitir uma formulação mais exigente, reformule a questão antes de entregar o exercício.
+
+
 ---
 
 # 25. AUDITORIA SILENCIOSA DO VOCABULÁRIO
@@ -2173,7 +2267,7 @@ Aproximadamente metade das questões deve avaliar diretamente gramática, transf
 
 Antes de gerar as questões, analise silenciosamente quais conteúdos gramaticais ou funcionais foram introduzidos ou enfatizados nos capítulos autorizados, dando prioridade ao capítulo mais recente.
 
-Crie questões específicas sobre esses conteúdos. Tente não fazer questões fáceis, produza questões de dificuldade média à difícil.
+Crie questões específicas sobre esses conteúdos.
 
 Evite questões ESCRITA que apenas reproduzam literalmente uma frase do texto com uma palavra retirada para ser copiada.
 
