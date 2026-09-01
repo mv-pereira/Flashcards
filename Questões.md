@@ -2020,7 +2020,7 @@ Após esta especificação, utilizarei normalmente um pedido semelhante a:
 
 Use o arquivo `words.json` anexado.
 
-CAPÍTULOS: 0 até X
+CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
 
 TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 150 palavras cada;
 
