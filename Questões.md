@@ -8,6 +8,80 @@ O exercício será posteriormente copiado e colado diretamente no aplicativo, qu
 
 ---
 
+# 0.1 EXEMPLOS DESTA ESPECIFICAÇÃO NÃO SÃO CONTEÚDO DO EXERCÍCIO
+
+Todos os exemplos presentes nesta especificação servem exclusivamente para demonstrar regras, formatos, sintaxe, estruturas ou princípios pedagógicos.
+
+NÃO reutilize em exercícios gerados o conteúdo concreto desses exemplos.
+
+Isso inclui, entre outros:
+
+- frases;
+- enunciados;
+- respostas;
+- alternativas;
+- nomes próprios;
+- cidades;
+- números;
+- datas;
+- horários;
+- substantivos escolhidos;
+- verbos escolhidos;
+- combinações de palavras;
+- situações narrativas;
+- sequências de subitens.
+
+Ao utilizar um exemplo desta especificação, extraia apenas a REGRA ou o PADRÃO que ele demonstra.
+
+Crie novo conteúdo usando o vocabulário autorizado do pedido atual.
+
+Não copie um exemplo literalmente.
+
+Não reproduza um exemplo com alterações mínimas.
+
+Não mantenha a mesma frase trocando apenas um nome, número, data, verbo, substantivo ou outra pequena parte.
+
+Exemplo da interpretação correta desta regra:
+
+Se esta especificação demonstrar que uma questão deve transformar uma forma gramatical X em Y, o exercício gerado pode avaliar a mesma transformação, mas deve criar outra frase e escolher outro material autorizado.
+
+O conteúdo lexical dos exemplos desta especificação NÃO recebe preferência por aparecer neste documento.
+
+Quando houver conflito, esta regra tem prioridade sobre qualquer exemplo positivo apresentado posteriormente.
+
+EXCEÇÃO ESTRUTURAL:
+
+Esta proibição não se aplica às marcações, campos, delimitadores e padrões sintáticos obrigatórios do aplicativo.
+
+Elementos como:
+
+[EXERCICIO]
+[TEXTO]
+[QUESTAO]
+[FIM]
+TITULO:
+TIPO:
+RESPOSTA:
+EXPLICACAO:
+A)
+B)
+a)
+b)
+;
+|
+
+devem ser reproduzidos exatamente conforme as regras desta especificação quando forem necessários.
+
+O que NÃO deve ser reutilizado é o conteúdo linguístico, lexical, temático ou factual usado para preencher esses modelos.
+
+Os exemplos desta especificação NÃO constituem uma fonte de seleção de vocabulário.
+
+Ao decidir quais palavras, expressões, verbos, substantivos, nomes, números, datas, horários, situações ou temas utilizar no exercício, faça essa seleção a partir do words.json autorizado, do intervalo de capítulos e do pedido atual, e não a partir dos exemplos desta especificação.
+
+Somente depois de definir o conteúdo do exercício utilize os exemplos desta especificação para conferir se a REGRA, a ESTRUTURA ou o FORMATO foi aplicado corretamente.
+
+---
+
 # 1. VOCABULÁRIO PERMITIDO
 
 Use como base exclusivamente o vocabulário proveniente das entradas do arquivo `words.json` que satisfaçam simultaneamente estas condições:
@@ -106,17 +180,12 @@ Cada palavra efetivamente presente dentro de uma expressão autorizada passa a s
 
 Exemplo conceitual:
 
-Se uma expressão autorizada contiver:
+Se uma expressão autorizada contiver várias palavras, é permitido:
 
-`Jag kommer gärna`
-
-é permitido:
-
-* usar `Jag kommer gärna` integralmente;
-* utilizar `jag` em outra frase;
-* utilizar `kommer` em outra frase;
-* utilizar `gärna` em outra construção;
-* combinar essas palavras com outras palavras autorizadas.
+- utilizar a expressão integralmente;
+- utilizar uma de suas palavras em outra frase;
+- utilizar outra palavra componente em outra construção;
+- combinar palavras realmente presentes nessa expressão com outras palavras autorizadas.
 
 As palavras retiradas de uma expressão também podem ser flexionadas quando isso for gramaticalmente legítimo.
 
@@ -124,16 +193,12 @@ O desmembramento não precisa preservar o significado original da expressão, de
 
 Porém:
 
-* somente palavras realmente presentes na expressão ficam autorizadas;
-* palavras semanticamente relacionadas não ficam automaticamente autorizadas;
-* sinônimos não ficam automaticamente autorizados;
-* palavras normalmente associadas à expressão também não ficam autorizadas.
+- somente palavras realmente presentes na expressão ficam autorizadas;
+- palavras semanticamente relacionadas não ficam automaticamente autorizadas;
+- sinônimos não ficam automaticamente autorizados;
+- palavras normalmente associadas à expressão também não ficam autorizadas.
 
-Exemplo:
-
-Se uma expressão contém `hem`, então `hem` pode ser reutilizada.
-
-Isso não autoriza automaticamente outras palavras relacionadas a casa ou residência.
+O conteúdo concreto de qualquer expressão usada para explicar esta regra não deve ser reutilizado por causa do exemplo; as expressões efetivamente empregadas no exercício devem ser selecionadas do words.json autorizado.
 
 ---
 
@@ -156,23 +221,11 @@ Isso inclui:
 * ilhas;
 * outros nomes geográficos próprios.
 
-Exemplos aceitáveis:
+Podem ser utilizados nomes próprios adequados ao contexto, incluindo nomes de pessoas e elementos geográficos.
 
-Anna
-Erik
-Sofia
-Anders
-Stockholm
-Malmö
-Göteborg
-Uppsala
-Sverige
-Norge
-Danmark
-Finland
-Brasilien
+Escolha esses nomes de acordo com a situação criada para o exercício.
 
-Podem ser utilizados nomes típicos da Suécia ou nomes próprios adequados ao contexto.
+Não dê preferência a nomes próprios ou lugares apenas porque tenham aparecido em exemplos desta especificação.
 
 Essa permissão serve para deixar narrativas e situações mais naturais.
 
@@ -195,22 +248,11 @@ Ela NÃO autoriza introduzir livremente:
 * lugares comuns;
 * qualquer outro vocabulário temático externo.
 
-Exemplo:
+Exemplo conceitual:
 
-É permitido introduzir:
+A permissão para introduzir um nome geográfico próprio não autoriza automaticamente substantivos comuns relacionados a esse lugar.
 
-`Stockholm`
-
-Isso não autoriza automaticamente palavras suecas correspondentes a:
-
-* aeroporto;
-* metrô;
-* museu;
-* hotel;
-* praça;
-* estação;
-
-a menos que essas palavras já estejam autorizadas pelas demais regras.
+Qualquer palavra comum associada ao local continua precisando estar autorizada pelas demais regras de vocabulário.
 
 ---
 
@@ -387,10 +429,10 @@ Nome: fala
 
 Exemplo estrutural:
 
-Anna: ...
-Erik: ...
-Anna: ...
-Erik: ...
+<Nome 1>: ...
+<Nome 2>: ...
+<Nome 1>: ...
+<Nome 2>: ...
 
 Não utilize travessões, marcadores, listas ou Markdown para indicar os participantes.
 
@@ -402,11 +444,11 @@ Quando o texto for predominantemente narrativo e houver apenas uma fala ocasiona
 
 Exemplo conceitual:
 
-Erik sa: ...
+<Nome> <trecho narrativo contendo uma fala ocasional>.
 
 Nesse caso, não transforme automaticamente o trecho em uma linha de diálogo separada.
 
-Naturalmente, palavras como "sa" só podem ser utilizadas se estiverem autorizadas pelas regras de vocabulário deste documento.
+Todo vocabulário comum utilizado nesse trecho continua sujeito às regras de vocabulário autorizado.
 
 Quando houver combinação de narrativa e diálogo:
 
@@ -533,23 +575,23 @@ Crie várias oportunidades para praticar esses elementos por meio de:
 - transformação de frases;
 - compreensão contextual.
 
-# 4.1 EVITAR CÓPIA LITERAL DO TEXTO
+# 4.1 EVITAR CÓPIA LITERAL DO TEXTO E DOS EXEMPLOS DESTA ESPECIFICAÇÃO
 
-Questões de resposta escrita não devem, como regra geral, limitar-se a reproduzir uma frase do texto com uma única palavra ou expressão retirada para que o estudante simplesmente a copie.
+Questões de resposta escrita não devem, como regra geral, limitar-se a reproduzir uma frase do bloco [TEXTO] com uma única palavra ou expressão retirada para que o estudante simplesmente a copie.
 
-Evite especialmente questões como:
+Evite especialmente questões em que:
 
 TIPO: ESCRITA
-Complete com a expressão usada no texto:
-Anna var hemma ____.
 
-quando a frase correspondente aparecer praticamente igual no bloco [TEXTO].
+o enunciado reproduza praticamente uma frase inteira do bloco [TEXTO], retirando apenas uma palavra ou expressão e deixando uma lacuna para que o estudante simplesmente localize e copie a resposta.
+
+Esse problema ocorre quando a frase da questão permanece praticamente idêntica à frase correspondente do bloco [TEXTO].
 
 Esse tipo de questão exige principalmente localização visual e transcrição, oferecendo pouca prática linguística.
 
 Quando uma questão escrita utilizar conteúdo do texto, prefira exigir alguma transformação, adaptação ou aplicação do conteúdo estudado.
 
-Por exemplo, pode ser necessário:
+Pode ser necessário, por exemplo:
 
 - alterar número;
 - alterar singular para plural;
@@ -564,33 +606,25 @@ Por exemplo, pode ser necessário:
 - substituir uma informação por outra fornecida no enunciado;
 - aplicar a mesma estrutura em uma nova situação.
 
-Exemplo:
+IMPORTANTE: todos os exemplos apresentados nesta especificação são exclusivamente demonstrativos. Eles servem para explicar uma regra ou um tipo de transformação e NÃO constituem conteúdo a ser reutilizado nos exercícios gerados.
 
-Se no texto aparecer:
+Não copie literalmente nem reproduza com alterações mínimas frases, enunciados, respostas, nomes, números, datas, horários, situações ou combinações de vocabulário usadas nos exemplos desta especificação.
 
-Restiden är en timme.
+Ao aplicar uma regra ilustrada por um exemplo desta especificação, crie uma situação nova com vocabulário autorizado, escolhendo outros elementos sempre que houver material disponível.
 
-prefira uma questão como:
+Por exemplo, se esta especificação demonstrar uma transformação de duração, o exercício gerado pode praticar a mesma habilidade, mas deve utilizar outra situação, outra frase-base e, quando possível, outros valores. O objetivo é reutilizar o PRINCÍPIO PEDAGÓGICO do exemplo, e não seu conteúdo.
 
-Se o percurso durasse três horas, complete corretamente:
+Exemplo abstrato da regra:
 
-Restiden är ____.
+Se o texto apresentar uma informação na forma X, uma questão escrita pode solicitar que o estudante produza a mesma estrutura com uma informação Y fornecida no enunciado.
 
-RESPOSTA: tre timmar
-
-em vez de:
-
-Complete segundo o texto:
-
-Restiden är en ____.
-
-RESPOSTA: timme
+A questão gerada deve criar X e Y a partir do vocabulário autorizado e do contexto do exercício, sem copiar os exemplos concretos desta especificação.
 
 Questões de compreensão podem continuar perguntando informações presentes no texto, especialmente nos tipos MULTIPLA e VF.
 
 Questões ESCRITA também podem depender do texto, mas devem preferencialmente exigir produção, transformação ou aplicação, e não mera cópia literal de um trecho imediatamente localizável.
 
-Uma questão de cópia literal só deve ser utilizada excepcionalmente quando a memorização ou reconhecimento exato de determinada expressão for deliberadamente o objetivo pedagógico.
+Uma questão de cópia literal do [TEXTO] só deve ser utilizada excepcionalmente quando a memorização ou o reconhecimento exato de determinada expressão for deliberadamente o objetivo pedagógico.
 
 # 4.2 EXERCÍCIOS GRAMATICAIS AGRUPADOS
 
@@ -612,7 +646,7 @@ Correto:
 
 [QUESTAO]
 TIPO: ESCRITA
-Complete com o pronome possessivo correto.
+<instrução geral da tarefa>
 
 a) ...
 b) ...
@@ -665,14 +699,14 @@ Exemplo:
 
 [QUESTAO]
 TIPO: ESCRITA
-Complete com o pronome possessivo correto.
+Instrução geral da transformação.
 
-a) Jag har en biljett. Det är ____ biljett.
-b) Jag har ett flyg. Det är ____ flyg.
-c) Jag har två väskor. Det är ____ väskor.
+a) <primeiro item criado com o vocabulário autorizado>
+b) <segundo item criado com o vocabulário autorizado>
+c) <terceiro item criado com o vocabulário autorizado>
 
-RESPOSTA: a=min; b=mitt; c=mina
-EXPLICACAO: O possessivo deve concordar com substantivos en, ett ou plural.
+RESPOSTA: a=<resposta>; b=<resposta>; c=<resposta>
+EXPLICACAO: Explicação relevante de acordo com o tema e resposta correta.
 
 # 4.2.1 QUANTIDADE DE SUBITENS
 
@@ -721,9 +755,9 @@ RESPOSTA: a=resposta; b=resposta; c=resposta; d=resposta
 
 O sinal de ponto e vírgula separa as respostas dos diferentes subitens.
 
-Exemplo:
+Exemplo estrutural:
 
-RESPOSTA: a=min; b=mitt; c=mina; d=din; e=ditt; f=dina
+RESPOSTA: a=<resposta>; b=<resposta>; c=<resposta>; d=<resposta>; e=<resposta>; f=<resposta>
 
 A letra do subitem deve sempre ser seguida por "=".
 
@@ -733,11 +767,11 @@ Não omita a identificação da letra.
 
 Correto:
 
-RESPOSTA: a=min; b=mitt; c=mina
+RESPOSTA: a=<resposta>; b=<resposta>; c=<resposta>
 
 Incorreto:
 
-RESPOSTA: min; mitt; mina
+RESPOSTA: <resposta>; <resposta>; <resposta>
 
 # 4.2.3 MAIS DE UMA RESPOSTA CORRETA EM UM SUBITEM
 
@@ -745,9 +779,9 @@ O caractere | continua significando alternativas igualmente corretas PARA O MESM
 
 O ponto e vírgula ; separa SUBITENS DIFERENTES.
 
-Exemplo:
+Exemplo estrutural:
 
-RESPOSTA: a=Hon arbetar på ett sjukhus. | På ett sjukhus.; b=Han bor i Stockholm. | I Stockholm.
+RESPOSTA: a=<forma correta 1> | <forma correta 2>; b=<forma correta 1> | <forma correta 2>
 
 Portanto:
 
@@ -813,33 +847,37 @@ A análise de respostas escritas continuará utilizando as mesmas regras de:
 
 # 4.2.5 PADRÃO PEDAGÓGICO
 
-Sempre que vários conteúdos puderem ser praticados de forma natural sob a mesma instrução, prefira um exercício agrupado a várias questões isoladas quase idênticas.
+Sempre que vários itens puderem praticar naturalmente a mesma regra ou estrutura, prefira reuni-los em uma questão gramatical agrupada em vez de produzir várias questões isoladas quase idênticas.
 
-Por exemplo, em vez de produzir:
-
-[QUESTAO]
-Complete com o possessivo correto:
-Jag har en biljett. Det är ____ biljett.
+Evite uma sequência como:
 
 [QUESTAO]
-Complete com o possessivo correto:
-Jag har ett flyg. Det är ____ flyg.
+<mesma instrução gramatical>
+<primeiro item>
 
 [QUESTAO]
-Complete com o possessivo correto:
-Jag har två väskor. Det är ____ väskor.
+<mesma instrução gramatical>
+<segundo item>
 
-prefira:
+[QUESTAO]
+<mesma instrução gramatical>
+<terceiro item>
+
+quando os três itens avaliarem essencialmente a mesma regra.
+
+Prefira:
 
 [QUESTAO]
 TIPO: ESCRITA
-Complete com o pronome possessivo correto.
+<instrução geral da regra ou transformação>
 
-a) Jag har en biljett. Det är ____ biljett.
-b) Jag har ett flyg. Det är ____ flyg.
-c) Jag har två väskor. Det är ____ väskor.
+a) <primeiro item criado com o vocabulário autorizado>
+b) <segundo item criado com o vocabulário autorizado>
+c) <terceiro item criado com o vocabulário autorizado>
 
-RESPOSTA: a=min; b=mitt; c=mina
+RESPOSTA: a=<resposta>; b=<resposta>; c=<resposta>
+
+Os itens concretos devem ser criados especificamente para o exercício atual a partir do vocabulário autorizado.
 
 Esse formato deve ser especialmente favorecido nas questões gramaticais independentes do texto principal.
 
@@ -867,30 +905,18 @@ Podem ser avaliados:
 - expressões como hoje, ontem, amanhã, manhã, tarde, noite;
 - relações temporais como antes, depois, agora, já e outras presentes no material.
 
-Exemplos de questões possíveis:
+Quando esse conteúdo estiver autorizado, podem ser criadas questões como:
 
-[QUESTAO]
-TIPO: ESCRITA
-Escreva 5/2 por extenso em sueco.
+- apresentar uma data numérica criada especificamente para o exercício e pedir sua escrita por extenso;
+- apresentar uma data por extenso criada especificamente para o exercício e pedir sua interpretação;
+- pedir a escolha da forma ordinal correta para uma data;
+- combinar dia e mês autorizados;
+- transformar uma informação temporal fornecida no enunciado;
+- interpretar ou produzir horários usando apenas formas autorizadas.
 
-RESPOSTA: den femte februari
+Os valores, datas, meses e combinações concretas devem ser escolhidos para o exercício atual.
 
-[QUESTAO]
-TIPO: ESCRITA
-Escreva 11/6 por extenso em sueco.
-
-RESPOSTA: den elfte juni
-
-[QUESTAO]
-TIPO: MULTIPLA
-Qual alternativa corresponde corretamente à data 2/3?
-
-A) den två mars
-B) den andra mars
-C) den andre mars
-D) den andra maj
-
-RESPOSTA: B
+Não reutilize datas ou respostas presentes em exemplos desta especificação.
 
 Também podem ser criados exercícios com horas quando as formas necessárias para expressar o horário estiverem disponíveis no vocabulário autorizado.
 
@@ -926,7 +952,7 @@ O exercício deve começar exatamente com:
 
 Em seguida deve aparecer:
 
-TITULO: título do exercício
+TITULO: título do exercício preferencialmente em sueco usando as palavras permitidas
 
 Depois pode haver um ou mais blocos de texto e questões.
 
@@ -937,7 +963,7 @@ O conteúdo inteiro deve terminar exatamente com:
 Exemplo estrutural:
 
 [EXERCICIO]
-TITULO: Uma manhã em Stockholm
+TITULO: <título criado para o exercício>
 
 [TEXTO]
 Texto...
@@ -1001,7 +1027,7 @@ Tudo o que vier abaixo de `[TEXTO]` será considerado texto de leitura até a pr
 Exemplo:
 
 [TEXTO]
-Anna bor i Stockholm. ...
+<texto em sueco criado para o exercício>
 
 As quebras de linha existentes dentro de [TEXTO] possuem significado de apresentação e devem ser preservadas.
 
@@ -1259,11 +1285,11 @@ RESPOSTA: C
 
 Incorreto:
 
-RESPOSTA: C) Stockholm
+RESPOSTA: C) <texto da alternativa>
 
 Incorreto:
 
-RESPOSTA: Stockholm
+RESPOSTA: <texto da alternativa>
 
 ---
 
@@ -1368,7 +1394,7 @@ Quando mais de uma formulação legítima puder ser aceita, coloque todas na mes
 
 Exemplo de questão escrita individual:
 
-RESPOSTA: Hon arbetar på ett sjukhus. | På ett sjukhus.
+RESPOSTA: <formulação correta 1> | <formulação correta 2>
 
 O caractere | significa:
 
@@ -1380,7 +1406,7 @@ Em uma questão ESCRITA agrupada, | continua separando respostas alternativas do
 
 Exemplo:
 
-RESPOSTA: a=Hon arbetar på ett sjukhus. | På ett sjukhus.; b=Han bor i Stockholm. | I Stockholm.
+RESPOSTA: a=<formulação correta 1> | <formulação correta 2>; b=<formulação correta 1> | <formulação correta 2>
 
 Portanto:
 
@@ -1398,7 +1424,7 @@ Cadastre diferentes respostas quando representarem formulações realmente disti
 
 Exemplo adequado:
 
-RESPOSTA: Hon arbetar på ett sjukhus. | På ett sjukhus.
+RESPOSTA: <formulação completa correta> | <formulação curta igualmente correta>
 
 Não repita versões diferentes apenas por:
 
@@ -1410,7 +1436,7 @@ Não repita versões diferentes apenas por:
 
 Exemplo desnecessário:
 
-RESPOSTA: Hon bor i Stockholm. | hon bor i stockholm | Hon bor i Stockholm
+RESPOSTA: <mesma resposta> | <mesma resposta apenas com diferença de maiúsculas/minúsculas> | <mesma resposta apenas com diferença de pontuação>
 
 O aplicativo cuidará da normalização básica.
 
@@ -1446,7 +1472,7 @@ Em questões escritas agrupadas, essa comparação é realizada separadamente pa
 
 Exemplo:
 
-RESPOSTA: a=min; b=mitt | alternativ_form; c=mina
+RESPOSTA: a=<resposta>; b=<forma correta 1> | <forma correta 2>; c=<resposta>
 
 O aplicativo corrigirá:
 
@@ -1529,23 +1555,21 @@ O sistema poderá detectar:
 * palavra substituída;
 * mudança na ordem de palavras.
 
-Exemplo:
+Exemplo conceitual:
 
 Esperado:
 
-Hon arbetar på ett sjukhus
+<palavra 1> <palavra 2> <palavra 3> <palavra 4>
 
 Digitado:
 
-Hon arbetar sjukhus
+<palavra 1> <palavra 2> <palavra 4>
 
 O sistema poderá identificar que:
 
-* Hon está correta;
-* arbetar está correta;
-* faltou på;
-* faltou ett;
-* sjukhus está correta.
+- as palavras 1 e 2 estão corretas;
+- a palavra 3 está faltando;
+- a palavra 4 está correta.
 
 ---
 
@@ -1559,17 +1583,17 @@ Dentro das palavras, o sistema poderá detectar:
 * letras invertidas;
 * erro de grafia.
 
-Exemplo:
+Exemplo conceitual:
 
 Esperado:
 
-arbetar
+<forma correta>
 
 Digitado:
 
-arbeter
+<mesma forma com uma letra incorreta>
 
-O sistema poderá indicar que a vogal utilizada está incorreta.
+O sistema poderá identificar a diferença ortográfica entre as duas formas.
 
 ---
 
@@ -1606,17 +1630,17 @@ Essa proporção pertence à implementação do aplicativo e NÃO precisa aparec
 
 Prefira perguntas como:
 
-Qual é o pretérito do verbo "ha"?
+Qual é o pretérito de <verbo autorizado>?
 
-Qual é o plural de "en bok"?
+Qual é o plural de <substantivo autorizado>?
 
-Transforme a frase para o pretérito.
+Transforme <frase criada para o exercício> para o pretérito.
 
-Onde Anna mora?
+Responda objetivamente a uma informação verificável do texto.
 
-O que Erik fez pela manhã?
+Transforme <substantivo autorizado> para a forma definida.
 
-Escreva a forma definida de "ett år".
+Produza <forma gramatical solicitada> a partir de <vocabulário autorizado>.
 
 Ser objetiva não significa que a questão deva ser uma simples cópia do texto.
 
@@ -1668,17 +1692,13 @@ Pode servir para:
 * explicar uma preposição;
 * esclarecer determinada construção.
 
-Exemplo:
+Exemplos estruturais:
 
-EXPLICACAO: No texto está escrito que Anna mora em Stockholm.
+EXPLICACAO: A resposta é correta porque <informação relevante do texto>.
 
-Outro exemplo:
+EXPLICACAO: A forma correta de <item avaliado> é <forma correta>.
 
-EXPLICACAO: O pretérito de "ha" é "hade".
-
-Outro exemplo:
-
-EXPLICACAO: "bok" pertence ao grupo de substantivos do gênero en.
+EXPLICACAO: <regra gramatical relevante para compreender a resposta>.
 
 ---
 
@@ -1708,17 +1728,15 @@ Por padrão:
 
 * questões gramaticais também devem preferencialmente ter seu enunciado em português;
 
-Exemplos:
+Exemplos estruturais de enunciados:
 
-Qual é o pretérito do verbo "ha"?
+Qual é <forma gramatical solicitada> de <vocabulário autorizado>?
 
-Qual é o plural de "en bok"?
+Transforme <frase criada para o exercício> para <forma gramatical solicitada>.
 
-Transforme "Jag äter" para o pretérito.
+Qual alternativa utiliza corretamente <palavra ou estrutura autorizada>?
 
-Qual é a forma definida de "ett år"?
-
-Qual alternativa utiliza corretamente "på"?
+Complete <construção criada para o exercício> com <tipo de forma solicitada>.
 
 * palavras, frases ou construções suecas que estejam sendo avaliadas podem e devem aparecer dentro do enunciado em português;
 
@@ -2006,37 +2024,37 @@ As crases usadas pelo chat para formar o bloco de código NÃO fazem parte do co
 # 28. MODELO ESTRUTURAL COMPLETO
 
 [EXERCICIO]
-TITULO: Título do exercício
+TITULO: <título criado para o exercício>
 
 [TEXTO]
-Primeiro parágrafo do texto principal em sueco.
+<primeiro parágrafo criado para o exercício>
 
-Segundo parágrafo do texto principal em sueco.
+<segundo parágrafo criado para o exercício>
 
 [QUESTAO]
 TIPO: MULTIPLA
-Pergunta preferencialmente em português?
+<enunciado da questão>
 
-A) Alternativa
-B) Alternativa
-C) Alternativa
-D) Alternativa
+A) <alternativa>
+B) <alternativa>
+C) <alternativa>
+D) <alternativa>
 
 RESPOSTA: B
 EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
 TIPO: VF
-Afirmação preferencialmente em português ou contendo o trecho sueco necessário.
+<afirmação criada para a questão>
 
 RESPOSTA: F
 EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
 TIPO: ESCRITA
-Pergunta objetiva preferencialmente em português.
+<pergunta objetiva criada para a questão>
 
-RESPOSTA: Primeira resposta correta. | Segunda resposta correta.
+RESPOSTA: <Primeira resposta correta> | <Segunda resposta correta>
 EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
@@ -2059,7 +2077,7 @@ EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
 TIPO: ESCRITA
-Transforme os verbos para a forma solicitada.
+<instrução geral da transformação gramatical>
 
 a) ...
 b) ...
@@ -2071,41 +2089,41 @@ EXPLICACAO: Explicação pedagógica opcional.
 
 ---
 
-# 30. EXEMPLO DE QUESTÃO COM MAIS DE UMA RESPOSTA
+# 30. EXEMPLO ESTRUTURAL DE QUESTÃO COM MAIS DE UMA RESPOSTA
 
 [QUESTAO]
 TIPO: ESCRITA
-Onde Anna trabalha?
+<pergunta objetiva criada para o exercício>
 
-RESPOSTA: Hon arbetar på ett sjukhus. | På ett sjukhus.
-EXPLICACAO: A informação aparece diretamente no texto.
+RESPOSTA: <formulação correta 1> | <formulação correta 2>
+EXPLICACAO: <explicação pedagógica opcional>
 
 ---
 
-# 31. EXEMPLO DE MÚLTIPLA ESCOLHA
+# 31. EXEMPLO ESTRUTURAL DE MÚLTIPLA ESCOLHA
 
 [QUESTAO]
 TIPO: MULTIPLA
-Em qual cidade Anna mora?
+<pergunta criada para o exercício>
 
-A) Malmö
-B) Stockholm
-C) Göteborg
-D) Uppsala
+A) <alternativa>
+B) <alternativa>
+C) <alternativa>
+D) <alternativa>
 
-RESPOSTA: B
-EXPLICACAO: O texto informa que Anna mora em Stockholm.
+RESPOSTA: <letra da alternativa correta>
+EXPLICACAO: <explicação pedagógica opcional>
 
 ---
 
-# 32. EXEMPLO DE VERDADEIRO OU FALSO
+# 32. EXEMPLO ESTRUTURAL DE VERDADEIRO OU FALSO
 
 [QUESTAO]
 TIPO: VF
-Anna mora em Malmö.
+<afirmação criada para o exercício>
 
-RESPOSTA: F
-EXPLICACAO: O texto informa que ela mora em Stockholm.
+RESPOSTA: <V ou F>
+EXPLICACAO: <explicação pedagógica opcional>
 
 ---
 
@@ -2122,10 +2140,9 @@ TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 150 pal
 QUANTIDADE DE QUESTÕES: 25
 
 DISTRIBUIÇÃO:
-Divida aproximadamente por igual entre Múltipla Escolha, Verdadeiro ou Falso e Escrita, exemplo, 15 questões:
-* 5 múltipla escolha;
-* 5 verdadeiro ou falso;
-* 5 resposta escrita.
+Divida a quantidade total solicitada da forma mais equilibrada possível entre Múltipla Escolha, Verdadeiro ou Falso e Escrita.
+
+Quando a quantidade total não for divisível igualmente entre os três tipos, distribua a diferença de forma equilibrada, sem favorecer sistematicamente um único tipo.
 
 Use exclusivamente o vocabulário autorizado segundo esta especificação.
 
@@ -2187,6 +2204,27 @@ Cada questão agrupada deve possuir uma instrução geral antes de a) e resposta
 RESPOSTA: a=...; b=...; c=...
 
 Inclua exercícios tradicionais de completar, escolher e transformar frases quando forem adequados.
+
+# AUDITORIA DE NÃO REUTILIZAÇÃO DOS EXEMPLOS
+
+Antes da resposta final, compare silenciosamente o exercício produzido com os exemplos concretos desta especificação.
+
+Confirme que nenhum texto, questão, subitem, alternativa, resposta ou explicação:
+
+- copia literalmente conteúdo de um exemplo desta especificação;
+- reproduz um exemplo com alterações mínimas;
+- reutiliza a mesma combinação de vocabulário apenas porque ela foi mostrada em um exemplo;
+- repete nomes, números, datas, situações ou frases demonstrativas sem uma razão independente vinda do pedido ou do words.json.
+
+- não seleciona vocabulário apenas porque ele apareceu repetidamente nesta especificação;
+- não transforma exemplos negativos em questões apenas trocando pequenas partes;
+- não transforma exemplos positivos em modelos lexicais; somente sua estrutura ou princípio pedagógico pode ser reaproveitado.
+  
+É permitido reutilizar apenas a regra, o formato ou o princípio pedagógico demonstrado.
+
+As marcações e sintaxes obrigatórias do aplicativo não contam como reutilização indevida e devem continuar sendo reproduzidas exatamente quando necessárias.
+
+Se houver semelhança excessiva com um exemplo desta especificação, substitua o conteúdo por uma nova construção antes de entregar.
 
 Faça uma auditoria silenciosa final do vocabulário, da gramática, do gabarito e da formatação.
 
