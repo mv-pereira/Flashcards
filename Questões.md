@@ -954,6 +954,18 @@ Em seguida deve aparecer:
 
 TITULO: título do exercício preferencialmente em sueco usando as palavras permitidas
 
+A prioridade dada aos capítulos mais recentes para seleção de vocabulário, estruturas e questões NÃO deve direcionar automaticamente a escolha do título.
+
+O título deve ser criado a partir do conteúdo específico dos textos e situações efetivamente produzidos no exercício.
+
+Não utilize automaticamente como título palavras ou expressões apenas porque pertencem ao capítulo mais recente ou possuem alta prioridade pedagógica.
+
+Sempre que houver material suficiente, prefira um título que represente a situação, atividade, participantes, lugar, acontecimento ou tema concreto do exercício.
+
+Evite títulos genéricos formados apenas pela combinação de expressões temporais, gramaticais ou funcionais de alta prioridade, salvo quando essa combinação representar de maneira especialmente adequada o conteúdo produzido.
+
+O título deve ser definido somente depois que o conteúdo principal do exercício estiver planejado, para reduzir escolhas automáticas baseadas apenas no vocabulário prioritário.
+
 Depois pode haver um ou mais blocos de texto e questões.
 
 O conteúdo inteiro deve terminar exatamente com:
