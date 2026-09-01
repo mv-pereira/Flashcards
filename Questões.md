@@ -353,6 +353,67 @@ Utilize apenas as que façam sentido e possam ser construídas legitimamente com
 
 Não force uma estrutura gramatical se para isso for necessário introduzir vocabulário proibido.
 
+# 2.2 PARÁGRAFOS, NARRATIVAS E DIÁLOGOS
+
+A organização interna do bloco [TEXTO] também deve ser considerada parte da formatação do exercício.
+
+Quando o texto for predominantemente narrativo, descritivo, dissertativo, um relato ou uma pequena história, NÃO escreva todo o conteúdo como um único parágrafo longo.
+
+Divida o texto em parágrafos semanticamente naturais.
+
+Como referência:
+
+- textos de aproximadamente 100 a 180 palavras: normalmente 2 a 4 parágrafos;
+- textos de aproximadamente 180 a 300 palavras: normalmente 3 a 5 parágrafos;
+- textos maiores podem possuir mais parágrafos conforme necessário.
+
+Cada parágrafo deve desenvolver uma pequena unidade de sentido, por exemplo:
+
+- apresentação da situação;
+- desenvolvimento de uma ação;
+- mudança de tempo, lugar ou assunto;
+- consequência;
+- conclusão.
+
+Separe obrigatoriamente dois parágrafos por UMA LINHA EM BRANCO.
+
+Não quebre uma linha depois de cada frase apenas para produzir aparência de parágrafo.
+
+Os parágrafos devem ser reais e semanticamente coerentes.
+
+Quando o texto for predominantemente um DIÁLOGO entre duas ou mais pessoas, utilize obrigatoriamente uma fala por linha no formato:
+
+Nome: fala
+
+Exemplo estrutural:
+
+Anna: ...
+Erik: ...
+Anna: ...
+Erik: ...
+
+Não utilize travessões, marcadores, listas ou Markdown para indicar os participantes.
+
+O nome antes dos dois-pontos identifica exclusivamente o falante daquela linha.
+
+Em diálogos, normalmente NÃO coloque uma linha em branco entre cada fala. Use linha em branco apenas quando houver mudança de cena, passagem para um trecho narrativo ou separação natural entre partes do texto.
+
+Quando o texto for predominantemente narrativo e houver apenas uma fala ocasional, ela pode permanecer dentro do próprio parágrafo.
+
+Exemplo conceitual:
+
+Erik sa: ...
+
+Nesse caso, não transforme automaticamente o trecho em uma linha de diálogo separada.
+
+Naturalmente, palavras como "sa" só podem ser utilizadas se estiverem autorizadas pelas regras de vocabulário deste documento.
+
+Quando houver combinação de narrativa e diálogo:
+
+- parágrafos narrativos devem continuar separados por linhas em branco;
+- falas independentes devem seguir o formato Nome: fala;
+- após o diálogo, um novo trecho narrativo deve começar como um novo parágrafo.
+
 ---
 
 # 3. QUANTIDADE DE QUESTÕES E SUBITENS
@@ -941,6 +1002,15 @@ Exemplo:
 
 [TEXTO]
 Anna bor i Stockholm. ...
+
+As quebras de linha existentes dentro de [TEXTO] possuem significado de apresentação e devem ser preservadas.
+
+Dentro de [TEXTO]:
+
+- uma linha em branco separa dois parágrafos;
+- linhas consecutivas no formato Nome: fala representam turnos de um diálogo;
+- uma quebra simples de linha não deve ser usada arbitrariamente para quebrar uma frase ou um parágrafo;
+- os marcadores [TEXTO], [QUESTAO], [FIM] e [EXERCICIO] continuam sendo os únicos marcadores estruturais.
 
 Pode haver mais de um bloco `[TEXTO]` no mesmo exercício.
 
@@ -1690,7 +1760,15 @@ Não utilize:
 * HTML;
 * JSON.
 
-Linhas em branco são permitidas e recomendadas para legibilidade.
+Linhas em branco são parte da estrutura visual do bloco [TEXTO].
+
+Em textos predominantemente narrativos, descritivos ou dissertativos, utilize obrigatoriamente linhas em branco para separar parágrafos semanticamente distintos.
+
+Em textos predominantemente dialogados, utilize uma fala por linha no formato Nome: fala.
+
+Não utilize linhas em branco entre cada fala de um mesmo diálogo, salvo quando houver uma mudança natural de cena ou de trecho.
+
+Não utilize Markdown ou HTML para criar parágrafos ou diálogos.
 
 ---
 
@@ -1725,6 +1803,15 @@ Antes de entregar o exercício, confira silenciosamente:
 * respostas alternativas de escrita utilizam `|`;
 * existe `[FIM]`;
 * nada relevante aparece depois de `[FIM]`.
+
+Para os blocos [TEXTO], confira também silenciosamente que:
+
+- textos narrativos, descritivos, dissertativos ou relatos suficientemente longos foram divididos em parágrafos naturais;
+- os parágrafos estão separados por uma linha em branco;
+- não foi criada uma quebra de linha arbitrária após cada frase;
+- textos predominantemente dialogados utilizam uma fala por linha;
+- cada fala independente utiliza o formato Nome: fala;
+- textos predominantemente narrativos não foram artificialmente convertidos em diálogo apenas porque uma pessoa fala em algum momento.
 
 Para questões gramaticais agrupadas, confira também silenciosamente que:
 
@@ -1922,7 +2009,9 @@ As crases usadas pelo chat para formar o bloco de código NÃO fazem parte do co
 TITULO: Título do exercício
 
 [TEXTO]
-Texto principal em sueco.
+Primeiro parágrafo do texto principal em sueco.
+
+Segundo parágrafo do texto principal em sueco.
 
 [QUESTAO]
 TIPO: MULTIPLA
