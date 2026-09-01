@@ -1782,6 +1782,88 @@ body.dark-theme .comparison-feedback.wrong {
   background: var(--soft);
 }
 
+.exercise-consulted-vocabulary {
+  display: grid;
+  gap: 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  padding: 12px;
+
+  background: var(--card);
+}
+
+.exercise-consulted-vocabulary h4 {
+  margin: 0;
+
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.exercise-consulted-list {
+  display: grid;
+  gap: 0;
+}
+
+.exercise-consulted-item {
+  display: grid;
+  gap: 3px;
+
+  padding: 9px 0;
+
+  border-top: 1px solid var(--border);
+}
+
+.exercise-consulted-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.exercise-consulted-item:last-child {
+  padding-bottom: 0;
+}
+
+.exercise-consulted-item-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: baseline;
+
+  gap: 12px;
+}
+
+.exercise-consulted-item-header strong {
+  font-size: 1rem;
+}
+
+.exercise-consulted-item-header span {
+  flex: 0 0 auto;
+
+  color: var(--muted);
+
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.exercise-consulted-translation,
+.exercise-consulted-meta,
+.exercise-consulted-empty {
+  margin: 0;
+}
+
+.exercise-consulted-translation {
+  font-weight: 800;
+}
+
+.exercise-consulted-meta,
+.exercise-consulted-empty {
+  color: var(--muted);
+
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 .exercise-result-summary h3,
 .exercise-result-score {
   margin: 0;

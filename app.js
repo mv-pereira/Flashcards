@@ -41,6 +41,8 @@ let exerciseFinished = false;
 let exerciseVocabularyIndex = new Map();
 let expandedExerciseVocabulary = null;
 
+let exerciseConsultedVocabulary = new Map();
+
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
 
@@ -3230,6 +3232,7 @@ function backFromExerciseScreen() {
 function resetExerciseScreen() {
   currentExercise = null;
   exerciseFinished = false;
+  exerciseConsultedVocabulary = new Map();
 
   exerciseSourceInput.value = "";
   exerciseImportMessage.textContent = "";
@@ -3260,6 +3263,8 @@ function generateExercise() {
 
     currentExercise = parsedExercise;
     exerciseFinished = false;
+
+    exerciseConsultedVocabulary = new Map();
 
     renderExercise();
 
@@ -4384,53 +4389,239 @@ function renderExerciseInteractiveText(
   const wordRegex =
     /[\p{L}\p{M}]+(?:['’\-][\p{L}\p{M}]+)*/gu;
 
-  let lastIndex = 0;
+  const words = Array.from(
+    source.matchAll(wordRegex),
+    (match) => ({
+      word: match[0],
+      start: match.index || 0,
+      end:
+        (match.index || 0) +
+        match[0].length
+    })
+  );
 
-  for (const match of source.matchAll(
-    wordRegex
-  )) {
-    const index = match.index || 0;
-    const word = match[0];
+  if (words.length === 0) {
+    container.appendChild(
+      document.createTextNode(source)
+    );
 
-    if (index > lastIndex) {
+    return;
+  }
+
+  /*
+   * Descobre quantas palavras possui a maior
+   * expressão registrada no índice.
+   *
+   * Exemplo:
+   * "lade sig" = 2 palavras
+   * "sagt till" = 2 palavras
+   */
+  let maxVocabularyWords = 1;
+
+  for (
+    const key of
+    exerciseVocabularyIndex.keys()
+  ) {
+    const count =
+      extractExerciseSwedishWords(
+        key
+      ).length;
+
+    if (count > maxVocabularyWords) {
+      maxVocabularyWords = count;
+    }
+  }
+
+  let cursor = 0;
+  let wordIndex = 0;
+
+  while (wordIndex < words.length) {
+    const current =
+      words[wordIndex];
+
+    /*
+     * Preserva tudo que existe antes da
+     * palavra atual:
+     *
+     * espaços
+     * pontuação
+     * quebras
+     * parênteses
+     * etc.
+     */
+    if (current.start > cursor) {
       container.appendChild(
         document.createTextNode(
           source.slice(
-            lastIndex,
-            index
+            cursor,
+            current.start
           )
         )
       );
     }
 
-    const entry =
-      exerciseVocabularyIndex.get(
-        normalizeExerciseVocabularyForm(
-          word
-        )
+    let matchedEntry = null;
+    let matchedEndIndex =
+      wordIndex;
+
+    const maximumEndIndex =
+      Math.min(
+        words.length - 1,
+        wordIndex +
+          maxVocabularyWords -
+          1
       );
 
-    if (entry) {
-      container.appendChild(
-        createExerciseVocabularyToken(
-          word,
-          entry
-        )
-      );
-    } else {
-      container.appendChild(
-        document.createTextNode(word)
-      );
+    /*
+     * Procura primeiro a expressão mais
+     * longa possível.
+     *
+     * Portanto:
+     *
+     * "lade sig"
+     *
+     * é testado antes de:
+     *
+     * "lade"
+     */
+    for (
+      let endIndex =
+        maximumEndIndex;
+      endIndex >= wordIndex;
+      endIndex--
+    ) {
+      let validSequence = true;
+
+      /*
+       * Duas palavras só podem formar uma
+       * expressão quando entre elas houver
+       * apenas espaço.
+       *
+       * Assim:
+       *
+       * lade sig
+       *
+       * pode ser reconhecido.
+       *
+       * Mas:
+       *
+       * lade, sig
+       *
+       * não será considerado a expressão
+       * "lade sig".
+       */
+      for (
+        let separatorIndex =
+          wordIndex;
+        separatorIndex < endIndex;
+        separatorIndex++
+      ) {
+        const separator =
+          source.slice(
+            words[separatorIndex].end,
+            words[
+              separatorIndex + 1
+            ].start
+          );
+
+        const onlyWhitespace =
+          /^\s+$/u.test(separator);
+
+        const containsLineBreak =
+          /[\r\n]/u.test(separator);
+
+        if (
+          !onlyWhitespace ||
+          containsLineBreak
+        ) {
+          validSequence = false;
+          break;
+        }
+      }
+
+      if (!validSequence) {
+        continue;
+      }
+
+      const candidate =
+        words
+          .slice(
+            wordIndex,
+            endIndex + 1
+          )
+          .map((item) => item.word)
+          .join(" ");
+
+      const entry =
+        exerciseVocabularyIndex.get(
+          normalizeExerciseVocabularyForm(
+            candidate
+          )
+        );
+
+      if (!entry) {
+        continue;
+      }
+
+      matchedEntry = entry;
+      matchedEndIndex =
+        endIndex;
+
+      /*
+       * Como estamos procurando da
+       * expressão maior para a menor,
+       * a primeira encontrada é a melhor.
+       */
+      break;
     }
 
-    lastIndex =
-      index + word.length;
-  }
+    if (matchedEntry) {
+      const finalWord =
+        words[matchedEndIndex];
 
-  if (lastIndex < source.length) {
+      const visibleText =
+        source.slice(
+          current.start,
+          finalWord.end
+        );
+
+      container.appendChild(
+        createExerciseVocabularyToken(
+          visibleText,
+          matchedEntry
+        )
+      );
+
+      cursor = finalWord.end;
+
+      wordIndex =
+        matchedEndIndex + 1;
+
+      continue;
+    }
+
+    /*
+     * Nenhuma palavra ou expressão foi
+     * encontrada no vocabulário.
+     */
     container.appendChild(
       document.createTextNode(
-        source.slice(lastIndex)
+        current.word
+      )
+    );
+
+    cursor = current.end;
+    wordIndex++;
+  }
+
+  /*
+   * Preserva pontuação ou qualquer outro
+   * conteúdo depois da última palavra.
+   */
+  if (cursor < source.length) {
+    container.appendChild(
+      document.createTextNode(
+        source.slice(cursor)
       )
     );
   }
@@ -4486,6 +4677,11 @@ function createExerciseVocabularyToken(
         return;
       }
 
+      registerExerciseVocabularyConsultation(
+        word,
+        entry
+      );
+
       details.classList.remove(
         "hidden"
       );
@@ -4508,6 +4704,113 @@ function createExerciseVocabularyToken(
   );
 
   return wrapper;
+}
+
+function registerExerciseVocabularyConsultation(
+  word,
+  entry
+) {
+  const visibleForm =
+    String(word || "").trim();
+
+  if (
+    !visibleForm ||
+    !entry ||
+    !entry.card
+  ) {
+    return;
+  }
+
+  const card = entry.card;
+
+  const baseSwedish =
+    String(
+      card.term?.swedish ||
+      visibleForm
+    ).trim();
+
+  const portuguese =
+    String(
+      card.term?.portuguese || ""
+    ).trim();
+
+  /*
+   * Palavras extraídas de uma expressão
+   * precisam permanecer independentes.
+   *
+   * Exemplo:
+   *
+   * "gärna" encontrada dentro de
+   * "Jag kommer gärna"
+   *
+   * não deve ser agrupada como se a
+   * expressão inteira tivesse sido clicada.
+   */
+  const isExpressionWord =
+    entry.source === "expression";
+
+  const cardIdentifier =
+    card.id != null
+      ? String(card.id)
+      : normalizeExerciseVocabularyForm(
+          baseSwedish
+        );
+
+  const key =
+    isExpressionWord
+      ? [
+          "expression",
+          cardIdentifier,
+          normalizeExerciseVocabularyForm(
+            visibleForm
+          )
+        ].join(":")
+      : [
+          "card",
+          cardIdentifier
+        ].join(":");
+
+  const current =
+    exerciseConsultedVocabulary.get(
+      key
+    );
+
+  if (current) {
+    current.count++;
+
+    current.forms.add(
+      visibleForm
+    );
+
+    return;
+  }
+
+  exerciseConsultedVocabulary.set(
+    key,
+    {
+      swedish:
+        isExpressionWord
+          ? visibleForm
+          : baseSwedish,
+
+      portuguese,
+
+      count: 1,
+
+      forms:
+        new Set([
+          visibleForm
+        ]),
+
+      expression:
+        isExpressionWord
+          ? String(
+              entry.expression ||
+              baseSwedish
+            ).trim()
+          : ""
+    }
+  );
 }
 
 function closeExpandedExerciseVocabulary() {
@@ -6316,6 +6619,165 @@ function getExerciseStatusLabel(
   return "❌ Incorreta";
 }
 
+function createExerciseConsultedVocabularySummary() {
+  const section =
+    document.createElement("section");
+
+  section.className =
+    "exercise-consulted-vocabulary";
+
+  const title =
+    document.createElement("h4");
+
+  title.textContent =
+    "Palavras consultadas";
+
+  section.appendChild(title);
+
+  const items =
+    Array.from(
+      exerciseConsultedVocabulary.values()
+    ).sort(
+      (a, b) => {
+        if (b.count !== a.count) {
+          return b.count - a.count;
+        }
+
+        return a.swedish.localeCompare(
+          b.swedish,
+          "sv"
+        );
+      }
+    );
+
+  if (items.length === 0) {
+    const empty =
+      document.createElement("p");
+
+    empty.className =
+      "exercise-consulted-empty";
+
+    empty.textContent =
+      "Nenhuma palavra consultada.";
+
+    section.appendChild(empty);
+
+    return section;
+  }
+
+  const list =
+    document.createElement("div");
+
+  list.className =
+    "exercise-consulted-list";
+
+  items.forEach((item) => {
+    const row =
+      document.createElement("div");
+
+    row.className =
+      "exercise-consulted-item";
+
+    const header =
+      document.createElement("div");
+
+    header.className =
+      "exercise-consulted-item-header";
+
+    const word =
+      document.createElement("strong");
+
+    word.textContent =
+      item.swedish;
+
+    const count =
+      document.createElement("span");
+
+    count.textContent =
+      item.count === 1
+        ? "1 consulta"
+        : `${item.count} consultas`;
+
+    header.append(
+      word,
+      count
+    );
+
+    row.appendChild(header);
+
+    if (item.portuguese) {
+      const translation =
+        document.createElement("p");
+
+      translation.className =
+        "exercise-consulted-translation";
+
+      translation.textContent =
+        item.portuguese;
+
+      row.appendChild(
+        translation
+      );
+    }
+
+    const forms =
+      Array.from(item.forms);
+
+    const normalizedBase =
+      normalizeExerciseVocabularyForm(
+        item.swedish
+      );
+
+    const shouldShowForms =
+      forms.length > 1 ||
+      (
+        forms.length === 1 &&
+        normalizeExerciseVocabularyForm(
+          forms[0]
+        ) !== normalizedBase
+      );
+
+    if (
+      shouldShowForms &&
+      !item.expression
+    ) {
+      const formInfo =
+        document.createElement("p");
+
+      formInfo.className =
+        "exercise-consulted-meta";
+
+      formInfo.textContent =
+        `Forma${forms.length > 1 ? "s" : ""} consultada${forms.length > 1 ? "s" : ""}: ${forms.join(", ")}`;
+
+      row.appendChild(
+        formInfo
+      );
+    }
+
+    if (item.expression) {
+      const expressionInfo =
+        document.createElement("p");
+
+      expressionInfo.className =
+        "exercise-consulted-meta";
+
+      expressionInfo.textContent =
+        `Encontrada em: ${item.expression}`;
+
+      row.appendChild(
+        expressionInfo
+      );
+    }
+
+    list.appendChild(row);
+  });
+
+  section.appendChild(list);
+
+  return section;
+}
+
 function renderExerciseResultSummary(
   totalScore,
   questionCount,
@@ -6384,8 +6846,12 @@ function renderExerciseResultSummary(
     counts.unanswered
   );
 
+  const consultedVocabulary =
+    createExerciseConsultedVocabularySummary();
+
   exerciseResultSummary.append(
     title,
+    consultedVocabulary,
     score,
     grid
   );
