@@ -5346,7 +5346,6 @@ function finishExercise() {
 
   const counts = {
     correct: 0,
-    almost: 0,
     partial: 0,
     wrong: 0,
     unanswered: 0
@@ -5607,11 +5606,8 @@ function gradeExerciseGroupedWrittenQuestion(
     status = "unanswered";
   } else if (score === 1) {
     status = "correct";
-  } else {
-    status =
-      getExerciseWrittenStatus(
-        score
-      );
+  } else if (score > 0) {
+    status = "partial";
   }
 
   return {
@@ -5712,6 +5708,7 @@ function compareExerciseWrittenAnswer(
         ) {
           return {
             score: 1,
+            
             status: "correct",
 
             expectedAnswer:
@@ -5737,10 +5734,19 @@ function compareExerciseWrittenAnswer(
 
   candidates.sort(
     (a, b) => {
+      const similarityA =
+        a.similarityScore ?? a.score;
+  
+      const similarityB =
+        b.similarityScore ?? b.score;
+  
       if (
-        b.score !== a.score
+        similarityB !== similarityA
       ) {
-        return b.score - a.score;
+        return (
+          similarityB -
+          similarityA
+        );
       }
 
       return (
@@ -5812,7 +5818,9 @@ function evaluateExerciseWrittenCandidate(
       1
     );
 
-  const score =
+  // Usado SOMENTE para diagnosticar
+  // quão próxima a resposta ficou.
+  const similarityScore =
     clamp(
       contentScore * 0.7 +
         orthographyScore * 0.3,
@@ -5821,12 +5829,11 @@ function evaluateExerciseWrittenCandidate(
     );
 
   return {
-    score,
+    score: 0,
 
-    status:
-      getExerciseWrittenStatus(
-        score
-      ),
+    similarityScore,
+
+    status: "wrong",
 
     expectedAnswer:
       originalExpectedAnswer,
@@ -5841,20 +5848,6 @@ function evaluateExerciseWrittenCandidate(
         wordComparison.operations
       )
   };
-}
-
-function getExerciseWrittenStatus(
-  score
-) {
-  if (score >= 0.85) {
-    return "almost";
-  }
-
-  if (score >= 0.5) {
-    return "partial";
-  }
-
-  return "wrong";
 }
 
 function getExerciseWordComparison(
@@ -6600,35 +6593,23 @@ function getExerciseStatusLabel(
   }
 
   if (
-    status === "almost"
+    status === "unanswered"
   ) {
-    return (
-      `🟢 Quase correta — ${Math.round(score * 100)}%`
-    );
+    return "⚪ Não respondida — Nota 0,0";
   }
 
   if (
     status === "partial"
   ) {
     return (
-      `🟡 Parcialmente correta — ${Math.round(score * 100)}%`
-    );
-  }
-
-  if (
-    status === "unanswered"
-  ) {
-    return (
-      "⚪ Não respondida — 0%"
+      `🟡 Parcialmente correta — Nota ${formatExerciseGrade(score)}`
     );
   }
 
   if (
     questionType === "ESCRITA"
   ) {
-    return (
-      `❌ Incorreta — ${Math.round(score * 100)}%`
-    );
+    return "❌ Incorreta — Nota 0,0";
   }
 
   return "❌ Incorreta";
@@ -6806,12 +6787,12 @@ function renderExerciseResultSummary(
   title.textContent =
     "Resultado do exercício";
 
-  const percentage =
+  const finalScore =
     questionCount > 0
       ? (
           totalScore /
           questionCount
-        ) * 100
+        )
       : 0;
 
   const score =
@@ -6821,9 +6802,7 @@ function renderExerciseResultSummary(
     "exercise-result-score";
 
   score.textContent =
-    `${formatExercisePoints(totalScore)} / ${questionCount} pontos · ${percentage
-      .toFixed(1)
-      .replace(".", ",")}%`;
+    `Nota: ${formatExerciseGrade(finalScore)}`;
 
   const grid =
     document.createElement("div");
@@ -6835,12 +6814,6 @@ function renderExerciseResultSummary(
     grid,
     "Corretas",
     counts.correct
-  );
-
-  appendExerciseResultMetric(
-    grid,
-    "Quase corretas",
-    counts.almost
   );
 
   appendExerciseResultMetric(
@@ -6912,6 +6885,33 @@ function formatExercisePoints(
     {
       minimumFractionDigits: 0,
       maximumFractionDigits: 2
+    }
+  );
+}
+
+function formatExerciseGrade(
+  score
+) {
+  const normalizedScore =
+    clamp(score, 0, 1);
+
+  if (normalizedScore === 1) {
+    return "10";
+  }
+
+  const grade =
+    Math.min(
+      9.9,
+      Math.round(
+        normalizedScore * 100
+      ) / 10
+    );
+
+  return grade.toLocaleString(
+    "pt-BR",
+    {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1
     }
   );
 }
