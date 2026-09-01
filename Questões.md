@@ -1079,6 +1079,12 @@ Não introduza vocabulário externo para obter variedade.
 
 Se o vocabulário autorizado restante não permitir um texto natural e gramaticalmente correto, reutilize palavras já empregadas conforme necessário.
 
+# 8.3 DIVERSIFICAÇÃO DE TEMA E ESTILO ENTRE VÁRIOS TEXTOS
+
+O segundo texto deve ter ser o mais diferente possível do primeiro texto. Se o primeiro for mais dissertivo, o segundo pode ser um diálogo. Já o terceiro pode ser mais um discurso, para diferenciar do primeiro e do segundo, assim sucessivamente.
+
+Os nomes próprios não devem se repetir.
+
 ---
 
 # 9. IDENTIFICAÇÃO DAS QUESTÕES
