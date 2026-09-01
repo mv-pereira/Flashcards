@@ -4195,29 +4195,45 @@ function buildExerciseVocabularyIndex() {
           swedish
         );
 
-    if (isSingleWord) {
-      registerExerciseVocabularyForm(
-        swedish,
-        {
-          source: "direct",
-          priority: 30,
-          card,
-          formType: "base"
-        }
-      );
-    } else {
-      words.forEach((word) => {
-        registerExerciseVocabularyForm(
-          word,
-          {
-            source: "expression",
-            priority: 10,
-            card,
-            expression: swedish
-          }
-        );
-      });
-    }
+    /*
+ * Registra SEMPRE o termo completo.
+ *
+ * Exemplos:
+ * bok
+ * i måndags
+ * nästa vecka
+ * lägga sig
+ */
+registerExerciseVocabularyForm(
+  swedish,
+  {
+    source: "direct",
+    priority: 30,
+    card,
+    formType: "base"
+  }
+);
+
+/*
+ * Se for uma expressão, registra também
+ * cada palavra individualmente como fallback.
+ *
+ * Assim "måndags" sozinho ainda pode informar
+ * que aparece dentro de "i måndags".
+ */
+if (!isSingleWord) {
+  words.forEach((word) => {
+    registerExerciseVocabularyForm(
+      word,
+      {
+        source: "expression",
+        priority: 10,
+        card,
+        expression: swedish
+      }
+    );
+  });
+}
 
     registerExerciseStoredInflections(
       card
