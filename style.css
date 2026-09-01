@@ -1416,12 +1416,60 @@ body.dark-theme .comparison-feedback.wrong {
   text-transform: uppercase;
 }
 
-.exercise-reading-text {
+.exercise-reading-content {
   margin: 10px 0 0;
+
   font-size: 1.25rem;
-  white-space: pre-wrap;
   line-height: 1.65;
+
   overflow-wrap: anywhere;
+}
+
+.exercise-reading-paragraph {
+  margin: 0;
+}
+
+.exercise-reading-paragraph
+  + .exercise-reading-paragraph {
+  margin-top: 1em;
+}
+
+.exercise-dialogue-line {
+  display: grid;
+
+  grid-template-columns:
+    minmax(76px, 96px)
+    minmax(0, 1fr);
+
+  column-gap: 14px;
+
+  align-items: start;
+
+  margin: 0;
+}
+
+.exercise-dialogue-line
+  + .exercise-dialogue-line {
+  margin-top: 0.2em;
+}
+
+.exercise-reading-paragraph
+  + .exercise-dialogue-line,
+.exercise-dialogue-line
+  + .exercise-reading-paragraph {
+  margin-top: 1em;
+}
+
+.exercise-dialogue-speaker {
+  font-weight: 900;
+  line-height: inherit;
+
+  overflow-wrap: anywhere;
+}
+
+.exercise-dialogue-utterance {
+  min-width: 0;
+  margin: 0;
 }
 
 .exercise-vocab-token {

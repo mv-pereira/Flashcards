@@ -4022,23 +4022,146 @@ function createExerciseTextBlock(
       ? "Texto"
       : `Texto ${textNumber}`;
 
-  const paragraph =
-    document.createElement("p");
+const content =
+  document.createElement("div");
 
-  paragraph.className =
-    "exercise-reading-text";
+content.className =
+  "exercise-reading-content";
 
-  renderExerciseInteractiveText(
-    paragraph,
-    text
-  );
+renderExerciseReadingContent(
+  content,
+  text
+);
 
-  article.append(
-    label,
-    paragraph
-  );
+article.append(
+  label,
+  content
+);
 
   return article;
+}
+
+function renderExerciseReadingContent(
+  container,
+  text
+) {
+  container.replaceChildren();
+
+  const lines = String(text || "")
+    .replace(/\r\n?/g, "\n")
+    .split("\n");
+
+  let paragraphLines = [];
+
+  const flushParagraph = () => {
+    const paragraphText =
+      paragraphLines
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .join(" ")
+        .trim();
+
+    paragraphLines = [];
+
+    if (!paragraphText) {
+      return;
+    }
+
+    const paragraph =
+      document.createElement("p");
+
+    paragraph.className =
+      "exercise-reading-paragraph";
+
+    renderExerciseInteractiveText(
+      paragraph,
+      paragraphText
+    );
+
+    container.appendChild(paragraph);
+  };
+
+  lines.forEach((rawLine) => {
+    const line = rawLine.trim();
+
+    if (!line) {
+      flushParagraph();
+      return;
+    }
+
+    const dialogue =
+      parseExerciseDialogueLine(line);
+
+    if (dialogue) {
+      flushParagraph();
+
+      container.appendChild(
+        createExerciseDialogueLine(
+          dialogue.speaker,
+          dialogue.text
+        )
+      );
+
+      return;
+    }
+
+    paragraphLines.push(line);
+  });
+
+  flushParagraph();
+}
+
+function parseExerciseDialogueLine(line) {
+  const match = String(line || "").match(
+    /^(\p{Lu}[\p{L}\p{M}'’.-]*(?:\s+\p{Lu}[\p{L}\p{M}'’.-]*){0,2}):\s*(.+)$/u
+  );
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    speaker: match[1].trim(),
+    text: match[2].trim()
+  };
+}
+
+function createExerciseDialogueLine(
+  speakerName,
+  dialogueText
+) {
+  const row =
+    document.createElement("div");
+
+  row.className =
+    "exercise-dialogue-line";
+
+  const speaker =
+    document.createElement("strong");
+
+  speaker.className =
+    "exercise-dialogue-speaker";
+
+  speaker.textContent =
+    speakerName;
+
+  const utterance =
+    document.createElement("p");
+
+  utterance.className =
+    "exercise-dialogue-utterance";
+
+  renderExerciseInteractiveText(
+    utterance,
+    dialogueText
+  );
+
+  row.append(
+    speaker,
+    utterance
+  );
+
+  return row;
 }
 
 function buildExerciseVocabularyIndex() {
