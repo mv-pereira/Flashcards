@@ -309,6 +309,127 @@ Essa distribuição não precisa ser matemática quando o conteúdo disponível 
 
 Se o capítulo mais alto tiver pouco conteúdo suficiente para produzir questões de qualidade, utilize progressivamente o capítulo anterior, sem introduzir conteúdo externo.
 
+# 1.7 MODOS DE PRIORIDADE ENTRE OS CAPÍTULOS
+
+O pedido poderá especificar:
+
+MODO DE PRIORIDADE DOS CAPÍTULOS: HIERARQUICO
+
+ou:
+
+MODO DE PRIORIDADE DOS CAPÍTULOS: FOCO_LIVRE
+
+Se nenhum modo for informado, utilize:
+
+MODO DE PRIORIDADE DOS CAPÍTULOS: HIERARQUICO
+
+## MODO HIERARQUICO
+
+No modo HIERARQUICO, mantenha a lógica de prioridade por recência descrita nesta especificação:
+
+1. o capítulo mais alto do intervalo é o foco principal;
+2. o capítulo imediatamente anterior é o segundo foco;
+3. os capítulos restantes funcionam progressivamente como revisão, integração e apoio.
+
+Todas as regras desta especificação que atribuem prioridade ao capítulo imediatamente anterior continuam válidas nesse modo.
+
+## MODO FOCO_LIVRE
+
+No modo FOCO_LIVRE, somente o capítulo mais alto do intervalo possui prioridade obrigatória por recência.
+
+Considere o capítulo mais alto como o FOCO PRINCIPAL do exercício.
+
+Vocabulário, estruturas e conteúdos introduzidos nesse capítulo devem aparecer de maneira claramente predominante ou pedagogicamente destacada ao longo do conjunto.
+
+Entretanto, TODOS OS CAPÍTULOS ANTERIORES pertencentes ao intervalo autorizado devem formar um único CONJUNTO CUMULATIVO DE APOIO.
+
+Dentro desse conjunto de capítulos anteriores:
+
+* não atribua prioridade automática ao capítulo imediatamente anterior;
+* não siga obrigatoriamente a ordem decrescente dos capítulos;
+* não utilize a proximidade numérica com o capítulo mais alto como critério de seleção;
+* não distribua conteúdo uniformemente entre os capítulos;
+* não tente representar cada capítulo;
+* não imponha proporções fixas por capítulo.
+
+Selecione livremente vocabulário e estruturas dos capítulos anteriores de acordo com sua utilidade para:
+
+* construir frases naturais e gramaticalmente corretas;
+* criar situações com sentido real;
+* combinar de maneiras novas o conteúdo já estudado;
+* permitir diferentes estruturas sintáticas;
+* produzir variedade lexical;
+* produzir variedade temática;
+* produzir variedade gramatical;
+* evitar repetição excessiva das mesmas combinações;
+* criar boas oportunidades de aplicação do conteúdo do capítulo mais recente;
+* diversificar os exercícios entre diferentes gerações.
+
+É permitido utilizar conteúdo de um capítulo muito anterior com maior frequência que o capítulo imediatamente anterior quando isso produzir uma construção mais natural, útil, variada ou pedagogicamente interessante.
+
+Por exemplo, se o intervalo autorizado for:
+
+CAPÍTULOS: 0 até X
+
+o capítulo X continua sendo obrigatoriamente o foco principal.
+
+Entretanto, os capítulos:
+
+0 até X-1
+
+devem ser considerados conjuntamente como um repertório cumulativo disponível.
+
+Não interprete esse repertório como uma hierarquia:
+
+X-1 > X-2 > X-3 > ...
+
+Em vez disso, escolha livremente entre os capítulos anteriores conforme as necessidades concretas de cada texto, frase, questão ou situação.
+
+Uma construção pode combinar, por exemplo:
+
+* conteúdo do capítulo mais alto com elementos de diferentes capítulos anteriores;
+* vários capítulos anteriores entre si;
+* conteúdo recente com conteúdo bastante antigo;
+* estruturas de um capítulo com vocabulário proveniente de outros capítulos.
+
+Essas combinações não precisam seguir padrões fixos e devem variar entre diferentes exercícios.
+
+Ao criar uma nova frase, texto ou questão, não pergunte silenciosamente apenas:
+
+"Qual é o capítulo anterior mais próximo que posso utilizar?"
+
+Considere, em vez disso:
+
+"Entre todo o material anteriormente estudado e autorizado, quais elementos permitem construir a melhor situação, estrutura ou contraste para praticar o conteúdo atual?"
+
+O objetivo do modo FOCO_LIVRE é produzir REVISÃO CUMULATIVA COMBINATÓRIA.
+
+O estudante deve continuar praticando intensamente o conteúdo mais recente, mas esse conteúdo deve poder interagir livremente com todo o repertório já adquirido.
+
+Essa liberdade nunca autoriza vocabulário externo ao intervalo permitido.
+
+Todas as demais regras de vocabulário desta especificação continuam integralmente válidas.
+
+## RELAÇÃO ENTRE OS MODOS E AS DEMAIS REGRAS
+
+Quando estiver ativo o modo HIERARQUICO, todas as referências desta especificação a:
+
+* "segunda prioridade";
+* "capítulo imediatamente anterior";
+* "segundo foco";
+* progressão do capítulo mais recente para os anteriores;
+
+devem ser aplicadas normalmente.
+
+Quando estiver ativo o modo FOCO_LIVRE, qualquer regra desta especificação que determine que o capítulo imediatamente anterior seja obrigatoriamente a segunda prioridade deve ser considerada substituída pelas regras desta seção.
+
+No modo FOCO_LIVRE:
+
+* o capítulo mais alto continua sendo o foco principal;
+* os demais capítulos não possuem hierarquia fixa entre si;
+* a seleção entre os capítulos anteriores deve favorecer coerência, diversidade, naturalidade, integração e valor pedagógico.
+
+
 ---
 
 # 2. TEXTO PRINCIPAL
@@ -2244,6 +2365,8 @@ CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, 
 TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 150 palavras cada;
 
 QUANTIDADE DE QUESTÕES: 25
+
+MODO DE PRIORIDADE DOS CAPÍTULOS: HIERARQUICO/FOCO_LIVRE (Se estiver escrito HIERARQUICO/FOCO_LIVRE, adotar HIERARQUICO)
 
 DISTRIBUIÇÃO:
 Divida a quantidade total solicitada da forma mais equilibrada possível entre Múltipla Escolha, Verdadeiro ou Falso e Escrita.
