@@ -1405,71 +1405,28 @@
       </section>
       <section id="exerciseScreen" class="exercise-screen hidden" aria-label="Exercícios">
         <button id="backFromExerciseButton" class="back-button" type="button"> ← Voltar </button>
-
         <div class="exercise-card">
           <div class="exercise-heading">
             <p class="eyebrow">Prática</p>
             <h2>Exercícios</h2>
             <p>Cole um exercício no formato definido e o app montará a prova automaticamente.</p>
           </div>
-
           <div id="exerciseImportPanel" class="exercise-import-panel">
-            <label class="exercise-import-label" for="exerciseSourceInput">
-              Cole o exercício aqui
-            </label>
-
-            <textarea
-              id="exerciseSourceInput"
-              class="exercise-source-input"
-              spellcheck="false"
-              autocapitalize="off"
-              autocomplete="off"
-              placeholder="[EXERCICIO]&#10;TITULO: ...&#10;&#10;[TEXTO]&#10;...&#10;&#10;[QUESTAO]&#10;TIPO: ...&#10;...&#10;&#10;[FIM]"
-            ></textarea>
-
-            <button
-              id="generateExerciseButton"
-              class="button button-primary"
-              type="button"
-            >
-              Gerar exercício
-            </button>
-
-            <p
-              id="exerciseImportMessage"
-              class="exercise-import-message"
-              role="status"
-            ></p>
+            <label class="exercise-import-label" for="exerciseSourceInput"> Cole o exercício aqui </label>
+            <textarea id="exerciseSourceInput" class="exercise-source-input" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="[EXERCICIO]&#10;TITULO: ...&#10;&#10;[TEXTO]&#10;...&#10;&#10;[QUESTAO]&#10;TIPO: ...&#10;...&#10;&#10;[FIM]"></textarea>
+            <button id="generateExerciseButton" class="button button-primary" type="button"> Gerar exercício </button>
+            <p id="exerciseImportMessage" class="exercise-import-message" role="status"></p>
           </div>
-
           <div id="exerciseRenderedPanel" class="exercise-rendered hidden">
             <div class="exercise-rendered-heading">
               <p class="eyebrow">Exercício</p>
               <h2 id="exerciseTitle"></h2>
             </div>
-
-            <div
-              id="exerciseResultSummary"
-              class="exercise-result-summary hidden"
-            ></div>
-
+            <div id="exerciseResultSummary" class="exercise-result-summary hidden"></div>
             <div id="exerciseBlocks" class="exercise-blocks"></div>
-
-            <button
-              id="finishExerciseButton"
-              class="button button-primary"
-              type="button"
-            >
-              Finalizar exercício
-            </button>
-
-            <button
-              id="newExerciseButton"
-              class="button button-secondary hidden"
-              type="button"
-            >
-              Colar outro exercício
-            </button>
+            <button id="finishExerciseButton" class="button button-primary" type="button"> Finalizar exercício </button>
+            <button id="copyExerciseErrorsButton" class="button button-primary hidden" type="button"> Copiar meus erros </button>
+            <button id="newExerciseButton" class="button button-secondary hidden" type="button"> Colar outro exercício </button>
           </div>
         </div>
       </section>
