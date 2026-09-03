@@ -4204,13 +4204,8 @@ function buildExerciseVocabularyIndex() {
       );
 
     /*
-     * Registra SEMPRE o termo completo.
-     *
-     * Exemplos:
-     * bok
-     * i måndags
-     * nästa vecka
-     * lägga sig
+     * Mantém o registro original
+     * exatamente como antes.
      */
     registerExerciseVocabularyForm(
       swedish, {
@@ -4222,11 +4217,54 @@ function buildExerciseVocabularyIndex() {
     );
 
     /*
-     * Se for uma expressão, registra também
-     * cada palavra individualmente como fallback.
+     * Cria somente uma chave alternativa
+     * para busca, ignorando pontuação e
+     * símbolos nas extremidades.
      *
-     * Assim "måndags" sozinho ainda pode informar
-     * que aparece dentro de "i måndags".
+     * Ex.:
+     * "Säg till om jag kan göra något."
+     * ->
+     * "Säg till om jag kan göra något"
+     */
+    const searchableSwedish =
+      swedish
+      .replace(
+        /^[\p{P}\p{S}\s]+|[\p{P}\p{S}\s]+$/gu,
+        ""
+      )
+      .trim();
+
+    /*
+     * Só registra a forma alternativa
+     * quando ela realmente for diferente.
+     *
+     * Prioridade 29:
+     * - termo direto original = 30
+     * - alias sem pontuação = 29
+     * - flexões = 20
+     * - palavra de expressão = 10
+     */
+    if (
+      searchableSwedish &&
+      normalizeExerciseVocabularyForm(
+        searchableSwedish
+      ) !==
+      normalizeExerciseVocabularyForm(
+        swedish
+      )
+    ) {
+      registerExerciseVocabularyForm(
+        searchableSwedish, {
+          source: "direct",
+          priority: 29,
+          card,
+          formType: "base"
+        }
+      );
+    }
+
+    /*
+     * Comportamento antigo das expressões.
      */
     if (!isSingleWord) {
       words.forEach((word) => {
@@ -4245,6 +4283,10 @@ function buildExerciseVocabularyIndex() {
       card
     );
 
+    /*
+     * Mantém exatamente a lógica antiga
+     * dos adjetivos.
+     */
     registerExerciseRegularAdjectiveForms(
       card,
       isSingleWord ? swedish : ""
@@ -5423,48 +5465,154 @@ function finishExercise() {
   });
 }
 
+function getExerciseReviewCorrection(
+  userAnswer,
+  expectedAnswer
+) {
+  const userWords =
+    String(userAnswer || "")
+    .trim()
+    .split(/\s+/)
+    .map((word) => normalizeAnswer(word))
+    .filter(Boolean);
+
+  const expectedWordEntries =
+    String(expectedAnswer || "")
+    .trim()
+    .split(/\s+/)
+    .map((word) => ({
+      original: word,
+      normalized: normalizeAnswer(word)
+    }))
+    .filter((item) => item.normalized);
+
+  const expectedWords =
+    expectedWordEntries.map(
+      (item) => item.normalized
+    );
+
+  if (expectedWords.length === 0) {
+    return "";
+  }
+
+  if (userWords.length === 0) {
+    return String(expectedAnswer || "").trim();
+  }
+
+  const comparison =
+    getExerciseWordComparison(
+      userWords,
+      expectedWords
+    );
+
+  const correctedIndexes = [
+    ...new Set(
+      comparison.operations
+      .filter(
+        (operation) =>
+        (
+          operation.type === "substitute" ||
+          operation.type === "insert"
+        ) &&
+        Number.isInteger(
+          operation.expectedIndex
+        )
+      )
+      .map(
+        (operation) =>
+        operation.expectedIndex
+      )
+    )
+  ].sort((a, b) => a - b);
+
+  if (correctedIndexes.length === 0) {
+    return String(expectedAnswer || "").trim();
+  }
+
+  return correctedIndexes
+    .map(
+      (index) =>
+      expectedWordEntries[index]?.original ||
+      expectedWords[index]
+    )
+    .filter(Boolean)
+    .join(" ");
+}
+
+
+function getExerciseConsultedWordsForCopy() {
+  return [
+    ...new Set(
+      Array.from(
+        exerciseConsultedVocabulary.values()
+      )
+      .flatMap((item) => {
+        const forms =
+          item.forms instanceof Set ?
+          Array.from(item.forms) :
+          [];
+
+        if (forms.length > 0) {
+          return forms;
+        }
+
+        return item.swedish ?
+          [item.swedish] :
+          [];
+      })
+      .map(
+        (word) =>
+        String(word || "").trim()
+      )
+      .filter(Boolean)
+    )
+  ].sort(
+    (a, b) =>
+    a.localeCompare(b, "sv")
+  );
+}
+
+
 function buildExerciseErrorsCopyText(
   errorEntries
 ) {
+  const errors =
+    Array.isArray(errorEntries) ?
+    errorEntries :
+    [];
+
+  const consultedWords =
+    getExerciseConsultedWordsForCopy();
+
   if (
-    !Array.isArray(errorEntries) ||
-    errorEntries.length === 0
+    errors.length === 0 &&
+    consultedWords.length === 0
   ) {
     return "";
   }
 
-  const lines = [];
+  const lines = [
+    "Revisão",
+    ""
+  ];
 
-  lines.push(
-    `ERROS PARA REVISAR — ${currentExercise.title}`
-  );
-
-  lines.push("");
-
-  errorEntries.forEach(
+  errors.forEach(
     ({
       question,
-      questionIndex,
       userAnswer,
       result
     }) => {
-      lines.push(
-        `Questão ${questionIndex + 1}`
-      );
-
       /*
-       * QUESTÃO ESCRITA COM SUBITENS
-       * Ex.: a), b), c), d)
+       * Questões escritas com subitens:
+       * não copia número da questão,
+       * letra, instrução, resposta do usuário
+       * nem explicação do erro.
        */
       if (
         question.type === "ESCRITA" &&
         Array.isArray(question.subitems) &&
         question.subitems.length > 0
       ) {
-        if (question.prompt) {
-          lines.push(question.prompt);
-        }
-
         result.subitemResults
           .filter(
             (subitemResult) =>
@@ -5480,98 +5628,67 @@ function buildExerciseErrorsCopyText(
                   subitemResult.letter
                 );
 
-              lines.push("");
-
               if (subitem?.prompt) {
                 lines.push(
-                  `${subitemResult.letter}) ${subitem.prompt}`
-                );
-              } else {
-                lines.push(
-                  `${subitemResult.letter})`
+                  subitem.prompt
                 );
               }
 
               lines.push(
-                `Minha resposta: ${
-                  subitemResult.userAnswer ||
-                  "Não respondida"
-                }`
+                `-> ${getExerciseReviewCorrection(
+                  subitemResult.userAnswer,
+                  subitemResult.expectedAnswer
+                )}`
               );
 
-              lines.push(
-                `Correto: ${subitemResult.expectedAnswer}`
-              );
-
-              const usefulFeedback =
-                (
-                  subitemResult.feedback || []
-                ).filter(
-                  (message) =>
-                  message !==
-                  "Resposta correta." &&
-                  message !==
-                  "Resposta incorreta." &&
-                  message !==
-                  "Subitem não respondido."
-                );
-
-              usefulFeedback.forEach(
-                (message) => {
-                  lines.push(
-                    `Erro: ${message}`
-                  );
-                }
-              );
+              lines.push("");
             }
           );
-      } else {
-        /*
-         * QUESTÃO NORMAL:
-         * múltipla escolha, V/F
-         * ou escrita simples
-         */
 
-        if (question.prompt) {
-          lines.push(question.prompt);
-        }
+        return;
+      }
 
+      /*
+       * Questões sem subitens.
+       */
+      if (question.prompt) {
         lines.push(
-          `Minha resposta: ${getExerciseDisplayedUserAnswer(
-            question,
-            userAnswer
-          )}`
-        );
-
-        lines.push(
-          `Correto: ${result.expectedAnswer}`
-        );
-
-        const usefulFeedback =
-          (result.feedback || []).filter(
-            (message) =>
-            message !==
-            "Resposta correta." &&
-            message !==
-            "Resposta incorreta." &&
-            message !==
-            "Questão não respondida."
-          );
-
-        usefulFeedback.forEach(
-          (message) => {
-            lines.push(
-              `Erro: ${message}`
-            );
-          }
+          question.prompt
         );
       }
 
-      lines.push("");
-      lines.push("--------------------");
+      const correction =
+        question.type === "ESCRITA" ?
+        getExerciseReviewCorrection(
+          userAnswer,
+          result.expectedAnswer
+        ) :
+        result.expectedAnswer;
+
+      lines.push(
+        `-> ${correction}`
+      );
+
       lines.push("");
     }
   );
+
+  /*
+   * Adiciona somente as palavras que
+   * foram realmente consultadas.
+   * Sem tradução e sem quantidade.
+   */
+  if (consultedWords.length > 0) {
+    lines.push(
+      "Palavras consultadas:"
+    );
+
+    consultedWords.forEach(
+      (word) => {
+        lines.push(word);
+      }
+    );
+  }
 
   return lines
     .join("\n")
@@ -6793,13 +6910,7 @@ function getExerciseStatusLabel(
     );
   }
 
-  if (
-    questionType === "ESCRITA"
-  ) {
-    return "❌ Incorreta — Nota 0,0";
-  }
-
-  return "❌ Incorreta";
+  return "Incorreto";
 }
 
 function createExerciseConsultedVocabularySummary() {
