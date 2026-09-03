@@ -53,6 +53,7 @@
       "definitePlural": null,
       "infinitive": "äta",
       "present": "äter",
+      "imperative": "ät",
       "past": "åt",
       "supine": "ätit"
     },
@@ -2683,6 +2684,7 @@
       "definitePlural": null,
       "infinitive": "arbeta",
       "present": "arbetar",
+      "imperative": "arbeta",
       "past": "arbetade",
       "supine": "arbetat"
     },
@@ -2719,6 +2721,7 @@
       "definitePlural": null,
       "infinitive": "jobba",
       "present": "jobbar",
+      "imperative": "jobba",
       "past": "jobbade",
       "supine": "jobbat"
     },
@@ -2755,6 +2758,7 @@
       "definitePlural": null,
       "infinitive": "studera",
       "present": "studerar",
+      "imperative": "studera",
       "past": "studerade",
       "supine": "studerat"
     },
@@ -2791,6 +2795,7 @@
       "definitePlural": null,
       "infinitive": "plugga",
       "present": "pluggar",
+      "imperative": "plugga",
       "past": "pluggade",
       "supine": "pluggat"
     },
@@ -2827,6 +2832,7 @@
       "definitePlural": null,
       "infinitive": "forska",
       "present": "forskar",
+      "imperative": "forska",
       "past": "forskade",
       "supine": "forskat"
     },
@@ -2863,6 +2869,7 @@
       "definitePlural": null,
       "infinitive": "undervisa",
       "present": "undervisar",
+      "imperative": "undervisa",
       "past": "undervisade",
       "supine": "undervisat"
     },
@@ -2899,6 +2906,7 @@
       "definitePlural": null,
       "infinitive": "tala",
       "present": "talar",
+      "imperative": "tala",
       "past": "talade",
       "supine": "talat"
     },
@@ -2935,6 +2943,7 @@
       "definitePlural": null,
       "infinitive": "prata",
       "present": "pratar",
+      "imperative": "prata",
       "past": "pratade",
       "supine": "pratat"
     },
@@ -3265,6 +3274,7 @@
       "definitePlural": null,
       "infinitive": "göra",
       "present": "gör",
+      "imperative": "gör",
       "past": "gjorde",
       "supine": "gjort"
     },
@@ -3397,6 +3407,7 @@
       "definitePlural": null,
       "infinitive": "komma",
       "present": "kommer",
+      "imperative": "kom",
       "past": "kom",
       "supine": "kommit"
     },
@@ -3433,6 +3444,7 @@
       "definitePlural": null,
       "infinitive": "heta",
       "present": "heter",
+      "imperative": "het",
       "past": "hette",
       "supine": "hetat"
     },
@@ -3469,6 +3481,7 @@
       "definitePlural": null,
       "infinitive": "bo",
       "present": "bor",
+      "imperative": "bo",
       "past": "bodde",
       "supine": "bott"
     },
@@ -3505,6 +3518,7 @@
       "definitePlural": null,
       "infinitive": "förstå",
       "present": "förstår",
+      "imperative": "förstå",
       "past": "förstod",
       "supine": "förstått"
     },
@@ -3541,6 +3555,7 @@
       "definitePlural": null,
       "infinitive": "må",
       "present": "mår",
+      "imperative": "må",
       "past": "mådde",
       "supine": "mått"
     },
@@ -3577,6 +3592,7 @@
       "definitePlural": null,
       "infinitive": "vara",
       "present": "är",
+      "imperative": "var",
       "past": "var",
       "supine": "varit"
     },
@@ -3613,6 +3629,7 @@
       "definitePlural": null,
       "infinitive": "göra",
       "present": "gör",
+      "imperative": "gör",
       "past": "gjorde",
       "supine": "gjort"
     },
@@ -4553,6 +4570,7 @@
       "definitePlural": null,
       "infinitive": "ringa",
       "present": "ringer",
+      "imperative": "ring",
       "past": "ringde",
       "supine": "ringt"
     },
@@ -4591,6 +4609,7 @@
       "definitePlural": null,
       "infinitive": "känna",
       "present": "känner",
+      "imperative": "känn",
       "past": "kände",
       "supine": "känt"
     },
@@ -4629,6 +4648,7 @@
       "definitePlural": null,
       "infinitive": "blekna",
       "present": "bleknar",
+      "imperative": "blekna",
       "past": "bleknade",
       "supine": "bleknat"
     },
@@ -4667,6 +4687,7 @@
       "definitePlural": null,
       "infinitive": "vända",
       "present": "vänder",
+      "imperative": "vänd",
       "past": "vände",
       "supine": "vänt"
     },
@@ -4705,6 +4726,7 @@
       "definitePlural": null,
       "infinitive": "resa",
       "present": "reser",
+      "imperative": "res",
       "past": "reste",
       "supine": "rest"
     },
@@ -4743,6 +4765,7 @@
       "definitePlural": null,
       "infinitive": "rulla",
       "present": "rullar",
+      "imperative": "rulla",
       "past": "rullade",
       "supine": "rullat"
     },
@@ -4781,6 +4804,7 @@
       "definitePlural": null,
       "infinitive": "hälsa",
       "present": "hälsar",
+      "imperative": "hälsa",
       "past": "hälsade",
       "supine": "hälsat"
     },
@@ -4853,6 +4877,7 @@
       "definitePlural": null,
       "infinitive": "jaga",
       "present": "jagar",
+      "imperative": "jaga",
       "past": "jagade",
       "supine": "jagat"
     },
@@ -4891,6 +4916,7 @@
       "definitePlural": null,
       "infinitive": "finnas",
       "present": "finns",
+      "imperative": null,
       "past": "fanns",
       "supine": "funnits"
     },
@@ -4929,6 +4955,7 @@
       "definitePlural": null,
       "infinitive": "dunsta",
       "present": "dunstar",
+      "imperative": "dunsta",
       "past": "dunstade",
       "supine": "dunstat"
     },
@@ -4967,6 +4994,7 @@
       "definitePlural": null,
       "infinitive": "tystna",
       "present": "tystnar",
+      "imperative": "tystna",
       "past": "tystnade",
       "supine": "tystnat"
     },
@@ -5005,6 +5033,7 @@
       "definitePlural": null,
       "infinitive": "köpa",
       "present": "köper",
+      "imperative": "köp",
       "past": "köpte",
       "supine": "köpt"
     },
@@ -5043,6 +5072,7 @@
       "definitePlural": null,
       "infinitive": "beskriva",
       "present": "beskriver",
+      "imperative": "beskriv",
       "past": "beskrev",
       "supine": "beskrivit"
     },
@@ -5115,6 +5145,7 @@
       "definitePlural": null,
       "infinitive": "veta",
       "present": "vet",
+      "imperative": "vet",
       "past": "visste",
       "supine": "vetat"
     },
@@ -5153,6 +5184,7 @@
       "definitePlural": null,
       "infinitive": "tänka",
       "present": "tänker",
+      "imperative": "tänk",
       "past": "tänkte",
       "supine": "tänkt"
     },
@@ -5191,6 +5223,7 @@
       "definitePlural": null,
       "infinitive": "klappa",
       "present": "klappar",
+      "imperative": "klappa",
       "past": "klappade",
       "supine": "klappat"
     },
@@ -5229,6 +5262,7 @@
       "definitePlural": null,
       "infinitive": "vibrera",
       "present": "vibrerar",
+      "imperative": "vibrera",
       "past": "vibrerade",
       "supine": "vibrerat"
     },
@@ -5267,6 +5301,7 @@
       "definitePlural": null,
       "infinitive": "sjunga",
       "present": "sjunger",
+      "imperative": "sjung",
       "past": "sjöng",
       "supine": "sjungit"
     },
@@ -5305,6 +5340,7 @@
       "definitePlural": null,
       "infinitive": "hända",
       "present": "händer",
+      "imperative": "händ",
       "past": "hände",
       "supine": "hänt"
     },
@@ -11381,6 +11417,7 @@
       "definitePlural": null,
       "infinitive": "boka",
       "present": "bokar",
+      "imperative": "boka",
       "past": "bokade",
       "supine": "bokat"
     },
@@ -11677,6 +11714,7 @@
       "definitePlural": null,
       "infinitive": "öppna",
       "present": "öppnar",
+      "imperative": "öppna",
       "past": "öppnade",
       "supine": "öppnat"
     },
@@ -11713,6 +11751,7 @@
       "definitePlural": null,
       "infinitive": "stänga",
       "present": "stänger",
+      "imperative": "stäng",
       "past": "stängde",
       "supine": "stängt"
     },
@@ -12345,6 +12384,7 @@
       "definitePlural": null,
       "infinitive": "vakna",
       "present": "vaknar",
+      "imperative": "vakna",
       "past": "vaknade",
       "supine": "vaknat"
     },
@@ -12637,6 +12677,7 @@
       "definitePlural": null,
       "infinitive": "diska",
       "present": "diskar",
+      "imperative": "diska",
       "past": "diskade",
       "supine": "diskat"
     },
@@ -12737,6 +12778,7 @@
       "definitePlural": null,
       "infinitive": "somna",
       "present": "somnar",
+      "imperative": "somna",
       "past": "somnade",
       "supine": "somnat"
     },
@@ -12839,6 +12881,7 @@
       "definitePlural": null,
       "infinitive": "springa",
       "present": "springer",
+      "imperative": "spring",
       "past": "sprang",
       "supine": "sprungit"
     },
@@ -13003,6 +13046,7 @@
       "definitePlural": null,
       "infinitive": "sluta",
       "present": "slutar",
+      "imperative": "sluta",
       "past": "slutade",
       "supine": "slutat"
     },
@@ -13169,6 +13213,7 @@
       "definitePlural": null,
       "infinitive": "älska",
       "present": "älskar",
+      "imperative": "älska",
       "past": "älskade",
       "supine": "älskat"
     },
@@ -13237,6 +13282,7 @@
       "definitePlural": null,
       "infinitive": "betyda",
       "present": "betyder",
+      "imperative": "betyd",
       "past": "betydde",
       "supine": "betytt"
     },
@@ -13337,6 +13383,7 @@
       "definitePlural": null,
       "infinitive": "träna",
       "present": "tränar",
+      "imperative": "träna",
       "past": "tränade",
       "supine": "tränat"
     },
@@ -13373,6 +13420,7 @@
       "definitePlural": null,
       "infinitive": "simma",
       "present": "simmar",
+      "imperative": "simma",
       "past": "simmade",
       "supine": "simmat"
     },
@@ -13409,6 +13457,7 @@
       "definitePlural": null,
       "infinitive": "promenera",
       "present": "promenerar",
+      "imperative": "promenera",
       "past": "promenerade",
       "supine": "promenerat"
     },
@@ -13445,6 +13494,7 @@
       "definitePlural": null,
       "infinitive": "shoppa",
       "present": "shoppar",
+      "imperative": "shoppa",
       "past": "shoppade",
       "supine": "shoppat"
     },
@@ -13481,6 +13531,7 @@
       "definitePlural": null,
       "infinitive": "handla",
       "present": "handlar",
+      "imperative": "handla",
       "past": "handlade",
       "supine": "handlat"
     },
@@ -13719,6 +13770,7 @@
       "definitePlural": null,
       "infinitive": "spela",
       "present": "spelar",
+      "imperative": "spela",
       "past": "spelade",
       "supine": "spelat"
     },
@@ -14439,6 +14491,7 @@
       "definitePlural": null,
       "infinitive": "måste",
       "present": "måste",
+      "imperative": null,
       "past": "måste",
       "supine": "måst"
     },
@@ -14475,6 +14528,7 @@
       "definitePlural": null,
       "infinitive": "vilja",
       "present": "vill",
+      "imperative": null,
       "past": "ville",
       "supine": "velat"
     },
@@ -14511,6 +14565,7 @@
       "definitePlural": null,
       "infinitive": "kunna",
       "present": "kan",
+      "imperative": null,
       "past": "kunde",
       "supine": "kunnat"
     },
@@ -14547,6 +14602,7 @@
       "definitePlural": null,
       "infinitive": "ska",
       "present": "ska",
+      "imperative": null,
       "past": "skulle",
       "supine": "skolat"
     },
@@ -14583,6 +14639,7 @@
       "definitePlural": null,
       "infinitive": "böra",
       "present": "bör",
+      "imperative": null,
       "past": "borde",
       "supine": "bort"
     },
@@ -14619,6 +14676,7 @@
       "definitePlural": null,
       "infinitive": "få",
       "present": "får",
+      "imperative": "få",
       "past": "fick",
       "supine": "fått"
     },
@@ -14655,6 +14713,7 @@
       "definitePlural": null,
       "infinitive": "behöva",
       "present": "behöver",
+      "imperative": "behöv",
       "past": "behövde",
       "supine": "behövt"
     },
@@ -14691,6 +14750,7 @@
       "definitePlural": null,
       "infinitive": "bruka",
       "present": "brukar",
+      "imperative": "bruka",
       "past": "brukade",
       "supine": "brukat"
     },
@@ -14727,6 +14787,7 @@
       "definitePlural": null,
       "infinitive": "läsa",
       "present": "läser",
+      "imperative": "läs",
       "past": "läste",
       "supine": "läst"
     },
@@ -14763,6 +14824,7 @@
       "definitePlural": null,
       "infinitive": "åka",
       "present": "åker",
+      "imperative": "åk",
       "past": "åkte",
       "supine": "åkt"
     },
@@ -15859,6 +15921,7 @@
       "definitePlural": null,
       "infinitive": "träffa",
       "present": "träffar",
+      "imperative": "träffa",
       "past": "träffade",
       "supine": "träffat"
     },
@@ -16485,6 +16548,7 @@
       "definitePlural": null,
       "infinitive": "städa",
       "present": "städar",
+      "imperative": "städa",
       "past": "städade",
       "supine": "städat"
     },
@@ -16521,6 +16585,7 @@
       "definitePlural": null,
       "infinitive": "hjälpa",
       "present": "hjälper",
+      "imperative": "hjälp",
       "past": "hjälpte",
       "supine": "hjälpt"
     },
@@ -16623,6 +16688,7 @@
       "definitePlural": null,
       "infinitive": "berätta",
       "present": "berättar",
+      "imperative": "berätta",
       "past": "berättade",
       "supine": "berättat"
     },
@@ -16893,6 +16959,7 @@
       "definitePlural": null,
       "infinitive": "packa",
       "present": "packar",
+      "imperative": "packa",
       "past": "packade",
       "supine": "packat"
     },
@@ -18051,6 +18118,7 @@
       "definitePlural": null,
       "infinitive": "tro",
       "present": "tror",
+      "imperative": "tro",
       "past": "trodde",
       "supine": "trott"
     },
@@ -18087,6 +18155,7 @@
       "definitePlural": null,
       "infinitive": "flyga",
       "present": "flyger",
+      "imperative": "flyg",
       "past": "flög",
       "supine": "flugit"
     },
@@ -18123,6 +18192,7 @@
       "definitePlural": null,
       "infinitive": "köra",
       "present": "kör",
+      "imperative": "kör",
       "past": "körde",
       "supine": "kört"
     },
@@ -18159,6 +18229,7 @@
       "definitePlural": null,
       "infinitive": "cykla",
       "present": "cyklar",
+      "imperative": "cykla",
       "past": "cyklade",
       "supine": "cyklat"
     },
@@ -18195,6 +18266,7 @@
       "definitePlural": null,
       "infinitive": "gå",
       "present": "går",
+      "imperative": "gå",
       "past": "gick",
       "supine": "gått"
     },
@@ -18231,6 +18303,7 @@
       "definitePlural": null,
       "infinitive": "hitta",
       "present": "hittar",
+      "imperative": "hitta",
       "past": "hittade",
       "supine": "hittat"
     },
@@ -18267,6 +18340,7 @@
       "definitePlural": null,
       "infinitive": "sova",
       "present": "sover",
+      "imperative": "sov",
       "past": "sov",
       "supine": "sovit"
     },
@@ -18303,6 +18377,7 @@
       "definitePlural": null,
       "infinitive": "ligga",
       "present": "ligger",
+      "imperative": "ligg",
       "past": "låg",
       "supine": "legat"
     },
@@ -18339,6 +18414,7 @@
       "definitePlural": null,
       "infinitive": "sitta",
       "present": "sitter",
+      "imperative": "sitt",
       "past": "satt",
       "supine": "suttit"
     },
@@ -18375,6 +18451,7 @@
       "definitePlural": null,
       "infinitive": "parkera",
       "present": "parkerar",
+      "imperative": "parkera",
       "past": "parkerade",
       "supine": "parkerat"
     },
@@ -22803,6 +22880,7 @@
       "definitePlural": null,
       "infinitive": "se ut",
       "present": "ser ut",
+      "imperative": "se ut",
       "past": "såg ut",
       "supine": "sett ut"
     },
@@ -22869,6 +22947,7 @@
       "definitePlural": null,
       "infinitive": "höra",
       "present": "hör",
+      "imperative": "hör",
       "past": "hörde",
       "supine": "hört"
     },
@@ -22969,6 +23048,7 @@
       "definitePlural": null,
       "infinitive": "säga till",
       "present": "säger till",
+      "imperative": "säg till",
       "past": "sa till",
       "supine": "sagt till"
     },
@@ -23401,6 +23481,7 @@
       "definitePlural": null,
       "infinitive": "lägga sig",
       "present": "lägger sig",
+      "imperative": "lägg dig",
       "past": "lade sig",
       "supine": "lagt sig"
     },
@@ -23435,6 +23516,7 @@
       "definitePlural": null,
       "infinitive": "gilla",
       "present": "gillar",
+      "imperative": "gilla",
       "past": "gillade",
       "supine": "gillat"
     },
@@ -23471,6 +23553,7 @@
       "definitePlural": null,
       "infinitive": "tycka om",
       "present": "tycker om",
+      "imperative": "tyck om",
       "past": "tyckte om",
       "supine": "tyckt om"
     },
@@ -23505,6 +23588,7 @@
       "definitePlural": null,
       "infinitive": "hata",
       "present": "hatar",
+      "imperative": "hata",
       "past": "hatade",
       "supine": "hatat"
     },
@@ -23931,6 +24015,7 @@
       "definitePlural": null,
       "infinitive": "se",
       "present": "ser",
+      "imperative": "se",
       "past": "såg",
       "supine": "sett"
     },
@@ -23967,6 +24052,7 @@
       "definitePlural": null,
       "infinitive": "ha",
       "present": "har",
+      "imperative": "ha",
       "past": "hade",
       "supine": "haft"
     },
@@ -24003,6 +24089,7 @@
       "definitePlural": null,
       "infinitive": "vinna",
       "present": "vinner",
+      "imperative": "vinn",
       "past": "vann",
       "supine": "vunnit"
     },
@@ -24103,6 +24190,7 @@
       "definitePlural": null,
       "infinitive": "planera",
       "present": "planerar",
+      "imperative": "planera",
       "past": "planerade",
       "supine": "planerat"
     },
@@ -24441,6 +24529,7 @@
       "definitePlural": null,
       "infinitive": "snöa",
       "present": "snöar",
+      "imperative": "snöa",
       "past": "snöade",
       "supine": "snöat"
     },
@@ -24605,6 +24694,7 @@
       "definitePlural": null,
       "infinitive": "bli",
       "present": "blir",
+      "imperative": "bli",
       "past": "blev",
       "supine": "blivit"
     },
@@ -24641,6 +24731,7 @@
       "definitePlural": null,
       "infinitive": "längta",
       "present": "längtar",
+      "imperative": "längta",
       "past": "längtade",
       "supine": "längtat"
     },
@@ -24675,6 +24766,7 @@
       "definitePlural": null,
       "infinitive": "regna",
       "present": "regnar",
+      "imperative": "regna",
       "past": "regnade",
       "supine": "regnat"
     },
@@ -24709,6 +24801,7 @@
       "definitePlural": null,
       "infinitive": "blåsa",
       "present": "blåser",
+      "imperative": "blås",
       "past": "blåste",
       "supine": "blåst"
     },
