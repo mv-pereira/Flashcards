@@ -80,6 +80,75 @@ Ao decidir quais palavras, expressões, verbos, substantivos, nomes, números, d
 
 Somente depois de definir o conteúdo do exercício utilize os exemplos desta especificação para conferir se a REGRA, a ESTRUTURA ou o FORMATO foi aplicado corretamente.
 
+# 0.2 REGRAS GLOBAIS PARA QUESTÕES DE RESPOSTA ESCRITA
+
+As regras desta seção aplicam-se obrigatoriamente a TODA questão:
+
+TIPO: ESCRITA
+
+e possuem prioridade sobre exemplos estruturais posteriores desta especificação que eventualmente não mostrem explicitamente estas exigências.
+
+Toda questão TIPO: ESCRITA deve obedecer simultaneamente às seguintes regras:
+
+1. deve apresentar exatamente UM exemplo de resposta antes da tarefa que o estudante deverá responder;
+
+2. a resposta que o estudante deverá digitar deve estar SEMPRE em sueco;
+
+3. o campo RESPOSTA: deve cadastrar não apenas uma resposta correta, mas também as formulações corretas e naturais mais prováveis que um estudante possa produzir legitimamente.
+
+O exemplo apresentado ao estudante deve estar em sueco.
+
+Ele serve apenas para demonstrar o tipo, a estrutura ou o formato esperado da resposta.
+
+O exemplo NÃO pode fornecer a resposta da questão atual.
+
+O exemplo deve utilizar outro conteúdo autorizado pelo words.json e pelos capítulos permitidos.
+
+Não introduza vocabulário externo apenas para construir o exemplo.
+
+Utilize a seguinte forma dentro do corpo da questão:
+
+Exemplo de resposta — <exemplo criado em sueco>
+
+Essa linha NÃO constitui um novo campo estrutural do aplicativo.
+
+Não crie campos como:
+
+EXEMPLO:
+EXEMPLO_RESPOSTA:
+MODELO:
+
+ou qualquer outra marcação estrutural nova.
+
+Em uma questão escrita individual, coloque o exemplo antes do enunciado específico que deverá ser respondido.
+
+Estrutura:
+
+[QUESTAO]
+TIPO: ESCRITA
+Exemplo de resposta — <exemplo em sueco criado para esta questão>
+<enunciado da tarefa>
+
+RESPOSTA: <resposta correta em sueco> | <outra formulação correta provável em sueco>
+
+Em uma questão escrita agrupada, coloque o exemplo depois da instrução geral e antes do subitem a).
+
+Estrutura:
+
+[QUESTAO]
+TIPO: ESCRITA
+<instrução geral>
+
+Exemplo de resposta — <exemplo em sueco criado para demonstrar a transformação>
+
+a) ...
+b) ...
+c) ...
+
+RESPOSTA: a=<resposta em sueco>; b=<resposta em sueco>; c=<resposta em sueco>
+
+Se qualquer exemplo estrutural posterior desta especificação mostrar uma questão TIPO: ESCRITA sem a linha de exemplo, considere esse exemplo estrutural incompleto e aplique obrigatoriamente esta seção.
+
 ---
 
 # 1. VOCABULÁRIO PERMITIDO
@@ -1561,28 +1630,55 @@ Utilize:
 
 [QUESTAO]
 TIPO: ESCRITA
+Exemplo de resposta — <exemplo criado em sueco>
 Enunciado
 
-RESPOSTA: resposta correta
+RESPOSTA: <resposta correta em sueco>
 EXPLICACAO: explicação opcional
 
 O campo de tipo deve ser exatamente:
 
 TIPO: ESCRITA
 
+Toda questão escrita deve possuir um exemplo de resposta em sueco antes da tarefa que o estudante efetivamente deverá responder.
+
+Esse exemplo deve demonstrar o formato ou a estrutura esperada, mas deve utilizar conteúdo diferente daquele cuja resposta será avaliada.
+
+A resposta que o estudante deverá digitar deve estar sempre em sueco.
+
+Portanto, toda forma cadastrada em RESPOSTA: para uma questão TIPO: ESCRITA deve estar em sueco.
+
+Não crie questões TIPO: ESCRITA cuja resposta esperada seja uma tradução, significado ou formulação em português.
+
+Quando for pedagogicamente necessário avaliar reconhecimento de significado em português, prefira TIPO: MULTIPLA ou TIPO: VF.
+
 A questão escrita deve ter uma resposta suficientemente objetiva para ser corrigida automaticamente.
+
+Quando houver mais de uma formulação sueca correta e previsível, todas as formulações relevantes devem ser cadastradas em RESPOSTA: conforme as regras das seções seguintes.
 
 ---
 
 # 12.1 MAIS DE UMA RESPOSTA CORRETA
 
-Quando mais de uma formulação legítima puder ser aceita, coloque todas na mesma linha de RESPOSTA: separadas por:
+Para TODA questão TIPO: ESCRITA, antes de finalizar o gabarito, examine silenciosamente se existem outras formulações em sueco que sejam:
+
+- gramaticalmente corretas;
+- semanticamente equivalentes no contexto da questão;
+- compatíveis com a instrução;
+- compostas apenas por vocabulário autorizado;
+- respostas que um estudante razoavelmente poderia produzir.
+
+Não se limite à primeira formulação correta imaginada.
+
+Cadastre no campo RESPOSTA: as formulações corretas mais prováveis.
+
+Separe as alternativas corretas por:
 
 |
 
-Exemplo de questão escrita individual:
+Exemplo estrutural:
 
-RESPOSTA: <formulação correta 1> | <formulação correta 2>
+RESPOSTA: <formulação sueca correta 1> | <formulação sueca correta 2> | <formulação sueca correta 3>
 
 O caractere | significa:
 
@@ -1590,11 +1686,15 @@ O caractere | significa:
 
 Pode haver duas ou mais respostas alternativas.
 
+Não existe obrigação de produzir um número fixo de alternativas.
+
+Utilize quantas forem necessárias para cobrir as formas corretas e razoavelmente prováveis, sem gerar variações artificiais ou extremamente improváveis.
+
 Em uma questão ESCRITA agrupada, | continua separando respostas alternativas do MESMO subitem, enquanto ; separa subitens diferentes.
 
-Exemplo:
+Exemplo estrutural:
 
-RESPOSTA: a=<formulação correta 1> | <formulação correta 2>; b=<formulação correta 1> | <formulação correta 2>
+RESPOSTA: a=<forma correta 1> | <forma correta 2>; b=<forma correta 1> | <forma correta 2>
 
 Portanto:
 
@@ -1603,6 +1703,49 @@ Portanto:
 ; = separação entre subitens de uma questão agrupada
 
 Nunca utilize | para separar subitens diferentes.
+
+
+# 12.2 QUANDO CADASTRAR RESPOSTAS ALTERNATIVAS
+
+Antes de escrever cada RESPOSTA: de uma questão TIPO: ESCRITA, faça silenciosamente uma pequena enumeração das maneiras mais prováveis de um estudante responder corretamente.
+
+Considere especialmente:
+
+- diferentes ordens de palavras que sejam gramaticalmente corretas e preservem o significado exigido;
+- construções legítimas decorrentes da regra V2 do sueco;
+- posição diferente de elementos no início da oração quando isso produzir outra frase igualmente correta;
+- diferentes formulações completas ou mais curtas quando ambas responderem integralmente ao que foi pedido;
+- formas alternativas naturais permitidas pelo contexto;
+- outras variações sintáticas corretas que não alterem o conteúdo exigido.
+
+Se, por exemplo, uma informação puder ser expressa legitimamente com mais de uma ordem sintática por causa da regra V2, e a questão NÃO estiver especificamente avaliando uma única ordem obrigatória, cadastre as formas mais naturais e prováveis como respostas alternativas.
+
+Não considere uma resposta errada apenas porque utiliza outra ordem de palavras correta.
+
+Entretanto, não cadastre uma alternativa quando ela contrariar justamente a habilidade que a questão pretende avaliar.
+
+Se a questão estiver explicitamente avaliando:
+
+- ordem das palavras;
+- posição do verbo;
+- regra V2;
+- posição de advérbio;
+- posição de negação;
+- uma transformação sintática específica;
+
+aceite somente as formulações que satisfaçam corretamente essa exigência.
+
+Não crie alternativas diferentes apenas por:
+
+- maiúsculas/minúsculas;
+- ponto final;
+- vírgula;
+- espaços;
+- pequenas diferenças de pontuação.
+
+O aplicativo cuidará da normalização básica.
+
+Nunca inclua formulações gramaticalmente incorretas apenas para aumentar a tolerância da correção.
 
 ---
 
@@ -1938,11 +2081,17 @@ Complete <construção criada para o exercício> com <tipo de forma solicitada>.
 
 * alternativas em sueco devem respeitar integralmente as regras de vocabulário permitido;
 
-* respostas esperadas devem estar no idioma exigido pela questão;
+* TODA questão TIPO: ESCRITA deve exigir que o estudante digite a resposta em sueco;
 
-* se for pedida produção em sueco, a resposta deve estar em sueco;
+* toda forma cadastrada em RESPOSTA: de uma questão TIPO: ESCRITA deve estar em sueco;
 
-* se for pedida tradução ou significado em português, a resposta pode estar em português;
+* não utilize TIPO: ESCRITA para pedir tradução, significado ou resposta em português;
+
+* quando o objetivo for avaliar reconhecimento de uma tradução ou significado em português, utilize preferencialmente TIPO: MULTIPLA ou TIPO: VF;
+
+* o enunciado de uma questão TIPO: ESCRITA pode e deve permanecer preferencialmente em português, mas aquilo que o estudante digitar como resposta deve ser sueco;
+
+* o exemplo obrigatório apresentado antes de uma questão TIPO: ESCRITA também deve estar em sueco;
 
 * `EXPLICACAO:` deve ser preferencialmente escrita em português.
 
@@ -2065,12 +2214,37 @@ Confira silenciosamente que:
 
 Confira silenciosamente que:
 
+* toda questão TIPO: ESCRITA possui exatamente um exemplo de resposta antes da tarefa a ser respondida;
+
+* o exemplo está em sueco;
+
+* o exemplo demonstra a estrutura esperada sem revelar a resposta da questão;
+
+* o exemplo utiliza somente vocabulário autorizado;
+
+* toda resposta que o estudante deverá digitar está em sueco;
+
+* todas as formas cadastradas em RESPOSTA: estão em sueco;
+
 * a pergunta possui resposta objetiva;
+
 * a resposta cadastrada está correta;
-* todas as formas alternativas cadastradas são realmente aceitáveis;
+
+* antes de finalizar o gabarito, foram consideradas as formulações corretas mais prováveis que um estudante poderia produzir;
+
+* diferentes ordens de palavras corretas foram cadastradas quando forem semanticamente equivalentes e compatíveis com a tarefa;
+
+* formas alternativas legítimas relacionadas à regra V2 foram consideradas;
+
 * não faltam formulações obviamente equivalentes quando isso poderia causar falso erro;
+
+* todas as formas alternativas cadastradas são realmente aceitáveis;
+
 * não foram cadastradas formas erradas apenas para obter tolerância;
-* a quantidade de possíveis respostas não é imprevisivelmente grande.
+
+* quando a própria questão avalia ordem das palavras, V2, posição verbal, negação, advérbios ou outra estrutura específica, as alternativas cadastradas não anulam o objetivo pedagógico da questão;
+
+* a quantidade de possíveis respostas permanece suficientemente previsível para correção automática.
 
 ---
 
@@ -2279,21 +2453,24 @@ EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
 TIPO: ESCRITA
+Exemplo de resposta — <exemplo criado em sueco com conteúdo diferente>
 <pergunta objetiva criada para a questão>
 
-RESPOSTA: <Primeira resposta correta> | <Segunda resposta correta>
+RESPOSTA: <Primeira resposta correta em sueco> | <Segunda resposta correta provável em sueco>
 EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
 TIPO: ESCRITA
 Complete ou transforme os itens conforme a instrução.
 
+Exemplo de resposta — <exemplo criado em sueco demonstrando a transformação>
+
 a) Primeiro subitem.
 b) Segundo subitem.
 c) Terceiro subitem.
 d) Quarto subitem.
 
-RESPOSTA: a=Resposta correta do primeiro item.; b=Resposta correta do segundo item.; c=Resposta correta do terceiro item.; d=Resposta correta do quarto item.
+RESPOSTA: a=<resposta correta em sueco> | <outra resposta correta provável>; b=<resposta correta em sueco>; c=<resposta correta em sueco> | <outra resposta correta provável>; d=<resposta correta em sueco>
 EXPLICACAO: Explicação pedagógica opcional.
 
 [FIM]
@@ -2306,12 +2483,15 @@ EXPLICACAO: Explicação pedagógica opcional.
 TIPO: ESCRITA
 <instrução geral da transformação gramatical>
 
+Exemplo de resposta — <exemplo criado em sueco demonstrando a transformação>
+
 a) ...
 b) ...
 c) ...
 d) ...
+e) ...
 
-RESPOSTA: a=...; b=...; c=...; d=...
+RESPOSTA: a=... | ...; b=...; c=... | ...; d=... | ...; e=... | ...;
 EXPLICACAO: Explicação pedagógica opcional.
 
 ---
@@ -2320,9 +2500,10 @@ EXPLICACAO: Explicação pedagógica opcional.
 
 [QUESTAO]
 TIPO: ESCRITA
+Exemplo de resposta — <exemplo criado em sueco com conteúdo diferente>
 <pergunta objetiva criada para o exercício>
 
-RESPOSTA: <formulação correta 1> | <formulação correta 2>
+RESPOSTA: <formulação correta provável 1 em sueco> | <formulação correta provável 2 em sueco> | <outra formulação correta provável em sueco>
 EXPLICACAO: <explicação pedagógica opcional>
 
 ---
@@ -2394,7 +2575,9 @@ Lembre-se de que:
 * explore plural, singular, definido, indefinido, formas verbais, pretérito, supino, imperativo e demais construções que o material estudado permitir;
 * produza um texto coerente, e não apenas uma coleção de frases destinadas a encaixar palavras;
 * misture compreensão textual e aplicação gramatical;
-* cadastre mais de uma resposta escrita quando houver múltiplas formulações realmente corretas;
+* toda questão TIPO: ESCRITA deve apresentar antes da tarefa exatamente um exemplo de resposta em sueco, criado com conteúdo diferente e sem revelar a resposta real;
+* toda questão TIPO: ESCRITA deve exigir que o estudante digite sua resposta em sueco; não crie questões ESCRITA cuja resposta esperada seja português;
+* para cada resposta escrita, procure ativamente as formulações corretas e naturais mais prováveis que um estudante poderia produzir e cadastre-as separadas por |, incluindo ordens de palavras alternativas e construções legítimas relacionadas à regra V2 quando forem igualmente corretas e não anularem o objetivo específico da questão;
 * não tente calcular acerto parcial no próprio exercício, pois o aplicativo fará isso;
 * utilize `EXPLICACAO:` somente quando houver valor pedagógico.
 
