@@ -3441,6 +3441,34 @@ function parseExerciseText(rawText) {
       continue;
     }
 
+    if (line === "[FALA]") {
+      const startLine = i + 1;
+      const speechLines = [];
+
+      i++;
+
+      while (
+        i <= lastNonEmptyIndex &&
+        !isExerciseStructuralMarker(
+          lines[i].trim()
+        )
+      ) {
+        speechLines.push(lines[i]);
+        i++;
+      }
+
+      blocks.push({
+        kind: "speech",
+
+        items: parseExerciseSpeechBlock(
+          speechLines,
+          startLine
+        )
+      });
+
+      continue;
+    }
+
     throw new Error(
       `Linha ${i + 1}: conteúdo fora de um bloco reconhecido: "${line}".`
     );
@@ -3473,9 +3501,127 @@ function isExerciseStructuralMarker(line) {
   return (
     line === "[TEXTO]" ||
     line === "[QUESTAO]" ||
+    line === "[FALA]" ||
     line === "[FIM]" ||
     line === "[EXERCICIO]"
   );
+}
+
+function parseExerciseSpeechBlock(
+  lines,
+  startLine
+) {
+  const meaningfulLines = lines
+    .map((line, index) => ({
+      text: line.trim(),
+      lineNumber: startLine + index + 1
+    }))
+    .filter((item) => item.text);
+
+  if (meaningfulLines.length === 0) {
+    throw new Error(
+      `Linha ${startLine}: o bloco [FALA] está vazio.`
+    );
+  }
+
+  const items = [];
+  let context = [];
+  let i = 0;
+
+  while (i < meaningfulLines.length) {
+    const current = meaningfulLines[i];
+    const line = current.text;
+
+    if (line.startsWith("RESPOSTA:")) {
+      throw new Error(
+        `Linha ${current.lineNumber}: RESPOSTA: apareceu sem um VOCÊ: correspondente.`
+      );
+    }
+
+    if (line.startsWith("VOCÊ:")) {
+      const instruction = line
+        .slice("VOCÊ:".length)
+        .trim();
+
+      if (!instruction) {
+        throw new Error(
+          `Linha ${current.lineNumber}: o campo VOCÊ: está vazio.`
+        );
+      }
+
+      const answerLine =
+        meaningfulLines[i + 1];
+
+      if (
+        !answerLine ||
+        !answerLine.text.startsWith("RESPOSTA:")
+      ) {
+        throw new Error(
+          `Linha ${current.lineNumber}: cada VOCÊ: deve ser seguido por RESPOSTA:.`
+        );
+      }
+
+      const rawAnswer = answerLine.text
+        .slice("RESPOSTA:".length)
+        .trim();
+
+      if (!rawAnswer) {
+        throw new Error(
+          `Linha ${answerLine.lineNumber}: o campo RESPOSTA está vazio.`
+        );
+      }
+
+      const answers = rawAnswer
+        .split("|")
+        .map((answer) => answer.trim());
+
+      if (
+        answers.some(
+          (answer) => !answer
+        )
+      ) {
+        throw new Error(
+          `Linha ${answerLine.lineNumber}: há uma resposta vazia ao redor do caractere |.`
+        );
+      }
+
+      items.push({
+        context,
+        instruction,
+        answers
+      });
+
+      context = [];
+      i += 2;
+      continue;
+    }
+
+    const dialogue =
+      parseExerciseDialogueLine(line);
+
+    if (!dialogue) {
+      throw new Error(
+        `Linha ${current.lineNumber}: dentro de [FALA], use "Nome: fala", "VOCÊ: instrução" ou "RESPOSTA: ...".`
+      );
+    }
+
+    context.push(dialogue);
+    i++;
+  }
+
+  if (context.length > 0) {
+    throw new Error(
+      "O bloco [FALA] terminou com uma fala do interlocutor sem um VOCÊ: correspondente."
+    );
+  }
+
+  if (items.length === 0) {
+    throw new Error(
+      "O bloco [FALA] precisa ter pelo menos um VOCÊ: seguido de RESPOSTA:."
+    );
+  }
+
+  return items;
 }
 
 function parseExerciseQuestion(
@@ -4002,6 +4148,16 @@ function renderExercise() {
         return;
       }
 
+      if (block.kind === "speech") {
+        exerciseBlocks.appendChild(
+          createExerciseSpeechBlock(
+            block.items
+          )
+        );
+
+        return;
+      }
+
       exerciseBlocks.appendChild(
         createExerciseQuestionBlock(
           block.question,
@@ -4175,6 +4331,218 @@ function createExerciseDialogueLine(
   );
 
   return row;
+}
+
+function createExerciseSpeechBlock(items) {
+  const article =
+    document.createElement("article");
+
+  article.className =
+    "exercise-speech-block";
+
+  const heading =
+    document.createElement("div");
+
+  heading.className =
+    "exercise-speech-heading";
+
+  const label =
+    document.createElement("p");
+
+  label.className =
+    "exercise-block-label";
+
+  label.textContent =
+    "Prática oral";
+
+  const intro =
+    document.createElement("p");
+
+  intro.className =
+    "exercise-speech-intro";
+
+  intro.textContent =
+    "Fale em sueco e toque no campo azul para conferir respostas possíveis. Esta seção não vale nota.";
+
+  heading.append(
+    label,
+    intro
+  );
+
+  const list =
+    document.createElement("div");
+
+  list.className =
+    "exercise-speech-list";
+
+  items.forEach((item, index) => {
+    list.appendChild(
+      createExerciseSpeechItem(
+        item,
+        index
+      )
+    );
+  });
+
+  article.append(
+    heading,
+    list
+  );
+
+  return article;
+}
+
+function createExerciseSpeechItem(
+  item,
+  itemIndex
+) {
+  const wrapper =
+    document.createElement("div");
+
+  wrapper.className =
+    "exercise-speech-item";
+
+  item.context.forEach(
+    (dialogue) => {
+      wrapper.appendChild(
+        createExerciseDialogueLine(
+          dialogue.speaker,
+          dialogue.text
+        )
+      );
+    }
+  );
+
+  const userRow =
+    document.createElement("div");
+
+  userRow.className =
+    "exercise-speech-user-line";
+
+  const speaker =
+    document.createElement("strong");
+
+  speaker.className =
+    "exercise-dialogue-speaker";
+
+  speaker.textContent = "Você";
+
+  const responseArea =
+    document.createElement("div");
+
+  responseArea.className =
+    "exercise-speech-response-area";
+
+  const button =
+    document.createElement("button");
+
+  button.type = "button";
+
+  button.className =
+    "exercise-speech-prompt";
+
+  button.textContent =
+    item.instruction;
+
+  const answerBox =
+    document.createElement("div");
+
+  answerBox.id =
+    `exercise-speech-answer-${itemIndex}`;
+
+  answerBox.className =
+    "exercise-speech-answer hidden";
+
+  const answerLabel =
+    document.createElement("p");
+
+  answerLabel.className =
+    "exercise-speech-answer-label";
+
+  answerLabel.textContent =
+    item.answers.length === 1 ?
+    "Resposta possível" :
+    "Respostas possíveis";
+
+  const answerList =
+    document.createElement("div");
+
+  answerList.className =
+    "exercise-speech-answer-list";
+
+  item.answers.forEach((answer) => {
+    const paragraph =
+      document.createElement("p");
+
+    paragraph.className =
+      "exercise-speech-answer-option";
+
+    renderExerciseInteractiveText(
+      paragraph,
+      answer
+    );
+
+    answerList.appendChild(paragraph);
+  });
+
+  answerBox.append(
+    answerLabel,
+    answerList
+  );
+
+  button.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  button.setAttribute(
+    "aria-controls",
+    answerBox.id
+  );
+
+  button.setAttribute(
+    "title",
+    "Mostrar ou ocultar respostas possíveis"
+  );
+
+  button.addEventListener(
+    "click",
+    () => {
+      const shouldShow =
+        answerBox.classList.contains(
+          "hidden"
+        );
+
+      answerBox.classList.toggle(
+        "hidden",
+        !shouldShow
+      );
+
+      button.classList.toggle(
+        "revealed",
+        shouldShow
+      );
+
+      button.setAttribute(
+        "aria-expanded",
+        String(shouldShow)
+      );
+    }
+  );
+
+  responseArea.append(
+    button,
+    answerBox
+  );
+
+  userRow.append(
+    speaker,
+    responseArea
+  );
+
+  wrapper.appendChild(userRow);
+
+  return wrapper;
 }
 
 function buildExerciseVocabularyIndex() {

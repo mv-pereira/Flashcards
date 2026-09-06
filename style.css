@@ -1386,7 +1386,8 @@ body.dark-theme .comparison-feedback.wrong {
 }
 
 .exercise-reading-block,
-.exercise-question-card {
+.exercise-question-card,
+.exercise-speech-block {
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 16px;
@@ -1470,6 +1471,136 @@ body.dark-theme .comparison-feedback.wrong {
 .exercise-dialogue-utterance {
   min-width: 0;
   margin: 0;
+}
+
+.exercise-speech-block {
+  background: var(--card);
+
+  display: grid;
+  gap: 16px;
+}
+
+.exercise-speech-heading {
+  display: grid;
+  gap: 6px;
+}
+
+.exercise-speech-intro {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.exercise-speech-list {
+  display: grid;
+  gap: 16px;
+}
+
+.exercise-speech-item {
+  display: grid;
+  gap: 8px;
+
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.exercise-speech-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.exercise-speech-user-line {
+  display: grid;
+
+  grid-template-columns:
+    minmax(76px, 96px)
+    minmax(0, 1fr);
+
+  column-gap: 14px;
+
+  align-items: start;
+}
+
+.exercise-speech-response-area {
+  min-width: 0;
+
+  display: grid;
+  gap: 9px;
+}
+
+.exercise-speech-prompt {
+  width: 100%;
+  min-height: 48px;
+
+  border: 0;
+  border-radius: 14px;
+
+  padding: 11px 13px;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  text-align: left;
+  font-size: 0.98rem;
+  font-weight: 850;
+  line-height: 1.4;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+}
+
+.exercise-speech-prompt:active,
+.exercise-speech-prompt.revealed {
+  background: var(--primary-pressed);
+}
+
+.exercise-speech-prompt:focus-visible {
+  outline: 3px solid rgba(77, 119, 168, 0.24);
+  outline-offset: 3px;
+}
+
+.exercise-speech-answer {
+  display: grid;
+  gap: 7px;
+
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 12px;
+
+  padding: 10px 12px;
+
+  background: var(--soft);
+}
+
+.exercise-speech-answer-label {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.exercise-speech-answer-list {
+  display: grid;
+  gap: 6px;
+}
+
+.exercise-speech-answer-option {
+  margin: 0;
+
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.45;
+
+  overflow-wrap: anywhere;
 }
 
 .exercise-vocab-token {
