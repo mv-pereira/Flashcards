@@ -5325,9 +5325,18 @@ function createExerciseWrittenInput(
 
   input.type = "text";
 
-  input.autocomplete = "off";
-  input.autocorrect = "off";
-  input.spellcheck = false;
+  // Evita interferência do teclado/navegador
+  input.setAttribute("autocomplete", "off");
+  input.setAttribute("autocorrect", "off");
+  input.setAttribute("autocapitalize", "none");
+  input.setAttribute("spellcheck", "false");
+  input.setAttribute("writingsuggestions", "false");
+
+  // Indica que o conteúdo esperado é sueco
+  input.setAttribute("lang", "sv");
+
+  input.setAttribute("inputmode", "text");
+  input.setAttribute("enterkeyhint", "done");
 
   input.dataset.exerciseWrittenInput =
     String(questionIndex);
