@@ -31108,5 +31108,39 @@
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Sv-moln.ogg"
       }
     }
+  },
+  {
+    "id": 940,
+    "order": 940,
+    "active": true,
+    "term": {
+      "swedish": "öl",
+      "portuguese": "cerveja",
+      "portuguesePlural": "cervejas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "öl",
+      "definiteSingular": "ölet",
+      "definitePlural": "ölen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Sv-%C3%B6l.ogg"
+      }
+    }
   }
 ]
