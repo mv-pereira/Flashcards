@@ -58,6 +58,7 @@ Elementos como:
 [EXERCICIO]
 [TEXTO]
 [QUESTAO]
+[FALA]
 [FIM]
 TITULO:
 TIPO:
@@ -1112,6 +1113,157 @@ Também podem ser criados exercícios com horas quando as formas necessárias pa
 
 Não introduza formas de dizer datas ou horas que ainda exijam vocabulário não autorizado.
 
+# 4.4 PRÁTICA ORAL FINAL
+
+Todo exercício gerado deve conter uma seção final de prática oral, salvo quando o pedido atual disser explicitamente para não incluí-la.
+
+A prática oral utiliza a marcação estrutural:
+
+[FALA]
+
+[FALA] NÃO é uma [QUESTAO].
+
+Não utilize:
+
+TIPO: FALA
+
+A prática oral não faz parte da quantidade solicitada em QUANTIDADE DE QUESTÕES.
+
+Se o pedido determinar:
+
+QUANTIDADE DE QUESTÕES: 25
+
+devem continuar existindo exatamente 25 blocos [QUESTAO] avaliativos.
+
+O bloco [FALA] será adicional a essas questões.
+
+A prática oral:
+
+- não vale pontos;
+- não participa da nota;
+- não possui resultado correto/incorreto;
+- não possui acerto parcial;
+- não conta como questão não respondida;
+- não entra na distribuição entre MULTIPLA, VF e ESCRITA;
+- não deve ser incluída na lista de erros do estudante.
+
+O bloco [FALA] deve aparecer somente depois de TODAS as questões avaliativas, incluindo as questões gramaticais, estruturais, de transformação e revisão.
+
+Portanto, sua posição obrigatória é:
+
+1. textos e respectivas questões;
+2. demais questões gramaticais, estruturais, de transformação e revisão;
+3. bloco [FALA];
+4. [FIM].
+
+Deve existir no máximo um bloco [FALA] por exercício.
+
+Dentro de [FALA], construa uma pequena prática comunicativa semelhante a um exercício oral de livro didático.
+
+A estrutura básica é:
+
+[FALA]
+<Nome do interlocutor>: <fala criada em sueco>
+VOCÊ: <instrução em português sobre o que o estudante deve dizer em sueco>
+RESPOSTA: <uma resposta natural possível em sueco> | <outra resposta natural possível em sueco>
+
+<Nome do interlocutor>: <nova fala criada em sueco>
+VOCÊ: <nova instrução em português>
+RESPOSTA: <resposta possível em sueco>
+
+Cada campo VOCÊ: representa uma fala que o estudante deverá produzir oralmente em sueco.
+
+A instrução depois de VOCÊ: deve estar preferencialmente em português.
+
+Ela deve explicar o conteúdo comunicativo que o estudante deverá produzir, sem fornecer previamente a formulação sueca.
+
+Exemplos de habilidades possíveis, quando o vocabulário autorizado permitir:
+
+- responder a uma pergunta;
+- fazer uma pergunta;
+- responder e fazer uma nova pergunta na mesma fala;
+- dar duas ou mais informações relacionadas;
+- reagir ao que o interlocutor acabou de dizer;
+- formular um pedido;
+- dizer preferência;
+- dizer estado ou condição;
+- falar sobre tempo, clima, datas, horários, pessoas, atividades ou outros temas efetivamente autorizados;
+- combinar em uma mesma fala conteúdos provenientes de diferentes capítulos permitidos.
+
+Não transforme a prática oral em simples repetição de palavras isoladas.
+
+Sempre que possível, crie uma situação de conversa com continuidade entre as falas.
+
+Uma fala do interlocutor pode fornecer contexto para a resposta seguinte.
+
+Podem existir zero, uma ou várias linhas de interlocutor antes de um campo VOCÊ:, desde que a sequência permaneça clara.
+
+Toda linha de interlocutor deve utilizar o formato:
+
+Nome: fala
+
+O nome deve começar com letra maiúscula.
+
+Cada linha VOCÊ: deve ser seguida imediatamente, desconsiderando linhas em branco, por seu campo:
+
+RESPOSTA:
+
+O campo RESPOSTA: contém uma ou mais FORMAS POSSÍVEIS que o estudante poderia ter falado.
+
+Essas formas servem exclusivamente para conferência e autocorreção.
+
+Elas NÃO constituem um gabarito exaustivo.
+
+Uma formulação diferente das cadastradas pode também ser correta na língua real.
+
+Quando houver várias formulações naturais e previsíveis, cadastre-as separadas por:
+
+|
+
+Estrutura:
+
+RESPOSTA: <forma possível 1> | <forma possível 2> | <forma possível 3>
+
+Não crie variantes artificiais somente para aumentar a quantidade de respostas.
+
+Cadastre apenas formulações:
+
+- gramaticalmente corretas;
+- naturais;
+- semanticamente compatíveis com a instrução;
+- formadas somente por vocabulário autorizado e suas flexões legítimas;
+- plausíveis como produção de um estudante que conhece o material disponível.
+
+Todas as formulações cadastradas em RESPOSTA: dentro de [FALA] devem estar em sueco.
+
+Todas as palavras suecas presentes nas falas do interlocutor e nas respostas possíveis continuam sujeitas integralmente às regras de vocabulário permitido desta especificação.
+
+Nomes próprios e elementos geográficos continuam sujeitos à exceção já definida.
+
+O bloco [FALA] deve privilegiar fortemente o conteúdo do capítulo mais recente e utilizar os capítulos anteriores conforme o modo de prioridade escolhido.
+
+Quando o material permitir, utilize normalmente de 4 a 6 campos VOCÊ: no bloco [FALA].
+
+Essa quantidade é uma recomendação pedagógica e não altera a QUANTIDADE DE QUESTÕES solicitada.
+
+O aplicativo esconderá inicialmente as formas de RESPOSTA:.
+
+O estudante deverá:
+
+1. ler a situação;
+2. produzir a fala oralmente em sueco;
+3. tocar no campo correspondente;
+4. conferir uma ou todas as respostas possíveis;
+5. continuar para a fala seguinte.
+
+Não inclua EXPLICACAO: dentro de [FALA].
+
+Não inclua alternativas A), B), C) etc.
+
+Não inclua subitens a), b), c) etc.
+
+Não crie campos para o estudante escrever a própria resposta dentro de [FALA].
+
 ---
 
 # 5. CONHECIMENTO NECESSÁRIO PARA RESPONDER
@@ -1158,6 +1310,12 @@ O título deve ser definido somente depois que o conteúdo principal do exercíc
 
 Depois pode haver um ou mais blocos de texto e questões.
 
+Depois de todas as questões avaliativas, incluindo as questões gramaticais, estruturais, de transformação e revisão, deve aparecer o bloco final:
+
+[FALA]
+
+O bloco [FALA] não conta como questão e não participa da nota.
+
 O conteúdo inteiro deve terminar exatamente com:
 
 [FIM]
@@ -1176,6 +1334,9 @@ Texto...
 [QUESTAO]
 ...
 
+[FALA]
+...
+
 [FIM]
 
 ---
@@ -1190,6 +1351,8 @@ As únicas marcações estruturais permitidas são:
 
 [QUESTAO]
 
+[FALA]
+
 [FIM]
 
 Os campos reconhecidos são:
@@ -1201,6 +1364,12 @@ TIPO:
 RESPOSTA:
 
 EXPLICACAO:
+
+Exclusivamente dentro de [FALA], também é reconhecido:
+
+VOCÊ:
+
+VOCÊ: não é um campo de questão e não deve aparecer dentro de [QUESTAO].
 
 Não invente outras marcações.
 
@@ -1238,7 +1407,7 @@ Dentro de [TEXTO]:
 - uma linha em branco separa dois parágrafos;
 - linhas consecutivas no formato Nome: fala representam turnos de um diálogo;
 - uma quebra simples de linha não deve ser usada arbitrariamente para quebrar uma frase ou um parágrafo;
-- os marcadores [TEXTO], [QUESTAO], [FIM] e [EXERCICIO] continuam sendo os únicos marcadores estruturais.
+- os marcadores [TEXTO], [QUESTAO], [FALA], [FIM] e [EXERCICIO] continuam sendo os únicos marcadores estruturais.
 
 Pode haver mais de um bloco `[TEXTO]` no mesmo exercício.
 
@@ -1319,7 +1488,13 @@ Portanto, quando houver vários textos, siga preferencialmente esta ordem:
 4. questões diretamente relacionadas ao Texto 2;
 5. Texto 3;
 6. questões diretamente relacionadas ao Texto 3;
-7. demais questões gramaticais, estruturais ou de revisão.
+7. demais questões gramaticais, estruturais ou de revisão;
+8. prática oral final no bloco [FALA];
+9. [FIM].
+
+O bloco [FALA] deve aparecer somente depois de todas as [QUESTAO].
+
+Não coloque novas [QUESTAO] depois de [FALA].
 
 Adapte a mesma lógica para qualquer quantidade de textos.
 
@@ -1983,7 +2158,7 @@ Evite perguntas como:
 
 Explique livremente o texto.
 
-O que você acha da história?
+O que VOCÊ acha da história?
 
 Escreva um parágrafo sobre o assunto.
 
@@ -2139,6 +2314,12 @@ TIPO: ESCRITA
 
 Não utilize sinônimos.
 
+[FALA] é uma marcação estrutural independente e NÃO é um tipo de questão.
+
+Nunca utilize:
+
+TIPO: FALA
+
 ---
 
 # 19. VALIDAÇÃO DE FORMATAÇÃO
@@ -2167,6 +2348,28 @@ Para os blocos [TEXTO], confira também silenciosamente que:
 - textos predominantemente dialogados utilizam uma fala por linha;
 - cada fala independente utiliza o formato Nome: fala;
 - textos predominantemente narrativos não foram artificialmente convertidos em diálogo apenas porque uma pessoa fala em algum momento.
+
+Para o bloco [FALA], confira também silenciosamente que:
+
+- existe no máximo um bloco [FALA];
+- ele aparece depois de todas as [QUESTAO];
+- ele aparece imediatamente antes de [FIM], desconsiderando linhas em branco;
+- não existe nenhuma [QUESTAO] depois de [FALA];
+- existe pelo menos um campo VOCÊ:;
+- cada VOCÊ: possui instrução não vazia;
+- cada VOCÊ: é seguido por RESPOSTA:;
+- nenhum RESPOSTA: está vazio;
+- | separa somente formulações alternativas da mesma fala;
+- todas as formulações em RESPOSTA: estão em sueco;
+- todas as formulações são naturais e gramaticalmente corretas;
+- nenhuma resposta artificial ou incorreta foi cadastrada apenas para aumentar a tolerância;
+- todas as palavras suecas utilizadas respeitam o vocabulário autorizado;
+- a prática oral não foi incluída na quantidade de questões;
+- a prática oral não foi incluída na distribuição entre MULTIPLA, VF e ESCRITA;
+- a prática oral não recebe pontuação;
+- a prática oral aparece depois das questões gramaticais e estruturais;
+- as instruções de VOCÊ: não revelam antecipadamente a frase sueca esperada;
+- a prática privilegia produção comunicativa e não mera tradução de palavras isoladas.
 
 Para questões gramaticais agrupadas, confira também silenciosamente que:
 
@@ -2350,6 +2553,9 @@ Antes de entregar o exercício, revise silenciosamente TODAS as palavras suecas 
 * alternativas;
 * respostas;
 * explicações que contenham sueco.
+* falas do interlocutor dentro de [FALA];
+* respostas possíveis cadastradas dentro de [FALA];
+* quaisquer trechos suecos eventualmente presentes nas instruções VOCÊ:.
 
 Cada palavra comum sueca deve satisfazer pelo menos uma destas condições:
 
@@ -2473,6 +2679,15 @@ d) Quarto subitem.
 RESPOSTA: a=<resposta correta em sueco> | <outra resposta correta provável>; b=<resposta correta em sueco>; c=<resposta correta em sueco> | <outra resposta correta provável>; d=<resposta correta em sueco>
 EXPLICACAO: Explicação pedagógica opcional.
 
+[FALA]
+<Nome do interlocutor>: <fala criada em sueco usando vocabulário autorizado>
+VOCÊ: <instrução em português para produzir uma fala em sueco>
+RESPOSTA: <resposta natural possível em sueco> | <outra resposta natural possível em sueco>
+
+<Nome do interlocutor>: <nova fala criada em sueco>
+VOCÊ: <nova instrução em português>
+RESPOSTA: <resposta natural possível em sueco>
+
 [FIM]
 
 ---
@@ -2543,7 +2758,7 @@ Use o arquivo `words.json` anexado.
 
 CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
 
-TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 150 palavras cada;
+TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 200 palavras cada;
 
 QUANTIDADE DE QUESTÕES: 25
 
@@ -2564,6 +2779,12 @@ Após cada [TEXTO], coloque imediatamente as questões de compreensão e interpr
 
 Depois do último texto e de suas questões específicas, coloque as demais questões gramaticais, estruturais, de transformação e revisão.
 
+Depois de TODAS as questões avaliativas, incluindo as questões gramaticais, estruturais, de transformação e revisão, inclua o bloco final [FALA].
+
+A prática oral deve aparecer imediatamente antes de [FIM].
+
+A prática oral é adicional à QUANTIDADE DE QUESTÕES solicitada e não deve alterar a distribuição entre Múltipla Escolha, Verdadeiro ou Falso e Escrita.
+
 Lembre-se de que:
 
 * palavras existentes dentro de expressões autorizadas podem ser desmembradas e reutilizadas separadamente;
@@ -2580,6 +2801,17 @@ Lembre-se de que:
 * para cada resposta escrita, procure ativamente as formulações corretas e naturais mais prováveis que um estudante poderia produzir e cadastre-as separadas por |, incluindo ordens de palavras alternativas e construções legítimas relacionadas à regra V2 quando forem igualmente corretas e não anularem o objetivo específico da questão;
 * não tente calcular acerto parcial no próprio exercício, pois o aplicativo fará isso;
 * utilize `EXPLICACAO:` somente quando houver valor pedagógico.
+* o bloco [FALA] não é uma questão, não vale pontos e não participa da nota;
+* nunca utilize TIPO: FALA;
+* dentro de [FALA], utilize VOCÊ: para indicar em português o que o estudante deverá falar em sueco;
+* cada VOCÊ: deve ser seguido por RESPOSTA:;
+* em RESPOSTA:, cadastre uma ou várias formulações naturais possíveis em sueco, separadas por | quando necessário;
+* as respostas do bloco [FALA] servem para conferência, não como gabarito exaustivo;
+* a prática oral deve formar preferencialmente uma pequena conversa coerente;
+* crie tarefas de produção comunicativa, incluindo quando adequado responder, perguntar, responder e perguntar, reagir ou combinar informações;
+* utilize exclusivamente vocabulário autorizado também nas falas e respostas do bloco [FALA];
+* quando o vocabulário permitir, produza normalmente de 8 a 10 campos VOCÊ: na prática oral final;
+* esses campos VOCÊ: não entram na QUANTIDADE DE QUESTÕES.
 
 Aproximadamente metade das questões deve avaliar diretamente gramática, transformação ou uso estrutural, e não apenas interpretação do texto.
 
