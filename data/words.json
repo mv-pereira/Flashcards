@@ -25103,5 +25103,6010 @@
     "media": {
       "audio": {}
     }
+  },
+  {
+    "id": 760,
+    "order": 760,
+    "active": true,
+    "term": {
+      "swedish": "mig",
+      "portuguese": "me / mim"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sv-mig.ogg"
+      }
+    }
+  },
+  {
+    "id": 761,
+    "order": 761,
+    "active": true,
+    "term": {
+      "swedish": "dig",
+      "portuguese": "você / te / ti (objeto)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sv-dig.ogg"
+      }
+    }
+  },
+  {
+    "id": 762,
+    "order": 762,
+    "active": true,
+    "term": {
+      "swedish": "henne",
+      "portuguese": "ela / a ela (objeto)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Sv-henne.ogg"
+      }
+    }
+  },
+  {
+    "id": 763,
+    "order": 763,
+    "active": true,
+    "term": {
+      "swedish": "honom",
+      "portuguese": "ele / a ele (objeto)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 764,
+    "order": 764,
+    "active": true,
+    "term": {
+      "swedish": "en",
+      "portuguese": "a gente / alguém (forma objeto de man)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sv-en.ogg"
+      }
+    }
+  },
+  {
+    "id": 765,
+    "order": 765,
+    "active": true,
+    "term": {
+      "swedish": "oss",
+      "portuguese": "nos / nós (objeto)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sv-oss.ogg"
+      }
+    }
+  },
+  {
+    "id": 766,
+    "order": 766,
+    "active": true,
+    "term": {
+      "swedish": "dem",
+      "portuguese": "eles / elas (objeto)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 767,
+    "order": 767,
+    "active": true,
+    "term": {
+      "swedish": "hotell",
+      "portuguese": "hotel",
+      "portuguesePlural": "hotéis",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "hotell",
+      "definiteSingular": "hotellet",
+      "definitePlural": "hotellen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sv-hotell.ogg"
+      }
+    }
+  },
+  {
+    "id": 768,
+    "order": 768,
+    "active": true,
+    "term": {
+      "swedish": "vandrarhem",
+      "portuguese": "albergue / hostel",
+      "portuguesePlural": "albergues / hostels",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "vandrarhem",
+      "definiteSingular": "vandrarhemmet",
+      "definitePlural": "vandrarhemmen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 769,
+    "order": 769,
+    "active": true,
+    "term": {
+      "swedish": "stuga",
+      "portuguese": "chalé / cabana",
+      "portuguesePlural": "chalés / cabanas",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "stugor",
+      "definiteSingular": "stugan",
+      "definitePlural": "stugorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 770,
+    "order": 770,
+    "active": true,
+    "term": {
+      "swedish": "herrgård",
+      "portuguese": "mansão rural / casa senhorial",
+      "portuguesePlural": "mansões rurais / casas senhoriais",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "herrgårdar",
+      "definiteSingular": "herrgården",
+      "definitePlural": "herrgårdarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 771,
+    "order": 771,
+    "active": true,
+    "term": {
+      "swedish": "pensionat",
+      "portuguese": "pousada / pensão",
+      "portuguesePlural": "pousadas / pensões",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "pensionat",
+      "definiteSingular": "pensionatet",
+      "definitePlural": "pensionaten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 772,
+    "order": 772,
+    "active": true,
+    "term": {
+      "swedish": "camping",
+      "portuguese": "camping / acampamento",
+      "portuguesePlural": "campings / acampamentos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "campingar",
+      "definiteSingular": "campingen",
+      "definitePlural": "campingarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 773,
+    "order": 773,
+    "active": true,
+    "term": {
+      "swedish": "tält",
+      "portuguese": "barraca / tenda",
+      "portuguesePlural": "barracas / tendas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "tält",
+      "definiteSingular": "tältet",
+      "definitePlural": "tälten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 774,
+    "order": 774,
+    "active": true,
+    "term": {
+      "swedish": "norrsken",
+      "portuguese": "aurora boreal",
+      "portuguesePlural": "auroras boreais",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "norrsken",
+      "definiteSingular": "norrskenet",
+      "definitePlural": "norrskenen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/LL-Q9027_%28swe%29-Moonhouse-norrsken.wav"
+      }
+    }
+  },
+  {
+    "id": 775,
+    "order": 775,
+    "active": true,
+    "term": {
+      "swedish": "nationalpark",
+      "portuguese": "parque nacional",
+      "portuguesePlural": "parques nacionais",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "nationalparker",
+      "definiteSingular": "nationalparken",
+      "definitePlural": "nationalparkerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 776,
+    "order": 776,
+    "active": true,
+    "term": {
+      "swedish": "semester",
+      "portuguese": "férias",
+      "portuguesePlural": "férias",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "semestrar",
+      "definiteSingular": "semestern",
+      "definitePlural": "semestrarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sv-semester.ogg"
+      }
+    }
+  },
+  {
+    "id": 777,
+    "order": 777,
+    "active": true,
+    "term": {
+      "swedish": "i närheten av",
+      "portuguese": "perto de / nas proximidades de"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 778,
+    "order": 778,
+    "active": true,
+    "term": {
+      "swedish": "sjö",
+      "portuguese": "lago",
+      "portuguesePlural": "lagos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "sjöar",
+      "definiteSingular": "sjön",
+      "definitePlural": "sjöarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sv-sj%C3%B6.ogg"
+      }
+    }
+  },
+  {
+    "id": 779,
+    "order": 779,
+    "active": true,
+    "term": {
+      "swedish": "inne",
+      "portuguese": "dentro / em ambiente fechado"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sv-inne.ogg"
+      }
+    }
+  },
+  {
+    "id": 780,
+    "order": 780,
+    "active": true,
+    "term": {
+      "swedish": "sommarstuga",
+      "portuguese": "casa de veraneio / chalé de verão",
+      "portuguesePlural": "casas de veraneio / chalés de verão",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "sommarstugor",
+      "definiteSingular": "sommarstugan",
+      "definitePlural": "sommarstugorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 781,
+    "order": 781,
+    "active": true,
+    "term": {
+      "swedish": "på landet",
+      "portuguese": "no campo / na zona rural"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 782,
+    "order": 782,
+    "active": true,
+    "term": {
+      "swedish": "hyra",
+      "portuguese": "alugar",
+      "portugueseInfinitive": "alugar",
+      "portuguesePresent": "aluga",
+      "portuguesePast": "alugou",
+      "portugueseSupine": "alugado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "hyra",
+      "present": "hyr",
+      "past": "hyrde",
+      "supine": "hyrt",
+      "imperative": "hyr"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sv-hyra.ogg"
+      }
+    }
+  },
+  {
+    "id": 783,
+    "order": 783,
+    "active": true,
+    "term": {
+      "swedish": "skärgård",
+      "portuguese": "arquipélago",
+      "portuguesePlural": "arquipélagos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "skärgårdar",
+      "definiteSingular": "skärgården",
+      "definitePlural": "skärgårdarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sv-sk%C3%A4rg%C3%A5rd.ogg"
+      }
+    }
+  },
+  {
+    "id": 784,
+    "order": 784,
+    "active": true,
+    "term": {
+      "swedish": "västkust",
+      "portuguese": "costa oeste",
+      "portuguesePlural": "costas oeste",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "västkuster",
+      "definiteSingular": "västkusten",
+      "definitePlural": "västkusterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/LL-Q9027_%28swe%29-Moonhouse-v%C3%A4stkust.wav"
+      }
+    }
+  },
+  {
+    "id": 785,
+    "order": 785,
+    "active": true,
+    "term": {
+      "swedish": "Har du hört om ...?",
+      "portuguese": "Você já ouviu falar de ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 786,
+    "order": 786,
+    "active": true,
+    "term": {
+      "swedish": "Har du sett ...?",
+      "portuguese": "Você já viu ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 787,
+    "order": 787,
+    "active": true,
+    "term": {
+      "swedish": "slott",
+      "portuguese": "castelo",
+      "portuguesePlural": "castelos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "slott",
+      "definiteSingular": "slottet",
+      "definitePlural": "slotten",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/18/Sv-slott.ogg"
+      }
+    }
+  },
+  {
+    "id": 788,
+    "order": 788,
+    "active": true,
+    "term": {
+      "swedish": "ateljé",
+      "portuguese": "ateliê / estúdio de artista",
+      "portuguesePlural": "ateliês / estúdios de artista",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "ateljéer",
+      "definiteSingular": "ateljén",
+      "definitePlural": "ateljéerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Sv-atelj%C3%A9.ogg"
+      }
+    }
+  },
+  {
+    "id": 789,
+    "order": 789,
+    "active": true,
+    "term": {
+      "swedish": "konst",
+      "portuguese": "arte",
+      "portuguesePlural": "artes",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "konster",
+      "definiteSingular": "konsten",
+      "definitePlural": "konsterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sv-konst.ogg"
+      }
+    }
+  },
+  {
+    "id": 790,
+    "order": 790,
+    "active": true,
+    "term": {
+      "swedish": "park",
+      "portuguese": "parque",
+      "portuguesePlural": "parques",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "parker",
+      "definiteSingular": "parken",
+      "definitePlural": "parkerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sv-park.ogg"
+      }
+    }
+  },
+  {
+    "id": 791,
+    "order": 791,
+    "active": true,
+    "term": {
+      "swedish": "staty",
+      "portuguese": "estátua",
+      "portuguesePlural": "estátuas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "statyer",
+      "definiteSingular": "statyn",
+      "definitePlural": "statyerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Sv-en_staty.ogg"
+      }
+    }
+  },
+  {
+    "id": 792,
+    "order": 792,
+    "active": true,
+    "term": {
+      "swedish": "nöjespark",
+      "portuguese": "parque de diversões",
+      "portuguesePlural": "parques de diversões",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "nöjesparker",
+      "definiteSingular": "nöjesparken",
+      "definitePlural": "nöjesparkerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 793,
+    "order": 793,
+    "active": true,
+    "term": {
+      "swedish": "trädgård",
+      "portuguese": "jardim",
+      "portuguesePlural": "jardins",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "trädgårdar",
+      "definiteSingular": "trädgården",
+      "definitePlural": "trädgårdarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sv-tr%C3%A4dg%C3%A5rd.ogg"
+      }
+    }
+  },
+  {
+    "id": 794,
+    "order": 794,
+    "active": true,
+    "term": {
+      "swedish": "hembygdsgård",
+      "portuguese": "museu histórico local / centro de patrimônio local",
+      "portuguesePlural": "museus históricos locais / centros de patrimônio local",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "hembygdsgårdar",
+      "definiteSingular": "hembygdsgården",
+      "definitePlural": "hembygdsgårdarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 795,
+    "order": 795,
+    "active": true,
+    "term": {
+      "swedish": "fästning",
+      "portuguese": "fortaleza / forte",
+      "portuguesePlural": "fortalezas / fortes",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "fästningar",
+      "definiteSingular": "fästningen",
+      "definitePlural": "fästningarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Sv-en_f%C3%A4stning.ogg"
+      }
+    }
+  },
+  {
+    "id": 796,
+    "order": 796,
+    "active": true,
+    "term": {
+      "swedish": "fornlämning",
+      "portuguese": "monumento antigo / sítio arqueológico",
+      "portuguesePlural": "monumentos antigos / sítios arqueológicos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "fornlämningar",
+      "definiteSingular": "fornlämningen",
+      "definitePlural": "fornlämningarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 797,
+    "order": 797,
+    "active": true,
+    "term": {
+      "swedish": "historia",
+      "portuguese": "história",
+      "portuguesePlural": "histórias",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "historier",
+      "definiteSingular": "historien",
+      "definitePlural": "historierna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sv-historia.ogg"
+      }
+    }
+  },
+  {
+    "id": 798,
+    "order": 798,
+    "active": true,
+    "term": {
+      "swedish": "gruva",
+      "portuguese": "mina",
+      "portuguesePlural": "minas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "gruvor",
+      "definiteSingular": "gruvan",
+      "definitePlural": "gruvorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 799,
+    "order": 799,
+    "active": true,
+    "term": {
+      "swedish": "kanal",
+      "portuguese": "canal",
+      "portuguesePlural": "canais",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kanaler",
+      "definiteSingular": "kanalen",
+      "definitePlural": "kanalerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Sv-kanal.ogg"
+      }
+    }
+  },
+  {
+    "id": 800,
+    "order": 800,
+    "active": true,
+    "term": {
+      "swedish": "skog",
+      "portuguese": "floresta",
+      "portuguesePlural": "florestas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "skogar",
+      "definiteSingular": "skogen",
+      "definitePlural": "skogarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sv-skog.ogg"
+      }
+    }
+  },
+  {
+    "id": 801,
+    "order": 801,
+    "active": true,
+    "term": {
+      "swedish": "besöka",
+      "portuguese": "visitar",
+      "portugueseInfinitive": "visitar",
+      "portuguesePresent": "visita",
+      "portuguesePast": "visitou",
+      "portugueseSupine": "visitado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "besöka",
+      "present": "besöker",
+      "past": "besökte",
+      "supine": "besökt",
+      "imperative": "besök"
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 802,
+    "order": 802,
+    "active": true,
+    "term": {
+      "swedish": "åka båt",
+      "portuguese": "viajar / andar de barco"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 803,
+    "order": 803,
+    "active": true,
+    "term": {
+      "swedish": "fiska",
+      "portuguese": "pescar",
+      "portugueseInfinitive": "pescar",
+      "portuguesePresent": "pesca",
+      "portuguesePast": "pescou",
+      "portugueseSupine": "pescado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "fiska",
+      "present": "fiskar",
+      "past": "fiskade",
+      "supine": "fiskat",
+      "imperative": "fiska"
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sv-fiska.ogg"
+      }
+    }
+  },
+  {
+    "id": 804,
+    "order": 804,
+    "active": true,
+    "term": {
+      "swedish": "bada",
+      "portuguese": "nadar / tomar banho",
+      "portugueseInfinitive": "nadar / tomar banho",
+      "portuguesePresent": "nada / toma banho",
+      "portuguesePast": "nadou / tomou banho",
+      "portugueseSupine": "nadado / tomado banho"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "bada",
+      "present": "badar",
+      "past": "badade",
+      "supine": "badat",
+      "imperative": "bada"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 805,
+    "order": 805,
+    "active": true,
+    "term": {
+      "swedish": "Var har du varit?",
+      "portuguese": "Onde você esteve? / Por onde você esteve?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 806,
+    "order": 806,
+    "active": true,
+    "term": {
+      "swedish": "... som säljer fisk och skaldjur",
+      "portuguese": "... que vende peixe e frutos do mar"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 807,
+    "order": 807,
+    "active": true,
+    "term": {
+      "swedish": "Jag har läst om ...",
+      "portuguese": "Eu li sobre ... / Tenho lido sobre ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 808,
+    "order": 808,
+    "active": true,
+    "term": {
+      "swedish": "Har du ätit sill?",
+      "portuguese": "Você já comeu arenque?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 809,
+    "order": 809,
+    "active": true,
+    "term": {
+      "swedish": "många gånger",
+      "portuguese": "muitas vezes"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 810,
+    "order": 810,
+    "active": true,
+    "term": {
+      "swedish": "den här veckan",
+      "portuguese": "esta semana"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 811,
+    "order": 811,
+    "active": true,
+    "term": {
+      "swedish": "snaps",
+      "portuguese": "dose de bebida destilada forte",
+      "portuguesePlural": "doses de bebida destilada forte",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "snapsar",
+      "definiteSingular": "snapsen",
+      "definitePlural": "snapsarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 812,
+    "order": 812,
+    "active": true,
+    "term": {
+      "swedish": "Har du testat ...?",
+      "portuguese": "Você já experimentou / testou ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 813,
+    "order": 813,
+    "active": true,
+    "term": {
+      "swedish": "Åh Gud",
+      "portuguese": "Ai, meu Deus / Oh, Deus"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 814,
+    "order": 814,
+    "active": true,
+    "term": {
+      "swedish": "Det var hemskt.",
+      "portuguese": "Foi horrível."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 815,
+    "order": 815,
+    "active": true,
+    "term": {
+      "swedish": "Hur länge ...?",
+      "portuguese": "Por quanto tempo ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 816,
+    "order": 816,
+    "active": true,
+    "term": {
+      "swedish": "Vad har du gjort i dag?",
+      "portuguese": "O que você fez hoje?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 817,
+    "order": 817,
+    "active": true,
+    "term": {
+      "swedish": "i dag",
+      "portuguese": "hoje"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 818,
+    "order": 818,
+    "active": true,
+    "term": {
+      "swedish": "sälja",
+      "portuguese": "vender",
+      "portugueseInfinitive": "vender",
+      "portuguesePresent": "vende",
+      "portuguesePast": "vendeu",
+      "portugueseSupine": "vendido"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "sälja",
+      "present": "säljer",
+      "past": "sålde",
+      "supine": "sålt",
+      "imperative": "sälj"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Sv-s%C3%A4lja.ogg"
+      }
+    }
+  },
+  {
+    "id": 819,
+    "order": 819,
+    "active": true,
+    "term": {
+      "swedish": "fisk",
+      "portuguese": "peixe",
+      "portuguesePlural": "peixes",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "fiskar",
+      "definiteSingular": "fisken",
+      "definitePlural": "fiskarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Sv-fisk.ogg"
+      }
+    }
+  },
+  {
+    "id": 820,
+    "order": 820,
+    "active": true,
+    "term": {
+      "swedish": "skaldjur",
+      "portuguese": "fruto do mar / marisco",
+      "portuguesePlural": "frutos do mar / mariscos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "skaldjur",
+      "definiteSingular": "skaldjuret",
+      "definitePlural": "skaldjuren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 821,
+    "order": 821,
+    "active": true,
+    "term": {
+      "swedish": "sill",
+      "portuguese": "arenque",
+      "portuguesePlural": "arenques",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "sillar",
+      "definiteSingular": "sillen",
+      "definitePlural": "sillarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sv-en_sill.ogg"
+      }
+    }
+  },
+  {
+    "id": 822,
+    "order": 822,
+    "active": true,
+    "term": {
+      "swedish": "testa",
+      "portuguese": "testar / experimentar",
+      "portugueseInfinitive": "testar / experimentar",
+      "portuguesePresent": "testa / experimenta",
+      "portuguesePast": "testou / experimentou",
+      "portugueseSupine": "testado / experimentado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "testa",
+      "present": "testar",
+      "past": "testade",
+      "supine": "testat",
+      "imperative": "testa"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Sv-testa.ogg"
+      }
+    }
+  },
+  {
+    "id": 823,
+    "order": 823,
+    "active": true,
+    "term": {
+      "swedish": "hemsk",
+      "portuguese": "horrível / terrível"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Sv-hemsk.ogg"
+      }
+    }
+  },
+  {
+    "id": 824,
+    "order": 824,
+    "active": true,
+    "term": {
+      "swedish": "bokning",
+      "portuguese": "reserva",
+      "portuguesePlural": "reservas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bokningar",
+      "definiteSingular": "bokningen",
+      "definitePlural": "bokningarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 825,
+    "order": 825,
+    "active": true,
+    "term": {
+      "swedish": "helpension",
+      "portuguese": "pensão completa",
+      "portuguesePlural": "pensões completas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "helpensioner",
+      "definiteSingular": "helpensionen",
+      "definitePlural": "helpensionerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 826,
+    "order": 826,
+    "active": true,
+    "term": {
+      "swedish": "halvpension",
+      "portuguese": "meia-pensão",
+      "portuguesePlural": "meias-pensões",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "halvpensioner",
+      "definiteSingular": "halvpensionen",
+      "definitePlural": "halvpensionerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 827,
+    "order": 827,
+    "active": true,
+    "term": {
+      "swedish": "datum",
+      "portuguese": "data",
+      "portuguesePlural": "datas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "datum",
+      "definiteSingular": "datumet",
+      "definitePlural": "datumen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Sv-datum.ogg"
+      }
+    }
+  },
+  {
+    "id": 828,
+    "order": 828,
+    "active": true,
+    "term": {
+      "swedish": "checka in",
+      "portuguese": "fazer check-in",
+      "portugueseInfinitive": "fazer check-in",
+      "portuguesePresent": "faz check-in",
+      "portuguesePast": "fez check-in",
+      "portugueseSupine": "feito check-in"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "checka in",
+      "present": "checkar in",
+      "past": "checkade in",
+      "supine": "checkat in",
+      "imperative": "checka in"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 829,
+    "order": 829,
+    "active": true,
+    "term": {
+      "swedish": "checka ut",
+      "portuguese": "fazer check-out",
+      "portugueseInfinitive": "fazer check-out",
+      "portuguesePresent": "faz check-out",
+      "portuguesePast": "fez check-out",
+      "portugueseSupine": "feito check-out"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "checka ut",
+      "present": "checkar ut",
+      "past": "checkade ut",
+      "supine": "checkat ut",
+      "imperative": "checka ut"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 830,
+    "order": 830,
+    "active": true,
+    "term": {
+      "swedish": "vatten",
+      "portuguese": "água",
+      "portuguesePlural": "águas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "vatten",
+      "definiteSingular": "vattnet",
+      "definitePlural": "vattnen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sv-vatten.ogg"
+      }
+    }
+  },
+  {
+    "id": 831,
+    "order": 831,
+    "active": true,
+    "term": {
+      "swedish": "elektricitet",
+      "portuguese": "eletricidade",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": "elektriciteten",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Sv-en_elektricitet.ogg"
+      }
+    }
+  },
+  {
+    "id": 832,
+    "order": 832,
+    "active": true,
+    "term": {
+      "swedish": "dusch",
+      "portuguese": "chuveiro / banho de chuveiro",
+      "portuguesePlural": "chuveiros / banhos de chuveiro",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "duschar",
+      "definiteSingular": "duschen",
+      "definitePlural": "duscharna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Sv-en_dusch.ogg"
+      }
+    }
+  },
+  {
+    "id": 833,
+    "order": 833,
+    "active": true,
+    "term": {
+      "swedish": "säng",
+      "portuguese": "cama",
+      "portuguesePlural": "camas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "sängar",
+      "definiteSingular": "sängen",
+      "definitePlural": "sängarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sv-s%C3%A4ng.ogg"
+      }
+    }
+  },
+  {
+    "id": 834,
+    "order": 834,
+    "active": true,
+    "term": {
+      "swedish": "element",
+      "portuguese": "radiador",
+      "portuguesePlural": "radiadores",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "element",
+      "definiteSingular": "elementet",
+      "definitePlural": "elementen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sv-element.ogg"
+      }
+    }
+  },
+  {
+    "id": 835,
+    "order": 835,
+    "active": true,
+    "term": {
+      "swedish": "pool",
+      "portuguese": "piscina",
+      "portuguesePlural": "piscinas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "pooler",
+      "definiteSingular": "poolen",
+      "definitePlural": "poolerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 836,
+    "order": 836,
+    "active": true,
+    "term": {
+      "swedish": "gym",
+      "portuguese": "academia",
+      "portuguesePlural": "academias",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "gym",
+      "definiteSingular": "gymmet",
+      "definitePlural": "gymmen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 837,
+    "order": 837,
+    "active": true,
+    "term": {
+      "swedish": "utsikt",
+      "portuguese": "vista",
+      "portuguesePlural": "vistas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "utsikter",
+      "definiteSingular": "utsikten",
+      "definitePlural": "utsikterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sv-utsikt.ogg"
+      }
+    }
+  },
+  {
+    "id": 838,
+    "order": 838,
+    "active": true,
+    "term": {
+      "swedish": "reception",
+      "portuguese": "recepção",
+      "portuguesePlural": "recepções",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "receptioner",
+      "definiteSingular": "receptionen",
+      "definitePlural": "receptionerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 839,
+    "order": 839,
+    "active": true,
+    "term": {
+      "swedish": "fungera",
+      "portuguese": "funcionar",
+      "portugueseInfinitive": "funcionar",
+      "portuguesePresent": "funciona",
+      "portuguesePast": "funcionou",
+      "portugueseSupine": "funcionado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "fungera",
+      "present": "fungerar",
+      "past": "fungerade",
+      "supine": "fungerat",
+      "imperative": "fungera"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 840,
+    "order": 840,
+    "active": true,
+    "term": {
+      "swedish": "smutsig",
+      "portuguese": "sujo / suja"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Sv-smutsig.ogg"
+      }
+    }
+  },
+  {
+    "id": 841,
+    "order": 841,
+    "active": true,
+    "term": {
+      "swedish": "Det fungerar inte.",
+      "portuguese": "Não funciona."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 842,
+    "order": 842,
+    "active": true,
+    "term": {
+      "swedish": "Det är smutsigt.",
+      "portuguese": "Está sujo."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 843,
+    "order": 843,
+    "active": true,
+    "term": {
+      "swedish": "något annat",
+      "portuguese": "outra coisa / algo diferente"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 844,
+    "order": 844,
+    "active": true,
+    "term": {
+      "swedish": "hela dagarna",
+      "portuguese": "o dia todo / todos os dias inteiros"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 845,
+    "order": 845,
+    "active": true,
+    "term": {
+      "swedish": "sola och bada",
+      "portuguese": "tomar sol e nadar"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 846,
+    "order": 846,
+    "active": true,
+    "term": {
+      "swedish": "i stället",
+      "portuguese": "em vez disso / no lugar"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 847,
+    "order": 847,
+    "active": true,
+    "term": {
+      "swedish": "Här finns ...",
+      "portuguese": "Aqui há / Aqui existe(m) ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 848,
+    "order": 848,
+    "active": true,
+    "term": {
+      "swedish": "Får jag se?",
+      "portuguese": "Posso ver?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 849,
+    "order": 849,
+    "active": true,
+    "term": {
+      "swedish": "ett så fint hotell",
+      "portuguese": "um hotel tão bonito / tão agradável"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 850,
+    "order": 850,
+    "active": true,
+    "term": {
+      "swedish": "Finns det några andra ...?",
+      "portuguese": "Há outros / outras ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 851,
+    "order": 851,
+    "active": true,
+    "term": {
+      "swedish": "Det kanske är en massa trafik?",
+      "portuguese": "Talvez haja muito trânsito?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 852,
+    "order": 852,
+    "active": true,
+    "term": {
+      "swedish": "Men den här då?",
+      "portuguese": "E este / esta aqui?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 853,
+    "order": 853,
+    "active": true,
+    "term": {
+      "swedish": "lite tips",
+      "portuguese": "algumas dicas"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 854,
+    "order": 854,
+    "active": true,
+    "term": {
+      "swedish": "sola",
+      "portuguese": "tomar sol",
+      "portugueseInfinitive": "tomar sol",
+      "portuguesePresent": "toma sol",
+      "portuguesePast": "tomou sol",
+      "portugueseSupine": "tomado sol"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "sola",
+      "present": "solar",
+      "past": "solade",
+      "supine": "solat",
+      "imperative": "sola"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 855,
+    "order": 855,
+    "active": true,
+    "term": {
+      "swedish": "annan",
+      "portuguese": "outro / outra"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sv-annan.ogg"
+      }
+    }
+  },
+  {
+    "id": 856,
+    "order": 856,
+    "active": true,
+    "term": {
+      "swedish": "fin",
+      "portuguese": "bonito / agradável / elegante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sv-fin.ogg"
+      }
+    }
+  },
+  {
+    "id": 857,
+    "order": 857,
+    "active": true,
+    "term": {
+      "swedish": "massa",
+      "portuguese": "massa / grande quantidade",
+      "portuguesePlural": "massas / grandes quantidades",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "massor",
+      "definiteSingular": "massan",
+      "definitePlural": "massorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Sv-massa.ogg"
+      }
+    }
+  },
+  {
+    "id": 858,
+    "order": 858,
+    "active": true,
+    "term": {
+      "swedish": "trafik",
+      "portuguese": "trânsito",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": "trafiken",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sv-trafik.ogg"
+      }
+    }
+  },
+  {
+    "id": 859,
+    "order": 859,
+    "active": true,
+    "term": {
+      "swedish": "tips",
+      "portuguese": "dica",
+      "portuguesePlural": "dicas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "tips",
+      "definiteSingular": "tipset",
+      "definitePlural": "tipsen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 860,
+    "order": 860,
+    "active": true,
+    "term": {
+      "swedish": "någon",
+      "portuguese": "alguém / algum / alguma"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sv-n%C3%A5gon.ogg"
+      }
+    }
+  },
+  {
+    "id": 861,
+    "order": 861,
+    "active": true,
+    "term": {
+      "swedish": "inget",
+      "portuguese": "nenhum / nenhuma (com palavra ett) / nada"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sv-inget.ogg"
+      }
+    }
+  },
+  {
+    "id": 862,
+    "order": 862,
+    "active": true,
+    "term": {
+      "swedish": "inga",
+      "portuguese": "nenhum / nenhuma (plural)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Sv-inga.ogg"
+      }
+    }
+  },
+  {
+    "id": 863,
+    "order": 863,
+    "active": true,
+    "term": {
+      "swedish": "någonting",
+      "portuguese": "algo / alguma coisa"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Sv-n%C3%A5gonting.ogg"
+      }
+    }
+  },
+  {
+    "id": 864,
+    "order": 864,
+    "active": true,
+    "term": {
+      "swedish": "ingenting",
+      "portuguese": "nada / coisa nenhuma"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Sv-ingenting.ogg"
+      }
+    }
+  },
+  {
+    "id": 865,
+    "order": 865,
+    "active": true,
+    "term": {
+      "swedish": "smör",
+      "portuguese": "manteiga",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": null,
+      "definiteSingular": "smöret",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sv-sm%C3%B6r.ogg"
+      }
+    }
+  },
+  {
+    "id": 866,
+    "order": 866,
+    "active": true,
+    "term": {
+      "swedish": "kopp",
+      "portuguese": "xícara / chávena",
+      "portuguesePlural": "xícaras / chávenas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "koppar",
+      "definiteSingular": "koppen",
+      "definitePlural": "kopparna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sv-kopp.ogg"
+      }
+    }
+  },
+  {
+    "id": 867,
+    "order": 867,
+    "active": true,
+    "term": {
+      "swedish": "vilken",
+      "portuguese": "qual / que (com palavra en)"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sv-vilken.ogg"
+      }
+    }
+  },
+  {
+    "id": 868,
+    "order": 868,
+    "active": true,
+    "term": {
+      "swedish": "vilket",
+      "portuguese": "qual / que (com palavra ett)"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 869,
+    "order": 869,
+    "active": true,
+    "term": {
+      "swedish": "brev",
+      "portuguese": "carta",
+      "portuguesePlural": "cartas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "brev",
+      "definiteSingular": "brevet",
+      "definitePlural": "breven",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sv-brev.ogg"
+      }
+    }
+  },
+  {
+    "id": 870,
+    "order": 870,
+    "active": true,
+    "term": {
+      "swedish": "hem",
+      "portuguese": "para casa"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Sv-hem.ogg"
+      }
+    }
+  },
+  {
+    "id": 871,
+    "order": 871,
+    "active": true,
+    "term": {
+      "swedish": "Vilken dag kommer du hem?",
+      "portuguese": "Que dia você volta para casa?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 872,
+    "order": 872,
+    "active": true,
+    "term": {
+      "swedish": "Vilket datum är det i dag?",
+      "portuguese": "Que data é hoje?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 873,
+    "order": 873,
+    "active": true,
+    "term": {
+      "swedish": "Vilka dagar jobbar du?",
+      "portuguese": "Em quais dias você trabalha?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 874,
+    "order": 874,
+    "active": true,
+    "term": {
+      "swedish": "Vilken bil är din?",
+      "portuguese": "Qual carro é o seu?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 875,
+    "order": 875,
+    "active": true,
+    "term": {
+      "swedish": "Vilket hus är ditt?",
+      "portuguese": "Qual casa é a sua?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 876,
+    "order": 876,
+    "active": true,
+    "term": {
+      "swedish": "Vilka brev är till dig?",
+      "portuguese": "Quais cartas são para você?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 877,
+    "order": 877,
+    "active": true,
+    "term": {
+      "swedish": "hel",
+      "portuguese": "inteiro / inteira / todo / toda"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sv-hel.ogg"
+      }
+    }
+  },
+  {
+    "id": 878,
+    "order": 878,
+    "active": true,
+    "term": {
+      "swedish": "all",
+      "portuguese": "todo / toda / toda a quantidade"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Sv-all.ogg"
+      }
+    }
+  },
+  {
+    "id": 879,
+    "order": 879,
+    "active": true,
+    "term": {
+      "swedish": "allt",
+      "portuguese": "tudo / todo (forma ett)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sv-allt.ogg"
+      }
+    }
+  },
+  {
+    "id": 880,
+    "order": 880,
+    "active": true,
+    "term": {
+      "swedish": "alla",
+      "portuguese": "todos / todas"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sv-alla.ogg"
+      }
+    }
+  },
+  {
+    "id": 881,
+    "order": 881,
+    "active": true,
+    "term": {
+      "swedish": "mat",
+      "portuguese": "comida",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": "maten",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sv-mat.ogg"
+      }
+    }
+  },
+  {
+    "id": 882,
+    "order": 882,
+    "active": true,
+    "term": {
+      "swedish": "dricka",
+      "portuguese": "beber",
+      "portugueseInfinitive": "beber",
+      "portuguesePresent": "bebe",
+      "portuguesePast": "bebeu",
+      "portugueseSupine": "bebido"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "dricka",
+      "present": "dricker",
+      "past": "drack",
+      "supine": "druckit",
+      "imperative": "drick"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sv-dricka.ogg"
+      }
+    }
+  },
+  {
+    "id": 883,
+    "order": 883,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade en hel dag.",
+      "portuguese": "Eu trabalhei um dia inteiro."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 884,
+    "order": 884,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade ett helt dygn.",
+      "portuguese": "Eu trabalhei um período inteiro de 24 horas."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 885,
+    "order": 885,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade två hela dagar.",
+      "portuguese": "Eu trabalhei dois dias inteiros."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 886,
+    "order": 886,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade hela dagen.",
+      "portuguese": "Eu trabalhei o dia inteiro."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 887,
+    "order": 887,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade hela helgerna förra månaden.",
+      "portuguese": "Eu trabalhei os fins de semana inteiros no mês passado."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 888,
+    "order": 888,
+    "active": true,
+    "term": {
+      "swedish": "Du måste äta all mat.",
+      "portuguese": "Você precisa comer toda a comida."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 889,
+    "order": 889,
+    "active": true,
+    "term": {
+      "swedish": "Du måste dricka allt vatten.",
+      "portuguese": "Você precisa beber toda a água."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 890,
+    "order": 890,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade två hela dagar förra veckan.",
+      "portuguese": "Eu trabalhei dois dias inteiros na semana passada."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 891,
+    "order": 891,
+    "active": true,
+    "term": {
+      "swedish": "Jag jobbade alla dagar förra veckan.",
+      "portuguese": "Eu trabalhei todos os dias na semana passada."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 892,
+    "order": 892,
+    "active": true,
+    "term": {
+      "swedish": "Allt är bra.",
+      "portuguese": "Tudo está bem."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 893,
+    "order": 893,
+    "active": true,
+    "term": {
+      "swedish": "Alla var där.",
+      "portuguese": "Todos estavam lá."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 894,
+    "order": 894,
+    "active": true,
+    "term": {
+      "swedish": "väder",
+      "portuguese": "tempo / clima",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "väder",
+      "definiteSingular": "vädret",
+      "definitePlural": "vädren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Sv-v%C3%A4der.ogg"
+      }
+    }
+  },
+  {
+    "id": 895,
+    "order": 895,
+    "active": true,
+    "term": {
+      "swedish": "årstid",
+      "portuguese": "estação do ano",
+      "portuguesePlural": "estações do ano",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "årstider",
+      "definiteSingular": "årstiden",
+      "definitePlural": "årstiderna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 896,
+    "order": 896,
+    "active": true,
+    "term": {
+      "swedish": "inte",
+      "portuguese": "não"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Sv-inte.ogg"
+      }
+    }
+  },
+  {
+    "id": 897,
+    "order": 897,
+    "active": true,
+    "term": {
+      "swedish": "att",
+      "portuguese": "que / marcador de infinitivo"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Sv-att.ogg"
+      }
+    }
+  },
+  {
+    "id": 898,
+    "order": 898,
+    "active": true,
+    "term": {
+      "swedish": "och",
+      "portuguese": "e"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sv-och.ogg"
+      }
+    }
+  },
+  {
+    "id": 899,
+    "order": 899,
+    "active": true,
+    "term": {
+      "swedish": "men",
+      "portuguese": "mas"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sv-men.ogg"
+      }
+    }
+  },
+  {
+    "id": 900,
+    "order": 900,
+    "active": true,
+    "term": {
+      "swedish": "i",
+      "portuguese": "em / dentro de"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 901,
+    "order": 901,
+    "active": true,
+    "term": {
+      "swedish": "med",
+      "portuguese": "com"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Sv-med.ogg"
+      }
+    }
+  },
+  {
+    "id": 902,
+    "order": 902,
+    "active": true,
+    "term": {
+      "swedish": "för",
+      "portuguese": "para / por"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Sv-f%C3%B6r.ogg"
+      }
+    }
+  },
+  {
+    "id": 903,
+    "order": 903,
+    "active": true,
+    "term": {
+      "swedish": "från",
+      "portuguese": "de / desde"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Sv-fr%C3%A5n.ogg"
+      }
+    }
+  },
+  {
+    "id": 904,
+    "order": 904,
+    "active": true,
+    "term": {
+      "swedish": "om",
+      "portuguese": "sobre / se / em"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sv-om.ogg"
+      }
+    }
+  },
+  {
+    "id": 905,
+    "order": 905,
+    "active": true,
+    "term": {
+      "swedish": "då",
+      "portuguese": "então / naquela época"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sv-d%C3%A5.ogg"
+      }
+    }
+  },
+  {
+    "id": 906,
+    "order": 906,
+    "active": true,
+    "term": {
+      "swedish": "lite",
+      "portuguese": "um pouco / pouco"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Sv-lite.ogg"
+      }
+    }
+  },
+  {
+    "id": 907,
+    "order": 907,
+    "active": true,
+    "term": {
+      "swedish": "mycket",
+      "portuguese": "muito"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Sv-mycket.ogg"
+      }
+    }
+  },
+  {
+    "id": 908,
+    "order": 908,
+    "active": true,
+    "term": {
+      "swedish": "bra",
+      "portuguese": "bom / bem"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sv-bra.ogg"
+      }
+    }
+  },
+  {
+    "id": 909,
+    "order": 909,
+    "active": true,
+    "term": {
+      "swedish": "ta",
+      "portuguese": "pegar / tomar",
+      "portugueseInfinitive": "pegar / tomar",
+      "portuguesePresent": "pega / toma",
+      "portuguesePast": "pegou / tomou",
+      "portugueseSupine": "pegado / tomado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "ta",
+      "present": "tar",
+      "past": "tog",
+      "supine": "tagit",
+      "imperative": "ta"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Sv-ta.ogg"
+      }
+    }
+  },
+  {
+    "id": 910,
+    "order": 910,
+    "active": true,
+    "term": {
+      "swedish": "säga",
+      "portuguese": "dizer",
+      "portugueseInfinitive": "dizer",
+      "portuguesePresent": "diz",
+      "portuguesePast": "disse",
+      "portugueseSupine": "dito"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "säga",
+      "present": "säger",
+      "past": "sa",
+      "supine": "sagt",
+      "imperative": "säg"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Sv-s%C3%A4ga.ogg"
+      }
+    }
+  },
+  {
+    "id": 911,
+    "order": 911,
+    "active": true,
+    "term": {
+      "swedish": "skriva",
+      "portuguese": "escrever",
+      "portugueseInfinitive": "escrever",
+      "portuguesePresent": "escreve",
+      "portuguesePast": "escreveu",
+      "portugueseSupine": "escrito"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "skriva",
+      "present": "skriver",
+      "past": "skrev",
+      "supine": "skrivit",
+      "imperative": "skriv"
+    },
+    "classification": {
+      "themes": [
+        "trabalho e estudo"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sv-skriva.ogg"
+      }
+    }
+  },
+  {
+    "id": 912,
+    "order": 912,
+    "active": true,
+    "term": {
+      "swedish": "fråga",
+      "portuguese": "perguntar",
+      "portugueseInfinitive": "perguntar",
+      "portuguesePresent": "pergunta",
+      "portuguesePast": "perguntou",
+      "portugueseSupine": "perguntado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "fråga",
+      "present": "frågar",
+      "past": "frågade",
+      "supine": "frågat",
+      "imperative": "fråga"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Sv-fr%C3%A5ga.ogg"
+      }
+    }
+  },
+  {
+    "id": 913,
+    "order": 913,
+    "active": true,
+    "term": {
+      "swedish": "börja",
+      "portuguese": "começar",
+      "portugueseInfinitive": "começar",
+      "portuguesePresent": "começa",
+      "portuguesePast": "começou",
+      "portugueseSupine": "começado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "börja",
+      "present": "börjar",
+      "past": "började",
+      "supine": "börjat",
+      "imperative": "börja"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sv-b%C3%B6rja.ogg"
+      }
+    }
+  },
+  {
+    "id": 914,
+    "order": 914,
+    "active": true,
+    "term": {
+      "swedish": "lyssna",
+      "portuguese": "escutar / ouvir",
+      "portugueseInfinitive": "escutar / ouvir",
+      "portuguesePresent": "escuta / ouve",
+      "portuguesePast": "escutou / ouviu",
+      "portugueseSupine": "escutado / ouvido"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "lyssna",
+      "present": "lyssnar",
+      "past": "lyssnade",
+      "supine": "lyssnat",
+      "imperative": "lyssna"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sv-lyssna.ogg"
+      }
+    }
+  },
+  {
+    "id": 915,
+    "order": 915,
+    "active": true,
+    "term": {
+      "swedish": "titta",
+      "portuguese": "olhar / assistir",
+      "portugueseInfinitive": "olhar / assistir",
+      "portuguesePresent": "olha / assiste",
+      "portuguesePast": "olhou / assistiu",
+      "portugueseSupine": "olhado / assistido"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "titta",
+      "present": "tittar",
+      "past": "tittade",
+      "supine": "tittat",
+      "imperative": "titta"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Sv-titta.ogg"
+      }
+    }
+  },
+  {
+    "id": 916,
+    "order": 916,
+    "active": true,
+    "term": {
+      "swedish": "laga",
+      "portuguese": "cozinhar / consertar",
+      "portugueseInfinitive": "cozinhar / consertar",
+      "portuguesePresent": "cozinha / conserta",
+      "portuguesePast": "cozinhou / consertou",
+      "portugueseSupine": "cozinhado / consertado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "laga",
+      "present": "lagar",
+      "past": "lagade",
+      "supine": "lagat",
+      "imperative": "laga"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sv-laga.ogg"
+      }
+    }
+  },
+  {
+    "id": 917,
+    "order": 917,
+    "active": true,
+    "term": {
+      "swedish": "hämta",
+      "portuguese": "buscar",
+      "portugueseInfinitive": "buscar",
+      "portuguesePresent": "busca",
+      "portuguesePast": "buscou",
+      "portugueseSupine": "buscado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "hämta",
+      "present": "hämtar",
+      "past": "hämtade",
+      "supine": "hämtat",
+      "imperative": "hämta"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sv-h%C3%A4mta.ogg"
+      }
+    }
+  },
+  {
+    "id": 918,
+    "order": 918,
+    "active": true,
+    "term": {
+      "swedish": "vänta",
+      "portuguese": "esperar",
+      "portugueseInfinitive": "esperar",
+      "portuguesePresent": "espera",
+      "portuguesePast": "esperou",
+      "portugueseSupine": "esperado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "vänta",
+      "present": "väntar",
+      "past": "väntade",
+      "supine": "väntat",
+      "imperative": "vänta"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sv-v%C3%A4nta.ogg"
+      }
+    }
+  },
+  {
+    "id": 919,
+    "order": 919,
+    "active": true,
+    "term": {
+      "swedish": "glömma",
+      "portuguese": "esquecer",
+      "portugueseInfinitive": "esquecer",
+      "portuguesePresent": "esquece",
+      "portuguesePast": "esqueceu",
+      "portugueseSupine": "esquecido"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "glömma",
+      "present": "glömmer",
+      "past": "glömde",
+      "supine": "glömt",
+      "imperative": "glöm"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Sv-gl%C3%B6mma.ogg"
+      }
+    }
+  },
+  {
+    "id": 920,
+    "order": 920,
+    "active": true,
+    "term": {
+      "swedish": "kosta",
+      "portuguese": "custar",
+      "portugueseInfinitive": "custar",
+      "portuguesePresent": "custa",
+      "portuguesePast": "custou",
+      "portugueseSupine": "custado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "kosta",
+      "present": "kostar",
+      "past": "kostade",
+      "supine": "kostat",
+      "imperative": "kosta"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sv-kosta.ogg"
+      }
+    }
+  },
+  {
+    "id": 921,
+    "order": 921,
+    "active": true,
+    "term": {
+      "swedish": "språk",
+      "portuguese": "idioma",
+      "portuguesePlural": "idiomas",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "språk",
+      "definiteSingular": "språket",
+      "definitePlural": "språken",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sv-spr%C3%A5k.ogg"
+      }
+    }
+  },
+  {
+    "id": 922,
+    "order": 922,
+    "active": true,
+    "term": {
+      "swedish": "kaffe",
+      "portuguese": "café",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": null,
+      "definiteSingular": "kaffet",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Sv-kaffe.ogg"
+      }
+    }
+  },
+  {
+    "id": 923,
+    "order": 923,
+    "active": true,
+    "term": {
+      "swedish": "te",
+      "portuguese": "chá",
+      "portuguesePlural": null,
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": null,
+      "definiteSingular": "teet",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sv-te.ogg"
+      }
+    }
+  },
+  {
+    "id": 924,
+    "order": 924,
+    "active": true,
+    "term": {
+      "swedish": "lunch",
+      "portuguese": "almoço",
+      "portuguesePlural": "almoços",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "luncher",
+      "definiteSingular": "lunchen",
+      "definitePlural": "luncherna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Sv-lunch.ogg"
+      }
+    }
+  },
+  {
+    "id": 925,
+    "order": 925,
+    "active": true,
+    "term": {
+      "swedish": "middag",
+      "portuguese": "jantar",
+      "portuguesePlural": "jantares",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "middagar",
+      "definiteSingular": "middagen",
+      "definitePlural": "middagarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/LL-Q9027_%28swe%29-Moonhouse-middag.wav"
+      }
+    }
+  },
+  {
+    "id": 926,
+    "order": 926,
+    "active": true,
+    "term": {
+      "swedish": "musik",
+      "portuguese": "música",
+      "portuguesePlural": null,
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": "musiken",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "música"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sv-musik.ogg"
+      }
+    }
+  },
+  {
+    "id": 927,
+    "order": 927,
+    "active": true,
+    "term": {
+      "swedish": "rätt",
+      "portuguese": "correto / correta"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sv-r%C3%A4tt.ogg"
+      }
+    }
+  },
+  {
+    "id": 928,
+    "order": 928,
+    "active": true,
+    "term": {
+      "swedish": "fel",
+      "portuguese": "errado / errada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "chapter": 0,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Sv-fel.ogg"
+      }
+    }
+  },
+  {
+    "id": 929,
+    "order": 929,
+    "active": true,
+    "term": {
+      "swedish": "molnig",
+      "portuguese": "nublado / nublada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 930,
+    "order": 930,
+    "active": true,
+    "term": {
+      "swedish": "regnig",
+      "portuguese": "chuvoso / chuvosa"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 931,
+    "order": 931,
+    "active": true,
+    "term": {
+      "swedish": "blåsig",
+      "portuguese": "ventoso / ventosa"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 932,
+    "order": 932,
+    "active": true,
+    "term": {
+      "swedish": "varm",
+      "portuguese": "quente"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Sv-varm.ogg"
+      }
+    }
+  },
+  {
+    "id": 933,
+    "order": 933,
+    "active": true,
+    "term": {
+      "swedish": "solig",
+      "portuguese": "ensolarado / ensolarada"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Sv-solig.ogg"
+      }
+    }
+  },
+  {
+    "id": 934,
+    "order": 934,
+    "active": true,
+    "term": {
+      "swedish": "ljus",
+      "portuguese": "claro / clara; luminoso / luminosa"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Sv-ljus.ogg"
+      }
+    }
+  },
+  {
+    "id": 935,
+    "order": 935,
+    "active": true,
+    "term": {
+      "swedish": "regn",
+      "portuguese": "chuva",
+      "portuguesePlural": "chuvas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "regn",
+      "definiteSingular": "regnet",
+      "definitePlural": "regnen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sv-regn.ogg"
+      }
+    }
+  },
+  {
+    "id": 936,
+    "order": 936,
+    "active": true,
+    "term": {
+      "swedish": "snö",
+      "portuguese": "neve",
+      "portuguesePlural": "neves",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": null,
+      "definiteSingular": "snön",
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sv-sn%C3%B6.ogg"
+      }
+    }
+  },
+  {
+    "id": 937,
+    "order": 937,
+    "active": true,
+    "term": {
+      "swedish": "sol",
+      "portuguese": "sol",
+      "portuguesePlural": "sóis",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "solar",
+      "definiteSingular": "solen",
+      "definitePlural": "solarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Sv-sol.ogg"
+      }
+    }
+  },
+  {
+    "id": 938,
+    "order": 938,
+    "active": true,
+    "term": {
+      "swedish": "vind",
+      "portuguese": "vento",
+      "portuguesePlural": "ventos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "vindar",
+      "definiteSingular": "vinden",
+      "definitePlural": "vindarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sv-vind.ogg"
+      }
+    }
+  },
+  {
+    "id": 939,
+    "order": 939,
+    "active": true,
+    "term": {
+      "swedish": "moln",
+      "portuguese": "nuvem",
+      "portuguesePlural": "nuvens",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "moln",
+      "definiteSingular": "molnet",
+      "definitePlural": "molnen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "chapter": 7,
+      "sourceTitle": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Sv-moln.ogg"
+      }
+    }
   }
 ]
