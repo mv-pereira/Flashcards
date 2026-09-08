@@ -49,7 +49,6 @@ let exerciseConsultedVocabulary = new Map();
 
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
-const HELD_NEW_WORDS_STORAGE_KEY = "flashcardsSuecoHeldNewWords";
 
 const UNDEREXPOSURE_PRIORITY_PER_VIEW = 25;
 const UNDEREXPOSURE_MAX_GAP = 6;
@@ -266,83 +265,9 @@ const correctButton = document.querySelector("#correctButton");
 const wrongButton = document.querySelector("#wrongButton");
 const message = document.querySelector("#message");
 
-function loadHeldNewWords() {
-  try {
-    const saved = localStorage.getItem(
-      HELD_NEW_WORDS_STORAGE_KEY
-    );
-
-    if (!saved) {
-      heldNewWordIds = new Set();
-      return;
-    }
-
-    const parsed = JSON.parse(saved);
-
-    heldNewWordIds = new Set(
-      Array.isArray(parsed)
-        ? parsed.map(String)
-        : []
-    );
-  } catch (error) {
-    console.error(
-      "Erro ao carregar palavras guardadas:",
-      error
-    );
-
-    heldNewWordIds = new Set();
-
-    try {
-      localStorage.removeItem(
-        HELD_NEW_WORDS_STORAGE_KEY
-      );
-    } catch (storageError) {
-      console.error(
-        "Erro ao limpar palavras guardadas:",
-        storageError
-      );
-    }
-  }
-}
-
-function saveHeldNewWords() {
-  try {
-    if (heldNewWordIds.size === 0) {
-      localStorage.removeItem(
-        HELD_NEW_WORDS_STORAGE_KEY
-      );
-      return;
-    }
-
-    localStorage.setItem(
-      HELD_NEW_WORDS_STORAGE_KEY,
-      JSON.stringify([...heldNewWordIds])
-    );
-  } catch (error) {
-    console.error(
-      "Erro ao salvar palavras guardadas:",
-      error
-    );
-  }
-}
-
-function pruneHeldNewWords() {
-  const validIds = new Set(
-    allCards.map((card) => String(card.id))
-  );
-
-  const previousSize = heldNewWordIds.size;
-
-  heldNewWordIds = new Set(
-    [...heldNewWordIds].filter((id) =>
-      validIds.has(id)
-    )
-  );
-
-  if (heldNewWordIds.size !== previousSize) {
-    saveHeldNewWords();
-  }
-
+function resetHeldNewWordsSession() {
+  heldNewWordIds.clear();
+  isManagingNewWordsDeck = false;
   updateHeldNewWordsUI();
 }
 
@@ -378,8 +303,6 @@ async function loadCards() {
     allCards = data
       .filter((card) => card.active)
       .sort((a, b) => a.order - b.order);
-
-    pruneHeldNewWords();
 
     buildExerciseVocabularyIndex();
 
@@ -771,6 +694,7 @@ function getFilteredCards() {
 }
 
 function startSession() {
+  resetHeldNewWordsSession();
   baseSessionCards = getCardsAvailableForDirection(getFilteredCards());
 
   if (baseSessionCards.length === 0) {
@@ -1165,6 +1089,7 @@ function playPronunciationExample(event) {
 
 function backToSetup() {
   stopStudyTimer();
+  resetHeldNewWordsSession();
   showScreen(setupScreen);
 
   flashcard.classList.remove("flipped", "correct-preview", "wrong-preview");
@@ -1173,6 +1098,7 @@ function backToSetup() {
 }
 
 function repeatSession() {
+  resetHeldNewWordsSession();
   if (baseSessionCards.length === 0) {
     backToSetup();
     return;
@@ -1319,7 +1245,6 @@ async function holdCurrentNewWord() {
   const cardId = String(currentCard.id);
 
   heldNewWordIds.add(cardId);
-  saveHeldNewWords();
 
   /*
    * Remove a palavra do pool principal.
@@ -1448,7 +1373,6 @@ function restoreHeldNewWords() {
    * Libera todas as palavras guardadas.
    */
   heldNewWordIds.clear();
-  saveHeldNewWords();
 
   /*
    * Evita duplicação no pool atual.
@@ -2269,6 +2193,7 @@ function getImmediateSrsRepeatCount(cardStats) {
 
 function showSummary() {
   stopStudyTimer();
+  resetHeldNewWordsSession();
   showScreen(summaryScreen);
 
   const total = correctCount + wrongCount;
@@ -8238,8 +8163,6 @@ pronunciationButton.addEventListener(
 );
 
 applySavedTheme();
-
-loadHeldNewWords();
 
 updateNewWordsModeUI();
 updateHeldNewWordsUI();
