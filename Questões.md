@@ -338,124 +338,52 @@ Quando houver conflito entre naturalidade e restrição de vocabulário, siga es
 
 Nunca introduza vocabulário comum externo apenas para tornar o texto mais bonito ou mais natural.
 
-# 1.6 PRIORIDADE DOS CAPÍTULOS MAIS RECENTES
+# 1.6 FOCO DO CAPÍTULO MAIS ALTO E REVISÃO CUMULATIVA LIVRE
 
-Embora todo o intervalo de capítulos informado esteja autorizado, os capítulos NÃO devem receber o mesmo peso.
-
-Dê sempre prioridade ao vocabulário, às estruturas e à gramática dos capítulos mais altos do intervalo solicitado, pois representam o conteúdo estudado mais recentemente.
-
-Exemplo:
-
-Se o pedido for:
-
-CAPÍTULOS: 0 até 6
-
-a prioridade deve ser aproximadamente:
-
-1. capítulo 6 — prioridade máxima;
-2. capítulo 5 — prioridade alta;
-3. capítulo 4 — prioridade secundária;
-4. capítulos 0 a 3 — principalmente revisão e apoio.
-
-O exercício deve funcionar como uma revisão cumulativa, mas com forte concentração no conteúdo mais recente.
-
-Sempre que possível:
-
-- use mais vocabulário do capítulo mais alto;
-- reutilize estruturas introduzidas no capítulo mais alto;
-- faça mais perguntas sobre o capítulo mais alto;
-- utilize o capítulo imediatamente anterior como segunda prioridade;
-- utilize capítulos antigos principalmente para construir contexto e revisar conhecimentos anteriores.
-
-Não distribua o exercício uniformemente entre todos os capítulos.
-
-Como referência, em um exercício de 15 questões:
-
-- aproximadamente 6 a 8 questões devem enfatizar diretamente o capítulo mais alto;
-- aproximadamente 3 a 5 questões devem enfatizar o capítulo imediatamente anterior;
-- as questões restantes podem revisar capítulos anteriores ou combinar conteúdos de vários capítulos.
-
-Essa distribuição não precisa ser matemática quando o conteúdo disponível não permitir, mas a predominância dos capítulos mais recentes deve ser clara.
-
-Se o capítulo mais alto tiver pouco conteúdo suficiente para produzir questões de qualidade, utilize progressivamente o capítulo anterior, sem introduzir conteúdo externo.
-
-# 1.7 MODOS DE PRIORIDADE ENTRE OS CAPÍTULOS
-
-O pedido poderá especificar:
-
-MODO DE PRIORIDADE DOS CAPÍTULOS: HIERARQUICO
-
-ou:
-
-MODO DE PRIORIDADE DOS CAPÍTULOS: FOCO_LIVRE
-
-Se nenhum modo for informado, utilize:
-
-MODO DE PRIORIDADE DOS CAPÍTULOS: HIERARQUICO
-
-## MODO HIERARQUICO
-
-No modo HIERARQUICO, mantenha a lógica de prioridade por recência descrita nesta especificação:
-
-1. o capítulo mais alto do intervalo é o foco principal;
-2. o capítulo imediatamente anterior é o segundo foco;
-3. os capítulos restantes funcionam progressivamente como revisão, integração e apoio.
-
-Todas as regras desta especificação que atribuem prioridade ao capítulo imediatamente anterior continuam válidas nesse modo.
-
-## MODO FOCO_LIVRE
-
-No modo FOCO_LIVRE, somente o capítulo mais alto do intervalo possui prioridade obrigatória por recência.
+Embora todo o intervalo de capítulos informado esteja autorizado, o capítulo mais alto do intervalo solicitado deve receber prioridade especial.
 
 Considere o capítulo mais alto como o FOCO PRINCIPAL do exercício.
 
 Vocabulário, estruturas e conteúdos introduzidos nesse capítulo devem aparecer de maneira claramente predominante ou pedagogicamente destacada ao longo do conjunto.
 
-Entretanto, TODOS OS CAPÍTULOS ANTERIORES pertencentes ao intervalo autorizado devem formar um único CONJUNTO CUMULATIVO DE APOIO.
+Todos os capítulos anteriores pertencentes ao intervalo autorizado devem formar um único CONJUNTO CUMULATIVO DE APOIO.
 
 Dentro desse conjunto de capítulos anteriores:
 
 * não atribua prioridade automática ao capítulo imediatamente anterior;
-* não siga obrigatoriamente a ordem decrescente dos capítulos;
-* não utilize a proximidade numérica com o capítulo mais alto como critério de seleção;
-* não distribua conteúdo uniformemente entre os capítulos;
+* não siga uma ordem decrescente de prioridade entre os capítulos;
+* não utilize a proximidade numérica com o capítulo mais alto como critério obrigatório de seleção;
 * não tente representar cada capítulo;
-* não imponha proporções fixas por capítulo.
+* não imponha proporções fixas por capítulo;
+* não distribua necessariamente o conteúdo de maneira uniforme entre os capítulos anteriores.
 
-Selecione livremente vocabulário e estruturas dos capítulos anteriores de acordo com sua utilidade para:
+Selecione livremente vocabulário e estruturas dos capítulos anteriores conforme sua utilidade para construir frases, textos, situações e questões naturais, variadas, gramaticalmente corretas e pedagogicamente úteis.
 
-* construir frases naturais e gramaticalmente corretas;
-* criar situações com sentido real;
-* combinar de maneiras novas o conteúdo já estudado;
-* permitir diferentes estruturas sintáticas;
-* produzir variedade lexical;
-* produzir variedade temática;
-* produzir variedade gramatical;
-* evitar repetição excessiva das mesmas combinações;
-* criar boas oportunidades de aplicação do conteúdo do capítulo mais recente;
-* diversificar os exercícios entre diferentes gerações.
-
-É permitido utilizar conteúdo de um capítulo muito anterior com maior frequência que o capítulo imediatamente anterior quando isso produzir uma construção mais natural, útil, variada ou pedagogicamente interessante.
-
-Por exemplo, se o intervalo autorizado for:
+Se o intervalo autorizado for:
 
 CAPÍTULOS: 0 até X
 
-o capítulo X continua sendo obrigatoriamente o foco principal.
+o capítulo X deve ser o foco principal.
 
-Entretanto, os capítulos:
+Os capítulos:
 
 0 até X-1
 
-devem ser considerados conjuntamente como um repertório cumulativo disponível.
+devem ser considerados conjuntamente como um repertório cumulativo disponível, sem hierarquia entre eles.
 
-Não interprete esse repertório como uma hierarquia:
+Não interprete esse repertório como:
 
 X-1 > X-2 > X-3 > ...
 
-Em vez disso, escolha livremente entre os capítulos anteriores conforme as necessidades concretas de cada texto, frase, questão ou situação.
+Todos os capítulos anteriores possuem a mesma prioridade entre si.
 
-Uma construção pode combinar, por exemplo:
+Isso não significa que todos precisem aparecer na mesma quantidade.
+
+A seleção deve depender da utilidade concreta de cada conteúdo para o exercício atual.
+
+É permitido utilizar conteúdo de um capítulo muito anterior com maior frequência que conteúdo do capítulo imediatamente anterior quando isso produzir uma construção mais natural, útil, variada ou pedagogicamente interessante.
+
+Uma construção pode combinar:
 
 * conteúdo do capítulo mais alto com elementos de diferentes capítulos anteriores;
 * vários capítulos anteriores entre si;
@@ -464,40 +392,24 @@ Uma construção pode combinar, por exemplo:
 
 Essas combinações não precisam seguir padrões fixos e devem variar entre diferentes exercícios.
 
-Ao criar uma nova frase, texto ou questão, não pergunte silenciosamente apenas:
+Ao criar uma frase, texto ou questão, considere entre todo o material anteriormente estudado e autorizado quais elementos permitem construir a melhor situação, estrutura ou contraste para praticar o conteúdo do capítulo mais alto.
 
-"Qual é o capítulo anterior mais próximo que posso utilizar?"
+O objetivo é produzir REVISÃO CUMULATIVA COMBINATÓRIA.
 
-Considere, em vez disso:
-
-"Entre todo o material anteriormente estudado e autorizado, quais elementos permitem construir a melhor situação, estrutura ou contraste para praticar o conteúdo atual?"
-
-O objetivo do modo FOCO_LIVRE é produzir REVISÃO CUMULATIVA COMBINATÓRIA.
-
-O estudante deve continuar praticando intensamente o conteúdo mais recente, mas esse conteúdo deve poder interagir livremente com todo o repertório já adquirido.
+O estudante deve praticar intensamente o conteúdo do capítulo mais alto, enquanto esse conteúdo interage livremente com todo o repertório dos capítulos anteriores.
 
 Essa liberdade nunca autoriza vocabulário externo ao intervalo permitido.
 
 Todas as demais regras de vocabulário desta especificação continuam integralmente válidas.
 
-## RELAÇÃO ENTRE OS MODOS E AS DEMAIS REGRAS
+Como referência, em um exercício de 15 questões:
 
-Quando estiver ativo o modo HIERARQUICO, todas as referências desta especificação a:
+- aproximadamente 6 a 8 questões devem enfatizar diretamente o capítulo mais alto;
+- as questões restantes podem utilizar livremente qualquer conteúdo dos capítulos anteriores para revisão, integração ou apoio.
 
-* "segunda prioridade";
-* "capítulo imediatamente anterior";
-* "segundo foco";
-* progressão do capítulo mais recente para os anteriores;
+Essa distribuição não precisa ser matemática quando o conteúdo disponível não permitir, mas o foco no capítulo mais alto deve permanecer claro.
 
-devem ser aplicadas normalmente.
-
-Quando estiver ativo o modo FOCO_LIVRE, qualquer regra desta especificação que determine que o capítulo imediatamente anterior seja obrigatoriamente a segunda prioridade deve ser considerada substituída pelas regras desta seção.
-
-No modo FOCO_LIVRE:
-
-* o capítulo mais alto continua sendo o foco principal;
-* os demais capítulos não possuem hierarquia fixa entre si;
-* a seleção entre os capítulos anteriores deve favorecer coerência, diversidade, naturalidade, integração e valor pedagógico.
+Se o capítulo mais alto tiver pouco conteúdo suficiente para produzir questões de qualidade, utilize livremente qualquer um dos capítulos anteriores, sem dar preferência automática ao capítulo imediatamente anterior.
 
 
 ---
@@ -541,20 +453,25 @@ Pode assumir a forma de:
 
 Evite produzir apenas uma coleção de frases desconectadas para encaixar palavras do JSON.
 
-O texto principal também deve privilegiar os capítulos mais recentes.
+O texto principal também deve privilegiar o capítulo mais alto do intervalo autorizado.
 
 Não tente representar cada capítulo de maneira uniforme.
 
-Se os capítulos autorizados forem 0 até X, utilize especialmente vocabulário e estruturas do capítulo X e, em segundo lugar, do capítulo X-1.
+Se os capítulos autorizados forem 0 até X, utilize especialmente vocabulário e estruturas do capítulo X.
 
-Vocabulário de capítulos anteriores deve servir principalmente para:
+Todos os capítulos de 0 até X-1 devem formar um único repertório cumulativo de apoio, sem prioridade entre eles.
+
+Selecione livremente conteúdo desses capítulos anteriores para:
 
 - conectar as frases;
 - construir contexto;
-- revisar conteúdo antigo;
-- permitir o uso natural do conteúdo mais recente.
+- revisar conteúdo já estudado;
+- produzir variedade lexical e gramatical;
+- permitir o uso natural do conteúdo do capítulo mais alto.
 
-O texto deve criar oportunidades naturais para reutilizar o conteúdo introduzido mais recentemente.
+Não dê preferência automática ao capítulo X-1 em relação a X-2, X-3 ou qualquer outro capítulo anterior.
+
+O texto deve criar oportunidades naturais para reutilizar e aplicar o conteúdo introduzido no capítulo mais alto em combinação com todo o repertório anteriormente estudado.
 
 ---
 
@@ -734,17 +651,19 @@ Dê PRIORIDADE MÁXIMA ao capítulo mais alto incluído no pedido.
 
 Considere esse capítulo como o foco principal do exercício, pois representa o conteúdo estudado mais recentemente.
 
-Depois, considere o capítulo imediatamente anterior como segunda prioridade.
+Todos os capítulos anteriores pertencentes ao intervalo autorizado devem funcionar como um único repertório cumulativo de revisão, integração e suporte.
 
-Os capítulos mais antigos devem funcionar principalmente como revisão acumulada e suporte para o conteúdo novo.
+Não atribua segunda prioridade automática ao capítulo imediatamente anterior.
 
 Antes de criar as questões:
 
 1. examine o capítulo mais alto;
 2. identifique o novo vocabulário e os novos grupos gramaticais ou funcionais presentes nele;
 3. crie várias questões diretamente relacionadas a esses conteúdos;
-4. examine o capítulo imediatamente anterior;
-5. utilize os capítulos restantes para revisão e integração.
+4. examine conjuntamente todo o conteúdo autorizado dos capítulos anteriores;
+5. selecione livremente desse repertório anterior os elementos mais úteis para revisão, integração, variedade e apoio ao conteúdo principal.
+
+A proximidade numérica entre um capítulo anterior e o capítulo mais alto não deve determinar sua prioridade.
 
 Se o capítulo mais recente introduzir mais de um conteúdo relevante, tente representar vários deles.
 
@@ -1240,7 +1159,7 @@ Todas as palavras suecas presentes nas falas do interlocutor e nas respostas pos
 
 Nomes próprios e elementos geográficos continuam sujeitos à exceção já definida.
 
-O bloco [FALA] deve privilegiar fortemente o conteúdo do capítulo mais recente e utilizar os capítulos anteriores conforme o modo de prioridade escolhido.
+O bloco [FALA] deve privilegiar fortemente o conteúdo do capítulo mais alto e utilizar livremente todo o repertório dos capítulos anteriores, sem hierarquia de prioridade entre eles.
 
 Quando o material permitir, utilize normalmente de 4 a 6 campos VOCÊ: no bloco [FALA].
 
@@ -1296,7 +1215,7 @@ Em seguida deve aparecer:
 
 TITULO: título do exercício preferencialmente em sueco usando as palavras permitidas
 
-A prioridade dada aos capítulos mais recentes para seleção de vocabulário, estruturas e questões NÃO deve direcionar automaticamente a escolha do título.
+A prioridade dada ao capítulo mais alto para seleção de vocabulário, estruturas e questões NÃO deve direcionar automaticamente a escolha do título.
 
 O título deve ser criado a partir do conteúdo específico dos textos e situações efetivamente produzidos no exercício.
 
@@ -1521,7 +1440,11 @@ Portanto, se forem produzidos vários textos:
 - o Texto 3 deve privilegiar palavras do capítulo mais recente que ainda não tenham aparecido nos Textos 1 e 2;
 - textos posteriores devem continuar seguindo a mesma lógica cumulativa.
 
-Depois de explorar vocabulário ainda não utilizado do capítulo mais recente, aplique a mesma lógica ao capítulo imediatamente anterior e, em seguida, aos capítulos mais antigos quando necessário.
+Depois de explorar vocabulário ainda não utilizado do capítulo mais alto, aplique a mesma lógica ao conjunto cumulativo de todos os capítulos anteriores.
+
+Não siga uma sequência como X-1, depois X-2, depois X-3.
+
+Entre os capítulos anteriores, escolha livremente o vocabulário ainda não utilizado que melhor contribua para variedade, naturalidade, coerência e valor pedagógico.
 
 O objetivo é aumentar progressivamente a variedade lexical e a cobertura do material estudado ao longo dos diferentes textos.
 
@@ -1541,7 +1464,7 @@ A prioridade é:
 2. ampliar progressivamente a cobertura lexical do conjunto;
 3. repetir vocabulário de conteúdo já utilizado somente quando isso contribuir para a naturalidade, coerência, gramática ou objetivo pedagógico.
 
-Ao finalizar todos os blocos [TEXTO], procure ter utilizado a maior variedade possível de palavras e expressões autorizadas, especialmente dos capítulos mais recentes, sem sacrificar a qualidade linguística dos textos.
+Ao finalizar todos os blocos [TEXTO], procure ter utilizado a maior variedade possível de palavras e expressões autorizadas, sem sacrificar a qualidade linguística dos textos.
 
 Essa regra é uma prioridade, não uma proibição absoluta de repetição.
 
@@ -2451,7 +2374,7 @@ Confira silenciosamente que:
 
 ---
 
-# 23. VARIEDADE PEDAGÓGICA E PRIORIDADE POR RECÊNCIA
+# 23. VARIEDADE PEDAGÓGICA E FOCO NO CAPÍTULO MAIS ALTO
 
 O exercício deve obrigatoriamente combinar:
 
@@ -2461,21 +2384,34 @@ O exercício deve obrigatoriamente combinar:
 - transformação;
 - produção controlada.
 
-Porém, a distribuição dos conteúdos deve privilegiar fortemente os capítulos mais recentes.
+O capítulo mais alto do intervalo solicitado deve aparecer como o principal foco pedagógico do exercício.
 
-O capítulo mais alto do intervalo solicitado deve aparecer como o principal foco pedagógico da prova.
+Todos os capítulos anteriores pertencentes ao intervalo autorizado devem formar um único repertório cumulativo de revisão, integração e apoio.
 
-O capítulo imediatamente anterior deve funcionar como segundo foco.
+Não atribua prioridade especial ao capítulo imediatamente anterior.
 
-Capítulos mais antigos devem aparecer principalmente como revisão cumulativa.
+Não utilize uma hierarquia como:
+
+X > X-1 > X-2 > X-3
+
+A única distinção obrigatória de prioridade é:
+
+capítulo X = foco principal;
+
+capítulos 0 até X-1 = repertório cumulativo de apoio, sem hierarquia entre si.
 
 Em um exercício padrão de 15 questões, procure aproximadamente:
 
-- 6 a 8 questões focadas diretamente no capítulo mais recente;
-- 3 a 5 questões focadas no capítulo imediatamente anterior;
-- 2 a 5 questões de revisão ou integração com capítulos anteriores.
+- 6 a 8 questões focadas diretamente no capítulo mais alto;
+- as demais questões podem utilizar livremente qualquer conteúdo dos capítulos anteriores para revisão, integração ou apoio.
 
-Uma questão pode contar como integração quando combina conteúdo recente com vocabulário antigo.
+Não é necessário distribuir as questões restantes igualmente entre os capítulos anteriores.
+
+Também não é necessário representar todos os capítulos.
+
+Uma questão pode combinar conteúdo do capítulo mais alto com qualquer conteúdo anterior autorizado.
+
+Entre os capítulos anteriores, a escolha deve favorecer utilidade pedagógica, variedade, coerência, naturalidade e integração, e não proximidade numérica com o capítulo mais alto.
 
 ---
 
@@ -2761,8 +2697,6 @@ CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, 
 TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 200 palavras cada;
 
 QUANTIDADE DE QUESTÕES: 25
-
-MODO DE PRIORIDADE DOS CAPÍTULOS: HIERARQUICO/FOCO_LIVRE (Se estiver escrito HIERARQUICO/FOCO_LIVRE, adotar HIERARQUICO)
 
 DISTRIBUIÇÃO:
 Divida a quantidade total solicitada da forma mais equilibrada possível entre Múltipla Escolha, Verdadeiro ou Falso e Escrita.
