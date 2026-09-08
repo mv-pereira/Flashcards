@@ -521,10 +521,10 @@ body.dark-theme .button-secondary:active:not(:disabled) {
   min-height: 42px;
   padding: 10px 16px;
 
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
   border-radius: 14px;
 
-  background: linear-gradient(to bottom, var(--card), #f3eddc);
+  background: transparent;
   color: var(--text);
 
   font-size: 0.9rem;
@@ -532,8 +532,7 @@ body.dark-theme .button-secondary:active:not(:disabled) {
   line-height: 1.1;
 
   box-shadow:
-    0 4px 0 rgba(16, 33, 58, 0.16),
-    0 8px 16px rgba(16, 33, 58, 0.10);
+    0 2px 5px rgba(16, 33, 58, 0.06);
 
   transition:
     transform 0.08s ease,
