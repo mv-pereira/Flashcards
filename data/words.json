@@ -25674,7 +25674,7 @@
     "active": true,
     "term": {
       "swedish": "i närheten av",
-      "portuguese": "perto de / nas proximidades de"
+      "portuguese": "perto de"
     },
     "grammar": {
       "type": "expressão",
@@ -29557,8 +29557,8 @@
     "active": true,
     "term": {
       "swedish": "väder",
-      "portuguese": "tempo / clima",
-      "portuguesePlural": null,
+      "portuguese": "clima",
+      "portuguesePlural": "climas",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -30785,7 +30785,7 @@
     "active": true,
     "term": {
       "swedish": "regnig",
-      "portuguese": "chuvoso / chuvosa"
+      "portuguese": "chuvoso"
     },
     "grammar": {
       "type": "adjetivo",
@@ -30817,7 +30817,7 @@
     "active": true,
     "term": {
       "swedish": "blåsig",
-      "portuguese": "ventoso / ventosa"
+      "portuguese": "ventoso"
     },
     "grammar": {
       "type": "adjetivo",
@@ -30881,7 +30881,7 @@
     "active": true,
     "term": {
       "swedish": "solig",
-      "portuguese": "ensolarado / ensolarada"
+      "portuguese": "ensolarado"
     },
     "grammar": {
       "type": "adjetivo",
@@ -30913,7 +30913,7 @@
     "active": true,
     "term": {
       "swedish": "ljus",
-      "portuguese": "claro / clara; luminoso / luminosa"
+      "portuguese": "claro; luminoso"
     },
     "grammar": {
       "type": "adjetivo",
