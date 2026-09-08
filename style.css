@@ -492,68 +492,97 @@ body.dark-theme .button-secondary:active:not(:disabled) {
 .checkbox-option {
   position: relative;
   display: inline-flex;
-  width: auto;
-  min-width: 0;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Esconde visualmente o checkbox,
-   mas ele continua funcionando normalmente */
+/* Esconde de verdade o checkbox nativo */
 .checkbox-option input {
   position: absolute;
-  opacity: 0;
-  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-/* Aparência do chip não selecionado */
+/* Aparência de botão */
 .checkbox-option span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  min-height: 40px;
-  padding: 8px 14px;
+  min-height: 42px;
+  padding: 10px 16px;
 
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 14px;
 
-  background: var(--card);
+  background: linear-gradient(to bottom, var(--card), #f3eddc);
   color: var(--text);
 
   font-size: 0.9rem;
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.1;
+
+  box-shadow:
+    0 4px 0 rgba(16, 33, 58, 0.16),
+    0 8px 16px rgba(16, 33, 58, 0.10);
 
   transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease,
     background 0.16s ease,
     border-color 0.16s ease,
-    color 0.16s ease,
-    transform 0.12s ease;
+    color 0.16s ease;
 }
 
-/* Chip selecionado */
+/* Estado selecionado */
 .checkbox-option input:checked + span {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: linear-gradient(to bottom, #2d6ee8, #1e5bb8);
+  border-color: #184ea0;
   color: #ffffff;
+
+  box-shadow:
+    0 2px 0 rgba(10, 28, 58, 0.28),
+    0 6px 14px rgba(30, 91, 184, 0.28);
 }
 
-/* Adiciona ✓ somente quando selecionado */
-.checkbox-option input:checked + span::before {
-  content: "✓";
-  margin-right: 6px;
-  font-weight: 900;
+/* Botão sendo apertado */
+.checkbox-option span:active,
+.checkbox-option:active span,
+.checkbox-option input:checked + span:active,
+.checkbox-option input:checked + span {
+  transform: translateY(0);
 }
 
-/* Feedback ao tocar */
+/* Efeito de pressionado no toque */
 .checkbox-option:active span {
-  transform: scale(0.97);
+  box-shadow:
+    0 1px 0 rgba(16, 33, 58, 0.14),
+    0 3px 8px rgba(16, 33, 58, 0.10);
 }
 
-/* Acessibilidade para navegação por teclado */
+/* Quando já está selecionado e você aperta */
+.checkbox-option input:checked + span {
+  transform: translateY(2px);
+}
+
+.checkbox-option input:checked + span {
+  box-shadow:
+    0 1px 0 rgba(10, 28, 58, 0.22),
+    0 3px 8px rgba(30, 91, 184, 0.22);
+}
+
+/* Foco por teclado */
 .checkbox-option input:focus-visible + span {
-  outline: 3px solid rgba(77, 119, 168, 0.28);
+  outline: 3px solid rgba(77, 119, 168, 0.30);
   outline-offset: 2px;
 }
 
