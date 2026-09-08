@@ -4,6 +4,7 @@ let allCards = [];
 let cards = [];
 let baseSessionCards = [];
 let sessionAnswers = [];
+let answeredCardIds = new Set();
 let currentIndex = 0;
 let correctCount = 0;
 let wrongCount = 0;
@@ -224,6 +225,7 @@ function showScreen(screen) {
   );
 
   updateHeldNewWordsUI();
+  updateUniqueCardsCounter();
 }
 
 const questionLabel = document.querySelector("#questionLabel");
@@ -264,6 +266,21 @@ const resultButtons = document.querySelector("#resultButtons");
 const correctButton = document.querySelector("#correctButton");
 const wrongButton = document.querySelector("#wrongButton");
 const message = document.querySelector("#message");
+const uniqueCardsCounter = document.querySelector("#uniqueCardsCounter");
+
+function updateUniqueCardsCounter() {
+  const shouldShow =
+    !isNewWordsMode &&
+    !studyScreen.classList.contains("hidden");
+
+  uniqueCardsCounter.classList.toggle(
+    "hidden",
+    !shouldShow
+  );
+
+  uniqueCardsCounter.textContent =
+    `Cards diferentes respondidos: ${answeredCardIds.size}`;
+}
 
 function resetHeldNewWordsSession() {
   heldNewWordIds.clear();
@@ -715,6 +732,7 @@ function startSession() {
   wrongCount = 0;
   cardsSinceUnseen = 0;
   sessionAnswers = [];
+  answeredCardIds.clear();
   answerVisible = false;
   isChangingCard = false;
 
@@ -1115,6 +1133,7 @@ function repeatSession() {
   wrongCount = 0;
   cardsSinceUnseen = 0;
   sessionAnswers = [];
+  answeredCardIds.clear();
   answerVisible = false;
   isChangingCard = false;
 
@@ -1888,6 +1907,10 @@ function wait(ms) {
 
 function registerCurrentAnswer(isCorrect) {
   const currentCard = cards[currentIndex];
+  if (!isNewWordsMode) {
+    answeredCardIds.add(String(currentCard.id));
+    updateUniqueCardsCounter();
+  }
   const wasUnseen = (getCardStats(currentCard.id).seen || 0) === 0;
 
   if (isCorrect) {

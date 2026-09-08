@@ -384,6 +384,14 @@ body.dark-theme .button-secondary:active:not(:disabled) {
   font-weight: 700;
 }
 
+.session-counter {
+  margin: -6px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .hidden {
   display: none !important;
 }
