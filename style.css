@@ -484,37 +484,77 @@ body.dark-theme .button-secondary:active:not(:disabled) {
 .checkbox-options {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 14px;
+  gap: 8px;
   padding: 10px 12px 4px;
   border-top: 1px solid var(--border);
 }
 
 .checkbox-option {
+  position: relative;
   display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
   width: auto;
-  min-width: max-content;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 750;
-  line-height: 1.25;
+  min-width: 0;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
+/* Esconde visualmente o checkbox,
+   mas ele continua funcionando normalmente */
 .checkbox-option input {
-  width: 18px;
-  height: 18px;
-  margin: 0;
-  accent-color: var(--primary);
-  flex: 0 0 auto;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
+/* Aparência do chip não selecionado */
 .checkbox-option span {
-  display: inline;
-  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+  padding: 8px 14px;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  background: var(--card);
+  color: var(--text);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.15;
+
+  transition:
+    background 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease,
+    transform 0.12s ease;
+}
+
+/* Chip selecionado */
+.checkbox-option input:checked + span {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Adiciona ✓ somente quando selecionado */
+.checkbox-option input:checked + span::before {
+  content: "✓";
+  margin-right: 6px;
+  font-weight: 900;
+}
+
+/* Feedback ao tocar */
+.checkbox-option:active span {
+  transform: scale(0.97);
+}
+
+/* Acessibilidade para navegação por teclado */
+.checkbox-option input:focus-visible + span {
+  outline: 3px solid rgba(77, 119, 168, 0.28);
+  outline-offset: 2px;
 }
 
 .filter-hint {
