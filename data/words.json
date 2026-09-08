@@ -23435,7 +23435,7 @@
     "active": true,
     "term": {
       "swedish": "tvungen",
-      "portuguese": "obrigado / forçado (a fazer algo)"
+      "portuguese": "forçado (a fazer algo)"
     },
     "grammar": {
       "type": "adjetivo",
@@ -27805,7 +27805,7 @@
     "active": true,
     "term": {
       "swedish": "smutsig",
-      "portuguese": "sujo / suja"
+      "portuguese": "sujo"
     },
     "grammar": {
       "type": "adjetivo",
@@ -28189,7 +28189,7 @@
     "active": true,
     "term": {
       "swedish": "Men den här då?",
-      "portuguese": "E este / esta aqui?"
+      "portuguese": "E este aqui?"
     },
     "grammar": {
       "type": "expressão",
@@ -28650,8 +28650,8 @@
     "active": true,
     "term": {
       "swedish": "kopp",
-      "portuguese": "xícara / chávena",
-      "portuguesePlural": "xícaras / chávenas",
+      "portuguese": "xícara",
+      "portuguesePlural": "xícaras",
       "portugueseGender": "feminine"
     },
     "grammar": {
