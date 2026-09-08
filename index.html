@@ -72,9 +72,28 @@
           <button id="wrongWordsButton" class="button button-secondary" type="button"> Revisar erros </button>
           <button id="resetStatsButton" class="button button-secondary" type="button"> Zerar progresso </button>
           <p id="setupMessage" class="setup-message"></p>
+          </div>
       </section>
       <section id="studyScreen" class="study-screen hidden" aria-label="Sessão de estudo">
         <button id="backToSetupButton" class="back-button" type="button"> ← Configurações </button>
+<div id="newWordsDeckActions" class="new-words-deck-actions hidden">
+  <button
+    id="holdCurrentWordButton"
+    class="button button-secondary"
+    type="button"
+  >
+    Guardar palavra
+  </button>
+
+  <button
+    id="restoreHeldWordsButton"
+    class="button button-secondary"
+    type="button"
+    disabled
+  >
+    Recolocar (0)
+  </button>
+</div>
         <section id="flashcard" class="card" aria-label="Flashcard atual" role="button" tabindex="0">
           <div class="card-inner">
             <div class="card-face card-front">

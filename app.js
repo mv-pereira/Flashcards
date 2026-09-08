@@ -19,6 +19,9 @@ let newWordsActiveCount = 1;
 let newWordsRoundResults = {};
 let allNewWordsIntroduced = false;
 
+let heldNewWordIds = new Set();
+let isManagingNewWordsDeck = false;
+
 // Controle especial das palavras acertadas na primeira tentativa
 let newWordsCardProgress = {};
 
@@ -46,6 +49,7 @@ let exerciseConsultedVocabulary = new Map();
 
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
+const HELD_NEW_WORDS_STORAGE_KEY = "flashcardsSuecoHeldNewWords";
 
 const UNDEREXPOSURE_PRIORITY_PER_VIEW = 25;
 const UNDEREXPOSURE_MAX_GAP = 6;
@@ -96,6 +100,15 @@ const PRONUNCIATION_RULES = [{
 ];
 
 const newWordsToggleButton = document.querySelector("#newWordsToggleButton");
+
+const newWordsDeckActions =
+  document.querySelector("#newWordsDeckActions");
+
+const holdCurrentWordButton =
+  document.querySelector("#holdCurrentWordButton");
+
+const restoreHeldWordsButton =
+  document.querySelector("#restoreHeldWordsButton");
 
 const summaryScreen = document.querySelector("#summaryScreen");
 
@@ -201,6 +214,17 @@ function showScreen(screen) {
     "hidden",
     screen !== setupScreen
   );
+
+  const shouldShowDeckActions =
+    screen === studyScreen &&
+    isNewWordsMode;
+
+  newWordsDeckActions.classList.toggle(
+    "hidden",
+    !shouldShowDeckActions
+  );
+
+  updateHeldNewWordsUI();
 }
 
 const questionLabel = document.querySelector("#questionLabel");
@@ -242,6 +266,105 @@ const correctButton = document.querySelector("#correctButton");
 const wrongButton = document.querySelector("#wrongButton");
 const message = document.querySelector("#message");
 
+function loadHeldNewWords() {
+  try {
+    const saved = localStorage.getItem(
+      HELD_NEW_WORDS_STORAGE_KEY
+    );
+
+    if (!saved) {
+      heldNewWordIds = new Set();
+      return;
+    }
+
+    const parsed = JSON.parse(saved);
+
+    heldNewWordIds = new Set(
+      Array.isArray(parsed)
+        ? parsed.map(String)
+        : []
+    );
+  } catch (error) {
+    console.error(
+      "Erro ao carregar palavras guardadas:",
+      error
+    );
+
+    heldNewWordIds = new Set();
+
+    try {
+      localStorage.removeItem(
+        HELD_NEW_WORDS_STORAGE_KEY
+      );
+    } catch (storageError) {
+      console.error(
+        "Erro ao limpar palavras guardadas:",
+        storageError
+      );
+    }
+  }
+}
+
+function saveHeldNewWords() {
+  try {
+    if (heldNewWordIds.size === 0) {
+      localStorage.removeItem(
+        HELD_NEW_WORDS_STORAGE_KEY
+      );
+      return;
+    }
+
+    localStorage.setItem(
+      HELD_NEW_WORDS_STORAGE_KEY,
+      JSON.stringify([...heldNewWordIds])
+    );
+  } catch (error) {
+    console.error(
+      "Erro ao salvar palavras guardadas:",
+      error
+    );
+  }
+}
+
+function pruneHeldNewWords() {
+  const validIds = new Set(
+    allCards.map((card) => String(card.id))
+  );
+
+  const previousSize = heldNewWordIds.size;
+
+  heldNewWordIds = new Set(
+    [...heldNewWordIds].filter((id) =>
+      validIds.has(id)
+    )
+  );
+
+  if (heldNewWordIds.size !== previousSize) {
+    saveHeldNewWords();
+  }
+
+  updateHeldNewWordsUI();
+}
+
+function updateHeldNewWordsUI() {
+  restoreHeldWordsButton.textContent =
+    `Recolocar (${heldNewWordIds.size})`;
+
+  restoreHeldWordsButton.disabled =
+    heldNewWordIds.size === 0 ||
+    isManagingNewWordsDeck;
+
+  const hasCurrentCard =
+    Boolean(cards[currentIndex]);
+
+  holdCurrentWordButton.disabled =
+    !isNewWordsMode ||
+    !hasCurrentCard ||
+    isChangingCard ||
+    writeComparisonDone ||
+    isManagingNewWordsDeck;
+}
+
 async function loadCards() {
   try {
     const response = await fetch(DATA_URL);
@@ -255,6 +378,8 @@ async function loadCards() {
     allCards = data
       .filter((card) => card.active)
       .sort((a, b) => a.order - b.order);
+
+    pruneHeldNewWords();
 
     buildExerciseVocabularyIndex();
 
@@ -686,11 +811,23 @@ function getCardsAvailableForDirection(cardList) {
 }
 
 function startNewWordsSession(filteredCards) {
-  newWordsPool = getNewWordsPool(filteredCards);
-  newWordsActiveCount = 1;
+  const availableCards = filteredCards.filter(
+    (card) =>
+      !heldNewWordIds.has(String(card.id))
+  );
+
+  newWordsPool = getNewWordsPool(
+    availableCards
+  );
+
+  newWordsActiveCount =
+    newWordsPool.length > 0 ? 1 : 0;
+
   newWordsRoundResults = {};
   newWordsCardProgress = {};
-  allNewWordsIntroduced = newWordsPool.length <= 1;
+
+  allNewWordsIntroduced =
+    newWordsPool.length <= 1;
 
   cards = newWordsPool
     .slice(0, newWordsActiveCount)
@@ -1061,8 +1198,78 @@ function repeatSession() {
   showCard();
 }
 
+function showEmptyDeckState() {
+  currentIndex = 0;
+  answerVisible = false;
+  writeComparisonDone = false;
+
+  flashcard.classList.remove(
+    "flipped",
+    "correct-preview",
+    "wrong-preview"
+  );
+
+  hideQuestionAudio();
+
+  pronunciationButton.classList.add("hidden");
+
+  audioSwedishText.textContent = "";
+  audioSwedishText.classList.add("hidden");
+
+  showSwedishFromAudioButton.classList.add(
+    "hidden"
+  );
+
+  showSwedishFromAudioButton.disabled = true;
+
+  questionLabel.textContent = "Palavras novas";
+
+  updateQuestionText(
+    "Nenhuma palavra disponível"
+  );
+
+  answerLabel.textContent = "";
+  answerText.textContent = "";
+
+  answerGrammarForm.textContent = "";
+  answerGrammarForm.classList.add("hidden");
+
+  writeBox.classList.add("hidden");
+  resultButtons.classList.add("hidden");
+
+  correctButton.disabled = true;
+  wrongButton.disabled = true;
+  checkAnswerButton.disabled = true;
+  nextWriteCardButton.disabled = true;
+
+  backHint.classList.add("hidden");
+
+  flashcard.setAttribute(
+    "aria-disabled",
+    "true"
+  );
+
+  if (heldNewWordIds.size > 0) {
+    message.textContent =
+      "Não há palavras disponíveis. Use Recolocar para devolver palavras ao deck.";
+  } else {
+    message.textContent =
+      "Não há cards disponíveis nesta sessão.";
+  }
+
+  updateHeldNewWordsUI();
+}
+
 function showCard() {
   const card = cards[currentIndex];
+
+  if (!card) {
+    showEmptyDeckState();
+    return;
+  }
+
+  message.textContent = "";
+
   const content = getCardContent(card);
 
   answerVisible = false;
@@ -1086,6 +1293,248 @@ function showCard() {
 
   preloadLikelyAudios();
 
+  updateHeldNewWordsUI();
+
+}
+
+async function holdCurrentNewWord() {
+  if (
+    !isNewWordsMode ||
+    isChangingCard ||
+    writeComparisonDone ||
+    isManagingNewWordsDeck
+  ) {
+    return;
+  }
+
+  const currentCard = cards[currentIndex];
+
+  if (!currentCard) {
+    return;
+  }
+
+  isManagingNewWordsDeck = true;
+  updateHeldNewWordsUI();
+
+  const cardId = String(currentCard.id);
+
+  heldNewWordIds.add(cardId);
+  saveHeldNewWords();
+
+  /*
+   * Remove a palavra do pool principal.
+   */
+  newWordsPool = newWordsPool.filter(
+    (card) =>
+      String(card.id) !== cardId
+  );
+
+  /*
+   * Apaga somente o progresso temporário
+   * do modo Palavras novas.
+   * Não apaga as estatísticas gerais.
+   */
+  delete newWordsRoundResults[cardId];
+  delete newWordsCardProgress[cardId];
+
+  /*
+   * Remove todas as ocorrências dessa
+   * palavra da rodada, inclusive eventual
+   * repetição agendada depois de um erro.
+   */
+  const cardsBeforeCurrent = cards
+    .slice(0, currentIndex)
+    .filter(
+      (card) =>
+        String(card.id) !== cardId
+    );
+
+  const cardsAfterCurrent = cards
+    .slice(currentIndex + 1)
+    .filter(
+      (card) =>
+        String(card.id) !== cardId
+    );
+
+  cards = [
+    ...cardsBeforeCurrent,
+    ...cardsAfterCurrent
+  ];
+
+  const nextIndex =
+  cardsBeforeCurrent.length;
+
+  const hasNextCardInCurrentRound =
+    cardsAfterCurrent.length > 0;
+
+  cardAudio.pause();
+
+  /*
+   * Se não sobrou nenhuma palavra.
+   */
+  if (newWordsPool.length === 0) {
+    newWordsActiveCount = 0;
+    allNewWordsIntroduced = true;
+
+    cards = [];
+    currentIndex = 0;
+
+    showCard();
+  } else {
+    /*
+     * Mantém a quantidade ativa dentro
+     * dos limites do novo pool.
+     */
+    newWordsActiveCount = Math.min(
+      Math.max(newWordsActiveCount, 1),
+      newWordsPool.length
+    );
+
+    allNewWordsIntroduced =
+      newWordsActiveCount >=
+      newWordsPool.length;
+
+    /*
+     * Se havia outro card depois do atual,
+     * ele ocupa automaticamente a posição
+     * do card removido.
+     */
+    if (hasNextCardInCurrentRound) {
+      currentIndex = nextIndex;
+      showCard();
+    } else {
+      /*
+       * O card removido era o último
+       * disponível nesta rodada.
+       * Inicia corretamente a próxima.
+       */
+      currentIndex = 0;
+
+      updateNewWordsDeckAfterRound();
+
+      showCard();
+    }
+  }
+
+  if (cards.length === 0) {
+    message.textContent =
+      `Palavra guardada. ${heldNewWordIds.size} palavra(s) fora do deck. Use Recolocar para devolvê-la(s).`;
+  } else {
+    message.textContent =
+      `Palavra guardada. ${heldNewWordIds.size} palavra(s) fora do deck.`;
+  }
+
+  await wait(180);
+
+  isManagingNewWordsDeck = false;
+  updateHeldNewWordsUI();
+}
+
+function restoreHeldNewWords() {
+  if (
+    heldNewWordIds.size === 0 ||
+    isManagingNewWordsDeck
+  ) {
+    return;
+  }
+
+  isManagingNewWordsDeck = true;
+  updateHeldNewWordsUI();
+
+  const restoredIds =
+    new Set(heldNewWordIds);
+
+  /*
+   * Libera todas as palavras guardadas.
+   */
+  heldNewWordIds.clear();
+  saveHeldNewWords();
+
+  /*
+   * Evita duplicação no pool atual.
+   */
+  const existingPoolIds = new Set(
+    newWordsPool.map(
+      (card) => String(card.id)
+    )
+  );
+
+  /*
+   * Das palavras restauradas, só entram
+   * imediatamente nesta sessão aquelas
+   * que pertencem aos filtros atualmente
+   * escolhidos.
+   */
+  const restoredCards =
+    baseSessionCards.filter((card) => {
+      const id = String(card.id);
+
+      return (
+        restoredIds.has(id) &&
+        !existingPoolIds.has(id)
+      );
+    });
+
+  /*
+   * Acrescenta-as no fim do pool,
+   * embaralhadas, sem destruir a ordem/
+   * progresso das palavras que já estavam
+   * sendo estudadas.
+   */
+  newWordsPool.push(
+    ...shuffleArray(restoredCards)
+  );
+
+  if (
+    newWordsPool.length > 0 &&
+    newWordsActiveCount === 0
+  ) {
+    newWordsActiveCount = 1;
+  }
+
+  if (newWordsPool.length > 0) {
+    newWordsActiveCount = Math.min(
+      Math.max(newWordsActiveCount, 1),
+      newWordsPool.length
+    );
+  }
+
+  allNewWordsIntroduced =
+    newWordsActiveCount >=
+    newWordsPool.length;
+
+  /*
+   * Caso especial:
+   * todas as cartas tinham sido guardadas.
+   */
+  if (
+    cards.length === 0 &&
+    newWordsPool.length > 0
+  ) {
+    currentIndex = 0;
+
+    const activeCards =
+      newWordsPool.slice(
+        0,
+        newWordsActiveCount
+      );
+
+    cards =
+      buildNewWordsRoundDeck(activeCards);
+
+    showCard();
+  }
+
+  isManagingNewWordsDeck = false;
+  updateHeldNewWordsUI();
+
+  if (restoredCards.length > 0) {
+    message.textContent =
+      `${restoredCards.length} palavra(s) recolocada(s) no deck.`;
+  } else {
+    message.textContent =
+      "As palavras guardadas foram liberadas.";
+  }
 }
 
 function preloadLikelyAudios() {
@@ -1487,6 +1936,10 @@ function hideQuestionAudio() {
 }
 
 function revealAnswer() {
+  if (!cards[currentIndex]) {
+    return;
+  }
+
   if (isChangingCard) {
     return;
   }
@@ -1587,6 +2040,10 @@ function getImmediateRetryGap() {
 }
 
 async function markAnswer(isCorrect) {
+  if (!cards[currentIndex]) {
+    return;
+  }
+
   if (!answerVisible || isChangingCard) {
     return;
   }
@@ -1605,6 +2062,8 @@ async function markAnswer(isCorrect) {
   goToNextCard();
 
   isChangingCard = false;
+
+  updateHeldNewWordsUI();
 }
 
 function getRecentAccuracy() {
@@ -1691,6 +2150,12 @@ function prioritizeUnseenCardIfNeeded() {
 }
 
 function goToNextCard() {
+  if (cards.length === 0) {
+    currentIndex = 0;
+    showCard();
+    return;
+  }
+
   currentIndex++;
 
   if (currentIndex >= cards.length) {
@@ -1775,7 +2240,7 @@ function buildSrsDeck(filteredCards) {
   });
 
   return [
-    ...firstPass,
+    ...shuffleArray(firstPass),
     ...shuffleArray(extraCards)
   ];
 }
@@ -1933,6 +2398,12 @@ function checkWrittenAnswer() {
   }
 
   const card = cards[currentIndex];
+
+  if (!card) {
+    showEmptyDeckState();
+    return;
+  }
+
   const content = getCardContent(card);
 
   const userAnswer = answerInput.value;
@@ -1969,6 +2440,8 @@ function checkWrittenAnswer() {
 
   registerCurrentAnswer(comparison.isCorrect);
 
+  updateHeldNewWordsUI();
+
 }
 
 async function nextWrittenCard() {
@@ -1987,6 +2460,8 @@ async function nextWrittenCard() {
   goToNextCard();
 
   isChangingCard = false;
+
+  updateHeldNewWordsUI();
 }
 
 function compareWrittenAnswer(userAnswer, expectedAnswer, card) {
@@ -7742,6 +8217,16 @@ wrongButton.addEventListener("click", () => markAnswer(false));
 
 newWordsToggleButton.addEventListener("click", toggleNewWordsMode);
 
+holdCurrentWordButton.addEventListener(
+  "click",
+  holdCurrentNewWord
+);
+
+restoreHeldWordsButton.addEventListener(
+  "click",
+  restoreHeldNewWords
+);
+
 sourceFilterGroup.addEventListener("change", () => {
   setupMessage.textContent = "";
   updateSourceSpecificFilters();
@@ -7753,5 +8238,10 @@ pronunciationButton.addEventListener(
 );
 
 applySavedTheme();
+
+loadHeldNewWords();
+
 updateNewWordsModeUI();
+updateHeldNewWordsUI();
+
 loadCards();
