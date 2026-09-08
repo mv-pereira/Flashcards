@@ -2694,7 +2694,9 @@ Use o arquivo `words.json` anexado.
 
 CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
 
-TAMANHO DO TEXTO: Dois (02) textos com temas diferentes, aproximadamente 200 palavras cada;
+QUANTIDADE DE TEXTOS: Dois (02) textos com temas diferentes
+
+QUANTIDADE DE PALAVRAS POR TEXTO: Um terço das palavras do .json;
 
 QUANTIDADE DE QUESTÕES: 25
 
