@@ -1,0 +1,140 @@
+Leia o texto colado, mas não quero que o siga integralmente. Quero que você utilize dele apenas as regras necessárias para o vocabulário autorizado, a estrutura do exercício e, principalmente, as instruções referentes à prática oral.
+
+Considere as seguintes regras do texto colado sobre a prática oral:
+
+1. o bloco [FALA] não é uma questão, não vale pontos e não participa da nota;
+2. nunca utilize TIPO: FALA;
+3. dentro de [FALA], utilize VOCÊ: para indicar em português o que o estudante deverá falar em sueco;
+4. cada VOCÊ: deve ser seguido imediatamente por RESPOSTA:;
+5. em RESPOSTA:, cadastre uma ou várias formulações naturais possíveis em sueco, separadas por | quando necessário;
+6. as respostas do bloco [FALA] servem para conferência, não como gabarito exaustivo;
+7. a prática oral deve formar uma conversa coerente e progressiva;
+8. crie tarefas reais de produção comunicativa, incluindo, quando adequado, responder, perguntar, responder e perguntar, reagir, comentar ou combinar informações;
+9. utilize exclusivamente vocabulário autorizado também nas falas do interlocutor e nas respostas do bloco [FALA];
+10. as flexões gramaticais legítimas e o desmembramento de palavras pertencentes às expressões autorizadas continuam permitidos conforme as regras do texto colado;
+11. nomes próprios e elementos geográficos podem ser utilizados conforme a exceção prevista no texto colado;
+12. não inclua EXPLICACAO:, alternativas, subitens ou TIPO: FALA dentro de [FALA].
+
+Quero que, usando o words.json e as regras de vocabulário do texto colado, você elabore apenas uma prática oral para eu usar no meu aplicativo.
+
+Não quero bloco [TEXTO] nem questões avaliativas reais.
+
+IMPORTANTE — COMPATIBILIDADE COM O APP:
+
+Embora eu queira apenas a prática oral, o aplicativo exige obrigatoriamente pelo menos um bloco [QUESTAO] para aceitar o exercício.
+
+Portanto, inclua obrigatoriamente exatamente UMA [QUESTAO] dummy antes do bloco [FALA].
+
+Essa questão:
+
+- existe apenas por exigência técnica do aplicativo;
+- não faz parte pedagogicamente da prática oral;
+- deve ser do tipo TIPO: VF;
+- deve ser extremamente simples;
+- deve utilizar exclusivamente vocabulário autorizado pelo words.json;
+- deve possuir normalmente o campo RESPOSTA: V ou RESPOSTA: F;
+- não precisa possuir EXPLICACAO:;
+- não deve introduzir conteúdo novo;
+- não deve gerar qualquer outra questão;
+- deve aparecer imediatamente antes do bloco [FALA].
+
+Não crie nenhum bloco [TEXTO].
+
+A estrutura geral obrigatória do output deve ser:
+
+[EXERCICIO]
+TITULO: \<título adequado à situação criada>
+
+[QUESTAO]
+TIPO: VF
+\<uma afirmação simples usando apenas vocabulário autorizado>
+
+RESPOSTA: V ou F
+
+[FALA]
+\<prática oral completa>
+
+[FIM]
+
+A presença dessa única [QUESTAO] é uma exceção técnica à instrução de não criar questões. Não a omita, pois sem ela o aplicativo retorna o erro: "O exercício precisa ter pelo menos uma [QUESTAO]."
+
+Agora, para a prática oral propriamente dita, siga estas instruções:
+
+- faça uma conversa extensa com mais de 40 interações no total;
+- quero pelo menos 20 falas do interlocutor e pelo menos 20 campos VOCÊ:, formando uma conversa verdadeiramente desenvolvida;
+- cada fala do interlocutor deve avançar naturalmente a conversa;
+- cada instrução VOCÊ: deve estar semanticamente relacionada à fala imediatamente anterior;
+- a resposta prevista em RESPOSTA: deve responder corretamente ao que acabou de ser dito ou perguntado;
+- não produza uma sequência de perguntas e respostas independentes apenas para encaixar vocabulário;
+- construa uma situação comunicativa contínua, como uma conversa real;
+- a conversa pode mudar gradualmente de assunto, desde que haja transições naturais;
+- faça o vocabulário e as estruturas progredirem ao longo da conversa;
+- comece com construções relativamente simples e avance gradualmente para falas um pouco mais elaboradas;
+- não precisa dar prioridade especial aos capítulos mais tardios;
+- considere todos os capítulos autorizados como repertório cumulativo disponível;
+- utilize livremente vocabulário dos capítulos anteriores quando isso tornar a conversa mais natural, variada e coerente;
+- examine especialmente as expressões existentes no capítulo final do words.json apenas para estimar o nível atual do aluno;
+- não é necessário repetir constantemente essas expressões do capítulo final;
+- use-as principalmente como referência do que o aluno já é capaz de compreender e produzir;
+- procure variar o vocabulário ao longo da conversa, evitando repetição desnecessária;
+- reutilize palavras quando isso for natural em uma conversa real;
+- utilize diferentes tempos verbais, pronomes, perguntas, respostas, negações, reações, descrições e combinações de informações quando o vocabulário autorizado permitir;
+- não introduza palavras suecas externas ao vocabulário permitido apenas para tornar a conversa mais natural;
+- se uma construção desejada exigir uma palavra não autorizada, reformule usando o vocabulário disponível.
+
+FORMATAÇÃO DO BLOCO [FALA]:
+
+Use o formato:
+
+[FALA]
+Nome: fala do interlocutor em sueco
+VOCÊ: instrução em português sobre o que eu devo dizer em sueco
+RESPOSTA: resposta natural possível em sueco | outra formulação natural possível, quando realmente couber
+
+Nome: nova fala do interlocutor em sueco
+VOCÊ: nova instrução em português
+RESPOSTA: resposta possível em sueco
+
+Continue dessa forma até completar toda a conversa.
+
+Regras adicionais de formatação:
+
+- use apenas um bloco [FALA];
+- não utilize TIPO: FALA;
+- cada fala do interlocutor deve estar no formato Nome: fala;
+- cada VOCÊ: deve ser seguido imediatamente por RESPOSTA:;
+- as instruções em VOCÊ: devem estar em português;
+- as formulações em RESPOSTA: devem estar em sueco;
+- quando houver várias respostas naturais realmente plausíveis, separe-as por |;
+- não crie variantes artificiais apenas para aumentar o número de respostas;
+- não coloque [QUESTAO] depois de [FALA];
+- [FALA] deve aparecer imediatamente antes de [FIM];
+- o conteúdo deve terminar exatamente com [FIM].
+
+Antes de entregar o resultado, faça silenciosamente uma revisão completa.
+
+Confira especialmente:
+
+1. se há exatamente uma [QUESTAO] dummy antes de [FALA];
+2. se não existe nenhum bloco [TEXTO];
+3. se existe apenas um bloco [FALA];
+4. se existem mais de 40 interações na conversa;
+5. se há pelo menos 20 falas do interlocutor e pelo menos 20 campos VOCÊ:;
+6. se cada fala responde ou reage logicamente à fala anterior;
+7. se a conversa possui progressão temática e não parece uma lista de frases independentes;
+8. se não há contradições entre uma fala e a seguinte;
+9. se todas as frases suecas são gramaticalmente corretas;
+10. se todas as frases fazem sentido semanticamente;
+11. se todo o vocabulário sueco utilizado está autorizado pelo words.json ou constitui flexão legítima de vocabulário autorizado;
+12. se nenhuma palavra externa foi introduzida apenas para facilitar a conversa;
+13. se as respostas cadastradas em RESPOSTA: são naturais e plausíveis;
+14. se as instruções VOCÊ: não entregam antecipadamente a frase sueca;
+15. se a dificuldade progride de forma razoável ao longo da conversa;
+16. se o nível geral é compatível com o repertório demonstrado pelas expressões do capítulo final do words.json;
+17. se [FIM] é a última marcação do exercício.
+
+Não explique o que você fez.
+
+Não apresente observações antes ou depois.
+
+Entregue apenas o conteúdo final pronto para copiar e colar diretamente no aplicativo.
