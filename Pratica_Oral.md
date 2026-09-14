@@ -190,6 +190,8 @@ Assim, a prática terá no mínimo 42 interações comunicativas.
 
 Pode haver mais de 21 pares quando isso contribuir para uma conversa melhor, mas evite alongamento artificial.
 
+A extensão da conversa NÃO exige que a situação seja narrada desde seu início cronológico. Uma conversa longa pode começar no meio de uma situação já estabelecida e desenvolvê-la a partir daí.
+
 Cada fala do interlocutor deve avançar naturalmente a conversa.
 
 Cada campo `VOCÊ:` deve estar semanticamente relacionado à fala imediatamente anterior e pedir ao estudante uma reação comunicativa plausível.
@@ -208,7 +210,28 @@ Não contradiga fatos ou escolhas já estabelecidos na própria conversa.
 
 # 4. PROGRESSÃO DA CONVERSA
 
-Comece com construções relativamente simples e avance gradualmente para falas um pouco mais elaboradas, sempre dentro do repertório autorizado.
+A conversa deve apresentar progressão linguística e comunicativa, mas isso NÃO significa que precise começar pelo primeiro contato entre os participantes.
+
+Não comece automaticamente com saudações, apresentação pessoal, nome, idade, nacionalidade, local de residência ou perguntas como “como você se chama?”, salvo quando esse início for naturalmente adequado à situação criada.
+
+A conversa pode começar em qualquer ponto plausível de uma interação já em andamento.
+
+O primeiro turno pode, conforme o vocabulário autorizado, surgir por exemplo de:
+- uma pergunta contextual;
+- uma reação a algo que acabou de acontecer;
+- um comentário;
+- um pedido;
+- uma decisão;
+- um plano já em andamento;
+- uma dúvida;
+- uma preferência;
+- uma observação sobre uma pessoa, objeto, lugar, atividade, horário ou situação;
+- uma retomada implícita de contexto;
+- outra situação comunicativa natural.
+
+Comece com uma construção compatível com o nível do aluno, mas não confunda simplicidade linguística com obrigação de começar por fórmulas sociais elementares.
+
+A progressão deve ocorrer a partir da situação escolhida: as falas podem começar simples dentro daquele contexto e tornar-se gradualmente mais elaboradas.
 
 Ao longo da conversa, quando o material do `words.json` permitir, varie de forma natural:
 
@@ -240,6 +263,46 @@ Utilize somente estruturas que possam ser construídas legitimamente com o vocab
 Não force variedade gramatical se isso exigir palavras externas.
 
 A dificuldade deve crescer principalmente pela combinação de material já conhecido, e não pela introdução de vocabulário novo.
+
+## 4.1 VARIEDADE NO INÍCIO DA CONVERSA
+
+Não utilize automaticamente o mesmo padrão de abertura entre exercícios diferentes.
+
+Evite transformar “saudação + apresentação + pergunta de nome” em abertura padrão.
+
+Ao planejar a conversa, escolha primeiro uma situação comunicativa concreta e só depois determine a primeira fala.
+
+Quando houver vocabulário suficiente, varie o ponto de entrada da conversa entre diferentes gerações.
+
+É permitido começar in medias res, isto é, com os participantes já inseridos em uma situação, sem explicar desde o início quem são ou como se conheceram.
+
+Não é necessário contextualizar explicitamente tudo no primeiro turno. Informações sobre participantes, lugar, atividade ou circunstâncias podem surgir progressivamente durante a própria conversa.
+
+Saudações e apresentações continuam permitidas, mas devem aparecer somente quando forem naturais para a situação, e não por padrão.
+
+## 4.1 DESENVOLVIMENTO DA EXTENSÃO DA FALA
+
+A progressão não deve ocorrer apenas pela dificuldade gramatical.
+
+Ao longo da conversa, introduza gradualmente oportunidades para o estudante produzir falas mais desenvolvidas.
+
+No início, respostas curtas e naturais são aceitáveis.
+
+Mais adiante, quando o repertório autorizado permitir, alguns campos VOCÊ: devem exigir que o estudante combine duas ou mais ideias relacionadas na mesma fala, por exemplo:
+
+- responder e acrescentar uma informação;
+- responder e justificar;
+- contar brevemente algo que aconteceu;
+- comparar duas informações;
+- expressar preferência e explicar;
+- informar algo e fazer uma pergunta relacionada;
+- retomar uma informação mencionada anteriormente.
+
+Não aumente artificialmente o tamanho da resposta.
+
+A fala deve permanecer natural para a situação, compatível com o nível do aluno e inteiramente realizável com o vocabulário autorizado pelo words.json e suas flexões legítimas.
+
+Se uma produção mais longa exigir vocabulário não autorizado, simplifique a tarefa em vez de introduzir palavras externas.
 
 ---
 
@@ -367,6 +430,36 @@ A instrução em `VOCÊ:` deve:
 - não funcionar como simples tradução palavra por palavra;
 - permitir que o estudante recupere e produza a fala por conta própria.
 
+## 8.1 PRODUÇÃO A PARTIR DE INTENÇÃO COMUNICATIVA
+
+Sempre que possível, formule VOCÊ: como um objetivo comunicativo, e não como uma frase em português a ser traduzida palavra por palavra.
+
+Antes de criar cada instrução VOCÊ:, verifique silenciosamente se a intenção solicitada pode ser expressa de forma natural em sueco utilizando exclusivamente o vocabulário autorizado pelo words.json e suas flexões legítimas.
+
+Somente solicite uma intenção comunicativa quando existir pelo menos uma formulação natural possível em sueco dentro do repertório autorizado.
+
+Se a intenção desejada exigir vocabulário não autorizado, NÃO introduza esse vocabulário. Escolha outra intenção comunicativa que possa ser realizada integralmente com o material disponível.
+
+As instruções VOCÊ: podem mencionar em português o conteúdo ou a intenção que o estudante deverá comunicar. As palavras portuguesas utilizadas na instrução não precisam existir no words.json, pois VOCÊ: é uma instrução ao estudante e não constitui produção em sueco.
+
+Prefira instruções como:
+
+VOCÊ: Responda à pergunta e acrescente uma informação relacionada.
+
+VOCÊ: Diga sua preferência e faça uma pergunta relacionada ao mesmo assunto.
+
+VOCÊ: Reaja ao que a outra pessoa disse e explique brevemente sua situação.
+
+VOCÊ: Conte o que aconteceu e depois pergunte sobre a outra pessoa.
+
+Esses exemplos demonstram apenas o tipo de intenção comunicativa e não constituem conteúdo obrigatório a ser utilizado.
+
+Evite instruções que determinem palavra por palavra a estrutura da resposta ou que funcionem como frases portuguesas destinadas simplesmente à tradução.
+
+O estudante deve precisar recuperar sozinho, a partir do repertório já estudado, o vocabulário e a estrutura sueca adequados para cumprir a intenção comunicativa.
+
+Quando houver mais de uma maneira natural de cumprir corretamente a intenção utilizando somente vocabulário autorizado, cadastre em RESPOSTA: as formulações naturais e previsíveis aplicáveis, separadas por | conforme as regras desta especificação.
+
 Não inclua `EXPLICACAO:` dentro de `[FALA]`.
 
 Não inclua alternativas A), B), C) etc.
@@ -450,6 +543,30 @@ Os campos `VOCÊ:` podem pedir ao estudante, quando o vocabulário permitir:
 Não transforme a prática em repetição de palavras isoladas.
 
 Não produza uma sucessão mecânica do tipo pergunta sem contexto → resposta → nova pergunta sem relação.
+
+## 10.1 REPARAÇÃO E NEGOCIAÇÃO DE SENTIDO
+
+Quando o vocabulário autorizado permitir, inclua ocasionalmente situações em que o estudante precise administrar a própria conversa, e não apenas responder ao conteúdo dela.
+
+Isso pode incluir:
+
+- pedir repetição;
+- dizer que não entendeu;
+- pedir confirmação;
+- confirmar se compreendeu corretamente;
+- corrigir uma informação;
+- reformular algo;
+- esclarecer uma informação ambígua;
+- corrigir a própria fala;
+- responder a um mal-entendido do interlocutor.
+
+Essas situações devem surgir naturalmente dentro da conversa.
+
+Não é necessário incluir reparação ou negociação de sentido em todos os exercícios.
+
+Somente utilize uma dessas tarefas quando ela puder ser realizada naturalmente com o vocabulário autorizado pelo words.json e suas flexões legítimas.
+
+Nunca introduza vocabulário externo apenas para criar esse tipo de interação.
 
 ---
 
