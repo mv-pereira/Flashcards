@@ -527,6 +527,14 @@ Dê preferência a alternativas que explorem, quando forem naturais e compatíve
 * alternativas lexicais autorizadas;
 * outras variações gramaticais legítimas já acessíveis pelo repertório autorizado.
 
+Não crie uma alternativa por topicalização ou ordem V2 apenas porque a construção seja gramaticalmente possível.
+
+Utilize esse tipo de variação somente quando a mudança de posição inicial também for natural do ponto de vista pragmático e discursivo no contexto específico da conversa.
+
+Uma construção marcada por topicalização, contraste, correção ou ênfase não deve ser cadastrada como alternativa neutra quando o contexto não justificar esse efeito discursivo.
+
+Se a ordem neutra for claramente a única forma natural naquele contexto, mantenha apenas essa formulação em vez de criar artificialmente uma alternativa com V2.
+
 Não considere como boa alternativa a simples troca da ordem de duas frases independentes quando cada frase permanece internamente igual.
 
 Se duas respostas diferirem apenas porque as mesmas frases completas foram invertidas, prefira manter apenas uma delas, salvo quando a mudança de ordem produzir diferença pragmática, discursiva ou gramatical realmente relevante.
