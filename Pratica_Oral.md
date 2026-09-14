@@ -481,47 +481,81 @@ Formato:
 
 RESPOSTA: <forma possível 1> | <forma possível 2> | <forma possível 3>
 
-Antes de finalizar cada campo RESPOSTA:, procure ativamente mais de uma maneira natural de cumprir a mesma intenção comunicativa.
+Antes de finalizar cada campo `RESPOSTA:`, procure ativamente mais de uma maneira natural de cumprir a mesma intenção comunicativa.
 
 Sempre que existirem duas ou mais formulações que sejam:
-- gramaticalmente corretas;
-- naturais;
-- semanticamente compatíveis com a instrução VOCÊ:;
-- adequadas ao contexto da conversa;
-- construídas exclusivamente com vocabulário autorizado e flexões legítimas;
 
-cadastre essas formulações separadas por |.
+* gramaticalmente corretas;
+* naturais;
+* semanticamente compatíveis com a instrução `VOCÊ:`;
+* adequadas ao contexto da conversa;
+* construídas exclusivamente com vocabulário autorizado e flexões legítimas;
+
+cadastre essas formulações separadas por `|`.
 
 Não pare automaticamente na primeira formulação correta encontrada.
 
 Quando existirem alternativas naturais, procure diferença linguística real entre elas.
 
-As alternativas podem diferir legitimamente em sua construção sintática, organização da informação, extensão ou outra característica linguística relevante, desde que mantenham a mesma intenção comunicativa e respeitem integralmente o vocabulário autorizado.
+A diferença entre alternativas deve, sempre que possível, representar uma variação lexical, sintática ou gramatical verdadeira.
+
+Quando o vocabulário autorizado contiver duas ou mais palavras ou expressões diferentes capazes de cumprir naturalmente a mesma intenção comunicativa, essas alternativas lexicais também podem ser utilizadas para construir diferentes `RESPOSTA:`.
+
+Isso inclui sinônimos ou expressões equivalentes SOMENTE quando cada forma alternativa estiver independentemente autorizada pelo `words.json` segundo as regras desta especificação.
+
+Não considere uma palavra autorizada apenas porque seja sinônimo, antônimo ou semanticamente relacionada a outra palavra autorizada. A própria palavra ou expressão alternativa precisa pertencer ao repertório autorizado.
+
+Quando houver uma alternativa lexical autorizada, utilize-a somente se:
+
+* for natural naquele contexto;
+* preservar integralmente a intenção exigida por `VOCÊ:`;
+* possuir registro e nuance adequados à situação;
+* não alterar fatos necessários para a continuidade da conversa.
+
+Não force o uso de um sinônimo apenas para produzir uma segunda resposta.
+
+Dê preferência a alternativas que explorem, quando forem naturais e compatíveis com o nível do aluno:
+
+* ordem V2 com outro constituinte na posição inicial;
+* topicalização;
+* diferentes posições naturais de advérbios;
+* formas alternativas de pergunta;
+* construções afirmativas equivalentes;
+* formas mais elípticas ou mais desenvolvidas, desde que todas expressem integralmente o conteúdo exigido por `VOCÊ:`;
+* diferentes estruturas sintáticas que preservem o mesmo significado;
+* diferentes maneiras naturais de conectar as mesmas informações;
+* alternativas lexicais autorizadas;
+* outras variações gramaticais legítimas já acessíveis pelo repertório autorizado.
+
+Não considere como boa alternativa a simples troca da ordem de duas frases independentes quando cada frase permanece internamente igual.
+
+Se duas respostas diferirem apenas porque as mesmas frases completas foram invertidas, prefira manter apenas uma delas, salvo quando a mudança de ordem produzir diferença pragmática, discursiva ou gramatical realmente relevante.
+
+As alternativas devem acrescentar valor pedagógico, mostrando ao estudante maneiras linguisticamente diferentes de expressar a mesma intenção, e não apenas reorganizando blocos idênticos.
+
+Todas as alternativas devem preservar integralmente os fatos e conteúdos exigidos pela instrução `VOCÊ:`. Uma alternativa não pode omitir, acrescentar ou modificar informação necessária apenas para permitir uma construção diferente.
 
 Não trate diferenças meramente gráficas ou superficiais como alternativas diferentes.
 
-As alternativas devem expressar essencialmente a mesma intenção comunicativa solicitada.
-
-Não crie variantes artificiais apenas para aumentar a quantidade de respostas.
-
 Não considere como alternativas diferentes simples mudanças de:
-- maiúsculas e minúsculas;
-- pontuação;
-- espaços;
-- pequenas diferenças gráficas sem valor linguístico.
 
-Também não introduza sinônimos, auxiliares, partículas ou qualquer outro vocabulário externo ao words.json apenas para criar uma segunda resposta.
+* maiúsculas e minúsculas;
+* pontuação;
+* espaços;
+* pequenas diferenças gráficas sem valor linguístico.
 
-Use somente uma formulação quando, após essa verificação, não existir outra alternativa suficientemente natural, correta e autorizada.
+Não introduza sinônimos, auxiliares, partículas ou qualquer outro vocabulário NÃO AUTORIZADO apenas para criar uma segunda resposta.
+
+Use somente uma formulação quando, após essa verificação, não existir outra alternativa suficientemente natural, correta, pedagogicamente útil e autorizada.
 
 Cadastre apenas formulações que sejam simultaneamente:
 
-- gramaticalmente corretas;
-- naturais;
-- semanticamente compatíveis com a instrução `VOCÊ:`;
-- adequadas ao contexto acumulado da conversa;
-- formadas somente por vocabulário autorizado e flexões legítimas;
-- plausíveis como produção do aluno no nível indicado pelo `words.json`.
+* gramaticalmente corretas;
+* naturais;
+* semanticamente compatíveis com a instrução `VOCÊ:`;
+* adequadas ao contexto acumulado da conversa;
+* formadas somente por vocabulário autorizado e flexões legítimas;
+* plausíveis como produção do aluno no nível indicado pelo `words.json`.
 
 Todas as formulações cadastradas em `RESPOSTA:` dentro de `[FALA]` devem estar em sueco.
 
@@ -672,7 +706,8 @@ Antes da resposta final, confira silenciosamente:
 29. se o título utiliza somente vocabulário permitido ou nomes próprios/geográficos autorizados pela exceção;
 30. se nenhum campo ficou com apenas uma resposta simplesmente porque essa foi a primeira formulação correta encontrada;
 31. se as alternativas cadastradas apresentam diferença linguística real e não apenas variações superficiais.
-32. se `[FIM]` é a última marcação do exercício.
+32. se nenhuma alternativa foi criada apenas pela inversão da ordem de frases completas sem mudança linguística relevante;
+33. se `[FIM]` é a última marcação do exercício.
 
 Corrija silenciosamente qualquer problema encontrado antes de produzir a resposta final.
 
