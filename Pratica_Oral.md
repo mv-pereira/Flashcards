@@ -486,11 +486,39 @@ Formato:
 
 RESPOSTA: <forma possível 1> | <forma possível 2> | <forma possível 3>
 
-Não existe obrigação de cadastrar várias respostas.
+Antes de finalizar cada campo RESPOSTA:, procure ativamente mais de uma maneira natural de cumprir a mesma intenção comunicativa.
 
-Se houver uma forma claramente mais natural e previsível, use apenas essa forma.
+Sempre que existirem duas ou mais formulações que sejam:
+- gramaticalmente corretas;
+- naturais;
+- semanticamente compatíveis com a instrução VOCÊ:;
+- adequadas ao contexto da conversa;
+- construídas exclusivamente com vocabulário autorizado e flexões legítimas;
 
-Não crie variantes artificiais somente para aumentar a quantidade de respostas.
+cadastre essas formulações separadas por |.
+
+Não pare automaticamente na primeira formulação correta encontrada.
+
+Quando possível, prefira alternativas realmente construídas de maneira diferente, por exemplo:
+- outra organização sintática;
+- outra ordem de palavras permitida;
+- uma resposta mais curta e outra mais desenvolvida;
+- uma forma afirmativa diferente que cumpra a mesma intenção;
+- outra combinação legítima do vocabulário autorizado.
+
+As alternativas devem expressar essencialmente a mesma intenção comunicativa solicitada.
+
+Não crie variantes artificiais apenas para aumentar a quantidade de respostas.
+
+Não considere como alternativas diferentes simples mudanças de:
+- maiúsculas e minúsculas;
+- pontuação;
+- espaços;
+- pequenas diferenças gráficas sem valor linguístico.
+
+Também não introduza sinônimos, auxiliares, partículas ou qualquer outro vocabulário externo ao words.json apenas para criar uma segunda resposta.
+
+Use somente uma formulação quando, após essa verificação, não existir outra alternativa suficientemente natural, correta e autorizada.
 
 Cadastre apenas formulações que sejam simultaneamente:
 
@@ -648,7 +676,9 @@ Antes da resposta final, confira silenciosamente:
 27. se a dificuldade progride de forma razoável;
 28. se o nível geral é compatível com o repertório demonstrado pelo `words.json`, especialmente pelas expressões do capítulo ativo mais alto;
 29. se o título utiliza somente vocabulário permitido ou nomes próprios/geográficos autorizados pela exceção;
-30. se `[FIM]` é a última marcação do exercício.
+30. se nenhum campo ficou com apenas uma resposta simplesmente porque essa foi a primeira formulação correta encontrada;
+31. se as alternativas cadastradas apresentam diferença linguística real e não apenas variações superficiais.
+32. se `[FIM]` é a última marcação do exercício.
 
 Corrija silenciosamente qualquer problema encontrado antes de produzir a resposta final.
 
