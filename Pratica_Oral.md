@@ -12,6 +12,16 @@ Não crie bloco `[TEXTO]`.
 
 Não crie questões avaliativas reais. A única `[QUESTAO]` permitida será uma questão dummy obrigatória por compatibilidade técnica com o aplicativo, conforme definido nesta especificação.
 
+## 0.1 NÃO UTILIZAR A ESPECIFICAÇÃO COMO FONTE DE CONTEÚDO
+
+Esta especificação define regras de geração, e não fornece conteúdo temático ou linguístico para o exercício.
+
+Não reutilize palavras, temas, situações, sequências narrativas, construções ou conteúdos mencionados nesta especificação apenas porque aparecem nela.
+
+A seleção concreta de vocabulário, situação, tema e conteúdo da conversa deve ser determinada pelo words.json e pelas regras de geração.
+
+Descrições metalinguísticas presentes nesta especificação não devem funcionar como modelos positivos de conteúdo.
+
 ---
 
 # 1. VOCABULÁRIO AUTORIZADO
@@ -216,18 +226,11 @@ Não comece automaticamente com saudações, apresentação pessoal, nome, idade
 
 A conversa pode começar em qualquer ponto plausível de uma interação já em andamento.
 
-O primeiro turno pode, conforme o vocabulário autorizado, surgir por exemplo de:
-- uma pergunta contextual;
-- uma reação a algo que acabou de acontecer;
-- um comentário;
-- um pedido;
-- uma decisão;
-- um plano já em andamento;
-- uma dúvida;
-- uma preferência;
-- uma observação sobre uma pessoa, objeto, lugar, atividade, horário ou situação;
-- uma retomada implícita de contexto;
-- outra situação comunicativa natural.
+O primeiro turno deve surgir de uma situação comunicativa natural compatível com o vocabulário autorizado.
+
+Não existe um tipo obrigatório de abertura.
+
+Varie livremente o ponto de entrada da conversa entre gerações, sem transformar nenhuma fórmula social, função comunicativa, tema ou sequência narrativa em padrão recorrente.
 
 Comece com uma construção compatível com o nível do aluno, mas não confunda simplicidade linguística com obrigação de começar por fórmulas sociais elementares.
 
@@ -430,43 +433,35 @@ A instrução em `VOCÊ:` deve:
 - não funcionar como simples tradução palavra por palavra;
 - permitir que o estudante recupere e produza a fala por conta própria.
 
-## 8.1 PRODUÇÃO A PARTIR DE INTENÇÃO COMUNICATIVA
+## 8.1 INSTRUÇÕES VOCÊ: ESPECÍFICAS E ORIENTADAS
 
-Sempre que possível, formule VOCÊ: como um objetivo comunicativo, e não como uma frase em português a ser traduzida palavra por palavra.
+Cada campo VOCÊ: deve informar com clareza e precisão o conteúdo que o estudante deverá expressar em sueco.
 
-Antes de criar cada instrução VOCÊ:, verifique silenciosamente se a intenção solicitada pode ser expressa de forma natural em sueco utilizando exclusivamente o vocabulário autorizado pelo words.json e suas flexões legítimas.
+A instrução deve fornecer todos os fatos necessários para produzir a fala esperada.
 
-Somente solicite uma intenção comunicativa quando existir pelo menos uma formulação natural possível em sueco dentro do repertório autorizado.
+Não obrigue o estudante a:
+- inventar horários, datas, quantidades, lugares, pessoas ou outros dados;
+- deduzir informações que não estejam explicitamente indicadas na instrução;
+- escolher livremente um fato quando a continuidade da conversa depender de uma informação específica;
+- adivinhar qual conteúdo o gerador tinha em mente.
 
-Se a intenção desejada exigir vocabulário não autorizado, NÃO introduza esse vocabulário. Escolha outra intenção comunicativa que possa ser realizada integralmente com o material disponível.
+Sempre que a resposta esperada contiver um dado concreto relevante para a produção, esse dado deve aparecer explicitamente em VOCÊ:.
 
-As instruções VOCÊ: podem mencionar em português o conteúdo ou a intenção que o estudante deverá comunicar. As palavras portuguesas utilizadas na instrução não precisam existir no words.json, pois VOCÊ: é uma instrução ao estudante e não constitui produção em sueco.
+A instrução VOCÊ: deve ser suficientemente específica para que o estudante saiba exatamente QUAL conteúdo precisa comunicar, mas não deve fornecer a construção sueca pronta nem determinar desnecessariamente sua forma palavra por palavra.
 
-Prefira instruções como:
+A liberdade deve existir principalmente na FORMA linguística da resposta, e não nos fatos que precisam ser comunicados.
 
-VOCÊ: Responda à pergunta e acrescente uma informação relacionada.
+Quando a continuidade da conversa depender de uma informação específica, essa informação deve permanecer fixa na instrução.
 
-VOCÊ: Diga sua preferência e faça uma pergunta relacionada ao mesmo assunto.
+Quando diferentes formulações naturais em sueco puderem expressar corretamente o mesmo conteúdo específico, cadastre-as em RESPOSTA: separadas por |, conforme as regras desta especificação.
 
-VOCÊ: Reaja ao que a outra pessoa disse e explique brevemente sua situação.
+Somente utilize uma instrução mais aberta quando diferentes conteúdos forem realmente aceitáveis e nenhuma dessas possibilidades prejudicar a continuidade da conversa.
 
-VOCÊ: Conte o que aconteceu e depois pergunte sobre a outra pessoa.
+A instrução VOCÊ: deve corresponder semanticamente com precisão à RESPOSTA:.
 
-Esses exemplos demonstram apenas o tipo de intenção comunicativa e não constituem conteúdo obrigatório a ser utilizado.
+Não descreva em VOCÊ: uma intenção mais específica, mais vaga ou semanticamente diferente daquela efetivamente expressa pela RESPOSTA:.
 
-Evite instruções que determinem palavra por palavra a estrutura da resposta ou que funcionem como frases portuguesas destinadas simplesmente à tradução.
-
-O estudante deve precisar recuperar sozinho, a partir do repertório já estudado, o vocabulário e a estrutura sueca adequados para cumprir a intenção comunicativa.
-
-Quando houver mais de uma maneira natural de cumprir corretamente a intenção utilizando somente vocabulário autorizado, cadastre em RESPOSTA: as formulações naturais e previsíveis aplicáveis, separadas por | conforme as regras desta especificação.
-
-Não inclua `EXPLICACAO:` dentro de `[FALA]`.
-
-Não inclua alternativas A), B), C) etc.
-
-Não inclua subitens a), b), c) etc.
-
-Não crie campos para resposta escrita do estudante dentro de `[FALA]`.
+A descrição em português deve representar com fidelidade o significado comunicativo da resposta sueca, sem acrescentar interpretações que não estejam linguisticamente presentes nela.
 
 ---
 
@@ -499,12 +494,11 @@ cadastre essas formulações separadas por |.
 
 Não pare automaticamente na primeira formulação correta encontrada.
 
-Quando possível, prefira alternativas realmente construídas de maneira diferente, por exemplo:
-- outra organização sintática;
-- outra ordem de palavras permitida;
-- uma resposta mais curta e outra mais desenvolvida;
-- uma forma afirmativa diferente que cumpra a mesma intenção;
-- outra combinação legítima do vocabulário autorizado.
+Quando existirem alternativas naturais, procure diferença linguística real entre elas.
+
+As alternativas podem diferir legitimamente em sua construção sintática, organização da informação, extensão ou outra característica linguística relevante, desde que mantenham a mesma intenção comunicativa e respeitem integralmente o vocabulário autorizado.
+
+Não trate diferenças meramente gráficas ou superficiais como alternativas diferentes.
 
 As alternativas devem expressar essencialmente a mesma intenção comunicativa solicitada.
 
