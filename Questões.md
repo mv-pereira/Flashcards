@@ -99,7 +99,28 @@ Toda questão TIPO: ESCRITA deve obedecer simultaneamente às seguintes regras:
 
 O exemplo apresentado ao estudante deve estar em sueco.
 
-Ele serve apenas para demonstrar o tipo, a estrutura ou o formato esperado da resposta.
+O exemplo deve demonstrar EXATAMENTE não apenas a transformação gramatical, mas também A UNIDADE DE RESPOSTA que o estudante deverá digitar.
+
+A parte apresentada como resposta no exemplo deve possuir a mesma granularidade da resposta cadastrada em RESPOSTA:.
+
+Portanto:
+
+- se o estudante deverá digitar somente uma palavra, o exemplo deverá mostrar como resposta somente uma palavra;
+- se deverá digitar uma expressão, o exemplo deverá mostrar como resposta somente uma expressão equivalente;
+- se deverá digitar uma frase completa, o exemplo deverá mostrar como resposta uma frase completa;
+- se deverá fornecer apenas a forma flexionada de uma palavra, o exemplo deverá mostrar apenas a forma flexionada correspondente.
+
+Nunca apresente no exemplo uma frase completa como resposta quando o campo RESPOSTA: aceitar somente a palavra que completa a frase.
+
+Nunca apresente no exemplo apenas uma palavra quando a resposta esperada for uma frase completa.
+
+Em questões de preenchimento de lacuna, o modelo deve deixar inequívoco qual parte deve ser digitada.
+
+Formato recomendado:
+
+Exemplo de resposta — <item demonstrativo> → <exatamente o que seria digitado>
+
+A parte localizada depois de → deve corresponder ao mesmo tipo de conteúdo cadastrado em RESPOSTA: para os subitens reais.
 
 O exemplo NÃO pode fornecer a resposta da questão atual.
 
@@ -1740,7 +1761,7 @@ TIPO: ESCRITA
 
 Toda questão escrita deve possuir um exemplo de resposta em sueco antes da tarefa que o estudante efetivamente deverá responder.
 
-Esse exemplo deve demonstrar o formato ou a estrutura esperada, mas deve utilizar conteúdo diferente daquele cuja resposta será avaliada.
+Esse exemplo deve utilizar conteúdo diferente daquele cuja resposta será avaliada. O exemplo deve reproduzir também a mesma granularidade da resposta esperada. Se RESPOSTA: contiver somente uma palavra, o exemplo deve indicar que o estudante deverá digitar somente uma palavra. Se RESPOSTA: contiver uma frase completa, o exemplo deverá indicar uma frase completa.
 
 A resposta que o estudante deverá digitar deve estar sempre em sueco.
 
@@ -2342,13 +2363,14 @@ Confira silenciosamente que:
 
 * toda questão TIPO: ESCRITA possui exatamente um exemplo de resposta antes da tarefa a ser respondida;
 
-* o exemplo está em sueco;
-
-* o exemplo demonstra a estrutura esperada sem revelar a resposta da questão;
-
-* o exemplo utiliza somente vocabulário autorizado;
-
-* toda resposta que o estudante deverá digitar está em sueco;
+Sobre os exemplos:
+- * o exemplo está em sueco;
+- * o exemplo utiliza somente vocabulário autorizado;
+- * a unidade de resposta demonstrada no exemplo coincide exatamente com a unidade esperada em RESPOSTA:;
+- * se RESPOSTA: espera somente uma palavra, o exemplo não induz o estudante a digitar uma frase completa;
+- * se RESPOSTA: espera uma frase completa, o exemplo não induz o estudante a digitar apenas uma palavra;
+- * em questões de lacuna, está inequívoco no exemplo qual conteúdo deve efetivamente ser digitado.
+- * toda resposta que o estudante deverá digitar está em sueco;
 
 * todas as formas cadastradas em RESPOSTA: estão em sueco;
 
@@ -2476,6 +2498,32 @@ Durante a revisão final, considere excessivamente fácil uma questão em que gr
 
 Quando isso ocorrer e o conteúdo estudado permitir uma formulação mais exigente, reformule a questão antes de entregar o exercício.
 
+# 24.1.1 NÃO REVELAR GÊNERO OU FLEXÃO DO SUBSTANTIVO
+
+Em exercícios que avaliem plural, forma definida singular, forma definida plural, gênero en/ett ou outras flexões nominais, não forneça no próprio item informações gramaticais que o estudante deverá recuperar para produzir a resposta.
+
+Por padrão, apresente o substantivo em sua forma lexical SEM o artigo en ou ett quando conhecer o gênero fizer parte direta ou indireta do raciocínio necessário para obter a resposta.
+
+O estudante deverá recuperar do conteúdo estudado se o substantivo pertence ao gênero en ou ett e aplicar as regras de flexão necessárias.
+
+A mesma regra vale para o exemplo obrigatório da questão.
+
+Se a transformação avaliada parte de um substantivo sem artigo, o exemplo também deve partir de um substantivo sem artigo.
+
+Assim, utilize conceitualmente:
+
+Exemplo de resposta — <substantivo sem artigo> → <forma solicitada>
+
+e não:
+
+Exemplo de resposta — en/ett <substantivo> → <forma solicitada>
+
+O artigo en ou ett somente deve ser fornecido quando:
+- o objetivo específico da questão NÃO incluir a recuperação do gênero;
+- fornecer o artigo for deliberadamente necessário para isolar outra habilidade;
+- ou a própria tarefa estiver explicitamente trabalhando o artigo.
+
+Não forneça automaticamente en ou ett apenas porque essa é uma forma comum de apresentar substantivos em materiais didáticos.
 
 ---
 
