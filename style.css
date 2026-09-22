@@ -23,6 +23,17 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
+html {
+  min-height: 100%;
+  background: var(--bg);
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.dark-theme {
+  color-scheme: dark;
+}
+
 .header-actions {
   display: flex;
   gap: 8px;
@@ -58,7 +69,7 @@
   line-height: 1.35;
 }
 
-body.dark-theme {
+html.dark-theme {
   --bg: #101A2B;
   --text: #F7EFD7;
   --muted: #AEB9C9;
@@ -153,11 +164,11 @@ button {
   background: #4D5B6B;
 }
 
-body.dark-theme .button-secondary {
+html.dark-theme .button-secondary {
   background: #2B3442;
 }
 
-body.dark-theme .button-secondary:active:not(:disabled) {
+html.dark-theme .button-secondary:active:not(:disabled) {
   background: #222A36;
 }
 
@@ -717,13 +728,13 @@ body.dark-theme .button-secondary:active:not(:disabled) {
   border: 1px solid rgba(180, 35, 24, 0.35);
 }
 
-body.dark-theme .comparison-feedback.correct {
+html.dark-theme .comparison-feedback.correct {
   background: rgba(79, 209, 139, 0.30);
   border-color: rgba(79, 209, 139, 0.55);
   text-align: center;
 }
 
-body.dark-theme .comparison-feedback.wrong {
+html.dark-theme .comparison-feedback.wrong {
   background: rgba(255, 107, 107, 0.18);
   border-color: rgba(255, 107, 107, 0.38);
 }

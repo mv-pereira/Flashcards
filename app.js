@@ -3023,25 +3023,34 @@ function applySavedTheme() {
   const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
 
   if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
+    document.documentElement.classList.add("dark-theme");
   } else {
-    document.body.classList.remove("dark-theme");
+    document.documentElement.classList.remove("dark-theme");
   }
 
   updateThemeButtonText();
 }
 
 function toggleTheme() {
-  const isDark = document.body.classList.toggle("dark-theme");
+  const isDark =
+    document.documentElement.classList.toggle("dark-theme");
 
-  localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
+  localStorage.setItem(
+    THEME_STORAGE_KEY,
+    isDark ? "dark" : "light"
+  );
+
   updateThemeButtonText();
 }
 
 function updateThemeButtonText() {
-  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const themeColorMeta =
+    document.querySelector('meta[name="theme-color"]');
 
-  if (document.body.classList.contains("dark-theme")) {
+  const isDark =
+    document.documentElement.classList.contains("dark-theme");
+
+  if (isDark) {
     themeToggleButton.textContent = "Tema claro";
 
     if (themeColorMeta) {
