@@ -31317,7 +31317,7 @@
     "active": true,
     "term": {
       "swedish": "hälso- och sjukvård",
-      "portuguese": "saúde e assistência médica / cuidados de saúde"
+      "portuguese": "assistência à saúde"
     },
     "grammar": {
       "type": "expressão",
@@ -31423,7 +31423,7 @@
     "active": true,
     "term": {
       "swedish": "vårdcentral",
-      "portuguese": "centro de saúde / unidade de atenção primária",
+      "portuguese": "centro de saúde",
       "portuguesePlural": "centros de saúde",
       "portugueseGender": "masculine"
     },
@@ -31459,8 +31459,8 @@
     "active": true,
     "term": {
       "swedish": "sjuksköterska",
-      "portuguese": "enfermeiro/enfermeira",
-      "portuguesePlural": "enfermeiros/enfermeiras",
+      "portuguese": "enfermeiro",
+      "portuguesePlural": "enfermeiros",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -31495,8 +31495,8 @@
     "active": true,
     "term": {
       "swedish": "läkare",
-      "portuguese": "médico/médica",
-      "portuguesePlural": "médicos/médicas",
+      "portuguese": "médico",
+      "portuguesePlural": "médicos",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -31673,8 +31673,8 @@
     "active": true,
     "term": {
       "swedish": "medicin",
-      "portuguese": "medicamento / remédio",
-      "portuguesePlural": "medicamentos / remédios",
+      "portuguese": "medicamento",
+      "portuguesePlural": "medicamentos",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -31816,17 +31816,17 @@
     "order": 957,
     "active": true,
     "term": {
-      "swedish": "borrelia",
-      "portuguese": "borreliose / doença de Lyme",
-      "portuguesePlural": null,
-      "portugueseGender": "feminine"
+      "swedish": "olycka",
+      "portuguese": "acidente",
+      "portuguesePlural": "acidentes",
+      "portugueseGender": "masculine"
     },
     "grammar": {
       "type": "substantivo",
       "gender": "en",
-      "plural": null,
-      "definiteSingular": "borrelian",
-      "definitePlural": null,
+      "plural": "olyckor",
+      "definiteSingular": "olyckan",
+      "definitePlural": "olyckorna",
       "infinitive": null,
       "present": null,
       "past": null,
@@ -31852,15 +31852,17 @@
     "order": 958,
     "active": true,
     "term": {
-      "swedish": "TBE",
-      "portuguese": "encefalite transmitida por carrapatos (TBE)"
+      "swedish": "skada",
+      "portuguese": "lesão",
+      "portuguesePlural": "lesões",
+      "portugueseGender": "feminine"
     },
     "grammar": {
-      "type": "outros",
-      "gender": null,
-      "plural": null,
-      "definiteSingular": null,
-      "definitePlural": null,
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "skador",
+      "definiteSingular": "skadan",
+      "definitePlural": "skadorna",
       "infinitive": null,
       "present": null,
       "past": null,
@@ -32427,8 +32429,8 @@
     "active": true,
     "term": {
       "swedish": "mage",
-      "portuguese": "estômago / barriga",
-      "portuguesePlural": "estômagos / barrigas",
+      "portuguese": "estômago",
+      "portuguesePlural": "estômagos",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -32641,11 +32643,11 @@
     "active": true,
     "term": {
       "swedish": "ta lite prover",
-      "portuguese": "fazer alguns exames / coletar algumas amostras",
-      "portugueseInfinitive": "fazer alguns exames / coletar algumas amostras",
-      "portuguesePresent": "faz alguns exames / coleta algumas amostras",
-      "portuguesePast": "fez alguns exames / coletou algumas amostras",
-      "portugueseSupine": "feito alguns exames / coletado algumas amostras"
+      "portuguese": "fazer alguns exames",
+      "portugueseInfinitive": "fazer alguns exames",
+      "portuguesePresent": "faz alguns exames",
+      "portuguesePast": "fez alguns exames",
+      "portugueseSupine": "feito alguns exames"
     },
     "grammar": {
       "type": "verbo",
@@ -32680,7 +32682,7 @@
     "active": true,
     "term": {
       "swedish": "vi får se",
-      "portuguese": "vamos ver / veremos"
+      "portuguese": "vamos ver"
     },
     "grammar": {
       "type": "expressão",
@@ -32714,7 +32716,7 @@
     "active": true,
     "term": {
       "swedish": "har fortfarande ont i magen",
-      "portuguese": "ainda está com dor no estômago / na barriga"
+      "portuguese": "ainda está com dor no estômago"
     },
     "grammar": {
       "type": "expressão",
@@ -32784,7 +32786,7 @@
     "active": true,
     "term": {
       "swedish": "krya på dig",
-      "portuguese": "melhoras / fique bem logo"
+      "portuguese": "melhoras"
     },
     "grammar": {
       "type": "expressão",
@@ -32915,51 +32917,12 @@
     }
   },
   {
-    "id": 992,
-    "order": 992,
-    "active": true,
-    "term": {
-      "swedish": "känna",
-      "portuguese": "sentir / conhecer",
-      "portugueseInfinitive": "sentir / conhecer",
-      "portuguesePresent": "sente / conhece",
-      "portuguesePast": "sentiu / conheceu",
-      "portugueseSupine": "sentido / conhecido"
-    },
-    "grammar": {
-      "type": "verbo",
-      "gender": null,
-      "plural": null,
-      "definiteSingular": null,
-      "definitePlural": null,
-      "infinitive": "känna",
-      "present": "känner",
-      "imperative": "känn",
-      "past": "kände",
-      "supine": "känt"
-    },
-    "classification": {
-      "themes": [
-        "gramática funcional"
-      ],
-      "source": "livro",
-      "chapter": 8,
-      "sourceTitle": "Hälsa",
-      "sourceArtist": null
-    },
-    "media": {
-      "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Sv-k%C3%A4nna.ogg"
-      }
-    }
-  },
-  {
     "id": 995,
     "order": 995,
     "active": true,
     "term": {
       "swedish": "sig",
-      "portuguese": "se / si (pronome reflexivo de terceira pessoa)"
+      "portuguese": "se"
     },
     "grammar": {
       "type": "pronome",
@@ -32993,7 +32956,7 @@
     "active": true,
     "term": {
       "swedish": "er",
-      "portuguese": "se / vocês mesmos / vocês (como objeto)"
+      "portuguese": "se"
     },
     "grammar": {
       "type": "pronome",
@@ -33027,11 +32990,11 @@
     "active": true,
     "term": {
       "swedish": "anmäla sig",
-      "portuguese": "inscrever-se / registrar-se",
-      "portugueseInfinitive": "inscrever-se / registrar-se",
-      "portuguesePresent": "inscreve-se / registra-se",
-      "portuguesePast": "inscreveu-se / registrou-se",
-      "portugueseSupine": "inscrito / registrado"
+      "portuguese": "inscrever-se",
+      "portugueseInfinitive": "inscrever-se",
+      "portuguesePresent": "inscreve-se",
+      "portuguesePast": "inscreveu-se",
+      "portugueseSupine": "inscrito"
     },
     "grammar": {
       "type": "verbo",
@@ -33105,11 +33068,11 @@
     "active": true,
     "term": {
       "swedish": "flytta sig",
-      "portuguese": "mover-se / sair do caminho",
-      "portugueseInfinitive": "mover-se / sair do caminho",
-      "portuguesePresent": "move-se / sai do caminho",
-      "portuguesePast": "moveu-se / saiu do caminho",
-      "portugueseSupine": "movido / saído do caminho"
+      "portuguese": "mover-se",
+      "portugueseInfinitive": "mover-se",
+      "portuguesePresent": "move-se",
+      "portuguesePast": "moveu-se",
+      "portugueseSupine": "movido"
     },
     "grammar": {
       "type": "verbo",
@@ -33300,11 +33263,11 @@
     "active": true,
     "term": {
       "swedish": "klä av sig",
-      "portuguese": "despir-se / tirar a roupa",
-      "portugueseInfinitive": "despir-se / tirar a roupa",
-      "portuguesePresent": "despe-se / tira a roupa",
-      "portuguesePast": "despiu-se / tirou a roupa",
-      "portugueseSupine": "despido / tirado a roupa"
+      "portuguese": "despir-se",
+      "portugueseInfinitive": "despir-se",
+      "portuguesePresent": "despe-se",
+      "portuguesePast": "despiu-se",
+      "portugueseSupine": "despido"
     },
     "grammar": {
       "type": "verbo",
@@ -33339,11 +33302,11 @@
     "active": true,
     "term": {
       "swedish": "klä på sig",
-      "portuguese": "vestir-se / colocar a roupa",
-      "portugueseInfinitive": "vestir-se / colocar a roupa",
-      "portuguesePresent": "veste-se / coloca a roupa",
-      "portuguesePast": "vestiu-se / colocou a roupa",
-      "portugueseSupine": "vestido / colocado a roupa"
+      "portuguese": "vestir-se",
+      "portugueseInfinitive": "vestir-se",
+      "portuguesePresent": "veste-se",
+      "portuguesePast": "vestiu-se",
+      "portugueseSupine": "vestido"
     },
     "grammar": {
       "type": "verbo",
@@ -33573,11 +33536,11 @@
     "active": true,
     "term": {
       "swedish": "skilja sig",
-      "portuguese": "divorciar-se / separar-se",
-      "portugueseInfinitive": "divorciar-se / separar-se",
-      "portuguesePresent": "divorcia-se / separa-se",
-      "portuguesePast": "divorciou-se / separou-se",
-      "portugueseSupine": "divorciado / separado"
+      "portuguese": "divorciar-se",
+      "portugueseInfinitive": "divorciar-se",
+      "portuguesePresent": "divorcia-se",
+      "portuguesePast": "divorciou-se",
+      "portugueseSupine": "divorciado"
     },
     "grammar": {
       "type": "verbo",
@@ -33843,7 +33806,7 @@
     "active": true,
     "term": {
       "swedish": "Jag vill boka en tid.",
-      "portuguese": "Quero marcar uma consulta / um horário."
+      "portuguese": "Quero marcar uma consulta."
     },
     "grammar": {
       "type": "expressão",
@@ -33944,8 +33907,78 @@
     "order": 1023,
     "active": true,
     "term": {
-      "swedish": "ont i (huvudet/magen/halsen)",
-      "portuguese": "dor na cabeça / no estômago / na garganta"
+      "swedish": "granne",
+      "portuguese": "vizinho",
+      "portuguesePlural": "vizinhos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "grannar",
+      "definiteSingular": "grannen",
+      "definitePlural": "grannarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 8,
+      "sourceTitle": "Hälsa",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1160,
+    "order": 1160,
+    "active": true,
+    "term": {
+      "swedish": "ont i magen",
+      "portuguese": "dor no estômago"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 8,
+      "sourceTitle": "Hälsa",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1161,
+    "order": 1161,
+    "active": true,
+    "term": {
+      "swedish": "ont i halsen",
+      "portuguese": "dor na garganta"
     },
     "grammar": {
       "type": "expressão",
@@ -34087,11 +34120,11 @@
     "active": true,
     "term": {
       "swedish": "slå sig",
-      "portuguese": "machucar-se / bater-se",
-      "portugueseInfinitive": "machucar-se / bater-se",
-      "portuguesePresent": "machuca-se / bate-se",
-      "portuguesePast": "machucou-se / bateu-se",
-      "portugueseSupine": "machucado / batido"
+      "portuguese": "machucar-se",
+      "portugueseInfinitive": "machucar-se",
+      "portuguesePresent": "machuca-se",
+      "portuguesePast": "machucou-se",
+      "portugueseSupine": "machucado"
     },
     "grammar": {
       "type": "verbo",
@@ -34126,11 +34159,11 @@
     "active": true,
     "term": {
       "swedish": "må illa",
-      "portuguese": "sentir náusea / estar enjoado",
-      "portugueseInfinitive": "sentir náusea / estar enjoado",
-      "portuguesePresent": "sente náusea / está enjoado",
-      "portuguesePast": "sentiu náusea / esteve enjoado",
-      "portugueseSupine": "sentido náusea / estado enjoado"
+      "portuguese": "sentir náusea",
+      "portugueseInfinitive": "sentir náusea",
+      "portuguesePresent": "sente náusea",
+      "portuguesePast": "sentiu náusea",
+      "portugueseSupine": "sentido náusea"
     },
     "grammar": {
       "type": "verbo",
@@ -34204,7 +34237,7 @@
     "active": true,
     "term": {
       "swedish": "det gör ont",
-      "portuguese": "dói / está doendo"
+      "portuguese": "dói"
     },
     "grammar": {
       "type": "expressão",
@@ -34238,8 +34271,8 @@
     "active": true,
     "term": {
       "swedish": "värktablett",
-      "portuguese": "analgésico / comprimido para dor",
-      "portuguesePlural": "analgésicos / comprimidos para dor",
+      "portuguese": "analgésico",
+      "portuguesePlural": "analgésicos",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -34274,8 +34307,8 @@
     "active": true,
     "term": {
       "swedish": "plåster",
-      "portuguese": "curativo adesivo / Band-Aid",
-      "portuguesePlural": "curativos adesivos / Band-Aids",
+      "portuguese": "Band-Aid",
+      "portuguesePlural": "Band-Aids",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -34310,10 +34343,10 @@
     "active": true,
     "term": {
       "swedish": "bli frisk",
-      "portuguese": "ficar bem / recuperar-se",
-      "portugueseInfinitive": "ficar bem / recuperar-se",
-      "portuguesePresent": "fica bem / recupera-se",
-      "portuguesePast": "ficou bem / recuperou-se",
+      "portuguese": "recuperar-se",
+      "portugueseInfinitive": "recuperar-se",
+      "portuguesePresent": "recupera-se",
+      "portuguesePast": "recuperou-se",
       "portugueseSupine": "recuperado"
     },
     "grammar": {
@@ -34384,8 +34417,8 @@
     "order": 1036,
     "active": true,
     "term": {
-      "swedish": "polisen",
-      "portuguese": "a polícia",
+      "swedish": "polis",
+      "portuguese": "polícia",
       "portuguesePlural": "as polícias",
       "portugueseGender": "feminine"
     },
@@ -34456,7 +34489,7 @@
     "order": 1038,
     "active": true,
     "term": {
-      "swedish": "brandkåren",
+      "swedish": "brandkår",
       "portuguese": "corpo de bombeiros",
       "portuguesePlural": "corpos de bombeiros",
       "portugueseGender": "masculine"
@@ -34492,7 +34525,7 @@
     "order": 1039,
     "active": true,
     "term": {
-      "swedish": "fjällräddningen",
+      "swedish": "fjällräddning",
       "portuguese": "resgate de montanha",
       "portuguesePlural": "resgates de montanha",
       "portugueseGender": "masculine"
@@ -34528,7 +34561,7 @@
     "order": 1040,
     "active": true,
     "term": {
-      "swedish": "sjöräddningen",
+      "swedish": "sjöräddning",
       "portuguese": "resgate marítimo",
       "portuguesePlural": "resgates marítimos",
       "portugueseGender": "masculine"
@@ -34565,7 +34598,7 @@
     "active": true,
     "term": {
       "swedish": "det brinner",
-      "portuguese": "há um incêndio / está pegando fogo"
+      "portuguese": "está pegando fogo"
     },
     "grammar": {
       "type": "expressão",
@@ -34701,11 +34734,11 @@
     "active": true,
     "term": {
       "swedish": "sitta fast",
-      "portuguese": "ficar preso / estar preso",
-      "portugueseInfinitive": "ficar preso / estar preso",
-      "portuguesePresent": "fica preso / está preso",
-      "portuguesePast": "ficou preso / esteve preso",
-      "portugueseSupine": "ficado preso / estado preso"
+      "portuguese": "estar preso",
+      "portugueseInfinitive": "estar preso",
+      "portuguesePresent": "está preso",
+      "portuguesePast": "esteve preso",
+      "portugueseSupine": "estado preso"
     },
     "grammar": {
       "type": "verbo",
@@ -34917,11 +34950,11 @@
     "active": true,
     "term": {
       "swedish": "larma ambulansen",
-      "portuguese": "acionar / chamar a ambulância",
-      "portugueseInfinitive": "acionar / chamar a ambulância",
-      "portuguesePresent": "aciona / chama a ambulância",
-      "portuguesePast": "acionou / chamou a ambulância",
-      "portugueseSupine": "acionado / chamado a ambulância"
+      "portuguese": "chamar a ambulância",
+      "portugueseInfinitive": "chamar a ambulância",
+      "portuguesePresent": "chama a ambulância",
+      "portuguesePast": "chamou a ambulância",
+      "portugueseSupine": "chamado"
     },
     "grammar": {
       "type": "verbo",
@@ -34956,7 +34989,7 @@
     "active": true,
     "term": {
       "swedish": "Hur gammal ...",
-      "portuguese": "Qual é a idade de ...? / Quantos anos ...?"
+      "portuguese": "Qual é a idade de ...?"
     },
     "grammar": {
       "type": "expressão",
@@ -34990,7 +35023,7 @@
     "active": true,
     "term": {
       "swedish": "några sjukdomar tidigare",
-      "portuguese": "alguma doença anterior / doenças anteriores"
+      "portuguese": "doenças anteriores"
     },
     "grammar": {
       "type": "expressão",
@@ -35024,7 +35057,7 @@
     "active": true,
     "term": {
       "swedish": "ser ganska dålig ut",
-      "portuguese": "parece estar bem mal / com aspecto ruim"
+      "portuguese": "parecer muito mal"
     },
     "grammar": {
       "type": "expressão",
@@ -35126,7 +35159,7 @@
     "active": true,
     "term": {
       "swedish": "alldeles strax",
-      "portuguese": "daqui a pouquíssimo / muito em breve"
+      "portuguese": "muito em breve"
     },
     "grammar": {
       "type": "advérbio",
@@ -35410,11 +35443,11 @@
     "active": true,
     "term": {
       "swedish": "uttrycka sympati",
-      "portuguese": "expressar solidariedade / pesar",
-      "portugueseInfinitive": "expressar solidariedade / pesar",
-      "portuguesePresent": "expressa solidariedade / pesar",
-      "portuguesePast": "expressou solidariedade / pesar",
-      "portugueseSupine": "expressado solidariedade / pesar"
+      "portuguese": "expressar condolências",
+      "portugueseInfinitive": "expressar condolências",
+      "portuguesePresent": "expressa condolências",
+      "portuguesePast": "expressou condolências",
+      "portugueseSupine": "expressado condolências"
     },
     "grammar": {
       "type": "verbo",
@@ -35516,8 +35549,42 @@
     "order": 1069,
     "active": true,
     "term": {
-      "swedish": "Jag tänker på dig/er.",
-      "portuguese": "Estou pensando em você/vocês."
+      "swedish": "Jag tänker på dig.",
+      "portuguese": "Estou pensando em você."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 8,
+      "sourceTitle": "Hälsa",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1162,
+    "order": 1162,
+    "active": true,
+    "term": {
+      "swedish": "Jag tänker på er.",
+      "portuguese": "Estou pensando em vocês."
     },
     "grammar": {
       "type": "expressão",
@@ -35720,8 +35787,42 @@
     "order": 1076,
     "active": true,
     "term": {
-      "swedish": "Varma kramar till dig/er.",
-      "portuguese": "Abraços calorosos para você/vocês."
+      "swedish": "Varma kramar till dig.",
+      "portuguese": "Abraços calorosos para você."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 8,
+      "sourceTitle": "Hälsa",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1163,
+    "order": 1163,
+    "active": true,
+    "term": {
+      "swedish": "Varma kramar till er.",
+      "portuguese": "Abraços calorosos para vocês."
     },
     "grammar": {
       "type": "expressão",
@@ -35755,7 +35856,7 @@
     "active": true,
     "term": {
       "swedish": "det är tufft",
-      "portuguese": "é difícil / está difícil"
+      "portuguese": "é difícil"
     },
     "grammar": {
       "type": "expressão",
@@ -35823,7 +35924,7 @@
     "active": true,
     "term": {
       "swedish": "naturligtvis",
-      "portuguese": "naturalmente / claro"
+      "portuguese": "claro"
     },
     "grammar": {
       "type": "advérbio",
@@ -35932,7 +36033,7 @@
     "active": true,
     "term": {
       "swedish": "det kommer att bli",
-      "portuguese": "vai ser / ficará"
+      "portuguese": "vai ser"
     },
     "grammar": {
       "type": "expressão",
@@ -36000,7 +36101,7 @@
     "active": true,
     "term": {
       "swedish": "jobbigt",
-      "portuguese": "difícil / trabalhoso"
+      "portuguese": "difícil"
     },
     "grammar": {
       "type": "adjetivo",
@@ -36034,7 +36135,7 @@
     "active": true,
     "term": {
       "swedish": "vad snäll du är",
-      "portuguese": "como você é gentil / que gentil da sua parte"
+      "portuguese": "que gentil da sua parte"
     },
     "grammar": {
       "type": "expressão",
@@ -36136,7 +36237,7 @@
     "active": true,
     "term": {
       "swedish": "i natt",
-      "portuguese": "esta noite / de madrugada"
+      "portuguese": "esta noite"
     },
     "grammar": {
       "type": "expressão",
@@ -37257,7 +37358,7 @@
     "active": true,
     "term": {
       "swedish": "förstoppning",
-      "portuguese": "prisão de ventre / constipação",
+      "portuguese": "prisão de ventre",
       "portuguesePlural": "constipações",
       "portugueseGender": "feminine"
     },
@@ -37291,8 +37392,8 @@
     "active": true,
     "term": {
       "swedish": "akutmottagning",
-      "portuguese": "pronto-socorro / emergência",
-      "portuguesePlural": "prontos-socorros / emergências",
+      "portuguese": "pronto-socorro",
+      "portuguesePlural": "prontos-socorros",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -37427,8 +37528,8 @@
     "active": true,
     "term": {
       "swedish": "spruta",
-      "portuguese": "seringa / injeção",
-      "portuguesePlural": "seringas / injeções",
+      "portuguese": "injeção",
+      "portuguesePlural": "injeções",
       "portugueseGender": "feminine"
     },
     "grammar": {
@@ -37561,7 +37662,7 @@
     "active": true,
     "term": {
       "swedish": "frisk",
-      "portuguese": "saudável / bem"
+      "portuguese": "saudável"
     },
     "grammar": {
       "type": "adjetivo",
@@ -37593,7 +37694,7 @@
     "active": true,
     "term": {
       "swedish": "hungrig",
-      "portuguese": "faminto / com fome"
+      "portuguese": "com fome"
     },
     "grammar": {
       "type": "adjetivo",
@@ -37625,7 +37726,7 @@
     "active": true,
     "term": {
       "swedish": "törstig",
-      "portuguese": "sedento / com sede"
+      "portuguese": "com sede"
     },
     "grammar": {
       "type": "adjetivo",
@@ -37657,7 +37758,7 @@
     "active": true,
     "term": {
       "swedish": "glad",
-      "portuguese": "feliz / contente"
+      "portuguese": "feliz"
     },
     "grammar": {
       "type": "adjetivo",
@@ -37721,7 +37822,7 @@
     "active": true,
     "term": {
       "swedish": "arg",
-      "portuguese": "zangado / bravo"
+      "portuguese": "zangado"
     },
     "grammar": {
       "type": "adjetivo",
@@ -37753,7 +37854,7 @@
     "active": true,
     "term": {
       "swedish": "rädd",
-      "portuguese": "assustado / com medo"
+      "portuguese": "com medo"
     },
     "grammar": {
       "type": "adjetivo",
@@ -37883,8 +37984,8 @@
     "active": true,
     "term": {
       "swedish": "förälder",
-      "portuguese": "pai ou mãe / progenitor",
-      "portuguesePlural": "pais / progenitores",
+      "portuguese": "progenitor",
+      "portuguesePlural": "progenitores",
       "portugueseGender": "masculine"
     },
     "grammar": {
@@ -37912,46 +38013,12 @@
     }
   },
   {
-    "id": 1146,
-    "order": 1146,
-    "active": true,
-    "term": {
-      "swedish": "föräldrar",
-      "portuguese": "pais",
-      "portuguesePlural": "pais",
-      "portugueseGender": "masculine"
-    },
-    "grammar": {
-      "type": "substantivo",
-      "gender": "en",
-      "plural": "föräldrar",
-      "definiteSingular": "föräldern",
-      "definitePlural": "föräldrarna",
-      "infinitive": null,
-      "present": null,
-      "past": null,
-      "supine": null
-    },
-    "classification": {
-      "themes": [
-        "família e pessoas"
-      ],
-      "chapter": 8,
-      "sourceTitle": null
-    },
-    "media": {
-      "audio": {
-        "src": null
-      }
-    }
-  },
-  {
     "id": 1147,
     "order": 1147,
     "active": true,
     "term": {
       "swedish": "varsågod",
-      "portuguese": "de nada / aqui está"
+      "portuguese": "de nada"
     },
     "grammar": {
       "type": "expressão",
@@ -37983,7 +38050,7 @@
     "active": true,
     "term": {
       "swedish": "förlåt",
-      "portuguese": "desculpe / perdão"
+      "portuguese": "desculpe"
     },
     "grammar": {
       "type": "expressão",
@@ -38079,10 +38146,10 @@
     "active": true,
     "term": {
       "swedish": "beställa",
-      "portuguese": "pedir / fazer um pedido",
-      "portugueseInfinitive": "pedir / fazer um pedido",
-      "portuguesePresent": "pede / faz um pedido",
-      "portuguesePast": "pediu / fez um pedido",
+      "portuguese": "pedir",
+      "portugueseInfinitive": "pedir",
+      "portuguesePresent": "pede",
+      "portuguesePast": "pediu",
       "portugueseSupine": "pedido"
     },
     "grammar": {
