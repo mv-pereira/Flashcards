@@ -3057,9 +3057,6 @@ function updateThemeButtonText() {
   const themeColorMeta =
     document.querySelector('meta[name="theme-color"]');
 
-  const colorSchemeMeta =
-    document.querySelector('meta[name="color-scheme"]');
-
   const isDark =
     document.documentElement.classList.contains("dark-theme");
 
@@ -3072,13 +3069,6 @@ function updateThemeButtonText() {
         "#101A2B"
       );
     }
-
-    if (colorSchemeMeta) {
-      colorSchemeMeta.setAttribute(
-        "content",
-        "dark"
-      );
-    }
   } else {
     themeToggleButton.textContent = "Tema escuro";
 
@@ -3086,13 +3076,6 @@ function updateThemeButtonText() {
       themeColorMeta.setAttribute(
         "content",
         "#FFF7D8"
-      );
-    }
-
-    if (colorSchemeMeta) {
-      colorSchemeMeta.setAttribute(
-        "content",
-        "light"
       );
     }
   }
