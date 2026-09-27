@@ -1261,6 +1261,18 @@ async function holdCurrentNewWord() {
   isManagingNewWordsDeck = true;
   updateHeldNewWordsUI();
 
+  if (answerVisible) {
+    answerVisible = false;
+
+    flashcard.classList.remove(
+      "flipped",
+      "correct-preview",
+      "wrong-preview"
+    );
+
+    await wait(220);
+  }
+
   const cardId = String(currentCard.id);
 
   heldNewWordIds.add(cardId);
@@ -1367,8 +1379,6 @@ async function holdCurrentNewWord() {
     message.textContent =
       `Palavra guardada. ${heldNewWordIds.size} palavra(s) fora do deck.`;
   }
-
-  await wait(180);
 
   isManagingNewWordsDeck = false;
   updateHeldNewWordsUI();
@@ -1883,7 +1893,7 @@ function revealAnswer() {
     return;
   }
 
-  if (isChangingCard) {
+  if (isChangingCard || isManagingNewWordsDeck) {
     return;
   }
 
