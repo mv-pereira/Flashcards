@@ -3066,7 +3066,7 @@ function updateThemeButtonText() {
     if (themeColorMeta) {
       themeColorMeta.setAttribute(
         "content",
-        "#FFF7D8"
+        "#101A2B"
       );
     }
   } else {
