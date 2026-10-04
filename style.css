@@ -177,6 +177,23 @@ html.dark-theme .button-secondary:active:not(:disabled) {
   background: #222A36;
 }
 
+/* Botão "Revisar erros" */
+#wrongWordsButton {
+  background: #B95656;
+}
+
+#wrongWordsButton:active:not(:disabled) {
+  background: #9E4646;
+}
+
+html.dark-theme #wrongWordsButton {
+  background: #7F4145;
+}
+
+html.dark-theme #wrongWordsButton:active:not(:disabled) {
+  background: #69363A;
+}
+
 .performance-box,
 .time-box {
   background: var(--card);

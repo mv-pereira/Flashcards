@@ -3701,7 +3701,7 @@ function resetExerciseScreen() {
   finishExerciseButton.classList.remove("hidden");
 
   copyExerciseErrorsButton.classList.add("hidden");
-  copyExerciseErrorsButton.textContent = "Copiar meus erros";
+  copyExerciseErrorsButton.textContent = "Copiar diagnóstico";
 
   newExerciseButton.classList.add("hidden");
 
@@ -3723,7 +3723,7 @@ function generateExercise() {
     exerciseConsultedVocabulary = new Map();
 
     copyExerciseErrorsButton.classList.add("hidden");
-    copyExerciseErrorsButton.textContent = "Copiar meus erros";
+    copyExerciseErrorsButton.textContent = "Copiar diagnóstico";
 
     renderExercise();
 
@@ -5608,14 +5608,6 @@ function registerExerciseVocabularyConsultation(
   /*
    * Palavras extraídas de uma expressão
    * precisam permanecer independentes.
-   *
-   * Exemplo:
-   *
-   * "gärna" encontrada dentro de
-   * "Jag kommer gärna"
-   *
-   * não deve ser agrupada como se a
-   * expressão inteira tivesse sido clicada.
    */
   const isExpressionWord =
     entry.source === "expression";
@@ -5651,6 +5643,26 @@ function registerExerciseVocabularyConsultation(
       visibleForm
     );
 
+    /*
+     * Guarda também o tipo gramatical
+     * da forma consultada quando existir.
+     *
+     * Exemplos:
+     * present
+     * past
+     * supine
+     * plural
+     */
+    if (!(current.formTypes instanceof Set)) {
+      current.formTypes = new Set();
+    }
+
+    if (entry.formType) {
+      current.formTypes.add(
+        String(entry.formType)
+      );
+    }
+
     return;
   }
 
@@ -5666,6 +5678,12 @@ function registerExerciseVocabularyConsultation(
       forms: new Set([
         visibleForm
       ]),
+
+      formTypes: new Set(
+        entry.formType ?
+          [String(entry.formType)] :
+          []
+      ),
 
       expression: isExpressionWord ?
         String(
@@ -6263,7 +6281,7 @@ function finishExercise() {
   );
 
   copyExerciseErrorsButton.textContent =
-    "Copiar meus erros";
+    "Copiar diagnóstico";
 
   copyExerciseErrorsButton.classList.toggle(
     "hidden",
@@ -6290,113 +6308,97 @@ function finishExercise() {
   });
 }
 
-function getExerciseReviewCorrection(
-  userAnswer,
-  expectedAnswer
+function getExerciseConsultedVocabularyForCopy() {
+  return Array.from(
+    exerciseConsultedVocabulary.values()
+  )
+    .map((item) => {
+      const forms =
+        item.forms instanceof Set ?
+        Array.from(item.forms)
+          .map((form) =>
+            String(form || "").trim()
+          )
+          .filter(Boolean) :
+        [];
+
+      const formTypes =
+        item.formTypes instanceof Set ?
+        Array.from(item.formTypes)
+          .map((formType) =>
+            String(formType || "").trim()
+          )
+          .filter(Boolean) :
+        [];
+
+      return {
+        swedish:
+          String(
+            item.swedish || ""
+          ).trim(),
+
+        portuguese:
+          String(
+            item.portuguese || ""
+          ).trim(),
+
+        count:
+          Number(item.count) || 0,
+
+        forms,
+
+        formTypes,
+
+        expression:
+          String(
+            item.expression || ""
+          ).trim()
+      };
+    })
+    .filter(
+      (item) =>
+        item.swedish ||
+        item.forms.length > 0
+    )
+    .sort((a, b) => {
+      /*
+       * Mais consultadas primeiro.
+       */
+      if (b.count !== a.count) {
+        return b.count - a.count;
+      }
+
+      return a.swedish.localeCompare(
+        b.swedish,
+        "sv"
+      );
+    });
+}
+
+function getExerciseDiagnosticFeedback(
+  result
 ) {
-  const userWords =
-    String(userAnswer || "")
-    .trim()
-    .split(/\s+/)
-    .map((word) => normalizeAnswer(word))
-    .filter(Boolean);
+  const ignoredMessages = new Set([
+    "Resposta correta.",
+    "Resposta incorreta.",
+    "Questão não respondida.",
+    "Subitem não respondido."
+  ]);
 
-  const expectedWordEntries =
-    String(expectedAnswer || "")
-    .trim()
-    .split(/\s+/)
-    .map((word) => ({
-      original: word,
-      normalized: normalizeAnswer(word)
-    }))
-    .filter((item) => item.normalized);
-
-  const expectedWords =
-    expectedWordEntries.map(
-      (item) => item.normalized
+  return (
+    Array.isArray(result?.feedback) ?
+      result.feedback :
+      []
+  )
+    .map((message) =>
+      String(message || "").trim()
+    )
+    .filter(
+      (message) =>
+        message &&
+        !ignoredMessages.has(message)
     );
-
-  if (expectedWords.length === 0) {
-    return "";
-  }
-
-  if (userWords.length === 0) {
-    return String(expectedAnswer || "").trim();
-  }
-
-  const comparison =
-    getExerciseWordComparison(
-      userWords,
-      expectedWords
-    );
-
-  const correctedIndexes = [
-    ...new Set(
-      comparison.operations
-      .filter(
-        (operation) =>
-        (
-          operation.type === "substitute" ||
-          operation.type === "insert"
-        ) &&
-        Number.isInteger(
-          operation.expectedIndex
-        )
-      )
-      .map(
-        (operation) =>
-        operation.expectedIndex
-      )
-    )
-  ].sort((a, b) => a - b);
-
-  if (correctedIndexes.length === 0) {
-    return String(expectedAnswer || "").trim();
-  }
-
-  return correctedIndexes
-    .map(
-      (index) =>
-      expectedWordEntries[index]?.original ||
-      expectedWords[index]
-    )
-    .filter(Boolean)
-    .join(" ");
 }
-
-
-function getExerciseConsultedWordsForCopy() {
-  return [
-    ...new Set(
-      Array.from(
-        exerciseConsultedVocabulary.values()
-      )
-      .flatMap((item) => {
-        const forms =
-          item.forms instanceof Set ?
-          Array.from(item.forms) :
-          [];
-
-        if (forms.length > 0) {
-          return forms;
-        }
-
-        return item.swedish ?
-          [item.swedish] :
-          [];
-      })
-      .map(
-        (word) =>
-        String(word || "").trim()
-      )
-      .filter(Boolean)
-    )
-  ].sort(
-    (a, b) =>
-    a.localeCompare(b, "sv")
-  );
-}
-
 
 function buildExerciseErrorsCopyText(
   errorEntries
@@ -6406,32 +6408,112 @@ function buildExerciseErrorsCopyText(
     errorEntries :
     [];
 
-  const consultedWords =
-    getExerciseConsultedWordsForCopy();
+  const consultedVocabulary =
+    getExerciseConsultedVocabularyForCopy();
 
   if (
     errors.length === 0 &&
-    consultedWords.length === 0
+    consultedVocabulary.length === 0
   ) {
     return "";
   }
 
-  const lines = [
-    "Revisão",
-    ""
-  ];
+  const attemptedErrors = [];
+  const unansweredItems = [];
+
+  /*
+   * Converte cada erro do exercício em
+   * uma unidade de diagnóstico.
+   */
+  const registerDiagnosticItem = ({
+    question,
+    questionIndex,
+    itemResult,
+    userAnswer,
+    subitem = null
+  }) => {
+    if (!question || !itemResult) {
+      return;
+    }
+
+    const diagnosticItem = {
+      questionNumber:
+        Number.isInteger(questionIndex) ?
+        questionIndex + 1 :
+        null,
+
+      type:
+        String(
+          question.type || ""
+        ).trim(),
+
+      task:
+        String(
+          question.prompt || ""
+        ).trim(),
+
+      subitemLetter:
+        subitem?.letter ?
+        String(subitem.letter) :
+        "",
+
+      item:
+        String(
+          subitem?.prompt || ""
+        ).trim(),
+
+      userAnswer:
+        String(
+          userAnswer || ""
+        ).trim(),
+
+      expectedAnswer:
+        String(
+          itemResult.expectedAnswer || ""
+        ).trim(),
+
+      status:
+        String(
+          itemResult.status || ""
+        ).trim(),
+
+      feedback:
+        getExerciseDiagnosticFeedback(
+          itemResult
+        ),
+
+      explanation:
+        String(
+          question.explanation || ""
+        ).trim()
+    };
+
+    if (
+      diagnosticItem.status ===
+      "unanswered"
+    ) {
+      unansweredItems.push(
+        diagnosticItem
+      );
+    } else {
+      attemptedErrors.push(
+        diagnosticItem
+      );
+    }
+  };
 
   errors.forEach(
     ({
       question,
+      questionIndex,
       userAnswer,
       result
     }) => {
       /*
-       * Questões escritas com subitens:
-       * não copia número da questão,
-       * letra, instrução, resposta do usuário
-       * nem explicação do erro.
+       * Questão escrita agrupada.
+       *
+       * Cada subitem errado vira uma
+       * evidência independente.
        */
       if (
         question.type === "ESCRITA" &&
@@ -6441,32 +6523,27 @@ function buildExerciseErrorsCopyText(
         result.subitemResults
           .filter(
             (subitemResult) =>
-            subitemResult.status !==
-            "correct"
+              subitemResult.status !==
+              "correct"
           )
           .forEach(
             (subitemResult) => {
               const subitem =
                 question.subitems.find(
                   (item) =>
-                  item.letter ===
-                  subitemResult.letter
+                    item.letter ===
+                    subitemResult.letter
                 );
 
-              if (subitem?.prompt) {
-                lines.push(
-                  subitem.prompt
-                );
-              }
-
-              lines.push(
-                `-> ${getExerciseReviewCorrection(
+              registerDiagnosticItem({
+                question,
+                questionIndex,
+                itemResult:
+                  subitemResult,
+                userAnswer:
                   subitemResult.userAnswer,
-                  subitemResult.expectedAnswer
-                )}`
-              );
-
-              lines.push("");
+                subitem
+              });
             }
           );
 
@@ -6474,46 +6551,260 @@ function buildExerciseErrorsCopyText(
       }
 
       /*
-       * Questões sem subitens.
+       * Questões individuais.
+       *
+       * Para MULTIPLA e VF, converte a
+       * letra marcada para o texto que
+       * apareceu para o usuário.
        */
-      if (question.prompt) {
-        lines.push(
-          question.prompt
-        );
-      }
-
-      const correction =
-        question.type === "ESCRITA" ?
-        getExerciseReviewCorrection(
-          userAnswer,
-          result.expectedAnswer
+      const displayedUserAnswer =
+        userAnswer ?
+        getExerciseDisplayedUserAnswer(
+          question,
+          userAnswer
         ) :
-        result.expectedAnswer;
+        "";
 
-      lines.push(
-        `-> ${correction}`
-      );
-
-      lines.push("");
+      registerDiagnosticItem({
+        question,
+        questionIndex,
+        itemResult: result,
+        userAnswer:
+          displayedUserAnswer
+      });
     }
   );
 
-  /*
-   * Adiciona somente as palavras que
-   * foram realmente consultadas.
-   * Sem tradução e sem quantidade.
-   */
-  if (consultedWords.length > 0) {
+  const lines = [
+    "[DIAGNOSTICO_REVISAO_SUECO]"
+  ];
+
+  const exerciseName =
+    String(
+      currentExercise?.title || ""
+    ).trim();
+
+  if (exerciseName) {
     lines.push(
-      "Palavras consultadas:"
+      `TITULO_EXERCICIO: ${exerciseName}`
+    );
+  }
+
+  lines.push(
+    `ERROS_TENTADOS: ${attemptedErrors.length}`,
+    `NAO_RESPONDIDAS: ${unansweredItems.length}`,
+    `ITENS_CONSULTADOS: ${consultedVocabulary.length}`,
+    ""
+  );
+
+  /*
+   * Função auxiliar apenas para montar
+   * o texto exportado.
+   */
+  const appendDiagnosticItem = (
+    item,
+    index,
+    prefix,
+    includeUserAnswer
+  ) => {
+    lines.push(
+      `${prefix} ${index + 1}`
     );
 
-    consultedWords.forEach(
-      (word) => {
-        lines.push(word);
+    if (item.questionNumber != null) {
+      lines.push(
+        `QUESTAO_ORIGINAL: ${item.questionNumber}`
+      );
+    }
+
+    if (item.type) {
+      lines.push(
+        `TIPO: ${item.type}`
+      );
+    }
+
+    if (item.task) {
+      lines.push("TAREFA:");
+      lines.push(item.task);
+    }
+
+    if (item.subitemLetter) {
+      lines.push(
+        `SUBITEM: ${item.subitemLetter}`
+      );
+    }
+
+    if (item.item) {
+      lines.push("ITEM:");
+      lines.push(item.item);
+    }
+
+    if (includeUserAnswer) {
+      lines.push(
+        `MINHA_RESPOSTA: ${
+          item.userAnswer ||
+          "(vazia)"
+        }`
+      );
+    }
+
+    if (item.expectedAnswer) {
+      lines.push(
+        `RESPOSTA_ESPERADA: ${item.expectedAnswer}`
+      );
+    }
+
+    if (item.status) {
+      lines.push(
+        `STATUS_APP: ${item.status}`
+      );
+    }
+
+    if (item.feedback.length > 0) {
+      lines.push(
+        "FEEDBACK_APP:"
+      );
+
+      item.feedback.forEach(
+        (message) => {
+          lines.push(
+            `- ${message}`
+          );
+        }
+      );
+    }
+
+    if (item.explanation) {
+      lines.push(
+        "EXPLICACAO_EXERCICIO:"
+      );
+
+      lines.push(
+        item.explanation
+      );
+    }
+
+    lines.push("");
+  };
+
+  /*
+   * ERROS EFETIVAMENTE TENTADOS
+   */
+  if (attemptedErrors.length > 0) {
+    lines.push(
+      "[ERROS_TENTADOS]",
+      ""
+    );
+
+    attemptedErrors.forEach(
+      (item, index) => {
+        appendDiagnosticItem(
+          item,
+          index,
+          "ERRO",
+          true
+        );
       }
     );
   }
+
+  /*
+   * QUESTÕES PULADAS
+   *
+   * Permanecem separadas porque não
+   * sabemos se representam dúvida real.
+   */
+  if (unansweredItems.length > 0) {
+    lines.push(
+      "[NAO_RESPONDIDAS]",
+      ""
+    );
+
+    unansweredItems.forEach(
+      (item, index) => {
+        appendDiagnosticItem(
+          item,
+          index,
+          "NAO_RESPONDIDA",
+          false
+        );
+      }
+    );
+  }
+
+  /*
+   * VOCABULÁRIO CONSULTADO
+   */
+  if (consultedVocabulary.length > 0) {
+    lines.push(
+      "[VOCABULARIO_CONSULTADO]",
+      ""
+    );
+
+    consultedVocabulary.forEach(
+      (item, index) => {
+        lines.push(
+          `CONSULTA ${index + 1}`
+        );
+
+        const lexicalItem =
+          item.swedish ||
+          item.forms[0] ||
+          "";
+
+        if (lexicalItem) {
+          lines.push(
+            `LEMA_OU_ITEM: ${lexicalItem}`
+          );
+        }
+
+        lines.push(
+          `CONSULTAS: ${item.count}`
+        );
+
+        if (item.forms.length > 0) {
+          lines.push(
+            `FORMAS_CONSULTADAS: ${item.forms.join(", ")}`
+          );
+        }
+
+        if (
+          item.formTypes.length > 0
+        ) {
+          lines.push(
+            `TIPOS_DE_FORMA: ${item.formTypes.join(", ")}`
+          );
+        }
+
+        /*
+         * Se veio de uma expressão,
+         * a tradução cadastrada pertence
+         * à expressão inteira.
+         */
+        if (item.expression) {
+          lines.push(
+            `EXPRESSAO_ORIGEM: ${item.expression}`
+          );
+
+          if (item.portuguese) {
+            lines.push(
+              `TRADUCAO_DA_EXPRESSAO: ${item.portuguese}`
+            );
+          }
+        } else if (item.portuguese) {
+          lines.push(
+            `TRADUCAO: ${item.portuguese}`
+          );
+        }
+
+        lines.push("");
+      }
+    );
+  }
+
+  lines.push(
+    "[FIM_DIAGNOSTICO]"
+  );
 
   return lines
     .join("\n")
@@ -6531,7 +6822,7 @@ async function copyExerciseErrors() {
     );
 
     copyExerciseErrorsButton.textContent =
-      "Erros copiados";
+      "Diagnóstico copiado";
   } catch (error) {
     console.error(
       "Não foi possível copiar pelo Clipboard API:",
@@ -6569,7 +6860,7 @@ async function copyExerciseErrors() {
       }
 
       copyExerciseErrorsButton.textContent =
-        "Erros copiados";
+        "Diagnóstico copiado";
     } catch (fallbackError) {
       console.error(
         "Também não foi possível copiar pelo método alternativo:",
