@@ -14625,7 +14625,7 @@
     "active": true,
     "term": {
       "swedish": "böra",
-      "portuguese": "dever; seria recomendável",
+      "portuguese": "dever; ser recomendável",
       "portugueseInfinitive": "dever; ser recomendável",
       "portuguesePresent": "deve; é recomendável",
       "portuguesePast": "deveria; seria recomendável",
@@ -15906,8 +15906,8 @@
     "order": 477,
     "active": true,
     "term": {
-      "swedish": "träffar",
-      "portuguese": "encontra / encontra-se com",
+      "swedish": "träffa",
+      "portuguese": "encontrar / encontrar-se com",
       "portugueseInfinitive": "encontrar / encontrar-se com",
       "portuguesePresent": "encontra / encontra-se com",
       "portuguesePast": "encontrou / encontrou-se com",
@@ -16435,8 +16435,8 @@
     "order": 493,
     "active": true,
     "term": {
-      "swedish": "gäster",
-      "portuguese": "convidados / convidadas",
+      "swedish": "gäst",
+      "portuguese": "convidado",
       "portuguesePlural": "convidados",
       "portugueseGender": "masculine"
     },
@@ -34954,7 +34954,7 @@
       "portugueseInfinitive": "chamar a ambulância",
       "portuguesePresent": "chama a ambulância",
       "portuguesePast": "chamou a ambulância",
-      "portugueseSupine": "chamado"
+      "portugueseSupine": "chamado a ambulância"
     },
     "grammar": {
       "type": "verbo",
