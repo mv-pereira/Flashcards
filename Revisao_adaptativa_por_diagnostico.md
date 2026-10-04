@@ -87,6 +87,44 @@ Se eu informar um intervalo de capítulos, respeite-o.
 
 Se `Questões.md` exigir `words.json` e ele não estiver disponível, peça o arquivo antes de gerar o exercício.
 
+## Formato específico da revisão adaptativa
+
+A revisão adaptativa deve ser focada diretamente em QUESTÕES.
+
+NÃO crie bloco `[TEXTO]` nesta modalidade.
+
+Não produza texto principal, narrativa longa, diálogo de leitura ou questões de compreensão dependentes de um texto novo.
+
+A estrutura deve ser:
+
+`[EXERCICIO]`
+
+`TITULO: ...`
+
+um conjunto de blocos `[QUESTAO]`
+
+`[FIM]`
+
+Use principalmente:
+
+- `TIPO: MULTIPLA`;
+- `TIPO: ESCRITA` individual;
+- `TIPO: ESCRITA` com vários subitens `a)`, `b)`, `c)` etc.;
+- `TIPO: VF` quando for pedagogicamente útil para contraste ou reconhecimento.
+
+Dê preferência a questões que obriguem a recuperar, distinguir ou produzir as formas que o diagnóstico mostrou como frágeis.
+
+Questões escritas agrupadas são especialmente apropriadas quando vários erros pertencem à mesma habilidade, por exemplo:
+
+- vários pretéritos;
+- vários plurais;
+- vários imperativos;
+- vários pronomes reflexivos;
+- várias formas definidas;
+- vários contrastes entre presente, pretérito e supino.
+
+Não use um texto de leitura apenas para contextualizar artificialmente uma dificuldade. Quando contexto for útil, coloque uma frase curta diretamente no enunciado da questão.
+
 ## Como criar a nova revisão
 
 Produza questões novas e varie, quando apropriado:
@@ -95,17 +133,19 @@ Produza questões novas e varie, quando apropriado:
 - produção;
 - transformação;
 - contraste entre formas semelhantes;
-- frases completas;
+- frases curtas;
 - itens agrupados;
 - múltipla escolha;
 - verdadeiro/falso;
-- uso contextual.
+- uso contextual dentro do próprio enunciado.
 
 Quando uma dificuldade aparecer várias vezes, crie mais de uma oportunidade de praticá-la em contextos diferentes.
 
 Evite transformar todos os erros em uma sequência mecânica de `palavra antiga → mesma resposta correta`.
 
 Prefira transferência do conhecimento para material novo.
+
+Não desperdice questões com compreensão de texto genérica quando o diagnóstico mostra uma dificuldade gramatical ou lexical específica.
 
 ## Não recompensar o erro
 
