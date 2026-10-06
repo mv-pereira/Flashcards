@@ -1621,6 +1621,10 @@ function getAvailableVerbForms(card) {
     forms.push("infinitive");
   }
 
+  if (card.grammar?.present && card.term?.portuguesePresent) {
+    forms.push("present");
+  }
+
   if (card.grammar?.past && card.term?.portuguesePast) {
     forms.push("past");
   }
