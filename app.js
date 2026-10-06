@@ -3523,6 +3523,13 @@ function createWordGrammarDetails(card) {
       });
     }
 
+    if (grammar.imperative) {
+      rows.push({
+        label: "Imperativo",
+        value: grammar.imperative
+      });
+    }
+
     if (grammar.present) {
       rows.push({
         label: "Presente",
