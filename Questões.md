@@ -2560,7 +2560,7 @@ Após esta especificação, utilizarei normalmente um pedido semelhante a:
 
 Use o arquivo `words.json` anexado.
 
-CAPÍTULOS: 0 até 8 (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
+CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
 
 QUANTIDADE DE TEXTOS: Dois (02) textos com temas diferentes
 
