@@ -1,6 +1,6 @@
 # ESPECIFICAÇÃO OFICIAL PARA GERAÇÃO DE EXERCÍCIOS DO APP DE SUECO
 
-Vou fornecer um arquivo `words.json`.
+Vou fornecer um arquivo `words.json`. Opcionalmente, também poderei enviar `Sumário_Gramatical.md`, conforme a regra condicional da seção 0.3.
 
 Sua tarefa é criar um exercício de sueco compatível com meu aplicativo, obedecendo rigorosamente às regras abaixo.
 
@@ -169,6 +169,37 @@ c) ...
 RESPOSTA: a=<resposta em sueco>; b=<resposta em sueco>; c=<resposta em sueco>
 
 Se qualquer exemplo estrutural posterior desta especificação mostrar uma questão TIPO: ESCRITA sem a linha de exemplo, considere esse exemplo estrutural incompleto e aplique obrigatoriamente esta seção.
+
+---
+
+
+# 0.3 USO OPCIONAL DO `Sumário_Gramatical.md` PARA INSPIRAÇÃO GRAMATICAL
+
+Esta seção estabelece uma regra ESTRITAMENTE CONDICIONAL. Ela só se aplica quando o arquivo `Sumário_Gramatical.md` for efetivamente enviado junto dos materiais do pedido atual de geração do exercício e seu conteúdo estiver acessível para consulta.
+
+## SE O `Sumário_Gramatical.md` FOR ENVIADO JUNTO
+
+1. Consulte o arquivo como **referência pedagógica adicional** para identificar quais conteúdos gramaticais são ensinados nos capítulos compreendidos pelo intervalo solicitado.
+2. Na elaboração das questões gramaticais e estruturais, **inspire-se nos assuntos e nas habilidades gramaticais** descritos para esses capítulos. Isso pode orientar a seleção de exercícios de conjugação, concordância, transformação, ordem das palavras, preenchimento e outras modalidades já permitidas por esta especificação.
+3. Dê destaque aos assuntos do **capítulo mais alto do intervalo solicitado**. Os conteúdos dos capítulos anteriores autorizados podem ser retomados livremente, como repertório cumulativo, sem hierarquia entre eles e sem obrigação de abordar cada capítulo.
+4. Use apenas tópicos gramaticais descritos para capítulos **dentro do intervalo autorizado**. O fato de o sumário incluir capítulos posteriores não autoriza antecipar seus conteúdos.
+5. O sumário serve para **escolher e contextualizar os objetivos gramaticais**, NÃO para liberar novas palavras. Todo vocabulário sueco empregado em textos, frases, alternativas, exemplos e respostas continua sujeito exclusivamente às regras de `words.json` e às exceções já previstas nas seções 1 a 1.5.
+6. Não copie frases, exercícios, exemplos ou listas de palavras do sumário. Crie material original com o vocabulário permitido, respeitando também a proibição de reutilização dos exemplos desta própria especificação.
+7. Não é necessário criar uma questão para cada tópico do sumário. Selecione os tópicos que proporcionem exercícios úteis, variados, apropriados ao nível estudado e compatíveis com o vocabulário efetivamente disponível.
+8. Não mude por causa do sumário a quantidade de questões solicitada, a proporção entre compreensão e gramática, a sintaxe de importação do aplicativo, os tipos de questões, a organização dos textos, o cadastro de respostas ou qualquer outra regra desta especificação.
+9. Se o sumário não trouxer informações suficientes sobre algum capítulo autorizado, complemente a seleção da maneira normalmente prescrita neste documento; **não invente** conteúdos como se estivessem descritos no sumário.
+
+## SE O `Sumário_Gramatical.md` NÃO FOR ENVIADO JUNTO
+
+**Ignore integralmente esta possibilidade e siga o `Questões.md` exatamente como já funcionava antes da inclusão da seção 0.3.**
+
+- Crie os exercícios gramaticais com base no `words.json`, no intervalo de capítulos informado, no pedido atual e nas demais regras já existentes.
+- Continue dando foco ao capítulo mais alto e fazendo revisão cumulativa livre dos anteriores, como determinado nas seções 1.6 e 4.
+- Não exija, não solicite e não espere o envio do sumário para gerar o exercício.
+- Não presuma que o sumário esteja disponível só porque seu nome aparece neste documento ou porque ele foi enviado em outra conversa ou pedido.
+- Se um arquivo com esse nome for anexado, mas seu conteúdo estiver inacessível ou ilegível, mantenha o comportamento padrão, sem basear questões em conteúdos não verificados.
+
+**Regra de decisão:** sumário anexado e legível no pedido atual → inspiração gramatical adicional; sumário ausente ou inacessível → comportamento original sem nenhuma mudança.
 
 ---
 
@@ -676,6 +707,8 @@ Todos os capítulos anteriores pertencentes ao intervalo autorizado devem funcio
 Não atribua segunda prioridade automática ao capítulo imediatamente anterior.
 
 Antes de criar as questões:
+
+**Aplique a seção 0.3 apenas se `Sumário_Gramatical.md` tiver sido enviado junto e puder ser consultado. Na ausência desse arquivo, execute os passos abaixo exatamente como antes, sem qualquer nova exigência.**
 
 1. examine o capítulo mais alto;
 2. identifique o novo vocabulário e os novos grupos gramaticais ou funcionais presentes nele;
