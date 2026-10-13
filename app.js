@@ -138,6 +138,7 @@ const repeatSessionButton = document.querySelector("#repeatSessionButton");
 const newSessionButton = document.querySelector("#newSessionButton");
 
 const summaryTotal = document.querySelector("#summaryTotal");
+const summaryUnique = document.querySelector("#summaryUnique");
 const summaryCorrect = document.querySelector("#summaryCorrect");
 const summaryWrong = document.querySelector("#summaryWrong");
 const summaryCorrectRate = document.querySelector("#summaryCorrectRate");
@@ -2331,9 +2332,11 @@ function showSummary() {
   showScreen(summaryScreen);
 
   const total = correctCount + wrongCount;
+  const uniqueTotal = new Set(sessionAnswers.map((answer) => String(answer.cardId))).size;
   const correctRate = total === 0 ? 0 : Math.round((correctCount / total) * 100);
 
   summaryTotal.textContent = total;
+  summaryUnique.textContent = uniqueTotal;
   summaryCorrect.textContent = correctCount;
   summaryWrong.textContent = wrongCount;
   summaryCorrectRate.textContent = `${correctRate}%`;
