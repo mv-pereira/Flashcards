@@ -18104,7 +18104,7 @@
     "active": true,
     "term": {
       "swedish": "tro",
-      "portuguese": "acreditar",
+      "portuguese": "acreditar; achar que (suposição)",
       "portugueseInfinitive": "acreditar",
       "portuguesePresent": "acredita",
       "portuguesePast": "acreditou",
@@ -38480,7 +38480,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Sv-r%C3%B6d.ogg"
+        "src": null
       }
     }
   },
@@ -38514,7 +38514,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sv-vit.ogg"
+        "src": null
       }
     }
   },
@@ -38550,7 +38550,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sv-knut.ogg"
+        "src": null
       }
     }
   },
@@ -38584,7 +38584,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sv-tr%C3%A5kig.ogg"
+        "src": null
       }
     }
   },
@@ -38620,7 +38620,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sv-v%C3%A4gg.ogg"
+        "src": null
       }
     }
   },
@@ -38656,7 +38656,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sv-golv.ogg"
+        "src": null
       }
     }
   },
@@ -38692,7 +38692,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Sv-soffa.ogg"
+        "src": null
       }
     }
   },
@@ -38798,7 +38798,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sv-hall.ogg"
+        "src": null
       }
     }
   },
@@ -38868,7 +38868,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Sv-f%C3%A4rg.ogg"
+        "src": null
       }
     }
   },
@@ -38902,7 +38902,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sv-dyr.ogg"
+        "src": null
       }
     }
   },
@@ -38936,7 +38936,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Sv-billig.ogg"
+        "src": null
       }
     }
   },
@@ -38970,7 +38970,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sv-ful.ogg"
+        "src": null
       }
     }
   },
@@ -39004,7 +39004,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Sv-l%C3%A5ng.ogg"
+        "src": null
       }
     }
   },
@@ -39038,7 +39038,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sv-rolig.ogg"
+        "src": null
       }
     }
   },
@@ -39072,7 +39072,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sv-lugn.ogg"
+        "src": null
       }
     }
   },
@@ -39106,7 +39106,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sv-l%C3%A5ngsam.ogg"
+        "src": null
       }
     }
   },
@@ -39140,7 +39140,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Sv-snabb.ogg"
+        "src": null
       }
     }
   },
@@ -39174,7 +39174,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Sv-sv%C3%A5r.ogg"
+        "src": null
       }
     }
   },
@@ -39208,7 +39208,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sv-l%C3%A4tt.ogg"
+        "src": null
       }
     }
   },
@@ -39242,7 +39242,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sv-pigg.ogg"
+        "src": null
       }
     }
   },
@@ -39276,7 +39276,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Sv-gammal.ogg"
+        "src": null
       }
     }
   },
@@ -39310,7 +39310,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sv-intressant.ogg"
+        "src": null
       }
     }
   },
@@ -39378,7 +39378,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Sv-bl%C3%A5.ogg"
+        "src": null
       }
     }
   },
@@ -39412,7 +39412,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Sv-brun.ogg"
+        "src": null
       }
     }
   },
@@ -39446,7 +39446,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Sv-gr%C3%B6n.ogg"
+        "src": null
       }
     }
   },
@@ -39480,7 +39480,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sv-gul.ogg"
+        "src": null
       }
     }
   },
@@ -39514,7 +39514,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Sv-gr%C3%A5.ogg"
+        "src": null
       }
     }
   },
@@ -39548,7 +39548,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Sv-svart.ogg"
+        "src": null
       }
     }
   },
@@ -39582,7 +39582,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sv-rosa.ogg"
+        "src": null
       }
     }
   },
@@ -39616,7 +39616,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sv-lila.ogg"
+        "src": null
       }
     }
   },
@@ -39757,7 +39757,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Sv-hoppl%C3%B6s.ogg"
+        "src": null
       }
     }
   },
@@ -39791,7 +39791,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Sv-enkel.ogg"
+        "src": null
       }
     }
   },
@@ -39825,7 +39825,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sv-ny.ogg"
+        "src": null
       }
     }
   },
@@ -39859,7 +39859,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Sv-god.ogg"
+        "src": null
       }
     }
   },
@@ -39930,7 +39930,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sv-dator.ogg"
+        "src": null
       }
     }
   },
@@ -40002,7 +40002,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Sv-v%C3%A4ska.ogg"
+        "src": null
       }
     }
   },
@@ -40037,7 +40037,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Sv-kl%C3%A4der.ogg"
+        "src": null
       }
     }
   },
@@ -40073,7 +40073,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Sv-en_parfym.ogg"
+        "src": null
       }
     }
   },
@@ -40109,7 +40109,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Sv-paket.ogg"
+        "src": null
       }
     }
   },
@@ -40252,7 +40252,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sv-glas%C3%B6gon.ogg"
+        "src": null
       }
     }
   },
@@ -40323,7 +40323,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Sv-en_pl%C3%A5nbok.ogg"
+        "src": null
       }
     }
   },
@@ -40395,7 +40395,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sv-penna.ogg"
+        "src": null
       }
     }
   },
@@ -40467,7 +40467,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Sv-pass.ogg"
+        "src": null
       }
     }
   },
@@ -40570,7 +40570,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Sv-m%C3%B6jligen.ogg"
+        "src": null
       }
     }
   },
@@ -40672,7 +40672,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sv-knappast.ogg"
+        "src": null
       }
     }
   },
@@ -40744,7 +40744,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sv-hylla.ogg"
+        "src": null
       }
     }
   },
@@ -40816,7 +40816,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sv-en_byr%C3%A5.ogg"
+        "src": null
       }
     }
   },
@@ -40888,7 +40888,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Sv-en_matta.ogg"
+        "src": null
       }
     }
   },
@@ -40924,7 +40924,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sv-skrivbord.ogg"
+        "src": null
       }
     }
   },
@@ -40960,7 +40960,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Sv-en_lampa.ogg"
+        "src": null
       }
     }
   },
@@ -41104,7 +41104,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sv-tavla.ogg"
+        "src": null
       }
     }
   },
@@ -41176,7 +41176,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sv-spegel.ogg"
+        "src": null
       }
     }
   },
@@ -41212,7 +41212,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/LL-Q9027_%28swe%29-Moonhouse-kudde.wav"
+        "src": null
       }
     }
   },
@@ -41284,7 +41284,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Sv-ett_lakan.ogg"
+        "src": null
       }
     }
   },
@@ -41320,7 +41320,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Sv-en_filt.ogg"
+        "src": null
       }
     }
   },
@@ -41428,7 +41428,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Sv-trappa.ogg"
+        "src": null
       }
     }
   },
@@ -41500,7 +41500,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Sv-rum.ogg"
+        "src": null
       }
     }
   },
@@ -41572,7 +41572,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Sv-k%C3%A4llare.ogg"
+        "src": null
       }
     }
   },
@@ -41608,7 +41608,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sv-en_balkong.ogg"
+        "src": null
       }
     }
   },
@@ -41681,7 +41681,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sv-spara.ogg"
+        "src": null
       }
     }
   },
@@ -41856,7 +41856,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sv-l%C3%A4nge.ogg"
+        "src": null
       }
     }
   },
@@ -41890,7 +41890,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Sv-ovanf%C3%B6r.ogg"
+        "src": null
       }
     }
   },
@@ -41924,7 +41924,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sv-under.ogg"
+        "src": null
       }
     }
   },
@@ -41992,7 +41992,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sv-mellan.ogg"
+        "src": null
       }
     }
   },
@@ -42026,7 +42026,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Sv-bakom.ogg"
+        "src": null
       }
     }
   },
@@ -42060,7 +42060,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Sv-framf%C3%B6r.ogg"
+        "src": null
       }
     }
   },
@@ -42138,7 +42138,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Sv-h%C3%A4nga.ogg"
+        "src": null
       }
     }
   },
@@ -42174,7 +42174,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Sv-glas.ogg"
+        "src": null
       }
     }
   },
@@ -42210,7 +42210,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Sv-sk%C3%A5l.ogg"
+        "src": null
       }
     }
   },
@@ -42282,7 +42282,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Sv-en_kastrull.ogg"
+        "src": null
       }
     }
   },
@@ -42354,7 +42354,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sv-en_spis.ogg"
+        "src": null
       }
     }
   },
@@ -42612,7 +42612,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sv-l%C3%A5tsas.ogg"
+        "src": null
       }
     }
   },
@@ -42648,7 +42648,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sv-anledning.ogg"
+        "src": null
       }
     }
   },
@@ -42687,7 +42687,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Sv-minnas.ogg"
+        "src": null
       }
     }
   },
@@ -42796,7 +42796,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Sv-stund.ogg"
+        "src": null
       }
     }
   },
@@ -42898,7 +42898,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Sv-som.ogg"
+        "src": null
       }
     }
   },
@@ -42934,7 +42934,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Sv-tak.ogg"
+        "src": null
       }
     }
   },
@@ -42970,7 +42970,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Sv-f%C3%B6nster.ogg"
+        "src": null
       }
     }
   },
@@ -43114,7 +43114,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sv-ett_f%C3%B6rr%C3%A5d.ogg"
+        "src": null
       }
     }
   },
@@ -43340,7 +43340,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sv-trivas.ogg"
+        "src": null
       }
     }
   },
@@ -43408,7 +43408,7 @@
     },
     "media": {
       "audio": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sv-tr%C3%A5ng.ogg"
+        "src": null
       }
     }
   },
@@ -43438,6 +43438,84 @@
       "source": "livro",
       "chapter": 9,
       "sourceTitle": "Ett rött hus med vita knutar",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1305,
+    "order": 1305,
+    "active": true,
+    "term": {
+      "swedish": "tycka att",
+      "portuguese": "achar que (opinião pessoal)",
+      "portugueseInfinitive": "achar que",
+      "portuguesePresent": "acha que",
+      "portuguesePast": "achou que",
+      "portugueseSupine": "achado que"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "tycka att",
+      "present": "tycker att",
+      "imperative": "tyck att",
+      "past": "tyckte att",
+      "supine": "tyckt att"
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 8,
+      "sourceTitle": "Hälsa",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1306,
+    "order": 1306,
+    "active": true,
+    "term": {
+      "swedish": "tro på",
+      "portuguese": "acreditar em",
+      "portugueseInfinitive": "acreditar em",
+      "portuguesePresent": "acredita em",
+      "portuguesePast": "acreditou em",
+      "portugueseSupine": "acreditado em"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "tro på",
+      "present": "tror på",
+      "imperative": "tro på",
+      "past": "trodde på",
+      "supine": "trott på"
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 8,
+      "sourceTitle": "Hälsa",
       "sourceArtist": null
     },
     "media": {
