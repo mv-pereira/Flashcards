@@ -2172,3 +2172,82 @@ html.dark-theme .comparison-feedback.wrong {
     grid-template-columns: 1fr;
   }
 }
+
+/* Menu com os três exercícios */
+.exercise-type-menu {
+  display: grid;
+  gap: 12px;
+}
+
+/* Elementos compartilhados entre En/Ett e Desafio dos Verbos */
+.practice-counter {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 800;
+}
+
+.practice-two-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.practice-two-buttons .button {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: clamp(0.95rem, 4vw, 1.15rem);
+}
+
+/* Não apagar a cor da resposta enquanto os botões estão desabilitados */
+.practice-two-buttons .button:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+/* En/Ett: card vira livremente, independente dos botões */
+.enett-card {
+  cursor: pointer;
+}
+
+.enett-card .card-inner {
+  height: clamp(260px, 43svh, 430px);
+}
+
+/* Desafio dos Verbos */
+.conjugation-play-area {
+  display: grid;
+  gap: 14px;
+}
+
+.conjugation-prompt {
+  min-height: 230px;
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 22px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.conjugation-prompt .question {
+  font-size: clamp(1.8rem, 8vw, 2.8rem);
+}
+
+.conjugation-translation {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.conjugation-statement {
+  margin: 5px 0 0;
+  font-size: clamp(1.45rem, 6vw, 2rem);
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}

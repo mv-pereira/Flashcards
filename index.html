@@ -1431,12 +1431,27 @@
           </div>
         </div>
       </section>
-      <section id="exerciseScreen" class="exercise-screen hidden" aria-label="Exercícios">
-        <button id="backFromExerciseButton" class="back-button" type="button"> ← Voltar </button>
+      <section id="exerciseMenuScreen" class="exercise-screen hidden" aria-label="Escolher exercício">
+        <button id="backFromExerciseMenuButton" class="back-button" type="button"> ← Configurações </button>
         <div class="exercise-card">
           <div class="exercise-heading">
             <p class="eyebrow">Prática</p>
-            <h2>Exercícios</h2>
+            <h2>Escolha um exercício</h2>
+            <p>En/Ett e Desafio dos Verbos respeitam tema, origem, capítulo e música. O tipo é definido por cada exercício.</p>
+          </div>
+          <div class="exercise-type-menu">
+            <button id="openTextExerciseButton" class="button button-primary" type="button"> Exercício por texto </button>
+            <button id="openEnEttButton" class="button button-secondary" type="button"> En / Ett </button>
+            <button id="openConjugationButton" class="button button-secondary" type="button"> Desafio dos Verbos </button>
+          </div>
+        </div>
+      </section>
+      <section id="exerciseScreen" class="exercise-screen hidden" aria-label="Exercícios">
+        <button id="backFromExerciseButton" class="back-button" type="button"> ← Tipos de exercícios </button>
+        <div class="exercise-card">
+          <div class="exercise-heading">
+            <p class="eyebrow">Prática</p>
+            <h2>Exercício por texto</h2>
             <p>Cole um exercício no formato definido e o app montará as questões e a prática oral automaticamente.</p>
           </div>
           <div id="exerciseImportPanel" class="exercise-import-panel">
@@ -1455,6 +1470,60 @@
             <button id="finishExerciseButton" class="button button-primary" type="button"> Finalizar exercício </button>
             <button id="copyExerciseErrorsButton" class="button button-primary hidden" type="button"> Copiar diagnóstico </button>
             <button id="newExerciseButton" class="button button-secondary hidden" type="button"> Colar outro exercício </button>
+          </div>
+        </div>
+      </section>
+      <section id="enEttScreen" class="exercise-screen hidden" aria-label="Exercício En ou Ett">
+        <button id="backFromEnEttButton" class="back-button" type="button"> ← Tipos de exercícios </button>
+        <div class="exercise-card enett-panel">
+          <div class="exercise-heading">
+            <p class="eyebrow">Substantivos</p>
+            <h2>En ou Ett?</h2>
+            <p>Toque no card para consultar a tradução livremente. Só os botões en e ett registram uma resposta.</p>
+          </div>
+          <p id="enEttCounter" class="practice-counter" aria-live="polite"></p>
+          <section id="enEttCard" class="card enett-card" role="button" tabindex="0" aria-label="Virar card para consultar a tradução">
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <p class="card-label">Singular indefinido</p>
+                <h2 id="enEttWord" class="question"></h2>
+              </div>
+              <div class="card-face card-back">
+                <p class="card-label">Português</p>
+                <p id="enEttMeaning" class="answer"></p>
+              </div>
+            </div>
+          </section>
+          <div id="enEttButtons" class="practice-two-buttons">
+            <button id="enEttEnButton" class="button button-secondary" type="button"> en </button>
+            <button id="enEttEttButton" class="button button-secondary" type="button"> ett </button>
+          </div>
+          <p id="enEttMessage" class="message" role="status" aria-live="polite"></p>
+          <button id="enEttNextButton" class="button button-primary hidden" type="button"> Próximo card </button>
+        </div>
+      </section>
+      <section id="conjugationScreen" class="exercise-screen hidden" aria-label="Desafio dos Verbos">
+        <button id="backFromConjugationButton" class="back-button" type="button"> ← Tipos de exercícios </button>
+        <div class="exercise-card">
+          <div class="exercise-heading">
+            <p class="eyebrow">Conjugação</p>
+            <h2>Desafio dos Verbos</h2>
+            <p>Treine o presente de verbos regulares e irregulares, sem digitar. As alternativas erradas mudam somente o final.</p>
+          </div>
+          <p id="conjugationCounter" class="practice-counter" aria-live="polite"></p>
+          <div id="conjugationPlayArea" class="conjugation-play-area">
+            <div class="conjugation-prompt">
+              <p id="conjugationPromptLabel" class="card-label"></p>
+              <h2 id="conjugationInfinitive" class="question"></h2>
+              <p id="conjugationTranslation" class="conjugation-translation"></p>
+              <p id="conjugationStatement" class="conjugation-statement hidden"></p>
+            </div>
+            <div id="conjugationButtons" class="practice-two-buttons">
+              <button id="conjugationLeftButton" class="button button-secondary" type="button"></button>
+              <button id="conjugationRightButton" class="button button-secondary" type="button"></button>
+            </div>
+            <p id="conjugationMessage" class="message" role="status" aria-live="polite"></p>
+            <button id="conjugationNextButton" class="button button-primary hidden" type="button"> Próximo verbo </button>
           </div>
         </div>
       </section>
