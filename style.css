@@ -1257,16 +1257,24 @@ html.dark-theme .comparison-feedback.wrong {
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--soft);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .word-letter-summary {
+  position: sticky;
+  top: var(--safe-top);
+  z-index: 5;
+
   min-height: 54px;
   padding: 0 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+
+  background: var(--soft);
+  border-radius: 15px;
+
   color: var(--text);
   cursor: pointer;
   list-style: none;
@@ -1301,6 +1309,7 @@ html.dark-theme .comparison-feedback.wrong {
   gap: 10px;
   padding: 10px;
   border-top: 1px solid var(--border);
+  border-radius: 0 0 15px 15px;
   background: var(--card);
 }
 
@@ -2250,4 +2259,18 @@ html.dark-theme .comparison-feedback.wrong {
   font-size: clamp(1.45rem, 6vw, 2rem);
   font-weight: 900;
   overflow-wrap: anywhere;
+}
+
+/* Histórico por forma na tela Revisar erros */
+
+.word-form-stats {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.word-form-stats.has-errors {
+  color: var(--danger);
 }

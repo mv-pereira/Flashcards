@@ -3559,6 +3559,34 @@ function createWordDetails(card) {
     details.appendChild(grammarDetails);
   }
 
+  // Erros anteriores ao registro por forma,
+  // ou registrados em modos sem forma específica.
+  if (wordsViewMode === "wrong") {
+    const cardStats = getExistingCardStats(card.id) || {};
+
+    const identifiedErrors = Object.values(
+      cardStats.forms || {}
+    ).reduce(
+      (total, form) => total + (Number(form?.wrong) || 0),
+      0
+    );
+
+    const unidentifiedErrors = Math.max(
+      0,
+      (Number(cardStats.wrong) || 0) - identifiedErrors
+    );
+
+    if (unidentifiedErrors > 0) {
+      const note = document.createElement("p");
+      note.className = "word-meta";
+
+      note.textContent =
+        `${unidentifiedErrors} erro${unidentifiedErrors === 1 ? "" : "s"} sem forma identificada (histórico antigo ou modo sem forma específica).`;
+
+      details.appendChild(note);
+    }
+  }
+
   const hasAudio = Boolean(card.media?.audio?.src);
 
   if (!hasAudio) {
@@ -3595,6 +3623,19 @@ function createWordGrammarDetails(card) {
   }
 
   const rows = [];
+
+  // Chaves usadas no histórico de acertos e erros.
+  const formKeys = {
+    "Singular indefinido": "noun:singularIndefinite",
+    "Singular definido": "noun:singularDefinite",
+    "Plural indefinido": "noun:pluralIndefinite",
+    "Plural definido": "noun:pluralDefinite",
+    "Artigo En/Ett": "article:gender",
+    "Infinitivo": "verb:infinitive",
+    "Presente": "verb:present",
+    "Passado": "verb:past",
+    "Supino": "verb:supine"
+  };
 
   if (grammar.type === "substantivo") {
     if (grammar.definiteSingular) {
@@ -3656,6 +3697,20 @@ function createWordGrammarDetails(card) {
     }
   }
 
+  // Inclui também o singular indefinido e o artigo
+  // exclusivamente na tela Revisar erros.
+  if (wordsViewMode === "wrong" && isNounWithGender(card)) {
+    rows.unshift({
+      label: "Singular indefinido",
+      value: `${card.grammar.gender} ${card.term.swedish}`
+    });
+
+    rows.push({
+      label: "Artigo En/Ett",
+      value: card.grammar.gender
+    });
+  }
+
   if (rows.length === 0) {
     return null;
   }
@@ -3674,6 +3729,38 @@ function createWordGrammarDetails(card) {
     value.textContent = row.value;
 
     line.append(label, value);
+
+    // Mostra o histórico somente em Revisar erros.
+    if (wordsViewMode === "wrong") {
+      const formKey = formKeys[row.label];
+
+      const counter = document.createElement("small");
+      counter.className = "word-form-stats";
+
+      if (formKey) {
+        const formStats =
+          getExistingCardStats(card.id)?.forms?.[formKey] || {};
+
+        const wrong = Number(formStats.wrong) || 0;
+        const correct = Number(formStats.correct) || 0;
+
+        counter.textContent = wrong + correct > 0
+          ? `${wrong} erro${wrong === 1 ? "" : "s"} · ${correct} acerto${correct === 1 ? "" : "s"}`
+          : "Sem respostas registradas nesta forma";
+
+        if (wrong > 0) {
+          counter.classList.add("has-errors");
+        }
+      } else if (row.label === "Imperativo") {
+        counter.textContent =
+          "Forma não avaliada separadamente";
+      }
+
+      if (counter.textContent) {
+        line.appendChild(counter);
+      }
+    }
+
     container.appendChild(line);
   });
 
