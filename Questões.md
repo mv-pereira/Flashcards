@@ -173,7 +173,7 @@ Se qualquer exemplo estrutural posterior desta especificação mostrar uma quest
 ---
 
 
-# 0.3 USO OPCIONAL DO `Sumário_Gramatical.md` PARA INSPIRAÇÃO GRAMATICAL
+# 0.3 USO OPCIONAL DO `Sumário_Gramatical.md` PARA INSPIRAÇÃO GRAMATICAL E TEXTUAL
 
 Esta seção estabelece uma regra ESTRITAMENTE CONDICIONAL. Ela só se aplica quando o arquivo `Sumário_Gramatical.md` for efetivamente enviado junto dos materiais do pedido atual de geração do exercício e seu conteúdo estiver acessível para consulta.
 
@@ -188,6 +188,7 @@ Esta seção estabelece uma regra ESTRITAMENTE CONDICIONAL. Ela só se aplica qu
 7. Não é necessário criar uma questão para cada tópico do sumário. Selecione os tópicos que proporcionem exercícios úteis, variados, apropriados ao nível estudado e compatíveis com o vocabulário efetivamente disponível.
 8. Não mude por causa do sumário a quantidade de questões solicitada, a proporção entre compreensão e gramática, a sintaxe de importação do aplicativo, os tipos de questões, a organização dos textos, o cadastro de respostas ou qualquer outra regra desta especificação.
 9. Se o sumário não trouxer informações suficientes sobre algum capítulo autorizado, complemente a seleção da maneira normalmente prescrita neste documento; **não invente** conteúdos como se estivessem descritos no sumário.
+10. Empregue naturalmente nos textos gerados as estruturas gramaticais ensinadas nos capítulos autorizados pelo Sumário_Gramatical.md, dando destaque aos conteúdos do capítulo mais alto do intervalo solicitado e utilizando os capítulos anteriores para revisão cumulativa. Não é necessário incluir todos os tópicos gramaticais. Priorize a coerência, a naturalidade e o vocabulário permitido pelo words.json.
 
 ## SE O `Sumário_Gramatical.md` NÃO FOR ENVIADO JUNTO
 
@@ -2559,7 +2560,7 @@ Após esta especificação, utilizarei normalmente um pedido semelhante a:
 
 Use o arquivo `words.json` anexado.
 
-CAPÍTULOS: 0 até X (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
+CAPÍTULOS: 0 até 8 (Se tiver escrito a letra "X", assuma todos os capítulos, caso contrário, os capítulos indicados)
 
 QUANTIDADE DE TEXTOS: Dois (02) textos com temas diferentes
 
