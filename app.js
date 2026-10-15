@@ -3956,11 +3956,8 @@ function answerEnEtt(chosenArticle) {
   });
 
   // NÃO virar o card automaticamente: o usuário pode consultar livremente.
-  enEttMessage.textContent = isCorrect
-    ? "Correto!"
-    : `Incorreto. O artigo correto é ${card.grammar.gender}.`;
-  enEttCounter.textContent =
-    `Respostas: ${enEttAnswersCount} · Acertos: ${enEttCorrectCount}`;
+  enEttMessage.textContent = isCorrect ? "✅ Correto!" : `❌ Errado! Correto: ${card.grammar.gender}`;
+  enEttCounter.textContent = `Acertos: ${enEttCorrectCount}/${enEttAnswersCount}`;
   enEttNextButton.classList.remove("hidden");
 
   if (!isCorrect) {
