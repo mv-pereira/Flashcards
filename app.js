@@ -43,6 +43,8 @@ let currentExercise = null;
 let exerciseFinished = false;
 let exerciseErrorsCopyText = "";
 
+let exerciseStartTime = null;
+
 let exerciseVocabularyIndex = new Map();
 let expandedExerciseVocabulary = null;
 
@@ -3925,8 +3927,7 @@ function showEnEttCard() {
     button.classList.add("button-secondary");
   }
 
-  enEttCounter.textContent =
-    `Respostas: ${enEttAnswersCount} · Acertos: ${enEttCorrectCount}`;
+  enEttCounter.textContent = `Acertos: ${enEttCorrectCount}/${enEttAnswersCount}`;
 }
 
 function toggleEnEttCard() {
@@ -4199,6 +4200,7 @@ function resetExerciseScreen() {
   currentExercise = null;
   exerciseFinished = false;
   exerciseErrorsCopyText = "";
+  exerciseStartTime = null;
   exerciseConsultedVocabulary = new Map();
 
   exerciseSourceInput.value = "";
@@ -4250,6 +4252,8 @@ function generateExercise() {
 
     finishExerciseButton.classList.remove("hidden");
     newExerciseButton.classList.add("hidden");
+    
+    exerciseStartTime = Date.now();
 
     window.scrollTo({
       top: 0,
@@ -6712,6 +6716,13 @@ function finishExercise() {
   ) {
     return;
   }
+  
+  const exerciseElapsedSeconds =
+    exerciseStartTime === null
+      ? 0
+      : Math.floor(
+          (Date.now() - exerciseStartTime) / 1000
+        );
 
   const questions =
     currentExercise.blocks
@@ -6811,7 +6822,8 @@ function finishExercise() {
   renderExerciseResultSummary(
     totalScore,
     questions.length,
-    counts
+    counts,
+    exerciseElapsedSeconds
   );
 
   exerciseResultSummary.classList.remove(
@@ -8707,7 +8719,8 @@ function createExerciseConsultedVocabularySummary() {
 function renderExerciseResultSummary(
   totalScore,
   questionCount,
-  counts
+  counts,
+  elapsedSeconds
 ) {
   exerciseResultSummary.replaceChildren();
 
@@ -8733,6 +8746,12 @@ function renderExerciseResultSummary(
 
   score.textContent =
     `Nota: ${formatExerciseGrade(finalScore)}`;
+
+  const timeSpent = document.createElement("p");
+
+  timeSpent.className = "exercise-result-score";
+
+  timeSpent.textContent = `⏱ Tempo gasto: ${formatTime(elapsedSeconds)}`;
 
   const grid =
     document.createElement("div");
@@ -8771,6 +8790,7 @@ function renderExerciseResultSummary(
     title,
     consultedVocabulary,
     score,
+    timeSpent,
     grid
   );
 }
