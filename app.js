@@ -4114,7 +4114,7 @@ function showConjugationQuestion() {
   conjugationNextButton.classList.add("hidden");
 
   if (mode === "choose") {
-    conjugationPromptLabel.textContent = "Escolha o presente correto";
+    conjugationPromptLabel.textContent = "Qual é o presente?";
     conjugationStatement.classList.add("hidden");
     const options = shuffleArray([info.present, wrong]);
     conjugationLeftButton.textContent = options[0];
@@ -4122,7 +4122,7 @@ function showConjugationQuestion() {
     conjugationLeftButton.dataset.answer = options[0];
     conjugationRightButton.dataset.answer = options[1];
   } else {
-    conjugationPromptLabel.textContent = "A forma apresentada está correta no presente?";
+    conjugationPromptLabel.textContent = "Está correto?";
     conjugationStatement.textContent = actualStatementIsCorrect ? info.present : wrong;
     conjugationStatement.classList.remove("hidden");
     conjugationLeftButton.textContent = "Correto";
@@ -4138,7 +4138,7 @@ function showConjugationQuestion() {
   }
 
   conjugationCounter.textContent =
-    `Respostas: ${conjugationAnswersCount} · Acertos: ${conjugationCorrectCount}`;
+    `Acertos: ${conjugationCorrectCount}/${conjugationAnswersCount}`;
 }
 
 function answerConjugation(button) {
@@ -4164,9 +4164,9 @@ function answerConjugation(button) {
     expected: info.present
   });
 
-  conjugationMessage.textContent = `${isCorrect ? "Correto!" : "Incorreto."} Presente: ${info.present}.`;
+  conjugationMessage.textContent = isCorrect ? "✅ Correto!" : `❌ Errado! Correto: ${info.present}`;
   conjugationCounter.textContent =
-    `Respostas: ${conjugationAnswersCount} · Acertos: ${conjugationCorrectCount}`;
+    `Acertos: ${conjugationCorrectCount}/${conjugationAnswersCount}`;
   conjugationNextButton.classList.remove("hidden");
 
   if (!isCorrect) {
