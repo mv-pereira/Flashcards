@@ -28,6 +28,7 @@ let newWordsCardProgress = {};
 
 // Quantas rodadas uma palavra acertada de primeira ficará afastada
 const NEW_WORD_FIRST_TRY_DELAY = 15;
+const NEW_WORD_RECOVERY_STREAK = 10;
 
 let sessionStartTime = null;
 let elapsedBeforePause = 0;
@@ -426,6 +427,9 @@ function getCardStats(cardId) {
       mastery: 0,
       streak: 0,
       lapses: 0,
+      newWordsCorrectStreak: 0,
+      priorityWrongForgiven: 0,
+      priorityLapsesForgiven: 0,
       priority: 100,
       lastAnsweredAt: null,
       forms: {}
@@ -441,8 +445,20 @@ function getCardStats(cardId) {
     stats[key].streak = 0;
   }
 
-  if (stats[key].lapses === undefined) {
+   if (stats[key].lapses === undefined) {
     stats[key].lapses = 0;
+  }
+
+  if (stats[key].newWordsCorrectStreak === undefined) {
+    stats[key].newWordsCorrectStreak = 0;
+  }
+
+  if (stats[key].priorityWrongForgiven === undefined) {
+    stats[key].priorityWrongForgiven = 0;
+  }
+
+  if (stats[key].priorityLapsesForgiven === undefined) {
+    stats[key].priorityLapsesForgiven = 0;
   }
 
   if (stats[key].priority === undefined) {
@@ -508,12 +524,9 @@ function updateCardStats(card, isCorrect, formOverride = null, answerDetail = nu
     }
 
     cardStats.streak = 0;
+    cardStats.newWordsCorrectStreak = 0;
 
-    cardStats.mastery = clamp(
-      previousMastery - 3,
-      -6,
-      10
-    );
+    cardStats.mastery = clamp(previousMastery - 3, -6, 10);
   }
 
   // Estatística por forma: noun:pluralDefinite, verb:present, article:gender etc.
@@ -589,9 +602,9 @@ function getMaxSeenAmongCards(cardList = baseSessionCards) {
 
 function calculateCardPriority(cardStats, priorityCards = baseSessionCards) {
   const seen = cardStats.seen || 0;
-  const wrong = cardStats.wrong || 0;
+  const wrong = Math.max(0, (cardStats.wrong || 0) - (cardStats.priorityWrongForgiven || 0) );
   const mastery = cardStats.mastery || 0;
-  const lapses = cardStats.lapses || 0;
+  const lapses = Math.max(0, (cardStats.lapses || 0) - (cardStats.priorityLapsesForgiven || 0));
 
   let priority = 80;
 
@@ -894,11 +907,11 @@ function getNewWordProgress(cardId) {
 
 function updateNewWordProgress(card, isCorrect) {
   const progress = getNewWordProgress(card.id);
+  const cardStats = getCardStats(card.id);
 
   progress.attempts++;
 
   if (!isCorrect) {
-    // Se errou alguma vez, perde o benefício de ter acertado de primeira.
     progress.hadWrongAnswer = true;
     progress.awaitingConfirmation = false;
     progress.confirmed = false;
@@ -906,9 +919,27 @@ function updateNewWordProgress(card, isCorrect) {
     return;
   }
 
+  // Contagem persistente, inclusive entre sessões de Palavras novas.
+  cardStats.newWordsCorrectStreak++;
+
+  if (cardStats.newWordsCorrectStreak >= NEW_WORD_RECOVERY_STREAK) {
+    // Os números históricos não mudam: só deixam de pesar na prioridade.
+    cardStats.priorityWrongForgiven = cardStats.wrong || 0;
+    cardStats.priorityLapsesForgiven = cardStats.lapses || 0;
+
+    progress.awaitingConfirmation = false;
+    progress.confirmed = true;
+    progress.delayRounds = 0;
+    return;
+  }
+
+  const hasPendingHistoricalErrors =
+    (cardStats.wrong || 0) > (cardStats.priorityWrongForgiven || 0);
+
   if (
     progress.attempts === 1 &&
-    !progress.hadWrongAnswer
+    !progress.hadWrongAnswer &&
+    !hasPendingHistoricalErrors
   ) {
     // Acertou a palavra logo na primeira apresentação.
     progress.awaitingConfirmation = true;
@@ -2036,6 +2067,14 @@ function registerCurrentAnswer(isCorrect) {
   if (isNewWordsMode) {
     newWordsRoundResults[String(currentCard.id)] = isCorrect;
     updateNewWordProgress(currentCard, isCorrect);
+
+    // Remove repetições já agendadas da palavra confirmada na rodada atual.
+    if (getNewWordProgress(currentCard.id).confirmed) {
+      cards = cards.filter((queuedCard, index) =>
+        index <= currentIndex ||
+        String(queuedCard.id) !== String(currentCard.id)
+      );
+    }
   }
 
   sessionAnswers.push({
