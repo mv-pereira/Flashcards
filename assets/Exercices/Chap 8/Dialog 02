@@ -1,0 +1,119 @@
+[EXERCICIO]
+TITULO: På vårdcentralen
+
+[QUESTAO]
+TIPO: VF
+En läkare är en läkare.
+
+RESPOSTA: V
+
+[FALA]
+Elin: Du ser lite trött ut. Hur känner du dig i dag?
+VOCÊ: Diga que hoje você está se sentindo cansado e doente.
+RESPOSTA: Jag känner mig trött och sjuk i dag. | I dag känner jag mig trött och sjuk.
+
+Elin: Har du feber eller ont i halsen?
+VOCÊ: Diga que está com febre e dor na garganta.
+RESPOSTA: Jag har feber och ont i halsen.
+
+Elin: Har du huvudvärk också?
+VOCÊ: Confirme que também está com dor de cabeça.
+RESPOSTA: Ja, jag har också huvudvärk. | Ja, jag har huvudvärk också.
+
+Elin: När började det?
+VOCÊ: Informe que os sintomas começaram ontem à noite.
+RESPOSTA: Det började i går på kvällen. | I går på kvällen började det.
+
+Elin: Hur sov du i natt?
+VOCÊ: Diga que não dormiu bem durante a noite e que ainda está cansado.
+RESPOSTA: Jag sov inte bra i natt, och jag är fortfarande trött. | I natt sov jag inte bra, och jag är fortfarande trött.
+
+Elin: Har du ätit frukost i dag?
+VOCÊ: Diga que não tomou café da manhã hoje e está sentindo enjoo.
+RESPOSTA: Nej, jag har inte ätit frukost i dag. Jag mår illa.
+
+Elin: Har du druckit vatten i dag?
+VOCÊ: Responda que bebeu um copo de água hoje de manhã.
+RESPOSTA: Ja, jag drack ett glas vatten i morse. | Ja, i morse drack jag ett glas vatten.
+
+Elin: Har du tagit någon medicin i dag?
+VOCÊ: Diga que não tomou nenhum medicamento hoje.
+RESPOSTA: Nej, jag har inte tagit någon medicin i dag.
+
+Elin: Har du varit på vårdcentralen tidigare?
+VOCÊ: Diga que nunca esteve nessa unidade de saúde.
+RESPOSTA: Nej, jag har aldrig varit här. | Nej, jag har inte varit här tidigare.
+
+Elin: Jag ska skriva ditt namn. Vad heter du?
+VOCÊ: Informe que seu nome é Erik.
+RESPOSTA: Jag heter Erik.
+
+Elin: Tack, Erik. Hur gammal är du?
+VOCÊ: Informe que tem trinta anos.
+RESPOSTA: Jag är trettio år gammal. | Jag är trettio år.
+
+Elin: Bor du nära vårdcentralen?
+VOCÊ: Responda que mora perto e que veio de ônibus até aqui.
+RESPOSTA: Ja, jag bor nära och jag tog bussen hit. | Ja, jag bor nära och jag åkte buss hit.
+
+Elin: Har du någon hemma som kan hjälpa dig?
+VOCÊ: Diga que sua irmã mora com você e pode ajudá-lo hoje.
+RESPOSTA: Min syster bor med mig och hon kan hjälpa mig i dag.
+
+Elin: Vad gjorde du i går innan du blev sjuk?
+VOCÊ: Conte que trabalhou o dia inteiro ontem e ficou cansado.
+RESPOSTA: Jag jobbade hela dagen i går och blev trött. | I går jobbade jag hela dagen och blev trött.
+
+Elin: Var du stressad på jobbet?
+VOCÊ: Confirme que estava muito estressado no trabalho ontem.
+RESPOSTA: Ja, jag var mycket stressad på jobbet i går.
+
+Elin: Du kanske behöver vila dig. Är du orolig?
+VOCÊ: Diga que está um pouco preocupado, mas acredita que a situação vai melhorar.
+RESPOSTA: Jag är lite orolig, men jag tror att det kommer att bli bättre. | Jag oroar mig lite, men jag tror att det kommer att bli bättre.
+
+Elin: Jag ska ta lite prover nu. Går det bra?
+VOCÊ: Concorde em fazer os exames, mas diga que está um pouco nervoso.
+RESPOSTA: Ja, det går bra, men jag är lite nervös.
+
+Elin: Oroa dig inte. Sätt dig här.
+VOCÊ: Agradeça e diga que vai se sentar aqui.
+RESPOSTA: Tack, jag sätter mig här. | Tack, jag ska sätta mig här.
+
+Elin: Har du ont i armen nu?
+VOCÊ: Diga que não está com dor no braço, mas ainda sente dor na garganta.
+RESPOSTA: Nej, jag har inte ont i armen, men jag har fortfarande ont i halsen.
+
+Elin: Nu har vi tagit prover. Hur känner du dig?
+VOCÊ: Diga que agora não se sente tão nervoso, mas ainda está cansado.
+RESPOSTA: Nu känner jag mig inte så nervös, men jag är fortfarande trött. | Jag känner mig inte så nervös nu, men jag är fortfarande trött.
+
+Elin: Läkaren har tid klockan tre i eftermiddag. Kan du komma tillbaka?
+VOCÊ: Confirme que pode voltar às três e acrescente que primeiro vai para casa.
+RESPOSTA: Ja, jag kan komma tillbaka klockan tre. Först ska jag åka hem. | Ja, jag kan komma tillbaka klockan tre, men först ska jag åka hem.
+
+Elin: Hur ska du åka hem?
+VOCÊ: Diga que vai voltar para casa de ônibus e descansar lá.
+RESPOSTA: Jag ska ta bussen hem och vila mig hemma. | Jag ska åka hem med buss och vila mig hemma.
+
+Elin: Kan din syster komma med dig i eftermiddag?
+VOCÊ: Confirme que sua irmã pode acompanhar você à tarde.
+RESPOSTA: Ja, hon kan komma med mig i eftermiddag. | Ja, min syster kan komma med mig i eftermiddag.
+
+Elin: Har du sagt till på jobbet att du är sjuk?
+VOCÊ: Diga que não avisou ao trabalho e que vai telefonar para lá depois da consulta médica.
+RESPOSTA: Nej, jag har inte sagt till på jobbet. Jag ska ringa dit efter läkarbesöket. | Nej, jag har inte sagt till på jobbet. Jag ska ringa till jobbet efter läkarbesöket.
+
+Elin: Tror du att du kan jobba i morgon?
+VOCÊ: Diga que acha que não vai conseguir trabalhar amanhã e que precisa descansar.
+RESPOSTA: Jag tror inte att jag kan jobba i morgon. Jag behöver vila mig.
+
+Elin: Läkaren kommer att hjälpa dig i eftermiddag. Har du några frågor?
+VOCÊ: Agradeça, diga que não tem perguntas e confirme que voltará às três.
+RESPOSTA: Tack, jag har inga frågor. Jag kommer tillbaka klockan tre.
+
+Elin: Bra, Erik. Krya på dig! Vi ses klockan tre.
+VOCÊ: Agradeça e diga que vocês se verão à tarde.
+RESPOSTA: Tack! Vi ses i eftermiddag.
+
+[FIM]
