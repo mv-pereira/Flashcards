@@ -956,10 +956,11 @@ function updateNewWordProgress(card, isCorrect) {
 
   if (
     progress.attempts === 1 &&
-    !progress.hadWrongAnswer &&
-    !pendingHistoricalErrors
+    !progress.hadWrongAnswer
   ) {
-    // Acertou a palavra logo na primeira apresentação.
+    // Acertou de primeira nesta sessão:
+    // aguarda 15 rodadas, independentemente
+    // dos erros registrados no passado.
     progress.awaitingConfirmation = true;
     progress.confirmed = false;
     progress.delayRounds = NEW_WORD_FIRST_TRY_DELAY;
@@ -1078,8 +1079,33 @@ function buildNewWordsRoundDeck(activeCards) {
   return shuffleArray(nextCards.map(createStudyOccurrence));
 }
 
+
 function getNewWordsPool(filteredCards) {
-  return shuffleArray(filteredCards);
+  const weightsByPendingErrors = [1, 1.10, 1.20, 1.30, 1.40];
+
+  return filteredCards
+    .map((card) => {
+      const cardStats = getCardStats(card.id);
+
+      const pendingErrors = Math.max(
+        0,
+        (cardStats.wrong || 0) -
+          (cardStats.priorityWrongForgiven || 0)
+      );
+
+      const weight = weightsByPendingErrors[
+        Math.min(pendingErrors, 4)
+      ];
+
+      // Sorteio ponderado sem reposição:
+      // o peso aumenta a chance, mas não garante
+      // que uma palavra antiga venha primeiro.
+      const randomKey = Math.random() ** (1 / weight);
+
+      return { card, randomKey };
+    })
+    .sort((a, b) => b.randomKey - a.randomKey)
+    .map(({ card }) => card);
 }
 
 function clamp(value, min, max) {
