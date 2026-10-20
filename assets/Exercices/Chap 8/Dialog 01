@@ -1,0 +1,135 @@
+[EXERCICIO]
+TITULO: En födelsedag hemma hos Sofia
+
+[QUESTAO]
+TIPO: VF
+En bok är en bok.
+
+RESPOSTA: V
+
+[FALA]
+Sofia: Lina har födelsedag på söndag. Ska vi ha en fest hemma hos mig?
+VOCÊ: Aceite a ideia e pergunte se vocês podem fazer a festa no sábado.
+RESPOSTA: Ja, gärna! Kan vi ha festen på lördag?
+
+Sofia: På lördag är jag ledig, och Lina är också ledig. Vill du ha många gäster?
+VOCÊ: Diga que não quer muitos convidados porque Lina teve uma semana estressante.
+RESPOSTA: Jag vill ha en liten fest, för Lina har haft en stressig vecka. | Jag vill inte ha många gäster, för Lina har haft en stressig vecka.
+
+Sofia: Det förstår jag. Hon har jobbat mycket. När ska festen börja?
+VOCÊ: Sugira que a festa comece às seis horas.
+RESPOSTA: Jag tycker att festen ska börja klockan sex. | Vi kan börja festen klockan sex.
+
+Sofia: Bra! Kan du komma klockan fyra och hjälpa mig?
+VOCÊ: Confirme que chegará às quatro e que ajudará a arrumar a casa.
+RESPOSTA: Ja, jag kommer klockan fyra och ska hjälpa dig att städa. | Ja, klockan fyra kommer jag. Jag ska hjälpa dig att städa.
+
+Sofia: Tack! Jag måste städa köket och handla mat.
+VOCÊ: Ofereça-se para fazer as compras e pergunte o que é necessário.
+RESPOSTA: Jag kan handla. Vad behöver vi? | Ska jag handla maten? Vad behöver vi?
+
+Sofia: Vi behöver tre tomater, två paprikor, bröd, mjölk och äpplen.
+VOCÊ: Diga que comprará tudo e pergunte se vocês também precisam de peixe.
+RESPOSTA: Jag ska köpa allt. Behöver vi fisk också?
+
+Sofia: Ja, gärna! Lina gillar fisk, men hon tycker inte om köttfärs.
+VOCÊ: Sugira comer peixe no jantar e pergunte se Sofia pode prepará-lo.
+RESPOSTA: Då kan vi äta fisk till middag. Kan du laga den? | Vi kan äta fisk till middag. Kan du laga fisken?
+
+Sofia: Javisst! Min bror kan hjälpa mig på fredag.
+VOCÊ: Demonstre entusiasmo e pergunte se o irmão dela também irá à festa.
+RESPOSTA: Vad kul! Kommer din bror också på festen?
+
+Sofia: Nej, han måste jobba på lördag, men min syster kommer.
+VOCÊ: Reaja positivamente à presença da irmã e pergunte quantos convidados estarão na festa.
+RESPOSTA: Vad bra! Hur många gäster kommer? | Vad kul! Hur många gäster kommer på festen?
+
+Sofia: Linas mamma, hennes pappa, min syster och fyra kompisar kommer.
+VOCÊ: Pergunte se Sofia já conversou com todos os convidados.
+RESPOSTA: Har du pratat med alla gäster? | Har du redan pratat med alla?
+
+Sofia: Ja, men Linas kusin Erik har inte hört om festen än.
+VOCÊ: Ofereça-se para telefonar para Erik hoje à tarde e pergunte se Sofia tem o número dele.
+RESPOSTA: Jag kan ringa Erik i eftermiddag. Har du hans telefonnummer? | Jag ringer honom gärna i eftermiddag. Har du hans telefonnummer?
+
+Sofia: Ja, jag har hans telefonnummer. Jag ska skriva det till dig.
+VOCÊ: Agradeça e diga que telefonará para Erik à tarde para contar sobre a festa.
+RESPOSTA: Tack! Jag ska ringa honom i eftermiddag och berätta om festen.
+
+Sofia: Erik bor i Solna och har aldrig varit hemma hos mig.
+VOCÊ: Peça que Sofia explique o caminho até a casa dela, pois você vai repassar as orientações a Erik.
+RESPOSTA: Kan du beskriva vägen för mig? Jag ska berätta för Erik. | Hur kommer man hem till dig? Jag ska säga det till Erik.
+
+Sofia: Jag bor vid stationen. Från stationen går man längs gatan och tar till höger.
+VOCÊ: Diga que agora entendeu as instruções e que as explicará a Erik.
+RESPOSTA: Nu förstår jag. Jag ska berätta det för Erik. | Nu förstår jag. Jag ska säga det till Erik.
+
+Sofia: Jag tror att det kommer att regna på lördag. Ska vi vara hemma hela dagen?
+VOCÊ: Concorde com ficar em casa e diga que não quer passear na chuva.
+RESPOSTA: Ja, vi kan vara hemma hela dagen. Jag vill inte promenera i regnet. | Ja, jag vill vara hemma. Jag vill inte gå i regnet.
+
+Sofia: Efter middagen kan vi lyssna på musik. Spelar du fortfarande gitarr?
+VOCÊ: Diga que toca violão às vezes e que também tocou ontem.
+RESPOSTA: Ja, jag spelar gitarr ibland. Jag spelade också i går. | Ja, ibland spelar jag gitarr. Jag spelade i går också.
+
+Sofia: Vad kul! Jag spelar piano och kan sjunga också.
+VOCÊ: Sugira que vocês toquem juntos e pergunte de que música Lina gosta.
+RESPOSTA: Vi kan spela tillsammans. Vilken musik gillar Lina? | Ska vi spela tillsammans? Vilken musik tycker Lina om?
+
+Sofia: Lina älskar rocklåtar. Hon har hört mig sjunga många gånger.
+VOCÊ: Diga que também quer cantar, mas que está se sentindo nervoso.
+RESPOSTA: Jag vill också sjunga, men jag känner mig nervös. | Jag vill gärna sjunga, men jag är nervös.
+
+Sofia: Oroa dig inte! Jag kan sjunga med dig.
+VOCÊ: Agradeça, diga que agora se sente melhor e que vai se preparar para cantar.
+RESPOSTA: Tack! Nu känner jag mig bättre. Jag ska förbereda mig för att sjunga.
+
+Sofia: Vi behöver också köpa en present till Lina. Vad vill du köpa?
+VOCÊ: Diga que quer comprar um livro de história porque Lina adora ler.
+RESPOSTA: Jag vill köpa en bok om historia. Lina älskar att läsa. | Jag vill köpa en bok om historia, för Lina älskar att läsa.
+
+Sofia: Jag såg en bok om historia på museet i går.
+VOCÊ: Pergunte se Sofia comprou o livro e quanto ele custa.
+RESPOSTA: Har du köpt den? Hur mycket kostar den? | Köpte du boken? Vad kostar den?
+
+Sofia: Nej, jag köpte den inte. Den kostar hundra kronor.
+VOCÊ: Diga que vai comprar o livro e convide Sofia para ir ao museu com você na sexta-feira.
+RESPOSTA: Då ska jag köpa boken. Vill du åka till museet med mig på fredag? | Jag ska köpa den. Kan du åka till museet med mig på fredag?
+
+Sofia: Ja, men jag ska till läkaren på fredag morgon.
+VOCÊ: Pergunte como Sofia está se sentindo e se ela está doente.
+RESPOSTA: Hur känner du dig? Är du sjuk? | Hur mår du? Känner du dig sjuk?
+
+Sofia: Nej, jag är inte sjuk. Jag ska bara ta lite prover.
+VOCÊ: Demonstre alívio e diga que pode esperar por Sofia e depois ir ao museu com ela.
+RESPOSTA: Vad skönt! Jag kan vänta på dig. Sedan kan vi åka till museet. | Vad bra! Jag kan vänta på dig, och sedan kan vi åka till museet.
+
+Sofia: Tack. Jag har jobbat mycket den här veckan och känner mig stressad.
+VOCÊ: Recomende que ela descanse e ofereça-se para comprar o livro.
+RESPOSTA: Då behöver du vila dig. Jag kan köpa boken. | Vila dig! Jag kan köpa boken.
+
+Sofia: Vad snäll du är! Jag ska vila mig på fredag. Ska jag ringa Lina i kväll?
+VOCÊ: Peça que Sofia telefone para Lina à noite e conte sobre a festa.
+RESPOSTA: Ja, ring henne i kväll och berätta om festen. | Ja, du kan ringa henne i kväll och berätta om festen.
+
+Sofia: Ska jag berätta att vi ska laga fisk till middag?
+VOCÊ: Concorde e peça que ela também pergunte a Lina se prefere café ou chá.
+RESPOSTA: Ja, och fråga om hon vill ha kaffe eller te. | Ja, säg att vi ska laga fisk. Fråga också om hon vill ha kaffe eller te.
+
+Sofia: Det ska jag göra. Jag tror att Lina kommer att bli glad. Vad tror du?
+VOCÊ: Diga que também acredita que Lina ficará feliz e que está ansioso pelo sábado.
+RESPOSTA: Jag tror också att hon kommer att bli glad. Jag längtar till lördag. | Ja, jag tror att Lina kommer att bli glad. Jag längtar till lördag.
+
+Sofia: Vi behöver vatten till gästerna också. Har vi allt nu?
+VOCÊ: Diga que ainda não comprou a comida, mas que fará as compras amanhã.
+RESPOSTA: Jag har inte köpt maten än, men jag ska handla i morgon. | Nej, jag har inte handlat än. Jag ska köpa maten i morgon.
+
+Sofia: Toppen! Min syster ska hjälpa mig att städa på fredag.
+VOCÊ: Diga que você também ajudará no sábado e que chegará às quatro horas.
+RESPOSTA: Jag kan också hjälpa dig på lördag. Jag kommer klockan fyra. | På lördag ska jag också hjälpa dig. Jag kommer klockan fyra.
+
+Sofia: Tack för all hjälp! Vi ses hemma hos mig på lördag klockan fyra.
+VOCÊ: Confirme o encontro e diga que acredita que a festa será boa.
+RESPOSTA: Vi ses på lördag! Jag tror att festen kommer att bli bra. | Ja, vi ses klockan fyra! Jag tror att det kommer att bli en bra fest.
+
+[FIM]
