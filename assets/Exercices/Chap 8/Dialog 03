@@ -1,0 +1,135 @@
+[EXERCICIO]
+TITULO: En helg i Göteborg
+
+[QUESTAO]
+TIPO: VF
+Ett hotell är ett hotell.
+
+RESPOSTA: V
+
+[FALA]
+Sara: Nästa helg är jag ledig, och jag vill åka till Göteborg. Har du varit där?
+VOCÊ: Diga que nunca esteve em Gotemburgo, mas que gostaria de visitá-la.
+RESPOSTA: Jag har aldrig varit i Göteborg, men jag vill gärna åka dit. | Jag har inte varit där tidigare, men jag vill gärna besöka Göteborg.
+
+Sara: Jag har åkt dit många gånger. Vill du åka tillsammans med mig?
+VOCÊ: Aceite o convite e diga que também estará de folga na sexta-feira.
+RESPOSTA: Ja, jag vill gärna åka med dig. Jag är också ledig på fredag.
+
+Sara: Då åker vi på fredag. Vill du ta tåget eller bussen?
+VOCÊ: Diga que prefere ir de trem, pois gosta de ler e ouvir música durante a viagem.
+RESPOSTA: Jag vill ta tåget, för jag gillar att läsa och lyssna på musik på tåget. | Jag vill åka tåg, för jag tycker om att läsa och lyssna på musik.
+
+Sara: Bra. Jag har redan köpt min biljett. Har du köpt din?
+VOCÊ: Diga que ainda não comprou a passagem, mas que vai comprá-la hoje à noite.
+RESPOSTA: Nej, jag har inte köpt någon biljett än. Jag ska köpa en i kväll. | Nej, jag har inte köpt biljetten än, men jag ska köpa den i kväll.
+
+Sara: Tåget går klockan åtta på morgonen. Kan du komma till stationen tidigt?
+VOCÊ: Confirme que pode chegar à estação às sete horas.
+RESPOSTA: Ja, jag kan komma till stationen klockan sju. | Javisst, jag ska vara på stationen klockan sju.
+
+Sara: Jag ska vara där klockan sju också. Ska vi köpa frukost på stationen?
+VOCÊ: Concorde e diga que gostaria de comprar pão e café na estação.
+RESPOSTA: Ja, jag vill gärna köpa bröd och kaffe på stationen.
+
+Sara: Vi kan äta på tåget. Har du en ryggsäck?
+VOCÊ: Responda que tem uma mochila pequena e que vai arrumá-la na quinta-feira.
+RESPOSTA: Ja, jag har en liten ryggsäck, och jag ska packa den på torsdag.
+
+Sara: Jag har hittat två hotell. Det första ligger nära stationen och det andra nära havet. Vilket hotell vill du bo på?
+VOCÊ: Diga que prefere ficar no hotel perto do mar.
+RESPOSTA: Jag vill bo på hotellet nära havet. | Jag vill gärna bo nära havet.
+
+Sara: Hotellet nära havet kostar tvåhundra kronor för en natt. Vad tycker du?
+VOCÊ: Diga que acha o preço bom e que quer reservar duas noites.
+RESPOSTA: Jag tycker att det är bra. Jag vill boka två nätter. | Jag tycker att tvåhundra kronor för en natt är bra, och jag vill boka två nätter.
+
+Sara: Har du redan bokat hotellet?
+VOCÊ: Diga que ainda não reservou e que vai telefonar para o hotel hoje à noite.
+RESPOSTA: Nej, jag har inte bokat än. Jag ska ringa hotellet i kväll.
+
+Sara: Kan jag hjälpa dig med bokningen?
+VOCÊ: Aceite a ajuda e explique que nunca reservou um hotel.
+RESPOSTA: Ja, jag behöver hjälp. Jag har aldrig bokat ett hotell. | Ja, kan du hjälpa mig? Jag har inte bokat ett hotell tidigare.
+
+Sara: Hotellet har frukost och en fin utsikt. Vill du bo där?
+VOCÊ: Diga que já se decidiu e que quer ficar nesse hotel.
+RESPOSTA: Ja, jag har bestämt mig. Jag vill bo där. | Jag har redan bestämt mig. Jag vill bo på hotellet nära havet.
+
+Sara: På lördag kan vi åka båt till skärgården. Tycker du om att åka båt?
+VOCÊ: Diga que já andou de barco muitas vezes, mas nunca no arquipélago.
+RESPOSTA: Ja, jag har åkt båt många gånger, men aldrig i skärgården.
+
+Sara: Det finns en strand där. Vill du bada?
+VOCÊ: Diga que prefere caminhar na praia a nadar, pois acha que a água estará fria.
+RESPOSTA: Jag vill inte bada. Jag vill promenera på stranden, för jag tror att vattnet kommer att vara kallt. | Nej, jag vill gå på stranden, men inte bada. Jag tror att vattnet kommer att vara kallt.
+
+Sara: Då går vi på stranden. Jag vill också besöka en park. Tycker du om naturen?
+VOCÊ: Diga que gosta da natureza e que costuma caminhar na floresta.
+RESPOSTA: Ja, jag gillar naturen och brukar promenera i skogen. | Ja, jag tycker om naturen. Jag brukar gå i skogen.
+
+Sara: Jag har läst om ett museum. Ska vi besöka det på söndag?
+VOCÊ: Aceite e diga que gosta de arte e história.
+RESPOSTA: Ja, gärna. Jag tycker om konst och historia. | Javisst, jag gillar konst och historia.
+
+Sara: Det finns också ett slott nära Göteborg. Har du hört om det?
+VOCÊ: Diga que não ouviu falar do castelo, mas que gostaria de visitá-lo também.
+RESPOSTA: Nej, jag har inte hört om det, men jag vill gärna besöka slottet också.
+
+Sara: På söndag har vi bara tid för museet eller slottet. Vilket vill du besöka?
+VOCÊ: Escolha o museu, explicando que gosta de arte.
+RESPOSTA: Jag vill besöka museet, för jag gillar konst. | Jag tycker om konst, så jag vill besöka museet.
+
+Sara: Okej, då blir det museet. Har du ätit fisk och skaldjur tidigare?
+VOCÊ: Diga que já comeu peixe, mas nunca frutos do mar.
+RESPOSTA: Jag har ätit fisk, men jag har aldrig ätit skaldjur.
+
+Sara: Jag har hört om en restaurang som säljer fisk och skaldjur. Vill du äta där på fredag?
+VOCÊ: Aceite jantar nesse restaurante na sexta-feira e diga que quer experimentar frutos do mar.
+RESPOSTA: Ja, jag vill gärna äta där på fredag och testa skaldjur. | Ja, vi kan äta där på fredag. Jag vill gärna testa skaldjur.
+
+Sara: Vi kan äta middag klockan sju. När vill du checka in på hotellet?
+VOCÊ: Diga que quer fazer o check-in às seis, antes do jantar.
+RESPOSTA: Jag vill checka in klockan sex, innan middagen. | Först vill jag checka in klockan sex. Sedan ska vi äta middag.
+
+Sara: Efter tåget är jag ofta trött. Vill du vila dig lite innan middagen?
+VOCÊ: Diga que quer descansar meia hora no hotel antes do jantar.
+RESPOSTA: Ja, jag vill vila mig en halvtimme på hotellet innan middagen. | Ja, innan middagen ska jag vila mig en halvtimme på hotellet.
+
+Sara: Jag behöver också vila mig. Hur känner du dig nu?
+VOCÊ: Diga que está feliz, mas um pouco preocupado com o clima.
+RESPOSTA: Jag känner mig glad, men jag oroar mig lite för vädret. | Jag är glad, men jag är också lite orolig för vädret.
+
+Sara: Jag tror att det blir sol på lördag. Vad tror du?
+VOCÊ: Diga que também acha que sábado fará sol, mas que talvez vente.
+RESPOSTA: Jag tror också att det kommer att bli sol på lördag, men det kanske kommer att blåsa.
+
+Sara: Vi ska vara i skärgården hela dagen. Ska vi ta med vatten och mat?
+VOCÊ: Concorde e diga que vocês devem levar água, pão e maçãs.
+RESPOSTA: Ja, vi ska ta med vatten, bröd och äpplen. | Ja, vi behöver ta med vatten, bröd och äpplen.
+
+Sara: Jag kan köpa bröd. Kan du köpa vatten och äpplen?
+VOCÊ: Diga que sim e que comprará a água e as maçãs amanhã.
+RESPOSTA: Ja, jag ska köpa vatten och äpplen i morgon. | Javisst, i morgon ska jag köpa vatten och äpplen.
+
+Sara: Jag har inte packat min ryggsäck. När ska du packa din?
+VOCÊ: Diga que vai arrumar a mochila na quinta-feira à noite e levar seu livro.
+RESPOSTA: Jag ska packa min ryggsäck på torsdag kväll och ta med min bok. | På torsdag kväll ska jag packa min ryggsäck. Jag ska också ta med min bok.
+
+Sara: Jag har en karta. Vill du se den?
+VOCÊ: Peça para ver o mapa e pergunte onde fica o hotel.
+RESPOSTA: Ja, får jag se kartan? Var ligger hotellet? | Ja, kan jag få se kartan? Var ligger hotellet?
+
+Sara: Hotellet ligger vid havet, men nära stationen också. Vill du gå dit från stationen?
+VOCÊ: Diga que sim, que gosta de caminhar e que gostaria de ir a pé até o hotel.
+RESPOSTA: Ja, jag gillar att promenera, och jag vill gärna gå till hotellet. | Ja, jag tycker om att gå. Jag vill gå dit från stationen.
+
+Sara: Då ses vi på stationen på fredag klockan sju. Hör av dig i kväll om hotellet.
+VOCÊ: Diga que telefonará às oito da noite e que está ansioso pela sexta-feira.
+RESPOSTA: Jag ska ringa dig klockan åtta i kväll. Jag längtar till fredag. | I kväll klockan åtta ska jag ringa dig. Jag längtar verkligen till fredag.
+
+Sara: Vad bra. Jag tror att det kommer att bli en fin helg. Vi ses på fredag!
+VOCÊ: Concorde que o fim de semana será bom e despeça-se.
+RESPOSTA: Ja, jag tror det också. Vi ses på fredag! | Jag tror också det. Hejdå!
+
+[FIM]
