@@ -657,6 +657,10 @@ function fillFilterOptions() {
 }
 
 function fillCheckboxGroup(container, values) {
+  const previouslyChecked = new Set(
+    getCheckedValues(container)
+  );
+
   container.innerHTML = "";
 
   values.forEach((value) => {
@@ -666,6 +670,8 @@ function fillCheckboxGroup(container, values) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.value = String(value);
+
+    checkbox.checked = previouslyChecked.has(checkbox.value);
 
     const text = document.createElement("span");
     text.textContent = String(value);
@@ -905,6 +911,7 @@ function getNewWordProgress(cardId) {
   return newWordsCardProgress[key];
 }
 
+
 function updateNewWordProgress(card, isCorrect) {
   const progress = getNewWordProgress(card.id);
   const cardStats = getCardStats(card.id);
@@ -919,27 +926,38 @@ function updateNewWordProgress(card, isCorrect) {
     return;
   }
 
-  // Contagem persistente, inclusive entre sessões de Palavras novas.
   cardStats.newWordsCorrectStreak++;
 
-  if (cardStats.newWordsCorrectStreak >= NEW_WORD_RECOVERY_STREAK) {
-    // Os números históricos não mudam: só deixam de pesar na prioridade.
-    cardStats.priorityWrongForgiven = cardStats.wrong || 0;
-    cardStats.priorityLapsesForgiven = cardStats.lapses || 0;
+  const pendingHistoricalErrors =
+    (cardStats.wrong || 0) > (cardStats.priorityWrongForgiven || 0) ||
+    (cardStats.lapses || 0) > (cardStats.priorityLapsesForgiven || 0);
 
-    progress.awaitingConfirmation = false;
-    progress.confirmed = true;
-    progress.delayRounds = 0;
+  const previouslyRecovered =
+    (cardStats.priorityWrongForgiven || 0) > 0 ||
+    (cardStats.priorityLapsesForgiven || 0) > 0;
+
+  const reachedRecovery =
+    pendingHistoricalErrors &&
+    cardStats.newWordsCorrectStreak >= NEW_WORD_RECOVERY_STREAK;
+
+  if (reachedRecovery || (previouslyRecovered && !pendingHistoricalErrors)) {
+    if (reachedRecovery) {
+      // Perdoa os erros somente para o cálculo da prioridade.
+      cardStats.priorityWrongForgiven = cardStats.wrong || 0;
+      cardStats.priorityLapsesForgiven = cardStats.lapses || 0;
+    }
+
+    // Palavra recuperada: volta depois de 15 rodadas.
+    progress.awaitingConfirmation = true;
+    progress.confirmed = false;
+    progress.delayRounds = NEW_WORD_FIRST_TRY_DELAY;
     return;
   }
-
-  const hasPendingHistoricalErrors =
-    (cardStats.wrong || 0) > (cardStats.priorityWrongForgiven || 0);
 
   if (
     progress.attempts === 1 &&
     !progress.hadWrongAnswer &&
-    !hasPendingHistoricalErrors
+    !pendingHistoricalErrors
   ) {
     // Acertou a palavra logo na primeira apresentação.
     progress.awaitingConfirmation = true;
@@ -949,12 +967,13 @@ function updateNewWordProgress(card, isCorrect) {
   }
 
   if (progress.awaitingConfirmation) {
-    // Acertou novamente depois do período de espera.
+    // Mantém a confirmação definitiva das palavras comuns.
     progress.awaitingConfirmation = false;
     progress.confirmed = true;
     progress.delayRounds = 0;
   }
 }
+
 
 function advanceNewWordsConfirmationDelays() {
   Object.values(newWordsCardProgress).forEach((progress) => {
@@ -1021,8 +1040,30 @@ function buildNewWordsRoundDeck(activeCards) {
       const confirmationCard = awaitingCards[0];
       const progress = getNewWordProgress(confirmationCard.id);
 
+      // Verifica se é uma palavra recuperada.
+      const cardStats = getCardStats(confirmationCard.id);
+
+      const isRecovered =
+        (cardStats.priorityWrongForgiven || 0) > 0 ||
+        (cardStats.priorityLapsesForgiven || 0) > 0;
+
+      // Enquanto a recuperada aguarda, utiliza palavras
+      // já confirmadas para manter o estudo funcionando.
+      if (isRecovered && progress.delayRounds > 0) {
+        const confirmedCards = activeCards.filter((card) =>
+          getNewWordProgress(card.id).confirmed
+        );
+
+        if (confirmedCards.length > 0) {
+          return buildWeightedDeck(confirmedCards);
+        }
+      }
+
+      // Se não houver outro card disponível, mantém
+      // o adiantamento que já existia no aplicativo.
       progress.delayRounds = 0;
       nextCards = [confirmationCard];
+
     }
   }
 
@@ -2068,14 +2109,16 @@ function registerCurrentAnswer(isCorrect) {
     newWordsRoundResults[String(currentCard.id)] = isCorrect;
     updateNewWordProgress(currentCard, isCorrect);
 
-    // Remove repetições já agendadas da palavra confirmada na rodada atual.
-    if (getNewWordProgress(currentCard.id).confirmed) {
+    // Remove repetições já agendadas de palavras
+    // confirmadas ou temporariamente adiadas.
+    const progress = getNewWordProgress(currentCard.id);
+
+    if (progress.confirmed || progress.awaitingConfirmation) {
       cards = cards.filter((queuedCard, index) =>
         index <= currentIndex ||
         String(queuedCard.id) !== String(currentCard.id)
       );
     }
-  }
 
   sessionAnswers.push({
     cardId: currentCard.id,
