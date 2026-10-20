@@ -2119,6 +2119,7 @@ function registerCurrentAnswer(isCorrect) {
         String(queuedCard.id) !== String(currentCard.id)
       );
     }
+  }
 
   sessionAnswers.push({
     cardId: currentCard.id,
