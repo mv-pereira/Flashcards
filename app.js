@@ -1,4 +1,9 @@
 const DATA_URL = "data/words.json";
+const GITHUB_EXERCISES_API = "https://api.github.com/repos/mv-pereira/Flashcards/contents/assets/Exercices";
+
+const GITHUB_EXERCISES_BRANCH = "main";
+
+let githubChaptersLoaded = false;
 
 let allCards = [];
 let cards = [];
@@ -230,6 +235,11 @@ const exerciseImportPanel = document.querySelector("#exerciseImportPanel");
 const exerciseSourceInput = document.querySelector("#exerciseSourceInput");
 const generateExerciseButton = document.querySelector("#generateExerciseButton");
 const exerciseImportMessage = document.querySelector("#exerciseImportMessage");
+
+const exerciseChapterSelect = document.querySelector("#exerciseChapterSelect");
+const exerciseFileSelect = document.querySelector("#exerciseFileSelect");
+const loadGithubExerciseButton = document.querySelector("#loadGithubExerciseButton");
+const refreshGithubExercisesButton = document.querySelector("#refreshGithubExercisesButton");
 
 const exerciseRenderedPanel = document.querySelector("#exerciseRenderedPanel");
 const exerciseTitle = document.querySelector("#exerciseTitle");
@@ -4298,7 +4308,15 @@ function nextConjugationQuestion() {
 
 function openExerciseScreen() {
   exerciseImportMessage.textContent = "";
+
   showScreen(exerciseScreen);
+
+  if (
+    !githubChaptersLoaded &&
+    !refreshGithubExercisesButton.disabled
+  ) {
+    loadGithubChapters();
+  }
 }
 
 function backFromExerciseScreen() {
@@ -4332,7 +4350,238 @@ function resetExerciseScreen() {
 
   newExerciseButton.classList.add("hidden");
 
-  exerciseSourceInput.focus();
+  exerciseChapterSelect.focus();
+}
+
+async function fetchGithubDirectory(url) {
+
+  const response = await fetch(
+    `${url}?ref=${encodeURIComponent(GITHUB_EXERCISES_BRANCH)}`,
+    {
+      cache: "no-store",
+      headers: {
+        Accept: "application/vnd.github+json"
+      }
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Erro HTTP ${response.status} ao consultar o GitHub. ` +
+      "Verifique a conexão, o repositório e o limite da API."
+    );
+  }
+
+  const items = await response.json();
+
+  if (!Array.isArray(items)) {
+    throw new Error(
+      "O GitHub não retornou uma lista de arquivos."
+    );
+  }
+
+  return items;
+}
+
+async function loadGithubChapters() {
+
+  githubChaptersLoaded = false;
+
+  refreshGithubExercisesButton.disabled = true;
+  exerciseChapterSelect.disabled = true;
+  exerciseFileSelect.disabled = true;
+  loadGithubExerciseButton.disabled = true;
+
+  exerciseChapterSelect.replaceChildren(
+    new Option("Carregando capítulos...", "")
+  );
+
+  exerciseFileSelect.replaceChildren(
+    new Option("Selecione um capítulo primeiro", "")
+  );
+
+  exerciseImportMessage.textContent = "";
+
+  try {
+
+    const items = await fetchGithubDirectory(
+      GITHUB_EXERCISES_API
+    );
+
+    const chapters = items
+      .filter(item => item.type === "dir")
+      .sort((a, b) =>
+        a.name.localeCompare(b.name, "pt-BR", {
+          numeric: true
+        })
+      );
+
+    exerciseChapterSelect.replaceChildren(
+      new Option("Escolha um capítulo", "")
+    );
+
+    chapters.forEach(chapter => {
+
+      exerciseChapterSelect.add(
+        new Option(chapter.name, chapter.url)
+      );
+
+    });
+
+    exerciseChapterSelect.disabled =
+      chapters.length === 0;
+
+    githubChaptersLoaded =
+      chapters.length > 0;
+
+    if (chapters.length === 0) {
+      exerciseImportMessage.textContent =
+        "Nenhum capítulo encontrado na pasta Exercices.";
+    }
+
+  } catch (error) {
+
+    console.error(error);
+
+    exerciseChapterSelect.replaceChildren(
+      new Option("Erro ao carregar capítulos", "")
+    );
+
+    exerciseImportMessage.textContent =
+      error.message;
+
+  } finally {
+
+    refreshGithubExercisesButton.disabled = false;
+
+  }
+}
+
+async function loadGithubExercises() {
+
+  const chapterUrl = exerciseChapterSelect.value;
+
+  exerciseFileSelect.disabled = true;
+  loadGithubExerciseButton.disabled = true;
+
+  exerciseFileSelect.replaceChildren(
+    new Option(
+      chapterUrl
+        ? "Carregando exercícios..."
+        : "Selecione um capítulo primeiro",
+      ""
+    )
+  );
+
+  exerciseImportMessage.textContent = "";
+
+  if (!chapterUrl) return;
+
+  try {
+
+    const items = await fetchGithubDirectory(
+      chapterUrl
+    );
+
+    if (exerciseChapterSelect.value !== chapterUrl) {
+      return;
+    }
+
+    const files = items
+      .filter(item =>
+        item.type === "file" &&
+        item.download_url
+      )
+      .sort((a, b) =>
+        a.name.localeCompare(b.name, "pt-BR", {
+          numeric: true
+        })
+      );
+
+    exerciseFileSelect.replaceChildren(
+      new Option("Escolha um exercício", "")
+    );
+
+    files.forEach(file => {
+
+      exerciseFileSelect.add(
+        new Option(file.name, file.download_url)
+      );
+
+    });
+
+    exerciseFileSelect.disabled =
+      files.length === 0;
+
+    if (files.length === 0) {
+      exerciseImportMessage.textContent =
+        "Nenhum arquivo de exercício nesse capítulo.";
+    }
+
+  } catch (error) {
+
+    if (exerciseChapterSelect.value !== chapterUrl) {
+      return;
+    }
+
+    console.error(error);
+
+    exerciseFileSelect.replaceChildren(
+      new Option("Erro ao carregar exercícios", "")
+    );
+
+    exerciseImportMessage.textContent =
+      error.message;
+
+  }
+}
+
+async function loadSelectedGithubExercise() {
+
+  const url = exerciseFileSelect.value;
+
+  if (!url) {
+    exerciseImportMessage.textContent =
+      "Escolha um capítulo e um exercício.";
+
+    return;
+  }
+
+  loadGithubExerciseButton.disabled = true;
+
+  exerciseImportMessage.textContent =
+    "Baixando exercício...";
+
+  try {
+
+    const response = await fetch(url, {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(
+        `Não foi possível baixar o exercício (HTTP ${response.status}).`
+      );
+    }
+
+    exerciseSourceInput.value =
+      await response.text();
+
+    generateExercise();
+
+  } catch (error) {
+
+    console.error(error);
+
+    exerciseImportMessage.textContent =
+      error.message;
+
+  } finally {
+
+    loadGithubExerciseButton.disabled =
+      !exerciseFileSelect.value;
+
+  }
 }
 
 function generateExercise() {
@@ -9120,6 +9369,36 @@ backFromExerciseButton.addEventListener(
 generateExerciseButton.addEventListener(
   "click",
   generateExercise
+);
+
+// Quando o usuário escolhe um capítulo
+exerciseChapterSelect.addEventListener(
+  "change",
+  loadGithubExercises
+);
+
+
+// Quando o usuário escolhe um exercício
+exerciseFileSelect.addEventListener(
+  "change",
+  () => {
+    loadGithubExerciseButton.disabled =
+      !exerciseFileSelect.value;
+  }
+);
+
+
+// Quando o usuário clica em carregar exercício
+loadGithubExerciseButton.addEventListener(
+  "click",
+  loadSelectedGithubExercise
+);
+
+
+// Quando o usuário solicita atualizar a lista
+refreshGithubExercisesButton.addEventListener(
+  "click",
+  loadGithubChapters
 );
 
 finishExerciseButton.addEventListener(

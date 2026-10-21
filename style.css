@@ -1466,6 +1466,41 @@ html.dark-theme .comparison-feedback.wrong {
   font-weight: 800;
 }
 
+/* Seleção de exercícios do GitHub */
+
+.exercise-github-panel {
+  display: grid;
+  gap: 10px;
+
+  padding: 14px;
+
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.exercise-github-select {
+  width: 100%;
+  min-height: 48px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  padding: 0 12px;
+
+  background: var(--card);
+  color: var(--text);
+}
+
+.exercise-github-select:focus {
+  outline: 3px solid rgba(77, 119, 168, 0.24);
+  border-color: var(--primary);
+}
+
+.exercise-github-select:disabled {
+  opacity: 0.6;
+}
+
 .exercise-source-input {
   width: 100%;
   min-height: 320px;
