@@ -4355,8 +4355,15 @@ function resetExerciseScreen() {
 
 async function fetchGithubDirectory(url) {
 
+  const githubUrl = new URL(url);
+
+  githubUrl.searchParams.set(
+    "ref",
+    GITHUB_EXERCISES_BRANCH
+  );
+
   const response = await fetch(
-    `${url}?ref=${encodeURIComponent(GITHUB_EXERCISES_BRANCH)}`,
+    githubUrl.toString(),
     {
       cache: "no-store",
       headers: {
