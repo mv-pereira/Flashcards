@@ -1563,34 +1563,124 @@ html.dark-theme .comparison-feedback.wrong {
   background: var(--soft);
 }
 
-/* Botão de áudio dos exercícios */
+/* Minirreprodutor de áudio dos exercícios */
 
-.exercise-audio-button {
-  display: block;
-
-  width: fit-content;
-  max-width: 100%;
-
+.exercise-audio-player {
+  width: min(100%, 420px);
   margin-top: 12px;
-  padding: 12px 18px;
+  padding: 12px;
 
-  border: none;
-  border-radius: 14px;
+  display: grid;
+  gap: 10px;
 
-  background: var(--primary);
-  color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: var(--card);
+  color: var(--text);
+}
+
+/* Título do reprodutor */
+
+.exercise-audio-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+/* Linha dos quatro botões */
+
+.exercise-audio-controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+/* Aparência dos botões */
+
+.exercise-audio-control {
+  min-width: 0;
+  min-height: 44px;
+
+  padding: 8px 4px;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  background: var(--soft);
+  color: var(--text);
 
   font-size: 0.95rem;
-  font-weight: 800;
+  font-weight: 850;
 
   cursor: pointer;
 }
 
-.exercise-audio-button:active {
+/* Botão principal: reproduzir e pausar */
+
+.exercise-audio-control-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+
+  font-size: 1.2rem;
+}
+
+/* Efeito ao pressionar */
+
+.exercise-audio-control:active:not(:disabled) {
   transform: scale(0.97);
 }
 
-.exercise-audio-button:disabled {
+/* Botões temporariamente desativados */
+
+.exercise-audio-control:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Destaque de acessibilidade para teclado */
+
+.exercise-audio-control:focus-visible,
+.exercise-audio-seek:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Linha da barra de progresso */
+
+.exercise-audio-progress {
+  display: grid;
+
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+
+  align-items: center;
+  gap: 8px;
+}
+
+/* Indicadores de tempo */
+
+.exercise-audio-time {
+  font-size: 0.78rem;
+  color: var(--muted);
+
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+/* Barra interativa de progresso */
+
+.exercise-audio-seek {
+  width: 100%;
+  margin: 0;
+
+  accent-color: var(--primary);
+
+  cursor: pointer;
+}
+
+/* Barra enquanto a duração não está disponível */
+
+.exercise-audio-seek:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }

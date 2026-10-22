@@ -5598,104 +5598,157 @@ function createExerciseTextBlock(
 
   article.appendChild(label);
 
-  // Cria o botão somente quando existe um MP3.
+  // Cria o reprodutor somente quando existe um MP3.
   if (audioUrl) {
-
-    const audio =
-      document.createElement("audio");
-
+    const audio = document.createElement("audio");
     audio.src = audioUrl;
-    audio.preload = "none";
+    audio.preload = "metadata";
 
-    const button =
-      document.createElement("button");
+    const player = document.createElement("div");
+    player.className = "exercise-audio-player";
+    player.setAttribute("role", "group");
+    player.setAttribute("aria-label", `Áudio do texto ${textNumber}`);
 
-    button.type = "button";
+    const title = document.createElement("div");
+    title.className = "exercise-audio-title";
+    title.textContent = "🔊 Áudio do exercício";
 
-    button.className =
-      "exercise-audio-button";
+    const controls = document.createElement("div");
+    controls.className = "exercise-audio-controls";
 
-    button.textContent =
-      "▶ Ouvir áudio";
+    function addControl(symbol, description, action) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "exercise-audio-control";
+      button.textContent = symbol;
+      button.title = description;
+      button.setAttribute("aria-label", description);
+      button.addEventListener("click", action);
+      controls.appendChild(button);
+      return button;
+    }
 
-    // Reproduzir ou pausar.
-    button.addEventListener("click", () => {
+    const restartButton = addControl("⏮", "Voltar ao início", () => {
+      audio.currentTime = 0;
+      updateProgress();
+    });
 
+    const backButton = addControl("↶ 5s", "Voltar 5 segundos", () => {
+      audio.currentTime = Math.max(0, audio.currentTime - 5);
+      updateProgress();
+    });
+
+    const playButton = addControl("▶", "Reproduzir áudio", () => {
       if (!audio.paused) {
         audio.pause();
         return;
       }
 
-      // Impede dois áudios de tocarem juntos.
-      exerciseBlocks
-        .querySelectorAll("audio")
-        .forEach(other => {
-
-          if (other !== audio) {
-            other.pause();
-          }
-
-        });
-
-      audio.play().catch(error => {
-
-        console.error(
-          "Erro ao tocar MP3:",
-          error
-        );
-
-        button.textContent =
-          "Áudio indisponível";
-
-        button.disabled = true;
-
+      // Mantém a regra atual: somente um áudio dos exercícios por vez.
+      exerciseBlocks.querySelectorAll("audio").forEach((other) => {
+        if (other !== audio) other.pause();
       });
 
+      audio.play().catch((error) => {
+        if (error.name === "AbortError") return;
+        console.error("Erro ao tocar MP3:", error);
+        showAudioError();
+      });
+    });
+    playButton.classList.add("exercise-audio-control-primary");
+
+    const forwardButton = addControl("5s ↷", "Avançar 5 segundos", () => {
+      if (!Number.isFinite(audio.duration)) return;
+      audio.currentTime = Math.min(audio.duration, audio.currentTime + 5);
+      updateProgress();
     });
 
-    // Atualiza o botão durante a reprodução.
-    audio.addEventListener("play", () => {
+    const progress = document.createElement("div");
+    progress.className = "exercise-audio-progress";
 
-      button.textContent =
-        "⏸ Pausar áudio";
+    const currentLabel = document.createElement("span");
+    currentLabel.className = "exercise-audio-time";
+    currentLabel.textContent = "00:00";
 
-    });
+    const seekBar = document.createElement("input");
+    seekBar.type = "range";
+    seekBar.className = "exercise-audio-seek";
+    seekBar.min = "0";
+    seekBar.max = "1";
+    seekBar.step = "0.1";
+    seekBar.value = "0";
+    seekBar.disabled = true;
+    seekBar.setAttribute("aria-label", "Posição do áudio");
 
-    // Atualiza o botão quando o áudio é pausado.
-    audio.addEventListener("pause", () => {
+    const totalLabel = document.createElement("span");
+    totalLabel.className = "exercise-audio-time";
+    totalLabel.textContent = "--:--";
 
-      if (!button.disabled) {
-        button.textContent =
-          "▶ Ouvir áudio";
+    progress.append(currentLabel, seekBar, totalLabel);
+
+    function formatTime(seconds) {
+      if (!Number.isFinite(seconds)) return "--:--";
+      const whole = Math.floor(Math.max(0, seconds));
+      const minutes = String(Math.floor(whole / 60)).padStart(2, "0");
+      const remainder = String(whole % 60).padStart(2, "0");
+      return `${minutes}:${remainder}`;
+    }
+
+    function updateProgress() {
+      const duration = audio.duration;
+      const canSeek = Number.isFinite(duration) && duration > 0;
+      const time = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+
+      currentLabel.textContent = formatTime(time);
+      totalLabel.textContent = canSeek ? formatTime(duration) : "--:--";
+      seekBar.disabled = !canSeek;
+      restartButton.disabled = !canSeek;
+      backButton.disabled = !canSeek;
+      forwardButton.disabled = !canSeek;
+      seekBar.max = canSeek ? String(duration) : "1";
+      seekBar.value = canSeek ? String(Math.min(time, duration)) : "0";
+    }
+
+    function setPlayButton(isPlaying) {
+      playButton.textContent = isPlaying ? "⏸" : "▶";
+      const description = isPlaying ? "Pausar áudio" : "Reproduzir áudio";
+      playButton.title = description;
+      playButton.setAttribute("aria-label", description);
+    }
+
+    function showAudioError() {
+      title.textContent = "Áudio indisponível";
+      controls.querySelectorAll("button").forEach((button) => {
+        button.disabled = true;
+      });
+      playButton.textContent = "✕";
+      playButton.title = "Áudio indisponível";
+      playButton.setAttribute("aria-label", "Áudio indisponível");
+      seekBar.disabled = true;
+    }
+
+    seekBar.addEventListener("input", () => {
+      if (Number.isFinite(audio.duration) && audio.duration > 0) {
+        audio.currentTime = Number(seekBar.value);
+        updateProgress();
       }
-
     });
 
-    // Permite ouvir novamente após terminar.
+    audio.addEventListener("loadedmetadata", updateProgress);
+    audio.addEventListener("durationchange", updateProgress);
+    audio.addEventListener("timeupdate", updateProgress);
+    audio.addEventListener("play", () => setPlayButton(true));
+    audio.addEventListener("pause", () => setPlayButton(false));
     audio.addEventListener("ended", () => {
-
       audio.currentTime = 0;
-
-      button.textContent =
-        "▶ Ouvir novamente";
-
+      setPlayButton(false);
+      updateProgress();
     });
+    audio.addEventListener("error", showAudioError);
 
-    // Trata erros de carregamento.
-    audio.addEventListener("error", () => {
-
-      button.textContent =
-        "Áudio indisponível";
-
-      button.disabled = true;
-
-    });
-
-    article.append(
-      button,
-      audio
-    );
-
+    player.append(title, controls, progress, audio);
+    article.appendChild(player);
+    updateProgress();
   }
 
   article.appendChild(content);
