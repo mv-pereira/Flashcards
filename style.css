@@ -1563,6 +1563,38 @@ html.dark-theme .comparison-feedback.wrong {
   background: var(--soft);
 }
 
+/* Botão de áudio dos exercícios */
+
+.exercise-audio-button {
+  display: block;
+
+  width: fit-content;
+  max-width: 100%;
+
+  margin-top: 12px;
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.exercise-audio-button:active {
+  transform: scale(0.97);
+}
+
+.exercise-audio-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .exercise-question-card {
   background: var(--card);
 

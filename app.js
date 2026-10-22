@@ -5,6 +5,9 @@ const GITHUB_EXERCISES_BRANCH = "main";
 
 let githubChaptersLoaded = false;
 
+let githubExerciseAudioFiles = [];
+let currentExerciseAudioUrls = new Map();
+
 let allCards = [];
 let cards = [];
 let baseSessionCards = [];
@@ -4306,6 +4309,17 @@ function nextConjugationQuestion() {
   showConjugationQuestion();
 }
 
+function stopExerciseAudios() {
+
+  exerciseBlocks
+    .querySelectorAll("audio")
+    .forEach(audio => {
+
+      audio.pause();
+      audio.currentTime = 0;
+    });
+}
+
 function openExerciseScreen() {
   exerciseImportMessage.textContent = "";
 
@@ -4320,10 +4334,13 @@ function openExerciseScreen() {
 }
 
 function backFromExerciseScreen() {
+  stopExerciseAudios();
   showScreen(exerciseMenuScreen);
 }
 
 function resetExerciseScreen() {
+  stopExerciseAudios();
+  currentExerciseAudioUrls = new Map();
   currentExercise = null;
   exerciseFinished = false;
   exerciseErrorsCopyText = "";
@@ -4467,6 +4484,7 @@ async function loadGithubChapters() {
 async function loadGithubExercises() {
 
   const chapterUrl = exerciseChapterSelect.value;
+  githubExerciseAudioFiles = [];
 
   exerciseFileSelect.disabled = true;
   loadGithubExerciseButton.disabled = true;
@@ -4494,10 +4512,19 @@ async function loadGithubExercises() {
       return;
     }
 
+    // Separa os arquivos MP3 encontrados no capítulo.
+    githubExerciseAudioFiles = items.filter(item =>
+      item.type === "file" &&
+      item.download_url &&
+      /\.mp3$/i.test(item.name)
+    );
+
+    // Mostra apenas os exercícios, sem arquivos de áudio.
     const files = items
       .filter(item =>
         item.type === "file" &&
-        item.download_url
+        item.download_url &&
+        !/\.(?:mp3|m4a|wav|ogg|aac|flac|opus)$/i.test(item.name)
       )
       .sort((a, b) =>
         a.name.localeCompare(b.name, "pt-BR", {
@@ -4574,7 +4601,36 @@ async function loadSelectedGithubExercise() {
     exerciseSourceInput.value =
       await response.text();
 
-    generateExercise();
+    // Nome do exercício selecionado.
+    const exerciseName = exerciseFileSelect
+      .selectedOptions[0]
+      .textContent
+      .replace(/\.(?:txt|md)$/i, "");
+
+    // Armazena os áudios correspondentes ao exercício.
+    const audioUrls = new Map();
+
+    githubExerciseAudioFiles.forEach(file => {
+
+      const match = file.name.match(
+        /^(.+)_(\d+)\.mp3$/i
+      );
+
+      if (
+        match &&
+        match[1] === exerciseName &&
+        Number(match[2]) > 0
+      ) {
+        audioUrls.set(
+          Number(match[2]),
+          file.download_url
+        );
+      }
+
+    });
+
+    // Gera o exercício com seus áudios.
+    generateExercise(audioUrls);
 
   } catch (error) {
 
@@ -4591,7 +4647,7 @@ async function loadSelectedGithubExercise() {
   }
 }
 
-function generateExercise() {
+function generateExercise(audioUrls = new Map()) {
   exerciseImportMessage.textContent = "";
 
   try {
@@ -4600,6 +4656,7 @@ function generateExercise() {
     );
 
     currentExercise = parsedExercise;
+    currentExerciseAudioUrls = audioUrls;
     exerciseFinished = false;
     exerciseErrorsCopyText = "";
 
@@ -5460,6 +5517,7 @@ function renderExercise() {
   exerciseTitle.textContent =
     currentExercise.title;
 
+  stopExerciseAudios();
   exerciseBlocks.replaceChildren();
   exerciseResultSummary.replaceChildren();
 
@@ -5472,10 +5530,11 @@ function renderExercise() {
         textNumber++;
 
         exerciseBlocks.appendChild(
-          createExerciseTextBlock(
-            block.text,
-            textNumber
-          )
+        createExerciseTextBlock(
+          block.text,
+          textNumber,
+          currentExerciseAudioUrls.get(textNumber)
+        )
         );
 
         return;
@@ -5505,8 +5564,10 @@ function renderExercise() {
 
 function createExerciseTextBlock(
   text,
-  textNumber
+  textNumber,
+  audioUrl = null
 ) {
+
   const article =
     document.createElement("article");
 
@@ -5520,9 +5581,9 @@ function createExerciseTextBlock(
     "exercise-block-label";
 
   label.textContent =
-    textNumber === 1 ?
-    "Texto" :
-    `Texto ${textNumber}`;
+    textNumber === 1
+      ? "Texto"
+      : `Texto ${textNumber}`;
 
   const content =
     document.createElement("div");
@@ -5535,12 +5596,112 @@ function createExerciseTextBlock(
     text
   );
 
-  article.append(
-    label,
-    content
-  );
+  article.appendChild(label);
+
+  // Cria o botão somente quando existe um MP3.
+  if (audioUrl) {
+
+    const audio =
+      document.createElement("audio");
+
+    audio.src = audioUrl;
+    audio.preload = "none";
+
+    const button =
+      document.createElement("button");
+
+    button.type = "button";
+
+    button.className =
+      "exercise-audio-button";
+
+    button.textContent =
+      "▶ Ouvir áudio";
+
+    // Reproduzir ou pausar.
+    button.addEventListener("click", () => {
+
+      if (!audio.paused) {
+        audio.pause();
+        return;
+      }
+
+      // Impede dois áudios de tocarem juntos.
+      exerciseBlocks
+        .querySelectorAll("audio")
+        .forEach(other => {
+
+          if (other !== audio) {
+            other.pause();
+          }
+
+        });
+
+      audio.play().catch(error => {
+
+        console.error(
+          "Erro ao tocar MP3:",
+          error
+        );
+
+        button.textContent =
+          "Áudio indisponível";
+
+        button.disabled = true;
+
+      });
+
+    });
+
+    // Atualiza o botão durante a reprodução.
+    audio.addEventListener("play", () => {
+
+      button.textContent =
+        "⏸ Pausar áudio";
+
+    });
+
+    // Atualiza o botão quando o áudio é pausado.
+    audio.addEventListener("pause", () => {
+
+      if (!button.disabled) {
+        button.textContent =
+          "▶ Ouvir áudio";
+      }
+
+    });
+
+    // Permite ouvir novamente após terminar.
+    audio.addEventListener("ended", () => {
+
+      audio.currentTime = 0;
+
+      button.textContent =
+        "▶ Ouvir novamente";
+
+    });
+
+    // Trata erros de carregamento.
+    audio.addEventListener("error", () => {
+
+      button.textContent =
+        "Áudio indisponível";
+
+      button.disabled = true;
+
+    });
+
+    article.append(
+      button,
+      audio
+    );
+
+  }
+
+  article.appendChild(content);
 
   return article;
+
 }
 
 function renderExerciseReadingContent(
@@ -9375,7 +9536,7 @@ backFromExerciseButton.addEventListener(
 
 generateExerciseButton.addEventListener(
   "click",
-  generateExercise
+  () => generateExercise()
 );
 
 // Quando o usuário escolhe um capítulo
