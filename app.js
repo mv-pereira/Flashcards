@@ -6,7 +6,9 @@ const GITHUB_EXERCISES_BRANCH = "main";
 let githubChaptersLoaded = false;
 
 let githubExerciseAudioFiles = [];
+let githubExerciseAudioDirectories = [];
 let currentExerciseAudioUrls = new Map();
+let currentExerciseSpeechAudioUrls = new Map();
 
 let allCards = [];
 let cards = [];
@@ -4339,9 +4341,10 @@ function backFromExerciseScreen() {
 }
 
 function resetExerciseScreen() {
-  stopExerciseAudios();
-  currentExerciseAudioUrls = new Map();
-  currentExercise = null;
+    stopExerciseAudios();
+    currentExerciseAudioUrls = new Map();
+    currentExerciseSpeechAudioUrls = new Map();
+    currentExercise = null;
   exerciseFinished = false;
   exerciseErrorsCopyText = "";
   exerciseStartTime = null;
@@ -4484,7 +4487,9 @@ async function loadGithubChapters() {
 async function loadGithubExercises() {
 
   const chapterUrl = exerciseChapterSelect.value;
+
   githubExerciseAudioFiles = [];
+  githubExerciseAudioDirectories = [];
 
   exerciseFileSelect.disabled = true;
   loadGithubExerciseButton.disabled = true;
@@ -4511,6 +4516,11 @@ async function loadGithubExercises() {
     if (exerciseChapterSelect.value !== chapterUrl) {
       return;
     }
+
+    // Guarda as subpastas de áudio dos diálogos.
+    githubExerciseAudioDirectories = items.filter(item =>
+      item.type === "dir" && item.url
+    );
 
     // Separa os arquivos MP3 encontrados no capítulo.
     githubExerciseAudioFiles = items.filter(item =>
@@ -4568,6 +4578,108 @@ async function loadGithubExercises() {
       error.message;
 
   }
+}
+
+async function loadGithubSpeechAudioUrls(exerciseName) {
+
+  // Normaliza os nomes para permitir:
+  // "Dialog 01" = "Dialog01"
+
+  const normalizeName = (name) =>
+    name.replace(/[\s_-]+/g, "").toLowerCase();
+
+
+  // Procura a pasta correspondente ao exercício.
+
+  const matchingDirectory = githubExerciseAudioDirectories.find(
+    (directory) =>
+      normalizeName(directory.name) === normalizeName(exerciseName)
+  );
+
+
+  // Se não existir uma pasta correspondente,
+  // retorna um mapa vazio.
+
+  if (!matchingDirectory) {
+    return new Map();
+  }
+
+
+  // Consulta os arquivos dentro da pasta.
+
+  const files = await fetchGithubDirectory(
+    matchingDirectory.url
+  );
+
+
+  // Armazena os áudios encontrados.
+
+  const audioUrls = new Map();
+
+
+  files.forEach((file) => {
+
+    if (
+      file.type !== "file" ||
+      !file.download_url
+    ) {
+      return;
+    }
+
+
+    // Reconhece:
+    //
+    // P1_01.mp3
+    // P1_02.mp3
+    // P2_01.mp3
+    // P2_02.mp3
+
+    const match = file.name.match(
+      /^P([12])_(\d+)\.mp3$/i
+    );
+
+    if (!match) {
+      return;
+    }
+
+
+    const index = Number(match[2]);
+
+    if (
+      !Number.isSafeInteger(index) ||
+      index < 1
+    ) {
+      return;
+    }
+
+
+    // Recupera os áudios já associados
+    // à interação correspondente.
+
+    const entry = audioUrls.get(index) || {};
+
+
+    // P1 = interlocutor
+    // P2 = resposta do aluno
+
+    if (match[1] === "1") {
+
+      entry.interlocutor = file.download_url;
+
+    } else {
+
+      entry.resposta = file.download_url;
+
+    }
+
+
+    audioUrls.set(index, entry);
+
+  });
+
+
+  return audioUrls;
+
 }
 
 async function loadSelectedGithubExercise() {
@@ -4629,8 +4741,18 @@ async function loadSelectedGithubExercise() {
 
     });
 
-    // Gera o exercício com seus áudios.
-    generateExercise(audioUrls);
+    // Busca os áudios P1_XX.mp3 e P2_XX.mp3
+    // na pasta correspondente ao diálogo.
+
+    const speechAudioUrls = await loadGithubSpeechAudioUrls(
+      exerciseName
+    );
+
+    // Gera o exercício com os áudios correspondentes.
+    generateExercise(
+      audioUrls,
+      speechAudioUrls
+    );
 
   } catch (error) {
 
@@ -4647,7 +4769,7 @@ async function loadSelectedGithubExercise() {
   }
 }
 
-function generateExercise(audioUrls = new Map()) {
+function generateExercise( audioUrls = new Map(), speechAudioUrls = new Map()) {
   exerciseImportMessage.textContent = "";
 
   try {
@@ -4657,6 +4779,7 @@ function generateExercise(audioUrls = new Map()) {
 
     currentExercise = parsedExercise;
     currentExerciseAudioUrls = audioUrls;
+    currentExerciseSpeechAudioUrls = speechAudioUrls;
     exerciseFinished = false;
     exerciseErrorsCopyText = "";
 
@@ -5842,9 +5965,143 @@ function parseExerciseDialogueLine(line) {
   };
 }
 
+function createExerciseSpeechAudioButton(
+  audioUrl,
+  label
+) {
+
+  // Contêiner do botão e do elemento de áudio.
+
+  const container = document.createElement("span");
+
+  container.className =
+    "exercise-speech-inline-audio";
+
+
+  // Cria o botão Play.
+
+  const button = document.createElement("button");
+
+  button.type = "button";
+
+  button.className =
+    "exercise-speech-play-button";
+
+  button.textContent = "▶";
+
+  button.title = label;
+
+  button.setAttribute(
+    "aria-label",
+    label
+  );
+
+
+  // Cria o elemento responsável por executar o MP3.
+
+  const audio = document.createElement("audio");
+
+  audio.src = audioUrl;
+
+  audio.preload = "none";
+
+
+  // Trata arquivos indisponíveis.
+
+  function showError() {
+
+    button.disabled = true;
+
+    button.textContent = "✕";
+
+    button.title = "Áudio indisponível";
+
+    button.setAttribute(
+      "aria-label",
+      "Áudio indisponível"
+    );
+
+  }
+
+
+  // Executa o áudio ao tocar no botão.
+
+  button.addEventListener("click", (event) => {
+
+    event.stopPropagation();
+
+
+    // Interrompe outros áudios dos exercícios.
+
+    exerciseBlocks
+      .querySelectorAll("audio")
+      .forEach((other) => {
+
+        if (other !== audio) {
+          other.pause();
+        }
+
+      });
+
+
+    try {
+
+      // Sempre começa a reprodução do início.
+
+      audio.currentTime = 0;
+
+
+      audio.play().catch((error) => {
+
+        if (error.name === "AbortError") {
+          return;
+        }
+
+        console.error(
+          "Erro ao tocar áudio da prática oral:",
+          error
+        );
+
+        showError();
+
+      });
+
+    } catch (error) {
+
+      console.error(
+        "Erro ao tocar áudio da prática oral:",
+        error
+      );
+
+      showError();
+
+    }
+
+  });
+
+
+  // Detecta problemas no carregamento do MP3.
+
+  audio.addEventListener(
+    "error",
+    showError
+  );
+
+
+  container.append(
+    button,
+    audio
+  );
+
+
+  return container;
+
+}
+
 function createExerciseDialogueLine(
   speakerName,
-  dialogueText
+  dialogueText,
+  audioUrl = null
 ) {
   const row =
     document.createElement("div");
@@ -5872,10 +6129,48 @@ function createExerciseDialogueLine(
     dialogueText
   );
 
+if (audioUrl) {
+
+  // Contêiner para o botão Play e o nome.
+
+  const speakerWithAudio =
+    document.createElement("div");
+
+  speakerWithAudio.className =
+    "exercise-speech-speaker-with-audio";
+
+
+  // Coloca o botão antes do nome.
+
+  speakerWithAudio.append(
+
+    createExerciseSpeechAudioButton(
+      audioUrl,
+      `Ouvir fala de ${speakerName}`
+    ),
+
+    speaker
+
+  );
+
+
+  // Adiciona o nome com áudio e o texto da fala.
+
+  row.append(
+    speakerWithAudio,
+    utterance
+  );
+
+} else {
+
+  // Mantém o comportamento original.
+
   row.append(
     speaker,
     utterance
   );
+
+}
 
   return row;
 }
@@ -5949,16 +6244,44 @@ function createExerciseSpeechItem(
   wrapper.className =
     "exercise-speech-item";
 
-  item.context.forEach(
-    (dialogue) => {
-      wrapper.appendChild(
-        createExerciseDialogueLine(
-          dialogue.speaker,
-          dialogue.text
-        )
+    // Recupera os áudios desta interação.
+    //
+    // itemIndex começa em zero.
+    // Os arquivos MP3 começam em 01.
+
+    const speechFiles =
+      currentExerciseSpeechAudioUrls.get(
+        itemIndex + 1
       );
-    }
-  );
+
+
+    // Cria as falas do interlocutor.
+
+    item.context.forEach(
+      (dialogue, dialogueIndex) => {
+
+
+        // O áudio P1 pertence à fala imediatamente
+        // anterior à instrução VOCÊ:.
+
+        const audioUrl =
+          dialogueIndex === item.context.length - 1
+            ? speechFiles?.interlocutor
+            : null;
+
+
+        wrapper.appendChild(
+
+          createExerciseDialogueLine(
+            dialogue.speaker,
+            dialogue.text,
+            audioUrl
+          )
+
+        );
+
+      }
+    );
 
   const userRow =
     document.createElement("div");
@@ -6077,10 +6400,44 @@ function createExerciseSpeechItem(
     }
   );
 
-  responseArea.append(
-    button,
-    answerBox
-  );
+    // Cria uma linha com a instrução e o botão de áudio.
+
+    const promptRow =
+      document.createElement("div");
+
+    promptRow.className =
+      "exercise-speech-prompt-row";
+
+
+    // Adiciona a instrução em português.
+
+    promptRow.appendChild(button);
+
+
+    // Adiciona o botão de áudio da resposta,
+    // quando existir o arquivo P2 correspondente.
+
+    if (speechFiles?.resposta) {
+
+      promptRow.appendChild(
+
+        createExerciseSpeechAudioButton(
+          speechFiles.resposta,
+          `Ouvir resposta ${itemIndex + 1}`
+        )
+
+      );
+
+    }
+
+
+    // Mantém o botão de áudio fora da área
+    // que mostra ou oculta as respostas.
+
+    responseArea.append(
+      promptRow,
+      answerBox
+    );
 
   userRow.append(
     speaker,

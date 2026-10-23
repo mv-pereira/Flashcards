@@ -2460,3 +2460,145 @@ html.dark-theme .comparison-feedback.wrong {
   position: relative;
   z-index: 0;
 }
+
+/* =========================================
+   ÁUDIOS INDIVIDUAIS DA PRÁTICA ORAL
+   ========================================= */
+
+
+/* Acrescenta dois-pontos depois do interlocutor
+   e do rótulo Você, somente na prática oral. */
+
+.exercise-speech-block
+.exercise-dialogue-speaker::after {
+  content: ":";
+}
+
+
+/* Alinhamento entre o áudio e o interlocutor */
+
+.exercise-speech-speaker-with-audio,
+.exercise-speech-prompt-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  min-width: 0;
+}
+
+
+/* Centraliza o botão em relação ao nome */
+
+.exercise-speech-speaker-with-audio {
+  align-items: center;
+}
+
+
+/* A instrução VOCÊ ocupa o espaço disponível */
+
+.exercise-speech-prompt-row
+> .exercise-speech-prompt {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+
+
+/* Contêiner do botão e do áudio */
+
+.exercise-speech-inline-audio {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+
+/* Botão Play */
+
+.exercise-speech-play-button {
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+
+/* Efeito ao pressionar */
+
+.exercise-speech-play-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+
+/* Acessibilidade: foco pelo teclado */
+
+.exercise-speech-play-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+
+/* Estado desativado */
+
+.exercise-speech-play-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+/* Oculta o elemento de áudio nativo */
+
+.exercise-speech-inline-audio audio {
+  display: none;
+}
+
+
+/* =========================================
+   AJUSTES PARA CELULARES
+   ========================================= */
+
+@media (max-width: 420px) {
+
+  /* Reduz a largura da coluna do interlocutor */
+
+  .exercise-speech-block
+  .exercise-dialogue-line,
+  .exercise-speech-user-line {
+
+    grid-template-columns:
+      minmax(70px, 86px)
+      minmax(0, 1fr);
+
+    column-gap: 8px;
+
+  }
+
+
+  /* Reduz os espaçamentos */
+
+  .exercise-speech-speaker-with-audio,
+  .exercise-speech-prompt-row {
+    gap: 4px;
+  }
+
+
+  /* Botões ligeiramente menores no celular */
+
+  .exercise-speech-play-button {
+    width: 32px;
+    height: 32px;
+  }
+
+}
