@@ -114,7 +114,7 @@ body {
   padding-bottom: calc(14px + var(--safe-bottom));
 
   touch-action: manipulation;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 button,
@@ -1569,6 +1569,10 @@ html.dark-theme .comparison-feedback.wrong {
   width: min(100%, 420px);
   margin-top: 12px;
   padding: 12px;
+
+  position: sticky;
+  top: calc(12px + var(--safe-top));
+  z-index: 10;
 
   display: grid;
   gap: 10px;
