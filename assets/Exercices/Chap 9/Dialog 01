@@ -1,0 +1,115 @@
+[EXERCICIO]
+TITULO: Ett nytt hem
+
+[QUESTAO]
+TIPO: VF
+En soffa är en soffa.
+
+RESPOSTA: V
+
+[FALA]
+Sara: Här är vardagsrummet. Vad tycker du om det?
+VOCÊ: Diga que a sala de estar é espaçosa e clara.
+RESPOSTA: Vardagsrummet är rymligt och ljust. | Det är ett rymligt och ljust vardagsrum.
+
+Sara: Ja, men väggarna är ganska tråkiga. Vilken färg vill du ha?
+VOCÊ: Diga que quer paredes brancas e uma parede verde.
+RESPOSTA: Jag vill ha vita väggar och en grön vägg.
+
+Sara: En grön vägg? Det låter fint! Var ska soffan stå?
+VOCÊ: Diga que o sofá deve ficar em frente à janela.
+RESPOSTA: Soffan ska stå framför fönstret.
+
+Sara: Bra. Men var ska vi ha bordet?
+VOCÊ: Sugira que a mesa fique ao lado do sofá.
+RESPOSTA: Bordet kan stå bredvid soffan. | Vi kan ha bordet bredvid soffan.
+
+Sara: Och lampan? Jag vill inte ha den framför fönstret.
+VOCÊ: Sugira que a luminária fique ao lado da poltrona.
+RESPOSTA: Lampan kan stå bredvid fåtöljen. | Vi kan ha lampan bredvid fåtöljen.
+
+Sara: Det blir bra. Men fåtöljen är gammal. Ska vi köpa en ny?
+VOCÊ: Diga que não quer comprar uma poltrona nova, porque a antiga ainda está boa.
+RESPOSTA: Nej, jag vill inte köpa en ny fåtölj. Den gamla är fortfarande bra.
+
+Sara: Jag förstår. Vi behöver kanske en matta. Vad tycker du om den här blå mattan?
+VOCÊ: Diga que o tapete azul é bonito, mas que você quer um tapete verde.
+RESPOSTA: Den blå mattan är fin, men jag vill ha en grön matta.
+
+Sara: En grön matta och en grön vägg? Blir det inte för mycket grönt?
+VOCÊ: Concorde que seria verde demais e sugira comprar um tapete cinza.
+RESPOSTA: Ja, det blir för mycket grönt. Vi kan köpa en grå matta.
+
+Sara: Det tycker jag också. Vad ska vi göra med bokhyllan?
+VOCÊ: Diga que a estante deve ficar à direita da porta.
+RESPOSTA: Bokhyllan ska stå till höger om dörren.
+
+Sara: Men där står skrivbordet just nu.
+VOCÊ: Sugira colocar a escrivaninha debaixo da janela e deixar a estante perto da porta.
+RESPOSTA: Då kan skrivbordet stå under fönstret och bokhyllan kan stå nära dörren. | Vi kan ha skrivbordet under fönstret och bokhyllan nära dörren.
+
+Sara: Ja! Och var ska tavlorna hänga?
+VOCÊ: Diga que os quadros devem ficar pendurados acima do sofá.
+RESPOSTA: Tavlorna ska hänga ovanför soffan.
+
+Sara: Det låter bra. Har du några kuddar till soffan?
+VOCÊ: Diga que tem duas almofadas amarelas e uma branca.
+RESPOSTA: Ja, jag har två gula kuddar och en vit kudde.
+
+Sara: Vilka fina kuddar! Var är gardinerna?
+VOCÊ: Diga que as cortinas estão no quarto, atrás da porta.
+RESPOSTA: Gardinerna är i sovrummet, bakom dörren.
+
+Sara: Ska vi titta i sovrummet? Det är inte så rymligt.
+VOCÊ: Diga que o quarto é pequeno, mas aconchegante.
+RESPOSTA: Sovrummet är litet, men hemtrevligt.
+
+Sara: Var står sängen? Jag ser bara garderoben.
+VOCÊ: Explique que a cama está junto à parede, ao lado do guarda-roupa.
+RESPOSTA: Sängen står vid väggen, bredvid garderoben.
+
+Sara: Okej. Och spegeln? Var vill du ha den?
+VOCÊ: Diga que quer o espelho ao lado da janela.
+RESPOSTA: Jag vill ha spegeln bredvid fönstret.
+
+Sara: Vi har också ett arbetsrum. Har du sett det?
+VOCÊ: Confirme que já viu o escritório e diga que ele é pequeno, mas claro.
+RESPOSTA: Ja, jag har sett det. Det är litet men ljust.
+
+Sara: Det finns ett gammalt bord där. Behöver du ett nytt?
+VOCÊ: Diga que a mesa antiga está boa, mas que você precisa de uma cadeira nova.
+RESPOSTA: Det gamla bordet är bra, men jag behöver en ny stol.
+
+Sara: Jag har faktiskt två stolar. En är svart och en är brun. Vilken vill du ha?
+VOCÊ: Escolha a cadeira preta.
+RESPOSTA: Jag vill ha den svarta stolen. | Jag tar den svarta stolen.
+
+Sara: Toppen! Nu måste vi titta i köket. Var är kylskåpet?
+VOCÊ: Diga que a geladeira está à esquerda do fogão e o micro-ondas está sobre a mesa.
+RESPOSTA: Kylskåpet står till vänster om spisen och mikrovågsugnen står på bordet.
+
+Sara: Bra. Jag hittar inte glasen och besticken.
+VOCÊ: Explique que os copos estão na prateleira e os talheres estão sobre a mesa.
+RESPOSTA: Glasen står på hyllan och besticken ligger på bordet.
+
+Sara: Tack! Ska vi duka bordet nu? Jag börjar bli hungrig.
+VOCÊ: Concorde e sugira que vocês primeiro ponham a mesa e depois cozinhem.
+RESPOSTA: Ja, vi kan först duka bordet och sedan laga mat.
+
+Sara: Vad vill du äta? Det finns tomater, paprika och bröd.
+VOCÊ: Diga que quer comer pão com tomate e pimentão e beber água.
+RESPOSTA: Jag vill äta bröd med tomat och paprika och dricka vatten.
+
+Sara: Bra, jag kan laga mat. Kan du duka bordet så länge?
+VOCÊ: Confirme que vai pôr a mesa e buscar dois copos e dois pratos.
+RESPOSTA: Ja, jag kan duka bordet. Jag hämtar två glas och två tallrikar.
+
+Sara: Tack! I morgon vill jag flytta in. Kan du hjälpa mig?
+VOCÊ: Diga que pode ajudar amanhã de manhã, mas precisa trabalhar à tarde.
+RESPOSTA: Ja, jag kan hjälpa dig i morgon på morgonen, men jag måste jobba på eftermiddagen.
+
+Sara: Vad bra! Då ses vi i morgon klockan nio. Ta det lugnt i kväll!
+VOCÊ: Confirme que vocês vão se encontrar amanhã às nove horas e se despeça.
+RESPOSTA: Ja, vi ses i morgon klockan nio. Hejdå!
+
+[FIM]
