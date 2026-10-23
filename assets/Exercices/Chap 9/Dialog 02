@@ -1,0 +1,115 @@
+[EXERCICIO]
+TITULO: En dag i Uppsala
+
+[QUESTAO]
+TIPO: VF
+Ett tåg är ett tåg.
+
+RESPOSTA: V
+
+[FALA]
+Emil: Tåget till Uppsala går klockan nio. Har du biljetten?
+VOCÊ: Confirme que está com a passagem e diga que ela está na sua bolsa.
+RESPOSTA: Ja, jag har biljetten i min väska. | Ja, biljetten ligger i min väska.
+
+Emil: Bra! Min ryggsäck är tung. Vad har du i din väska?
+VOCÊ: Diga que tem uma câmera, um livro e um pouco de água na bolsa.
+RESPOSTA: Jag har en kamera, en bok och lite vatten i min väska. | I min väska har jag en kamera, en bok och lite vatten.
+
+Emil: En kamera! Har du köpt en ny?
+VOCÊ: Diga que não comprou uma câmera nova: a sua é antiga, mas funciona bem.
+RESPOSTA: Nej, jag har inte köpt en ny kamera. Min kamera är gammal, men den fungerar bra.
+
+Emil: Vad bra! Vet du hur lång tid det tar att åka till Uppsala?
+VOCÊ: Informe que a viagem de trem até Uppsala leva uma hora.
+RESPOSTA: Det tar en timme med tåg till Uppsala. | Med tåg tar det en timme till Uppsala.
+
+Emil: Det regnar redan här. Tror du att det blir bättre i Uppsala?
+VOCÊ: Diga que acha que estará ensolarado em Uppsala.
+RESPOSTA: Jag tror att det blir soligt i Uppsala.
+
+Emil: Vi får se. Vill du besöka museet först?
+VOCÊ: Concorde e diga que quer visitar primeiro o museu e depois ir ao parque.
+RESPOSTA: Ja, jag vill besöka museet först och sedan gå till parken. | Ja, först vill jag besöka museet och sedan gå till parken.
+
+Emil: Museet har en ny utställning om historia. Tycker du om historia?
+VOCÊ: Diga que gosta de história e que a nova exposição parece interessante.
+RESPOSTA: Ja, jag tycker om historia. Den nya utställningen låter intressant.
+
+Emil: Min syster besökte museet förra veckan. Hon tyckte att utställningen var bra.
+VOCÊ: Diga que ainda não viu a exposição, mas quer vê-la hoje.
+RESPOSTA: Jag har inte sett utställningen än, men jag vill se den i dag.
+
+Emil: Jag har varit i Uppsala många gånger. Har du varit där?
+VOCÊ: Responda que nunca esteve em Uppsala.
+RESPOSTA: Nej, jag har aldrig varit i Uppsala. | Nej, jag har aldrig varit där.
+
+Emil: Nu kommer tåget! Var vill du sitta?
+VOCÊ: Diga que quer se sentar perto da janela.
+RESPOSTA: Jag vill sitta vid fönstret.
+
+Emil: Det går bra. Jag sitter bredvid dig. Vill du ha lite vatten?
+VOCÊ: Aceite a água e diga que está com sede.
+RESPOSTA: Ja, tack. Jag är törstig.
+
+Emil: Jag är hungrig. Har du någon mat?
+VOCÊ: Diga que tem duas maçãs e um pouco de pão; ofereça uma maçã a ele.
+RESPOSTA: Jag har två äpplen och lite bröd. Vill du ha ett äpple?
+
+Emil: Tack, gärna! Det här äpplet är gott.
+VOCÊ: Conte que comprou as maçãs ontem.
+RESPOSTA: Jag köpte äpplena i går. | Äpplena köpte jag i går.
+
+Emil: Nu är vi framme! Var ligger museet?
+VOCÊ: Explique que o museu fica perto da estação.
+RESPOSTA: Museet ligger nära stationen. | Det ligger nära stationen.
+
+Emil: Ska vi gå dit eller ta bussen?
+VOCÊ: Sugira que vocês vão a pé, pois o museu fica perto.
+RESPOSTA: Vi kan gå dit. Museet ligger nära. | Vi behöver inte ta bussen. Museet ligger nära, så vi kan gå.
+
+Emil: Här ligger en stor, gammal kyrka. Vill du titta på den?
+VOCÊ: Diga que a igreja é bonita, mas que você quer visitar o museu primeiro.
+RESPOSTA: Kyrkan är fin, men jag vill besöka museet först. | Den är fin, men jag vill besöka museet först.
+
+Emil: Där är museet! Det ligger till höger om parken, eller hur?
+VOCÊ: Corrija Emil: o museu fica à esquerda do parque, em frente à biblioteca.
+RESPOSTA: Nej, museet ligger till vänster om parken, mitt emot biblioteket.
+
+Emil: Det finns två utställningar: en om historia och en om konst. Vilken vill du se?
+VOCÊ: Diga que quer ver primeiro a exposição sobre história e depois a de arte.
+RESPOSTA: Jag vill se utställningen om historia först och sedan den om konst. | Först vill jag se utställningen om historia och sedan den om konst.
+
+Emil: Titta på den här gamla statyn! Vad tycker du om den?
+VOCÊ: Diga que a estátua é interessante e bastante grande.
+RESPOSTA: Den är intressant och ganska stor. | Jag tycker att den är intressant och ganska stor.
+
+Emil: Här är ett litet rum med många tavlor. Vill du gå in?
+VOCÊ: Concorde e diga que quer entrar para ver os quadros.
+RESPOSTA: Ja, jag vill gå in och se tavlorna.
+
+Emil: Det finns en blå tavla och en grön tavla här. Vilken gillar du?
+VOCÊ: Diga que prefere o quadro verde, mas que o azul também é bonito.
+RESPOSTA: Jag gillar den gröna tavlan, men den blå är också fin. | Jag tycker om den gröna tavlan, men den blå är också fin.
+
+Emil: Nu har vi varit här i två timmar. Ska vi gå till parken?
+VOCÊ: Concorde e diga que quer caminhar um pouco pelo parque.
+RESPOSTA: Ja, jag vill promenera en stund i parken. | Ja, jag vill gå i parken en stund.
+
+Emil: Det är mörka moln nu. Tror du att det kommer att regna?
+VOCÊ: Diga que acha que vai chover em breve.
+RESPOSTA: Ja, jag tror att det kommer att regna snart. | Ja, det kommer nog att regna snart.
+
+Emil: Då kan vi gå till kaféet nära parken i stället. Det är ganska litet.
+VOCÊ: Aceite a sugestão e diga que gostaria de tomar uma xícara de chá.
+RESPOSTA: Det låter bra. Jag skulle vilja ha en kopp te. | Ja, gärna. Jag vill ha en kopp te.
+
+Emil: Jag tar kaffe och en bulle. Har du pengar?
+VOCÊ: Diga que tem seu cartão bancário e que pode pagar.
+RESPOSTA: Ja, jag har mitt bankkort. Jag kan betala.
+
+Emil: Det var en rolig dag. Ska vi ta tåget hem klockan sex?
+VOCÊ: Concorde com a volta de trem às seis horas e diga que gostaria de voltar a Uppsala outra vez.
+RESPOSTA: Ja, vi kan ta tåget hem klockan sex. Jag vill gärna komma tillbaka till Uppsala.
+
+[FIM]
