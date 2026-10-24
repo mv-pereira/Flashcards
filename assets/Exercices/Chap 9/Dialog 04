@@ -1,0 +1,135 @@
+[EXERCICIO]
+TITULO: En helg på västkusten
+
+[QUESTAO]
+TIPO: VF
+En buss är en buss.
+
+RESPOSTA: V
+
+[FALA]
+Oskar: Jag har hittat två hotell på västkusten. Vill du se dem?
+VOCÊ: Aceite olhar as opções e pergunte qual dos hotéis fica perto do mar.
+RESPOSTA: Ja, gärna. Vilket hotell ligger nära havet? | Javisst. Vilket av hotellen ligger nära havet?
+
+Oskar: Det första hotellet ligger nära havet. Det andra ligger nära en skog.
+VOCÊ: Diga que prefere ficar no primeiro hotel, perto do mar.
+RESPOSTA: Jag vill bo på det första hotellet, nära havet. | Jag vill bo vid havet, på det första hotellet.
+
+Oskar: Det första hotellet är litet, men rummen är fina. Vill du boka ett rum?
+VOCÊ: Confirme que deseja reservar um quarto por duas noites.
+RESPOSTA: Ja, jag vill boka ett rum för två nätter. | Ja, vi ska boka ett rum för två nätter.
+
+Oskar: Jag har bokat rummet. Frukosten kostar hundra kronor. Är det okej?
+VOCÊ: Concorde com o preço e diga que vocês podem tomar café da manhã no hotel.
+RESPOSTA: Ja, det är okej. Vi kan äta frukost på hotellet. | Ja, det går bra. Vi kan äta frukost på hotellet.
+
+Oskar: Hur ska vi åka till västkusten? Med buss eller tåg?
+VOCÊ: Escolha viajar de trem e explique que ele é rápido.
+RESPOSTA: Jag vill åka tåg. Tåget är snabbt. | Vi kan ta tåget. Det är snabbt.
+
+Oskar: Tåget går på lördag klockan åtta. Är det för tidigt?
+VOCÊ: Reconheça que é cedo, mas diga que esse horário está bom.
+RESPOSTA: Det är tidigt, men det går bra. | Ja, det är tidigt, men klockan åtta är bra.
+
+Oskar: När ska vi komma hem? På söndag eller på måndag?
+VOCÊ: Escolha voltar na segunda-feira e explique que você estará de folga nesse dia.
+RESPOSTA: På måndag. Jag är ledig då. | Jag vill komma hem på måndag, för jag är ledig då.
+
+Oskar: Vi har bokat biljetter och hotell. Vad ska du packa?
+VOCÊ: Diga que vai levar roupas, sapatos e sua câmera.
+RESPOSTA: Jag ska packa kläder, skor och min kamera. | Jag tar med mig kläder, skor och min kamera.
+
+Oskar: Har du solglasögon? Det kanske blir soligt på lördag.
+VOCÊ: Confirme que tem óculos de sol, mas diga que precisa de uma bolsa.
+RESPOSTA: Ja, jag har solglasögon, men jag behöver en väska. | Ja, jag har solglasögon. Jag måste köpa en väska.
+
+Oskar: Vill du handla en väska i morgon?
+VOCÊ: Aceite e sugira que vocês vão a uma loja de roupas amanhã.
+RESPOSTA: Ja, i morgon kan vi gå till en klädaffär. | Ja, vi kan gå till en klädaffär i morgon.
+
+Oskar: Jag har sett en billig svart väska. Vill du ha den?
+VOCÊ: Recuse a bolsa preta e diga que prefere uma bolsa pequena e verde.
+RESPOSTA: Nej, jag vill ha en liten grön väska. | Nej tack, jag vill köpa en liten grön väska.
+
+Oskar: Då köper vi en grön väska. Har du ditt bankkort?
+VOCÊ: Confirme que o cartão bancário está na sua carteira.
+RESPOSTA: Ja, det ligger i min plånbok. | Ja, jag har mitt bankkort i plånboken.
+
+Oskar: Nu är det lördag. Tåget går snart. Har du biljetterna?
+VOCÊ: Confirme que as passagens estão na sua bolsa.
+RESPOSTA: Ja, de ligger i min väska. | Ja, jag har biljetterna i min väska.
+
+Oskar: Jag hittar inte min kamera. Har du sett den?
+VOCÊ: Diga que a câmera de Oskar está na mochila dele.
+RESPOSTA: Ja, den ligger i din ryggsäck. | Ja, jag har sett den. Den ligger i din ryggsäck.
+
+Oskar: Tack och lov! Jag tänkte att kameran var kvar hemma.
+VOCÊ: Diga que agora vocês precisam ir até o trem.
+RESPOSTA: Nu måste vi gå till tåget. | Vi måste gå till tåget nu.
+
+Oskar: Tåget är här! Ska vi sitta vid fönstret?
+VOCÊ: Aceite e diga que quer observar a floresta.
+RESPOSTA: Ja, jag vill se skogen. | Ja, gärna. Jag vill titta på skogen.
+
+Oskar: Titta, det regnar. Tror du att det kommer att regna hela dagen?
+VOCÊ: Diga que acha que não e que talvez fique ensolarado mais tarde.
+RESPOSTA: Jag tror inte det. Det kanske blir soligt senare. | Nej, jag tror att det kanske blir soligt senare.
+
+Oskar: Nu är vi på hotellet. Vad tycker du om rummet?
+VOCÊ: Descreva o quarto como pequeno e bonito e diga que a vista é boa.
+RESPOSTA: Rummet är litet men fint, och utsikten är bra.
+
+Oskar: Vill du bada i poolen eller besöka en fästning?
+VOCÊ: Diga que prefere visitar a fortaleza primeiro e nadar mais tarde.
+RESPOSTA: Jag vill besöka fästningen först och bada senare. | Först vill jag besöka fästningen. Sedan vill jag bada.
+
+Oskar: Fästningen ligger i närheten av en park. Ska vi promenera dit?
+VOCÊ: Concorde em caminhar pelo parque até a fortaleza.
+RESPOSTA: Ja, vi kan promenera genom parken till fästningen. | Ja, vi går genom parken till fästningen.
+
+Oskar: Här finns en gammal staty. Har du läst om den?
+VOCÊ: Diga que não leu sobre a estátua, mas gostaria de saber mais sobre ela.
+RESPOSTA: Nej, men jag vill veta mer om den. | Nej, jag har inte läst om den, men jag vill veta mer.
+
+Oskar: Den är ganska intressant. Vill du gå på museum också?
+VOCÊ: Confirme que quer ir ao museu porque gosta de história e arte.
+RESPOSTA: Ja, jag vill gå på museum. Jag gillar historia och konst. | Ja, gärna. Jag tycker om historia och konst.
+
+Oskar: Vi har två timmar. Museet stänger klockan fem. Vill du gå in nu?
+VOCÊ: Aceite entrar agora e diga que quer ver a exposição.
+RESPOSTA: Ja, jag vill gå in nu och se utställningen. | Ja, vi går in nu. Jag vill titta på utställningen.
+
+Oskar: Den här utställningen är intressant, eller hur?
+VOCÊ: Concorde e diga que gosta muito de história, mas que também gosta de arte.
+RESPOSTA: Ja, jag gillar historia mycket, men jag tycker också om konst. | Ja, jag tycker mycket om historia, men jag gillar konst också.
+
+Oskar: Efter museet vill jag äta middag. Vill du äta fisk eller skaldjur?
+VOCÊ: Escolha peixe e sugira que vocês encontrem um restaurante perto do hotel.
+RESPOSTA: Jag vill äta fisk. Vi kan hitta en restaurang nära hotellet. | Fisk, tack. Kan vi hitta en restaurang nära hotellet?
+
+Oskar: Här finns en restaurang som säljer fisk och skaldjur. Vill du gå dit?
+VOCÊ: Aceite e pergunte se Oskar já comeu frutos do mar nesse restaurante.
+RESPOSTA: Ja, gärna. Har du ätit skaldjur här? | Ja, vi går dit. Har du ätit skaldjur på den här restaurangen?
+
+Oskar: Jag har ätit skaldjur här många gånger. Har du testat sill?
+VOCÊ: Diga que nunca comeu arenque e que quer experimentar hoje à noite.
+RESPOSTA: Nej, jag har aldrig ätit sill. Jag vill testa det i kväll. | Nej, jag har aldrig ätit sill. Jag ska testa det i kväll.
+
+Oskar: Då går vi dit. Men först måste jag ringa min syster.
+VOCÊ: Diga que vai esperar ali e que ele pode telefonar para a irmã.
+RESPOSTA: Jag väntar här. Du kan ringa din syster. | Jag väntar här. Ring din syster.
+
+Oskar: Nu har jag pratat med min syster. Hon kommer hit i morgon. Vill du träffa henne?
+VOCÊ: Diga que gostaria de conhecê-la e sugira almoçar todos juntos amanhã.
+RESPOSTA: Ja, gärna. Vi kan äta lunch tillsammans i morgon. | Ja, jag vill träffa henne. Vi kan äta lunch tillsammans i morgon.
+
+Oskar: På söndag blir det soligt. Ska vi åka båt med henne?
+VOCÊ: Aceite o passeio de barco pelo arquipélago e proponha também nadar no mar.
+RESPOSTA: Ja, vi kan åka båt i skärgården och bada i havet. | Ja, jag vill åka båt i skärgården. Vi kan också bada i havet.
+
+Oskar: Och på måndag åker vi hem. Tycker du att vår semester har varit bra?
+VOCÊ: Diga que foi um fim de semana divertido e que deseja voltar a esse lugar.
+RESPOSTA: Ja, det har varit en rolig helg. Jag vill resa hit igen. | Ja, jag har haft en rolig helg och vill komma tillbaka.
+
+[FIM]
