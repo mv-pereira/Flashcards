@@ -1,0 +1,119 @@
+[EXERCICIO]
+TITULO: I den nya lägenheten
+
+[QUESTAO]
+TIPO: VF
+En bok är en bok.
+
+RESPOSTA: V
+
+[FALA]
+Elin: Nu står soffan framför fönstret. Tycker du om det?
+VOCÊ: Diga que não e que prefere o sofá junto à parede.
+RESPOSTA: Nej, jag vill ha soffan vid väggen.
+
+Elin: Vid den vita väggen eller den gröna väggen?
+VOCÊ: Escolha a parede branca da sala de estar.
+RESPOSTA: Vid den vita väggen i vardagsrummet.
+
+Elin: Nu står soffan vid den vita väggen. Var ska fåtöljen stå?
+VOCÊ: Sugira que a poltrona fique ao lado da janela.
+RESPOSTA: Fåtöljen kan stå bredvid fönstret. | Den kan stå bredvid fönstret.
+
+Elin: Och mattan? Ska den ligga under bordet?
+VOCÊ: Concorde e peça a Elin que coloque o tapete embaixo da mesa.
+RESPOSTA: Ja, lägg mattan under bordet. | Ja, kan du lägga mattan under bordet?
+
+Elin: Nu ligger den blå mattan under bordet. Tycker du om färgen?
+VOCÊ: Confirme que gosta da cor azul do tapete.
+RESPOSTA: Ja, jag gillar den blå färgen. | Ja, jag tycker om den blå färgen.
+
+Elin: Och tavlan? Var ska den hänga?
+VOCÊ: Diga que o quadro deve ficar pendurado acima do sofá.
+RESPOSTA: Tavlan ska hänga ovanför soffan. | Den ska hänga ovanför soffan.
+
+Elin: Bra! Vad ska vi göra med den gamla bokhyllan?
+VOCÊ: Sugira que a estante antiga fique no escritório.
+RESPOSTA: Den gamla bokhyllan kan stå i arbetsrummet. | Vi kan ha den gamla bokhyllan i arbetsrummet.
+
+Elin: Men arbetsrummet är litet. Är bokhyllan för stor?
+VOCÊ: Diga que a estante é pequena e pode ficar ao lado da escrivaninha.
+RESPOSTA: Nej, den är liten och kan stå bredvid skrivbordet. | Nej, bokhyllan är liten. Den kan stå bredvid skrivbordet.
+
+Elin: Och skrivbordet? Vill du ha det framför fönstret?
+VOCÊ: Confirme que deseja a escrivaninha em frente à janela.
+RESPOSTA: Ja, jag vill ha skrivbordet framför fönstret. | Ja, skrivbordet ska stå framför fönstret.
+
+Elin: Då får du mycket ljus i arbetsrummet. Har du en lampa också?
+VOCÊ: Diga que tem uma luminária antiga, mas quer comprar uma nova.
+RESPOSTA: Ja, jag har en gammal lampa, men jag vill köpa en ny.
+
+Elin: Vilken färg ska den nya lampan ha?
+VOCÊ: Diga que a luminária nova deve ser branca.
+RESPOSTA: Den nya lampan ska vara vit.
+
+Elin: Ska vi köpa lampan i dag?
+VOCÊ: Diga que não, que vocês vão comprá-la amanhã e que hoje precisam limpar a casa.
+RESPOSTA: Nej, vi köper den i morgon. I dag måste vi städa lägenheten. | Nej, vi ska köpa den i morgon. I dag måste vi städa lägenheten.
+
+Elin: Har du redan städat köket?
+VOCÊ: Diga que ainda não limpou a cozinha.
+RESPOSTA: Nej, jag har inte städat köket än.
+
+Elin: Jag kan hjälpa dig. Vad ska jag göra först?
+VOCÊ: Peça que Elin lave os copos e os pratos.
+RESPOSTA: Kan du diska glasen och tallrikarna? | Diska glasen och tallrikarna, tack.
+
+Elin: Javisst. Och du, vad ska du göra?
+VOCÊ: Diga que primeiro vai aspirar a sala de estar e depois limpar o hall de entrada.
+RESPOSTA: Först ska jag dammsuga vardagsrummet. Sedan ska jag städa hallen. | Jag ska först dammsuga vardagsrummet och sedan städa hallen.
+
+Elin: Du ser lite trött ut. Har du sovit bra?
+VOCÊ: Diga que não dormiu bem esta noite, mas agora está bem.
+RESPOSTA: Nej, jag sov inte bra i natt, men jag mår bra nu.
+
+Elin: Vill du dricka kaffe nu? Vi kan städa senare.
+VOCÊ: Aceite a proposta e peça uma xícara de café.
+RESPOSTA: Ja, gärna. Jag vill ha en kopp kaffe. | Ja tack, jag tar en kopp kaffe.
+
+Elin: Vill du ha mjölk i kaffet?
+VOCÊ: Responda que sim e peça um pouco de leite.
+RESPOSTA: Ja tack, lite mjölk. | Ja, jag vill ha lite mjölk.
+
+Elin: Vi har inget bröd hemma. Ska jag köpa bröd?
+VOCÊ: Concorde e peça que ela compre pão e dois bolinhos.
+RESPOSTA: Ja, kan du köpa bröd och två bullar? | Ja, köp bröd och två bullar, tack.
+
+Elin: Jag kan köpa bröd och bullar. Ska jag köpa äpplen också?
+VOCÊ: Diga que sim e peça também três maçãs.
+RESPOSTA: Ja, köp tre äpplen också. | Ja, kan du köpa tre äpplen också?
+
+Elin: Bra. Kommer din kompis Anna hit i kväll?
+VOCÊ: Confirme que Anna vem e informe que ela chegará às sete horas.
+RESPOSTA: Ja, Anna kommer hit klockan sju. | Ja, hon kommer hit klockan sju.
+
+Elin: Har Anna sett din nya lägenhet?
+VOCÊ: Diga que Anna ainda não viu o apartamento novo.
+RESPOSTA: Nej, hon har inte sett den än. | Nej, Anna har inte sett min nya lägenhet än.
+
+Elin: Tror du att hon kommer att tycka om den?
+VOCÊ: Diga que acredita que sim e descreva o apartamento como claro e aconchegante.
+RESPOSTA: Ja, jag tror det. Lägenheten är ljus och hemtrevlig. | Ja, det tror jag. Den är ljus och hemtrevlig.
+
+Elin: Anna kommer klockan sju. Ska vi duka bordet nu?
+VOCÊ: Concorde, diga que vai buscar os pratos e peça a Elin que busque os copos.
+RESPOSTA: Ja, jag hämtar tallrikarna. Kan du hämta glasen? | Ja, jag ska hämta tallrikarna. Kan du hämta glasen?
+
+Elin: Javisst. Var ligger besticken?
+VOCÊ: Explique que os talheres estão sobre a mesa da cozinha.
+RESPOSTA: De ligger på bordet i köket. | Besticken ligger på bordet i köket.
+
+Elin: Nu är bordet fint. Vi har städat köket och vardagsrummet. Hur känner du dig?
+VOCÊ: Conte que está cansado, mas feliz, e agradeça pela ajuda.
+RESPOSTA: Jag är trött men glad. Tack för hjälpen!
+
+Elin: Jag går till mataffären nu. Jag kommer tillbaka snart.
+VOCÊ: Reaja positivamente e diga que vocês se verão em breve.
+RESPOSTA: Toppen, vi ses snart! | Bra, vi ses snart!
+
+[FIM]
