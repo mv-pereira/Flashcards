@@ -1536,6 +1536,7 @@
           </div>
           <p id="enEttMessage" class="message" role="status" aria-live="polite"></p>
           <button id="enEttNextButton" class="button button-primary hidden" type="button"> Próximo card </button>
+          <button id="finishEnEttSessionButton" class="button button-secondary hidden" type="button"> Encerrar sessão </button>
         </div>
       </section>
       <section id="conjugationScreen" class="exercise-screen hidden" aria-label="Desafio dos Verbos">
@@ -1560,6 +1561,7 @@
             <p id="conjugationMessage" class="message" role="status" aria-live="polite"></p>
             <button id="conjugationNextButton" class="button button-primary hidden" type="button"> Próximo verbo </button>
           </div>
+          <button id="finishConjugationSessionButton" class="button button-secondary hidden" type="button"> Encerrar sessão </button>
         </div>
       </section>
       <section id="wordsScreen" class="words-screen hidden" aria-label="Palavras filtradas">
@@ -1579,14 +1581,14 @@
       </section>
       <section id="summaryScreen" class="summary-screen hidden" aria-label="Resumo da sessão">
         <div class="summary-card">
-          <h2>Resumo da sessão</h2>
+          <h2 id="summaryTitle">Resumo da sessão</h2>
           <div class="summary-grid">
             <div>
-              <span>Cards respondidos</span>
+              <span id="summaryTotalLabel">Cards respondidos</span>
               <strong id="summaryTotal">0</strong>
             </div>
             <div>
-              <span>Cards únicos</span>
+              <span id="summaryUniqueLabel">Cards únicos</span>
               <strong id="summaryUnique">0</strong>
             </div>
             <div>
@@ -1606,7 +1608,7 @@
               <strong id="summaryTime">00:00</strong>
             </div>
           </div>
-          <h3>Mais erradas nesta sessão</h3>
+          <h3 id="summaryWrongTitle">Mais erradas nesta sessão</h3>
           <ol id="summaryWrongList" class="summary-list"></ol>
           <div class="summary-actions">
             <button id="repeatSessionButton" class="button button-primary" type="button"> Repetir sessão </button>

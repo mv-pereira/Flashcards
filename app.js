@@ -67,6 +67,8 @@ let enEttIndex = 0;
 let enEttAnswered = false;
 let enEttAnswersCount = 0;
 let enEttCorrectCount = 0;
+let enEttSessionAnswers = [];
+let enEttStartTime = null;
 
 let conjugationPool = [];
 let conjugationDeck = [];
@@ -77,6 +79,10 @@ let conjugationCorrectCount = 0;
 let conjugationQuestion = null;
 let conjugationNextMode = "choose";
 const conjugationLastWrongByCard = new Map();
+let conjugationSessionAnswers = [];
+let conjugationStartTime = null;
+
+let summaryMode = "study";
 
 const STORAGE_KEY = "flashcardsSuecoStats";
 const THEME_STORAGE_KEY = "flashcardsSuecoTheme";
@@ -157,6 +163,11 @@ const summaryWrong = document.querySelector("#summaryWrong");
 const summaryCorrectRate = document.querySelector("#summaryCorrectRate");
 const summaryWrongList = document.querySelector("#summaryWrongList");
 
+const summaryTitle = document.querySelector("#summaryTitle");
+const summaryTotalLabel = document.querySelector("#summaryTotalLabel");
+const summaryUniqueLabel = document.querySelector("#summaryUniqueLabel");
+const summaryWrongTitle = document.querySelector("#summaryWrongTitle");
+
 const setupScreen = document.querySelector("#setupScreen");
 const studyScreen = document.querySelector("#studyScreen");
 
@@ -219,6 +230,7 @@ const enEttButtons = document.querySelector("#enEttButtons");
 const enEttMessage = document.querySelector("#enEttMessage");
 const enEttCounter = document.querySelector("#enEttCounter");
 const enEttNextButton = document.querySelector("#enEttNextButton");
+const finishEnEttSessionButton = document.querySelector("#finishEnEttSessionButton");
 
 const conjugationScreen = document.querySelector("#conjugationScreen");
 const backFromConjugationButton = document.querySelector("#backFromConjugationButton");
@@ -233,6 +245,7 @@ const conjugationLeftButton = document.querySelector("#conjugationLeftButton");
 const conjugationRightButton = document.querySelector("#conjugationRightButton");
 const conjugationMessage = document.querySelector("#conjugationMessage");
 const conjugationNextButton = document.querySelector("#conjugationNextButton");
+const finishConjugationSessionButton = document.querySelector("#finishConjugationSessionButton");
 const exerciseScreen = document.querySelector("#exerciseScreen");
 const backFromExerciseButton = document.querySelector("#backFromExerciseButton");
 
@@ -2452,9 +2465,92 @@ function getImmediateSrsRepeatCount(cardStats, priorityCards = baseSessionCards)
   return 1;
 }
 
+function updateSummaryTexts(mode) {
+  const isEnEtt = mode === "enett";
+  const isConjugation = mode === "conjugation";
+
+  summaryTitle.textContent = isEnEtt
+    ? "Resumo — En/Ett"
+    : isConjugation ? "Resumo — Desafio dos Verbos" : "Resumo da sessão";
+
+  summaryTotalLabel.textContent = mode === "study"
+    ? "Cards respondidos"
+    : "Respostas";
+
+  summaryUniqueLabel.textContent = isEnEtt
+    ? "Substantivos diferentes"
+    : isConjugation ? "Verbos diferentes" : "Cards únicos";
+
+  summaryWrongTitle.textContent = isEnEtt
+    ? "Substantivos com mais erros"
+    : isConjugation ? "Verbos com mais erros" : "Mais erradas nesta sessão";
+
+  repeatSessionButton.textContent = isEnEtt
+    ? "Repetir En/Ett"
+    : isConjugation ? "Repetir desafio" : "Repetir sessão";
+
+  newSessionButton.textContent = mode === "study"
+    ? "Nova configuração"
+    : "Voltar aos exercícios";
+}
+
+function showExerciseSummary(mode) {
+  if (mode !== "enett" && mode !== "conjugation") return;
+
+  const isEnEtt = mode === "enett";
+
+  const answers = isEnEtt
+    ? enEttSessionAnswers
+    : conjugationSessionAnswers;
+
+  const startTime = isEnEtt
+    ? enEttStartTime
+    : conjugationStartTime;
+
+  const correct = isEnEtt
+    ? enEttCorrectCount
+    : conjugationCorrectCount;
+
+  if (startTime === null) return;
+
+  const total = answers.length;
+
+  const uniqueTotal = new Set(
+    answers.map((answer) => String(answer.cardId))
+  ).size;
+
+  const accuracy = total === 0
+    ? 0
+    : Math.round((correct / total) * 100);
+
+  const elapsedSeconds = Math.max(
+    0,
+    Math.floor((Date.now() - startTime) / 1000)
+  );
+
+  summaryMode = mode;
+
+  updateSummaryTexts(mode);
+
+  summaryTotal.textContent = total;
+  summaryUnique.textContent = uniqueTotal;
+  summaryCorrect.textContent = correct;
+  summaryWrong.textContent = total - correct;
+  summaryCorrectRate.textContent = `${accuracy}%`;
+  summaryTime.textContent = formatTime(elapsedSeconds);
+
+  renderWrongList(answers);
+
+  showScreen(summaryScreen);
+}
+
 function showSummary() {
   stopStudyTimer();
   resetHeldNewWordsSession();
+
+  summaryMode = "study";
+  updateSummaryTexts("study");
+
   showScreen(summaryScreen);
 
   const total = correctCount + wrongCount;
@@ -2471,12 +2567,12 @@ function showSummary() {
   renderWrongList();
 }
 
-function renderWrongList() {
+function renderWrongList(answers = sessionAnswers) {
   summaryWrongList.innerHTML = "";
 
   const wrongMap = new Map();
 
-  sessionAnswers
+  answers
     .filter((answer) => !answer.isCorrect)
     .forEach((answer) => {
       const occurrenceKey = [
@@ -4013,6 +4109,10 @@ function openEnEttScreen() {
   enEttIndex = 0;
   enEttAnswersCount = 0;
   enEttCorrectCount = 0;
+
+  enEttSessionAnswers = [];
+  enEttStartTime = null;
+
   enEttAnswered = false;
   enEttMessage.textContent = "";
   showScreen(enEttScreen);
@@ -4022,6 +4122,7 @@ function openEnEttScreen() {
     enEttCard.classList.add("hidden");
     enEttButtons.classList.add("hidden");
     enEttNextButton.classList.add("hidden");
+    finishEnEttSessionButton.classList.add("hidden");
     enEttCounter.textContent = "";
     enEttMessage.textContent = "Nenhum substantivo en/ett encontrado nos filtros atuais.";
     return;
@@ -4029,7 +4130,9 @@ function openEnEttScreen() {
 
   enEttCard.classList.remove("hidden");
   enEttButtons.classList.remove("hidden");
+  finishEnEttSessionButton.classList.remove("hidden");
   enEttDeck = buildSrsDeck(enEttPool, enEttPool);
+  enEttStartTime = Date.now();
   showEnEttCard();
 }
 
@@ -4075,6 +4178,16 @@ function answerEnEtt(chosenArticle) {
 
   enEttAnswersCount++;
   if (isCorrect) enEttCorrectCount++;
+  
+  enEttSessionAnswers.push({
+    cardId: card.id,
+    swedish: card.term.swedish,
+    portuguese: card.term.portuguese,
+    isCorrect,
+    chosen: chosenArticle,
+    expected: card.grammar.gender
+  });
+  
   updateCardStats(card, isCorrect, "article:gender", {
     chosen: chosenArticle,
     expected: card.grammar.gender
@@ -4191,6 +4304,10 @@ function openConjugationScreen() {
   conjugationAnswered = false;
   conjugationAnswersCount = 0;
   conjugationCorrectCount = 0;
+
+  conjugationSessionAnswers = [];
+  conjugationStartTime = null;
+
   conjugationQuestion = null;
   conjugationNextMode = Math.random() < 0.5 ? "choose" : "detect";
   conjugationLastWrongByCard.clear();
@@ -4200,13 +4317,16 @@ function openConjugationScreen() {
   if (conjugationPool.length === 0) {
     conjugationDeck = [];
     conjugationPlayArea.classList.add("hidden");
+    finishConjugationSessionButton.classList.add("hidden");
     conjugationCounter.textContent = "";
     conjugationCounter.textContent = "Nenhum verbo com presente utilizável nos filtros atuais.";
     return;
   }
 
   conjugationPlayArea.classList.remove("hidden");
+  finishConjugationSessionButton.classList.remove("hidden");
   conjugationDeck = buildSrsDeck(conjugationPool, conjugationPool);
+  conjugationStartTime = Date.now();
   showConjugationQuestion();
 }
 
@@ -4280,6 +4400,16 @@ function answerConjugation(button) {
 
   conjugationAnswersCount++;
   if (isCorrect) conjugationCorrectCount++;
+  
+   conjugationSessionAnswers.push({
+    cardId: card.id,
+    swedish: `${info.infinitive} → ${info.present}`,
+    portuguese: info.translation,
+    isCorrect,
+    chosen: mode === "choose" ? answer : `${answer} (${conjugationStatement.textContent})`,
+    expected: info.present
+  });
+ 
   updateCardStats(card, isCorrect, "verb:present", {
     chosen: mode === "choose" ? answer :
       `${answer} (${conjugationStatement.textContent})`,
@@ -9933,11 +10063,13 @@ enEttCard.addEventListener("keydown", (event) => {
 enEttEnButton.addEventListener("click", () => answerEnEtt("en"));
 enEttEttButton.addEventListener("click", () => answerEnEtt("ett"));
 enEttNextButton.addEventListener("click", nextEnEttCard);
+finishEnEttSessionButton.addEventListener("click", () => showExerciseSummary("enett"));
 
 // Duas modalidades dentro do mesmo Desafio dos Verbos.
 conjugationLeftButton.addEventListener("click", () => answerConjugation(conjugationLeftButton));
 conjugationRightButton.addEventListener("click", () => answerConjugation(conjugationRightButton));
 conjugationNextButton.addEventListener("click", nextConjugationQuestion);
+finishConjugationSessionButton.addEventListener("click", () => showExerciseSummary("conjugation"));
 
 backFromExerciseButton.addEventListener(
   "click",
@@ -9995,8 +10127,24 @@ newExerciseButton.addEventListener(
 );
 
 finishSessionButton.addEventListener("click", showSummary);
-repeatSessionButton.addEventListener("click", repeatSession);
-newSessionButton.addEventListener("click", backToSetup);
+
+repeatSessionButton.addEventListener("click", () => {
+  if (summaryMode === "enett") {
+    openEnEttScreen();
+  } else if (summaryMode === "conjugation") {
+    openConjugationScreen();
+  } else {
+    repeatSession();
+  }
+});
+
+newSessionButton.addEventListener("click", () => {
+  if (summaryMode === "study") {
+    backToSetup();
+  } else {
+    openExerciseMenuScreen();
+  }
+});
 
 correctButton.addEventListener("click", () => markAnswer(true));
 wrongButton.addEventListener("click", () => markAnswer(false));
