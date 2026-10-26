@@ -43445,5 +43445,6109 @@
         "src": null
       }
     }
+  },
+  {
+    "id": 1305,
+    "order": 1305,
+    "active": true,
+    "term": {
+      "swedish": "dyrare",
+      "portuguese": "mais caro(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1306,
+    "order": 1306,
+    "active": true,
+    "term": {
+      "swedish": "finare",
+      "portuguese": "mais bonito(a); mais elegante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1307,
+    "order": 1307,
+    "active": true,
+    "term": {
+      "swedish": "varmare",
+      "portuguese": "mais quente"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1308,
+    "order": 1308,
+    "active": true,
+    "term": {
+      "swedish": "kortare",
+      "portuguese": "mais curto(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1309,
+    "order": 1309,
+    "active": true,
+    "term": {
+      "swedish": "roligare",
+      "portuguese": "mais divertido(a); mais engraçado(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1310,
+    "order": 1310,
+    "active": true,
+    "term": {
+      "swedish": "oroligare",
+      "portuguese": "mais preocupado(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1311,
+    "order": 1311,
+    "active": true,
+    "term": {
+      "swedish": "långsammare",
+      "portuguese": "mais lento(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1312,
+    "order": 1312,
+    "active": true,
+    "term": {
+      "swedish": "svårare",
+      "portuguese": "mais difícil"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1313,
+    "order": 1313,
+    "active": true,
+    "term": {
+      "swedish": "tröttare",
+      "portuguese": "mais cansado(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1314,
+    "order": 1314,
+    "active": true,
+    "term": {
+      "swedish": "billigare",
+      "portuguese": "mais barato(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sv-billigare.ogg"
+      }
+    }
+  },
+  {
+    "id": 1315,
+    "order": 1315,
+    "active": true,
+    "term": {
+      "swedish": "fulare",
+      "portuguese": "mais feio(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1316,
+    "order": 1316,
+    "active": true,
+    "term": {
+      "swedish": "kallare",
+      "portuguese": "mais frio(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1317,
+    "order": 1317,
+    "active": true,
+    "term": {
+      "swedish": "längre",
+      "portuguese": "mais longo(a); por mais tempo"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1318,
+    "order": 1318,
+    "active": true,
+    "term": {
+      "swedish": "tråkigare",
+      "portuguese": "mais entediante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1319,
+    "order": 1319,
+    "active": true,
+    "term": {
+      "swedish": "lugnare",
+      "portuguese": "mais calmo(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1320,
+    "order": 1320,
+    "active": true,
+    "term": {
+      "swedish": "snabbare",
+      "portuguese": "mais rápido(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1321,
+    "order": 1321,
+    "active": true,
+    "term": {
+      "swedish": "lättare",
+      "portuguese": "mais fácil"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1322,
+    "order": 1322,
+    "active": true,
+    "term": {
+      "swedish": "piggare",
+      "portuguese": "mais disposto(a); mais cheio(a) de energia"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1323,
+    "order": 1323,
+    "active": true,
+    "term": {
+      "swedish": "yngre",
+      "portuguese": "mais jovem"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Sv-yngre.ogg"
+      }
+    }
+  },
+  {
+    "id": 1324,
+    "order": 1324,
+    "active": true,
+    "term": {
+      "swedish": "äldre",
+      "portuguese": "mais velho(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Sv-%C3%A4ldre.ogg"
+      }
+    }
+  },
+  {
+    "id": 1325,
+    "order": 1325,
+    "active": true,
+    "term": {
+      "swedish": "mer intressant",
+      "portuguese": "mais interessante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1326,
+    "order": 1326,
+    "active": true,
+    "term": {
+      "swedish": "mer ointressant",
+      "portuguese": "mais desinteressante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1327,
+    "order": 1327,
+    "active": true,
+    "term": {
+      "swedish": "roligast",
+      "portuguese": "o(a) mais divertido(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1328,
+    "order": 1328,
+    "active": true,
+    "term": {
+      "swedish": "finast",
+      "portuguese": "o(a) mais bonito(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1329,
+    "order": 1329,
+    "active": true,
+    "term": {
+      "swedish": "mindre",
+      "portuguese": "menor; menos"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1330,
+    "order": 1330,
+    "active": true,
+    "term": {
+      "swedish": "minst",
+      "portuguese": "o(a) menor; a menor quantidade"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1331,
+    "order": 1331,
+    "active": true,
+    "term": {
+      "swedish": "större",
+      "portuguese": "maior"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/LL-Q9027_%28swe%29-Ainali-st%C3%B6rre.wav"
+      }
+    }
+  },
+  {
+    "id": 1332,
+    "order": 1332,
+    "active": true,
+    "term": {
+      "swedish": "störst",
+      "portuguese": "o(a) maior"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/LL-Q9027_%28swe%29-Ainali-st%C3%B6rst.wav"
+      }
+    }
+  },
+  {
+    "id": 1333,
+    "order": 1333,
+    "active": true,
+    "term": {
+      "swedish": "längst",
+      "portuguese": "o(a) mais longo(a); mais distante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sv-l%C3%A4ngst.ogg"
+      }
+    }
+  },
+  {
+    "id": 1334,
+    "order": 1334,
+    "active": true,
+    "term": {
+      "swedish": "äldst",
+      "portuguese": "o(a) mais velho(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1335,
+    "order": 1335,
+    "active": true,
+    "term": {
+      "swedish": "yngst",
+      "portuguese": "o(a) mais jovem"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1336,
+    "order": 1336,
+    "active": true,
+    "term": {
+      "swedish": "enklare",
+      "portuguese": "mais simples; mais fácil"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1337,
+    "order": 1337,
+    "active": true,
+    "term": {
+      "swedish": "enklast",
+      "portuguese": "o(a) mais simples; o(a) mais fácil"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1338,
+    "order": 1338,
+    "active": true,
+    "term": {
+      "swedish": "bäst",
+      "portuguese": "o(a) melhor"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Sv-b%C3%A4st.ogg"
+      }
+    }
+  },
+  {
+    "id": 1339,
+    "order": 1339,
+    "active": true,
+    "term": {
+      "swedish": "dålig",
+      "portuguese": "ruim; mau/má"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Sv-d%C3%A5lig.ogg"
+      }
+    }
+  },
+  {
+    "id": 1340,
+    "order": 1340,
+    "active": true,
+    "term": {
+      "swedish": "sämre",
+      "portuguese": "pior"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Sv-s%C3%A4mre.ogg"
+      }
+    }
+  },
+  {
+    "id": 1341,
+    "order": 1341,
+    "active": true,
+    "term": {
+      "swedish": "sämst",
+      "portuguese": "o(a) pior"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Sv-s%C3%A4mst.ogg"
+      }
+    }
+  },
+  {
+    "id": 1342,
+    "order": 1342,
+    "active": true,
+    "term": {
+      "swedish": "flest",
+      "portuguese": "o maior número de; a maioria (em quantidade)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1343,
+    "order": 1343,
+    "active": true,
+    "term": {
+      "swedish": "mest",
+      "portuguese": "mais (quantidade não contável); o máximo"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Sv-mest.ogg"
+      }
+    }
+  },
+  {
+    "id": 1344,
+    "order": 1344,
+    "active": true,
+    "term": {
+      "swedish": "få",
+      "portuguese": "poucos; poucas"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sv-f%C3%A5.ogg"
+      }
+    }
+  },
+  {
+    "id": 1345,
+    "order": 1345,
+    "active": true,
+    "term": {
+      "swedish": "färre",
+      "portuguese": "menos (em número)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Sv-f%C3%A4rre.ogg"
+      }
+    }
+  },
+  {
+    "id": 1346,
+    "order": 1346,
+    "active": true,
+    "term": {
+      "swedish": "färst",
+      "portuguese": "o menor número de (forma superlativa rara)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1347,
+    "order": 1347,
+    "active": true,
+    "term": {
+      "swedish": "kortast",
+      "portuguese": "o(a) mais curto(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1348,
+    "order": 1348,
+    "active": true,
+    "term": {
+      "swedish": "kallast",
+      "portuguese": "o(a) mais frio(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1349,
+    "order": 1349,
+    "active": true,
+    "term": {
+      "swedish": "trevligast",
+      "portuguese": "o(a) mais simpático(a); mais agradável"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1350,
+    "order": 1350,
+    "active": true,
+    "term": {
+      "swedish": "söt",
+      "portuguese": "fofo(a); bonito(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Sv-s%C3%B6t.ogg"
+      }
+    }
+  },
+  {
+    "id": 1351,
+    "order": 1351,
+    "active": true,
+    "term": {
+      "swedish": "stark",
+      "portuguese": "forte"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sv-stark.ogg"
+      }
+    }
+  },
+  {
+    "id": 1352,
+    "order": 1352,
+    "active": true,
+    "term": {
+      "swedish": "envis",
+      "portuguese": "teimoso(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sv-envis.ogg"
+      }
+    }
+  },
+  {
+    "id": 1353,
+    "order": 1353,
+    "active": true,
+    "term": {
+      "swedish": "fri",
+      "portuguese": "livre"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sv-fri.ogg"
+      }
+    }
+  },
+  {
+    "id": 1354,
+    "order": 1354,
+    "active": true,
+    "term": {
+      "swedish": "flitig",
+      "portuguese": "trabalhador(a); diligente"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sv-flitig.ogg"
+      }
+    }
+  },
+  {
+    "id": 1355,
+    "order": 1355,
+    "active": true,
+    "term": {
+      "swedish": "hal",
+      "portuguese": "escorregadio(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Sv-hal.ogg"
+      }
+    }
+  },
+  {
+    "id": 1356,
+    "order": 1356,
+    "active": true,
+    "term": {
+      "swedish": "listig",
+      "portuguese": "astuto(a); esperto(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1357,
+    "order": 1357,
+    "active": true,
+    "term": {
+      "swedish": "stolt",
+      "portuguese": "orgulhoso(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Sv-stolt.ogg"
+      }
+    }
+  },
+  {
+    "id": 1358,
+    "order": 1358,
+    "active": true,
+    "term": {
+      "swedish": "landskap",
+      "portuguese": "província histórica; região",
+      "portuguesePlural": "províncias históricas; regiões",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "landskap",
+      "definiteSingular": "landskapet",
+      "definitePlural": "landskapen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sv-landskap.ogg"
+      }
+    }
+  },
+  {
+    "id": 1359,
+    "order": 1359,
+    "active": true,
+    "term": {
+      "swedish": "ö",
+      "portuguese": "ilha",
+      "portuguesePlural": "ilhas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "öar",
+      "definiteSingular": "ön",
+      "definitePlural": "öarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1360,
+    "order": 1360,
+    "active": true,
+    "term": {
+      "swedish": "å",
+      "portuguese": "rio pequeno; riacho",
+      "portuguesePlural": "rios pequenos; riachos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "åar",
+      "definiteSingular": "ån",
+      "definitePlural": "åarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sv-%C3%A5.ogg"
+      }
+    }
+  },
+  {
+    "id": 1361,
+    "order": 1361,
+    "active": true,
+    "term": {
+      "swedish": "dialekt",
+      "portuguese": "dialeto",
+      "portuguesePlural": "dialetos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "dialekter",
+      "definiteSingular": "dialekten",
+      "definitePlural": "dialekterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sv-en_dialekt.ogg"
+      }
+    }
+  },
+  {
+    "id": 1362,
+    "order": 1362,
+    "active": true,
+    "term": {
+      "swedish": "polcirkel",
+      "portuguese": "círculo polar",
+      "portuguesePlural": "círculos polares",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "polcirklar",
+      "definiteSingular": "polcirkeln",
+      "definitePlural": "polcirklarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1363,
+    "order": 1363,
+    "active": true,
+    "term": {
+      "swedish": "midnattssol",
+      "portuguese": "sol da meia-noite",
+      "portuguesePlural": "sóis da meia-noite",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "midnattssolar",
+      "definiteSingular": "midnattssolen",
+      "definitePlural": "midnattssolarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1364,
+    "order": 1364,
+    "active": true,
+    "term": {
+      "swedish": "dalahäst",
+      "portuguese": "cavalo de Dalarna (cavalinho tradicional sueco)",
+      "portuguesePlural": "cavalos de Dalarna",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "dalahästar",
+      "definiteSingular": "dalahästen",
+      "definitePlural": "dalahästarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/LL-Q9027_%28swe%29-Salgo60-dalah%C3%A4st.wav"
+      }
+    }
+  },
+  {
+    "id": 1365,
+    "order": 1365,
+    "active": true,
+    "term": {
+      "swedish": "gatuhörn",
+      "portuguese": "esquina de rua",
+      "portuguesePlural": "esquinas de rua",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "gatuhörn",
+      "definiteSingular": "gatuhörnet",
+      "definitePlural": "gatuhörnen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1366,
+    "order": 1366,
+    "active": true,
+    "term": {
+      "swedish": "torg",
+      "portuguese": "praça pública",
+      "portuguesePlural": "praças públicas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "torg",
+      "definiteSingular": "torget",
+      "definitePlural": "torgen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sv-torg.ogg"
+      }
+    }
+  },
+  {
+    "id": 1367,
+    "order": 1367,
+    "active": true,
+    "term": {
+      "swedish": "korsning",
+      "portuguese": "cruzamento",
+      "portuguesePlural": "cruzamentos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "korsningar",
+      "definiteSingular": "korsningen",
+      "definitePlural": "korsningarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1368,
+    "order": 1368,
+    "active": true,
+    "term": {
+      "swedish": "övergångsställe",
+      "portuguese": "faixa de pedestres",
+      "portuguesePlural": "faixas de pedestres",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "övergångsställen",
+      "definiteSingular": "övergångsstället",
+      "definitePlural": "övergångsställena",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1369,
+    "order": 1369,
+    "active": true,
+    "term": {
+      "swedish": "trafikljus",
+      "portuguese": "semáforo",
+      "portuguesePlural": "semáforos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "trafikljus",
+      "definiteSingular": "trafikljuset",
+      "definitePlural": "trafikljusen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1370,
+    "order": 1370,
+    "active": true,
+    "term": {
+      "swedish": "parkering",
+      "portuguese": "estacionamento",
+      "portuguesePlural": "estacionamentos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "parkeringar",
+      "definiteSingular": "parkeringen",
+      "definitePlural": "parkeringarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1371,
+    "order": 1371,
+    "active": true,
+    "term": {
+      "swedish": "parkeringsplats",
+      "portuguese": "vaga de estacionamento",
+      "portuguesePlural": "vagas de estacionamento",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "parkeringsplatser",
+      "definiteSingular": "parkeringsplatsen",
+      "definitePlural": "parkeringsplatserna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1372,
+    "order": 1372,
+    "active": true,
+    "term": {
+      "swedish": "busshållplats",
+      "portuguese": "ponto de ônibus",
+      "portuguesePlural": "pontos de ônibus",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "busshållplatser",
+      "definiteSingular": "busshållplatsen",
+      "definitePlural": "busshållplatserna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1373,
+    "order": 1373,
+    "active": true,
+    "term": {
+      "swedish": "busstation",
+      "portuguese": "rodoviária; estação de ônibus",
+      "portuguesePlural": "rodoviárias; estações de ônibus",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "busstationer",
+      "definiteSingular": "busstationen",
+      "definitePlural": "busstationerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1374,
+    "order": 1374,
+    "active": true,
+    "term": {
+      "swedish": "bro",
+      "portuguese": "ponte",
+      "portuguesePlural": "pontes",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "broar",
+      "definiteSingular": "bron",
+      "definitePlural": "broarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sv-bro.ogg"
+      }
+    }
+  },
+  {
+    "id": 1375,
+    "order": 1375,
+    "active": true,
+    "term": {
+      "swedish": "trottoar",
+      "portuguese": "calçada",
+      "portuguesePlural": "calçadas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "trottoarer",
+      "definiteSingular": "trottoaren",
+      "definitePlural": "trottoarerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1376,
+    "order": 1376,
+    "active": true,
+    "term": {
+      "swedish": "centrum",
+      "portuguese": "centro da cidade",
+      "portuguesePlural": "centros das cidades",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "centrum",
+      "definiteSingular": "centrumet",
+      "definitePlural": "centrumen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Sv-centrum.ogg"
+      }
+    }
+  },
+  {
+    "id": 1377,
+    "order": 1377,
+    "active": true,
+    "term": {
+      "swedish": "köpcentrum",
+      "portuguese": "shopping center; centro comercial",
+      "portuguesePlural": "shopping centers; centros comerciais",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "köpcentrum",
+      "definiteSingular": "köpcentrumet",
+      "definitePlural": "köpcentrumen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1378,
+    "order": 1378,
+    "active": true,
+    "term": {
+      "swedish": "förort",
+      "portuguese": "subúrbio; bairro periférico",
+      "portuguesePlural": "subúrbios; bairros periféricos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "förorter",
+      "definiteSingular": "förorten",
+      "definitePlural": "förorterna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Sv-en_f%C3%B6rort.ogg"
+      }
+    }
+  },
+  {
+    "id": 1379,
+    "order": 1379,
+    "active": true,
+    "term": {
+      "swedish": "djur",
+      "portuguese": "animal",
+      "portuguesePlural": "animais",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "djur",
+      "definiteSingular": "djuret",
+      "definitePlural": "djuren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sv-djur.ogg"
+      }
+    }
+  },
+  {
+    "id": 1380,
+    "order": 1380,
+    "active": true,
+    "term": {
+      "swedish": "gris",
+      "portuguese": "porco",
+      "portuguesePlural": "porcos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "grisar",
+      "definiteSingular": "grisen",
+      "definitePlural": "grisarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sv-en_gris.ogg"
+      }
+    }
+  },
+  {
+    "id": 1381,
+    "order": 1381,
+    "active": true,
+    "term": {
+      "swedish": "får",
+      "portuguese": "ovelha",
+      "portuguesePlural": "ovelhas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "får",
+      "definiteSingular": "fåret",
+      "definitePlural": "fåren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Sv-f%C3%A5r.ogg"
+      }
+    }
+  },
+  {
+    "id": 1382,
+    "order": 1382,
+    "active": true,
+    "term": {
+      "swedish": "ko",
+      "portuguese": "vaca",
+      "portuguesePlural": "vacas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kor",
+      "definiteSingular": "kon",
+      "definitePlural": "korna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sv-ko.ogg"
+      }
+    }
+  },
+  {
+    "id": 1383,
+    "order": 1383,
+    "active": true,
+    "term": {
+      "swedish": "häst",
+      "portuguese": "cavalo",
+      "portuguesePlural": "cavalos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "hästar",
+      "definiteSingular": "hästen",
+      "definitePlural": "hästarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Sv-h%C3%A4st.ogg"
+      }
+    }
+  },
+  {
+    "id": 1384,
+    "order": 1384,
+    "active": true,
+    "term": {
+      "swedish": "höna",
+      "portuguese": "galinha",
+      "portuguesePlural": "galinhas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "hönor",
+      "definiteSingular": "hönan",
+      "definitePlural": "hönorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Sv-en_h%C3%B6na.ogg"
+      }
+    }
+  },
+  {
+    "id": 1385,
+    "order": 1385,
+    "active": true,
+    "term": {
+      "swedish": "anka",
+      "portuguese": "pato; pata",
+      "portuguesePlural": "patos; patas",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "ankor",
+      "definiteSingular": "ankan",
+      "definitePlural": "ankorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sv-en_anka.ogg"
+      }
+    }
+  },
+  {
+    "id": 1386,
+    "order": 1386,
+    "active": true,
+    "term": {
+      "swedish": "fågel",
+      "portuguese": "pássaro; ave",
+      "portuguesePlural": "pássaros; aves",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "fåglar",
+      "definiteSingular": "fågeln",
+      "definitePlural": "fåglarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sv-f%C3%A5gel.ogg"
+      }
+    }
+  },
+  {
+    "id": 1387,
+    "order": 1387,
+    "active": true,
+    "term": {
+      "swedish": "björn",
+      "portuguese": "urso",
+      "portuguesePlural": "ursos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "björnar",
+      "definiteSingular": "björnen",
+      "definitePlural": "björnarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sv-bj%C3%B6rn.ogg"
+      }
+    }
+  },
+  {
+    "id": 1388,
+    "order": 1388,
+    "active": true,
+    "term": {
+      "swedish": "varg",
+      "portuguese": "lobo",
+      "portuguesePlural": "lobos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "vargar",
+      "definiteSingular": "vargen",
+      "definitePlural": "vargarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Sv-en_varg.ogg"
+      }
+    }
+  },
+  {
+    "id": 1389,
+    "order": 1389,
+    "active": true,
+    "term": {
+      "swedish": "älg",
+      "portuguese": "alce",
+      "portuguesePlural": "alces",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "älgar",
+      "definiteSingular": "älgen",
+      "definitePlural": "älgarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/LL-Q9027_%28swe%29-Moonhouse-%C3%A4lg.wav"
+      }
+    }
+  },
+  {
+    "id": 1390,
+    "order": 1390,
+    "active": true,
+    "term": {
+      "swedish": "ren",
+      "portuguese": "rena (animal)",
+      "portuguesePlural": "renas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "renar",
+      "definiteSingular": "renen",
+      "definitePlural": "renarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Sv-ren.ogg"
+      }
+    }
+  },
+  {
+    "id": 1391,
+    "order": 1391,
+    "active": true,
+    "term": {
+      "swedish": "lodjur",
+      "portuguese": "lince",
+      "portuguesePlural": "linces",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "lodjur",
+      "definiteSingular": "lodjuret",
+      "definitePlural": "lodjuren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1392,
+    "order": 1392,
+    "active": true,
+    "term": {
+      "swedish": "räv",
+      "portuguese": "raposa",
+      "portuguesePlural": "raposas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "rävar",
+      "definiteSingular": "räven",
+      "definitePlural": "rävarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/LL-Q9027_%28swe%29-Moonhouse-r%C3%A4v.wav"
+      }
+    }
+  },
+  {
+    "id": 1393,
+    "order": 1393,
+    "active": true,
+    "term": {
+      "swedish": "rådjur",
+      "portuguese": "corço (cervo pequeno)",
+      "portuguesePlural": "corços",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "rådjur",
+      "definiteSingular": "rådjuret",
+      "definitePlural": "rådjuren",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Sv-ett_r%C3%A5djur.ogg"
+      }
+    }
+  },
+  {
+    "id": 1394,
+    "order": 1394,
+    "active": true,
+    "term": {
+      "swedish": "valp",
+      "portuguese": "filhote de cachorro",
+      "portuguesePlural": "filhotes de cachorro",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "valpar",
+      "definiteSingular": "valpen",
+      "definitePlural": "valparna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1395,
+    "order": 1395,
+    "active": true,
+    "term": {
+      "swedish": "föl",
+      "portuguese": "potro",
+      "portuguesePlural": "potros",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "föl",
+      "definiteSingular": "fölet",
+      "definitePlural": "fölen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1396,
+    "order": 1396,
+    "active": true,
+    "term": {
+      "swedish": "kulting",
+      "portuguese": "leitão",
+      "portuguesePlural": "leitões",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kultingar",
+      "definiteSingular": "kultingen",
+      "definitePlural": "kultingarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1397,
+    "order": 1397,
+    "active": true,
+    "term": {
+      "swedish": "lamm",
+      "portuguese": "cordeiro",
+      "portuguesePlural": "cordeiros",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "lamm",
+      "definiteSingular": "lammet",
+      "definitePlural": "lammen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sv-ett_lamm.ogg"
+      }
+    }
+  },
+  {
+    "id": 1398,
+    "order": 1398,
+    "active": true,
+    "term": {
+      "swedish": "kyckling",
+      "portuguese": "pintinho",
+      "portuguesePlural": "pintinhos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kycklingar",
+      "definiteSingular": "kycklingen",
+      "definitePlural": "kycklingarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sv-kyckling.ogg"
+      }
+    }
+  },
+  {
+    "id": 1399,
+    "order": 1399,
+    "active": true,
+    "term": {
+      "swedish": "kalv",
+      "portuguese": "bezerro; filhote de animal grande",
+      "portuguesePlural": "bezerros; filhotes",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kalvar",
+      "definiteSingular": "kalven",
+      "definitePlural": "kalvarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1400,
+    "order": 1400,
+    "active": true,
+    "term": {
+      "swedish": "älgkalv",
+      "portuguese": "filhote de alce",
+      "portuguesePlural": "filhotes de alce",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "älgkalvar",
+      "definiteSingular": "älgkalven",
+      "definitePlural": "älgkalvarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1401,
+    "order": 1401,
+    "active": true,
+    "term": {
+      "swedish": "renkalv",
+      "portuguese": "filhote de rena",
+      "portuguesePlural": "filhotes de rena",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "renkalvar",
+      "definiteSingular": "renkalven",
+      "definitePlural": "renkalvarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1402,
+    "order": 1402,
+    "active": true,
+    "term": {
+      "swedish": "kattunge",
+      "portuguese": "gatinho; filhote de gato",
+      "portuguesePlural": "gatinhos; filhotes de gato",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "kattungar",
+      "definiteSingular": "kattungen",
+      "definitePlural": "kattungarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1403,
+    "order": 1403,
+    "active": true,
+    "term": {
+      "swedish": "fågelunge",
+      "portuguese": "filhote de pássaro",
+      "portuguesePlural": "filhotes de pássaro",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "fågelungar",
+      "definiteSingular": "fågelungen",
+      "definitePlural": "fågelungarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1404,
+    "order": 1404,
+    "active": true,
+    "term": {
+      "swedish": "ankunge",
+      "portuguese": "patinho",
+      "portuguesePlural": "patinhos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "ankungar",
+      "definiteSingular": "ankungen",
+      "definitePlural": "ankungarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1405,
+    "order": 1405,
+    "active": true,
+    "term": {
+      "swedish": "björnunge",
+      "portuguese": "filhote de urso",
+      "portuguesePlural": "filhotes de urso",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "björnungar",
+      "definiteSingular": "björnungen",
+      "definitePlural": "björnungarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1406,
+    "order": 1406,
+    "active": true,
+    "term": {
+      "swedish": "rävunge",
+      "portuguese": "filhote de raposa",
+      "portuguesePlural": "filhotes de raposa",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "rävungar",
+      "definiteSingular": "rävungen",
+      "definitePlural": "rävungarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1407,
+    "order": 1407,
+    "active": true,
+    "term": {
+      "swedish": "oxe",
+      "portuguese": "boi",
+      "portuguesePlural": "bois",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "oxar",
+      "definiteSingular": "oxen",
+      "definitePlural": "oxarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1408,
+    "order": 1408,
+    "active": true,
+    "term": {
+      "swedish": "åsna",
+      "portuguese": "burro; asno",
+      "portuguesePlural": "burros; asnos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "åsnor",
+      "definiteSingular": "åsnan",
+      "definitePlural": "åsnorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/LL-Q9027_%28swe%29-Moonhouse-%C3%A5sna.wav"
+      }
+    }
+  },
+  {
+    "id": 1409,
+    "order": 1409,
+    "active": true,
+    "term": {
+      "swedish": "myra",
+      "portuguese": "formiga",
+      "portuguesePlural": "formigas",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "myror",
+      "definiteSingular": "myran",
+      "definitePlural": "myrorna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/LL-Q9027_%28swe%29-Moonhouse-myra.wav"
+      }
+    }
+  },
+  {
+    "id": 1410,
+    "order": 1410,
+    "active": true,
+    "term": {
+      "swedish": "ål",
+      "portuguese": "enguia",
+      "portuguesePlural": "enguias",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "ålar",
+      "definiteSingular": "ålen",
+      "definitePlural": "ålarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1411,
+    "order": 1411,
+    "active": true,
+    "term": {
+      "swedish": "mört",
+      "portuguese": "peixe escardínio (roach)",
+      "portuguesePlural": "peixes escardínios",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "mörtar",
+      "definiteSingular": "mörten",
+      "definitePlural": "mörtarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1412,
+    "order": 1412,
+    "active": true,
+    "term": {
+      "swedish": "tupp",
+      "portuguese": "galo",
+      "portuguesePlural": "galos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "tuppar",
+      "definiteSingular": "tuppen",
+      "definitePlural": "tupparna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1413,
+    "order": 1413,
+    "active": true,
+    "term": {
+      "swedish": "mus",
+      "portuguese": "rato; camundongo",
+      "portuguesePlural": "ratos; camundongos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "möss",
+      "definiteSingular": "musen",
+      "definitePlural": "mössen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sv-en_mus.ogg"
+      }
+    }
+  },
+  {
+    "id": 1414,
+    "order": 1414,
+    "active": true,
+    "term": {
+      "swedish": "Det var lite som ...",
+      "portuguese": "Era um pouco como ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1415,
+    "order": 1415,
+    "active": true,
+    "term": {
+      "swedish": "... tyckte jag",
+      "portuguese": "... eu achei; ... na minha opinião (passado)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1416,
+    "order": 1416,
+    "active": true,
+    "term": {
+      "swedish": "... tycker jag",
+      "portuguese": "... eu acho; ... na minha opinião (presente)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1417,
+    "order": 1417,
+    "active": true,
+    "term": {
+      "swedish": "Det tar längre tid.",
+      "portuguese": "Demora mais tempo."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1418,
+    "order": 1418,
+    "active": true,
+    "term": {
+      "swedish": "Inte än.",
+      "portuguese": "Ainda não."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1419,
+    "order": 1419,
+    "active": true,
+    "term": {
+      "swedish": "Vad söt den är!",
+      "portuguese": "Que fofo(a)!"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1420,
+    "order": 1420,
+    "active": true,
+    "term": {
+      "swedish": "En till.",
+      "portuguese": "Mais um(a); outro(a)."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1421,
+    "order": 1421,
+    "active": true,
+    "term": {
+      "swedish": "Där borta.",
+      "portuguese": "Lá; ali mais adiante."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1422,
+    "order": 1422,
+    "active": true,
+    "term": {
+      "swedish": "Här borta.",
+      "portuguese": "Aqui deste lado; aqui."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1423,
+    "order": 1423,
+    "active": true,
+    "term": {
+      "swedish": "Jag vet inte.",
+      "portuguese": "Não sei."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1424,
+    "order": 1424,
+    "active": true,
+    "term": {
+      "swedish": "Ska vi se om ...?",
+      "portuguese": "Vamos ver se ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1425,
+    "order": 1425,
+    "active": true,
+    "term": {
+      "swedish": "Ska vi titta på ...?",
+      "portuguese": "Vamos olhar ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1426,
+    "order": 1426,
+    "active": true,
+    "term": {
+      "swedish": "Kan vi gå till ...?",
+      "portuguese": "Podemos ir até ...?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1427,
+    "order": 1427,
+    "active": true,
+    "term": {
+      "swedish": "Kan vi stanna här hela dagen?",
+      "portuguese": "Podemos ficar aqui o dia inteiro?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1428,
+    "order": 1428,
+    "active": true,
+    "term": {
+      "swedish": "Det är nog ...",
+      "portuguese": "Provavelmente é ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1429,
+    "order": 1429,
+    "active": true,
+    "term": {
+      "swedish": "Båda städerna.",
+      "portuguese": "As duas cidades."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1430,
+    "order": 1430,
+    "active": true,
+    "term": {
+      "swedish": "Är det inte kallt där?",
+      "portuguese": "Não faz frio lá?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1431,
+    "order": 1431,
+    "active": true,
+    "term": {
+      "swedish": "Kallare än ...",
+      "portuguese": "Mais frio(a) que ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1432,
+    "order": 1432,
+    "active": true,
+    "term": {
+      "swedish": "Mindre än ...",
+      "portuguese": "Menor que ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1433,
+    "order": 1433,
+    "active": true,
+    "term": {
+      "swedish": "Roligare än ...",
+      "portuguese": "Mais divertido(a) que ..."
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1434,
+    "order": 1434,
+    "active": true,
+    "term": {
+      "swedish": "Längre tid",
+      "portuguese": "Mais tempo; mais demora"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "tempo e calendário"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1435,
+    "order": 1435,
+    "active": true,
+    "term": {
+      "swedish": "Vilken ... är billigast?",
+      "portuguese": "Qual ... é o(a) mais barato(a)?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1436,
+    "order": 1436,
+    "active": true,
+    "term": {
+      "swedish": "Vem är trevligast?",
+      "portuguese": "Quem é o(a) mais simpático(a)?"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1437,
+    "order": 1437,
+    "active": true,
+    "term": {
+      "swedish": "Minst antal",
+      "portuguese": "Menor número de; menor quantidade de itens"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1438,
+    "order": 1438,
+    "active": true,
+    "term": {
+      "swedish": "Lägst antal",
+      "portuguese": "Menor número de; quantidade mínima de itens"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1439,
+    "order": 1439,
+    "active": true,
+    "term": {
+      "swedish": "Hungrig som en varg",
+      "portuguese": "Faminto(a) como um lobo"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1440,
+    "order": 1440,
+    "active": true,
+    "term": {
+      "swedish": "Stark som en björn/oxe",
+      "portuguese": "Forte como um urso/boi"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1441,
+    "order": 1441,
+    "active": true,
+    "term": {
+      "swedish": "Envis som en åsna",
+      "portuguese": "Teimoso(a) como um burro"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1442,
+    "order": 1442,
+    "active": true,
+    "term": {
+      "swedish": "Fri som en fågel",
+      "portuguese": "Livre como um pássaro"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1443,
+    "order": 1443,
+    "active": true,
+    "term": {
+      "swedish": "Flitig som en myra",
+      "portuguese": "Trabalhador(a) como uma formiga"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1444,
+    "order": 1444,
+    "active": true,
+    "term": {
+      "swedish": "Hal som en ål",
+      "portuguese": "Escorregadio(a) como uma enguia"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1445,
+    "order": 1445,
+    "active": true,
+    "term": {
+      "swedish": "Listig som en räv",
+      "portuguese": "Astuto(a) como uma raposa"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1446,
+    "order": 1446,
+    "active": true,
+    "term": {
+      "swedish": "Pigg som en mört",
+      "portuguese": "Disposto(a) como um peixe mört (expressão sueca)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1447,
+    "order": 1447,
+    "active": true,
+    "term": {
+      "swedish": "Stolt som en tupp",
+      "portuguese": "Orgulhoso(a) como um galo"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1448,
+    "order": 1448,
+    "active": true,
+    "term": {
+      "swedish": "Tyst som en mus",
+      "portuguese": "Quieto(a) como um ratinho"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1449,
+    "order": 1449,
+    "active": true,
+    "term": {
+      "swedish": "Sin fru",
+      "portuguese": "Sua própria esposa (do sujeito da frase)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1450,
+    "order": 1450,
+    "active": true,
+    "term": {
+      "swedish": "Hans fru",
+      "portuguese": "Esposa dele (de outro homem, não do sujeito)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1451,
+    "order": 1451,
+    "active": true,
+    "term": {
+      "swedish": "Sitt lamm",
+      "portuguese": "Seu próprio cordeiro (do sujeito da frase)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1452,
+    "order": 1452,
+    "active": true,
+    "term": {
+      "swedish": "Sina björnungar",
+      "portuguese": "Seus próprios filhotes de urso (do sujeito da frase)"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1453,
+    "order": 1453,
+    "active": true,
+    "term": {
+      "swedish": "sin",
+      "portuguese": "seu; sua (do próprio sujeito, com substantivo en)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1454,
+    "order": 1454,
+    "active": true,
+    "term": {
+      "swedish": "sitt",
+      "portuguese": "seu; sua (do próprio sujeito, com substantivo ett)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sv-sitt.ogg"
+      }
+    }
+  },
+  {
+    "id": 1455,
+    "order": 1455,
+    "active": true,
+    "term": {
+      "swedish": "sina",
+      "portuguese": "seus; suas (do próprio sujeito, com substantivo plural)"
+    },
+    "grammar": {
+      "type": "pronome",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Sv-sina.ogg"
+      }
+    }
+  },
+  {
+    "id": 1456,
+    "order": 1456,
+    "active": true,
+    "term": {
+      "swedish": "än",
+      "portuguese": "do que; que (comparações)"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Sv-%C3%A4n.ogg"
+      }
+    }
+  },
+  {
+    "id": 1457,
+    "order": 1457,
+    "active": true,
+    "term": {
+      "swedish": "tycka",
+      "portuguese": "achar; ter opinião",
+      "portugueseInfinitive": "achar",
+      "portuguesePresent": "acha",
+      "portuguesePast": "achou",
+      "portugueseSupine": "achado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "tycka",
+      "present": "tycker",
+      "past": "tyckte",
+      "supine": "tyckt",
+      "imperative": "tyck"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Sv-tycka.ogg"
+      }
+    }
+  },
+  {
+    "id": 1458,
+    "order": 1458,
+    "active": true,
+    "term": {
+      "swedish": "stanna",
+      "portuguese": "ficar; permanecer; parar",
+      "portugueseInfinitive": "ficar",
+      "portuguesePresent": "fica",
+      "portuguesePast": "ficou",
+      "portugueseSupine": "ficado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "stanna",
+      "present": "stannar",
+      "past": "stannade",
+      "supine": "stannat",
+      "imperative": "stanna"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "livro",
+      "chapter": 10,
+      "sourceTitle": "Abisko är mindre än Kiruna",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sv-stanna.ogg"
+      }
+    }
+  },
+  {
+    "id": 1459,
+    "order": 1459,
+    "active": true,
+    "term": {
+      "swedish": "jätteliten",
+      "portuguese": "minúsculo(a); muito pequeno(a)"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1460,
+    "order": 1460,
+    "active": true,
+    "term": {
+      "swedish": "sakna",
+      "portuguese": "sentir falta de; ter saudade de",
+      "portugueseInfinitive": "sentir falta",
+      "portuguesePresent": "sente falta",
+      "portuguesePast": "sentiu falta",
+      "portugueseSupine": "sentido falta"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "sakna",
+      "present": "saknar",
+      "past": "saknade",
+      "supine": "saknat",
+      "imperative": "sakna"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sv-sakna.ogg"
+      }
+    }
+  },
+  {
+    "id": 1461,
+    "order": 1461,
+    "active": true,
+    "term": {
+      "swedish": "bit",
+      "portuguese": "pedaço; parte",
+      "portuguesePlural": "pedaços; partes",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "bitar",
+      "definiteSingular": "biten",
+      "definitePlural": "bitarna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Sv-bit.ogg"
+      }
+    }
+  },
+  {
+    "id": 1462,
+    "order": 1462,
+    "active": true,
+    "term": {
+      "swedish": "pussel",
+      "portuguese": "quebra-cabeça",
+      "portuguesePlural": "quebra-cabeças",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "pussel",
+      "definiteSingular": "pusslet",
+      "definitePlural": "pusslen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1463,
+    "order": 1463,
+    "active": true,
+    "term": {
+      "swedish": "lägga",
+      "portuguese": "colocar; pôr; montar (um quebra-cabeça)",
+      "portugueseInfinitive": "colocar",
+      "portuguesePresent": "coloca",
+      "portuguesePast": "colocou",
+      "portugueseSupine": "colocado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "lägga",
+      "present": "lägger",
+      "past": "lade",
+      "supine": "lagt",
+      "imperative": "lägg"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Sv-l%C3%A4gga.ogg"
+      }
+    }
+  },
+  {
+    "id": 1464,
+    "order": 1464,
+    "active": true,
+    "term": {
+      "swedish": "rymma",
+      "portuguese": "conter; comportar; abrigar",
+      "portugueseInfinitive": "conter",
+      "portuguesePresent": "contém",
+      "portuguesePast": "conteve",
+      "portugueseSupine": "contido"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "rymma",
+      "present": "rymmer",
+      "past": "rymde",
+      "supine": "rymt",
+      "imperative": "rym"
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Sv-rymma.ogg"
+      }
+    }
+  },
+  {
+    "id": 1465,
+    "order": 1465,
+    "active": true,
+    "term": {
+      "swedish": "hål",
+      "portuguese": "buraco",
+      "portuguesePlural": "buracos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "hål",
+      "definiteSingular": "hålet",
+      "definitePlural": "hålen",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/36/Sv-h%C3%A5l.ogg"
+      }
+    }
+  },
+  {
+    "id": 1466,
+    "order": 1466,
+    "active": true,
+    "term": {
+      "swedish": "perrong",
+      "portuguese": "plataforma de trem",
+      "portuguesePlural": "plataformas de trem",
+      "portugueseGender": "feminine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "perronger",
+      "definiteSingular": "perrongen",
+      "definitePlural": "perrongerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1467,
+    "order": 1467,
+    "active": true,
+    "term": {
+      "swedish": "ner",
+      "portuguese": "para baixo"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sv-ner.ogg"
+      }
+    }
+  },
+  {
+    "id": 1468,
+    "order": 1468,
+    "active": true,
+    "term": {
+      "swedish": "fastän",
+      "portuguese": "embora; apesar de que"
+    },
+    "grammar": {
+      "type": "outros",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sv-fast%C3%A4n.ogg"
+      }
+    }
+  },
+  {
+    "id": 1469,
+    "order": 1469,
+    "active": true,
+    "term": {
+      "swedish": "undra",
+      "portuguese": "perguntar-se; questionar-se",
+      "portugueseInfinitive": "perguntar-se",
+      "portuguesePresent": "se pergunta",
+      "portuguesePast": "se perguntou",
+      "portugueseSupine": "perguntado"
+    },
+    "grammar": {
+      "type": "verbo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": "undra",
+      "present": "undrar",
+      "past": "undrade",
+      "supine": "undrat",
+      "imperative": "undra"
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sv-undra.ogg"
+      }
+    }
+  },
+  {
+    "id": 1470,
+    "order": 1470,
+    "active": true,
+    "term": {
+      "swedish": "vart",
+      "portuguese": "para onde"
+    },
+    "grammar": {
+      "type": "palavra interrogativa",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1471,
+    "order": 1471,
+    "active": true,
+    "term": {
+      "swedish": "illa",
+      "portuguese": "mal; de modo ruim"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sv-illa.ogg"
+      }
+    }
+  },
+  {
+    "id": 1472,
+    "order": 1472,
+    "active": true,
+    "term": {
+      "swedish": "roll",
+      "portuguese": "papel; função",
+      "portuguesePlural": "papéis; funções",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "en",
+      "plural": "roller",
+      "definiteSingular": "rollen",
+      "definitePlural": "rollerna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sv-roll.ogg"
+      }
+    }
+  },
+  {
+    "id": 1473,
+    "order": 1473,
+    "active": true,
+    "term": {
+      "swedish": "allra",
+      "portuguese": "de todos (intensificador de superlativo)"
+    },
+    "grammar": {
+      "type": "advérbio",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Sv-allra.ogg"
+      }
+    }
+  },
+  {
+    "id": 1474,
+    "order": 1474,
+    "active": true,
+    "term": {
+      "swedish": "viktig",
+      "portuguese": "importante"
+    },
+    "grammar": {
+      "type": "adjetivo",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sv-viktig.ogg"
+      }
+    }
+  },
+  {
+    "id": 1475,
+    "order": 1475,
+    "active": true,
+    "term": {
+      "swedish": "evangelium",
+      "portuguese": "evangelho",
+      "portuguesePlural": "evangelhos",
+      "portugueseGender": "masculine"
+    },
+    "grammar": {
+      "type": "substantivo",
+      "gender": "ett",
+      "plural": "evangelier",
+      "definiteSingular": "evangeliet",
+      "definitePlural": "evangelierna",
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "vocabulário geral"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1476,
+    "order": 1476,
+    "active": true,
+    "term": {
+      "swedish": "spela ingen roll",
+      "portuguese": "não importar; não fazer diferença"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1477,
+    "order": 1477,
+    "active": true,
+    "term": {
+      "swedish": "göra någon illa",
+      "portuguese": "machucar alguém; fazer mal a alguém"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1478,
+    "order": 1478,
+    "active": true,
+    "term": {
+      "swedish": "titta ner",
+      "portuguese": "olhar para baixo"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "dia a dia"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
+  },
+  {
+    "id": 1479,
+    "order": 1479,
+    "active": true,
+    "term": {
+      "swedish": "allra viktigast",
+      "portuguese": "o mais importante de tudo"
+    },
+    "grammar": {
+      "type": "expressão",
+      "gender": null,
+      "plural": null,
+      "definiteSingular": null,
+      "definitePlural": null,
+      "infinitive": null,
+      "present": null,
+      "past": null,
+      "supine": null
+    },
+    "classification": {
+      "themes": [
+        "gramática funcional"
+      ],
+      "source": "música",
+      "chapter": 10,
+      "sourceTitle": "Evangelium",
+      "sourceArtist": null
+    },
+    "media": {
+      "audio": {
+        "src": null
+      }
+    }
   }
 ]
