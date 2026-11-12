@@ -1,0 +1,131 @@
+[EXERCICIO]
+TITULO: En ny lägenhet till Erik
+
+[QUESTAO]
+TIPO: VF
+En lampa är en lampa.
+
+RESPOSTA: V
+
+[FALA]
+Malin: Erik vill flytta in i en ny lägenhet. Han har tittat på två lägenheter: en på Storgatan och en på Lillgatan. Vilken ska vi titta på först?
+VOCÊ: Proponha começar pela visita ao apartamento da Storgatan.
+RESPOSTA: Vi kan börja med lägenheten på Storgatan. | Först kan vi titta på lägenheten på Storgatan.
+
+Malin: Nu är vi på Storgatan. Den här lägenheten har tre rum: ett vardagsrum och två sovrum. Tycker du att den är rymlig?
+VOCÊ: Confirme que é um apartamento grande e espaçoso.
+RESPOSTA: Ja, den är stor och rymlig. | Ja, det är en stor och rymlig lägenhet.
+
+Malin: Ett sovrum är stort och ett är litet. Erik arbetar ofta hemma. Vilket sovrum kan bli hans arbetsrum?
+VOCÊ: Sugira usar o quarto menor como escritório dele.
+RESPOSTA: Det mindre sovrummet kan bli hans arbetsrum. | Han kan ha det mindre sovrummet som arbetsrum.
+
+Malin: Lägenheten på Storgatan kostar åtta tusen kronor i månaden. Är det dyrt?
+VOCÊ: Confirme que é caro, mas ressalte que o apartamento é grande.
+RESPOSTA: Ja, det är dyrt, men lägenheten är stor. | Ja, det kostar mycket, men lägenheten är stor.
+
+Malin: Den andra lägenheten kostar sex tusen kronor i månaden. Vilken lägenhet är billigast?
+VOCÊ: Informe que o apartamento da Lillgatan é o mais barato.
+RESPOSTA: Lägenheten på Lillgatan är billigast. | Den på Lillgatan kostar minst.
+
+Malin: Här finns också en balkong. Vill du titta på den?
+VOCÊ: Aceite ver a varanda e diga que depois vocês podem ir à Lillgatan.
+RESPOSTA: Ja, jag vill se balkongen. Sedan kan vi gå till Lillgatan. | Ja, vi kan titta på balkongen och sedan gå till Lillgatan.
+
+Malin: Erik vill gärna sitta på balkongen, men han behöver ett arbetsrum. Vad är viktigast för honom, tycker du?
+VOCÊ: Diga que, na sua opinião, o escritório é mais importante que a varanda para ele.
+RESPOSTA: Jag tycker att arbetsrummet är viktigare än balkongen. | För honom är arbetsrummet viktigare än balkongen, tycker jag.
+
+Malin: Nu är vi på Lillgatan. Den här lägenheten har bara två rum. Har den färre rum än den första?
+VOCÊ: Confirme que tem menos cômodos e é menor.
+RESPOSTA: Ja, den har färre rum och är mindre. | Ja, det är en mindre lägenhet med färre rum.
+
+Malin: Köket här är nytt. På Storgatan var köket gammalt. Vilket kök är finast?
+VOCÊ: Diga que a cozinha da Lillgatan é a mais bonita porque é nova.
+RESPOSTA: Köket på Lillgatan är finast, för det är nytt. | Jag tycker att köket här är finast, för det är nytt.
+
+Malin: Det finns ingen balkong här. Men den här lägenheten är lugnare än den på Storgatan. Vad tycker du?
+VOCÊ: Observe que esta é mais tranquila e mais barata, mas tem menos cômodos.
+RESPOSTA: Den är lugnare och billigare, men den har färre rum. | Jag tycker att den är lugnare och billigare men har färre rum.
+
+Malin: Erik behöver arbeta hemma. Vilken lägenhet passar honom bäst?
+VOCÊ: Diga que a da Storgatan é a melhor para ele porque possui mais cômodos.
+RESPOSTA: Lägenheten på Storgatan passar honom bäst, för den har fler rum. | Jag tycker att lägenheten på Storgatan är bäst för honom, för den har fler rum.
+
+Malin: Erik säger att han vill ha den större lägenheten. Han ska flytta in på lördag. Kan du hjälpa oss?
+VOCÊ: Confirme que pode ajudar os dois no sábado.
+RESPOSTA: Ja, jag kan hjälpa er på lördag. | Ja, på lördag kan jag hjälpa er.
+
+Malin: Erik har sina böcker hemma hos sin syster. Vi behöver hämta dem.
+VOCÊ: Proponha buscar os livros dele na casa da irmã dele.
+RESPOSTA: Vi kan hämta hans böcker hemma hos hans syster. | Då hämtar vi hans böcker hos hans syster.
+
+Malin: Han har också sitt skrivbord och sin bokhylla där. Hans syster har en bil.
+VOCÊ: Pergunte se a irmã dele pode levar de carro a escrivaninha e a estante dele até a Storgatan.
+RESPOSTA: Kan hon köra hans skrivbord och hans bokhylla till Storgatan?
+
+Malin: Ja, hon kan köra dem. Men bokhyllan är större än skrivbordet.
+VOCÊ: Sugira levar primeiro a estante porque ela é maior.
+RESPOSTA: Vi kan ta bokhyllan först, för den är större. | Bokhyllan är större, så vi kan ta den först.
+
+Malin: Nu är det lördag, och vi är i Eriks nya lägenhet. Var ska bokhyllan stå?
+VOCÊ: Sugira deixar a estante na sala de estar, ao lado da janela.
+RESPOSTA: Bokhyllan kan stå i vardagsrummet, bredvid fönstret. | Den kan stå bredvid fönstret i vardagsrummet.
+
+Malin: Erik vill ha sitt skrivbord i sovrummet. Men det finns ett arbetsrum.
+VOCÊ: Diga que, na sua opinião, ele deve colocar a escrivaninha dele no escritório.
+RESPOSTA: Jag tycker att han ska ha sitt skrivbord i arbetsrummet. | I arbetsrummet kan han ha sitt skrivbord, tycker jag.
+
+Malin: Han har en stor soffa, men vardagsrummet är ganska trångt. Vad gör vi?
+VOCÊ: Diga que o sofá parece grande demais e sugira procurar um sofá menor.
+RESPOSTA: Jag tror att soffan är för stor. Vi kan titta efter en mindre soffa. | Soffan är nog för stor. Vi kan titta efter en mindre.
+
+Malin: Erik vill inte köpa en ny soffa. Den gamla fungerar bra.
+VOCÊ: Aceite manter o sofá antigo e sugira deixá-lo junto à parede.
+RESPOSTA: Då kan den gamla soffan stå vid väggen. | Vi kan ha den gamla soffan vid väggen.
+
+Malin: Nu står soffan vid väggen. Vardagsrummet ser större ut, eller hur?
+VOCÊ: Concorde que o ambiente parece melhor e diga que não será necessário comprar outro sofá.
+RESPOSTA: Ja, det ser bättre ut, och vi behöver inte köpa en ny soffa. | Ja, nu ser rummet bättre ut. Vi behöver inte köpa en ny soffa.
+
+Malin: Erik har en blå matta och en grön matta. Väggarna är vita. Vilken matta är finast här?
+VOCÊ: Diga que, na sua opinião, o tapete verde é mais bonito que o azul.
+RESPOSTA: Jag tycker att den gröna mattan är finare än den blå. | Den gröna mattan är finast här, tycker jag.
+
+Malin: Erik har tre lampor: en stor, en liten och en gammal. Han vill ha en lampa på sitt skrivbord.
+VOCÊ: Sugira que ele use a luminária pequena na escrivaninha dele.
+RESPOSTA: Han kan ha den lilla lampan på sitt skrivbord. | Den lilla lampan passar bra på hans skrivbord.
+
+Malin: I sovrummet har han sin säng och sin garderob. Men spegeln ligger på golvet.
+VOCÊ: Sugira que ele pendure o espelho dele ao lado do guarda-roupa.
+RESPOSTA: Han kan hänga sin spegel bredvid garderoben. | Jag tycker att han ska hänga sin spegel bredvid garderoben.
+
+Malin: Erik har också tre tavlor. Två är små och en är stor. Han vill hänga dem i vardagsrummet.
+VOCÊ: Proponha pendurar os dois quadros pequenos acima do sofá e o quadro grande perto da porta.
+RESPOSTA: De två små tavlorna kan hänga ovanför soffan, och den stora kan hänga vid dörren. | Vi kan hänga de två små tavlorna ovanför soffan och den stora vid dörren.
+
+Malin: Ska vi lägga kuddarna på soffan eller på sängen?
+VOCÊ: Diga que prefere deixar as almofadas no sofá.
+RESPOSTA: Jag tycker att kuddarna ska ligga på soffan. | Jag vill ha kuddarna på soffan.
+
+Malin: Vi har arbetat hela dagen. Jag är tröttare nu än i morse. Hur mår du?
+VOCÊ: Diga que também está cansado, mas feliz, e que o apartamento agora está mais bonito.
+RESPOSTA: Jag är också trött, men glad. Lägenheten är finare nu. | Jag är trött men glad, och nu är lägenheten finare.
+
+Malin: Erik ser glad ut. Han har sitt arbetsrum och sina böcker där.
+VOCÊ: Concorde que agora ele pode trabalhar em casa e diga que isso é o mais importante para ele.
+RESPOSTA: Ja, nu kan han arbeta hemma. Det är det viktigaste för honom. | Ja, han kan jobba hemma nu, och det är det viktigaste för honom.
+
+Malin: I morgon ska Erik laga middag för oss. Han ska laga mat med paprika, tomater och köttfärs.
+VOCÊ: Diga que gosta de pimentão e de carne moída, mas não gosta de tomates.
+RESPOSTA: Jag gillar paprika och köttfärs, men jag tycker inte om tomater. | Jag tycker om paprika och köttfärs, men jag gillar inte tomater.
+
+Malin: Då kan han laga något annat. Kan du ta med något till middagen?
+VOCÊ: Diga que pode levar pão e maçãs para o jantar.
+RESPOSTA: Jag kan ta med bröd och äpplen till middagen.
+
+Malin: Erik säger att vi har hjälpt honom mycket. Han vill träffa oss nästa vecka också.
+VOCÊ: Diga que gostaria de encontrá-lo novamente e que foi divertido ajudá-lo.
+RESPOSTA: Jag vill gärna träffa honom igen. Det var roligt att hjälpa honom. | Jag träffar honom gärna igen. Det var kul att hjälpa honom.
+
+[FIM]
