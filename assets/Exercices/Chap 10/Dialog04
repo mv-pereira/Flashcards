@@ -1,0 +1,123 @@
+[EXERCICIO]
+TITULO: Pussel på biblioteket
+
+[QUESTAO]
+TIPO: VF
+Ett pussel är ett pussel.
+
+RESPOSTA: V
+
+[FALA]
+Klara: Här på biblioteket finns två pussel. Det lilla har hundra bitar, och det stora har tvåhundra. Vilket vill du börja med?
+VOCÊ: Sugira começar pelo quebra-cabeça pequeno porque provavelmente é mais fácil que o grande.
+RESPOSTA: Vi kan börja med det lilla, för det är nog lättare än det stora. | Jag vill börja med det lilla pusslet. Det är nog enklare än det stora.
+
+Klara: Bra! Jag lägger bitarna på bordet. Vill du hjälpa mig?
+VOCÊ: Aceite ajudar e diga que começará pelas peças azuis.
+RESPOSTA: Ja, jag hjälper dig. Jag börjar med de blå bitarna. | Ja, gärna. Jag kan börja med de blå bitarna.
+
+Klara: Då tar jag de gröna bitarna. Jag tror att det finns fler blå bitar än gröna.
+VOCÊ: Diga que também acha que existem mais peças azuis que verdes.
+RESPOSTA: Jag tror också att det finns fler blå bitar än gröna. | Ja, det finns nog fler blå bitar än gröna.
+
+Klara: Jag har redan lagt fem gröna bitar. Hur många blå bitar har du lagt?
+VOCÊ: Diga que montou oito peças azuis, três a mais que ela.
+RESPOSTA: Jag har lagt åtta blå bitar, tre fler än du har lagt. | Du har lagt fem bitar, men jag har lagt åtta. Det är tre fler.
+
+Klara: Du är snabbare än jag! Men det spelar ingen roll. Det är roligt att lägga pussel tillsammans.
+VOCÊ: Concorde que o importante é se divertirem juntos, não quem é mais rápido.
+RESPOSTA: Ja, det viktigaste är att ha roligt tillsammans, inte att vara snabbast. | Ja, det är viktigare att ha roligt tillsammans än att vara snabbast.
+
+Klara: David kommer hit klockan tre. Nu är klockan två. Tror du att vi kan lägga hela det lilla pusslet på en timme?
+VOCÊ: Diga que acredita que sim, porque o pequeno é mais simples que o grande.
+RESPOSTA: Ja, jag tror det, för det lilla är enklare än det stora. | Ja, det tror jag. Det lilla pusslet är lättare än det stora.
+
+Klara: Jag ser en bit på golvet, under stolen. Kan du hämta den?
+VOCÊ: Aceite buscar a peça e diga que ela está debaixo da cadeira.
+RESPOSTA: Ja, jag hämtar den. Den ligger under stolen. | Ja, biten ligger under stolen. Jag hämtar den.
+
+Klara: Tack! Den biten är grön. Nu har jag fler gröna bitar. Vill du ha några av dem?
+VOCÊ: Recuse educadamente e diga que ainda tem muitas peças azuis.
+RESPOSTA: Nej tack, jag har fortfarande många blå bitar. | Tack, men jag har många blå bitar kvar.
+
+Klara: Vi har lagt många bitar nu. Jag tycker att det här pusslet är roligare än jag trodde.
+VOCÊ: Concorde e diga que também o considera mais divertido do que esperava.
+RESPOSTA: Ja, jag tycker också att det är roligare än jag trodde. | Ja, det var roligare än jag trodde, tycker jag.
+
+Klara: Jag är törstig. Kan du hämta ett glas vatten till mig?
+VOCÊ: Concorde em buscar água para ela e diga que você também quer beber água.
+RESPOSTA: Ja, jag hämtar ett glas vatten till dig. Jag vill också dricka vatten. | Jag kan hämta vatten till dig. Jag vill ha lite vatten också.
+
+Klara: Tack! Jag har också en kopp kaffe här, men det är redan kallt.
+VOCÊ: Pergunte se ela quer mais café ou apenas a água.
+RESPOSTA: Vill du ha mer kaffe eller bara vatten? | Vill du ha en kopp kaffe till, eller vill du bara ha vatten?
+
+Klara: Bara vatten. Titta, vi har bara tre bitar kvar!
+VOCÊ: Proponha montar duas das três peças restantes e deixar a última para ela.
+RESPOSTA: Jag kan lägga två bitar, så kan du lägga den sista. | Jag lägger två bitar, och du kan lägga den sista.
+
+Klara: Men vi har inte den sista biten. Det finns ett hål i pusslet. Var är den sista biten?
+VOCÊ: Diga que não sabe e sugira procurar embaixo da mesa.
+RESPOSTA: Jag vet inte. Ska vi titta under bordet? | Jag vet inte. Vi kan titta under bordet.
+
+Klara: Nej, den ligger inte under bordet. Jag undrar vart den har tagit vägen.
+VOCÊ: Sugira verificar se a peça está debaixo do livro dela.
+RESPOSTA: Ska vi se om den ligger under din bok? | Vi kan titta under din bok. Kanske ligger biten där.
+
+Klara: Där är den! Den låg under min bok hela tiden. Vill du lägga den sista biten?
+VOCÊ: Diga que prefere que ela coloque a última peça, pois já montou muitas.
+RESPOSTA: Jag tycker att du ska lägga den sista biten. Jag har redan lagt många. | Du kan lägga den sista biten. Jag har redan lagt många bitar.
+
+Klara: Nu har vi lagt hela pusslet! Är du stolt?
+VOCÊ: Diga que está orgulhoso e que o quebra-cabeça era mais fácil do que imaginava.
+RESPOSTA: Ja, jag är stolt. Pusslet var lättare än jag trodde. | Ja, jag är stolt, och det var enklare än jag trodde.
+
+Klara: David är här nu. Han har sitt pussel med sig. Det har tusen bitar.
+VOCÊ: Observe que o quebra-cabeça dele tem mais peças e provavelmente é mais difícil que o de vocês.
+RESPOSTA: Hans pussel har fler bitar och är nog svårare än vårt. | Det har fler bitar än vårt pussel. Det är nog svårare också.
+
+Klara: David vill lägga sitt pussel med oss. Men han har också sin syster med sig. Hon gillar dataspel mer än pussel.
+VOCÊ: Sugira perguntar se a irmã dele quer montar o quebra-cabeça com vocês ou jogar no celular.
+RESPOSTA: Ska vi fråga henne om hon vill lägga pussel med oss eller spela på sin mobil? | Vi kan fråga henne om hon vill spela på sin mobil eller lägga pussel med oss.
+
+Klara: Hon vill spela på sin mobil först. Sedan kan hon hjälpa oss. Ska vi börja med Davids pussel?
+VOCÊ: Concorde em começar sem ela e diga que ela poderá ajudar depois.
+RESPOSTA: Ja, vi kan börja nu. Hon kan hjälpa oss senare. | Ja, vi börjar nu, och hon kan hjälpa oss sedan.
+
+Klara: David har lagt sina bitar på bordet. Det stora pusslet har många fler bitar än det lilla.
+VOCÊ: Diga que será necessário mais tempo para montar o quebra-cabeça de David, mas que isso não importa.
+RESPOSTA: Det tar längre tid att lägga det här pusslet, men det spelar ingen roll. | David behöver mer tid med sitt pussel, men det spelar ingen roll.
+
+Klara: Jag vill gärna lyssna på musik. Jag har en rocklåt och en annan låt. Vilken vill du höra?
+VOCÊ: Diga que prefere ouvir a outra música, porque é mais tranquila do que a canção de rock.
+RESPOSTA: Jag vill lyssna på den andra låten, för den är lugnare än rocklåten. | Jag tycker bättre om den andra låten. Den är lugnare än rocklåten.
+
+Klara: Bra, då lyssnar vi på den. David är snabbare än jag, men jag behöver koncentrera mig.
+VOCÊ: Diga que também precisa se concentrar e proponha deixar a música para mais tarde.
+RESPOSTA: Jag måste också koncentrera mig. Kan vi lyssna på musik senare? | Jag behöver också koncentrera mig. Kan vi lyssna på musiken senare?
+
+Klara: Nu har David lagt trettio bitar och jag har lagt tjugo. Hur många har du lagt?
+VOCÊ: Informe que montou vinte e cinco peças: mais do que ela, porém menos do que David.
+RESPOSTA: Jag har lagt tjugofem bitar, fler än du har lagt men färre än David. | Du har lagt tjugo och David trettio. Jag har lagt tjugofem, så jag har lagt fler än du men färre än David.
+
+Klara: David har lagt flest bitar. Men hans syster har inte lagt någon bit än. Hon har bara spelat dataspel.
+VOCÊ: Diga que não há problema e que ela ainda pode ajudar com as peças verdes.
+RESPOSTA: Det spelar ingen roll. Hon kan fortfarande hjälpa oss med de gröna bitarna. | Det gör inget. Hon kan hjälpa oss med de gröna bitarna nu.
+
+Klara: Hon vill hjälpa till nu. Hon säger att de gröna bitarna är lättare än de blå.
+VOCÊ: Diga que você acha as peças azuis mais difíceis que as verdes, mas mais interessantes.
+RESPOSTA: Jag tycker att de blå bitarna är svårare än de gröna, men mer intressanta. | De blå bitarna är svårare, men mer intressanta än de gröna, tycker jag.
+
+Klara: Nu är klockan fyra. Biblioteket stänger klockan fem. Ska vi lägga fler bitar eller gå hem?
+VOCÊ: Proponha continuar por mais uma hora, até a biblioteca fechar.
+RESPOSTA: Vi kan stanna till klockan fem och lägga fler bitar. | Jag vill lägga fler bitar tills biblioteket stänger.
+
+Klara: Nu är klockan fem. Vi har inte lagt hela pusslet, men David kan ta det med sig hem.
+VOCÊ: Diga que foi divertido e que, embora o quebra-cabeça maior seja mais difícil, você gostaria de continuar na sexta-feira.
+RESPOSTA: Det var roligt. Det största pusslet är svårare, men jag vill gärna lägga det igen på fredag. | Jag tyckte att det var roligt. Det största pusslet är svårare, men jag vill lägga det igen på fredag.
+
+Klara: David kommer tillbaka på fredag med sitt pussel. Vill du komma då också?
+VOCÊ: Confirme que voltará na sexta-feira e diga que o mais importante é se divertirem juntos.
+RESPOSTA: Ja, jag kommer tillbaka på fredag. Det allra viktigaste är att ha roligt tillsammans. | Ja, jag ska komma tillbaka på fredag. Det är allra viktigast att ha roligt tillsammans.
+
+[FIM]
