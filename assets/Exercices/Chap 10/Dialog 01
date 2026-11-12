@@ -1,0 +1,135 @@
+[EXERCICIO]
+TITULO: En dag i Uppsala
+
+[QUESTAO]
+TIPO: VF
+En biljett är en biljett.
+
+RESPOSTA: V
+
+[FALA]
+Anna: Vi har tid i eftermiddag. Vill du åka till Uppsala eller stanna i Stockholm?
+VOCÊ: Diga que quer ir a Uppsala porque a cidade é menor e mais tranquila que Estocolmo.
+RESPOSTA: Jag vill åka till Uppsala, för Uppsala är mindre och lugnare än Stockholm. | Jag vill åka till Uppsala. Uppsala är mindre och lugnare än Stockholm.
+
+Anna: Då åker vi till Uppsala. Vill du ta tåget eller bussen?
+VOCÊ: Diga que prefere o trem porque ele é mais rápido que o ônibus.
+RESPOSTA: Jag vill ta tåget, för det är snabbare än bussen. | Jag vill åka tåg, för tåget är snabbare än bussen.
+
+Anna: Tåget är snabbare, men biljetten är dyrare. Ska vi ta tåget?
+VOCÊ: Concorde em ir de trem, mesmo depois do comentário sobre o preço.
+RESPOSTA: Ja, vi tar tåget.
+
+Anna: Det går ett tåg klockan två och ett klockan fyra. Vilket tåg vill du ta?
+VOCÊ: Diga que quer pegar o trem das duas horas.
+RESPOSTA: Jag vill ta tåget klockan två. | Klockan två vill jag ta tåget.
+
+Anna: Jag köper biljetterna. Har du ditt bankkort?
+VOCÊ: Confirme que está com seu cartão bancário, mas informe que não tem dinheiro em espécie.
+RESPOSTA: Ja, jag har mitt bankkort, men jag har inga kontanter. | Ja, jag har mitt bankkort, men inga kontanter.
+
+Anna: Det går bra att betala med kort. Har du packat din väska?
+VOCÊ: Confirme que já arrumou sua bolsa e diga que sua câmera está dentro dela.
+RESPOSTA: Ja, jag har packat min väska, och min kamera ligger i den. | Ja, jag har packat min väska. Min kamera ligger i väskan.
+
+Anna: Jag har också en kamera. Var är din mobil?
+VOCÊ: Diga que seu celular está dentro da bolsa.
+RESPOSTA: Min mobil ligger i väskan. | Jag har min mobil i väskan.
+
+Anna: Nu är vi på stationen. Var ligger perrongen?
+VOCÊ: Indique que a plataforma fica ali adiante, ao lado do café.
+RESPOSTA: Perrongen ligger där borta, bredvid kaféet. | Där borta, bredvid kaféet.
+
+Anna: Jag vill ta en fika. Har vi tid?
+VOCÊ: Diga que vocês têm meia hora e podem tomar um café ou fazer uma pausa para lanchar.
+RESPOSTA: Ja, vi har en halvtimme. Vi kan ta en fika. | Vi har en halvtimme, så vi kan ta en fika.
+
+Anna: En kopp kaffe kostar femtio kronor här. Vill du ha kaffe?
+VOCÊ: Recuse o café por considerá-lo caro e diga que quer apenas água.
+RESPOSTA: Nej, det är dyrt. Jag vill bara ha vatten.
+
+Anna: Jag tar te. Nu är klockan tio i två. Ska vi gå till perrongen snart?
+VOCÊ: Concorde que irão à plataforma, mas proponha ficar ali por mais um pouco.
+RESPOSTA: Ja, men vi kan stanna här en stund till.
+
+Anna: Titta, tåget kommer! Har du din biljett?
+VOCÊ: Confirme que está com o bilhete e diga que vocês vão à plataforma agora.
+RESPOSTA: Ja, jag har min biljett. Nu går vi till perrongen. | Ja, jag har min biljett, och vi går till perrongen nu.
+
+Anna: Nu sitter vi på tåget. Hur lång tid tar det att åka till Uppsala?
+VOCÊ: Informe que a viagem leva uma hora.
+RESPOSTA: Det tar en timme. | En timme.
+
+Anna: En timme är bra. Vad vill du göra i Uppsala?
+VOCÊ: Diga que quer visitar o parque e caminhar pela floresta.
+RESPOSTA: Jag vill besöka parken och gå i skogen.
+
+Anna: Det finns en sjö nära parken. Ska vi gå till sjön först?
+VOCÊ: Aceite e diga que vocês irão primeiro ao lago e depois ao parque.
+RESPOSTA: Ja, vi går till sjön först och sedan till parken. | Ja, först går vi till sjön och sedan till parken.
+
+Anna: Nu är vi vid sjön. Det är kallare här än i Stockholm, eller hur?
+VOCÊ: Concorde que ali está mais frio, mas ressalte que o tempo está ensolarado.
+RESPOSTA: Ja, det är kallare här, men det är soligt. | Ja, här är det kallare, men det är soligt.
+
+Anna: Ser du fåglarna vid vattnet? De är så fina.
+VOCÊ: Confirme que vê os pássaros, observe que a pata está acompanhada de seus próprios filhotes e exclame como eles são fofos.
+RESPOSTA: Ja, jag ser dem. Ankan har sina ankungar med sig. Vad söta de är!
+
+Anna: Ankungarna är mindre än fåglarna där borta. Vill du titta på dem?
+VOCÊ: Diga que quer observar os pássaros que estão mais adiante.
+RESPOSTA: Ja, jag vill titta på fåglarna där borta.
+
+Anna: Nu är vi i parken. Det finns en skog bakom sjön. Jag vill se fler djur.
+VOCÊ: Sugira ir até a floresta, mas avise que vocês precisam ficar quietos.
+RESPOSTA: Vi kan gå dit, men vi måste vara tysta.
+
+Anna: Jag ser en räv där borta. Ser du den också?
+VOCÊ: Diga que não consegue ver a raposa e pergunte onde ela está.
+RESPOSTA: Nej, jag ser den inte. Var är den? | Nej, jag ser inte räven. Var är den?
+
+Anna: Räven är där borta, nära sjön.
+VOCÊ: Diga que agora consegue vê-la e comente que ela é menor que um lobo.
+RESPOSTA: Nu ser jag den! Den är mindre än en varg.
+
+Anna: Ja, den är mindre än en varg. Vad tycker du om skogen?
+VOCÊ: Diga que gosta da floresta e que ela é mais tranquila que o parque de Estocolmo.
+RESPOSTA: Jag tycker om skogen. Den är lugnare än parken i Stockholm. | Jag gillar skogen. Den är lugnare än parken i Stockholm.
+
+Anna: Jag tycker också om skogen. Vill du stanna här längre?
+VOCÊ: Diga que quer permanecer ali por mais uma hora.
+RESPOSTA: Ja, jag vill stanna här en timme till.
+
+Anna: Vi har varit här länge, och jag är hungrig. Är du också hungrig?
+VOCÊ: Diga que está faminto como um lobo e sugira almoçar em um café.
+RESPOSTA: Ja, jag är hungrig som en varg. Vi kan äta lunch på ett kafé.
+
+Anna: Det finns ett kafé nära stationen. Det är billigare än restaurangen vid sjön.
+VOCÊ: Proponha que vocês vão ao café perto da estação para almoçar.
+RESPOSTA: Då går vi till kaféet och äter lunch. | Vi kan gå till kaféet och äta lunch.
+
+Anna: Min syster bor i Uppsala. Hon vill träffa oss på kaféet.
+VOCÊ: Reaja com entusiasmo e pergunte se a irmã dela pode chegar às quatro horas.
+RESPOSTA: Vad roligt! Kan hon komma klockan fyra? | Vad kul! Kan hon komma klockan fyra?
+
+Anna: Ja, hon kan komma klockan fyra. Hon har sin hund med sig.
+VOCÊ: Diga que gosta de cachorros e pergunte se o cachorro da irmã dela é grande ou pequeno.
+RESPOSTA: Jag gillar hundar. Är hunden stor eller liten? | Jag tycker om hundar. Är hunden stor eller liten?
+
+Anna: Hunden är liten. Min syster har också en katt.
+VOCÊ: Diga que gosta de cachorros e gatos e pergunte o nome do cachorro.
+RESPOSTA: Jag tycker om hundar och katter. Vad heter hunden? | Jag gillar hundar och katter. Vad heter hunden?
+
+Anna: Hunden heter Molly. Min syster väntar redan på oss vid kaféet.
+VOCÊ: Sugira ir até lá e diga que quer conhecer a irmã dela.
+RESPOSTA: Då går vi dit. Jag vill träffa henne.
+
+Anna: Där är min syster med sin hund. Hur mår du?
+VOCÊ: Diga que está um pouco cansado, mas feliz, e que foi um dia divertido.
+RESPOSTA: Jag är lite trött, men jag är glad. Det har varit en rolig dag. | Jag är lite trött men glad. Det har varit en rolig dag.
+
+Anna: Vad var bäst i dag?
+VOCÊ: Diga que a melhor parte foi observar os patinhos e que quer voltar na próxima semana.
+RESPOSTA: Att se ankungarna var bäst. Jag vill komma tillbaka nästa vecka.
+
+[FIM]
