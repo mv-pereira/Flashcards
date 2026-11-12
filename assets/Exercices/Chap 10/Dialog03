@@ -1,0 +1,127 @@
+[EXERCICIO]
+TITULO: Djuren hemma hos Nora
+
+[QUESTAO]
+TIPO: VF
+En ko är en ko.
+
+RESPOSTA: V
+
+[FALA]
+Nora: Min syster kommer hit med sina barn i eftermiddag. Kan du hjälpa mig med djuren innan de kommer?
+VOCÊ: Aceite ajudar e pergunte se vocês podem começar pelas galinhas.
+RESPOSTA: Ja, jag kan hjälpa dig. Kan vi börja med hönorna? | Javisst! Ska vi börja med hönorna?
+
+Nora: Ja, hönorna är utanför huset. En höna är där med sina kycklingar. Ser du dem?
+VOCÊ: Confirme que vê a galinha e diga que há quatro pintinhos perto dela.
+RESPOSTA: Ja, jag ser hönan. Det finns fyra kycklingar nära henne. | Ja, jag ser henne och fyra kycklingar bredvid henne.
+
+Nora: Fyra kycklingar, ja! En är mycket mindre än de andra. Vilken tycker du är sötast?
+VOCÊ: Diga que acha o menor pintinho o mais fofo.
+RESPOSTA: Jag tycker att den minsta kycklingen är sötast. | Den minsta kycklingen är sötast, tycker jag.
+
+Nora: Hönan är nog lite orolig. Ska vi stanna här?
+VOCÊ: Proponha ir até as ovelhas, para que a galinha possa ficar com os próprios filhotes.
+RESPOSTA: Nej, vi kan gå till fåren, så kan hönan vara med sina kycklingar.
+
+Nora: Bra! Det här fåret har sitt lamm med sig. Lammet är bara en vecka gammalt.
+VOCÊ: Reaja dizendo que o cordeiro é muito pequeno e pergunte se ele é mais novo que o bezerro.
+RESPOSTA: Vad litet lammet är! Är det yngre än kalven? | Lammet är jättelitet! Är det yngre än kalven?
+
+Nora: Ja, kalven är två veckor gammal. Kon är där borta med sin kalv.
+VOCÊ: Diga que quer ver a vaca e seu bezerro e pergunte se vocês podem ir até lá.
+RESPOSTA: Jag vill se kon och hennes kalv. Kan vi gå dit? | Kan vi gå dit och titta på kon och hennes kalv?
+
+Nora: Javisst. Kon är större än fåret. Vilket djur tycker du är finast?
+VOCÊ: Diga que, na sua opinião, a vaca é o animal mais bonito, mas o cordeiro é o mais fofo.
+RESPOSTA: Jag tycker att kon är finast, men lammet är sötast. | Kon är finast och lammet är sötast, tycker jag.
+
+Nora: Jag tycker att fåret är finare. Vill du också titta på min häst?
+VOCÊ: Aceite e pergunte se o cavalo dela é maior que a vaca.
+RESPOSTA: Ja, gärna! Är din häst större än kon? | Ja, jag vill se hästen. Är den större än kon?
+
+Nora: Ja, hästen är större än kon. Den har också ett föl. Fölet är tre veckor gammalt.
+VOCÊ: Diga que o potro é mais velho que o bezerro, mas menor que o cavalo.
+RESPOSTA: Fölet är äldre än kalven, men mindre än hästen. | Fölet är mindre än hästen, men äldre än kalven.
+
+Nora: Ja, hästen har sitt föl med sig hela dagen. Fölet springer redan, men hästen är snabbare.
+VOCÊ: Observe que o potro ainda é mais lento que o cavalo, mas ficará maior.
+RESPOSTA: Fölet är fortfarande långsammare än hästen, men det kommer att bli större.
+
+Nora: Jag har också en åsna. Den är ganska envis.
+VOCÊ: Diga que gostaria de ver o burro e pergunte onde ele está.
+RESPOSTA: Jag vill gärna se åsnan. Var är den? | Var är åsnan? Jag vill gärna titta på den.
+
+Nora: Åsnan står bredvid grisen. Grisen har tre kultingar. Ser du dem?
+VOCÊ: Diga que vê a porca com seus três filhotes e exclame como são fofos.
+RESPOSTA: Ja, jag ser grisen och hennes tre kultingar. Vad söta de är! | Ja, jag ser henne med de tre kultingarna. Vad söta de är!
+
+Nora: Min bror har fem kultingar. Han har fler än jag, eller hur?
+VOCÊ: Confirme que o irmão dela tem dois leitões a mais que ela.
+RESPOSTA: Ja, din bror har två fler kultingar än du. | Ja, du har två färre kultingar än din bror.
+
+Nora: Men jag har fler får än min bror. Han har två får och jag har fyra.
+VOCÊ: Compare as quantidades: diga que ela tem quatro ovelhas e que o irmão tem apenas duas.
+RESPOSTA: Du har fyra får och din bror har två. | Du har fyra får, men han har bara två.
+
+Nora: Min bror har också fler hönor än jag. Tycker du att det är viktigt?
+VOCÊ: Diga que a quantidade de galinhas não importa e que você gosta dos animais dela.
+RESPOSTA: Nej, det spelar ingen roll. Jag tycker om dina djur. | Nej, det spelar ingen roll för mig. Jag gillar dina djur.
+
+Nora: Tack! Men var är min katt? Jag kan inte hitta den.
+VOCÊ: Sugira verificar se o gato está dentro da casa.
+RESPOSTA: Ska vi se om katten är inne i huset? | Kanske är katten inne i huset? Ska vi titta där?
+
+Nora: Nu ser jag katten! Den sitter vid fönstret och tittar på fåglarna.
+VOCÊ: Diga que o gato provavelmente quer caçar os pássaros, mas precisa ficar dentro da casa.
+RESPOSTA: Katten vill nog jaga fåglarna, men den måste stanna inne i huset. | Den vill nog jaga fåglarna, men den måste vara inne i huset.
+
+Nora: Den jagar aldrig fåglarna. Den bara tittar. Min hund är mycket piggare än katten.
+VOCÊ: Diga que o cachorro dela é mais disposto, mas o gato é mais tranquilo.
+RESPOSTA: Din hund är piggare, men katten är lugnare. | Hunden är piggare än katten, men katten är lugnare än hunden.
+
+Nora: Min hund springer fortfarande varje dag. Hur gammal tror du att han är?
+VOCÊ: Diga que acredita que o cachorro tenha dez anos.
+RESPOSTA: Jag tror att han är tio år gammal. | Jag tror att din hund är tio år.
+
+Nora: Han är faktiskt nio år gammal, men han är stark som en oxe.
+VOCÊ: Reaja dizendo que você pensou que ele fosse mais velho e comente que ele parece realmente disposto.
+RESPOSTA: Oj, jag trodde att han var äldre. Han ser verkligen pigg ut. | Jag trodde att han var äldre! Han ser så pigg ut.
+
+Nora: Min syster kommer snart med sina barn. Jag vill hämta något till dem. Kan du hjälpa mig?
+VOCÊ: Diga que você pode buscar maçãs e água para as crianças.
+RESPOSTA: Jag kan hämta äpplen och vatten till barnen. | Ja, jag kan hämta vatten och äpplen till dem.
+
+Nora: Tack! Min syster har en son och en dotter. Sonen är äldre än dottern.
+VOCÊ: Pergunte quantos anos têm as duas crianças.
+RESPOSTA: Hur gamla är barnen? | Hur gammal är sonen och hur gammal är dottern?
+
+Nora: Sonen är nio år och dottern är sex.
+VOCÊ: Diga que o menino é três anos mais velho que a menina.
+RESPOSTA: Sonen är tre år äldre än dottern. | Han är tre år äldre än hon.
+
+Nora: Barnen vill gärna se djuren. Vart ska vi gå med dem först?
+VOCÊ: Sugira levar as crianças primeiro até a galinha com seus pintinhos, porque o menor é muito fofo.
+RESPOSTA: Vi kan gå till hönan och hennes kycklingar först, för den minsta är mycket söt. | Först kan vi gå med barnen till kycklingarna, för den minsta är så söt.
+
+Nora: Ja, men barnen vill också se lammet och fölet. Vilket är yngst?
+VOCÊ: Diga que o cordeiro é mais novo que o potro, pois tem apenas uma semana.
+RESPOSTA: Lammet är yngst. Det är bara en vecka gammalt. | Lammet är yngre än fölet, för det är bara en vecka gammalt.
+
+Nora: Bra! Min syster är här nu. Hon har sina barn med sig, och barnen vill se alla djuren.
+VOCÊ: Sugira levar as crianças primeiro até os pintinhos, depois até o cordeiro e, por fim, até o potro.
+RESPOSTA: Vi kan gå till kycklingarna först, sedan till lammet och efter det till fölet. | Först går vi med barnen till kycklingarna, sedan till lammet och efter det till fölet.
+
+Nora: Barnen har tittat på djuren hela eftermiddagen. Nu är de trötta. Hur känner du dig?
+VOCÊ: Diga que você está um pouco cansado, mas mais feliz do que de manhã.
+RESPOSTA: Jag är lite trött, men gladare än i morse. | Jag känner mig lite trött, men jag är gladare nu än i morse.
+
+Nora: Vilket djur tyckte du var allra finast i dag?
+VOCÊ: Diga que o potro foi o mais bonito, mas que achou os pintinhos os mais fofos.
+RESPOSTA: Fölet var allra finast, men kycklingarna var sötast. | Jag tyckte att fölet var finast och att kycklingarna var sötast.
+
+Nora: Tack för hjälpen! Nästa vecka kan du komma hit igen. Vill du det?
+VOCÊ: Aceite voltar na próxima semana e diga que gostaria de ver como o cordeiro e o bezerro estarão.
+RESPOSTA: Ja, jag kommer gärna tillbaka nästa vecka. Jag vill se hur lammet och kalven mår då. | Ja, gärna! Nästa vecka vill jag komma tillbaka och se hur lammet och kalven mår.
+
+[FIM]
